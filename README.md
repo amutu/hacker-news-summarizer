@@ -3,7 +3,7 @@
 这是 Top 10 的每日摘要，更多请点击 [Top 100](output/hacker_news_summary_2025-12-11.md)
 
 *最后自动更新时间: 2025-12-11 17:52:52*
-## 1. Things I want to say to my boss
+## 1. Things   I want to say to my boss
 
 **原文标题**: Things I want to say to my boss
 
