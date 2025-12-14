@@ -61,7 +61,7 @@ def fetch_top_stories(limit=100):
             })
         
         page += 1
-        if page > 4:  # 通常前 4 页就能获取 100 篇文章
+        if page > 2:  # 通常前 4 页就能获取 100 篇文章；2 页取前30即可
             break
             
         time.sleep(2)  # 避免请求过于频繁
