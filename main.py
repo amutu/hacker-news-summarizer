@@ -2,7 +2,8 @@ import os
 import re
 import time
 import requests
-import google.generativeai as genai
+#import google.generativeai as genai
+from openai import OpenAI
 from bs4 import BeautifulSoup
 from dotenv import load_dotenv
 from datetime import datetime,timezone
@@ -14,14 +15,18 @@ import sys
 # 加载环境变量
 load_dotenv()
 
+client = OpenAI(
+    api_key=os.environ.get('DEEPSEEK_API_KEY'),
+    base_url="https://api.deepseek.com")
+
 # 配置 Gemini API
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
-genai.configure(api_key=GEMINI_API_KEY)
+#GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+#genai.configure(api_key=GEMINI_API_KEY)
 
 # 创建 Gemini 模型 gemini-2.0-flash-lite/gemini-2.0-flash/gemini-2.0-pro-exp
-model = genai.GenerativeModel('gemini-2.0-flash')
+#model = genai.GenerativeModel('gemini-2.0-flash')
 
-def fetch_top_stories(limit=100):
+def fetch_top_stories(limit=1):
     """获取 Hacker News 上的热门文章链接"""
     print(f"正在获取 Hacker News 上的前 {limit} 篇热门文章...")
     
@@ -143,9 +148,13 @@ def generate_summary(title, content):
         
         Provide a concise summary of this article (no more than 300 words), capturing the main points and key information.
         """
-        
-        response = model.generate_content(prompt)
-        return response.text
+        messages = [{"role": "user", "content": prompt}]
+        response = client.chat.completions.create(
+        model="deepseek-chat",
+        messages=messages)
+
+        #response = model.generate_content(prompt)
+        return response.choices[0].message.content
     except Exception as e:
         print(f"生成摘要时出错: {e}")
         return "生成摘要时出错"
@@ -164,8 +173,15 @@ def generate_summary_from_url(title, url, max_retries=3):
             If you cannot access the article, please respond with "Unable to access the article link."
             """
             
-            response = model.generate_content(prompt)
-            return response.text
+            messages = [{"role": "user", "content": prompt}]
+            response = client.chat.completions.create(
+            model="deepseek-chat",
+            messages=messages)
+
+            #response = model.generate_content(prompt)
+            return response.choices[0].message.content
+            #response = model.generate_content(prompt)
+            #return response.text
         except Exception as e:
             retries += 1
             if "RATE_LIMIT_EXCEEDED" in str(e):
@@ -195,8 +211,15 @@ def translate_to_chinese(text):
         {text}
         """
         
-        response = model.generate_content(prompt)
-        translated_text = response.text
+        messages = [{"role": "user", "content": prompt}]
+        response = client.chat.completions.create(
+        model="deepseek-chat",
+        messages=messages)
+
+        #response = model.generate_content(prompt)
+        translated_text = response.choices[0].message.content
+        #response = model.generate_content(prompt)
+        #translated_text = response.text
         
         # 去除可能的前缀说明
         prefixes_to_remove = [
@@ -338,7 +361,7 @@ def main():
     print("开始运行 Hacker News 文章摘要提取器...")
     
     # 获取热门文章
-    stories = fetch_top_stories(limit=100)
+    stories = fetch_top_stories(limit=30)
     print(f"成功获取 {len(stories)} 篇文章")
     
     stories_with_summaries = []
