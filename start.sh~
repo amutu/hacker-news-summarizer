@@ -1,0 +1,9 @@
+#export DEEPSEEK_API_KEY=sk-d5ea4842c72e433eb6b3149be215f23e
+export DEEPSEEK_API_KEY=sk-cyu8hvs24s1lyhqgwvdkp1zbjkfb1i14gcm2ky2ggryts3ej
+export BASEURL=https://api.xiaomimimo.com/v1
+
+python ./main.py
+
+git add .
+git commit -m"action:`date`"
+git push
