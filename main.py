@@ -361,7 +361,7 @@ def main():
     print("开始运行 Hacker News 文章摘要提取器...")
     
     # 获取热门文章
-    stories = fetch_top_stories(limit=1)
+    stories = fetch_top_stories(limit=30)
     print(f"成功获取 {len(stories)} 篇文章")
     
     stories_with_summaries = []
