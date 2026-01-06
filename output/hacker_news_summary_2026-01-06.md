@@ -1,0 +1,502 @@
+# Hacker News 热门文章摘要 (2026-01-06)
+
+这是今日 [Hacker News](https://news.ycombinator.com/) 上最热门的文章摘要。
+
+## 1. 停止末日刷屏，开始末日编码：通过手机终端进行构建
+
+**原文标题**: Stop Doom Scrolling, Start Doom Coding: Build via the terminal from your phone
+
+**原文链接**: [https://github.com/rberg27/doom-coding](https://github.com/rberg27/doom-coding)
+
+本文介绍了“末日编码”方法，即通过终端远程访问家用电脑，在智能手机上进行编程。其目标是在任何有网络连接的地方实现高效开发。
+
+该方案需要一台24小时持续运行的电脑和一部智能手机。核心工具包括**Tailscale**（用于建立安全的VPN连接）、**Termius**（移动端SSH客户端）以及**Claude Code**（AI编程助手）。操作步骤涉及在两端设备安装这些工具，在电脑上配置SSH访问权限，并通过电脑的Tailscale MagicDNS地址在Termius中进行连接。
+
+指南包含故障排除建议（例如确保电脑处于解锁状态）和移动开发的最佳实践，例如使用本地HTTP服务器预览网页项目，以及在电脑上收藏参考网站以便手机快速访问。作者推崇这种方法，认为它能帮助开发者在离开主力工作站时保持编程节奏。
+
+---
+
+## 2. 越南禁止不可跳过的广告
+
+**原文标题**: Vienam bans unskippable ads
+
+**原文链接**: [https://saigoneer.com/vietnam-news/28652-vienam-bans-unskippable-ads,-requires-skip-button-to-appear-after-5-seconds](https://saigoneer.com/vietnam-news/28652-vienam-bans-unskippable-ads,-requires-skip-button-to-appear-after-5-seconds)
+
+越南第342号法令于2026年2月15日生效，为保护消费者推出了严格的在线广告新规。其中一项关键条款禁止不可跳过的视频和动画广告，要求观众最多观看五秒后必须能够跳过。静态广告则必须提供即时关闭选项。
+
+该法令还要求平台提供清晰的一键关闭广告方式，禁止使用欺骗性符号。用户必须能够便捷地举报非法广告，并选择屏蔽不当内容。
+
+此外，该法律对11类影响健康和环境的产品与服务广告实施严格监管，包括化妆品、食品饮料、婴幼儿配方食品、药品、医疗服务、农药、化肥及酒精饮料。
+
+---
+
+## 3. 球形蛇
+
+**原文标题**: Spherical Snake
+
+**原文链接**: [https://kevinalbs.com/spherical_snake/](https://kevinalbs.com/spherical_snake/)
+
+这段文字描述了一款名为“球形贪吃蛇”的网页游戏。核心玩法是通过方向键或屏幕按钮控制蛇的移动，其独特之处在于游戏世界是球形的，这意味着蛇可以环绕屏幕边缘移动。
+
+界面显示当前得分为0，并在每轮结束后提示玩家“游戏结束！再玩一次？”。玩家可选择将得分提交至排行榜、查看该排行榜，以及在GitHub上访问游戏的源代码。
+
+总之，“球形贪吃蛇”是一款采用球形移动机制的经典贪吃蛇游戏，具备得分追踪、排行榜功能和公开的源代码。
+
+---
+
+## 4. 老兄，我的超音速飞机在哪？
+
+**原文标题**: Dude, where's my supersonic jet?
+
+**原文链接**: [https://rationaloptimistsociety.substack.com/p/dude-wheres-my-supersonic-jet](https://rationaloptimistsociety.substack.com/p/dude-wheres-my-supersonic-jet)
+
+本文概述了三家公司——Boom Supersonic、Astro Mechanica和Hermeus——为重振并革新超音速航空旅行所做的努力。自协和式飞机退役以来，该领域一直停滞不前。
+
+**Boom Supersonic**采取了最直接的商业路径。该公司开发了具备“无音爆”特性的喷气式飞机（Overture），并为其定制了高效适配1.7马赫飞行的发动机（Symphony）。通过向航空公司销售飞机，其目标是以商务舱价格提供飞行时间减半的跨大西洋航班，预计首飞时间在2033年左右。
+
+**Astro Mechanica**正进行更彻底的重新设计。其自适应发动机可在高效涡轮风扇模式与高速冲压发动机模式间切换，有望实现高超音速飞行。该公司计划采用更便宜的液化天然气（LNG）及点对点按需航空模式，使超音速旅行价格与常规航班相当，并计划从国防合同起步。
+
+**Hermeus**专注于实现5马赫高超音速飞行。其混合动力Chimera发动机结合了用于起飞的涡轮喷气发动机和用于高速飞行的冲压发动机。秉持快速测试理念，该公司首先开发自主军用飞机以创造收入并验证技术，目标是在2030年代推出20座商用喷气机（Halcyon）。
+
+文章总结指出，三家公司均拥有可行路径：Boom正完善现有技术以瞄准近期市场，Astro通过重塑发动机和商业模式追求经济性，而Hermeus则凭借快速创新押注极致速度。
+
+---
+
+## 5. Masonite（Python Web框架）作者Joe Mancuso逝世
+
+**原文标题**: Passing of Joe Mancuso author of Masonite (Python web framework)
+
+**原文链接**: [https://github.com/MasoniteFramework/masonite/discussions/853](https://github.com/MasoniteFramework/masonite/discussions/853)
+
+本文宣布了Masonite Python网络框架的创建者及主要维护者乔·曼库索的离世。该消息由社区成员"basicallysteve"发布，他透露曼库索因健康并发症去世。
+
+文章强调了曼库索对Masonite项目的深切投入，指出即使在与严重健康问题抗争期间，他仍持续投入工作。作者呼吁社区支持他的家人，并强调了开源软件的协作精神，希望该项目能继续沿着曼库索的愿景发展。
+
+公告中包含两条社区成员的回复，表达了他们的哀悼之情，并分享了曼库索对开源社区的热情与贡献的个人经历。整体基调充满对逝者的缅怀、对其遗产的尊重，并号召社区共同推动项目继续前进。
+
+---
+
+## 6. Show HN: Prism.Tools – 免费且注重隐私的开发人员工具集
+
+**原文标题**: Show HN: Prism.Tools – Free and privacy-focused developer utilities
+
+**原文链接**: [https://blgardner.github.io/prism.tools/](https://blgardner.github.io/prism.tools/)
+
+**概述：**
+
+Prism.Tools 是一个免费、注重隐私的开发者网络工具集合。该平台强调所有处理均在用户浏览器本地完成，这意味着数据不会发送至外部服务器，从而确保隐私安全。
+
+该套件分为多个类别，包括格式化与解析工具、安全工具、视觉与CSS实用程序、生成器以及编码与转换工具。服务宣传为“永久免费”，并专为速度和便捷性而设计。
+
+界面还显示用户参与度指标，包括“已使用工具”数量和“可用”工具总数，并设有“最近使用工具”区域以便快速访问。
+
+---
+
+## 7. Show HN: Jax-JS，面向WebGPU的JavaScript数组库
+
+**原文标题**: Show HN: Jax-JS, array library in JavaScript targeting WebGPU
+
+**原文链接**: [https://ss.ekzhang.com/p/jax-js-an-ml-library-for-the-web](https://ss.ekzhang.com/p/jax-js-an-ml-library-for-the-web)
+
+**"Show HN: Jax-JS，面向WebGPU的JavaScript数组库" 摘要**
+
+作者介绍了 **jax-js**，这是一个全新的开源JavaScript机器学习库，完全在浏览器中运行。它受谷歌JAX启发，通过将JavaScript代码编译为优化的WebGPU和WebAssembly内核，绕过了JavaScript解释器在密集数值循环上的限制，从而在Web上实现了高性能数值计算。
+
+主要特性包括：
+*   类JAX的API，用于数组操作、自动微分（`grad`）、即时编译（`jit`）和向量化（`vmap`）。
+*   可在WebGPU（用于GPU加速）和WebAssembly后端上执行。
+*   能够直接在浏览器中构建和训练ML模型（如在MNIST上训练神经网络），并支持交互式实时编辑。
+
+该库的架构将高级“前端”（处理自动微分、跟踪和面向用户的API）与低级“后端”（生成和执行高效计算内核）分离。虽然性能已颇具前景（例如矩阵乘法达到>3 TFLOP/s），但作者指出仍有很大的优化空间，特别是对于卷积等操作。
+
+该项目被视为向浏览器引入功能齐全的ML框架的基础性一步，有望催生新型交互式Web应用。
+
+---
+
+## 8. 围栏马
+
+**原文标题**: enclose.horse
+
+**原文链接**: [https://enclose.horse/](https://enclose.horse/)
+
+无法访问文章链接。
+
+---
+
+## 9. 高性能数据库管理系统与io_uring：适用场景与使用方法
+
+**原文标题**: High-Performance DBMSs with io_uring: When and How to use it
+
+**原文链接**: [https://arxiv.org/abs/2512.04859](https://arxiv.org/abs/2512.04859)
+
+本文研究了利用Linux **io_uring**接口提升数据库管理系统（DBMS）I/O性能的方法。作者指出，尽管io_uring为存储和网络操作提供了统一、低开销的异步接口，但简单地替换传统I/O方法并不能保证性能提升。
+
+研究明确了io_uring最具效益的两个主要应用场景：
+1.  **存储密集型操作**，例如缓冲管理器中的操作。
+2.  **网络密集型分析工作负载**，适用于高吞吐量的数据混洗。
+
+研究进一步分析了**注册缓冲区**和**透传I/O**等高级io_uring特性对端到端性能的影响。一个关键发现是：只有当底层优化与整体系统架构协调一致时，才能转化为系统级的性能提升。
+
+基于评估结果，作者为I/O密集型系统实现io_uring提供了实用的设计准则，并通过**PostgreSQL**的案例研究验证了这些准则的有效性——在其最近的io_uring集成中应用相关建议后，系统性能提升了**14%**。
+
+总之，本文为DBMS开发者提供了一个细致、基于实证的框架，帮助其判断*何时*以及*如何*有效利用io_uring以获得切实的性能收益。
+
+---
+
+## 10. 为什么智能体比其他人工智能更重要
+
+**原文标题**: Why agents matter more than other AI
+
+**原文链接**: [https://substack.com/home/post/p-182047799](https://substack.com/home/post/p-182047799)
+
+本文认为，AI智能体代表着比聊天机器人或图像生成器等其他形式的人工智能更为重大的技术变革。其核心区别在于，智能体被设计为能够自主执行多步骤任务——例如规划旅行、开展研究或编写代码——通过分解目标、采取行动（如使用软件、浏览网页）并根据结果进行调整来实现。
+
+作者乔什·阿尔布雷希特指出，虽然当前的人工智能擅长处理单步骤任务（回答问题、生成图像），但智能体正朝着处理需要连续决策的复杂现实目标迈进。这种自主性可以通过自动化整个工作流程，显著提高生产力。
+
+文章提出，开发功能强大的智能体是下一个关键前沿领域，因为它们有望改变我们与计算机的交互方式，从直接下达指令转向委托高层次目标。正是这种广泛而实际的影响潜力，使得智能体被认为比其他人工智能进步“更为重要”。
+
+---
+
+## 11. 龙芯架构在Box64上的改进
+
+**原文标题**: Loongarch Improvements with Box64
+
+**原文链接**: [https://box86.org/2026/01/new-box64-v0-4-0-released/](https://box86.org/2026/01/new-box64-v0-4-0-released/)
+
+Box64 v0.4.0新版为ARM64、RISC-V和龙架构平台带来了显著改进。关键成就是在所有三种架构上实现了Linux版Steam的稳定运行，同时在战网及其他游戏方面取得进展，不过稳定性可能因地区而异。
+
+该版本包含重大重构，例如新的通用操作码解码器简化了维护并增强了动态重编译支持。已开始通过回收未使用的本地代码块来减少内存占用。性能优化持续推进，特别针对ARM64的循环检测进行了重点优化。
+
+龙架构进展最大，现已支持Steam、Wine和Proton（需要4K页大小内核），性能适中的3A6000 CPU搭配强劲GPU时表现出乎意料。RISC-V动态重编译已趋成熟，可实现Steam和Proton运行，但受当前硬件39位地址空间限制，DRM保护内容仍受限。
+
+文章指出同步机制（ESync、FSync、NTSync）对Wine/Proton性能至关重要。虽然支持ESync/FSync，但部分游戏（如Rockstar或Xbox服务）可能需要禁用它们。NTSync显示出可观的性能提升，但需要最新内核和Wine版本。
+
+总体而言，Box64 v0.4.0在非主流CPU架构的兼容性和性能方面实现了重大跨越。
+
+---
+
+## 12. 00年代初期的电子游戏网站
+
+**原文标题**: Video Game Websites in the early 00s
+
+**原文链接**: [https://www.webdesignmuseum.org/exhibitions/video-game-websites-in-the-early-00s](https://www.webdesignmuseum.org/exhibitions/video-game-websites-in-the-early-00s)
+
+根据所提供的内容，这篇文章似乎是一篇关于电子游戏《模拟人生》及其发布年份的简短列表式条目。
+
+主要观点是，由Maxis开发、艺电发行的热门生活模拟游戏《模拟人生》于2000年发布。文章强调这款游戏是21世纪初电子游戏网站和文化的显著代表。
+
+尽管内容简洁，但关键信息在于《模拟人生》是那个时代的标志性作品，很可能在游戏网站上占据显著位置，用于发布新闻、攻略（例如如何使用“rosebud”等作弊码）以及玩家分享故事和自定义内容的社区论坛。其2000年的发布标志着它是一款对21世纪初数字游戏格局有重大贡献的开创性游戏。
+
+---
+
+## 13. 为隔离网络定制专属数据二极管
+
+**原文标题**: Creating a Bespoke Data Diode for Air‑Gapped Networks
+
+**原文链接**: [https://nelop.com/bespoke-data-diode-airgap/](https://nelop.com/bespoke-data-diode-airgap/)
+
+本文详细介绍了一种定制数据二极管解决方案，用于从气隙网络中安全提取操作数据。客户运营关键基础设施，需要将系统日志和性能数据导出至外部监控团队，同时不破坏网络的物理隔离。
+
+核心解决方案采用两台树莓派设备——一台位于安全内部网络，另一台位于外部监控网络——通过光耦合器连接。该组件利用光传输数据，确保严格的单向流动且无电气连接，从而维持气隙隔离。树莓派上的定制脚本优先保障可靠、无损的数据传输而非高速传输，使该系统适用于关键监控日志。
+
+团队最初测试了标准串行端口，但最终采用UART接口以实现更稳定可靠的单向通信链路。这一定制化设置成功帮助客户在保持气隙环境安全完整性的同时，获得了至关重要的操作可视性。
+
+文章最后将此项目定位为该公司专业能力的例证，展现了其为高风险行业复杂挑战量身打造安全技术解决方案的专长。
+
+---
+
+## 14. 我想要一台不存在的相机——于是我自己造了一台。
+
+**原文标题**: I wanted a camera that doesn't exist – so I built it
+
+**原文链接**: [https://medium.com/@cristi.baluta/i-wanted-a-camera-that-doesnt-exist-so-i-built-it-5f9864533eb7](https://medium.com/@cristi.baluta/i-wanted-a-camera-that-doesnt-exist-so-i-built-it-5f9864533eb7)
+
+**《“我想要一台不存在的相机，于是我造了它”摘要》**
+
+作者是一位工程师兼摄影师，他想要一台简单、无干扰的数码相机用于街头摄影。他认为现代相机过于复杂，菜单、设置和连接功能太多，反而削弱了拍摄的核心体验。
+
+他理想中的相机有非常具体的
+
+由于没有商业相机符合这一设想，他决定自己打造一台，命名为“Pixii”。该项目涉及重大的工程挑战，包括设计定制机身、集成索尼传感器、创建带数字叠加的独特光学取景器，以及开发配套的智能手机应用程序用于图像传输和查看（因为相机本身没有屏幕）。
+
+文章详细介绍了原型设计的迭代过程、小型化和散热管理的困难，以及设计选择背后旨在实现专注、有意识的摄影理念。最终成果是Pixii相机，作者已将其转化为商业产品，这突显了个人对特定工具的渴望如何催生出为志同道合的摄影师打造的小众产品。
+
+---
+
+## 15. 大公司为何屡屡失败：堆栈谬误（2016）
+
+**原文标题**: Why Big Companies Keep Failing: The Stack Fallacy (2016)
+
+**原文链接**: [https://techcrunch.com/2016/01/18/why-big-companies-keep-failing-the-stack-fallacy/](https://techcrunch.com/2016/01/18/why-big-companies-keep-failing-the-stack-fallacy/)
+
+本文介绍了“堆栈谬误”的概念，即企业常误以为能够轻易基于自身核心能力，向上拓展至相邻市场层开发产品。作者指出，这正是大公司向新领域扩张时失败的主要原因。
+
+关键案例印证了这一观点：VMware（虚拟化技术）未能战胜AWS（云基础设施），Oracle（数据库）在Salesforce（CRM SaaS）面前举步维艰，IBM将个人电脑操作系统市场拱手让予微软。即便是苹果和谷歌，也发现“向下深耕”（如苹果自研芯片）比“向上拓展”（如苹果地图或谷歌的社交网络尝试）更容易创新。
+
+其根源被归结为人性弱点：企业往往高估自身技术知识，却低估了理解新市场层客户需求的至关重要性。成功的瓶颈不在于“如何实现”（技术执行），而在于“构建什么”（产品与市场匹配）。技术能力可以获取，但对陌生市场需求的理解却难以通过购买或内部建设快速获得。
+
+核心启示在于：产品管理——即懂得为特定客户构建什么——远比依赖熟悉的基础技术进行开发更为重要。
+
+---
+
+## 16. 分层自回归建模用于内存高效语言生成
+
+**原文标题**: Hierarchical Autoregressive Modeling for Memory-Efficient Language Generation
+
+**原文链接**: [https://arxiv.org/abs/2512.20687](https://arxiv.org/abs/2512.20687)
+
+**《PHOTON：用于光速且内存高效语言生成的分层自回归模型》摘要**
+
+本文介绍了PHOTON，这是一种新颖的架构，旨在克服基于Transformer的语言模型在文本生成过程中的关键低效问题。其解决的核心问题是Transformer的“水平式”逐令牌扫描机制，即每个新令牌都需要对不断增长的过往令牌序列进行注意力计算。这导致了高内存占用（源于庞大的KV缓存），并使长上下文解码过程变得缓慢且受内存限制。
+
+PHOTON的解决方案是一个**分层自回归模型**。它并非维护一个扁平的序列，而是维护一个多分辨率的潜在状态层次结构。一个**自底向上的编码器**逐步将令牌压缩成低比特率、概括性的上下文表示。随后，轻量级的**自顶向下解码器**利用这些压缩的上下文来重建细粒度的令牌预测。
+
+与Transformer的KV缓存相比，这种垂直的、分层的访问模式极大地减少了每个生成步骤中需要从内存读取和写入的数据量。其宣称的结果是吞吐量与内存占用的权衡得到了极大改善，实验结果显示**单位内存下的吞吐量最高可提升1000倍**，并且在长上下文和多查询生成任务中展现出显著优势。
+
+---
+
+## 17. 展示 HN：Mantic.sh – 无需嵌入，0.46秒内搜索48万文件
+
+**原文标题**: Show HN: Mantic.sh – Search 480k files in 0.46s without embeddings
+
+**原文链接**: [https://github.com/marcoaapfortes/Mantic.sh](https://github.com/marcoaapfortes/Mantic.sh)
+
+**Mantic.sh** 是一款专为AI代理设计的结构化代码搜索引擎，无需使用嵌入或向量数据库即可实现超快速文件检索。它通过分析文件结构和元数据（如文件路径和名称）来理解查询意图，能在500毫秒内为海量代码库（如Chromium的48万个文件）完成相关文件排序。
+
+核心优势包括**速度**（Chromium检索仅需0.46秒）、**效率**（通过预读文件筛选最高减少63%的token消耗）和**隐私保护**（完全本地运行，无数据外传）。个人用户和开源项目可免费使用，商业产品集成需获取授权许可。
+
+支持通过`npx`或源码快速安装，并通过MCP协议与Cursor、Claude Desktop等工具无缝集成。其核心算法会优先处理Git跟踪文件，采用业务逻辑感知的评分机制，并配备影响分析功能以评估代码变更的连锁反应。
+
+---
+
+## 18. 用更少的音节表达数字
+
+**原文标题**: Using fewer syllables to express numbers
+
+**原文链接**: [https://thegraycuber.github.io/fast_numbers](https://thegraycuber.github.io/fast_numbers)
+
+**《用更少音节表达数字》概要**
+
+本文探讨了英语数字命名（尤其是多位数）的低效性，并提出了一种更简洁的替代系统。作者的核心观点是，像“三百四十七”（8个音节）这样的数字表达方式过于冗长。
+
+提出的解决方案是一种“逐位数字”系统，即每个数字使用一组优化的单音节词单独发音。作者建议如下映射：
+* 0 = "zeer" / "zer"
+* 1 = "wan"
+* 2 = "too"
+* 3 = "thre"
+* 4 = "for"
+* 5 = "fiv"
+* 6 = "six"
+* 7 = "sev"
+* 8 = "ait"
+* 9 = "nin"
+
+使用此系统，“347”变为“thre for sev”（3个音节），较传统的8个音节大幅减少。文章认为，这种系统表达更快、更易解析，尤其适用于电话号码或ID等长数字串。它通过避免标准英语中复杂的规则和例外（如“eleven”、“twenty”、“hundred”），保持了清晰度。
+
+作者承认存在挑战，例如初期的学习曲线和可能因发音相似引起的混淆，但主张在数据交流中，长期来看，其在速度和简洁性上的收益是巨大的。核心论点是，为了精确、高效地传输数字数据，一个精简的、基于规则的语音系统优于传统的数字命名方式。
+
+---
+
+## 19. 适用于x86-64架构的C++23高性能仅头文件容器库
+
+**原文标题**: High-performance header-only container library for C++23 on x86-64
+
+**原文链接**: [https://github.com/kressler/fast-containers](https://github.com/kressler/fast-containers)
+
+这是一个专为x86-64 Linux优化的高性能、仅头文件的C++23容器库。其核心组件是B+树（`btree`），针对大规模数据集（例如1000万个元素）设计，性能超越行业标准如Abseil的B+树和`std::map`达2-5倍。
+
+关键性能驱动因素包括：与定制**大页分配器**的集成（减少TLB未命中和分配开销，带来3-5倍加速）以及**SIMD加速搜索**（使用AVX2指令集，节点查找速度提升3-10%）。该B+树提供可调、缓存友好的节点大小，并具有类似`std::map`的API接口。
+
+库提供三种分配器类型：`HugePageAllocator`（推荐用于B+树）、适用于变长分配的`MultiSizeHugePageAllocator`（例如配合`absl::btree_map`使用），以及支持高级控制和共享池的`PolicyBasedHugePageAllocator`。运行需具备AVX2指令集的CPU、C++23编译器，并建议配置大页内存以获得最佳性能。该项目仍在持续开发中，目前主要在Linux环境下进行测试。
+
+---
+
+## 20. 为什么Gmail应用占用700 MB空间？
+
+**原文标题**: Why is the Gmail app 700 MB?
+
+**原文链接**: [https://akr.am/blog/posts/why-is-the-gmail-app-700-mb](https://akr.am/blog/posts/why-is-the-gmail-app-700-mb)
+
+本文探讨了iOS版Gmail应用惊人的文件大小，其体积超过760MB，使其成为顶级免费应用中最臃肿的应用之一。作者指出，这是流行应用体积近年来呈指数级增长趋势的一部分，Gmail本身在2017年就从约12MB跃升至超过200MB。
+
+通过比较苹果、谷歌和微软的应用，数据显示谷歌的应用（如Gmail、云端硬盘和Chrome）始终明显大于苹果的同类应用，后者通常不到20MB。例如，苹果原生邮件应用为8.7MB，而Gmail为673MB——相差近80倍。
+
+作者质疑这些应用在核心功能未成比例增加的情况下为何需要如此大的存储空间，认为这种臃肿可能会降低性能并占用设备存储。这对于手机存储空间有限的用户尤其成问题，影响他们存储照片、视频和音乐的能力，并迫使他们频繁重新下载已卸载的应用。
+
+虽然重点在iOS上，但对Android版Gmail的检查显示其体积小得多，约为185MB，暗示这个问题可能具有平台特定性。文章最后对应用体积无法解释的膨胀表示沮丧，并以150MB的微软身份验证器作为另一个令人困惑的例子。
+
+---
+
+## 21. 我的塔麻可吉是一个玩蛇蛇大作战的强化学习智能体。
+
+**原文标题**: My Tamagotchi is an RL agent playing Slither.io
+
+**原文链接**: [https://nkasmanoff.github.io/#/blog/tamagotchi-rl-slitherio](https://nkasmanoff.github.io/#/blog/tamagotchi-rl-slitherio)
+
+本文描述了一个项目，作者诺亚·卡斯马诺夫训练了一个强化学习智能体来玩在线游戏《*Slither.io*》，并将其呈现为“数字宠物”或电子鸡。
+
+核心思想是创建一个自主智能体，通过基于游戏内大小的奖励函数，从像素中学习游戏。作者详细阐述了技术挑战，包括因游戏节奏快而需要高效轻量模型，以及在复杂的多人环境中定义稳定奖励信号的难度。
+
+该项目以奇思妙想的方式呈现：这个智能体不仅是一个机器人，更是一只用户可观察其在游戏世界中学习与生存的“电子鸡”。这种类比凸显了机器学习开发中互动与培育的层面。总结将捕捉技术性强化学习实验（环境设置、奖励塑造、模型限制）与将AI智能体拟人化为作者培育的数字生物这一趣味呈现方式的结合。
+
+---
+
+## 22. 大众汽车重新启用物理按键
+
+**原文标题**: Volkswagen Brings Back Physical Buttons
+
+**原文链接**: [https://www.caranddriver.com/news/a69916699/volkswagen-interior-physical-buttons-return/](https://www.caranddriver.com/news/a69916699/volkswagen-interior-physical-buttons-return/)
+
+大众汽车正在其车辆内饰中重新引入物理按钮和开关，从欧洲市场专属的改款ID. Polo开始。这标志着该公司对其先前依赖电容式触摸控制的做法进行了重大调整，许多客户曾对此感到不满。
+
+新设计包括方向盘上用于巡航控制和媒体的物理按钮，以及仪表盘上用于温度和风速等气候控制的专用开关。然而，一些功能，如后窗除霜器和座椅加热，仍保留在触摸屏界面中。
+
+这一向物理控制的转变始于近期在美国市场更新的高尔夫和途观车型。大众尚未正式确认哪些车型将采用新的驾驶舱设计，但预计即将在美国推出的改款ID.4 SUV将率先采用，并可能扩展到ID.Buzz等其他电动车型。这一变化似乎主要集中在大众的电动汽车产品线上。
+
+---
+
+## 23. AWS周六上调GPU价格15%，希望你没注意到
+
+**原文标题**: AWS raises GPU prices 15% on a Saturday, hopes you weren't paying attention
+
+**原文链接**: [https://www.theregister.com/2026/01/05/aws_price_increase/](https://www.theregister.com/2026/01/05/aws_price_increase/)
+
+AWS已将其机器学习EC2容量块的价格上调约15%，这标志着其长期降低云成本趋势的重大转变。此次涨价于一个周六悄然实施，主要影响用于高强度机器学习任务的高端GPU实例（如p5e.48xlarge）。
+
+文章将此视为一个潜在风向标，打破了客户长期以来对AWS价格只降不升的预期。分析指出，涨价可能源于全球GPU供应紧张及AI工作负载的高需求。尽管AWS声称调整反映了预期的供需模式，但此举可能为Azure和GCP等竞争对手提供竞争性话题。
+
+关键问题在于对拥有企业折扣计划（EDP）的大型客户的影响——即使折扣比例不变，其绝对成本仍将上升。作者认为这开创了危险先例，使得未来对其他紧缺资源（如内存或数据传输）的提价更有可能发生。核心结论是：这很可能标志着AWS定价新常态的开端，而非一次性异常现象。
+
+---
+
+## 24. Show HN: Stash – 通过命令行同步Markdown文件与Apple笔记
+
+**原文标题**: Show HN: Stash – Sync Markdown Files with Apple Notes via CLI
+
+**原文链接**: [https://github.com/shakedlokits/stash](https://github.com/shakedlokits/stash)
+
+**Stash** 是一款命令行工具，可在本地 Markdown 文件与 macOS 上的 Apple Notes 之间实现双向同步。它针对开发者和写作者的特殊工作流需求而设计，这些人偏爱用 Markdown 编辑笔记，但又希望借助 Apple Notes 的简洁性和跨设备同步功能来访问笔记。
+
+该工具通过简单的 `stash push` 和 `stash pull` 命令操作。推送 Markdown 文件会在 Apple Notes 中创建对应的笔记，并在文件的 front-matter 中添加唯一的 `apple_notes_id` 以进行追踪。后续推送会更新现有笔记。拉取操作则会将 Apple Notes 中的任何更改同步回本地 Markdown 文件，并保留 front-matter。
+
+Stash 以稳定和简洁为设计目标，核心功能使用 AppleScript 与 Notes 交互，Pandoc 进行 Markdown/HTML 转换，Bashly 构建 CLI 界面。它需要 macOS 系统、Apple Notes、Pandoc 和 `pcregrep` 支持。
+
+该项目是开源的，包含完整的测试套件，可通过 Homebrew 安装。其待办清单中规划了未来增强功能，如差异查看和附件支持。
+
+---
+
+## 25. DatBench：判别性、忠实性与高效性的视觉语言模型评估
+
+**原文标题**: DatBench: Discriminative, faithful, and efficient VLM evaluations
+
+**原文链接**: [https://arxiv.org/abs/2601.02316](https://arxiv.org/abs/2601.02316)
+
+本文介绍了**DatBench**，这是一个旨在改进视觉语言模型（VLM）评估的框架。作者指出，当前的评估实践存在三个主要问题，违背了关键需求：**忠实性**（对真实世界应用）、**区分性**（对不同质量的模型）和**效率**。
+
+论文指出了现有基准测试中的具体缺陷模式：
+1.  **多项选择题形式**鼓励猜测，难以反映下游任务，且随着模型改进迅速饱和。
+2.  **可盲目解答的问题**（无需图像即可回答）在某些数据集中占比高达70%。
+3.  **错误标注或模糊样本**在某些数据集中影响高达42%的示例。
+4.  **高计算成本**，评估消耗近20%的开发算力。
+
+作者并未抛弃现有基准，而是提出**通过转换和筛选进行优化**。主要发现包括：
+*   将多项选择题转换为**生成式任务**后，模型能力显著下降（高达35%）。
+*   过滤掉可盲目解答和错误标注的样本，**提高了区分能力**，同时**降低了计算成本**。
+
+作者发布了两项资源：
+*   **DatBench-Full**：涵盖九项VLM能力的33个数据集的清理套件。
+*   **DatBench**：一个区分性子集，在保持原始数据集区分能力的同时，**平均实现13倍加速**（最高达50倍）。
+
+总之，这项工作提供了一套方法论和工具包，使VLM评估在模型持续扩展的背景下更加严谨、可靠和可持续。
+
+---
+
+## 26. Show HN: ccrider – 搜索与恢复您的Claude代码会话 – TUI / MCP / CLI
+
+**原文标题**: Show HN: ccrider - Search and Resume Your Claude Code Sessions – TUI / MCP / CLI
+
+**原文链接**: [https://github.com/neilberkman/ccrider](https://github.com/neilberkman/ccrider)
+
+**ccrider** 是一款帮助开发者直接从终端搜索、浏览和恢复过往 Claude Code 聊天会话的工具。它解决了在本地 JSON 文件中寻找特定对话的难题。
+
+**主要功能：**
+*   **TUI 浏览器：** 交互式终端界面，支持搜索和筛选以导航会话。
+*   **全文搜索：** 使用 SQLite 即时搜索所有会话消息，可按项目和日期筛选。
+*   **会话恢复：** 一键启动 `claude --resume`，自动定位正确的会话和目录。
+*   **MCP 服务器：** 允许 Claude AI 自身搜索您的会话历史以获取相关上下文。
+*   **增量同步：** 高效导入新消息，无需重新处理所有数据。
+
+**工作原理：** 首次使用 `ccrider sync` 导入会话后，您可以使用 `ccrider tui` 进行可视化浏览，或从 CLI 使用 `ccrider search`。它是一个单一、无依赖的 Go 二进制文件。
+
+**目的：** 通过可靠解析所有消息类型、提供真正的全文搜索和无缝的会话恢复功能，它解决了其他工具的局限性，让开发者能持续专注于工作流程。
+
+---
+
+## 27. Gemini协议部署统计
+
+**原文标题**: Gemini Protocol Deployment Statistics
+
+**原文链接**: [https://www.obsessivefacts.com/gemini-proxy?uri=gemini%3A%2F%2Fgemini.bortzmeyer.org%2Fsoftware%2Flupa%2Fstats.gmi](https://www.obsessivefacts.com/gemini-proxy?uri=gemini%3A%2F%2Fgemini.bortzmeyer.org%2Fsoftware%2Flupa%2Fstats.gmi)
+
+本文基于截至2026年1月爬虫收集的数据，呈现了Gemini协议生态系统的统计信息。数据库包含646,369个URI，其中560,646个近期可成功访问。在这些可访问的URI中，有431,340个提供Gemini内容（text/gemini），使其成为主导媒体类型。
+
+主要发现包括：
+*   **内容大小：** Gemini页面的中位大小为1,466字节，半数页面小于2,318字节，表明其文本轻量化的环境特征。
+*   **语言分布：** 英语是最常见的指定语言，但大多数页面未声明语言。
+*   **基础设施：** 已知有4,825个胶囊（服务器），其中3,251个近期活跃。绝大多数（92.5%）使用自签名证书，且几乎所有服务器均采用TLS 1.3协议。
+*   **顶级域名（TLDs）：** 注册域名中最常见的顶级域为.com、.net和.org，而.online域名因提供子域名托管服务，承载了最多独立胶囊。
+
+统计结果亦承认存在局限，例如部分胶囊屏蔽爬虫访问，以及单胶囊URL数量限制，这意味着实际的Gemini空间规模大于记录数据。
+
+---
+
+## 28. 在零下50摄氏度的河流中修复船体（2022年）
+
+**原文标题**: Repair a ship’s hull still in the river in -50˚C (2022)
+
+**原文链接**: [https://eugene.kaspersky.com/2022/04/26/how-to-repair-the-underside-of-a-ships-hull-still-in-the-river-in-50%CB%9Ac-yakutsk/](https://eugene.kaspersky.com/2022/04/26/how-to-repair-the-underside-of-a-ships-hull-still-in-the-river-in-50%CB%9Ac-yakutsk/)
+
+这篇旅行博客详细记录了在西伯利亚雅库茨克附近的扎塔伊船厂，于零下50摄氏度的极寒冬季中观察到的一项独特的船舶维修与保养作业。核心挑战在于缺乏足够的干船坞，用于维修勒拿河上约100至130艘船只的船体和螺旋桨。
+
+文章重点介绍了当地针对这一难题的创新解决方案：工人们不使用干船坞，而是手动在厚厚的河冰上切割沟槽，以接触船只的水下部分。他们使用链锯和镐逐步进行，先切割一层冰，然后等待下方河水冻结，再切割下一层，如此反复直至所需部分暴露出来。
+
+文章还指出，该地区水域较浅，需要使用专用船只，包括明轮船甚至配备轮子以应对极低水位的船只。文中提到，这项体力消耗巨大的切冰工作报酬丰厚，且船厂正在扩建，新建的设施将同时用于维修和造船。
+
+总体而言，文章将此视为人类在世界上最极端环境之一中展现出的非凡适应力和创造力的杰出范例。
+
+---
+
+## 29. 使用GeoSpy在30秒内定位车辆照片位置
+
+**原文标题**: Locating a Photo of a Vehicle in 30 Seconds with GeoSpy
+
+**原文链接**: [https://geospy.ai/blog/locating-a-photo-of-a-vehicle-in-30-seconds-with-geospy](https://geospy.ai/blog/locating-a-photo-of-a-vehicle-in-30-seconds-with-geospy)
+
+本文详细演示了AI工具GeoSpy，该工具能在30秒内通过车辆照片实现地理定位。用户提交照片后，GeoSpy会分析道路标线、街道标志、植被、建筑和车型等视觉线索，从而在地图上精确标定位置。
+
+关键要点包括：
+*   **速度与准确性**：GeoSpy能在数秒内提供具体街道地址或坐标，展现了其强大的分析能力。
+*   **技术原理**：该AI不依赖元数据（如EXIF数据），而是通过计算机视觉解析场景视觉特征，并与其庞大的训练数据集进行比对。
+*   **潜在影响**：文章着重指出该技术引发的重大隐私与安全隐患，说明看似匿名的车辆照片可能被追踪至精确位置，可能助长跟踪、监控或情报收集行为。
+*   **可及性**：作为公开的在线工具，GeoSpy使这种强大功能不再局限于政府或企业，任何人都可使用。
+
+总之，文章将GeoSpy描述为一款极其快速精准的地理定位工具，同时强烈警示其在数字时代因易用性而引发的深层隐私风险。
+
+---
+
+## 30. 65%的Hacker News帖子带有负面情绪，且表现更佳
+
+**原文标题**: 65% of Hacker News posts have negative sentiment, and they outperform
+
+**原文链接**: [https://philippdubach.com/standalone/hn-sentiment/](https://philippdubach.com/standalone/hn-sentiment/)
+
+一项针对32,000篇Hacker News帖子的研究发现，65%的帖子带有负面情绪，且这些帖子的表现显著优于积极帖子。平均而言，负面帖子获得35.6分，比整体平均分28分高出27%。
+
+该分析还涵盖了参与度动态（如衰减曲线），并使用了六种不同的情感模型——包括基于Transformer的分类器和大型语言模型——以确认这种持续的负面倾向。主要结果基于高效的DistilBERT模型得出。
+
+研究识别的“负面性”通常涉及实质性批评，例如对技术公告的怀疑或对行业实践的抱怨，而非人身攻击。作者认为，高参与度可能既源于负面情绪本身，也源于话题的争议性，这些话题更容易引发关注和辩论。
+
+完整的研究预印本已在SSRN发布，计划后续公开全部代码、数据集及交互式仪表板。
+
+---
+
