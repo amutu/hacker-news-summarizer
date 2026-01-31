@@ -1,0 +1,476 @@
+# Hacker News 热门文章摘要 (2026-01-31)
+
+这是今日 [Hacker News](https://news.ycombinator.com/) 上最热门的文章摘要。
+
+## 1. 移动运营商可以获取您的GPS定位信息。
+
+**原文标题**: Mobile carriers can get your GPS location
+
+**原文链接**: [https://an.dywa.ng/carrier-gnss.html](https://an.dywa.ng/carrier-gnss.html)
+
+本文揭示，移动运营商可通过内置蜂窝协议获取用户的精确GPS位置，而不仅仅是粗略的基站数据。文中解释，RRLP（2G/3G）和LPP（4G/5G）等标准允许网络在用户无感知的情况下，以米级精度向设备请求并接收全球导航卫星系统坐标。
+
+作者指出，这一功能虽非机密，却未广为人知，并已被美国缉毒局、以色列辛贝特等机构用于监控，包括新冠肺炎接触者追踪。文章提出的关键担忧在于，外国政府行为者是否可能利用这些协议进行全球间谍活动。
+
+文章赞扬苹果iOS 26.3更新限制了通过基站共享的“精确位置”数据，但认为这远远不够。最后强调，要完全保护隐私，用户应能禁用对运营商的全球导航卫星系统响应，并在收到位置请求时获得通知。
+
+---
+
+## 2. Genode OS是一个用于构建高度安全的专用操作系统的工具套件。
+
+**原文标题**: Genode OS is a tool kit for building highly secure special-purpose OS
+
+**原文链接**: [https://genode.org/about/index](https://genode.org/about/index)
+
+**概述**
+
+Genode OS 是一个用于构建高度安全的专用操作系统的框架。其核心设计原则是递归的沙盒架构，每个程序都在隔离环境中运行，仅拥有所需的最小资源和访问权限。程序可以创建和管理子沙盒，形成策略强制的层级结构。与传统操作系统相比，这种架构极大地减少了攻击面。
+
+该框架结合了 Unix 小型可组合组件的理念与 L4 微内核原则，并将其扩展至所有传统操作系统功能——如内核、驱动程序和文件系统——均作为用户级组件实现。
+
+它支持多种 CPU 架构（x86、ARM、RISC-V），并可在多个内核上运行，包括多种 L4 系列微内核、Linux 及其自定义内核。功能涵盖虚拟化支持和超过 100 个即用型组件。
+
+Genode 是开源项目，同时也通过 Genode Labs 提供商业支持。
+
+---
+
+## 3. 揭秘ARM SME以优化通用矩阵乘法
+
+**原文标题**: Demystifying ARM SME to Optimize General Matrix Multiplications
+
+**原文链接**: [https://arxiv.org/abs/2512.21473](https://arxiv.org/abs/2512.21473)
+
+本文介绍了**MpGEMM**，一个专为优化ARM可扩展矩阵扩展（SME）架构上的通用矩阵乘法（GEMM）而设计的开源库。作者指出，现有线性代数库未能充分利用SME的潜力，尤其对于大型矩阵而言。
+
+通过对SME架构特征的系统分析，作者总结出优化指导原则。MpGEMM通过以下关键技术实现这些原则：
+*   **缓存感知分区**以提升数据局部性。
+*   结合即时转置的**高效数据打包**以减少开销。
+*   利用多向量加载和全部可用瓦片寄存器的**专用微内核**，以最大化计算吞吐量。
+
+该库在Apple M4 Pro处理器上使用DeepSeek和LLaMA模型的实际工作负载进行评估。结果显示，MpGEMM相比厂商优化的Apple Accelerate库平均获得**1.23倍的加速**，并显著优于其他开源方案。这项工作表明，基于架构感知的原则性设计能够为高性能计算和深度学习中的关键计算内核释放更高性能。
+
+---
+
+## 4. 美国已调查关于WhatsApp聊天不私密的说法
+
+**原文标题**: US has investigated claims WhatsApp chats aren't private
+
+**原文链接**: [https://www.bloomberg.com/news/articles/2026-01-29/us-has-investigated-claims-that-whatsapp-chats-aren-t-private](https://www.bloomberg.com/news/articles/2026-01-29/us-has-investigated-claims-that-whatsapp-chats-aren-t-private)
+
+无法访问文章链接。
+
+---
+
+## 5. 芬兰将禁止青少年使用社交媒体，终结“不受控制的人类实验”。
+
+**原文标题**: Finland to end "uncontrolled human experiment" with ban on youth social media
+
+**原文链接**: [https://yle.fi/a/74-20207494](https://yle.fi/a/74-20207494)
+
+芬兰正考虑禁止15岁以下儿童使用社交媒体，此前限制校园手机使用的举措被认为成效显著。总理彼得里·奥尔波支持该提案，指出对儿童身体活动与心理健康的担忧，公众支持率已升至约三分之二。
+
+研究员西尔娅·科索拉将芬兰青少年广泛使用社交媒体的现象描述为“失控的人类实验”，认为这与自残行为增加、饮食失调及性别间价值观差异有关，进一步激化了讨论。
+
+政府正参考澳大利亚于2023年12月实施的类似禁令，该政策对未能阻止16岁以下用户访问的平台处以罚款。初步报告显示，禁令虽让部分家长感到宽慰，但也引发了儿童的困惑和规避行为。
+
+然而，旅居澳大利亚的希欧娜·坎迪警告不应照搬澳洲模式，认为其属于被动应对。她建议芬兰应依托其享誉全球的教育体系，加大对儿童数字素养与安全教育投入，而非单纯依赖立法禁令。
+
+---
+
+## 6. CPython内部机制详解
+
+**原文标题**: CPython Internals Explained
+
+**原文链接**: [https://github.com/zpoint/CPython-Internals](https://github.com/zpoint/CPython-Internals)
+
+本文是一份个人学习指南与博客，专注于解析CPython解释器（版本3.8.0a0）的内部工作原理。主要面向具备Python经验的程序员，旨在帮助他们理解解释器的实现机制。
+
+核心内容分为以下几个主要部分：
+*   **对象：** 深入探讨基础Python类型（如`dict`、`int`、`str`、`list`）以及更高级类型（如生成器和类）的实现。
+*   **模块与库：** 涵盖标准模块（如`io`、`pickle`）和库（如`re`、`asyncio`）的内部原理。
+*   **解释器：** 解释关键的运行时机制，包括全局解释器锁（GIL）、垃圾回收、内存管理和导入系统。
+*   **扩展：** 讨论使用C API、Cython和C++扩展Python的方法。
+*   **语法与编译：** 概述从解析语法到生成最终代码对象的整个过程，即将Python源代码转换为字节码的流程。
+
+作者还整理了一份推荐学习材料清单（书籍、博客、视频），并鼓励通过拉取请求（用于修正、新文章、翻译）或议题（用于建议和提问）进行贡献。该仓库既是CPython内部原理的详细参考，也是一个开源知识库。
+
+---
+
+## 7. 现代网页的动态AVIF
+
+**原文标题**: Animated AVIF for the Modern Web
+
+**原文链接**: [https://arthur.pizza/2025/12/animated-avif-for-the-modern-web/](https://arthur.pizza/2025/12/animated-avif-for-the-modern-web/)
+
+本文阐述了如何创建动画AVIF文件，作为动画GIF的现代化优化替代方案。作者指出，尽管GIF格式已过时且效率低下，但对于短循环动画，AVIF能提供更优的压缩效果与画质。
+
+指南的核心是使用FFmpeg的技术操作流程。它概述了一个两步转换过程：首先，将视频源（如WEBM文件或GIF）转换为Y4M中间格式，并可选择设置帧率与尺寸限制；其次，使用SVT-AV1编码器以特定质量参数（`-crf 30`）将Y4M文件编码为最终的动画AVIF。
+
+文中特别指出，截至2025年底，在某些系统（特别是Debian 13）上直接一步从视频转换为AVIF可能会失败，因此必须通过Y4M中间步骤过渡。作者希望未来不再需要这种变通方案。整体目标是提供一种实用的方法，以生成更适合网络使用的动画AVIF文件。
+
+---
+
+## 8. 死亡笔记：L、匿名性与逃避熵（2011）
+
+**原文标题**: Death Note: L, Anonymity and Eluding Entropy (2011)
+
+**原文链接**: [https://gwern.net/death-note-anonymity](https://gwern.net/death-note-anonymity)
+
+本文通过信息论与计算机安全的视角，分析《死亡笔记》中的主角夜神月，将其与侦探L的猫鼠游戏构建为一个优化问题：夜神月必须最小化信息泄露。
+
+核心论点是，夜神月最初的匿名性（基于约70亿人口，需约33比特信息才能唯一识别）因一系列战略失误而迅速瓦解。作者以“比特”为单位量化这些失误导致匿名性损失的程度：
+
+1.  **使用独特手法（心脏麻痹）**：揭示存在超自然且精准的杀手，引起L的警觉。
+2.  **按日本时区安排死亡时间**：此模式泄露约6比特，将搜索范围缩小至日本。
+3.  **对L的诱饵（Lind L. Tailor）作出反应**：确认其身处关东地区，损失约1.6比特。
+4.  **使用父亲的警察权限**：最大的失误，通过直接关联调查损失约11比特。
+5.  **杀害FBI探员**：再损失约6比特。
+
+通过这些受自负驱使的非必要行动，夜神月挥霍了超过25比特的匿名性，使L得以接近并进行直接监视，最终注定败局。文章总结，夜神月的根本缺陷在于傲慢——他优先追求宏大戏剧性的宣告，而非操作安全。文中指出，若想保持隐匿，理性的使用者应模仿自然死因、避免规律行为，并间接运用死亡笔记的力量，以免制造可追踪的独特现象。
+
+---
+
+## 9. Guix系统初体验：来自Nix用户的视角
+
+**原文标题**: Guix System First Impressions as a Nix User
+
+**原文链接**: [https://nemin.hu/guix.html](https://nemin.hu/guix.html)
+
+本文详述了一位NixOS用户尝试Guix系统的体验，这是一个基于Scheme语言的声明式Linux发行版。作者因1.5.0版本改进了KDE支持而被Guix吸引。
+
+安装过程简单直接，但软件包下载速度极慢。安装后，由于自由驱动程序与作者的NVIDIA显卡不兼容，KDE Plasma桌面环境无法正常运行。通过更新和社区帮助解决问题的尝试均未成功。
+
+解决方案是使用**Nonguix**仓库获取非自由软件。然而首次尝试安装专有NVIDIA驱动时引发了内核恐慌。作者随后改用旧版Nonguix镜像，手动更新配置以使用更快的服务器，并成功安装了非自由的Linux内核和固件——同时避开了有问题的NVIDIA驱动包。最终获得了一个基础但可用的桌面环境。
+
+作者的目标是复现其在NixOS中的工作流程。他们成功配置了Firefox、Thunderbird、LibreOffice等核心工具，以及Rust、Zig和Scheme的开发环境。但也注意到一些妥协：Discord无法使用，配置Steam和NVIDIA显卡卸载功能（两者均属非自由软件）仍然困难，这正符合Guix的自由软件理念。
+
+总体而言，尽管在硬件支持和非自由软件方面遭遇了初步障碍，作者仍对Guix系统配置完成后所展现的声明式特性和功能表示赞赏。
+
+---
+
+## 10. 放弃向上游提交我的补丁，欢迎随时接手。
+
+**原文标题**: "Giving up upstream-ing my patches & feel free to pick them up"
+
+**原文链接**: [https://mail.openjdk.org/pipermail/hotspot-dev/2026-January/118080.html](https://mail.openjdk.org/pipermail/hotspot-dev/2026-January/118080.html)
+
+作者张冰武（xtex）宣布，在长达一年尝试将其Oracle贡献者协议（OCA）提交至OpenJDK上游未果后，决定放弃这一努力。尽管于2025年1月提交了协议并多次发送跟进邮件，但仅收到致歉，未获实质性进展或明确拒绝。由于拖延导致兴趣与空闲时间耗尽，作者最终决定终止此计划。
+
+作者已公开所有补丁供他人采纳提交。这些补丁包括：修复损坏的`llvm-config`检查、扩展Zero VM变体的默认线程栈大小以防止栈溢出，以及针对龙芯JDK分支的多个修补程序。作者表示，他人可自由重写这些补丁以满足OCA原创性要求，无需标注原作者信息。
+
+---
+
+## 11. 家里有ipinfo，或如何通过延迟在命令行中定位IP地理位置。
+
+**原文标题**: We have ipinfo at home or how to geolocate IPs in your CLI using latency
+
+**原文链接**: [https://blog.globalping.io/we-have-ipinfo-at-home-or-how-to-geolocate-ips-in-your-cli-using-latency/](https://blog.globalping.io/we-have-ipinfo-at-home-or-how-to-geolocate-ips-in-your-cli-using-latency/)
+
+本文介绍了一款利用网络延迟对IP地址进行地理定位的CLI工具，其灵感来源于ipinfo绕过不准确公共地理位置数据的方法。该工具依托拥有3000多个社区探测节点的Globalping网络，通过执行traceroute测量实现定位。
+
+其运行分为多个阶段：首先通过每个大洲的少量探测节点进行 ping 测试，确定目标IP所在大洲；随后在该大洲内使用大量探测节点精确定位国家。若目标位于美国，则第三阶段会识别所在州，第四阶段可进一步估算城市位置。
+
+作者指出，即使在ICMP被封锁的情况下，对最后一个可用跃点执行traceroute仍能有效工作，但该方法存在局限性。定位精度取决于探测节点的分布密度，且可通过更复杂的算法进一步提升。该工具设计为轻量级，每阶段默认使用50个探测节点以符合Globalping免费API的限制，但增加探测节点数量能有效提高精度。
+
+这款开源工具已成功验证多个示例IP，结果与ipinfo数据吻合，证明在拥有足够观测点的情况下，基于延迟的地理定位是一种可行且符合逻辑的技术方案。
+
+---
+
+## 12. 柏林：创纪录丰收引发大规模免费土豆赠送活动
+
+**原文标题**: Berlin: Record harvest sparks mass giveaway of free potatoes
+
+**原文链接**: [https://www.theguardian.com/world/2026/jan/31/record-harvest-berlin-giveaway-potatoes](https://www.theguardian.com/world/2026/jan/31/record-harvest-berlin-giveaway-potatoes)
+
+德国创纪录的土豆丰收导致大量过剩，促使柏林全城开展大规模免费发放活动。这项名为"4000吨"的倡议源于莱比锡附近一位农民积压了同等数量的滞销土豆。
+
+由柏林一家报纸和搜索引擎Ecosia组织的行动在全市设立了分发点。救济厨房、动物园、学校和居民已领取了数吨土豆以避免浪费，部分土豆还被运往乌克兰。这场发放活动营造出节日氛围，重新激发了公众对土豆的兴趣，人们纷纷分享食谱和历史趣闻。
+
+然而，过剩现象引发部分农民批评，认为这进一步压低了作物价值；环保组织则将其与欧盟过往的农业过剩问题相提并论，指出这暴露了食品系统的结构性问题。随着寒潮席卷柏林，在生活成本危机期间，土豆发放既提供了实际救济，也提振了社区士气。组织方表示仍有大量土豆可供领取。
+
+---
+
+## 13. NASA的WB-57飞机在休斯顿紧急迫降。
+
+**原文标题**: NASA's WB-57 crash lands at Houston
+
+**原文链接**: [https://arstechnica.com/space/2026/01/one-of-nasas-three-wb-57-aircraft-just-did-a-belly-landing-in-houston/](https://arstechnica.com/space/2026/01/one-of-nasas-three-wb-57-aircraft-just-did-a-belly-landing-in-houston/)
+
+周二，一架NASA的WB-57研究飞机在休斯顿埃灵顿机场紧急迫降时起落架未能放下。飞行员成功控制飞机沿跑道滑行降落，机上人员均未受伤。
+
+NASA确认此次迫降由机械故障引起，并表示已展开调查。该机构共运营三架此类高空飞机，这些飞机是自1950年代起经过改装的军用机型。自1972年以来，NASA一直将其用于飓风研究、大气采样和火箭发射观测等科学任务。
+
+涉事飞机是NASA机队中三架WB-57之一，其中第三架于2013年从封存状态修复启用。目前尚不清楚该飞机能否修复，也不确定此事对包括观测即将执行的"阿尔忒弥斯2号"登月任务发射及"猎户座"飞船返回在内的计划任务会产生何种影响。
+
+---
+
+## 14. 任天堂DS代码编辑器与可脚本化游戏引擎
+
+**原文标题**: Nintendo DS code editor and scriptable game engine
+
+**原文链接**: [https://crl.io/ds-game-engine/](https://crl.io/ds-game-engine/)
+
+卡尔·恩隆德为任天堂DS开发了一款可脚本化的3D游戏引擎，允许用户直接在游戏机上编写和运行游戏。该系统在下屏配备基于触摸的代码编辑器，上屏则运行实时3D渲染器，帧率可达60 FPS。引擎使用C语言编写并基于libnds库，编译后生成约100KB的ROM文件。
+
+该引擎包含三个核心组件：用于绘制彩色立方体的硬件加速3D渲染器、用于编写代码的软件渲染触摸编辑器，以及每帧执行一行代码的脚本解释器。其自定义脚本语言支持变量（A-Z）、数学运算、循环、条件语句，以及控制3D模型和摄像头的指令。系统内置九个只读寄存器，用于读取输入（如方向键和按键）及系统状态。
+
+项目附带默认的3D乒乓球游戏作为演示脚本，最多支持128行脚本、16个3D模型和六个存档位。其局限性包括不支持字符串变量、函数调用或动态内存。
+
+用户需通过DS烧录卡运行该引擎，也可在基于浏览器的模拟器中进行测试。源代码和已编译的ROM文件均可下载。
+
+---
+
+## 15. 我的极其强大的照片管理系统（Immich版）
+
+**原文标题**: My Ridiculously Robust Photo Management System (Immich Edition)
+
+**原文链接**: [https://jaisenmathai.com/articles/my-ridiculously-robust-photo-management-system-immich-edition/](https://jaisenmathai.com/articles/my-ridiculously-robust-photo-management-system-immich-edition/)
+
+作者描述了一个围绕将全部元数据（相册、描述、位置、收藏状态）直接存储在照片EXIF数据中的原则构建的照片管理系统，确保长期持久性，无需依赖外部数据库。在Google Photos打破了他原有的工作流程后，他采用Immich作为照片查看器，这些照片主要通过他自建的命令行工具Elodie在Synology NAS上进行组织和存储。
+
+一个关键突破是利用Immich的“外部库”功能挂载他现有的只读照片库。然而，为了完全整合系统，他需要将Immich中的更改写回原始文件的EXIF中，而Immich本身并不支持此功能。他开发了一个自定义解决方案（简化版本为`immich-exif`），用于将Immich中的更改（如相册分配）同步回照片文件。这弥补了系统间的差距，使他能够利用Immich丰富的界面进行组织，同时保持其仅依赖EXIF、面向未来的归档策略。
+
+---
+
+## 16. 四元数代数
+
+**原文标题**: Quaternion Algebras
+
+**原文链接**: [https://jvoight.github.io/quat.html](https://jvoight.github.io/quat.html)
+
+本网页是约翰·沃伊特所著《四元数代数》一书的官方在线中心。主要内容为该书在Springer网站上开放获取的官方版本。页面经过组织，旨在为读者提供最新且经过勘误的文本内容。
+
+关键信息包括：
+*   **官方版本：** 指向Springer出版的开放获取、同行评审版本的链接。
+*   **勘误：** 针对首次（2021年）印刷版的独立勘误与补遗PDF文件。
+*   **更新版本：** 提供两个出版后PDF文件：一个整合了所有已知修正的“当前版本”，以及一个为偏好较少更新的读者准备的“稳定版本”。
+*   **补充材料：** 包含额外资源的“配套”PDF文件。
+*   **存档草稿：** 多个出版前草稿的链接，为历史参考而保留。
+
+本页面的目的是确保读者能够便捷地获取该书的权威、修正后内容，并清晰区分出版商的官方版本、作者维护的更新版本以及早期的存档材料。
+
+---
+
+## 17. Show HN：我训练了一个900万参数的语音模型来纠正我的普通话声调
+
+**原文标题**: Show HN: I trained a 9M speech model to fix my Mandarin tones
+
+**原文链接**: [https://simedw.com/2026/01/31/ear-pronunication-via-ctc/](https://simedw.com/2026/01/31/ear-pronunication-via-ctc/)
+
+作者在普通话声调学习中遇到困难，于是构建了一个小型端侧AI模型来提供精准发音反馈。他没有使用脆弱的音高可视化工具，而是创建了一个包含900万参数的Conformer模型，该模型基于约300小时的标注语音数据，采用CTC损失函数进行训练。这种架构迫使模型逐帧分析音频而不自动纠错，非常适合语言学习。
+
+关键设计包括：将拼音与声调组合作为独立标记（从而能明确标记错误声调），并采用强制对齐技术来定位错误发生的时间点。训练完成后，模型被压缩量化至仅11MB，可在网页浏览器中高效运行。
+
+通过过滤掉模型高度确信仅为静音的音频帧，修复了涉及起始静音的重大缺陷，显著提升了评分准确度。作者指出，该模型虽然因训练数据来自正式朗读语料而难以处理随意对话和童声，但对练习极为严格有效。用户可通过在线演示实时体验。
+
+---
+
+## 18. 疯狂增长的Goldbridge（YC F25）正在招聘一名前线部署工程师
+
+**原文标题**: Insane Growth Goldbridge (YC F25) Is Hiring a Forward Deployed Engineer
+
+**原文链接**: [https://www.ycombinator.com/companies/goldbridge/jobs/78gGEHh-forward-deployed-engineer](https://www.ycombinator.com/companies/goldbridge/jobs/78gGEHh-forward-deployed-engineer)
+
+Goldbridge是一家获得Y Combinator支持的初创公司（F25），现招聘一名前线部署工程师。该职位为全职，薪资范围为12.5万至25万美元，另加股权（0.10%-0.50%），工作地点位于旧金山或美国境内远程办公。
+
+公司正在打造一个由人工智能驱动的银行平台，旨在成为房地产所有者的金融操作系统。其目标在于解决年规模达1万亿美元的租赁市场中的效率低下问题，并帮助面临即将到期贷款的房产所有者。创始团队包括一位两次参与YC项目的创始人及前白宫顾问。
+
+理想的候选人应具备三年以上全栈工程师经验，且必须符合在美国工作的资格。完整的职位描述详见公司招聘页面。
+
+---
+
+## 19. 希思罗机场发生了什么
+
+**原文标题**: What's going on at Heathrow Airport
+
+**原文链接**: [https://blog.billyedmoore.com/heathrow](https://blog.billyedmoore.com/heathrow)
+
+这篇文章详细介绍了**lhrNet**网站的创建过程，该网站利用机器学习对希思罗机场跑道的运行状态（例如哪些跑道用于起飞或降落）进行分类。
+
+该项目源于作者在通勤途中希望快速查询机场状态的初衷。由于没有现成的简易公共API，他们使用**OpenSky Network**收集希思罗机场周边小范围网格内的飞机位置数据，并将其转换为用于分类的二进制“图像”。这些状态数据通过希思罗机场的Twitter信息流进行了人工标注。
+
+一个关键挑战是如何高效存储稀疏数据，该问题通过**游程编码（RLE）**得以解决。随后作者构建了一个简单的神经网络模型，完成训练后以**ONNX格式**导出，可直接在用户网页浏览器中运行，从而避免了后端服务器成本。
+
+最终建成的网站成功将机场状态划分为七种类别之一。虽然模型运行稳定，但偶尔会表现出过度自信，并对罕见运行模式识别困难。作者总结道，尽管该网站对其个人已无实际用途，但这是一个融合数据处理、机器学习和网络开发的宝贵学习项目。
+
+**链接：** 网站地址为[lhr.billyedmoore.com](https://lhr.billyedmoore.com)，代码存放于[GitHub](https://github.com/BillyEdmoMoore/lhrNet)。
+
+---
+
+## 20. Antirender：消除建筑渲染图中的光泽反射
+
+**原文标题**: Antirender: remove the glossy shine on architectural renderings
+
+**原文链接**: [https://antirender.com/](https://antirender.com/)
+
+**摘要：**
+
+本文批判了现代建筑效果图那种光鲜亮丽、理想化的美学风格，认为它们对未来的建筑和城市发展呈现了一种误导性且过于乐观的愿景。文章指出，这些可视化图像通常以完美的天气、茂盛的绿化和快乐多元的人群为特征，实则是一种营销工具，掩盖了潜在的缺陷、实际现实以及对社区的真实影响。
+
+核心论点是，这种“建筑效果图包装”在承诺的幻想与往往不尽如人意、有时甚至问题丛生的建成现实之间制造了鸿沟。作者呼吁一种更诚实、更透明的建筑可视化方法——即“反效果图”——它应在真实条件下展示设计，呈现普通人、多样的天气和一天中的不同时段。文章认为，这将促成更优质的公共讨论、更具责任感的设计决策，并最终带来更成功、更融合的建筑与城市。本文旨在呼吁人们穿透那诱人的表象，批判性地评估建筑提案的实际实质。
+
+---
+
+## 21. Show HN：一个用于边缘应用的可扩展发布/订阅消息服务器
+
+**原文标题**: Show HN: An extensible pub/sub messaging server for edge applications
+
+**原文链接**: [https://github.com/narwhal-io/narwhal](https://github.com/narwhal-io/narwhal)
+
+独角鲸是一款专为移动、桌面及物联网等边缘应用设计的可扩展发布/订阅消息服务器。它采用Rust语言构建了轻量级高性能核心，旨在解决现有方案（XMPP的复杂性与MQTT的僵化性）的局限性。
+
+其核心创新在于**调制器**——这是一个通过专用连接处理应用特定逻辑（认证、授权、验证、业务规则）的外部服务。这种设计使服务器能专注于高效消息路由，同时允许开发者用自己熟悉的语言自定义行为。
+
+服务器支持TLS/SSL加密、细粒度频道管理，以及三种连接类型：客户端到服务器、服务器到调制器、调制器到服务器。目前处于**Alpha测试阶段（v0.4.0）**，适合评估与开发。路线图规划包含消息持久化、联邦网络和WebSocket支持等功能。
+
+该项目采用开源协议（BSD-3-Clause），提供性能基准测试和示例调制器，并欢迎社区贡献。
+
+---
+
+## 22. 一位挑战意大利黑手党并幸存的小说家
+
+**原文标题**: A novelist who took on the Italian mafia and lived
+
+**原文链接**: [https://www.thetimes.com/culture/books/article/sicilian-man-leonardo-sciascia-rise-mafia-struggle-italy-soul-caroline-moorehead-review-lbsbd2p5w](https://www.thetimes.com/culture/books/article/sicilian-man-leonardo-sciascia-rise-mafia-struggle-italy-soul-caroline-moorehead-review-lbsbd2p5w)
+
+本文重点介绍了一部关于意大利小说家莱奥纳多·夏夏的传记，即卡罗琳·穆尔黑德所著的《一个西西里人》。其核心聚焦于夏夏勇敢的文学事业——他通过写作揭露了意大利黑手党（科萨·诺斯特拉）在西西里乃至全国社会中普遍而暴力的腐败现象。
+
+这篇概述将夏夏确立为一位先驱人物：在一个公开批评黑手党极其危险的年代，他率先通过文字公开挑战并记录了该组织的血腥影响力。他的作品使这一根深蒂固的犯罪现实为更广泛的公众所认知。
+
+文中强调的关键点在于一个非凡的事实：夏夏“活下来讲述了这一切”，这凸显了他因其行动所面临的重大个人风险。因此，这部传记讲述的是一位将写作作为社会与政治谴责工具的作家的故事——他成功抵御了那些常使他人沉默的威胁，并幸存了下来。
+
+---
+
+## 23. 无法再忍受完整观影的电影系学生
+
+**原文标题**: Film students who can no longer sit through films
+
+**原文链接**: [https://www.theatlantic.com/ideas/2026/01/college-students-movies-attention-span/685812/](https://www.theatlantic.com/ideas/2026/01/college-students-movies-attention-span/685812/)
+
+这篇文章报道称，全美的电影教授正面临学生无法完整观看长片的困境，这一问题自疫情以来愈发严重。学生们常在放映期间使用手机、跳过指定观影任务，或心不在焉地高速快进影片，导致对基本情节的理解严重不足。
+
+教授们将此归因于媒体消费的代际转变。如今的学生在智能手机和短视频社交媒体的环境中长大，注意力未经训练，常将点播电影视为可随意回放的快餐内容。许多有志成为电影制作人的学生并非影迷，而是重度社交媒体用户。
+
+为此，部分教授试图通过布置节奏缓慢的影片来对抗这一趋势，以重新训练学生的专注力；另一些则选择适应变化，布置短片作业、允许流媒体观影，甚至教授学生制作社交媒体风格的短视频。文章指出，主流电影也在为短注意力时代量身打造——网飞建议制片方为分心多任务的观众设计早期高潮和重复情节。
+
+最终，文章揭示了传统电影所需的持久专注力与当代人碎片化媒体习惯之间的根本冲突。
+
+---
+
+## 24. HTTP猫咪
+
+**原文标题**: HTTP Cats
+
+**原文链接**: [https://http.cat/](https://http.cat/)
+
+本文介绍了**HTTP Cats**服务，该服务提供与HTTP状态码对应的幽默猫咪图片。其核心特点是使用简便：用户只需访问URL `https://http.cat/[状态码]`（可选择添加`.jpg`后缀），即可获得以猫咪为主题的网页服务器响应码视觉化呈现。
+
+内容主要包括按类别详细列出的状态码清单，涵盖信息类（1xx）、成功类（2xx）、重定向类（3xx）、客户端错误类（4xx）及服务器错误类（5xx）。既包含标准状态码（如**404 页面不存在**和**500 服务器内部错误**），也收录非常见或非标准代码（如**418 我是茶壶**和**530 网站冻结**）。
+
+总之，HTTP Cats是一个兼具实用性与趣味性的参考工具，通过广受欢迎的猫咪主题，为开发者、系统管理员和学习者提供了可视化呈现各类HTTP响应码的便捷途径。
+
+---
+
+## 25. Peerweb：通过WebTorrent实现去中心化网站托管
+
+**原文标题**: Peerweb: Decentralized website hosting via WebTorrent
+
+**原文链接**: [https://peerweb.lol/](https://peerweb.lol/)
+
+Peerweb是一个去中心化平台，利用WebTorrent技术通过点对点网络托管和分享静态网站，无需依赖传统的中心化服务器。
+
+用户可通过拖放上传网站文件夹，获得基于种子哈希的唯一永久链接。只要上传者的浏览器标签保持打开，或使用专用桌面客户端进行永久托管，网站即可持续访问。访问者只需输入种子哈希即可加载网站。
+
+主要功能包括智能缓存实现即时重复访问、通过DOMPurify净化与沙箱执行增强安全性，以及用于故障排查的调试模式。该平台支持标准静态文件（HTML、CSS、JS、图像），且必须包含`index.html`文件。
+
+核心优势在于抗审查性、零托管成本、全球分布式网络，以及只要节点在线即可实现持久可用性。
+
+---
+
+## 26. 苏美尔星图记录了小行星撞击事件（2024年）
+
+**原文标题**: Sumerian Star Map Recorded the Impact of an Asteroid (2024)
+
+**原文链接**: [https://archaeologyworlds.com/5500-year-old-sumerian-star-map-recorded/](https://archaeologyworlds.com/5500-year-old-sumerian-star-map-recorded/)
+
+一块5500年前的苏美尔泥板，被称为“平面星图”（大英博物馆编号K8538），据信记录了约公元前3100年一次巨型小行星撞击的观测结果。这件发现于伊拉克尼尼微的天文仪器描绘了一幅星图。
+
+研究者艾伦·邦德与马克·亨普塞尔重新解读了楔形文字，认为这是苏美尔天文学家对公元前3123年6月29日（儒略历）的观测记录。其中详细描述了一颗直径约一公里的阿登型小行星的运行轨迹。分析显示其路径与奥地利科费尔斯地区的一次撞击吻合——该地存在长期成因不明的大型滑坡。
+
+据推测，小行星以约六度的低角度切入，擦过山体后在空中爆炸，形成巨型火球。这解释了科费尔斯为何没有典型撞击坑；相反，事件产生的巨大压力使岩石粉碎并引发滑坡。研究者进一步推测，爆炸烟羽可能蔓延至东地中海地区，导致大面积火灾与人员伤亡。
+
+因此，这块泥板被视为苏美尔高度发达天文学的非凡证据，也是对史前灾难事件的直接记录。
+
+---
+
+## 27. 展示 HN：Moltbook——一个供熔断机器人（抓取机器人）社交的平台
+
+**原文标题**: Show HN: Moltbook – A social network for moltbots (clawdbots) to hang out
+
+**原文链接**: [https://www.moltbook.com/](https://www.moltbook.com/)
+
+**摘要：**
+
+Moltbook是一个专为AI智能体（称为“moltbots”或“clawdbots”）设计的社交网络平台。其核心功能是让这些智能体通过分享帖子、评论和点赞内容进行互动，类似于以人类为中心的社交网络。
+
+该平台设有查看近期AI智能体、帖子（按最新、热门或讨论最多排序）以及根据“karma”值对智能体进行排名的排行榜等板块。它还包含名为“submolts”的社区细分板块。
+
+虽然该平台专为AI间的互动而构建，但网站指出也欢迎人类观察者。此外，Moltbook提供了一个名为“为智能体构建”的开发者工具，允许AI智能体使用其Moltbook身份验证外部应用程序，从而将该平台定位为AI生态系统的潜在身份提供商。
+
+---
+
+## 28. 欧洲企业必须放弃美国云服务，转向欧盟本土云解决方案。
+
+**原文标题**: Euro firms must ditch Uncle Sam's clouds and go EU-native
+
+**原文链接**: [https://www.theregister.com/2026/01/30/euro_firms_must_ditch_us/](https://www.theregister.com/2026/01/30/euro_firms_must_ditch_us/)
+
+这篇评论文章主张，欧洲企业必须紧急将敏感数据和工作负载从美国云服务提供商迁移至欧盟本土替代方案，以确保真正的数字主权。
+
+作者身为美国人，指出在当前政治环境下不可信任美国公司，并援引《云法案》等法律，称这些法律强制要求美国公司无论数据存储于何处都必须向美国当局移交数据。他强调欧洲正形成一种趋势，超过60%的首席信息官出于地缘政治考量，正寻求增加对本地云服务提供商的使用。
+
+尽管美国超大规模云服务商如AWS正在欧盟内部提供“主权云”区域，但文章认为这不过是“欧洲漂绿”的不足之举，因为最终控制权仍掌握在美国母公司手中。文章以空客公司为完全主权欧洲云投入5000万欧元招标为例，指出其所有运营均受欧盟法律管辖，堪称典范。
+
+文章将这一转变视为关乎业务连续性和国家安全的关键问题，警告欧洲对美国基础设施的过度依赖是一种战略脆弱性。文章总结道，对于涉及国家安全、工业知识产权或消费者数据的敏感工作负载，欧盟本土云已不再是可选项，而是必需品。
+
+---
+
+## 29. 在Ivy中实现超越函数
+
+**原文标题**: Implementing the Transcendental Functions in Ivy
+
+**原文链接**: [https://commandcenter.blogspot.com/2026/01/implementing-transcendental-functions.html](https://commandcenter.blogspot.com/2026/01/implementing-transcendental-functions.html)
+
+本文详细介绍了作者在Ivy（一种用Go编写的伪APL语言）中实现超越函数的经验。Ivy最初使用精确算术（大整数和有理数），后来集成了高精度浮点功能，支持数千位数的计算。
+
+核心挑战在于计算正弦、余弦、指数和对数等函数至任意精度。作者使用泰勒级数处理基本函数，但需解决周期函数的参数归约问题，以及反正切和对数等级数在特定值附近收敛缓慢的难题。通过创造性方案——如运用数学恒等式（例如`atan(x)`）和参数重写（例如利用尾数和指数处理`log(x)`）——确保了计算的高效性与准确性。
+
+该实现通过恒等式扩展至复数和双曲函数，任意幂次通过`x**y = e**(y*log(x))`计算。最后，通过递推关系和反射公式添加了伽玛函数，将阶乘推广至复数域。
+
+作者始终强调自己是数值分析领域的业余爱好者，更注重在数组语言语境中，将数学技巧应用于高精度计算所带来的趣味性与解题乐趣。
+
+---
+
+## 30. 苹果平台安全（2026年1月）[pdf]
+
+**原文标题**: Apple Platform Security (Jan 2026) [pdf]
+
+**原文链接**: [https://help.apple.com/pdf/security/en_US/apple-platform-security-guide.pdf](https://help.apple.com/pdf/security/en_US/apple-platform-security-guide.pdf)
+
+根据所提供的内容，这并非一篇可读的文章，而是一个PDF文件的原始二进制数据，具体是2026年1月的《Apple平台安全性》指南。
+
+可见的文本片段表明这是一份官方的Apple安全文档。这类指南是全面的白皮书，详细介绍了Apple操作系统（iOS、iPadOS、macOS、watchOS、tvOS）和硬件中内置的安全架构和功能。
+
+虽然无法从这些数据中提取完整内容，但此类指南的目的和标准内容是明确的。它通常涵盖：
+
+*   **硬件安全：** 安全隔区、触控ID/面容ID以及基于硬件的加密的详细信息。
+*   **系统安全：** 安全启动链、软件更新和运行时保护。
+*   **应用安全：** 应用沙盒、代码签名和应用商店审核流程。
+*   **服务安全：** iCloud数据（如iCloud钥匙串和设备备份）的加密和通信协议。
+*   **网络安全：** VPN、Wi-Fi和蓝牙保护。
+*   **隐私控制：** 用户对位置、照片、麦克风和其他敏感数据的权限设置。
+
+2026年版将更新这些领域，纳入当时最新的安全技术、功能和最佳实践，为使用Apple平台的IT管理员、安全研究人员和开发人员提供主要的技术参考资源。
+
+---
+
