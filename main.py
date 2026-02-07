@@ -17,7 +17,10 @@ load_dotenv()
 
 client = OpenAI(
     api_key=os.environ.get('API_KEY'),
-    base_url=os.environ.get('BASE_URL'),
+    base_url=os.environ.get('BASE_URL')
+    )
+#mymodel="moonshotai/kimi-k2.5"
+mymodel=os.environ.get('MYMODEL')
     #base_url="https://api.deepseek.com")
 
 # 配置 Gemini API
@@ -151,7 +154,7 @@ def generate_summary(title, content):
         """
         messages = [{"role": "user", "content": prompt}]
         response = client.chat.completions.create(
-        model="deepseek-chat",
+        model=mymodel,
         messages=messages)
 
         #response = model.generate_content(prompt)
@@ -176,7 +179,7 @@ def generate_summary_from_url(title, url, max_retries=3):
             
             messages = [{"role": "user", "content": prompt}]
             response = client.chat.completions.create(
-            model="deepseek-chat",
+            model=mymodel,
             messages=messages)
 
             #response = model.generate_content(prompt)
@@ -214,7 +217,7 @@ def translate_to_chinese(text):
         
         messages = [{"role": "user", "content": prompt}]
         response = client.chat.completions.create(
-        model="deepseek-chat",
+        model=mymodel,
         messages=messages)
 
         #response = model.generate_content(prompt)
