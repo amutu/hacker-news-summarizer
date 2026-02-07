@@ -16,8 +16,9 @@ import sys
 load_dotenv()
 
 client = OpenAI(
-    api_key=os.environ.get('DEEPSEEK_API_KEY'),
-    base_url="https://api.deepseek.com")
+    api_key=os.environ.get('API_KEY'),
+    base_url=os.environ.get('BASE_URL'),
+    #base_url="https://api.deepseek.com")
 
 # 配置 Gemini API
 #GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
