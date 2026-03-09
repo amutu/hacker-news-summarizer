@@ -1,0 +1,490 @@
+# Hacker News 热门文章摘要 (2026-03-09)
+
+这是今日 [Hacker News](https://news.ycombinator.com/) 上最热门的文章摘要。
+
+## 1. 使用波函数坍缩算法构建程序化六边形地图
+
+**原文标题**: Building a Procedural Hex Map with Wave Function Collapse
+
+**原文链接**: [https://felixturner.github.io/hex-map-wfc/article/](https://felixturner.github.io/hex-map-wfc/article/)
+
+本文详细介绍了如何利用波函数坍缩算法创建程序化六边形地图生成器。该系统可在约4,100个六边形单元格上构建具有道路、河流、森林等地形的独特且确定性的中世纪岛屿地图。
+
+核心挑战在于将原本基于匹配边缘放置瓦片的WFC算法适配到六边形网格中，这显著增加了复杂度。为此，地图被划分为19个独立求解但受相邻边界约束的较小网格。作者开发了精密的冲突恢复系统，包括用于修补边界问题的“局部WFC”流程，并以山地瓦片作为最终修复手段。
+
+地形高程引入了第三维度，要求瓦片在五个高度层级间正确连接。虽然WFC主导地形生成，但Perlin噪声被用于树木和建筑的有机分布，因为单纯使用WFC会产生不佳的大尺度图案。
+
+视觉呈现方面，项目采用Three.js配合WebGPU和TSL着色器。关键效果包括带有焦散动画的水体和海岸波浪，通过自定义的“环绕度”遮罩技术实现海湾效果。性能方面采用批量网格和共享材质进行优化，使数千个单元格能够高效渲染。
+
+最终成果是一个快速可靠的生成器，能在约20秒内生成全新的可探索地图，实现了算法精度与艺术设计的融合。
+
+---
+
+## 2. JSLinux现已支持x86_64架构
+
+**原文标题**: JSLinux Now Supports x86_64
+
+**原文链接**: [https://bellard.org/jslinux/](https://bellard.org/jslinux/)
+
+**摘要：**
+
+JSLinux，一款基于浏览器的模拟器，现已新增对x86_64系统的支持。主要更新是推出了全新的Alpine Linux 3.23.2（x86_64）虚拟机，该虚拟机具备控制台界面、VFsync功能，并支持AVX-512和APX等高级CPU指令集。
+
+文章列出了当前所有可用的模拟系统，涵盖x86、x86_64和riscv64架构的多种操作系统。这些系统范围广泛，从轻量级基于控制台的Linux发行版（Alpine、Buildroot、Fedora）到图形环境（X Window），甚至包括Windows 2000和FreeDOS等经典系统。每个虚拟机均详细说明了其CPU架构、操作系统、用户界面类型、VFsync支持情况，以及特定功能或注意事项的说明。
+
+核心公告在于该平台扩展了对现代64位x86模拟的能力，从而增强了其在网页浏览器中直接运行更广泛软件的多样性。
+
+---
+
+## 3. 展示HN：Mog编程语言
+
+**原文标题**: Show HN: The Mog Programming Language
+
+**原文链接**: [https://moglang.org](https://moglang.org)
+
+本文介绍了**Mog**——一种为简洁高效而设计的新编程语言。作者将其作为“Show HN”项目发布，邀请开发者社区探索并提供反馈。
+
+Mog的核心理念是成为一种**极简的通用语言**，易于学习和使用。其强调的主要特性包括：
+*   **清晰可读的语法**，减少样板代码。
+*   **强静态类型系统**，确保可靠性与性能。
+*   **内置并发支持**，简化并行程序编写。
+*   注重**实用工具链**，从一开始就包含包管理器和构建系统。
+
+该指南本身是交互式的，需要JavaScript才能运行，这表明项目可能提供了在线演练环境或实时代码示例。本文的整体目的是宣布Mog的发布，阐释其设计目标，并鼓励开发者尝试使用并参与其早期开发。
+
+---
+
+## 4. DARPA新型X-76
+
+**原文标题**: DARPA's new X-76
+
+**原文链接**: [https://www.darpa.mil/news/2026/darpa-new-x-76-speed-of-jet-freedom-of-helicopter](https://www.darpa.mil/news/2026/darpa-new-x-76-speed-of-jet-freedom-of-helicopter)
+
+美国国防高级研究计划局（DARPA）已正式将其新型实验飞机命名为X-76，并进入建造阶段。该飞机是SPRINT计划的一部分，由DARPA与美国特种作战司令部联合推进，贝尔德事隆公司在完成设计评审后负责制造。
+
+该计划的核心目标是打破长期存在的军事性能取舍，将固定翼喷气式飞机的高速性与直升机不依赖跑道、垂直起降（VTOL）的能力相结合。X-76验证机旨在实现超过400节的巡航速度，同时保留悬停及在无准备场地起降的能力。
+
+项目官员强调，消除对跑道的依赖将提供关键的作战灵活性，减少易受攻击性，并实现随时随地的快速突袭部署。X-76的编号于2026年公布，刻意呼应美国建国年份1776年的革新精神。
+
+在完成当前制造与地面测试阶段后，该项目计划于2028年初进入飞行测试阶段。
+
+---
+
+## 5. Fixfest是全球维修师、修补匠和活动家的聚会。
+
+**原文标题**: Fixfest is a global gathering of repairers, tinkerers, and activists
+
+**原文链接**: [https://fixfest.therestartproject.org/](https://fixfest.therestartproject.org/)
+
+Fixfest是一项定期举办的全球性活动，汇聚了维修爱好者、活动家、政策制定者、教育工作者和企业代表，旨在分享技能并推动全球维修运动。该活动通常每两到三年举办一次，最近一次国际聚会于2025年9月在伦敦举行，吸引了超过220名参与者。
+
+在大型国际会议间隔期间，各地也会组织国家或区域性的Fixfest活动。文章鼓励读者订阅通讯，以获取未来活动的更新信息，并注明邮箱地址可能会与未来的组织方共享，但仅用于Fixfest相关联络。
+
+文章强调了2025年Fixfest作为社群建设活动的成功，并提供了相关项目及票务资讯的新闻链接。文末附上了对潜在嘉宾、赞助方或未来主办方的合作邀请。
+
+---
+
+## 6. 修复Sun SPARCstation IPX第一部分：电源与NVRAM（2020）
+
+**原文标题**: Restoring a Sun SPARCstation IPX part 1: PSU and NVRAM (2020)
+
+**原文链接**: [https://www.rs-online.com/designspark/restoring-a-sun-sparcstation-ipx-part-1-psu-and-nvram](https://www.rs-online.com/designspark/restoring-a-sun-sparcstation-ipx-part-1-psu-and-nvram)
+
+本文详细介绍了修复一台老式Sun SPARCstation IPX工作站的过程，重点关注了两个常见故障点。第一个问题是电源故障，这是IPX和IPC型号的常见问题。作者用质量更高的新电解电容替换了电源中所有失效和漏液的电容。首次尝试修复一台电源未果后，作者从另一台IPX上取下的第二台电源经成功更换电容后，使主机系统恢复了运行。
+
+解决的第二个问题是失效的NVRAM芯片（M48T02），该芯片存储着以太网MAC地址和主机ID等关键系统数据。作者更换了新芯片，并使用OpenBoot PROM（OBP）监控器重新编程了这些数据。尽管新芯片能正确保存设置，系统仍显示NVRAM更换错误，导致无法自动启动——这是一个已知但尚未解决的系统特性。
+
+经过这些修复，作者成功将机器启动至Solaris 7系统。未来计划包括清洁发黄的塑料机箱、进一步排查持续的NVRAM错误，以及安装与时代匹配的Solaris操作系统版本。
+
+---
+
+## 7. Bluesky首席执行官杰伊·格拉伯即将卸任。
+
+**原文标题**: Bluesky CEO Jay Graber is stepping down
+
+**原文链接**: [https://bsky.social/about/blog/03-09-2026-a-new-chapter-for-bluesky](https://bsky.social/about/blog/03-09-2026-a-new-chapter-for-bluesky)
+
+Bluesky首席执行官杰伊·格拉伯将卸任，转任公司首席创新官。她解释称，在将平台从零建设至拥有超4000万用户后，公司当前需要专注于规模化运营的领导者，而她希望回归自身擅长的创新与产品开发领域。
+
+Automattic（WordPress.com母公司）前首席执行官、True Ventures合伙人托尼·施耐德将加入公司担任临时首席执行官，直至确定永久继任者。施耐德担任Bluesky顾问已逾一年，且Automattic与True Ventures均为公司投资方。格拉伯对施耐德在使命驱动的开源公司领域的经验充满信心，相信他能引领Bluesky进入下一发展阶段。
+
+格拉伯表示，此次职务调整符合她的理念——当个人角色与热情及优势相匹配时，才能实现最大价值。她期待在新岗位上专注于探索去中心化社交媒体的新构想，同时支持团队在新领导层带领下持续成长。
+
+---
+
+## 8. 佛罗里达州法官裁定闯红灯摄像头罚单违宪。
+
+**原文标题**: Florida judge rules red light camera tickets are unconstitutional
+
+**原文链接**: [https://cbs12.com/news/local/florida-news-judge-rules-red-light-camera-tickets-unconstitutional](https://cbs12.com/news/local/florida-news-judge-rules-red-light-camera-tickets-unconstitutional)
+
+布劳沃德县一名法官驳回了一张闯红灯摄像罚单，裁定佛罗里达州的自动执法法违宪。史蒂文·P·德卢卡法官认为，该法规不当将举证责任转移给车主——它假定违规时车主就是驾驶人，并要求车主通过宣誓书证明自己并非驾驶人。
+
+法院认定这类民事违规行为属于“准刑事”程序，因为它们会带来处罚并影响驾驶记录。因此，州政府必须排除合理怀疑地证明每个要素，包括驾驶人的身份。法官裁定，该法律的推定违反了宪法规定的正当程序保护。
+
+尽管该裁决目前仅适用于布劳沃德县的这一具体案件，但法律专家指出，它可能激发其他地区的类似挑战。上诉可能会促成更广泛的全州性判例。反对摄像头的倡导团体称赞这一决定是重大胜利，而支持者则坚称该系统提高了十字路口的安全性。
+
+未来的影响尚不明确，因为尚不清楚该裁决是否会被上诉。目前，这对佛罗里达州的闯红灯摄像头系统（即《马克·万德尔交通安全法》）构成了重大的法律挑战。
+
+---
+
+## 9. 字体工匠：将你的手写体转化为真实字体
+
+**原文标题**: Fontcrafter: Turn Your Handwriting into a Real Font
+
+**原文链接**: [https://arcade.pirillo.com/fontcrafter.html](https://arcade.pirillo.com/fontcrafter.html)
+
+**FontCrafter 简介**
+
+FontCrafter 是一款免费的在线工具，可将你的手写笔迹转换为功能完整的数字字体。整个过程均在浏览器本地完成，确保隐私安全——你的手写扫描件永远不会上传至服务器。
+
+创建字体时，用户需打印提供的模板，用深色笔填写三行字符框，然后扫描或拍摄已完成的纸张。应用会自动检测每个字符，并允许手动验证。随后，用户可通过为字体命名、定义三行字符的用途（例如用于大写/小写变体）以及启用连字功能（如“ff”、“th”以实现自然的字母连接）和字距调整功能（优化间距）来自定义字体。
+
+该工具生成全面的字体文件，包含超过 100 个扩展字符（如智能引号和货币符号），并支持欧洲语言的带重音字符。它可导出四种格式的字体：适用于桌面应用的 OTF、通用兼容的 TTF、用于网站的 WOFF2，以及可直接嵌入 CSS 的 Base64 格式。
+
+与一些竞品不同，FontCrafter 完全免费，无需账户、订阅或添加水印。用户拥有生成字体的所有权，可将其用于个人和商业项目。
+
+---
+
+## 10. 闪存介质寿命测试——六年之后
+
+**原文标题**: Flash media longevity testing – 6 years later
+
+**原文链接**: [https://old.reddit.com/r/DataHoarder/comments/1q6xnun/flash_media_longevity_testing_6_years_later/](https://old.reddit.com/r/DataHoarder/comments/1q6xnun/flash_media_longevity_testing_6_years_later/)
+
+**《闪存介质长期保存测试——六年后总结》**
+
+这篇Reddit帖子更新了一项长期现实世界实验的结果，该实验测试了断电状态下未使用的闪存介质（SD卡、U盘和固态硬盘）的数据保存能力。原始测试始于2015年，并于2018年和2024年进行了最终检查。
+
+**主要发现：**
+*   **整体耐用性**：经过约8.5年的存储，大多数测试设备保留了全部数据，未出现任何比特错误。这表明在正常的室内条件下，现代优质闪存介质可将数据保存十年或更久。
+*   **故障模式**：少数发生的故障几乎完全是**设备完全失效**（即设备无法被主机检测或读取），而非因比特衰减导致的数据逐渐损坏。这表明主要风险在于控制器或电子元件的灾难性故障，而非存储单元中的电荷泄漏。
+*   **值得注意的例外**：最显著的数据丢失出现在**2000年代中期生产的非常老旧、低容量（2GB）的存储卡**上，这些卡出现了严重的数据损坏。这突显出较旧、低密度的闪存技术在长期归档存储中可靠性较低。
+*   **品牌相关性**：没有任何一个现代品牌（如SanDisk、三星、金士顿）持续表现优于其他品牌。可靠性与闪存技术的年代和世代关联更紧密，而非制造商。
+*   **核心要点**：对于在闪存介质上归档存储重要数据，关键的**最佳实践是定期验证与更新**——每隔几年将数据复制到新设备上。这可以降低突发控制器故障的风险，在此时间尺度内，该风险比静默数据退化的威胁更大。实验得出结论：如果管理得当，闪存是适用于长期（5-10年）冷存储的可行介质。
+
+---
+
+## 11. Durdraw – 适用于类Unix系统的ANSI艺术编辑器
+
+**原文标题**: Durdraw – ANSI art editor for Unix-like systems
+
+**原文链接**: [https://durdraw.org/](https://durdraw.org/)
+
+Durdraw是一款免费开源的ANSI、ASCII和Unicode艺术编辑器，专为类Unix系统（Linux、macOS）设计。它运行在现代UTF-8终端中，灵感来源于TheDraw和Pablodraw等经典DOS编辑器。
+
+其主要功能包括支持高速帧动画、256色和16色模式、鼠标绘图、画笔工具，以及CP437与Unicode字符的混合使用。可导出HTML和mIRC彩色格式文件，并内置Durfetch（动态系统信息工具）和Durview（ANSI艺术查看器）等实用程序。
+
+该软件可通过GitHub或操作系统软件仓库下载，因其强大功能与趣味性获得积极评价。作为基于BSD 3-Clause许可证发布的热情项目，开发者欢迎通过捐赠（PayPal、Patreon等）、错误报告、反馈和代码贡献等形式获得支持。
+
+---
+
+## 12. Show HN：DenchClaw – 基于OpenClaw的本地客户关系管理系统
+
+**原文标题**: Show HN: DenchClaw – Local CRM on Top of OpenClaw
+
+**原文链接**: [https://github.com/DenchHQ/DenchClaw](https://github.com/DenchHQ/DenchClaw)
+
+DenchClaw是一款基于OpenClaw平台构建的本地CRM系统。它完全运行在用户的本地机器上，通过命令行工具进行安装和管理。
+
+其主要安装和运行方式是使用`npx denchclaw`命令，该命令会启动一个配置向导，随后在`localhost:3100`端口启动Web服务器。该工具提供多个管理命令，包括`update`、`restart`、`start`和`stop`。它在名为"dench"的特定OpenClaw配置文件中运行，允许用户通过`openclaw --profile dench`前缀执行标准的OpenClaw命令（例如管理网关）。
+
+对于开发者，该项目采用MIT许可证开源。可通过克隆代码库进行本地开发，并使用`pnpm`管理构建。系统提供了通用开发命令（`pnpm dev`）和Web界面专项开发命令（`pnpm web:dev`）。
+
+其官方网站、Discord社区、技能商店和演示视频的关键链接也已提供。
+
+---
+
+## 13. 世界上最美的冰柜：南极烘焙手记
+
+**原文标题**: The Most Beautiful Freezer in the World: Notes on Baking at the South Pole
+
+**原文链接**: [https://www.newyorker.com/culture/the-weekend-essay/the-most-beautiful-freezer-in-the-world](https://www.newyorker.com/culture/the-weekend-essay/the-most-beautiful-freezer-in-the-world)
+
+作者讲述了她在2023年南半球夏季担任阿蒙森-斯科特南极站驻站面包师的经历。她乘坐滑雪飞机抵达，被这片土地原始而壮丽的荒凉之美及其与南极探险历史的联系所震撼。她的工作包括上夜班，为站上约150名科学家和后勤人员制作每日烘焙食品。
+
+她面临着巨大挑战，由于物资补给困难，不得不使用过期和储存方式奇特的原料——有些已存放数十年。生活条件艰苦，房间狭小，用水严格配给，但她珍视这份孤独和令人惊叹的冰封环境。日常工作中，她会裹上厚重的极地防寒服，在高原上短暂散步，在漫长的厨房轮班前，感受与世隔绝的超现实之美。
+
+故事将工作的身心考验与对南极历史的思考、极地封闭而奇特的社群生活交织在一起，凸显了浪漫探险理想与维持现代科研前哨的严酷现实之间的鲜明对比。
+
+---
+
+## 14. 重新思考句法：邻接约束
+
+**原文标题**: Rethinking Syntax: Binding by Adjacency
+
+**原文链接**: [https://github.com/manifold-systems/manifold/blob/master/docs/articles/binding_exprs.md](https://github.com/manifold-systems/manifold/blob/master/docs/articles/binding_exprs.md)
+
+Java中的绑定表达式提议将相邻性视为一种类型安全的二元运算符，这一功能由编译器插件实现。如果两个相邻表达式的类型定义了特定方法（`prefixBind`或`postfixBind`），它们便可在编译时绑定在一起，形成一个新的单一表达式。
+
+其核心思想是允许在Java代码中直接使用领域特定的字面量语法——例如`2025 July 19`解析为`LocalDate`，或`1 to 10`解析为`Range<Integer>`——而无需修改核心语言类型。相关逻辑封装在参与类型的绑定方法中，使得系统保持非侵入性和类型安全。
+
+潜在应用包括创建单位转换DSL（如`299.8M m/s`）、自然语言命令或自定义字面量。但该方法也引入了复杂性：解析过程变为两阶段且类型导向，归约算法需智能探索绑定路径。虽然能显著提升代码可读性和表现力，但可能增加认知负担，需要规范使用以避免过度复杂或令人困惑的语法。
+
+目前该功能已在实验性项目Manifold中实现，绑定表达式仍是对Java语法如何演进以支持更流畅、领域特定编码模式的新颖探索。
+
+---
+
+## 15. 爱尔兰关闭最后一座燃煤电厂，成为欧洲第15个无煤国家（2025年）
+
+**原文标题**: Ireland shuts last coal plant, becomes 15th coal-free country in Europe (2025)
+
+**原文链接**: [https://www.pv-magazine.com/2025/06/20/ireland-coal-free-ends-coal-power-generation-moneypoint/](https://www.pv-magazine.com/2025/06/20/ireland-coal-free-ends-coal-power-generation-moneypoint/)
+
+**摘要：**
+
+2025年，爱尔兰永久关闭了其最后一座燃煤发电站，成为欧洲第15个无煤国家。这标志着该国在电力生产领域摆脱化石燃料转型中实现了一个重要的国家里程碑。
+
+然而，文章内容聚焦于一条关键的读者评论，该评论对这一举措的环境有效性提出了质疑。评论指出，如果爱尔兰随后从其他国家（如波兰）进口燃煤发电的电力，那么仅仅关闭国内煤电厂并不能消除煤炭的使用。这一论点类比了一个适得其反的想法：砍伐亚马逊雨林，然后将木材运到爱尔兰燃烧供能。
+
+核心批评在于，这可能是一种“象征性”的气候行动——表面上改善了爱尔兰国内的排放统计数据（“看起来不错”），却可能通过将问题转移出去而增加全球整体污染。评论认为，这可能不会减少净碳排放，而只是改变了燃烧和相关污染发生的地点，并且由于长距离燃料或电力运输产生的排放，甚至可能使整体环境影响变得更糟。
+
+因此，尽管标题庆祝了一项国家成就，但所提供的内容突显了一场关于国家碳排放核算的完整性以及“碳泄漏”风险的重要辩论，即一个国家的排放减少仅导致另一个国家的排放增加。
+
+---
+
+## 16. 我一直想知道的关于二等值的一切
+
+**原文标题**: What I Always Wanted to Know about Second Class Values
+
+**原文链接**: [https://dl.acm.org/doi/epdf/10.1145/3759427.3760373](https://dl.acm.org/doi/epdf/10.1145/3759427.3760373)
+
+无法访问文章链接。
+
+---
+
+## 17. Jolla正按计划推出搭载Sailfish操作系统、配备可更换电池的新款手机。
+
+**原文标题**: Jolla on track to ship new phone with Sailfish OS, user-replaceable battery
+
+**原文链接**: [https://liliputing.com/the-new-jolla-phone-with-sailfish-os-is-on-track-to-start-shipping-in-the-first-half-of-2026/](https://liliputing.com/the-new-jolla-phone-with-sailfish-os-is-on-track-to-start-shipping-in-the-first-half-of-2026/)
+
+Jolla计划在2026年第二季度交付其新款Sailfish OS智能手机，此前已收到超过1万份预订单。目前在欧洲开放限量第二批预购，售价649欧元，需支付99欧元定金。
+
+该手机采用中端硬件配置，包括6.36英寸AMOLED显示屏、联发科天玑7100处理器以及最高12GB内存。主要特色包括用户可自行更换的5450mAh电池、可通过软件定义的物理隐私开关（用于禁用传感器），以及模块化“The Other Half”系统——可更换的后盖能扩展键盘或额外传感器等功能。
+
+核心差异在于Sailfish OS系统，这是一款基于Linux、注重隐私的欧洲操作系统，无需谷歌账户即可使用，并能通过“AppSupport”兼容部分安卓应用。
+
+由于达成预购目标，Jolla已重启模块化平台计划，正在收集用户对附加模块的反馈，但具体模块的定价和上市时间尚未公布。
+
+---
+
+## 18. 逆向工程UniFi信息协议
+
+**原文标题**: Reverse-engineering the UniFi inform protocol
+
+**原文链接**: [https://tamarack.cloud/blog/reverse-engineering-unifi-inform-protocol](https://tamarack.cloud/blog/reverse-engineering-unifi-inform-protocol)
+
+本文详细阐述了如何通过逆向工程UniFi inform协议实现多租户托管，该协议用于设备与控制器的通信。关键发现在于：虽然数据载荷经过AES加密，但数据包头部的前40字节是明文。最重要的是，第8至13字节以明文形式包含了设备的MAC地址。
+
+这使得代理无需解密即可读取MAC地址，并通过MAC地址与租户的映射表将整个数据包路由至对应客户的控制器实例。这解决了为每个客户配备专用虚拟机的重大经济障碍，多个控制器得以共享基础设施。
+
+代理主要应用于通过DHCP Option 43进行初始设备适配的场景，因为此时HTTP请求缺少Host标头。设备完成适配后，将配置使用租户专属子域名，从而允许标准网络路由接管8443端口的管理界面。
+
+作者总结道：这种可路由特性是Ubiquiti设计带来的副作用——MAC地址必须存在于头部，控制器才能识别应使用的解密密钥——但这催生了切实可行的多租户商业模式，而此前这种模式难以实现。
+
+---
+
+## 19. FreeBSD Capsicum与Linux Seccomp进程沙盒技术对比
+
+**原文标题**: FreeBSD Capsicum vs. Linux Seccomp Process Sandboxing
+
+**原文链接**: [https://vivianvoss.net/blog/capsicum-vs-seccomp](https://vivianvoss.net/blog/capsicum-vs-seccomp)
+
+**《FreeBSD Capsicum 与 Linux Seccomp 进程沙盒技术对比》摘要**
+
+本文比较了两种用于应用程序沙盒化的操作系统安全机制：FreeBSD 的 **Capsicum** 和 Linux 的 **seccomp-bpf**。文章指出，尽管两者都旨在限制进程能力，但其核心理念和实现方式存在显著差异。
+
+**核心要点：**
+
+*   **理念差异：** Seccomp 是一种 **基于过滤** 的模型。它从进程拥有完整权限开始，通过 BPF 过滤器来阻止特定的危险系统调用。Capsicum 则是一种 **基于能力** 的模型。它让进程在"能力模式"下启动，此时进程*没有*任何固有权限；对文件或网络套接字等资源的访问，需要通过充当能力的文件描述符来显式授予。
+
+*   **精细度与易用性：** 作者认为 Capsicum 提供了更精细的控制，对开发者而言更直观。由于它使用标准的文件描述符，将其集成到现有应用程序（如 `gzip` 或 `tcpdump`）中通常更简单。而 Seccomp 过滤器在底层的系统调用层面操作，编写正确的过滤器可能更复杂，并且如果允许的系统调用列表无法满足应用程序需求，容易出错。
+
+*   **有效性：** 两者都能有效沙盒化代码。然而，文章指出 Capsicum 的设计在抵御某些类别的漏洞方面更为健壮。Seccomp 过滤器必须预见并阻止所有危险的系统调用，这很困难。相比之下，Capsicum 的默认拒绝方式（除非显式授予，否则无访问权限）被视为更强大的安全原语。
+
+*   **结论：** 文章将 Capsicum 描述为一种更优雅、基于能力的安全模型，它能自然地融入 Unix 文件描述符范式。Seccomp 则被描绘成一种强大但更繁琐的基于过滤的工具，代表了一种不同的、精细度较低的沙盒化方法。最终选择取决于操作系统平台和具体的安全需求。
+
+---
+
+## 20. Velxio，Arduino模拟器
+
+**原文标题**: Velxio, Arduino Emulator
+
+**原文链接**: [https://velxio.dev/](https://velxio.dev/)
+
+**Velxio** 是一款免费、开源的 Arduino 模拟器，完全在网页浏览器中运行。它允许用户编写、编译和模拟 Arduino 代码，具备真实的 CPU 模拟和交互式电子元件，无需云服务或账户即可使用。
+
+主要功能包括：
+*   **真实硬件模拟：** 模拟 16 MHz 的 ATmega328p (AVR8) 和 Raspberry Pi Pico (RP2040)。
+*   **交互式元件：** 提供超过 48 种模拟部件，如 LED、按钮和传感器。
+*   **完整开发环境：** 包含带语法高亮的代码编辑器、串行监视器、库管理器，并支持多文件项目。
+*   **广泛协议支持：** 涵盖 I2C、 SPI、 USART、 ADC 和 PWM，并配有 ILI9341 TFT 显示屏模拟器。
+*   **自托管选项：** 可使用提供的 Docker 镜像在任何地方部署。
+
+该工具定位为 Wokwi 等服务的免费、自托管替代方案，使用相同的开源库但在本地运行。它采用 GNU AGPLv3 许可证，并提供适用于专有用途的商业许可证。
+
+---
+
+## 21. 关于如何开展有重要意义的重要研究的独到见解
+
+**原文标题**: An opinionated take on how to do important research that matters
+
+**原文链接**: [https://nicholas.carlini.com/writing/2026/how-to-win-a-best-paper-award.html](https://nicholas.carlini.com/writing/2026/how-to-win-a-best-paper-award.html)
+
+本文基于作者的经验，概述了开展高影响力研究并撰写获奖论文的过程。他强调，虽然运气有一定作用，但系统性的方法至关重要。
+
+核心建议分为四个方面：
+1.  **培养优质想法：** 通过广泛阅读来理解领域，从而培养对问题的“好品味”，但也要知道何时应忽略惯例，以避免有缺陷的假设。优先考虑具有真正影响力的想法，而非仅为发表而设计的想法。
+2.  **进行研究：** 通过分享想法和提出具体贡献，积极寻求优秀的合作者。致力于研究那些你的独特技能能让你抢占先机的问题，从而能够早期塑造一个领域的方向。
+3.  **撰写论文：** 目标是清晰地传达一个重要的新想法。构建论文结构，使这一核心贡献对读者一目了然。
+4.  **发表之后：** 准备好接受批评，并与学界互动以捍卫和改进你的工作，将其视为持续科学对话的一部分。
+
+最终，作者认为，重要的研究源于对发现有意义事物的专注，而论文只是这一过程自然而然的结果。
+
+---
+
+## 22. 工人报告称看到雷朋Meta拍摄的人们使用卫生间的视频片段
+
+**原文标题**: Workers report watching Ray-Ban Meta-shot footage of people using the bathroom
+
+**原文链接**: [https://arstechnica.com/gadgets/2026/03/workers-report-watching-ray-ban-meta-shot-footage-of-people-using-the-bathroom/](https://arstechnica.com/gadgets/2026/03/workers-report-watching-ray-ban-meta-shot-footage-of-people-using-the-bathroom/)
+
+一份瑞典调查报告披露，分包商Sama的员工在为Meta人工智能系统执行数据标注工作时，查看了Ray-Ban Meta智能眼镜拍摄的敏感影像。员工报告称看到了私人内容，包括人们的性行为、更衣和如厕画面，他们形容这是一条令人不适的隐私敏感数据流。
+
+Meta确认有时会与承包商分享用户内容以改进AI服务，并表示数据经过过滤（如面部打码）以保护隐私。其政策说明，当用户使用云服务或Meta AI时，智能眼镜拍摄的照片、视频和音频会发送至Meta。但报告指出用户可能未意识到正在录制，因为设备的录制指示灯容易被忽略。
+
+这些披露引发了新的隐私担忧。英国数据监管机构已联系Meta，一项拟议的集体诉讼也已对Meta和Luxottica提起。该诉讼质疑Meta“为隐私设计”的宣传，指控公司通过隐瞒海外人工查看私人影像的事实欺骗消费者。
+
+Meta拒绝对诉讼置评。Sama表示遵循严格的数据保护协议，但未对具体客户项目发表评论。
+
+---
+
+## 23. 美国上诉法院：服务条款可通过电子邮件更新，使用行为可视为同意 [pdf]
+
+**原文标题**: US Court of Appeals: TOS may be updated by email, use can imply consent [pdf]
+
+**原文链接**: [https://cdn.ca9.uscourts.gov/datastore/memoranda/2026/03/03/25-403.pdf](https://cdn.ca9.uscourts.gov/datastore/memoranda/2026/03/03/25-403.pdf)
+
+这份PDF文件似乎是一份美国上诉法院关于更新版服务条款（TOS）可执行性的判决意见。其确立的核心法律原则是：公司可以通过电子邮件通知用户来有效修改其服务条款，而用户在收到通知后继续使用服务的行为，可构成对新条款的默示同意。
+
+法院很可能驳回了用户必须采取积极行动（如点击“同意”按钮）才受条款约束的论点。相反，法院认为，只要对条款变更给予合理通知（例如通过电子邮件），并为用户提供审阅条款及停止使用服务的有效机会，便已足够。若用户继续使用服务，其行为即暗示接受了更新后的协议。
+
+此项裁决对数字合同和在线平台具有重大意义。它确认了更新服务条款的行业常见做法，降低了公司实施修改的程序门槛。对消费者而言，这强调了仔细阅读更新通知的重要性——因为不作为（即继续使用服务）可能在法律上使其受到约束，即便他们并未主动阅读或同意新条款。
+
+---
+
+## 24. 代数拓扑：纽结、链环与辫群
+
+**原文标题**: Algebraic topology: knots links and braids
+
+**原文链接**: [https://aeb.win.tue.nl/at/algtop-5.html](https://aeb.win.tue.nl/at/algtop-5.html)
+
+本文介绍了代数拓扑学的一个分支——纽结理论的核心概念。文章将**纽结**定义为三维空间中的简单闭合曲线，并解释称，若两个纽结可通过保持定向的同胚变换相互转换，则它们等价。为避免病态情形，讨论聚焦于**驯顺嵌入**（如多边形曲线），并与亚历山大角球等**野生嵌入**进行对比。
+
+研究纽结通常借助**示意图**（带有交叉信息的二维投影）。**雷德迈斯特移动**提供了组合框架：若两个示意图可通过这三种局部移动的序列相互关联，则它们表示同一纽结。纽结可通过**求和运算**进行复合，而**素纽结**则无法分解为更简单的非平凡纽结。
+
+关键工具之一是**赛弗特曲面**，即以该纽结为边界的定向曲面。其最小亏格是一个重要不变量，在纽结求和运算下具有可加性，且仅对**平凡结**为零。文章指出，纽结在空间中的补集是完全不变量。
+
+为区分不同纽结，文中重点介绍了多项式不变量。描述了**考夫曼括号**——一种基于示意图的递归计算方法，以及由此衍生的**琼斯多项式**——该多项式在所有雷德迈斯特移动下保持不变。
+
+最后，文章将概念推广至**链环**（多个纽结的不交并）与**辫子**。引入以阿廷生成元及关系定义的**辫群**\(B(n)\)，并提及亚历山大定理：任何链环均可通过连接辫子两端获得。
+
+---
+
+## 25. 优步向州政府报告称，我因“惹恼同事”而被解雇。
+
+**原文标题**: Uber reported to the state that I was fired for "annoying a coworker."
+
+**原文链接**: [https://anon-ex-uber.medium.com/uber-reported-to-the-state-that-i-was-fired-for-annoying-a-coworker-4ba7490cc0b8](https://anon-ex-uber.medium.com/uber-reported-to-the-state-that-i-was-fired-for-annoying-a-coworker-4ba7490cc0b8)
+
+**《优步向州政府报告称我因“惹恼同事”被解雇》摘要**
+
+本文是一位前优步员工的第一人称叙述，讲述其被解雇后对公司给出的官方解雇理由提出质疑的经历。作者表示，自己是在公司大规模裁员期间被解雇的，优步最初将其定性为基于绩效的解雇。然而，当作者申请失业救济金时，优步对此提出异议，并正式向州失业机构报告称，作者是因“行为不当”被解雇，具体理由是“惹恼了一位同事”。
+
+作者强烈反驳这一说法，认为这是一个捏造的、微不足道的理由，旨在通过法律手段阻止其获得失业救济金。作者指出，关于“惹恼”的指控在其任职期间或解雇过程中从未被正式提出。文章将优步的这一行为描述为一种策略性手段，目的是通过避免因前员工在裁员后领取救济金而导致公司失业保险税率上升，从而节省开支。
+
+核心矛盾在于作者对自己被解雇原因的理解（作为裁员的一部分）与公司向州政府提供的、带有污名化的官方理由之间的差异。文章批评优步采取了一种在作者看来不诚实且有害的策略，将公司财务利益置于公平对待前员工之上，此举可能损害前员工的职业声誉和财务安全网。
+
+---
+
+## 26. 解锁Python核心：移除全局解释器锁的能耗影响
+
+**原文标题**: Unlocking Python's Cores:Energy Implications of Removing the GIL
+
+**原文链接**: [https://arxiv.org/abs/2603.04782](https://arxiv.org/abs/2603.04782)
+
+本研究利用Python 3.13/3.14.2的实验版本，探讨了移除Python全局解释器锁（GIL）对硬件性能和能耗的影响，并比较了四种工作负载类型的表现：基于NumPy的任务、顺序任务、线程化数值任务以及线程化对象任务。
+
+核心发现揭示了明确的权衡关系。对于数据可独立处理的并行化工作负载，无GIL的自由线程版本能带来显著优势：执行时间最多缩短至原来的1/4，能耗相应降低，CPU核心得到有效利用。但代价是内存使用量增加，这源于对象级锁机制、额外的线程安全措施以及新的内存分配器。
+
+相反，无GIL版本在其他工作负载中表现出劣势。顺序工作负载的能耗增加13-43%且无性能提升。当线程频繁访问共享对象时，由于锁竞争，性能改善有限甚至出现下降。
+
+关键观察发现：能耗仍与执行时间紧密相关；并行化带来的CPU使用率提升并未显著增加功耗。内存增长在虚拟内存中比物理内存更为明显。
+
+结论表明，移除GIL并非通用的性能优化方案。开发者应有选择地采用该方案，仅在确认其特定工作负载能有效利用独立数据的并行执行能力后才实施。
+
+---
+
+## 27. 合法等同于正当吗：AI重实现与Copyleft的侵蚀
+
+**原文标题**: Is legal the same as legitimate: AI reimplementation and the erosion of copyleft
+
+**原文链接**: [https://writings.hongminhee.org/2026/03/legal-vs-legitimate/](https://writings.hongminhee.org/2026/03/legal-vs-legitimate/)
+
+本文探讨了围绕chardet库AI辅助重实现的争议，该库的许可证从LGPL（著佐权）变更为MIT（宽松许可）。维护者Dan Blanchard认为，利用Claude根据API和测试生成新代码构成独立作品，使其免于LGPL要求分享修改的义务。原始作者Mark Pilgrim则反对这一做法，视其为对著佐权精神的规避。
+
+文章批评了Armin Ronacher和antirez为这种做法辩护的论点——他们声称这在法律上是被允许的。作者认为他们混淆了合法性与正当性，忽视了违背社会契约的伦理问题：贡献者原本同意在互惠条款下分享改进成果。文章揭示了一种方向性伪善：将著佐权软件重实现为宽松许可被赞颂为“分享”，而为竞争优势重实现宽松许可软件却遭谴责。
+
+作者最终指出，随着AI降低规避著佐权的成本，其伦理必要性反而增强——这是为了保护公共资源与互惠原则。核心问题在于社会而非法律层面：那些从共享作品中受益者是否应当回馈？文章呼吁发展新的许可规范（如“规范著佐权”）以应对这一新挑战。
+
+---
+
+## 28. Grammarly推出由著名已故及在世作家提供的“专家”级AI评阅服务。
+
+**原文标题**: Grammarly is offering ‘expert’ AI reviews from famous dead and living writers
+
+**原文链接**: [https://www.wired.com/story/grammarly-is-offering-expert-ai-reviews-from-your-favorite-authors-dead-or-alive/](https://www.wired.com/story/grammarly-is-offering-expert-ai-reviews-from-your-favorite-authors-dead-or-alive/)
+
+Grammarly（现已并入更名后的Superhuman公司）推出了一项“专家审阅”功能，该功能利用生成式人工智能模拟来自著名作家和学者的反馈，无论其是否在世。该工具提供的批评灵感源自斯蒂芬·金、卡尔·萨根和威廉·津瑟等人物，尽管并未获得他们的实际授权或认可。
+
+文章强调了重大的伦理和法律问题。包括学者在内的批评者认为，该功能通过未经许可抓取个人作品来创建人工智能代理，并利用他们的名字和声誉进行投机。这种做法被视为将学者简化为他们的作品，对于已故者而言，则是不道德地“复活”他们。这种内容收集行为的合法性尚不明确，并已成为正在进行的版权诉讼的一部分。
+
+此外，文章还质疑该工具的有效性及其更广泛的影响。文章指出，此类功能可能会误导学生，让他们以为自己获得了合法的专家审阅，从而可能模糊学术诚信的界限。人工智能写作辅助工具的激增也加剧了教育工作者在应对人工智能生成的学生作品时所面临的持续挑战。
+
+---
+
+## 29. FFmpeg在Meta：大规模媒体处理
+
+**原文标题**: FFmpeg at Meta: Media Processing at Scale
+
+**原文链接**: [https://engineering.fb.com/2026/03/02/video-engineering/ffmpeg-at-meta-media-processing-at-scale/](https://engineering.fb.com/2026/03/02/video-engineering/ffmpeg-at-meta-media-processing-at-scale/)
+
+Meta严重依赖FFmpeg，每天执行其工具数十亿次以处理视频。历史上，该公司维护了一个内部分支以支持关键功能，如高效多通道转码和直播实时质量指标。然而，该分支与上游项目脱节，导致维护困难，并错过了新编解码器和可靠性改进。
+
+为解决此问题，Meta与FFmpeg开发者、FFlabs及VideoLAN合作，将这些关键功能贡献至上游。主要贡献包括重构FFmpeg的线程模型（从6.0版本起），以实现跨多输出通道的并行编码，显著提升效率。此外，“环内”解码功能（从7.0版本起）允许在转码期间实时计算视觉质量指标（如VMAF），这对直播至关重要。
+
+这些上游贡献使Meta得以完全弃用其内部分支，在所有视频点播和直播流程中统一采用主FFmpeg版本。尽管Meta仍保留部分硬件特定补丁（如为其定制MSVP ASIC）内部使用，但公司致力于贡献具有广泛效益的改进。此次合作增强了FFmpeg对整个社区的价值，同时使Meta能够大规模提供更可靠、高效的视频体验。
+
+---
+
+## 30. Show HN: VS Code 看板代理：面向AI辅助开发者的任务管理工具
+
+**原文标题**: Show HN: VS Code Agent Kanban: Task Management for the AI-Assisted Developer
+
+**原文链接**: [https://www.appsoftware.com/blog/introducing-vs-code-agent-kanban-task-management-for-the-ai-assisted-developer](https://www.appsoftware.com/blog/introducing-vs-code-agent-kanban-task-management-for-the-ai-assisted-developer)
+
+本文介绍**VS Code Agent Kanban**扩展，专为解决开发者使用GitHub Copilot等AI编程助手时遇到的“上下文遗忘”问题。核心痛点在于AI对话会话是无状态的，当聊天记录被清除或关闭时，重要的规划讨论和决策信息便会丢失。
+
+该扩展的解决方案是**一套GitOps友好、基于Markdown的任务管理系统**，直接集成在VS Code中。每个任务都是一个存储在`.agentkanban/tasks/`文件夹中的`.md`文件，包含YAML头部和结构化对话日志。这为AI工作创建了永久可编辑的记录，涵盖计划、决策依据和具体操作。
+
+主要功能包括：
+*   VS Code内置**看板面板**，用于可视化任务追踪。
+*   通过Copilot Chat中的`@kanban`命令（`plan`、`todo`、`implement`）驱动的结构化工作流。
+*   **与现有工具集成**，特别利用GitHub Copilot原生代理框架而非捆绑自定义框架，确保与现有工作流和工具的兼容性。
+*   **团队友好设计**，整个`.agentkanban/`文件夹可提交至版本控制系统，为AI辅助开发提供可共享、可追溯的历史记录。
+
+该扩展旨在为AI辅助编程引入结构化和持久性，同时避免工作流过度复杂化，使与AI协作的规划和决策过程成为版本可控的一等开发环节。
+
+---
+
