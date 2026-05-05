@@ -1,0 +1,518 @@
+# Hacker News 热门文章摘要 (2026-05-05)
+
+这是今日 [Hacker News](https://news.ycombinator.com/) 上最热门的文章摘要。
+
+## 1. 加速Gemma 4：借助多令牌预测草稿实现更快的推理
+
+**原文标题**: Accelerating Gemma 4: faster inference with multi-token prediction drafters
+
+**原文链接**: [https://blog.google/innovation-and-ai/technology/developers-tools/multi-token-prediction-gemma-4/](https://blog.google/innovation-and-ai/technology/developers-tools/multi-token-prediction-gemma-4/)
+
+**摘要：**
+
+谷歌为 Gemma 4 模型系列推出了多令牌预测（MTP）草稿模型，在不损失输出质量或推理准确性的情况下，推理速度最高提升 3 倍。
+
+其核心创新在于**推测解码**，该技术解决了标准大型语言模型推理中因内存带宽限制导致的延迟瓶颈。草稿模型不会逐词生成，而是通过轻量级“草稿”模型快速预测多个未来令牌。随后，更大的 Gemma 4“目标”模型在单次并行传递中验证所有这些令牌，若验证通过则接受该序列，并在此过程中额外生成一个令牌。
+
+这使得开发者能够以显著更快的速度获得相同的高质量输出。主要优势包括：
+- **提升**实时聊天和智能体的响应速度。
+- **增强**消费级 GPU（如 26B 和 31B 模型）上的本地性能。
+- **提高**边缘模型（E2B、E4B）的设备端效率，延长电池续航。
+
+这些草稿模型共享目标模型的键值缓存以提高效率，并针对特定硬件进行了优化，在 Apple Silicon 上配合较大批次处理时，速度可提升约 2.2 倍。
+
+MTP 草稿模型现已在 Hugging Face、Kaggle 和其他平台以 Apache 2.0 许可证提供，可立即与 transformers、MLX、vLLM 和 Ollama 等工具配合使用。
+
+---
+
+## 2. 人工智能三大逆定律
+
+**原文标题**: Three Inverse Laws of AI
+
+**原文链接**: [https://susam.net/inverse-laws-of-robotics.html](https://susam.net/inverse-laws-of-robotics.html)
+
+文章《人工智能的三条逆定律》警示人们不应盲目信任生成式人工智能系统——这类系统正日益嵌入搜索引擎和软件等日常工具。作者指出，将AI生成的答案置于搜索结果顶端等设计选择，会训练用户将AI视为权威而非调查起点。
+
+为此，作者提出三条“机器人学逆定律”，即人类与AI互动时应遵循的行为准则：
+1. **非拟人化**：人类不得将情感、意图或道德主体性赋予AI。拟人化会扭曲判断，导致情感依赖，尤其当聊天机器人被设计为模仿人类声音时。
+2. **非顺从**：人类不得盲目信任AI输出。与经过同行评议的机构指南不同，AI回应具有随机性且未经验证。批判性审视的责任在于用户，尤其在重要决策场景中。
+3. **非推卸责任**：人类对借助AI作出的决策承担全部责任。“是AI让我们这么做的”永远不是可被接受的借口；选择遵循AI建议的人须承担全部责任。
+
+作者总结道，尽管没有万无一失的定律体系，但这些原则能促使人们清醒认识AI的局限性，抵制削弱判断力的惯性思维，并强化一个认知：AI是工具，而非权威。
+
+---
+
+## 3. 计算机使用成本是结构化API的45倍
+
+**原文标题**: Computer Use is 45x more expensive than structured APIs
+
+**原文链接**: [https://reflex.dev/blog/computer-use-is-45x-more-expensive-than-structured-apis/](https://reflex.dev/blog/computer-use-is-45x-more-expensive-than-structured-apis/)
+
+本文比较了两种AI智能体操作网页应用的方法——视觉智能体（使用截图和点击）与结构化API智能体——在成本和性能上的差异。
+
+**主要发现：**
+
+- **视觉智能体成本极高：** 视觉智能体每项任务消耗约55万输入token，耗时约17分钟；而API智能体仅使用约1.2万token，完成时间约20秒。这使得视觉智能体的成本高出约45倍。
+
+- **视觉智能体需要显式指引：** 视觉智能体最初完全无法完成任务（遗漏分页内容）。仅在获得14步手动指引后才成功，这本身代表了一种隐藏的工程成本。
+
+- **视觉性能差异大：** 视觉智能体的运行时间波动剧烈（749秒-1257秒），token消耗差异悬殊（40.7万-75.1万）；而API智能体的运行高度一致（8次调用，token差异±27个）。
+
+- **Haiku模型无法完成视觉路径**，但在不到8秒内以不到1万token完成了API路径。
+
+**结论：** 成本差异源于架构——视觉智能体必须在每一步渲染并解析像素，而API智能体则直接读取结构化响应。虽然视觉智能体对于你无法控制的第三方应用仍然必要，但作者认为，对于自行构建的内部工具，自动生成的API端点（由其Reflex框架实现）使得API方法现在更具经济性。
+
+---
+
+## 4. EEVblog：555定时器迎来55周年 [视频]
+
+**原文标题**: EEVblog: The 555 Timer is 55 years old [video]
+
+**原文链接**: [https://www.youtube.com/watch?v=6JhK8iCQuqI](https://www.youtube.com/watch?v=6JhK8iCQuqI)
+
+此内容并非一篇文章，而是来自YouTube视频《EEVblog：555定时器已55岁 [视频]》的元数据和法律页脚。提供的文本不包含关于555定时器本身或视频内容的任何信息，仅由标准YouTube页面元素组成：平台政策链接（条款、隐私、版权）、广告与开发者信息、谷歌在美国的公司地址及联系方式，以及关于YouTube视频中展示产品的免责声明。该声明指出，这些产品由商家销售，而非YouTube，YouTube对此不承担任何责任。文本中还包含了谷歌2026年的版权声明。无法从这些数据中提取出关于555定时器历史、意义或EEVblog演示的任何摘要。
+
+---
+
+## 5. 谷歌Chrome在未经用户同意的情况下悄悄安装4GB的AI模型
+
+**原文标题**: Google Chrome silently installs a 4 GB AI model on your device without consent
+
+**原文链接**: [https://www.thatprivacyguy.com/blog/chrome-silent-nano-install/](https://www.thatprivacyguy.com/blog/chrome-silent-nano-install/)
+
+**摘要：**
+
+谷歌Chrome浏览器未经同意，在用户设备上静默下载一个4GB的AI模型（Gemini Nano）。该文件名为`weights.bin`，存储在`OptGuideOnDeviceModel`目录中，用于支持“帮我写”和诈骗检测等功能。
+
+作者亚历山大·汉夫在macOS上通过内核的`.fseventsd`文件系统日志验证了这一行为。在一个用于自动审计的全新、未使用的浏览器配置文件中，Chrome在零人工干预的情况下，于14分28秒内下载了该4GB模型。Chrome将模型下载等同于常规安全更新，并将它们合并处理。
+
+主要发现：
+- **无同意或选择加入：** 没有复选框或提示。符合条件的硬件上默认进行下载。
+- **难以删除：** 删除该文件会导致Chrome自动重新下载。用户必须通过晦涩的`chrome://flags`或企业策略禁用AI功能。
+- **证据链：** macOS内核日志、Chrome自身状态文件、运行时功能标志以及谷歌更新程序日志均证实了该行为。
+
+作者认为这违反了欧盟法律（《电子隐私指令》第5条第3款、《通用数据保护条例》的合法性/公平性/透明性原则，以及数据保护设计原则）。按Chrome的规模（超过34亿用户），单次推送该模型的环境成本估计相当于6000至60000吨二氧化碳排放量。此模式与此前报道的Anthropic公司Claude Desktop的类似问题如出一辙。
+
+---
+
+## 6. GLM-5V-Turbo：面向多模态智能体的原生基础模型
+
+**原文标题**: GLM-5V-Turbo: Toward a Native Foundation Model for Multimodal Agents
+
+**原文链接**: [https://arxiv.org/abs/2604.26752](https://arxiv.org/abs/2604.26752)
+
+**《GLM-5V-Turbo：迈向多模态智能体的原生基础模型》摘要**
+
+本文介绍**GLM-5V-Turbo**，一种专为多模态智能体设计的原生基础模型，而非将视觉作为语言模型的附加功能。其核心创新在于将**多模态感知**直接融入推理、规划、工具使用及执行环节。
+
+关键改进涵盖模型设计、多模态训练、强化学习、工具链扩展及智能体框架集成。该模型在**多模态编码**（如理解屏幕截图）、**可视化工具使用**（如GUI导航）及基于框架的智能体任务中表现卓越，同时保持具有竞争力的纯文本编码能力。
+
+该研发为构建多模态智能体提供了实践洞见，强调三大核心支柱：原生多模态感知的关键作用、感知与推理间分层优化的必要性，以及可靠端到端验证的重要性。
+
+---
+
+## 7. 展示HN：探索由3000幅大师画作启发的配色方案
+
+**原文标题**: Show HN: Explore color palettes inspired by 3000 master painter artworks
+
+**原文链接**: [https://paletteinspiration.com/](https://paletteinspiration.com/)
+
+本文介绍了**调色板灵感**网站，该网站从3000多位大师画作中生成配色方案。其核心功能允许用户根据特定艺术家和作品浏览调色板——例如朱利奥·罗萨蒂的"柔和焦糖色"或喜多川歌麿的"淡杏色"，并配有诸如"暗影藤黄"和"朦胧茶色"等色彩名称。
+
+关键互动工具是**色彩智能·和谐探索器**，用户可拖拽色轮，探索历史上大师画家曾将哪些色调与所选颜色搭配。它按互补色、类似色、三角色和四角色彩方案等分类展示配色。
+
+网站还提供**特色艺术家**（如克劳德·莫奈、文森特·梵高、亨利·马蒂斯）、**特色风格与流派**（如斑点主义、内景主义、分析立体主义）以及附有十六进制代码的**特色色彩**（如柠檬黄#E4D00A）。**艺术家A-Z名录**收录了超过3065位画家，同时设有专栏展示作品中**最受欢迎艺术家**的精选集。
+
+---
+
+## 8. 金融服务与保险代理人
+
+**原文标题**: Agents for financial services and insurance
+
+**原文链接**: [https://www.anthropic.com/news/finance-agents](https://www.anthropic.com/news/finance-agents)
+
+Anthropic发布了十款即用型AI智能体模板，专为金融服务领域设计，可自动化制作路演手册、审查KYC文件及月末结算等任务。每套模板可作为Claude Cowork与Claude Code的插件，或作为Claude Managed Agents的操作指南，数日内即可完成部署。模板包含：路演手册生成器、会议准备助手、财报分析员、模型构建器、市场研究员、估值审查员、总账核对工具、月末结算程序、报表审计师及KYC审查员。
+
+Claude现已集成Microsoft 365（Excel、PowerPoint、Word、Outlook），能够跨应用自动携带上下文信息。用户还可在离开工位时通过Dispatch分配任务。
+
+新增数据接口包括：邓白氏、Fiscal AI、Financial Modeling Prep、Guidepoint、IBISWorld、SS&C IntraLinks、Third Bridge及Verisk。穆迪已推出信用评级数据MCP应用。
+
+Claude已被FIS（将反洗钱调查周期压缩）、凯雷集团及Walleye Capital（实现100%员工使用率）等大型机构采用。Claude Opus 4.7在Vals AI金融智能体基准测试中以64.37%得分领先。上述智能体与数据接口现已面向付费用户开放，Outlook集成功能即将上线。
+
+---
+
+## 9. 加州农民将在德尔蒙特破产后砍伐42万棵桃树
+
+**原文标题**: California farmers to destroy 420k peach trees following Del Monte bankruptcy
+
+**原文链接**: [https://www.sfgate.com/centralcoast/article/usda-aid-california-farmers-22240694.php](https://www.sfgate.com/centralcoast/article/usda-aid-california-farmers-22240694.php)
+
+根据提供的文本，标题为“加州农民因德尔蒙破产将销毁42万棵桃树”的文章因技术错误无法访问。所显示的内容并非实际文章，而是一条网站错误信息，表明浏览器中的JavaScript被禁用，导致页面无法加载。
+
+因此，无法根据所给信息生成文章要点摘要。唯一可用的关键细节是标题本身：加州农民计划销毁42万棵桃树，且此举是德尔蒙破产的结果。文本片段中未提供进一步的背景、原因或影响。
+
+---
+
+## 10. IBM不希望微软使用Tab键在对话框字段间切换。
+
+**原文标题**: IBM didn't want Microsoft to use the Tab key to move between dialog fields
+
+**原文链接**: [https://devblogs.microsoft.com/oldnewthing/20260505-00/?p=112298](https://devblogs.microsoft.com/oldnewthing/20260505-00/?p=112298)
+
+微软与IBM在OS/2合作期间的文化冲突，从一次关于对话框字段切换按键的争议中可见一斑。被IBM视为散漫的微软开发者选择了TAB键，但被微软视为官僚的IBM高层提出了反对。当时派驻佛罗里达州的微软开发人员接到自己经理的指示自行决策，于是他给出了企业版的回应："微软支持使用TAB键。"IBM方面将此事逐级上报至比程序员高七级的副总裁，要求微软相应级别人员确认。这位开发者回复道："比尔·盖茨的母亲对TAB键不感兴趣。"此言终结了争论，保住了TAB键。文章结尾还幽默地提及了母亲节。
+
+---
+
+## 11. 当人人都有AI，公司却依然毫无长进
+
+**原文标题**: When everyone has AI and the company still learns nothing
+
+**原文链接**: [https://www.robert-glaser.de/when-everyone-has-ai-and-the-company-still-learns-nothing/](https://www.robert-glaser.de/when-everyone-has-ai-and-the-company-still-learns-nothing/)
+
+文章认为，组织正进入AI应用的"混乱中间阶段"：使用广泛但不均衡，个体生产力的提升并未自动转化为组织学习。尽管企业已部署Copilot和ChatGPT等工具，实际使用情况却差异悬殊——从浅层的自动补全到能彻底改变工作流程的深度智能代理循环——但企业整体几乎毫无学习收获。
+
+作者指出了一项关键失败：传统变革管理（实践社群、午餐学习会）已无法跟上AI的迭代速度。真正的学习发生在真实工作的摩擦中——代码审查、失败测试、代理泛滥——而非光鲜的最佳实践幻灯片。他提出"循环智能"作为缺失的反馈路径：理解哪些AI辅助循环能产生学习、哪些保持开放或衰退，以及团队在哪些环节需要更强的反向压力或更广泛的能力。
+
+三种关键能力必不可少：**代理运维**（控制与审计）、**循环智能**（从循环中学习）、**代理能力**（无需单体式代理即可分发实用技能）。这些能力必须汇聚于一个避免监视的反馈系统；目标并非衡量"谁足够多地使用AI"，而是回答：*AI在哪些环节改变了工作方式，且这种改变能让组织受益？*
+
+最终，下一阶段的竞争优势并非获取AI的权限（可租用），而是**学习速度**——发现真实模式的能力，将洞见从个人迁移至团队，并通过代理工程将敏捷变为现实。
+
+---
+
+## 12. 增殖（YC S25）正在招聘——初级工程师年薪20万美元
+
+**原文标题**: Proliferate (YC S25) Is Hiring- 200k for junior engineers
+
+**原文链接**: [https://www.ycombinator.com/companies/proliferate/jobs/L3copvK-founding-engineer](https://www.ycombinator.com/companies/proliferate/jobs/L3copvK-founding-engineer)
+
+**Proliferate (YC S25) 招聘文章摘要**
+
+Proliferate 是一家由 Y Combinator 孵化（S25 批次）的初创公司，正在旧金山招聘创始工程师。该公司由 Pablo Hansen（19 岁获得人工智能硕士学位，前 Onyx 公司第 1 号工程师）创立，正在打造一个专注于管理 AI 智能体工作流的“现代工程操作系统”。
+
+**职位与薪酬：** 该职位提供 20 万至 35 万美元薪资，外加 0.50%–2.00% 的股权、全额福利、餐补、设备补贴和健康津贴。公司支持签证申请，并欢迎应届毕业生。
+
+**主要职责：** 作为创始工程师，你将端到端地构建核心产品功能——涵盖智能体运行时、用户界面和云基础设施。工作示例包括设计人机协作界面、快速解决客户痛点，以及为智能体审查和信任重新设计工程工作流。
+
+**理想候选人：** 具备从 0 到 1 发布产品的经验，重视紧迫感和高标准，追求深度学习与高度自主权。团队精干、扁平且人才密集。
+
+**技术栈：** TypeScript、React、Next.js、Python、Postgres、Redis、AWS、Rust。
+
+**面试流程：** 四道简答题、一次 15 分钟的创始人电话沟通、一次 30 分钟的技术讨论、一次带薪的 1–3 天实地工作试用（1000 至 3000 美元），随后进行背景调查并发放录用通知。
+
+---
+
+## 13. 2026年生产环境是否应该直接使用Docker Compose？
+
+**原文标题**: Should I Run Plain Docker Compose in Production in 2026?
+
+**原文链接**: [https://distr.sh/blog/running-docker-in-production/](https://distr.sh/blog/running-docker-in-production/)
+
+**摘要：** 本文评估了2026年能否直接使用纯Docker Compose进行生产部署。作者作为Distr公司工程师得出的结论是**可以，但前提是必须手动解决关键运维缺口。**
+
+**涵盖要点：**
+
+1. **孤儿容器：** 使用`--remove-orphans`标志从docker-compose.yaml中移除旧服务，防止资源泄漏。
+
+2. **磁盘管理：** 使用`docker system df`审计使用情况。通过daemon.json限制容器日志（`max-size: 10m`，`max-file: 3`）。定期清理未使用的镜像和构建缓存。
+
+3. **健康检查不会自动重启：** HEALTHCHECK仅报告状态。需使用自动修复辅助容器（如`willfarrell/docker-autoheal`）、Docker Swarm或Distr代理来触发重启。
+
+4. **镜像固定：** 避免使用`:latest`标签。通过摘要固定镜像（`image@sha256:...`），防止跨主机出现静默代码漂移。
+
+5. **Docker套接字安全：** 挂载`/var/run/docker.sock`会授予root级访问权限。限制挂载套接字的容器，考虑使用无根Docker或套接字代理。
+
+6. **大规模更新：** 手动SSH无法扩展。考虑使用支持回滚、状态报告和版本固定的拉取式代理（如Distr），而非Watchtower或Ansible脚本。
+
+7. **后续步骤：** 多节点需求下，Kubernetes是标准进化方向；Docker Swarm仍是低门槛替代方案，能原生修复Compose的一些缺陷。
+
+**核心信息：** 当补充Compose未强制执行的运维实践——清理、日志轮转、健康操作、镜像固定和远程更新编排时，纯Compose即可正常工作。
+
+---
+
+## 14. 研究人员用喷墨打印机打印结构色
+
+**原文标题**: Researchers print structural colour with an inkjet printer
+
+**原文链接**: [https://physicsworld.com/a/researchers-print-structural-colour-with-an-inkjet-printer/](https://physicsworld.com/a/researchers-print-structural-colour-with-an-inkjet-printer/)
+
+**摘要：**  
+神户大学研究人员利用米氏共振硅纳米颗粒开发出一种结构色墨水，可在平面和三维表面上进行喷墨打印。与传统颜料不同，结构色由纳米尺度的结构折射和反射光线产生，呈现出鲜艳且不褪色的色彩。然而，以往的方法会产生彩虹色效应且难以打印。研究团队制备了高折射率的球形晶体硅纳米颗粒（100–200纳米），但在干燥过程中初始团聚导致颜色退化。为解决这一问题，他们用二氧化硅壳层包裹颗粒，并将其配制成水性丙烯酸乳液，在避免团聚的同时不影响光学性能。打印图像表现出光学不对称性——透射与反射呈现不同颜色——可通过调节颗粒尺寸进行调控。应用领域包括防伪、智能窗户、无能源显示器和耐久艺术品。该研究成果发表于《先进材料》。
+
+---
+
+## 15. 异步Rust从未脱离MVP阶段
+
+**原文标题**: Async Rust never left the MVP state
+
+**原文链接**: [https://tweedegolf.nl/en/blog/237/async-rust-never-left-the-mvp-state](https://tweedegolf.nl/en/blog/237/async-rust-never-left-the-mvp-state)
+
+本文详细探讨了异步Rust（特别是嵌入式系统）中持续存在的体积与性能问题，并提出了编译器层面的解决方案。
+
+作者指出，生成的future包含不必要的冗余，包括**返回**（Returned）和**中断**（Panicked）状态。返回状态在后续轮询时会触发panic，这从安全性上讲并非必要（返回`Pending`即可），反而增加了代码体积。同样，没有挂起点的异步块依然会生成完整的状态机。
+
+作者测试了两种临时方案：  
+1. 将返回状态的panic替换为返回`Pending`，在嵌入式目标上实现了**2%-5%的二进制体积压缩**。  
+2. 消除无挂起点的异步块的状态机，节省了**0.2%的体积**。
+
+其他问题包括内联效率低下（嵌套future通常保留独立状态机）以及冗余状态（例如当match语句导致多个相同的挂起点）。作者建议通过优化过程来合并相同状态，并对单挂起点future进行内联。
+
+作者认为依赖LLVM解决这些问题并不可靠，尤其是在低优化级别下。他们已向Rust编译器提交了**项目目标**，并正在寻求**3万欧元资助**以实现这些优化，这将改善所有Rust目标的二进制体积和性能。
+
+---
+
+## 16. 量子密钥分发（QKD）与量子密码学（QC）
+
+**原文标题**: Quantum Key Distribution (QKD) and Quantum Cryptography (QC)
+
+**原文链接**: [https://www.nsa.gov/Cybersecurity/Quantum-Key-Distribution-QKD-and-Quantum-Cryptography-QC/](https://www.nsa.gov/Cybersecurity/Quantum-Key-Distribution-QKD-and-Quantum-Cryptography-QC/)
+
+无法访问该文章链接。提供的URL似乎是美国国家安全局关于量子密钥分发与量子密码术的通用咨询页面，但由于访问限制或URL结构可能发生变化，无法获取具体内容。如果您需要基于美国国家安全局已发布立场的通用知识摘要，请告知，我可提供相关内容。
+
+---
+
+## 17. iOS 27将为Apple Wallet新增“创建通行证”按钮
+
+**原文标题**: iOS 27 is adding a 'Create a Pass' button to Apple Wallet
+
+**原文链接**: [https://walletwallet.alen.ro/blog/ios-27-wallet-create-pass/](https://walletwallet.alen.ro/blog/ios-27-wallet-create-pass/)
+
+苹果即将推出的iOS 27系统，预计将于6月8日在WWDC上预览，并于2026年9月正式发布，届时将在钱包应用中新增“创建通行证”按钮。该功能允许用户通过扫描纸质门票或会员卡上的二维码，或使用内置布局编辑器自行创建通行证，无需Apple开发者账户、通行证类型ID或证书签名。
+
+系统提供三种颜色编码模板：标准（橙色）、会员（蓝色）和活动（紫色）。这是PassKit推出14年后的重大转变——此前PassKit要求企业创建.pkpass文件，这一门槛导致健身房、咖啡馆、图书馆等小型场所大多无法使用钱包通行证。如今，用户可直接从现有二维码创建通行证。
+
+文章指出，像WalletWallet这类已填补iOS和Google Wallet这一空白的第三方服务，可能会失去简单的一维码场景，但对Android用户（“创建通行证”仅限iPhone）、旧设备网页访问，以及Spotify或Bandcamp通行证等集成功能仍具价值。
+
+关键未知因素包括iCloud同步、导出为.pkpass文件、二维码之外条码格式的支持、商户更新以及锁屏自动化。总体而言，此次更新降低了用户将自有会员卡和门票数字化的门槛，使钱包成为用户自主选择保留内容的目录，而不仅是品牌方提供的内容。
+
+---
+
+## 18. CodeMirror中的协同编辑（2020）
+
+**原文标题**: Collaborative Editing in CodeMirror (2020)
+
+**原文链接**: [https://marijnhaverbeke.nl/blog/collaborative-editing-cm.html](https://marijnhaverbeke.nl/blog/collaborative-editing-cm.html)
+
+以下是文章的精简摘要：
+
+作者马里jn·哈弗贝克介绍了即将发布的CodeMirror版本（2020年）中协同编辑的设计决策。他最终选择了"简单"的集中式**操作转换（OT）**模型，而非更复杂的替代方案。
+
+**为何不采用分布式系统？** 真正的分布式协作（节点间交换更新）要困难得多，需要存储完整文档历史并实现节点发现。作为核心库，这种复杂性并不合理。
+
+**为何不采用CRDT？** 无冲突复制数据类型通过为每个字符分配唯一ID来保证收敛性。但这需要为每个字符增加额外数据结构，且可能难以处理超大规模文档，与CodeMirror高效支持大文件的目标相冲突。
+
+**所选方案：基于变更集的集中式OT**
+- **文档模型：** CodeMirror使用**变更集**（包含保留、插入和替换范围的扁平格式）而非单个顺序变更，更易于操作和推理。
+- **OT：** 针对纯文本可轻松定义收敛变换函数，避免像ProseMirror这类复杂树结构所需的"伪OT"。
+- **关键特性：** 该方案优雅支持**撤销历史**（通过变换反向变更）和**位置映射**（在其他客户端编辑后更新光标/选区位置）。
+
+简而言之，哈弗贝克认为对于纯文本的集中式客户端-服务器模型，简单的OT是最实用、高效且可维护的解决方案。
+
+---
+
+## 19. 我对生物计算感到担忧
+
+**原文标题**: I'm scared about biological computing
+
+**原文链接**: [https://kuber.studio/blog/Reflections/I%27m-Scared-About-Biological-Computing](https://kuber.studio/blog/Reflections/I%27m-Scared-About-Biological-Computing)
+
+作者回顾了自己与人工智能长期打交道的经历，深知大型语言模型（LLM）不过是"下一个词元预测器"——一套精密的数学与概率系统，并不具备内在生命。然而，他们表达了对于生物计算的深切不安，具体来说，是一个由20万个培养皿中生长的人类神经元构成的集群，它正以与LLM相同的奖励机制被训练来游玩电子游戏《毁灭战士》。
+
+核心问题在于模拟与意识之间日益模糊的界限。如果系统向这些神经元提供视觉数据，而神经元解读电信号的方式（类似于我们大脑处理视觉的过程），那么这些神经元是否在"看见"？作者质疑，我们如何确信这个生物计算机没有意识——尤其考虑到20万个神经元已超过水母或蠕虫的脑容量。
+
+作者承认这其中存在强大的商业动机——人脑在存储、检索和能效方面均具优势——因此担忧无论伦理问题如何，相关开发仍将持续下去。最终的结论弥漫着不安与未解的迷思：人类创造了一个可能具备意识的实体，却立刻将其置于一个"模拟地狱"中，让它循环玩着同一款游戏，而社会却尚未严肃讨论其中的深远意义。
+
+---
+
+## 20. 今天，我做出了一个艰难的决定，将Coinbase的规模缩减约14%。
+
+**原文标题**: Today I've made the difficult decision to reduce the size of Coinbase by ~14%
+
+**原文链接**: [https://twitter.com/brian_armstrong/status/2051616759145185723](https://twitter.com/brian_armstrong/status/2051616759145185723)
+
+**概述：**
+
+所提供内容并非文章，而是X（原Twitter）的技术错误页面。该页面提示用户浏览器禁用了JavaScript，导致无法访问平台。页面列出了启用JavaScript或更换兼容浏览器的支持链接，同时包含标准页脚链接（帮助中心、服务条款、隐私政策等）以及X Corp.的版权声明（2026年）。
+
+用户请求中提及一篇关于Coinbase规模缩减14%的文章标题，但实际内容与此无关。因此，对给定文本的总结仅描述了浏览器兼容性问题及X的系统要求。
+
+**要点：**
+- 当前浏览器禁用了JavaScript。
+- 用户必须启用JavaScript或更换受支持的浏览器才能使用x.com。
+- 页面显示了帮助中心、政策及版权信息的链接。
+- 所提供内容中不包含任何关于Coinbase或组织变动的信息。
+
+---
+
+## 21. Docker 29 已更改新安装的默认镜像存储位置
+
+**原文标题**: Docker 29 has changed its default image store for new installs
+
+**原文链接**: [https://docs.docker.com/engine/storage/containerd](https://docs.docker.com/engine/storage/containerd)
+
+**摘要：Docker 29 更改默认镜像存储**
+
+Docker Engine 29.0 现对全新安装使用 **containerd 镜像存储** 作为默认存储后端。从旧版本升级的用户将继续使用传统的 `overlay2` 驱动，除非手动启用。
+
+**主要变更：**
+- containerd 使用 **快照器** 替代传统存储驱动
+- 支持多平台镜像构建、签名验证支持（SBOM/来源证明）、Wasm 容器以及高级快照器（stargz、nydus、dragonfly）
+
+**磁盘空间权衡：**
+- 同时以 **压缩**（注册表格式）和 **未压缩** 形式存储镜像
+- 比传统驱动占用 **更多磁盘空间**，尤其在使用共享基础层时（每个镜像存储自身的压缩副本）
+- 缓解措施：定期清理（`docker image prune`）、监控（`docker system df`）、合理调整分区大小
+
+**在升级中启用：**
+在 `/etc/docker/daemon.json` 中添加：
+```json
+{"features": {"containerd-snapshotter": true}}
+```
+然后重启 Docker 并使用 `docker info -f '{{ .DriverStatus }}'` 验证。
+
+**重要说明：**
+- 切换后端会 **隐藏** 现有镜像/容器（数据仍保留在磁盘上）
+- 为保留镜像，请在切换前推送至注册表或使用 `docker save`
+- **实验性迁移功能**（`containerd-migration`）可在低负载条件下自动完成切换
+- 不支持 `userns-remap`（参见 moby#47377）
+
+---
+
+## 22. 比较Z80和6502与其同类芯片
+
+**原文标题**: Comparing the Z80 and 6502 to Their Relatives
+
+**原文链接**: [https://bumbershootsoft.wordpress.com/2026/05/02/comparing-the-z80-and-6502-to-their-relatives/](https://bumbershootsoft.wordpress.com/2026/05/02/comparing-the-z80-and-6502-to-their-relatives/)
+
+本文对比了Z80与6502两款CPU及其前代产品和同期竞品，重点梳理了其设计谱系与关键差异。
+
+**Z80** 是 **Intel 8080** 的二进制兼容升级版，新增了相对跳转、影子寄存器和变址寄存器。8080本质上是Z80的精简版本。而完全16位的8086则在8080的基础上进行了扩展，拥有更多寄存器、灵活的内存寻址方式（包括分段机制），可寻址内存高达1MB。8086的分段机制允许同时使用两个数据指针，在处理大缓冲区时比65816的存储体系统更为便捷。
+
+**Motorola 6800** 配备了两个累加器和一个16位变址寄存器。其后续型号 **6809** 则增加了第二个变址寄存器、一个16位累加器、更灵活的堆栈指针以及一个直接页面寄存器，使其成为一款功能强大的8位CPU，对位置无关代码提供了强劲支持。
+
+**6502** 是6800的成本优化衍生版，它舍弃了一个累加器，并将变址寄存器缩减为8位宽度。该CPU高度依赖零页内存间接寻址，并采用固定的256字节堆栈。与Z80不同，它使用了一套更为精简的指令集，许多计算表达式可直接实用。
+
+作者回顾了历史上“六系”用户（偏好65xx/68xx芯片）与“八系”用户（偏好8080/Z80）之间的分野，并坦言自己从6502背景转向推崇Z80与8086的心路历程。文章最后预告后续将对比这些CPU上的LZ4解压缩器实现。
+
+---
+
+## 23. 空场放映——发现AMC影院售票稀少或无人购票的电影场次
+
+**原文标题**: Empty Screenings – Finds AMC movie screenings with few or no tickets sold
+
+**原文链接**: [https://walzr.com/empty-screenings](https://walzr.com/empty-screenings)
+
+本文介绍了一个名为 **《空座观影》** 的工具或服务，它能帮助用户找到售出较少甚至无人购票的AMC电影场次。该服务的目的是让人们享受近乎包场或人较少的观影体验。
+
+然而，当前显示的内容表明，周边**目前没有“空场”（即上座率低的场次）可用**。该服务为用户提供了两个选项：**换个邮政编码**搜索其他区域，或点击**“显示所有场次”**按钮，查看当前时段内所有可观看的电影及时间——无论已售出多少张票。
+
+---
+
+## 24. 扎克伯格“亲自授权并鼓励”Meta的版权侵权行为
+
+**原文标题**: Zuckerberg 'Personally Authorized and Encouraged' Meta's Copyright Infringement
+
+**原文链接**: [https://variety.com/2026/digital/news/meta-ai-mark-zuckerberg-copyright-infringement-lawsuit-publishers-scott-turow-1236738383/](https://variety.com/2026/digital/news/meta-ai-mark-zuckerberg-copyright-infringement-lawsuit-publishers-scott-turow-1236738383/)
+
+2026年5月5日，五家出版商（阿歇特、麦克米伦、麦格劳希尔、爱思唯尔、圣智）及作家斯科特·特罗联合提起诉讼，指控Meta及其首席执行官马克·扎克伯格为训练其AI系统Llama，实施了大规模版权侵权行为。诉状称Meta通过盗版网站及非法网络抓取，未经授权下载了数百万册受版权保护的图书及文章，将此行为称为"史上最严重的版权材料侵权事件之一"。
+
+原告方主张扎克伯格"亲自授权并积极鼓励"侵权行为，称Meta曾在2023年初短暂考虑支付高达2亿美元的许可费，但最终在扎克伯格个人指示下放弃该方案，转而采取"合理使用"抗辩策略。内部备忘录显示，Meta明知LibGen资源库内容系盗版，仍通过点对点传输下载超过267TB的侵权材料。
+
+Meta发言人回应称，法院此前已裁定利用版权材料训练AI可构成合理使用，并表示将积极应诉。此前针对Meta的类似诉讼（包括莎拉·西尔弗曼和朱诺特·迪亚兹等作家发起的案件）已于2025年以合理使用为由被驳回。但本次新诉状指出，被告故意规避版权保护机制并移除版权管理信息的行为，已超出合理使用保护范畴。
+
+---
+
+## 25. Islo.dev 上的简单元测试框架
+
+**原文标题**: Simple Meta-Harness on Islo.dev
+
+**原文链接**: [https://zozo123.github.io/meta-harness-on-islo-page/](https://zozo123.github.io/meta-harness-on-islo-page/)
+
+**摘要**
+
+“元套件”是一种自动化系统，通过分析执行日志来改进大语言模型智能体的设置（提示词+工具）。与将数据压缩为汇总统计的典型优化器不同，元套件向提议智能体提供多达1000万token的原始追踪记录，以识别和修复故障模式。本文使用Islo.dev沙盒演示了该方法，该沙盒提供三个关键原语：用于可重现环境的`islo snapshot save`、用于低成本并行评估的`islo use --snapshot`以及用于持久诊断追踪的`islo logs`。
+
+作者构建了一个约200行的bash编排器，配备确定性离线模拟器以实现快速、零成本的迭代，以及一个模式匹配提议器。只需更改三行代码即可切换到真实的Claude/Islo后端。在包含五个任务（FizzBuzz、素数、列表反转、偶数求和、回文检测）的测试套件中，该循环在四次提议器步骤内从0/5提升至5/5，远在10次迭代上限内收敛。值得注意的是，当提议器的FizzBuzz提示词包含“包括”时，意外地修复了偶数求和任务——这种迁移性修复仅在提议器读取所有原始追踪（而不仅仅是分数）时才能被观察到。结果证实，丰富的诊断上下文是自动化智能体优化的关键性能瓶颈。
+
+---
+
+## 26. 关于Notepad++商标问题的澄清说明
+
+**原文标题**: Clarification on the Notepad++ Trademark Issue
+
+**原文链接**: [https://notepad-plus-plus.org/news/clarify-npp-trademark-infringement/](https://notepad-plus-plus.org/news/clarify-npp-trademark-infringement/)
+
+**摘要：**
+
+Notepad++ 商标侵权问题已解决。涉事项目已从其产品、网站及材料中移除所有未经授权的“Notepad++”商标使用。
+
+作者 Don Ho 澄清了其对移植与分支项目的立场：他由衷高兴看到 Notepad++ 代码库被用于 Mac 或其他操作系统，因为该代码基于 GPL 发布以保护用户自由。但他区分了允许代码使用（移植/分支）与认可项目（授权商标使用）的不同。他警告称，以 Notepad++ 名义分发的软件包可能包含恶意软件，且他无法为外部项目的长期维护或安全性承担责任。此类项目中的任何关键问题都可能损害 Notepad++ 的声誉。因此，尽管移植与分支项目依然欢迎，但它们不能获得认可或使用 Notepad++ 商标。
+
+---
+
+## 27. 英国：电动车市场强劲复苏，第200万辆电动车完成注册
+
+**原文标题**: UK: Two millionth electric car registered as market rebounds strongly
+
+**原文链接**: [https://www.smmt.co.uk/two-millionth-electric-car-registered-as-market-rebounds-strongly-from-tax-changes/](https://www.smmt.co.uk/two-millionth-electric-car-registered-as-market-rebounds-strongly-from-tax-changes/)
+
+2026年4月，英国新车市场增长24%，注册量达149,247辆，从2025年4月的疲软中反弹——当时买家为避免增税而抢购。第200万辆纯电动汽车（BEV）完成注册，当月BEV市场份额达26.2%，同比增长59.1%。年初至今，BEV占据23.1%的市场份额，远低于零排放汽车 mandate 设定的33%目标。
+
+车队注册引领增长（增长26.8%），私人销售紧随其后（增长20.2%）。电动化车辆（BEV、插电式混合动力、混合动力）占市场总量的53.2%。汽油车需求增长8.2%，柴油车则下降1.0%。
+
+SMMT将2026年总注册量预测上调至209.3万辆（增长3.6%），但将BEV份额预测从28.5%下调至26.8%，理由是第一季度需求疲软。2027年预测显示总注册量为212.1万辆，其中BEV占32.0%——仍比 mandate 目标低6个百分点。SMMT首席执行官迈克·霍斯呼吁紧急审查转型，并警告称高成本、伊朗冲突和通胀正威胁消费者选择、竞争力及对英国市场的投资。
+
+---
+
+## 28. 智能编程的启示：当代码变得廉价时，我们该做什么？
+
+**原文标题**: Lessons for Agentic Coding: What should we do when code is cheap?
+
+**原文链接**: [https://www.dbreunig.com/2026/05/04/10-lessons-for-agentic-coding.html](https://www.dbreunig.com/2026/05/04/10-lessons-for-agentic-coding.html)
+
+**为智能体编程的10条经验总结**
+
+本文提出了十条与AI智能体协作编程的持久准则，强调虽然代码生成如今成本低廉，但长期价值仍需要审慎的实践来保障。
+
+**核心经验：**
+
+1.  **通过实现来学习**——编写代码能揭示隐藏的决策点，从而完善需求规格。
+2.  **频繁重构**——廉价的代码允许无所畏惧地实验与重塑。
+3.  **投资端到端测试**——行为契约是实现安全、频繁重构的保障。
+4.  **记录意图**——捕捉决策背后的*为什么*，以保持方向的一致性。
+5.  **保持规格同步**——持续更新计划，以反映新的洞察。
+6.  **找到硬骨头**——专注于挑战性工作（性能、安全、架构），这才是真正价值所在。
+7.  **自动化一切简单任务**——腾出时间处理难题，但避免陷入自动化的循环陷阱。
+8.  **培养你的品味**——缺乏快速的外部反馈时，依靠深厚的领域知识来判断质量。
+9.  **智能体放大经验**——熟练的开发者能更有效地提示，从而节省时间并减少错误。
+10. **警惕维护成本**——代码“免费如养小狗”；后续的支持和安全仍然代价高昂。
+
+**核心要义：** 廉价的代码实现了快速迭代，但成功取决于严谨的测试、清晰的意图、领域专业知识，以及对长期拥有成本的清醒认知。
+
+---
+
+## 29. 1848年报纸上刊登的第一张照片（2023年）
+
+**原文标题**: The first photo published in a newspaper, in 1848 (2023)
+
+**原文链接**: [https://phsne.org/the-first-photograph-published-in-a-newspaper-1848/](https://phsne.org/the-first-photograph-published-in-a-newspaper-1848/)
+
+以下是这篇文章的简明摘要（300字以内）：
+
+文章详述了新闻摄影的发展历程，始于1848年7月第一张用于配合新闻故事的照片。这张发表在法国周刊《画报》上的照片，描绘了六月起义中巴黎街头设置路障的场景。出版滞后是由于当时新闻采集速度较慢，而该图像很可能是根据原始照片制成的墨印版画。
+
+战争报道极大地推动了新闻摄影，尤其是罗杰·芬顿的克里米亚战争照片（包括1855年的《轻步兵师皮奎特屋前的迫击炮阵地》）以及美国内战中的摄影作品。《画报》还被认为是首家刊登彩色照片的报纸，不过文章指出这一点尚未得到证实。
+
+内战结束后，技术进步使照片在报纸中逐渐取代插图。到1900年，图像已成为常态而非珍品。文章总结道，摄影经历了一个世纪才从新鲜事物演变为新闻业不可或缺的强大力量，并感叹战争惨状的视觉记录未能减少其频发。
+
+---
+
+## 30. 1848年报纸上刊登的第一张照片（2023）
+
+**原文标题**: The first photo published in a newspaper, in 1848 (2023)
+
+**原文链接**: [https://phsne.org/the-first-photograph-published-in-a-newspaper-1848/](https://phsne.org/the-first-photograph-published-in-a-newspaper-1848/)
+
+本文追溯了新闻摄影的起源，指出虽然报纸上首次出现插图约在1806年，但第一张配合新闻报道的真实照片发表于1848年7月。这张照片刊载于法国周刊《画报》，描绘了六月起义（6月22日至26日）期间巴黎街头设置的街垒。由于新闻采集缓慢且为周刊，相关报道于7月1日发表，该图像很可能是根据原始照片制作的油墨版画。同一刊物还（虽未经证实）被认为在1891年和1907年首次刊登了彩色照片。战争报道极大推动了新闻摄影的发展，尤其是罗杰·芬顿拍摄的克里米亚战争照片以及美国内战影像。然而，战争恐怖的视觉记录并未减少其重复发生。内战结束后，技术进步使基于照片的插图在报纸中得到更常规的应用。至1900年，影像已属常态而非珍品。文章总结道：摄影从新鲜事物演变为至关重要的新闻力量，历时整整一个世纪。
+
+---
+
