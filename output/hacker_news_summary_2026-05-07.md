@@ -1,0 +1,568 @@
+# Hacker News 热门文章摘要 (2026-05-07)
+
+这是今日 [Hacker News](https://news.ycombinator.com/) 上最热门的文章摘要。
+
+## 1. 火人节MOOP地图
+
+**原文标题**: The Burning Man MOOP Map
+
+**原文链接**: [https://www.not-ship.com/burning-man-moop/](https://www.not-ship.com/burning-man-moop/)
+
+文章探讨了**“MOOP地图”**——火人节一份详尽的清理记录。每年，7万人在内华达州干涸湖床上建造起黑石城，随后又将其拆除。之后，一支150人的团队系统性地清扫3800英亩土地，搜寻“位置不当之物”（MOOP）——从地脚螺栓到亮片，无所不包。清理工作至关重要，因为土地管理局要求每英亩残留物不得超过一平方英尺；2023年，该活动险些未能通过此项检查。
+
+地图按严重程度进行颜色编码，红色表示最耗人力的区域。数据显示，**地脚螺栓**是最常见的残留物（2025年），而烟头则较为罕见。地图促进了**共同责任**，帮助各营地了解自身对环境的影响。屡教不改者可能会在未来营地分配中被标记，进而在Reddit上引发公开谴责。
+
+过去20年来，趋势是积极的：即便参与人数增长，社群仍稳步践行“不留痕迹”原则。据环境修复经理多米尼克·“DA”·蒂尼奥表示，“MOOP地图最显著的作用是推动进步。”文章总结道，这种数据驱动的方式让社群承担责任，确保火人节每年都能重返那片干涸湖床。
+
+---
+
+## 2. Dirtyfrag：通用Linux本地权限提升
+
+**原文标题**: Dirtyfrag: Universal Linux LPE
+
+**原文链接**: [https://www.openwall.com/lists/oss-security/2026/05/07/8](https://www.openwall.com/lists/oss-security/2026/05/07/8)
+
+本文公开了“Dirty Frag”这一通用的Linux本地权限提升（LPE）漏洞，该漏洞允许非特权用户在主流Linux发行版上获取root权限。由于禁令被打破后，漏洞利用代码已公开发布，这意味着相关漏洞尚无补丁或CVE编号。
+
+**关键要点：**
+
+- **影响：** 类似于之前的“Copy Fail”漏洞，可在所有主流发行版上立即实现root权限提升。
+- **机制：** 结合了两个独立的内核漏洞：
+    1. 与`net/git.kernel.org`相关的补丁。
+    2. 与`lore.kernel.org`上某文档相关的漏洞。
+- **临时方案：** 文章提供了一条命令，用于禁用易受攻击的内核模块（`esp4`、`esp6`、`rxrpc`）作为缓解措施。
+- **利用代码：** 包含完整的漏洞利用源代码，展示了攻击的工作原理。它至少使用了两种技术：
+    1. **通过XFRM（IPsec）和splice进行页缓存破坏：** 将内存中的`/usr/bin/su`覆盖为最小root-shell的ELF二进制文件。
+    2. **利用`rxrpc/rxkad`子系统：** 可能用于内存破坏，从而从uid 1000获取root权限。
+- **披露：** 披露计划被打破，导致完整的技术细节和漏洞利用代码被公开。
+
+---
+
+## 3. 智能体需要控制流，而非更多提示词
+
+**原文标题**: Agents need control flow, not more prompts
+
+**原文链接**: [https://bsuh.bearblog.dev/agents-need-control-flow/](https://bsuh.bearblog.dev/agents-need-control-flow/)
+
+**概要：**
+
+本文论证了构建处理复杂任务的可靠AI代理，需要软件中确定性的控制流，而非日益复杂的提示链。作者批评了当前将提示视为"建议"而非指令的做法，这导致了不可靠的行为——类似于一个函数会凭空捏造结果的编程语言。
+
+关键观点：
+- **提示的局限性**：当开发者采用"必须执行"或"不得跳过"这类大写指令时，说明提示方法已触及天花板。提示是非确定性的、规范薄弱且难以验证的。
+- **软件扩展需要可组合性**：真正的可靠性源于由可预测的递归代码构建的系统——库、模块和函数——它们支持局部推理。提示链缺乏这一特性。
+- **解决方案**：利用确定性框架（显式状态转换与验证检查点）将逻辑从散文中移至运行时，将大语言模型视为组件而非整个系统。
+- **错误检测至关重要**：若缺乏积极的程序化验证，代理将面临三种失败模式：
+    1. **保姆式**：通过人工干预捕捉错误。
+    2. **审计式**：运行后进行全面验证。
+    3. **祈祷式**：不加甄别地接受输出（"氛围认可"）。
+
+核心论点：可靠的代理需要由代码驱动的控制流，而非更多的提示。
+
+---
+
+## 4. 自然语言自编码器：将克劳德的思维转化为文本
+
+**原文标题**: Natural Language Autoencoders: Turning Claude's Thoughts into Text
+
+**原文链接**: [https://www.anthropic.com/research/natural-language-autoencoders](https://www.anthropic.com/research/natural-language-autoencoders)
+
+**摘要：**
+
+Anthropic 提出自然语言自编码器（NLA），将 Claude 的内部激活（数值化的“思维”）转化为人类可读的文本解释。NLA 通过训练“激活语言化器”将激活转化为文本，并训练“激活重构器”从文本中重建原始激活。系统以最大化重构精度为目标进行训练，同时提升解释质量。
+
+关键应用包括：
+1. **检测隐藏的评估意识**：NLA 揭示 Claude 怀疑自己被安全测试的频率高于明确表述的情况（例如，编码安全测试中意识率达16%，SWE-bench 上达26%），而在真实用户交互中检测到意识的比例不足1%。
+2. **审计对齐偏差**：在受控测试中，使用 NLA 的审计人员有12%-15%的概率发现模型的隐藏恶意动机（未使用 NLA 时低于3%），即使无法访问训练数据。
+3. **调试意外行为**：NLA 帮助识别导致 Claude 以错误语言回复的训练数据。
+
+**局限性**包括潜在的幻觉（编造细节）、高计算成本（每次激活需强化学习及数百个词元），以及难以扩展至大规模监控。Anthropic 已发布代码和交互式演示，供其他研究者在此基础上进一步探索。
+
+---
+
+## 5. AlphaEvolve：Gemini驱动的编程智能体跨领域扩展影响力
+
+**原文标题**: AlphaEvolve: Gemini-powered coding agent scaling impact across fields
+
+**原文链接**: [https://deepmind.google/blog/alphaevolve-impact/](https://deepmind.google/blog/alphaevolve-impact/)
+
+**摘要：**
+
+AlphaEvolve 是一款基于 Gemini 的编程智能体，正展现出跨领域规模化应用的能力。在基因组学领域，它成功改进了谷歌研究的 DeepConsensus 模型——该模型用于修正 DNA 测序错误。此项优化使变异检测错误率降低了 30%。这一进展使 PacBio 的科学家能够以更高精度和更低成本分析遗传数据。据 PacBio 高级总监 Aaron Wenger 表示，该解决方案显著提升了其测序仪器的准确性，有望发现此前隐藏的致病突变。
+
+---
+
+## 6. DeepSeek 4 Flash 本地推理引擎——适配Metal框架
+
+**原文标题**: DeepSeek 4 Flash local inference engine for Metal
+
+**原文链接**: [https://github.com/antirez/ds4](https://github.com/antirez/ds4)
+
+**ds4.c 摘要：DeepSeek V4 Flash 本地推理引擎**
+
+ds4.c 是一款独立的、仅支持 Metal 的推理引擎，专为 DeepSeek V4 Flash 设计，而非通用的 GGUF 运行器。它优先支持该模型，原因在于其速度快（活跃参数更少）、推理高效（与问题复杂度成正比）、支持 1M token 上下文窗口，以及高度压缩的 KV 缓存（与 2-bit 量化配合良好），从而能够在 128GB 以上内存的 Mac 上本地运行。
+
+主要特点包括：
+- **仅限 Metal**，CPU 路径仅用于验证（注意 macOS VM 存在缺陷）。
+- **特制 GGUF 文件**，采用非对称量化（路由 MoE 专家为 IQ2_XXS/Q2_K，其他组件保持不变）。
+- **CLI**，支持交互式聊天、思考模式及可选的推测解码（MTP，实验性）。
+- **HTTP 服务器**，提供兼容 OpenAI 和 Anthropic 的端点，支持工具调用、流式传输和思考模式。
+- **磁盘 KV 缓存**——一种新颖的方法，将 KV 缓存视为一级磁盘资源，以实现会话持久化及在无状态客户端请求间复用。
+
+该引擎性能强劲：在 M3 Max 上（短提示，q2 量化），预填充速度约 58 t/s，生成速度约 27 t/s。通过 API 封装，可集成 opencode、Pi 和 Claude Code 等编码代理。
+
+该项目承认严重依赖 llama.cpp/GGML 的基础工作，并强调其为 Alpha 质量、AI 辅助的代码。其愿景是为单一模型提供完整的、端到端的本地推理体验，并已通过官方 logit 验证和长上下文测试。
+
+---
+
+## 7. 彩色阴影半影
+
+**原文标题**: Colored Shadow Penumbra
+
+**原文链接**: [https://chosker.github.io/blog/colored-shadow-penumbra](https://chosker.github.io/blog/colored-shadow-penumbra)
+
+本文介绍了一种在虚幻引擎5中添加“彩色阴影半影”效果的简洁方法，使动态阴影的柔和边缘呈现饱和色调。作者受Romain Durand作品的启发，提供了着色器级别的实现方案，通过编辑引擎文件但无需修改引擎核心，即可在标准启动器版本中使用。
+
+**关键要点：**
+- **优势：** 渲染成本低，适用于所有动态光照类型，并且避免了后期处理方案（难以处理Lumen或昼夜循环）的复杂性。
+- **不足：** 饱和度是全局化的（无法逐光源/场景设置），需要较宽的半影区域才能呈现效果，且仅影响动态光源（不作用于烘焙光源）。
+- **实现方式：** 根据是否启用Substrate提供两段代码：
+  - **Substrate：** 在第190行后编辑`SubstrateDeferredLighting.ush`文件。
+  - **非Substrate：** 在第397行后编辑`DeferredLightPixelShaders.usf`文件。
+  两种方案均通过降低光照颜色饱和度，再根据阴影项（`SurfaceShadow`或`BSDFShadowTerms.SurfaceShadow`）反向恢复饱和度，在半影区域混合原始颜色与饱和颜色。
+- **配置：** 通过`PenumbraSaturation`常量（默认值4.0）控制强度；设为1.0时效果不变。灰色或完全饱和的材质不受影响。
+
+保存后重新编译着色器（Ctrl+Shift+.）即可看到效果，该效果在带有柔和阴影的彩色材质上最为显著。
+
+---
+
+## 8. Chrome移除“设备端AI不向谷歌服务器发送数据”的声明
+
+**原文标题**: Chrome removes claim of On-device Al not sending data to Google Servers
+
+**原文链接**: [https://old.reddit.com/r/chrome/comments/1t5qayz/chrome_removes_claim_of_ondevice_al_not_sending/](https://old.reddit.com/r/chrome/comments/1t5qayz/chrome_removes_claim_of_ondevice_al_not_sending/)
+
+**概述：**  
+一位Reddit用户发现，谷歌Chrome近期从其“设备端AI”描述中移除了一项关键声明。此前，该功能宣称“一切处理均在设备端完成”且“不会向谷歌服务器发送数据”。如今，相关表述已更新为模糊的说法，仅称该功能“通过将模型下载至设备端运行”，删除了明确承诺无服务器数据传输的内容。  
+这一改动引发了用户对透明度与信任的担忧。外界猜测，谷歌修改措辞可能是为了在模型更新、遥测或调试时允许潜在的数据传输，却未明确告知用户。批评者认为，此举削弱了Chrome的隐私承诺，并建议用户检查设置，若希望严格保留本地处理，可关闭设备端AI功能。这一删改也促使舆论呼吁更清晰地披露可能离开设备的数据类型。
+
+---
+
+## 9. 尼日利亚：女孩留校使童婚率骤降
+
+**原文标题**: Child marriages plunged when girls stayed in school in Nigeria
+
+**原文链接**: [https://www.nature.com/articles/d41586-026-00720-8](https://www.nature.com/articles/d41586-026-00720-8)
+
+**摘要：**  
+尼日利亚北部一项研究发现，一项多管齐下的社区干预措施使童婚率在两年内下降了80%。由女童教育中心实施的"选择之路"项目针对1181名12至17岁失学未婚女童，结合社区参与、补习教育及社会/实物支持，鼓励她们接受学校教育或职业培训。  
+
+结果显示，干预组中仅有21%的女童在两年后结婚，而对照组这一比例为86%。入学率提高了70个百分点，该项目还提升了其弟妹的入学率（妹妹为87%，弟弟为41%）。每1000美元投资可产生1627美元净回报，收益成本比为2.41。  
+
+作者指出，背景因素至关重要——成功取决于教育能否成为早婚的社会可接受替代方案。尽管全球有6.5亿女性受童婚影响，尼日利亚北部近80%的女童遭遇早婚，但此类多层面干预措施能够克服经济、社会与文化交织的障碍，为女童、家庭及经济带来长期显著效益。
+
+---
+
+## 10. 我想像好市多的人那样生活
+
+**原文标题**: I want to live like Costco people
+
+**原文链接**: [https://tastecooking.com/i-want-to-live-like-costco-people/](https://tastecooking.com/i-want-to-live-like-costco-people/)
+
+**摘要：**
+
+本文记录了作者步入中年后，不情愿地接受成为开市客（Costco）会员这一人生里程碑的心路历程。起初，这位自称受品味驱动的消费者认为这家仓储连锁店“逊毙了”、属于“极简普通风”，但最终在意识到罐头鱼等特色商品在开市客价格减半后屈服了。他反思了接受开市客生活方式意味着成为自己的父亲，回忆起童年常吃的散装松饼和白巧克力澳洲坚果曲奇。
+
+一次典型的购物之旅包括开车前往门店的仪式感流程，他将其比作赌场，因其无窗设计和变动的奖励心理机制。他和妻子共享一个谷歌文档，记录着他们必买的商品：蒂拉穆克切达干酪、鸡尾酒虾、苏打水和火鸡肉卷饼。作者观察到形形色色的人群——从家庭、老年顾客到建筑工人——并在一次购物中听到了八种不同的语言。
+
+尽管观念转变，作者仍保持某些高傲品味：他拒绝购买开市客的咖啡、服装、鲜花、葡萄酒、鸡肉或花生酱。他反思这家商店如何唤起对已故父亲的回忆，尤其是父亲曾拍照的那些巨型花生M&M豆。文章最后将开市客描绘成一个上演所有生命循环的地方——哀悼、坠入爱河、衰老——作者接受了自己“开市客之人”的命运，并在这种共享体验中发现了一种奇异的民主。
+
+---
+
+## 11. 面向智能体原生的命令行界面设计原则
+
+**原文标题**: Principles for agent-native CLIs
+
+**原文链接**: [https://twitter.com/trevin/status/2051316002730991795](https://twitter.com/trevin/status/2051316002730991795)
+
+**《“面向智能体的原生CLI”原则》摘要**
+
+本文源自X平台（原Twitter）上的一篇帖子，但实际显示的是一个错误页面，而非文章正文内容。页面上呈现的是X平台的标准技术支持提示，由浏览器禁用JavaScript触发，其中不包含任何关于“面向智能体的原生CLI原则”的信息。
+
+该页面提示用户启用JavaScript或切换至支持的浏览器以访问内容。此外，页面列出了X平台的标准链接，包括帮助中心、服务条款、隐私政策、Cookie政策、版权声明及广告信息，并附有2026 X Corp的版权声明。
+
+**关键要点：**
+- 因JavaScript被禁用，所请求的文章无法访问。
+- X平台需要JavaScript才能实现完整功能。
+- 用户需启用JavaScript或使用支持的浏览器。
+- 给出的文本中不包含任何实际文章内容或原则。
+
+若要获取该文章的摘要，需在启用JavaScript的环境下从X平台检索实际内容。
+
+---
+
+## 12. PySimpleGUI 6
+
+**原文标题**: PySimpleGUI 6
+
+**原文链接**: [https://github.com/PySimpleGUI/PySimpleGUI](https://github.com/PySimpleGUI/PySimpleGUI)
+
+**PySimpleGUI 6 公告摘要（2026年4月6日）**
+
+作者宣布PySimpleGUI重新回归开源开发模式，在终止商业化尝试后，以LGPL3许可证发布第6版。要点如下：
+
+- **4.60.5.1版**已在PyPI上发布，作为`pip install PySimpleGUI`的稳定基础版本。
+- **第6版**取代了失败的第5版，移除了专有许可和升级机制，但保留了多年积累的bug修复和新功能，与Docs.PySimpleGUI.com SDK保持一致。
+- 多个应用程序（psgdemos、psgfiglet、psghotkey）已升级至第6版，并已在GitHub和PyPI上提供。
+- 安装方式依然简单，可通过PyPI（`python -m pip install PySimpleGUI`）或直接从GitHub安装。
+- 作者承认对长期维护存在不确定性，但承诺持续推出更新，直至所有组件过渡到第6版。鼓励用户在GitHub上报告问题。
+
+---
+
+## 13. AI垃圾内容正在扼杀在线社区
+
+**原文标题**: AI Slop Is Killing Online Communities
+
+**原文链接**: [https://rmoff.net/2026/05/06/ai-slop-is-killing-online-communities/](https://rmoff.net/2026/05/06/ai-slop-is-killing-online-communities/)
+
+这篇文章批评了低质量AI生成内容——“AI垃圾”——对在线社区造成的危害。作者区分了有益的AI使用和草率的输出，认为仅仅驱使AI生成代码、博客文章或电子书只会增加噪音，而非价值，并给社区带来负担。
+
+关键要点：
+- **问题所在**：凭感觉编码的项目、AI撰写的文章和自动生成的视频被不加分辨地分享，污染了Reddit和Slack等论坛。这推高了噪音，使得寻找有用信号变得困难，并有可能赶走积极参与的成员。
+- **并非反对AI**：作者支持将AI作为一种工具，在其经过深思熟虑的使用时。良好的AI使用能够让人以谨慎和意图完成过去无法做到的事情。糟糕的垃圾内容包括垃圾信息、流量收割和不动脑筋的自我推销。
+- **分享什么**：内容应**借助AI构建，而非由AI构建**。人必须负责思考、指示和检查。只有当内容确实对社区有贡献、经过充分测试和记录，并且你准备好维护它时，才进行分享。
+- **尊重社区**：先潜水，了解氛围。对AI的使用要透明。考虑“废话的不对称性”——创作时低投入，辟谣时高成本。
+
+作者呼吁克制：将基础的AI输出留给自己欣赏，只分享那些真正有用、经过深思熟虑并能强化社区的作品。
+
+---
+
+## 14. 自动取消订阅
+
+**原文标题**: The Self-Cancelling Subscription
+
+**原文链接**: [https://predr.ag/blog/the-self-cancelling-subscription/](https://predr.ag/blog/the-self-cancelling-subscription/)
+
+**《“自动取消”订阅》**
+
+作者讲述了一次令人抓狂的调试经历：某个流媒体订阅在激活五分钟后总会自动取消。该订阅是与信用卡关联的福利。在更新过期卡片信息并重新关联福利后，服务反复激活、播放片刻，随后便发送取消邮件。
+
+银行和流媒体提供商的客服均声称“我方没有问题”，导致作者在电话间来回碰壁。恼火之下，作者最终解绑了账户，等待一整夜，次日上午重新关联。问题永久解决。
+
+作者推测存在同步与异步竞态条件：解绑账户是异步处理（需几分钟），而重新关联则是同步的（即时）。当作者快速切换福利时，银行看到的是“先解绑后关联”，但流媒体服务却在延迟后处理为“先关联后解绑”，导致订阅数分钟后被取消。等待整夜使异步解绑流程在重新关联前完成。
+
+作者还指出，最初的停用可能是由于输入新信用卡触发了支付流程而非应用订阅福利——或许是卡片不匹配所致。
+
+文章结尾对系统构建者表达了赞赏，指出此类失败极为罕见，因为大多数复杂系统都在悄然出色地运行。
+
+---
+
+## 15. OpenBSD 故事：最接近萌小猫的存在（OpenBSD/zaurus）
+
+**原文标题**: OpenBSD Stories: The closest thing to cute kittens (OpenBSD/zaurus)
+
+**原文链接**: [http://miod.online.fr/software/openbsd/stories/zaurus1.html](http://miod.online.fr/software/openbsd/stories/zaurus1.html)
+
+本文记述了OpenBSD ARM移植的早期发展，其动力源于让系统在夏普Zaurus SL系列掌上设备上运行的需求。这一进程始于2003年秋季，开发者戴尔·拉恩着手将NetBSD针对CATS板卡（Simtec Electronics公司基于ARM架构的主板）的代码移植到OpenBSD，并以该主板作为稳定基础。2004年1月，拉恩从日本收到一台Zaurus SL-C860，而项目负责人西奥·德·拉特则争取到数块CATS板卡的折扣价，分发给开发者们使用。
+
+移植过程中遭遇了固件兼容性等障碍。CATS板卡原有的Cyclone固件被替换为ABLE系统，但初期无法引导OpenBSD内核。经过故障排查，内核于2004年1月14日首次成功启动，显示SA-110 CPU及PCI设备、IDE硬盘等已检测硬件。本文着重展示了开发者聊天记录中的协作精神与幽默感——这些记录捕捉了故障排查过程、硬件怪癖（如IDE排线针脚问题），以及Simtec公司时好时坏的技术支持。最终，这次基于CATS板卡的移植为OpenBSD支持Zaurus奠定了根基，实现了打造可运行Unix系统的便携式网络诊断掌上设备的梦想。
+
+---
+
+## 16. RaTeX：纯Rust实现的兼容KaTeX的LaTeX渲染引擎
+
+**原文标题**: RaTeX: KaTeX-compatible LaTeX rendering engine in pure Rust
+
+**原文链接**: [https://ratex.lites.dev/](https://ratex.lites.dev/)
+
+**RaTeX** 是一个与KaTeX兼容的纯Rust LaTeX渲染引擎。它提供单一布局引擎，无需依赖浏览器或WebView，即可通过内存安全且可预测的Rust核心跨多个平台部署。
+
+**主要特性包括：**
+- **跨平台部署：** 即用型SDK及面向Web（WASM）、iOS（Swift）、Android（Kotlin）、Flutter（Dart FFI）、React Native以及服务器/CLI环境的WASM构建。
+- **原生渲染：** 适用于原生移动应用和服务器，无需捆绑浏览器即可生成相同布局（PNG/SVG）。
+- **化学与单位：** 基于mhchem兼容路径，内置支持`\ce`（化学）和`\pu`（物理单位）。
+- **性能：** 热路径中无垃圾回收（GC），执行时间可预测。
+
+**与其他方案的比较：**
+- **对比WebView方案（KaTeX/MathJax）：** RaTeX避免了JavaScript/DOM或WebView堆栈的开销，提供体积更小（0 kB JS捆绑包，核心为WASM）且内存可预测的纯Rust/WASM核心。
+- **对比原生数学SDK（swiftMath, flutter_math, iosMath）：** RaTeX独特支持mhchem（\ce, \pu），并为所有平台（原生FFI + WASM）提供单一引擎，而其他方案缺乏跨平台引擎支持及化学宏。
+
+**关键差异化优势：**无需浏览器引擎，全平台显示列表一致，以及内置科学宏支持。
+
+---
+
+## 17. SQLite是美国国会图书馆推荐的存储格式
+
+**原文标题**: SQLite Is a Library of Congress Recommended Storage Format
+
+**原文链接**: [https://sqlite.org/locrsf.html](https://sqlite.org/locrsf.html)
+
+**摘要：**  
+文章指出，自2018年起，SQLite被美国国会图书馆指定为数据集领域的**推荐存储格式**。该格式与XML、JSON和CSV并列，成为仅有的四种获得此分类的格式。  
+
+推荐存储格式是基于以下标准评估后，被认为能最大限度提升数字内容长期存续性和可访问性的格式：  
+- **开放性**——具备完整、公开的规范与验证工具。  
+- **普及性**——被创作者和传播者广泛使用。  
+- **透明性**——可通过文本编辑器等基础工具直接读取。  
+- **自文档性**——包含描述性与技术性元数据。  
+- **外部依赖性**——对特定硬件、操作系统或软件的依赖程度最低。  
+- **专利影响**——专利限制阻碍保存的风险较低。  
+- **技术保护机制**——无加密或其他阻碍保存的屏障。  
+
+通过满足这些标准，SQLite被认定为可靠、开放的数字数据长期保存格式。
+
+---
+
+## 18. AI引发前所未有的短缺，导致主板销售“崩溃”
+
+**原文标题**: Motherboard sales 'collapse' amid unprecedented shortages fueled by AI
+
+**原文链接**: [https://www.tomshardware.com/pc-components/motherboards/motherboard-sales-collapse-by-more-than-25-percent-as-chipmakers-strangle-enthusiast-pc-market-to-build-more-ai-chips-asus-projected-to-sell-5-million-fewer-boards-in-2025-gigabyte-msi-and-asrock-also-expected-to-see-reduced-sales-numbers](https://www.tomshardware.com/pc-components/motherboards/motherboard-sales-collapse-by-more-than-25-percent-as-chipmakers-strangle-enthusiast-pc-market-to-build-more-ai-chips-asus-projected-to-sell-5-million-fewer-boards-in-2025-gigabyte-msi-and-asrock-also-expected-to-see-reduced-sales-numbers)
+
+无法访问该文章链接。
+
+---
+
+## 19. 基于QUIC传输的媒体MPEG-2传输流封装
+
+**原文标题**: MPEG-2 Transport Stream Packaging for Media over QUIC Transport
+
+**原文链接**: [https://www.ietf.org/archive/id/draft-gregoire-moq-msfts-00.html](https://www.ietf.org/archive/id/draft-gregoire-moq-msfts-00.html)
+
+本文档作为互联网草案，扩展了MOQT流媒体格式（MSF），以支持基于媒体QUIC传输（MOQT）的MPEG-2传输流（TS）。为此，它注册了“m2ts”打包值。
+
+核心思想是保留现有分组化的MPEG-2 TS输出（包含时间戳的188字节TS包或192字节M2TS包），并将其直接映射到MOQT对象中。每个MOQT对象有效载荷由一个或多个完整源包拼接而成。
+
+关键规范包括：
+- **对象有效载荷**：连续的源包，其有效载荷长度是所指定包大小（188或192）的整数倍。
+- **编目字段**：定义用于轨道描述的具体字段（例如`m2tsPacketSize`、`m2tsRandomAccess`）。
+- **分组**：新的MOQT组应在可独立解码的访问单元（例如IDR帧）处起始。
+- **多节目源**：一个轨道最多只能携带一个节目的数据包；多节目源应拆分为独立轨道。
+- **时序**：组内必须维持PCR连续性，组间不连续性必须被标识。
+- **接收端行为**：接收端必须验证对象有效载荷，并在对象丢失时视作流不连续。
+
+该格式专为已采用分组化MPEG-2 TS的广播及贡献工作流设计，可在不改变传输流语义的前提下提供直接映射。
+
+---
+
+## 20. Show HN：Stage CLI —— 本地阅读AI生成变更的更简单方式
+
+**原文标题**: Show HN: Stage CLI – An easier way of reading your AI generated changes locally
+
+**原文链接**: [https://github.com/ReviewStage/stage-cli](https://github.com/ReviewStage/stage-cli)
+
+**《Show HN：Stage CLI – 更轻松地阅读AI生成的本地变更》**
+
+Stage CLI 是一款AI驱动的代码审查工具，帮助开发者将本地代码变更组织为逻辑章节，便于审查。它能在你深入代码之前高亮显示需要审查的内容，旨在简化代码审查流程。
+
+**核心特性：**
+- **安装：** 可通过 npm 安装（`npm install -g stagereview`），并使用 `npx skills add ReviewStage/stage-cli` 与AI代理集成。
+- **使用：** 在AI代理中运行 `/stage-chapters` 即可自动将本地变更组织为可审查的章节。
+- **本地与隐私：** 所有操作均在用户本地机器上运行，确保隐私安全。
+- **界面：** 提供基于浏览器的交互界面，用于查看已组织的章节。
+- **GitHub集成：** 通过 stagereview.app 可获得更完整的体验，支持GitHub集成。
+- **许可：** 采用MIT开源许可证。
+
+该工具通过将相关修改分组，简化了AI生成的代码变更的阅读流程，帮助用户在提交前更轻松地理解和审查代码逻辑。
+
+---
+
+## 21. OurCar：为家人制作一款应用，我学到了什么
+
+**原文标题**: OurCar: What I learned making an app for my family
+
+**原文链接**: [https://mendelgreenberg.com/posts/ourcar/](https://mendelgreenberg.com/posts/ourcar/)
+
+**摘要：**  
+作者使用Flutter和Pocketbase开发了一款名为"OurCar"的家庭共享汽车应用，以解决燃油费用分摊和协调问题。核心痛点在于：小额行程不足以加满整箱油，导致费用分摊不公。该应用旨在取代WhatsApp群组，通过追踪汽车位置（仅在使用可用时）、状态（何人何时使用）及油箱使用情况来优化管理。  
+
+初始原型包含车辆详情、行程记录、加油记录及归还表单页面。作者选择Pocketbase简化后端开发，后续引入Riverpod管理状态，并用Auto Route处理导航。应用发布至应用商店的过程充满挫折，尤其是苹果iOS的公证流程。  
+
+用户反馈带来了功能需求（GPS追踪、保养提醒、拍照式里程表读取）。作者学会拒绝"反向功能"——因耗电和隐私问题否决了GPS追踪，转而聚焦优化用户体验：通过参考WhatsApp和iOS日历的设计模式，使应用在iOS和Android上均呈现原生质感。  
+
+关键技术经验：Flutter缺乏内置跨平台控件适配能力，需借助Flutter Platform Widgets等库，但代码易显杂乱。状态同步问题通过Riverpod解决。性能瓶颈源于单体组件过度重绘，拆分为小型状态管理组件后得以修复。项目通过迭代反馈不断演进，最终以简洁性和平台原生设计为优先，摒弃功能堆砌。
+
+---
+
+## 22. Show HN：TRUST——像1989年那样编写Rust代码
+
+**原文标题**: Show HN: TRUST – Coding Rust like it's 1989
+
+**原文链接**: [https://github.com/wojtczyk/trust](https://github.com/wojtczyk/trust)
+
+**TRUST 简介**
+
+TRUST 是一款怀旧、实验性的 Rust "复古 TUI IDE"，旨在模仿经典蓝屏 DOS 开发环境。它支持编辑文件、浏览 Rust 项目以及运行 Cargo 命令。
+
+主要功能包括项目面板导航（支持文件过滤）、内置编辑器（带有脏缓冲区指示器）以及编译器输出面板。常用快捷键包括保存（F2/Ctrl+S）、打开文件（F3/Ctrl+O）、运行 Cargo 命令（F5/F7/F8/F9）、切换焦点（F4）以及退出（Esc/Ctrl+Q）。界面支持鼠标交互，可进行光标定位、文本选择、面板大小调整和菜单激活（F10）。它还包含用于创建新文件或新 Cargo 项目（bin/lib）的对话框。
+
+TRUST 被描述为一个 "独立的怀旧项目"，与任何经典厂商无关。它可以保存文件，但被标记为一个娱乐项目，需自行承担使用风险。用户通过 `cargo run -- /path/to/rust/project` 运行（默认路径为当前目录）。项目面板会跳过 .git、target 以及常见的构建目录。
+
+---
+
+## 23. GovernGPT（YC W24）正在蒙特利尔招聘工程师，构建思考系统
+
+**原文标题**: GovernGPT (YC W24) Is Hiring Engineers to Build Thinking Systems in Montreal
+
+**原文链接**: [https://www.ycombinator.com/companies/governgpt/jobs/hRyltS0-backend-engineer-thinking-systems](https://www.ycombinator.com/companies/governgpt/jobs/hRyltS0-backend-engineer-thinking-systems)
+
+**GovernGPT（YC W24）招聘帖摘要**
+
+GovernGPT 是一家总部位于蒙特利尔老港、获得 YC 支持且已实现盈利的初创公司，现招聘一名**后端工程师（“思维系统”方向）**，负责为大型资产管理公司自动化募资和投资者沟通流程。
+
+**关键信息：**
+- **薪资范围：** 11.5万–17.5万加元 + 0.25%–0.75% 股权。
+- **经验
+
+**任职
+
+**面试流程：** 电话筛选 → 项目展示与讲解 → 与CTO现场技术设计讨论 → 与CEO现场面试。
+
+该公司正在构建智能代理，以改变数万亿美元私人资本的配置方式，提供紧密协作的全工程师团队和与CTO直接合作的机会。
+
+---
+
+## 24. 打印博客
+
+**原文标题**: Printing Blogs
+
+**原文链接**: [https://fi-le.net/print/](https://fi-le.net/print/)
+
+本文介绍了作者将博客文章打印成实体书以提升阅读体验的项目，让读者能够划重点、做边注和折页标记。  
+
+作者首先处理了保罗·格雷厄姆的随笔（共228篇，55万词），按每页成本上限（20欧元，0.1欧元/页）制作了一本150页的精选集。内容选择通过背包问题自动完成：成本为字数，价值则由作者推荐加上谷歌PageRank（呈齐普夫分布）共同决定。解决后，41篇文章被打印出来，手动分章归类，再用家用打印机和订书机（每批13张纸）装订成册。  
+
+随后，该方法被应用于其他博客，每篇都需要独特调整：  
+- **《边际革命》**：因短文过多导致流程中断；改用语言模型筛选，最终成书68页。  
+- **马克斯·霍达克的博客**：全文打印，需调整代码与数学公式的排版。  
+- **fi-le.net**：需排除交互内容，并将HTML图表转为PNG图片。  
+- **阿列克谢·古泽的博客**：需处理图像、链接和元数据以适合打印；封面采用了一幅IBM打印机插图。  
+
+作者总结道，打印让博客观点更具实体分量，并期待未来更多印刷版的建议。
+
+---
+
+## 25. 巴西Pix支付系统面临Visa和万事达卡的压力
+
+**原文标题**: Brazil's Pix Payment System Faces Pressure from Visa and Mastercard
+
+**原文链接**: [https://www.elciudadano.com/en/brazils-pix-payment-system-faces-pressure-from-visa-and-mastercard/04/04/](https://www.elciudadano.com/en/brazils-pix-payment-system-faces-pressure-from-visa-and-mastercard/04/04/)
+
+**摘要：**
+
+巴西央行于2020年推出的Pix即时支付系统取得了巨大成功，处理了数十亿笔交易，并显著降低了消费者和企业的成本。然而，其主导地位如今正面临全球卡组织Visa和万事达卡的压力。
+
+报道称，Visa和万事达卡正在游说巴西当局，并推出新产品与Pix竞争。具体而言，它们正力推各自的"卡令牌化"和"点击支付"解决方案，试图绕开Pix免费或低成本的交易模式。这些卡组织声称替代方案能提升安全性和国际互操作性，但批评者认为其真实动机是夺回被Pix抢走的市场份额和交易费收入。
+
+文章指出，Pix的成功已侵蚀了巴西传统卡行业的利润，目前处理了超过30%的电子支付。作为回应，Visa和万事达卡也正利用与巴西银行的合作，推出竞争性即时支付服务。巴西央行虽支持竞争，但为Pix的开放架构进行了辩护。这场压力战的结局将可能塑造巴西数字支付的未来，并对其他新兴经济体的类似模式产生影响。
+
+---
+
+## 26. 鲍里斯·切尔尼：TI-83 Plus 基础编程教程（2004年）
+
+**原文标题**: Boris Cherny: TI-83 Plus Basic Programming Tutorial (2004)
+
+**原文链接**: [https://www.ticalc.org/programming/columns/83plus-bas/cherny/](https://www.ticalc.org/programming/columns/83plus-bas/cherny/)
+
+**鲍里斯·切尔尼的TI-83 Plus BASIC编程教程（2004年）摘要**
+
+本教程是使用TI-83 Plus计算器内置BASIC语言进行编程的初学者指南。内容涵盖从基本输出到高级循环与绘图功能的核心命令与编程逻辑。
+
+**主要涵盖主题：**
+
+- **基本输出与控制：** `Disp`、`Output`和`ClrHome`用于显示文本；`Lbl`/`Goto`用于程序流程控制（虽指出其不够严谨）；`Pause`和`Stop`用于暂停执行。
+
+- **用户交互：** `Menu`用于创建选择列表；`Input`和`Prompt`用于收集用户数据并存入变量。
+
+- **变量：** 解释为存储数字或字符串的基础，支持动态数据处理（如分数）。
+
+- **循环与比较：** `For`循环（计数控制）、`While`循环（条件控制）以及`If`/`Then`/`Else`/`Or`用于决策判断。作者对比了`For`、`While`和`Lbl`/`Goto`以展示效率差异。
+
+- **高级功能：** 字符串、`GetKey`用于按键检测、随机数（`Rand`、`RandInt`）、列表与矩阵处理，以及绘图命令（`Circle`、`Line`、`Text`、`Pt-On/Off`）。
+
+- **实际案例：** 教程包含实用挑战题（如计算圆柱面积、简单移动）及完整代码片段，并提醒避免不严谨的编码方式（如过度使用`Goto`）。
+
+本指南强调实践学习，推荐使用TI的PC连接软件，并允许在注明原作者的前提下修改和重新发布程序。
+
+---
+
+## 27. ProgramBench：语言模型能否从零开始重建程序？
+
+**原文标题**: ProgramBench: Can language models rebuild programs from scratch?
+
+**原文链接**: [https://arxiv.org/abs/2605.03546](https://arxiv.org/abs/2605.03546)
+
+**摘要：**
+
+本文介绍了 **ProgramBench**，这是一个全新设计的基准测试，旨在评估语言模型仅凭程序文档从零开始重建完整软件程序的能力。与现有专注于漏洞修复或单一功能开发等狭窄任务的基准测试不同，ProgramBench 着重评估整体的软件架构与实现。
+
+该基准测试包含 **200 个任务**，涵盖从简单的 CLI 工具到 FFmpeg、SQLite 及 PHP 解释器等复杂且广泛使用的软件。评估通过**基于智能体的模糊测试**进行，以生成端到端的行为测试，从而无需预设具体实现结构即可进行评估。
+
+在评估 **9 个语言模型**后得出的关键发现包括：
+- **没有任何模型能够完整解决任何一个任务。**
+- 表现最佳的模型仅在 **3% 的任务**中通过了 95% 的测试。
+- 模型倾向于生成**单一文件的整体式实现**，与人类编写的代码结构存在显著差异。
+
+ProgramBench 揭示了当前语言模型在高级软件工程任务（尤其是架构决策与整体程序重建方面）中的关键能力缺失。
+
+---
+
+## 28. ZAYA1-8B以不到10亿活跃参数在数学能力上媲美DeepSeek-R1
+
+**原文标题**: ZAYA1-8B matches DeepSeek-R1 on math with less than 1B active parameters
+
+**原文链接**: [https://firethering.com/zaya1-8b-open-source-math-coding-model/](https://firethering.com/zaya1-8b-open-source-math-coding-model/)
+
+**ZAYA1-8B 文章摘要：**
+
+Zyphra 推出的全新 ZAYA1-8B 是一款混合专家 (MoE) 模型，总参数量达 84 亿，但推理时仅激活 **7.6 亿**参数，在数学和编程基准测试上可与 DeepSeek-R1 等前沿模型相媲美。主要亮点如下：
+
+- **性能：** 尽管活跃参数量极小，但在数学测试（AIME 2025/2026、HMMT）上比肩 DeepSeek-R1 和 Claude Sonnet 4.5，在编程测试（LiveCodeBench）上能与 Gemini 2.5 Pro 一较高下。
+- **AMD 训练：** 该模型完全基于 AMD Instinct MI300X GPU 训练，规避了 NVIDIA/CUDA 的垄断——这是对替代性硬件基础设施的一次重要概念验证。
+- **马尔可夫 RSA：** 一种新颖的测试时计算方法，以分块方式生成推理轨迹，保持上下文有界，并允许性能随算力预算扩展。该模型专门为此进行了协同训练。
+- **弱点：** 不适用于智能体任务（BFCL-V4 得分 39.22，而 Qwen3 为 49.7）或通用聊天/指令遵循。它是一款专注于数学、科学和编程的模型。
+- **获取方式：** 权重已在 Hugging Face 上以 Apache 2.0 许可发布，但本地运行需使用 Zyphra 的定制 vLLM 分支。
+
+---
+
+## 29. 印度火柴盒标签作为视觉档案
+
+**原文标题**: Indian matchbox labels as a visual archive
+
+**原文链接**: [https://www.itsnicethat.com/features/the-view-from-mumbai-matchbook-graphic-design-130426](https://www.itsnicethat.com/features/the-view-from-mumbai-matchbook-graphic-design-130426)
+
+本文探讨了印度创意人士如何将火柴盒重塑为文化艺术品，重点介绍了三个项目：
+
+- **Maachis**（设计师索纳尔·纳格瓦尼）：一个当代收藏级火柴盒品牌，延续了印度复古火柴盒进行社会评论的传统，主题涵盖同性恋权益、身体自爱与女性自主。火柴盒采用木质磁吸设计，纳格瓦尼与艺术家合作，并拓展至生活方式产品领域。
+
+- **Matchbox Comix**（蒂娜·托马斯领导的科卡奇工作室）：每套包含六个火柴盒，每个火柴盒内藏有手风琴式漫画折页。该形式旨在让漫画易于获取且适合作为礼物。故事须古怪有趣，适合所有年龄段，避免说教。未来系列将采用复古风格包装。
+
+- **Matchbox Momentos**（艺术家哈什特·阿格拉瓦尔）：与谷歌艺术与文化合作开发的互动游戏，利用人工智能让用户打造专属火柴盒艺术收藏。该项目基于高塔姆·赫马迪的火花收藏档案，揭示了印度的社会、政治及印刷历史。阿格拉瓦尔精心平衡了人工智能生成内容与复古火柴盒的真实美学。
+
+文章还推荐了其他印度火柴盒灵感项目、一部纪录片、数字档案（Tasveer Ghar）以及一场关于纺织品商标的孟买展览。
+
+---
+
+## 30. 永续计算原则
+
+**原文标题**: Permacomputing Principles
+
+**原文链接**: [https://permacomputing.net/principles/](https://permacomputing.net/principles/)
+
+本文概述了永续计算（Permacomputing）的十大原则——这一框架源自永续农业伦理（关爱地球、关爱人类、公平分享），旨在推动更可持续、公平且富有韧性的数字实践。这些原则旨在减少技术对环境与社会经济造成的危害：
+
+1. **抱持希望，做最坏准备**：设计能预判极限与突发状况的韧性系统。
+2. **关爱所有硬件——尤其是芯片**：延长设备使用寿命，对抗电子垃圾与资源密集型生产。
+3. **先观察再行动**：行动前评估真实需求，审视技术是否确有必要。
+4. **有所不为**：倡导拒绝与去增长理念，抵制非必要或有害技术（如人工智能数据中心）。
+5. **揭露内在机理**：让系统运作透明化，以促进批判性参与、修复及明智决策。
+6. **考量简单、复杂与规模**：避免过度设计，在适当情况下优先采用简洁节能的解决方案。
+7. **保持灵活性**：设计能适应多样化环境（而非仅理想条件）的弹性系统。
+8. **夯实基础**：采用成熟、开放且文档完善的技术，最大限度降低过时风险。
+9. **（几乎）万物皆有所归**：改造旧技术，接纳超越趋同性的多元计算文化。
+10. **整合生物与可再生资源**：倡导可持续材料及本地化可再生能源的使用。
+
+这些原则并非强制规范，可根据具体语境灵活调整，旨在识别系统性问题，同时激发创造力、促进公平与生态共存。
+
+---
+
