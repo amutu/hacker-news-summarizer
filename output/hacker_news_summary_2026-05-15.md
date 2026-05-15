@@ -1,0 +1,507 @@
+# Hacker News 热门文章摘要 (2026-05-15)
+
+这是今日 [Hacker News](https://news.ycombinator.com/) 上最热门的文章摘要。
+
+## 1. 古腾堡计划——不断进步
+
+**原文标题**: Project Gutenberg – keeps getting better
+
+**原文链接**: [https://www.gutenberg.org/](https://www.gutenberg.org/)
+
+**古腾堡计划简介**
+
+古腾堡计划是一个数字图书馆，提供超过75,000本免费电子书，主要收录美国版权已过期的早期作品。用户无需付费、注册或安装应用程序，即可下载或在线阅读epub和Kindle等格式的图书。该图书馆涵盖历史、文学、科学、宗教等广泛类别，并支持按作者、书名或热门程度进行搜索。热门书目包括《弗兰肯斯坦》《白鲸》《傲慢与偏见》和《爱丽丝梦游仙境》。
+
+自1971年以来，该项目已运营超过50年，依靠志愿者对文本进行数字化和校对。用户可通过加入分布式校对员、报告错误或通过LibriVox录制有声书等方式提供帮助。有声书选项包括人工朗读和计算机生成的作品，近期合作提升了音频质量。
+
+网站还提供阅读清单、self.gutenberg.org上的自助出版作品，以及帮助与常见问题解答资源。古腾堡计划鼓励捐款以支持进一步数字化，并提供关于许可、合作和可访问性的信息。社交媒体和新闻推送让用户及时了解最新发布。
+
+---
+
+## 2. WinCE64 – 适用于N64的Windows CE 2.11
+
+**原文标题**: WinCE64 – Windows CE 2.11 for N64
+
+**原文链接**: [https://github.com/ThroatyMumbo/WinCE64](https://github.com/ThroatyMumbo/WinCE64)
+
+本文介绍了一个兴趣项目，该项目成功地在真实任天堂64游戏机上，通过EverDrive-64 X7烧录卡运行未经修改的Microsoft Windows CE 2.11操作系统。项目构建了自定义硬件抽象层（HAL）及其他底层驱动程序，作为CE内核与N64硬件之间的桥梁，实现了可正常使用的桌面环境。
+
+核心功能包括：可完全启动的Windows CE 2.11桌面系统（含任务栏和文件浏览器）、N64手柄模拟鼠标（A键=左键点击，B键=右键点击）、通过EverDrive挂载SD卡、利用N64的AI硬件播放波表音频、支持从SD卡启动第三方CE 2.11可执行程序。此外还包含经RDP加速的3D图形功能。
+
+该项目刻意未包含任何微软或任天堂的专有代码。用户需自行提供Windows CE 2.11 SDK（来自早已停产的微软嵌入式工具包）以及libdragon自制开发工具链进行编译。编译过程包括构建自定义驱动程序、链接标准CE内核、最终生成可用于EverDrive的启动ROM。源代码以MIT许可证发布，但受微软许可限制，生成的ROM不可再分发。项目主要开发与测试平台为真实N64硬件，未提供模拟器支持。
+
+---
+
+## 3. Pixel 10 零点击漏洞利用链
+
+**原文标题**: A 0-click exploit chain for the Pixel 10
+
+**原文链接**: [https://projectzero.google/2026/05/pixel-10-exploit.html](https://projectzero.google/2026/05/pixel-10-exploit.html)
+
+**摘要：**
+
+本文详细介绍了一个针对Pixel 10开发的0点击漏洞利用链，该链建立在先前对Pixel 9的研究基础之上。该链条包含两个漏洞利用：
+
+1.  **杜比漏洞（CVE-2025-54957）：** 此漏洞利用基于Pixel 9版本进行了更新，其目标是指向杜比音频库中的一个漏洞。由于Pixel 10使用了RET PAC而非`-fstack-protector`，因此需要进行修改，但通过覆写`dap_cpdp_init`函数，该漏洞利用已成功适配。它适用于SPL为2025年12月或更早版本的设备。
+
+2.  **VPU驱动漏洞（本地权限提升）：** Pixel 10上缺少了之前的BigWave驱动。研究人员审计了用于Chips&Media Wave677DV芯片的新`/dev/vpu`驱动，并发现其存在一个严重漏洞。`vpu_mmap`函数允许映射从VPU寄存器区域开始的物理内存，且没有大小限制。由于内核映像位于一个已知的、更高的物理地址，攻击者可以直接读取并覆写内核内存，仅需五行代码即可实现完整的内核代码执行。
+
+该VPU漏洞于2025年11月24日被报告，并在71天后（即二月份的安全公告中）被修复——这与严重程度相同的BigWave漏洞缓慢的分类处理相比，有了显著改进。
+
+**结论：** 作者指出，Android在补丁修复速度和处理流程方面取得了积极进展。然而，他们也批评了Android驱动程序中反复出现的浅层漏洞，并强调需要在驱动开发中进行主动的安全审计并采用稳健的编码实践以防止此类严重缺陷。
+
+---
+
+## 4. Bun 的 Rust 重写："代码库未通过基本 miri 检查，在安全 Rust 中允许未定义行为"
+
+**原文标题**: Bun Rust rewrite: "codebase fails basic miri checks, allows for UB in safe rust"
+
+**原文链接**: [https://github.com/oven-sh/bun/issues/30719](https://github.com/oven-sh/bun/issues/30719)
+
+本文章是发布于Bun仓库（oven-sh/bun）的一个GitHub议题（#30719），批评该项目Rust代码库未能通过基本的Miri检查，并在安全Rust中允许未定义行为（UB）。议题标题和描述指出，该代码库存在严重的内存安全违规。
+
+关键要点包括：
+- **未定义行为示例**：议题提供了一个代码片段，其中`PathString::slice`使用了`unsafe`代码（`core::slice::from_raw_parts`），通过原始指针创建切片而未正确处理来源（provenance）。当底层分配（`test`）被丢弃后，调用`init.slice()`会导致悬垂引用，被Miri检测为“构造类型&[u8]的无效值”。
+- **对开发实践的批评**：作者“AwesomeQubico”建议不要对Rust进行“氛围编码”（即依赖AI或非专业编码），并建议聘请专业的Rust开发者修复代码。
+- **背景**：该议题提交于Bun项目（一个流行的JavaScript运行时/包管理器），该项目部分用Rust编写。投诉指向代码库中Rust部分系统性缺乏内存安全规范。
+
+---
+
+## 5. 美国司法部要求苹果和谷歌披露超过10万名汽车改装应用用户信息
+
+**原文标题**: U.S. DOJ demands Apple and Google unmask over 100k users of car-tinkering app
+
+**原文链接**: [https://macdailynews.com/2026/05/15/u-s-doj-demands-apple-and-google-unmask-over-100000-users-of-popular-car-tinkering-app-in-emissions-crackdown/](https://macdailynews.com/2026/05/15/u-s-doj-demands-apple-and-google-unmask-over-100000-users-of-popular-car-tinkering-app-in-emissions-crackdown/)
+
+美国司法部要求苹果、谷歌、亚马逊和沃尔玛交出EZ Lynk Auto Agent应用可能超过10万名用户的个人数据。司法部指控EZ Lynk违反《清洁空气法》，销售允许柴油车车主绕过排放控制的"作弊装置"。传票要求提供与该应用及其硬件相关的姓名、地址、电话号码及购买记录。
+
+EZ Lynk否认指控，辩称其产品主要用于诊断和合法改装，与排放相关的使用行为属于用户责任。司法部声称需要这些数据来寻找使用该工具禁用排放控制系统的证人，并以论坛帖子作为证据。
+
+隐私倡导者及EZ Lynk的律师批评传票违宪越权，引发对第四修正案的担忧。据报道，苹果和谷歌准备对此要求提出异议。汽车爱好者和维修权倡导者认为本案反映了车辆改装自由与联邦法规之间的冲突。
+
+在法官于2025年驳回EZ Lynk的《美国通信规范法》第230条抗辩后，此案仍在审理中，其结果可能为政府执法中的数字隐私设立先例。MacDailyNews指出，司法部行为越界，因为许多用户下载该应用可能出于读取故障码等正当目的。
+
+---
+
+## 6. 我用Verilog设计了一款面向半字节的CPU，用于构建科学计算器。
+
+**原文标题**: I designed a nibble-oriented CPU in Verilog to build a scientific calculator
+
+**原文链接**: [https://github.com/gdevic/FPGA-Calculator](https://github.com/gdevic/FPGA-Calculator)
+
+本文介绍了一个在FPGA上实现全功能科学计算器的项目，该项目采用SystemVerilog设计的自定义四位面向软CPU。项目包含微码固件及配套工具（如汇编器和脚本编译器）。
+
+主要特性包括：
+- **自定义CPU**：基于微码控制单元的四位面向处理器。
+- **FPGA实现**：针对Quartus（目标芯片Cyclone II）设计，支持ModelSim和Verilator仿真。
+- **基于Qt的模拟器**：支持桌面端和WebAssembly的模拟器，通过Verilator实现无需硬件的测试。
+- **验证工具**：命令行测试工具（`calctest`）及用于波形查看的Qt调试器。
+- **构建目标**：支持桌面端、Web、FPGA综合及ModelSim仿真。
+- **所需工具**：Verilator（桌面端v5.x，WebAssembly v4.228）、Qt 6.9+、Quartus 13.0 SP1及Visual Studio 2022。
+
+项目文件夹结构将Verilog源码、微码、FPGA综合文件、仿真配置及算法研究（如BCD运算、路径规划）分离管理。快速入门指南指导用户从WSL2构建Qt模拟器。
+
+本项目采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议授权。
+
+---
+
+## 7. Image-blaster：从单张图像创建3D环境、特效与网格
+
+**原文标题**: Image-blaster: Creates 3D environments, SFX, and meshes from a single image
+
+**原文链接**: [https://github.com/neilsonnn/image-blaster](https://github.com/neilsonnn/image-blaster)
+
+**《Image-blaster》简介**
+
+Image-blaster是一款工具，可在五分钟内将单张图片转化为完整的网格化3D环境——包括3D模型、高斯泼溅和氛围音效。它集成了Claude技能、World Labs和FAL来实现流程自动化。
+
+**快速启动：** 克隆仓库，通过终端运行Claude，提供World Labs和FAL的API密钥，将图片放入`input/`目录，然后要求Claude“爆破它”，并进行分步确认。
+
+**默认输出：** 对于每张输入图片，Image-blaster会生成动态物体的3D模型（.glb、.obj）、静态环境的高斯泼溅（.spz）以及环境/物体特定的物理音效（.mp3）。
+
+**扩展：** 输出结果可嵌入游戏引擎（Unity、Unreal、Godot）、数字内容创作软件（Blender、Maya）或网页应用（Three.js、Electron）。
+
+**底层模型：**
+- **marble-1.1**（World Labs）用于可探索环境。
+- **nano-banana** / **gpt-image-2** 用于图像编辑。
+- **hunyuan-3d**（FAL）用于3D物体生成，支持自定义参数（面数、PBR、多边形类型）。
+- **elevenlabs-sfx** 用于音效。
+
+**高级设置：** 用户可调整Hunyuan参数，如面数（默认50,000）、PBR材质、生成类型（标准、低多边形、几何）以及多边形类型。
+
+**开发：** 从`.claudeignore`中移除`/app`，以允许Claude修改React查看器。
+
+---
+
+## 8. 像浏览Windows XP桌面一样探索维基百科
+
+**原文标题**: Explore Wikipedia Like a Windows XP Desktop
+
+**原文链接**: [https://explorer.samismith.com/](https://explorer.samismith.com/)
+
+本文介绍了一个名为 **Wikipedia File Explorer** 的网页项目，该项目将维基百科内容呈现为Windows XP桌面界面。其主要特点包括：
+
+- **Wikipedia：** 将维基百科类别浏览为文件夹；文章以文档形式打开。除无类别的页面外，几乎所有页面均可访问。
+- **Media：** 探索维基共享资源类别。用户可右键点击任意图片将其设为桌面背景。
+- **Geofile Explorer：** 正在开发中的功能，允许用户将地球作为文件夹浏览，拖放图片上传，或右键点击写入文本笔记。
+
+该项目托管于 **explorer.samismith.com**。创作者Sami提供电子邮件（sami at samismith.com）、Twitter和Blue Sky联系方式。灵感来源于多个现有项目（如Neal.fun的Wiki Files、Depths of Wikipedia、XP.css）。所有维基百科及媒体内容均归维基媒体所有；用户可通过编辑维基百科及维基共享资源来优化文件夹结构。
+
+---
+
+## 9. Show HN：观看神经网络学习玩贪吃蛇
+
+**原文标题**: Show HN: Watch a neural net learn to play Snake
+
+**原文链接**: [https://ppo.gradexp.xyz/](https://ppo.gradexp.xyz/)
+
+本文展示了一个经典游戏《贪吃蛇》的交互式神经网络训练演示。其核心功能是通过实时可视化，呈现AI代理从零开始通过强化学习掌握游戏的过程。用户点击"开始训练"即可观察神经网络实时进化，环境示例窗口同步显示游戏棋盘与代理的决策逻辑。该演示凸显了机器学习的关键概念，包括试错学习、基于奖励的优化机制，以及随训练轮次逐步提升的表现。"闲置"状态表明代理尚未开始游戏，正等待训练启动。本作着重强调观察AI学习动态的教育价值，通过可视化游戏过程使复杂概念更易理解。
+
+---
+
+## 10. ABC新闻已将FiveThirtyEight的所有文章下线。
+
+**原文标题**: ABC News has taken all FiveThirtyEight articles offline
+
+**原文链接**: [https://twitter.com/baseballot/status/2055309076209492208](https://twitter.com/baseballot/status/2055309076209492208)
+
+**摘要：**
+
+文章报道称，ABC新闻已从其数据驱动新闻网站FiveThirtyEight上移除所有文章。该公告显示在一个出现错误或访问拦截的页面中，指出用户浏览器禁用了JavaScript。页面指示用户启用JavaScript或切换至受支持的浏览器，以便继续访问**x.com**（可能为重定向或镜像站点）上的内容，并附有帮助中心、隐私政策及其他法律信息的链接。关键信息是，ABC新闻已撤下FiveThirtyEight的全部存档，实质上终止或暂停了该网站的运营，剩余页面仅提供基本条款和支持链接。
+
+---
+
+## 11. O(x)Caml 太空之旅
+
+**原文标题**: O(x)Caml in Space
+
+**原文链接**: [https://gazagnaire.org/blog/2026-05-14-borealis.html](https://gazagnaire.org/blog/2026-05-14-borealis.html)
+
+**《"O(x)Caml在太空"》摘要**
+
+2026年4月23日，纯OCaml实现的CCSDS协议栈"Borealis"在DPhi Space公司的ClusterGate-2载荷模块上成功于近地轨道启动。由Parsimoni开发的Borealis采用后量子密钥轮换（ML-DSA-65）提供端到端加密指挥控制，全部代码以安全OCaml编写。
+
+该系统将卫星文件系统视为延迟容忍网络，将所有指令与遥测数据序列化为受BPSec加密与认证保护的BPv7捆绑包。这种密码信封确保了共享托管载荷硬件上的安全性，可缓解因Linux内核漏洞（如Dirty Frag、Fragnesia）破坏容器隔离的风险。
+
+OCaml的内存安全性消除了C/C++中常见的内存损坏缺陷（如缓冲区溢出）整类问题，对处理密文与密钥材料至关重要。代码库采用经形式化验证的密码原语（libcrux、fiat-crypto）以及以GADT编码的协议状态机，可在编译时拒绝无效状态转换。
+
+性能优化借助Jane Street的OxCaml分支实现：通过栈分配注释（`exclave_stack_`）将每数据包p99.9延迟从29纳秒降至9纳秒，并消除热路径上的GC压力。
+
+Borealis基于已在生产环境地面运行的MirageOS库十年积累构建。同一代码同时作为飞行软件、地面软件及测试预言机——该方法已由nqsb-TLS项目验证。下一步挑战是如同地面使用Docker般便捷地跨卫星舰队部署与管理安全签名的更新。
+
+---
+
+## 12. 我构建了Zenith：一个实时的、本地优先的固定视口天文馆
+
+**原文标题**: I built Zenith: a live local-first fixed viewport planetarium
+
+**原文链接**: [https://smorgasb.org/zenith-tech/](https://smorgasb.org/zenith-tech/)
+
+**天顶概览**
+
+天顶是一个实时、本地优先的天象仪，以约180倍放大率展示您所在位置正上方的实时高倍星空。它让地球自转变得可见——星星在数秒内漂过屏幕，**并非通过延时摄影，而纯粹源于行星运动**。视野范围相当于天空在30秒内的自转幅度，大致等于手臂伸直时一粒米的大小。
+
+**关键技术细节：**
+- **图像**来源于泛星计划1号巡天（2010-2014年），由太空望远镜科学研究所托管。0.26角秒/像素的分辨率实现了极端放大。
+- **运动处理**：利用Leaflet.js将此缩放级别下的天体运动视为线性，并叠加星图与坐标网格。
+- **个人星带**：每个纬度都有一条独特的、重复的恒星日带（23小时56分）。东西向相邻纬度共享同一动态影像但起始时间不同；南北向相邻纬度则呈现完全不同的星带。
+- **全部处理在客户端完成**（JavaScript）——无需服务器，您的位置数据不会离开设备。默认位置为巨石阵。
+- **挑战**：亮星过曝（绿/紫色光斑）与边缘白边伪影；噪点过滤仍不完善。
+
+**灵感**：当目睹一颗星从望远镜视野中缓缓漂移时，意识到：“那颗星并未移动——移动的是我们。”
+
+---
+
+## 13. Hightouch（YC S19）正在招聘
+
+**原文标题**: Hightouch (YC S19) Is Hiring
+
+**原文链接**: [https://hightouch.com/careers](https://hightouch.com/careers)
+
+**Hightouch（YC S19）招聘概要**
+
+Hightouch是一家由顶级投资机构支持的D轮初创公司，正在北美、欧洲和亚洲招聘大量远程及办公室职位。公司文化以七大核心价值观为基础：永远进取、友善、高效、富有同理心、注重影响力、不断提升标准、保持谦逊。
+
+**主要福利：**
+- 具有竞争力的薪酬、股权及401k/退休计划。
+- 支持远程办公，在旧金山、纽约、伦敦等地设有办公室。
+- 通勤补贴、免费午餐（办公室办公）、健康津贴。
+- 员工100%医疗保险覆盖（家属80%），灵活带薪休假， generous 育儿假（生育16周，非生育12周）。
+
+**部分开放职位：**
+- **人工智能：** 战略顾问、运营、创意设计师。
+- **客户成功：** 技术客户经理、实施经理、客户成功工程师。
+- **工程：** 全栈工程师、分布式系统工程师、AI代理工程师、安全负责人、首席工程师。
+- **销售：** 企业客户经理、解决方案工程师、销售开发代表。
+- **市场营销/产品：** 产品营销经理、品牌设计师、文案、产品负责人。
+- **其他：** 营收运营主管、技术招聘专员、行政助理。
+
+Hightouch被《福布斯》评为美国最佳初创企业雇主之一。
+
+---
+
+## 14. 微型铝热反应
+
+**原文标题**: Microscale Thermite Reaction
+
+**原文链接**: [https://sciencedemonstrations.fas.harvard.edu/presentations/microscale-thermite-reaction](https://sciencedemonstrations.fas.harvard.edu/presentations/microscale-thermite-reaction)
+
+**微尺度铝热反应简介**
+
+本文介绍了一种更安全的小型经典铝热反应实验。该反应通过撞击两个生锈铁球（各约2千克，直径7厘米），其中一个包裹铝箔。碰撞的机械能提供活化能，引发放热氧化还原反应：2Al(s) + Fe₂O₃(s) → Al₂O₃(s) + 2Fe(s) + 热量。
+
+该反应释放大量热（ΔH° = -849 kJ/mol），温度可达约2200°C——足以熔化铁。反应产生熔融铁在空气中氧化的亮黄色火花，并伴随响亮爆裂声。此演示比传统铝热反应更安全，因为仅使用少量反应物。
+
+关键安全措施包括：佩戴安全护目镜和实验服，采用硬质侧向击打，保持手指远离。铁球可重复使用，锈层可用盐水再生。扩展活动包括在铁球间放置纸张以烧出孔洞。该反应由拉里·佩克（德克萨斯农工大学，2000年）首次完成。
+
+---
+
+## 15. PET扫描背后的核物理基础设施
+
+**原文标题**: The nuclear-physics infrastructure behind PET scans
+
+**原文链接**: [https://www.lanl.gov/media/publications/1663/proton-power-for-public-health](https://www.lanl.gov/media/publications/1663/proton-power-for-public-health)
+
+无法访问该文章链接。
+
+---
+
+## 16. 加州法官禁止Kars4Kids播放“误导性”广告
+
+**原文标题**: Judge Bars Kars4Kids from Broadcasting 'Misleading' Ads in California
+
+**原文链接**: [https://www.nytimes.com/2026/05/15/us/kars4kids-advertising-banned-california.html](https://www.nytimes.com/2026/05/15/us/kars4kids-advertising-banned-california.html)
+
+无法访问该文章链接。
+
+---
+
+## 17. Radicle：基于Git构建的去中心化{代码锻造}平台
+
+**原文标题**: Radicle: Sovereign {code forge} built on Git
+
+**原文链接**: [https://radicle.dev/](https://radicle.dev/)
+
+Radicle 是一个基于 Git 的开源、点对点代码协作平台，旨在作为中心化代码托管服务的去中心化替代方案。它消除了单点控制，代码库在节点间复制，赋予用户对其数据和工作流的完全所有权。
+
+**主要特性：**
+- **加密安全：** 所有社交产物均使用公钥密码学签名，确保真实性。
+- **抗审查：** 用户运行自己的节点，无需依赖第三方。
+- **本地优先：** 支持离线工作；数据由用户控制，便于备份和迁移。
+- **可扩展：** 使用协作对象将议题、讨论和代码审查实现为 Git 对象。
+- **模块化架构：** 包含命令行界面、网页界面和终端界面，由 Radicle 节点和 HTTP 守护进程提供支持。
+
+**安装方式：** 可通过 `curl -sSLf https://radicle.dev/install | sh` 或从源码构建。支持 Linux、macOS 和 BSD 系统。Radicle Desktop 提供图形化客户端。
+
+**近期更新：** 2026年3月30日发布 1.8.0 版本；项目已迁移至 radicle.dev/network，并披露了签名引用中的漏洞。Radicle 采用 MIT 和 Apache 2.0 许可证，可通过 Mastodon、Bluesky、Twitter 或 Zulip 关注社区。欢迎发送反馈至 feedback@radicle.dev。
+
+---
+
+## 18. 《ASCII》——杰森·斯科特
+
+**原文标题**: ASCII by Jason Scott
+
+**原文链接**: [https://ascii.textfiles.com/](https://ascii.textfiles.com/)
+
+无法访问文章链接。
+
+---
+
+## 19. 特雷弗·豪森有限公司：19至20世纪道具与墙纸
+
+**原文标题**: Trevor Howsam Limited: 19th- and 20th-Century Props and Wallpaper
+
+**原文链接**: [https://trevorhowsam.com/](https://trevorhowsam.com/)
+
+**特雷弗·豪萨姆有限公司简介**
+
+特雷弗·豪萨姆有限公司是一家位于林肯郡波士顿的家庭经营企业，拥有超过43年为电影、电视、戏剧及商业领域提供时代道具和墙纸租赁服务的经验。公司专营从乔治时期、维多利亚晚期至20世纪90年代及21世纪初的物品。值得一提的是，他们库存有超过10万卷原创墙纸设计。
+
+主要业务涵盖众多道具部门，包括科学、美国、视听（含176台电视机）、窗帘/帷幔、家居、工业与商业、照明、办公家具、地毯、标牌与广告、杂货以及酒吧/酒馆道具。公司还设有伦敦分部。
+
+营业时间为周一至周五，上午8点至下午5点，距离国王十字车站90分钟车程。官网提供视频预告导览及常见问题解答板块。
+
+---
+
+## 20. 高维几何正在改变MRI行业（2017）[pdf]
+
+**原文标题**: High dimensional geometry is transforming the MRI industry (2017) [pdf]
+
+**原文链接**: [https://www.ams.org/government/DonohoPresentation06-28-17Final.pdf](https://www.ams.org/government/DonohoPresentation06-28-17Final.pdf)
+
+根据提供的损坏PDF文件，仅能读取元数据和少量零散文本。标题表明该文章讨论了**高维几何如何变革MRI行业**。
+
+虽然无法提取完整内容，但PDF元数据和标题暗示文章可能涵盖以下内容：
+
+- 应用**高维几何**（如压缩感知、流形学习）改进MRI成像。
+- 与传统MRI方法相比，这些数学技术如何实现**更快的扫描速度**、**更高的分辨率**或**更低的噪声**。
+- 这些几何方法通过提高MRI效率，有望**减少患者不适**并**降低医疗成本**。
+- 概述这些先进计算方法如何带来医疗影像行业的**变革**。
+
+该文档似乎是2017年的技术或行业分析，主要面向放射学、医学物理学或数据科学领域的专业人士，阐释几何数据分析如何彻底改变MRI技术。
+
+---
+
+## 21. Feedr v0.8.0 – 一款TUI RSS阅读器，现可在终端中阅读完整文章
+
+**原文标题**: Feedr v0.8.0 – a TUI RSS reader, now read the full article from your terminal
+
+**原文链接**: [https://github.com/bahdotsh/feedr](https://github.com/bahdotsh/feedr)
+
+**Feedr v0.8.0 – 终端RSS阅读器**
+
+Feedr是一款基于Rust的TUI（终端用户界面）RSS阅读器，拥有简洁的键盘驱动界面。主要功能包括：
+
+**视图与导航：** 仪表盘（按时间顺序排列文章）、分层树状视图、订阅源管理、星标文章、分类管理和文章预览窗格。
+
+**阅读特性：** HTML转文本、通过Mozilla Readability提取全文（手动按`Shift+F`或对单个订阅源设置`fulltext = true`自动提取）、链接提取以及浏览器集成。
+
+**筛选与搜索：** 高级筛选（按分类、时间、作者、已读/星标状态、内容长度）、实时搜索以及显示每个订阅源新文章数量的摘要视图。
+
+**个性化定制：** 双主题（暗色赛博朋克/亮色禅意）、紧凑模式（自动/手动/从不）、可配置快捷键，以及通过CLI（命令行界面）或TUI编辑器的TOML配置管理。
+
+**效率工具：** 星标文章、已读/未读跟踪、全部标为已读、OPML导入、带速率限制的后台刷新，以及通过自定义HTTP头支持需认证的订阅源。
+
+**外部命令钩子：** Newsboat风格的宏（按键触发的命令链，支持`%t`、`%u`等模板变量）和用于通知的`exec_on_new`钩子——两者均无需Shell脚本，确保安全。
+
+**安装方式：** 通过`cargo install feedr`安装、AUR（Arch用户软件仓库）安装或从源码编译。
+
+该工具支持Vim风格导航（`j/k`）、鼠标操作，配置文件存储遵循XDG规范。
+
+---
+
+## 22. 关于史蒂夫·乔布斯在NeXT时期的新书
+
+**原文标题**: A new book on Steve Jobs at NeXT
+
+**原文链接**: [https://spectrum.ieee.org/steve-jobs-next-computer](https://spectrum.ieee.org/steve-jobs-next-computer)
+
+一本新书揭示了史蒂夫·乔布斯在离开苹果后，于NeXT计算机公司度过的“荒野岁月”对他日后担任CEO的成功至关重要。这篇发表于《IEEE光谱》的文章指出，正值苹果面临领导层交接之际，资深记者妮可·米尔曼探索了乔布斯人生中这一关键时期。文章由助理编辑格温德琳·拉克撰写，强调常被忽略的NeXT经验塑造了乔布斯的战略眼光，并最终促成他胜利回归苹果。该书回顾了充满挑战的NeXT时代如何锻造出关键洞见与技能，最终成就了他标志性的领导力。
+
+---
+
+## 23. 加州法案拟要求在线游戏停服时提供补丁或退款
+
+**原文标题**: California bill would require patches or refunds when online games shut down
+
+**原文链接**: [https://arstechnica.com/gaming/2026/05/bill-to-keep-online-games-playable-clears-key-hurdle-in-california/](https://arstechnica.com/gaming/2026/05/bill-to-keep-online-games-playable-clears-key-hurdle-in-california/)
+
+加州《保护我们的游戏法案》以11票赞成、2票反对的结果通过州议会拨款委员会，将进入全体表决阶段。该法案由"停止杀死游戏"倡导组织支持，旨在保护数字游戏。法案要求，停止运营在线游戏的发行商须提供全额退款或发布更新版本，使游戏能够独立于发行商服务器继续运行。发行商还须在停止服务前60天通知玩家。该法适用于2027年1月1日及之后在加州销售的游戏，但免费游戏和纯订阅制游戏除外。
+
+娱乐软件协会反对该法案，认为消费者仅购买使用许可而非所有权，停止支持老旧软件属于行业常态。他们还指出，音乐或知识产权时效性许可可能引发复杂问题，迫使发行商陷入不可能完成的重新谈判。
+
+尽管通过委员会审议，该法案仍需获得州议会和参议院多数批准才能提交州长加文·纽森签署。该法案在加州的进展与英国停滞不前的局面形成对比，令游戏保护运动备受鼓舞。
+
+---
+
+## 24. Meta因百亿美元路易斯安那州数据中心获33亿美元税收减免
+
+**原文标题**: Meta to receive $3.3B in tax breaks for its $10B Louisiana data center
+
+**原文链接**: [https://fortune.com/2026/05/14/meta-data-center-tax-break-hyperion-louisiana/](https://fortune.com/2026/05/14/meta-data-center-tax-break-hyperion-louisiana/)
+
+**摘要：**  
+Meta将为其位于路易斯安那州里奇兰教区的100亿美元数据中心“Hyperion”获得33亿美元的税收减免，这笔资金足以支付该州超过七年的警察预算。这些减免来自对数据中心设备（包括用于人工智能的GPU）长达20年的州及地方销售税豁免。该补贴于2024年7月获批，受益方为Meta旗下关联公司。  
+
+美国至少36个州提供类似税收减免以吸引数据中心，每年损失数十亿美元财政收入。弗吉尼亚州、佐治亚州和得克萨斯州每年为此支出数十亿。批评者（如Good Jobs First）称这些是“浪费性补贴”，针对一个本不需要公共支持的快速增长行业。  
+
+亚马逊为印第安纳州一处设施获得了更大的减免——累计82亿美元。支持者认为数据中心能创造就业和本地投资：Meta声称Hyperion将雇用5000名建筑工人和500名长期员工，并投入3亿美元用于本地基础设施。  
+
+然而，反对声浪日益高涨。至少28个州已提议修改或废除此类激励措施，理由包括能源需求和收入损失。2025年，地方反对导致48个数据中心项目被叫停。盖洛普民调显示，超过70%的美国人反对在社区建设数据中心。
+
+---
+
+## 25. 构建UMatrix替代方案
+
+**原文标题**: Building a UMatrix Replacement
+
+**原文链接**: [https://lock.cmpxchg8b.com/umatrix.html](https://lock.cmpxchg8b.com/umatrix.html)
+
+**摘要：**
+
+本文探讨了在Chrome新Manifest V3（MV3）框架下，替代已弃用的uMatrix扩展（该扩展允许对网站权限与子资源请求进行精细控制）的可能性。作者指出，uMatrix的功能大部分已被uBlock Origin（uBO）吸收，但uBO Lite（MV3后继版本）移除了这些高级控制。关键挑战在于MV3从通过回调阻止网页请求转向使用`declarativeNetRequest`，这要求规则必须预先声明。所提出的解决方案利用了现有网络技术：内容安全策略（CSP）。通过使用`declarativeNetRequest`注入自定义CSP标头，浏览器可自动强制执行权限。为了填充用户友好的子资源列表（类似于uMatrix），作者建议利用CSP的`report-to`指令捕获违规报告，然后解析这些报告以构建允许/阻止列表。作者创建了一个概念验证原型，名为**matrix³**，该原型可以工作但处于早期阶段（无构建系统，用户体验极简）。代码已托管于GitHub。本文诚邀反馈、合作，并就该方法是否可行或是否存在更优替代方案展开讨论。
+
+---
+
+## 26. 亚马逊工人被迫增加AI使用量，却开始虚构任务
+
+**原文标题**: Amazon workers under pressure to up their AI usage are making up tasks
+
+**原文链接**: [https://www.fastcompany.com/91541586/amazon-workers-pressured-to-up-ai-use-extraneous-tasks](https://www.fastcompany.com/91541586/amazon-workers-pressured-to-up-ai-use-extraneous-tasks)
+
+**摘要**
+
+据报道，亚马逊仓库工人正面临增加使用人工智能工具的压力，导致部分员工为了完成绩效指标而编造不必要的任务。根据《快公司》的一篇文章，亚马逊物流中心的员工每班必须记录一定数量的人工智能辅助交互，例如使用公司的“FC Associate”应用程序进行库存检查或解决问题。然而，工人们表示，对人工智能的真实需求有限，因此他们制造虚假问题——比如将完好的物品扫描为损坏——只是为了达到目标。这种“钻空子”的行为不仅降低了生产效率，也让员工感到沮丧，他们认为自己的判断被忽视，而人工智能使用配额却被优先考虑。这一做法还可能增加错误率并阻塞工作流程。亚马逊尚未直接回应这些说法，但强调其人工智能工具旨在协助员工而非施加压力。该报告凸显了技术驱动型工作场所中更广泛的矛盾：当人工智能的采用被强制推行而缺乏真实需求时，可能导致适得其反的行为和员工不满。
+
+---
+
+## 27. 回声（庞贝现场版）
+
+**原文标题**: Echoes (Live at Pompeii)
+
+**原文链接**: [https://genius.com/Pink-floyd-echoes-live-at-pompeii-lyrics](https://genius.com/Pink-floyd-echoes-live-at-pompeii-lyrics)
+
+无法访问文章链接。所提供的网址指向一个现场表演的歌词页面，但作为AI，我无法浏览实时网站或从中获取动态内容。请直接提供文章文本以便进行总结。
+
+---
+
+## 28. Zulip 基金会
+
+**原文标题**: The Zulip Foundation
+
+**原文链接**: [https://blog.zulip.com/2026/05/15/announcing-zulip-foundation/](https://blog.zulip.com/2026/05/15/announcing-zulip-foundation/)
+
+**摘要：** 2026年5月15日，Zulip宣布重大转型：创始人蒂姆·阿博特将退出全职领导层，与三名高级团队成员一同加入Anthropic。Zulip背后的公司Kandra Labs已捐赠给新成立的独立非营利组织——**Zulip基金会**，该基金会将拥有并管理该项目。这一架构（类似Mozilla和Signal）旨在确保长期稳定、独立性与价值承诺。
+
+基金会首届董事会包括蒂姆·阿博特、格雷格·普莱斯、阿莉娅·阿博特和乔什·特里普利特。顾问委员会由来自学术界和开源领域的专家组成。Zulip运营（云服务、推送通知、赞助和谷歌编程夏令营）将照常进行。临时主席金·范迪弗将管理过渡期并领导新任领导层的遴选工作。
+
+此次变革正式确立了Zulip的价值观（隐私、聚焦公共利益社区），并开辟了通过赠款和税前抵扣捐赠筹集资金的新途径。拥有丰富经验的其余12人专业团队将继续推进开发。阿博特预计发展速度会暂时放缓，但对Zulip的文化与纪律仍充满信心。线上问答定于2026年5月19日举行。
+
+---
+
+## 29. Show HN：Sx —— 面向AI技能、MCP和命令的开源包管理器
+
+**原文标题**: Show HN: Sx – an open-source package manager for AI skills, MCPs, and commands
+
+**原文链接**: [https://github.com/sleuth-io/sx](https://github.com/sleuth-io/sx)
+
+**Sx：一款面向AI资产的开源包管理器**
+
+Sx是一款包管理器，能让团队在组织内共享AI技能、MCP配置、命令及其他AI资产。它解决了开发者个人的AI效率工具被困在本地机器上的问题。
+
+**核心功能：**
+- 捕获并分发自定义AI技能、规则、代理、命令及MCP服务器
+- 集中更新——一次修改，全员同步
+- 支持按组织、仓库、团队、用户、机器人或路径进行作用域安装
+- 兼容Claude Code、Cursor、GitHub Copilot、Gemini及其他AI客户端
+- 通过云中继支持claude.ai和chatgpt.com
+
+**快速入门：** 通过Homebrew或Shell脚本安装，运行`sx init`初始化，用`sx add`添加资源，最后执行`sx install`安装。
+
+**三种仓库类型：** 本地路径仓库（个人使用）、Git仓库（小型团队）和Skills.new（含UI及分析功能的企业级方案）。
+
+**工作原理：** 采用npm和cargo的清单加锁文件模式。资源定义在`sx.toml`中，按用户解析为锁文件，审计和使用数据自动记录。
+
+**当前状态：** 已支持12个以上AI客户端，正在积极开发中，路线图包括RBAC（基于角色的访问控制）和变更请求流程。
+
+---
+
+## 30. 关于DS4的几点说明
+
+**原文标题**: A few words on DS4
+
+**原文链接**: [https://antirez.com/news/165](https://antirez.com/news/165)
+
+**《浅谈DS4》概要**
+
+该文章似乎是一则关于“DS4”的简短公告或占位说明，可能指代某产品、系统或标准的第四迭代（如DualShock 4手柄、数据标准或软件版本）。内容强调这仅为简短介绍性陈述（"a few words"），暗示其作为初步更新或后续详情的预告。
+
+在无完整文本额外背景的情况下，主要要点包括：
+1. 主题明确为“DS4”；
+2. 沟通刻意简洁，表明属于早期版本发布或快速状态说明；
+3. 暗示更全面的信息将另行发布。
+
+若此为技术或游戏相关内容的占位说明，关键信息在于DS4被确认为下一步进展，但文章本身未提供规格、功能或对比。读者很可能需查阅完整文档或未来更新以获取实质性细节。
+
+---
+
