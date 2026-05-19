@@ -1,0 +1,518 @@
+# Hacker News 热门文章摘要 (2026-05-19)
+
+这是今日 [Hacker News](https://news.ycombinator.com/) 上最热门的文章摘要。
+
+## 1. 特斯拉锂精炼厂每日排放23.1万加仑污染废水
+
+**原文标题**: Tesla's lithium refinery discharges 231,000 gallons of polluted wastewater a day
+
+**原文链接**: [https://www.autonocion.com/us/tesla-lithium-refinery-texas/](https://www.autonocion.com/us/tesla-lithium-refinery-texas/)
+
+2026年1月，德克萨斯州一个排水区在一次例行检查中发现，一条未经申报的管道正从特斯拉位于罗布斯敦附近、耗资10亿美元的锂精炼厂排放黑色废水。特斯拉曾宣传该工厂采用“无酸清洁工艺”，但排水区发现，该厂每天向通往巴芬湾的沟渠排放多达23.1万加仑处理后的废水。
+
+德克萨斯州环境质量委员会（TCEQ）于2025年1月向特斯拉发放了许可证，但未通知该排水区。TCEQ在收到投诉后进行了调查，但仅检测了常规污染物，未发现违规行为。关键的是，他们并未检测重金属。
+
+排水区委托进行了独立检测，结果发现了六价铬（一种已知致癌物）、砷、锶，以及锂、钒和锰含量升高——这些物质均未出现在特斯拉许可证允许的污染物清单中。排水区的律师向特斯拉发出勒令停止函，称这些发现“相当令人不安”。
+
+特斯拉对采样方法提出异议，但声称完全符合其许可证规定。由于许可证未要求监测这些物质，目前尚未正式违反任何法律。此事发生在附近的科珀斯克里斯蒂因干旱面临用水紧急状况之际，引发了对国内电动汽车供应链中“清洁锂”定义的质疑。
+
+---
+
+## 2. Gemini 3.5 Flash
+
+**原文标题**: Gemini 3.5 Flash
+
+**原文链接**: [https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/)
+
+谷歌DeepMind推出**Gemini 3.5 Flash**，这是一款针对现实世界行动和智能体工作流优化的前沿AI模型。它在顶级智能与高速度之间取得平衡，声称速度比其他前沿模型快4倍，同时在性能上可与更大模型媲美。
+
+**核心亮点：**
+- **性能：** 在编码和智能体基准测试（如Terminal-Bench 2.1、GDPval-AA）中表现优异，超越前代3.1 Pro模型。在多模态理解方面（CharXiv推理得分84.2%）也处于领先地位。
+- **智能体导向：** 专为处理复杂、长周期任务（如编码、代码库维护、财务文件准备）而设计，通过更新的"Antigravity"平台部署协作子智能体。它能在数小时内完成以前需要数天或数周的任务。
+- **可用性：** 现通过Gemini应用和谷歌搜索（AI模式）面向消费者开放，开发者可通过Google Antigravity、AI Studio及企业平台使用。
+- **实际影响：** Shopify、Salesforce、麦格理银行和Ramp等合作伙伴正利用它自动化多周工作流程、处理复杂文档并改进数据分析。
+- **安全性：** 依据谷歌前沿安全框架开发，配备针对有害内容的增强防护措施，并改进了拒绝逻辑。
+
+更强大的**3.5 Pro**模型将于下月发布。
+
+---
+
+## 3. 我建立了一个虚拟博物馆，几乎囊括了你能想到的所有操作系统
+
+**原文标题**: I’ve built a virtual museum with nearly every operating system you can think of
+
+**原文链接**: [https://virtualosmuseum.org/](https://virtualosmuseum.org/)
+
+本文介绍了一个个人项目：一个操作系统的虚拟博物馆，以预配置的Linux虚拟机形式托管，支持QEMU、VirtualBox或UTM。其中包含超过1700个预安装且预配置的操作系统，时间跨度从1948年至今。博物馆涵盖了大型机、小型机、Unix变体、家用电脑、个人电脑操作系统、移动/嵌入式系统，以及许多冷门或研究型系统。
+
+用户可通过自定义启动器选择并运行任意操作系统，并利用快照功能恢复损坏的系统。该项目提供完整离线版和轻量版（首次使用时下载镜像）。其目标是让保存的软件在历史上易于访问——只需“点击即可运行”，无需复杂的安装或模拟器配置。
+
+策展人花费了20多年收集和配置这些系统，时常修补模拟器以确保兼容性。项目仍在持续发展，不断新增内容。欢迎通过Patreon、Ko-fi或贡献GitLab仓库获得支持。
+
+---
+
+## 4. 谷歌更改搜索框
+
+**原文标题**: Google changes its search box
+
+**原文链接**: [https://blog.google/products-and-platforms/products/search/search-io-2026/](https://blog.google/products-and-platforms/products/search/search-io-2026/)
+
+**谷歌搜索更新摘要（2026年5月19日）：**
+
+谷歌宣布对其搜索引擎进行重大AI驱动改革。最大变化是25年来首次重新设计的搜索框，现可智能扩展以接收文本、图像、文件、视频及Chrome标签页。它提供超越自动补全的AI建议，并支持无缝追问和对话式AI模式。
+
+运行于新一代Gemini 3.5 Flash模型的AI模式，月活用户已突破10亿。该模式现支持**搜索代理**——可全天候监控网页特定变化（如公寓房源或球鞋发售）的可定制信息代理。服务代理预订（如练歌房）以及谷歌代用户致电商家的功能，将于今夏在美国推出。
+
+全新**代理式编程**功能允许搜索免费实时生成自定义布局、交互式可视化、图表及模拟场景。用户仅需提出需求即可构建自定义"迷你应用"或仪表盘（如健身追踪器）。这些高级功能将首先面向Google AI Pro及Ultra订阅用户推出。
+
+最后，AI模式中的**个人智能**功能正在全球扩展（覆盖200多个国家、98种语言），无需订阅即可安全关联Gmail和Google相册以获取个性化结果。
+
+---
+
+## 5. Mistral AI 收购 Emmi AI，打造领先的人工智能技术栈
+
+**原文标题**: Mistral AI Acquires Emmi AI to Create the Leading AI Stack
+
+**原文链接**: [https://www.emmi.ai/news/mistral-ai-acquires-emmi-ai](https://www.emmi.ai/news/mistral-ai-acquires-emmi-ai)
+
+欧洲AI领军企业Mistral AI已收购奥地利公司Emmi AI，后者专注于工业工程领域的物理AI模型。此次收购是欧洲AI领域最重要的交易之一，旨在打造服务于能源、汽车、半导体及航空航天等行业的顶级工业工程AI技术栈。
+
+Emmi AI旗下30余名研究员与工程师将加入Mistral AI的科学与应用AI团队。根据协议，林茨将成为Mistral AI的官方办公地点之一，与巴黎、伦敦等现有基地共同深化对欧洲工业AI人才的投入。
+
+Mistral CEO Arthur Mensch表示，此次收购巩固了Mistral在工业AI领域的领导地位，能够助力客户解决复杂挑战并加速创新。Emmi AI联合创始人Johannes Brandstetter强调，将物理AI整合至Mistral生态后，有望通过实时仿真与先进数字孪生技术，彻底革新下一代飞机、车辆及半导体领域的核心研发工作。
+
+---
+
+## 6. OpenAI采用谷歌SynthID水印技术，为AI图像提供验证工具
+
+**原文标题**: OpenAI Adopts Google's SynthID Watermark for AI Images with Verification Tool
+
+**原文链接**: [https://openai.com/index/advancing-content-provenance/](https://openai.com/index/advancing-content-provenance/)
+
+**摘要：**
+
+OpenAI宣布将谷歌DeepMind的SynthID水印技术整合至其AI生成图像（通过DALL-E 3和ChatGPT），以增强内容溯源能力。这种人眼不可见的数字水印会在图像像素中嵌入加密签名，使得基于内容来源与真实性联盟（C2PA）标准构建的全新内容凭证验证工具能够确认图像是否由OpenAI工具生成。该工具还可检测水印图像是否经过裁剪、压缩或篡改。OpenAI旨在通过帮助用户和平台识别AI生成视觉内容，提升透明度并遏制虚假信息。该功能将适用于ChatGPT网页版及移动端应用创建的所有图像，其水印设计能抵御常见编辑操作。不过OpenAI承认该方法并非万无一失，极端修改或移除攻击仍可能绕过检测。
+
+---
+
+## 7. 开源项目走向衰亡的愚蠢方式
+
+**原文标题**: Dumb Ways for an Open Source Project to Die
+
+**原文链接**: [https://nesbitt.io/2026/05/19/dumb-ways-for-an-open-source-project-to-die.html](https://nesbitt.io/2026/05/19/dumb-ways-for-an-open-source-project-to-die.html)
+
+本文对开源项目在看似活跃实则已实质死亡或失效的多种情况进行了分类。主要类别包括：
+
+- **维护者退出：** 最常见的原因。包括“幽灵维护者”（废弃仓库）、“企业弃儿”（裁员后被抛弃的项目）、“论文弃儿”（毕业生留下的项目）、“资金断崖”（资助结束）以及“被挖角”（维护者新雇主禁止其从事外部工作）。此外还有“继任僵局”——维护者失联导致无法进行权限移交。
+
+- **活跃但功能失调：** 维护者尚在，但项目陷入停滞。包括“倦怠平台期”（仅做小幅修复而无重大工作）、“共同维护者争夺控制权”以及“有毒的把关行为”（吓跑贡献者）。
+
+- **蓄意破坏：** “维护者被控制”（恶意行为者获得权限，如xz后门事件）、“抗议软件”（维护者故意破坏自己的软件包）。
+
+- **发布流程中断：** 代码虽存在，但因凭据丢失（“有维护但无法发布”）、无法发布的主要版本偏移、或无法复现的构建环境而无法发布。
+
+- **外部因素：** 软件仓库下架、制裁、API接口撤除（如Twitter/Reddit政策变动）、平台停止服务、或被原生语言功能所取代。
+
+文章指出，许多“已死亡”的软件包仍然被大量依赖，默默地在锁定文件中腐烂。
+
+---
+
+## 8. 苹果推出全新辅助功能
+
+**原文标题**: Apple unveils new accessibility features
+
+**原文链接**: [https://www.apple.com/newsroom/2026/05/apple-unveils-new-accessibility-features-and-updates-with-apple-intelligence/](https://www.apple.com/newsroom/2026/05/apple-unveils-new-accessibility-features-and-updates-with-apple-intelligence/)
+
+苹果宣布推出一系列由Apple Intelligence驱动的无障碍功能更新，预计将于今年晚些时候上线。主要特性包括：
+
+- **旁白与放大器**：借助AI增强功能，可在系统全局提供详细图像描述。用户可按下iPhone上的操作按钮，询问周围环境信息并获得详细回应，且支持连续追问。
+
+- **语音控制**：现支持自然语言指令，肢体障碍用户无需记忆标签名称，只需描述屏幕元素（如“点击紫色文件夹”）即可操控iPhone和iPad。
+
+- **无障碍阅读器**：针对科学文章等复杂内容提供按需摘要与内置翻译功能，并支持自定义格式。
+
+- **实时字幕生成**：通过设备端语音识别，自动为iPhone、iPad、Mac、Apple TV及Vision Pro上无字幕的视频生成字幕。
+
+- **Apple Vision Pro轮椅控制**：用户可通过眼动追踪操控兼容的电动轮椅，该功能将在美国随Tolt和LUCI系统同步推出。
+
+- **Hikawa握把与支架**：专为iPhone设计的自适应MagSafe配件，现以三种新配色面向全球发售。
+
+其他更新包括visionOS的车辆运动提示、触摸调节、改进的助听器配对、tvOS的大字体显示、覆盖50多种语言的姓名识别功能、手语翻译API，以及对Sony Access控制器作为游戏手柄的支持。隐私保护始终是核心设计原则。
+
+---
+
+## 9. 迪士尼抹除了FiveThirtyEight
+
+**原文标题**: Disney erased FiveThirtyEight
+
+**原文链接**: [https://www.natesilver.net/p/disney-erased-fivethirtyeight](https://www.natesilver.net/p/disney-erased-fivethirtyeight)
+
+在一篇题为《迪士尼抹去了FiveThirtyEight》的文章中，奈特·西尔弗详细描述了其母公司ABC新闻/迪士尼于2025年彻底删除FiveThirtyEight网站的行为。西尔弗估计，这抹去了过去十年出版工作中约20万小时的人力投入。他将此事件视为企业忽视的商业案例研究，认为迪士尼从未投资使该网站盈利——甚至拒绝设置付费墙——尽管其具备潜在价值（并将其与《自由报》等订阅服务相类比）。
+
+西尔弗回顾了FiveThirtyEight的历史：2008年创立，2010年至2013年与《纽约时报》合作，随后于2014年被ESPN/迪士尼收购。他承认早期犯下扩张过快、忽视商业可行性的错误。尽管最终取得了成功（例如2016年大选模型成为最受欢迎的在线功能），但该网站在迪士尼旗下始终处于不稳定状态。不祥的先例包括姊妹品牌格兰特兰的关闭，以及ESPN总裁约翰·斯基珀离职后的领导层动荡。西尔弗总结道，虽然网站被删除是一种损失，但他离开迪士尼后的新事业（《西尔弗公报》）更为健康，拥有更小的团队、创作自由和可持续的商业模式。
+
+---
+
+## 10. 我已加入Anthropic
+
+**原文标题**: I’ve joined Anthropic
+
+**原文链接**: [https://twitter.com/karpathy/status/2056753169888334312](https://twitter.com/karpathy/status/2056753169888334312)
+
+由于用户浏览器禁用了JavaScript，导致《我已加入Anthropic》这篇文章无法访问。页面显示来自X Corp.（原Twitter）的提示：必须启用JavaScript或使用受支持的浏览器才能继续访问该网站。页面提供了帮助中心、服务条款、隐私政策、Cookie政策、版权声明和广告信息的链接。版权声明显示内容来自2026年。
+
+**摘要：**因浏览器禁用JavaScript，无法访问X.com平台，导致目标文章无法查看。页面仅显示技术要求提示和标准页脚链接，无实际文章内容。
+
+---
+
+## 11. Show HN: 草莓的高斯泼溅效果
+
+**原文标题**: Show HN: Gaussian Splat of a Strawberry
+
+**原文链接**: [https://superspl.at/scene/84df8849](https://superspl.at/scene/84df8849)
+
+以下是文章的简明摘要：
+
+文章《Show HN：草莓的高斯泼溅》介绍了用于处理3D高斯泼溅场景的工具**SuperSplat**的新功能。文章主要提及三项重大更新：
+
+1.  **软件溯源：** SuperSplat现在可以追踪创建3D高斯泼溅场景时使用的软件应用程序（例如PostShot、Luma AI、Polycam）。这为用户和开发者增加了重要的来源元数据。
+
+2.  **碰撞生成：** 该工具可以自动从高斯泼溅数据生成碰撞网格。这大大方便了开发者将这些逼真的3D场景导入需要物理交互的游戏引擎和VR/AR应用中。
+
+3.  **GPU驱动直方图：** 新增了GPU加速的直方图工具。用户可以直接在编辑器中实时分析和可视化泼溅数据的统计信息（例如颜色或透明度分布），从而提升工作流程效率。
+
+文章指出，这些实用升级增强了高斯泼溅技术对创作者的可用性，使其从新奇事物转变为3D开发流程中更集成的一部分。
+
+*注：标题《Show HN：草莓的高斯泼溅》似乎是该技术的视觉示例或演示，但正文内容聚焦于软件功能的更新。*
+
+---
+
+## 12. 复制失败、脏片段与片段遗忘内核漏洞
+
+**原文标题**: Copy Fail, Dirty Frag, and Fragnesia kernel vulnerabilities
+
+**原文链接**: [https://www.gentoo.org/news/2026/05/19/copy-fail-fragnesia-vulnerabilities.html](https://www.gentoo.org/news/2026/05/19/copy-fail-fragnesia-vulnerabilities.html)
+
+**摘要：**
+
+Linux 内核遭受了一系列权限提升漏洞的攻击，包括 **Copy Fail**、**Dirty Frag** 和 **Fragnesia**。这些发现是漏洞识别与披露速度加快趋势的一部分。
+
+Gentoo Linux 内核与发行版内核团队正积极应对，快速打包上游版本并向后移植修复程序。值得注意的是，尽管上游内核仍易受 Fragnesia 影响，但 Gentoo 内核自发布之初就已包含修复程序——目前集成了最新的 Fragnesia v5 补丁。
+
+仅有 Gentoo 安全支持的内核软件包（**sys-kernel/gentoo-kernel**、**sys-kernel/gentoo-kernel-bin** 和 **sys-kernel/gentoo-sources**）受到保护；vanilla 内核软件包仍然存在漏洞。其他内核软件包可能包含修复程序，但更新速度较慢。Gentoo 建议用户自动执行内核升级并运行最新内核版本（~arch 或最新稳定版 LTS），因为上游不会可靠地将安全修复程序向后移植到旧版本。
+
+---
+
+## 13. 明尼苏达州成为首个禁止预测市场的州
+
+**原文标题**: Minnesota becomes first state to ban prediction markets
+
+**原文链接**: [https://www.npr.org/2026/05/19/nx-s1-5821265/minnesota-ban-prediction-markets](https://www.npr.org/2026/05/19/nx-s1-5821265/minnesota-ban-prediction-markets)
+
+明尼苏达州成为美国首个禁止预测市场的州，签署法律将 hosting、推广或协助Kalshi及Polymarket等平台的行为定为刑事犯罪。这项于8月生效的法律针对体育赛事、选举及国际事务等未来结果的投注，甚至限制使用VPN规避禁令，违者可能面临重罪指控。特朗普政府已提起诉讼要求阻止该法，主张联邦商品期货交易委员会（CFTC）对预测市场拥有专属管辖权。CFTC的诉讼试图阻止禁令，称其不公平地将合法运营商定罪，并破坏农民使用的对冲工具——尽管在农业行业反对后已增加天气相关交易的豁免条款。法律包含保险与证券领域的排除条款。批评者认为该法违反联邦法律，可能迫使相关活动转移至境外；而州众议员艾玛·格林曼等支持者则表示，各州应监管赌博以保障公共安全。另有七个州已推出类似法案。尽管法律前景不明，预测市场仍快速增长，周交易额达数十亿美元。州与联邦的管辖权冲突已在全国引发超过20起诉讼。
+
+---
+
+## 14. 展示 HN：Forge——防护栏将8B模型在智能体任务上的表现从53%提升至99%
+
+**原文标题**: Show HN: Forge – Guardrails take an 8B model from 53% to 99% on agentic tasks
+
+**原文链接**: [https://github.com/antoinezambelli/forge](https://github.com/antoinezambelli/forge)
+
+**Forge** 是一个面向自托管大模型工具调用的可靠性层，旨在提升小型本地模型（如80亿参数模型）在多步骤代理任务中的表现。它通过**护栏机制**（救援解析、重试提示、步骤强制执行）和**上下文管理**（显存感知预算、分层压缩）将代理任务成功率从53%提升至99%，并在其26场景评估套件中取得86.5%的分数。
+
+三种使用模式：
+1. **WorkflowRunner** – 管理完整代理循环（系统提示、工具执行、上下文、护栏）。SlotWorker为多代理场景提供优先级队列抢占式访问。
+2. **护栏中间件** – 用于自定义编排的可组合组件（验证、救援、步骤强制执行）
+3. **代理服务器** – 兼容OpenAI的代理（`python -m forge.proxy`），可透明地为任意客户端（opencode、Continue、aider）施加护栏，使本地模型表现更智能
+
+要求Python 3.12+及后端支持：Ollama、llama-server（推荐）、Llamafile或Anthropic API。通过`pip install forge-guardrails`安装。代理会注入合成`respond`工具以保持模型处于工具调用模式。
+
+核心特性：模块化架构、批量评估框架、支持长会话、已发表学术论文（IEEE）。采用MIT许可证。
+
+---
+
+## 15. 时代：从《自然》发表到催化计算发现
+
+**原文标题**: Era: From Nature publication to catalyzing Computational Discovery
+
+**原文链接**: [https://research.google/blog/empirical-research-assistance-era-from-nature-publication-to-catalyzing-computational-discovery/](https://research.google/blog/empirical-research-assistance-era-from-nature-publication-to-catalyzing-computational-discovery/)
+
+**摘要：**
+
+谷歌研究团队推出的实证研究助手（ERA）是一款利用Gemini编写和优化科学代码的人工智能工具，于2026年5月19日发表在《自然》杂志上。ERA通过搜索文献、编写代码，并采用树搜索方法评估解决方案，解决了计算实验迭代这一耗时任务。它在基因组学、公共卫生和神经科学等多个基准测试中达到了专家级水平。
+
+ERA已应用于实际问题，并产出了八篇手稿。关键应用包括：预测美国流感、新冠肺炎和呼吸道合胞病毒的住院人数（在CDC排行榜上位列前茅）；预测加利福尼亚州季节性融雪补给的河流径流量；利用卫星数据高分辨率绘制大气二氧化碳浓度图；优化三维太阳能捕获；以及改进零售销售预测。
+
+谷歌现通过“Gemini for Science”可信测试者计划，推出基于ERA和AlphaEvolve构建的原型工具**计算发现**。该工具与假设生成工具一同，旨在加速科学方法的不同阶段。ERA被定位为一种资源，旨在使专家级计算建模大众化并拓展科学家的能力。
+
+---
+
+## 16. 《银天鹅》
+
+**原文标题**: The Silver Swan
+
+**原文链接**: [https://thebowesmuseum.org.uk/collections/the-silver-swan/](https://thebowesmuseum.org.uk/collections/the-silver-swan/)
+
+**《银天鹅》文章摘要**
+
+银天鹅是一件18世纪著名的自动装置，现收藏于鲍斯博物馆。1773年由珠宝商兼表演家詹姆斯·考克斯在伦敦制作，原计划赠予中国乾隆皇帝，但未送达。后来，它在1867年巴黎国际展览会上大放异彩，以其梳理羽毛和进食等逼真动作令参观者印象深刻，标价5万法郎。1873年，约翰·鲍斯仅以5000法郎（200英镑）购得。
+
+这只真人大小的雌天鹅包含2000个活动部件，包括139根水晶杆和113个颈环。它配有三个发条机构：一个用于带有游动银鱼的玻璃水池，一个用于音乐，另一个用于天鹅的头颈部运动——后者由约翰·约瑟夫·梅林设计。
+
+新冠疫情期间，日常表演停止，该装置需要大规模修复。经过坎布里亚钟表公司、专家及修复师超过1500小时的精心工作，银天鹅在其第251年恢复了运转功能。如今它每天下午2点表演，在学校假期和银行假日期间增加上午11点45分的场次，再次为观众带来欢乐。
+
+---
+
+## 17. Gemini 全能
+
+**原文标题**: Gemini Omni
+
+**原文链接**: [https://deepmind.google/models/gemini-omni/](https://deepmind.google/models/gemini-omni/)
+
+以下是文章 **《Gemini Omni》**（假设指谷歌Gemini模型的提示指南）的简明摘要：
+
+本文提供了一条策略性指南，旨在通过撰写有效提示，使Gemini模型生成真实、连贯且富有创意的输出。文章强调，清晰与具体至关重要。关键技巧包括：
+
+1.  **直接且具体：** 明确陈述任务（例如“总结以下内容”、“以……风格写一首诗”），而非含糊其辞。提供明确的限制条件，如字数、格式或语气。
+2.  **提供背景：** 为模型提供背景信息、示例或角色设定（例如“扮演一位物理学家专家”），以锚定响应。
+3.  **使用结构化指令：** 将复杂任务分解成步骤（例如“首先分析表格，然后写出三个要点”）。这能提升连贯性并减少幻觉。
+4.  **善用系统指令：** 对于高级用户，可设置“系统提示”来定义模型在整个会话中的整体行为、风格与限制。
+5.  **迭代与优化：** 将提示视为一个迭代过程。若输出不理想，可通过添加示例、简化语言或明确要避免的内容来调整提示。
+6.  **控制创造力：** 使用温度或top-p参数（若可用）来平衡事实准确性（较低温度）与创意发散（较高温度）。
+
+该指南总结道，成功的提示技巧是一门结合精准语言、策略性结构以及迭代测试的艺术，旨在充分释放Gemini的潜力。
+
+---
+
+## 18. Show HN: Haystack – 审查需要人工关注的PR
+
+**原文标题**: Show HN: Haystack – Review the PRs that need human attention
+
+**原文链接**: [https://haystackeditor.com/](https://haystackeditor.com/)
+
+**《Show HN: Haystack – 筛选真正需要人工关注的PR》**
+
+Haystack是一款旨在通过识别并优先处理真正需要人工关注的拉取请求（PR）来优化代码审查流程的工具。它解决了开发者常被依赖更新或格式修正等琐碎自动化变更通知淹没的问题。
+
+其核心理念是：许多PR可以自动处理或只需极少监督，而另一些则需要谨慎的人工审查。Haystack通过启发式规则和分析技术筛选出后者，从而降低认知负荷并加速从PR创建到合并的流程。
+
+主要功能包括：
+- **智能过滤**：区分低风险的自动化变更与涉及复杂逻辑修改的PR。
+- **优先级排序**：根据代码复杂度、测试变更或引入bug的风险等因素对PR进行排序。
+- **GitHub工作流集成**：可无缝嵌入现有流程，无需推翻当前机制即可轻松采用。
+
+通过将开发者的时间聚焦于最有影响力的审查任务，Haystack旨在减少流程瓶颈、提升团队生产力并加速部署周期。它被定位为工程团队优化代码审查管道、规避非关键PR“噪声”的务实解决方案。
+
+---
+
+## 19. CISA管理员在GitHub上泄露了AWS GovCloud密钥
+
+**原文标题**: CISA Admin Leaked AWS GovCloud Keys on GitHub
+
+**原文链接**: [https://krebsonsecurity.com/2026/05/cisa-admin-leaked-aws-govcloud-keys-on-github/](https://krebsonsecurity.com/2026/05/cisa-admin-leaked-aws-govcloud-keys-on-github/)
+
+**摘要：** 美国网络安全与基础设施安全局（CISA）的一名承包商在名为“Private-CISA”的公共GitHub仓库中暴露了高度敏感凭证，直至2025年5月。该仓库由安全公司GitGuardian发现，内含三个AWS GovCloud账户的管理密钥、数十个CISA内部系统的明文密码以及内部软件开发文件。该承包商禁用了GitHub默认的密钥检测功能。暴露文件包括“importantAWStokens”以及一份列出CISA安全代码环境（LZ-DSO）和内部制品库用户名/密码的CSV文件。安全专家指出，自2025年11月起，该仓库被用作工作电脑与家用电脑之间的同步工具。CISA接到通知后，暴露的AWS密钥仍在48小时内有效。CISA承认了此事，称尚无证据表明数据已遭泄露，并正在实施额外安全措施。受雇于Nightwing公司的该承包商账户已被下线。此次泄密事件发生在特朗普第二任期期间CISA预算与人员缩减之后，该机构已流失近三分之一员工。专家称这是近年来最严重的政府数据泄露事件之一，凸显了糟糕的安全卫生与内部实践。
+
+---
+
+## 20. 我在阿塔卡马沙漠一座废弃矿坑中发现了超纯量子晶体
+
+**原文标题**: I found ultra-pure quantum crystals in an abandoned mine in the Atacama desert
+
+**原文链接**: [https://medium.com/@breid.at/ultra-pure-quantum-crystals-from-an-abandoned-mine-in-a-mysterious-desert-93cc87d12314](https://medium.com/@breid.at/ultra-pure-quantum-crystals-from-an-abandoned-mine-in-a-mysterious-desert-93cc87d12314)
+
+无法访问文章链接。
+
+---
+
+## 21. Show HN：Superlog (YC P26) – 可自安装并修复 Bug 的可观测性工具
+
+**原文标题**: Show HN: Superlog (YC P26) – Observability that installs itself and fixes bugs
+
+**原文链接**: [https://superlog.sh/](https://superlog.sh/)
+
+**摘要：**
+
+Superlog是一家Y Combinator P26初创公司，推出了一款新型可观测性工具，能够自动安装并主动修复错误。该平台通过消除手动埋点而脱颖而出；它无需修改代码即可集成到任何应用程序中。
+
+部署后，Superlog持续监控系统行为，实时检测异常。除了传统日志记录外，它还能诊断根本原因，并且至关重要的是，可自主应用修复——从回滚有问题的部署到修补错误的逻辑。这种"自愈"方法旨在减少停机时间和开发人员工作量。
+
+主要功能包括无需安装的埋点、自动错误检测、根本原因分析和自动修复。该产品被定位为寻求一线调试和事件响应团队的解决方案，有效充当全天候运行的"值班工程师"。其首要目标是从被动式漏洞搜寻转向主动式自动化系统稳定性。
+
+---
+
+## 22. 生长神经细胞自动机
+
+**原文标题**: Growing Neural Cellular Automata
+
+**原文链接**: [https://distill.pub/2020/growing-ca/](https://distill.pub/2020/growing-ca/)
+
+以下是《Distill》期刊文章**“成长型神经细胞自动机”**的简洁摘要：
+
+该文章介绍了**神经细胞自动机（NCA）**，一种由小型局部感知神经网络控制网格中细胞行为的模型。与传统细胞自动机（如康威生命游戏）不同，该模型的规则是通过学习获得的，而非硬编码。
+
+核心演示是训练一个NCA，使其从单个像素（“种子”）**生长出一张二维蝾螈图像**。神经网络接收细胞及其邻居（包括“隐藏”状态通道）的信息，并决定如何更新该细胞的颜色与内部状态。这使得系统能够自我组织成完整且稳定的图案。
+
+关键在于，NCA展现出**鲁棒性与再生能力**。若移除已生成的蝾螈部分图像，网络会自动修补缺失结构，模拟生物伤口愈合。这是因为NCA作为分布式动态系统运行——无中央控制器，仅有局部规则。
+
+文章还探讨了**再生移动目标**（如行走的狼）及改变环境形态等变体。这项研究表明，复杂而稳健的形态发生可从简单、局部且习得的规则中涌现，为人工生命与发育生物学提供了洞见。
+
+---
+
+## 23. 为什么几乎所有人都是右撇子？一项新研究将其与双足行走联系起来
+
+**原文标题**: Why is almost everyone right-handed? A new study connects it to bipedalism
+
+**原文链接**: [https://www.ox.ac.uk/news/2026-05-15-why-is-almost-everyone-right-handed-the-answer-may-lie-in-how-we-learned-to-walk](https://www.ox.ac.uk/news/2026-05-15-why-is-almost-everyone-right-handed-the-answer-may-lie-in-how-we-learned-to-walk)
+
+无法访问该文章链接。
+
+---
+
+## 24. 《LLM时代的TLA+入门：以提示词致胜》
+
+**原文标题**: Intro to TLA+ for the LLM Era: Prompt Your Way to Victory
+
+**原文链接**: [https://emptysqua.re/blog/intro-to-tla-plus-for-the-llm-era/](https://emptysqua.re/blog/intro-to-tla-plus-for-the-llm-era/)
+
+**摘要：**
+
+本文介绍了TLA+（动作时序逻辑）作为工程师的实用工具，并指出现代大语言模型已消除了其主要障碍——语法。TLA+使用逻辑公式定义状态机，通过模型检查自动验证系统属性。
+
+文章以豆子谜题为例（含黑豆、白豆及移除规则），阐释了TLA+的核心概念：初始状态谓词、状态转换动作（守卫条件与赋值）、非确定性、公平性约束及时序算子（<>"最终"、[]"始终"）。该规约包含三个动作（WW、BB、WB），并通过模型检查器TLC探索所有可能行为。
+
+示例关键结论：豆子数量永远不会归零（所有动作要求≥2颗豆子）；若算法终止时b=1，则初始b必为奇数——这一结论通过不变量及时序属性验证。
+
+文章强调TLA+的双文件结构（.tla文件存储逻辑，.cfg文件配置有界模型检查），并指出尽管Claude等大语言模型可根据提示生成基础规约，工程师仍需定义正确性属性并理解系统。作者总结道："大语言模型已将TLA+从晦涩的思维工具转变为半透明的实用工具。"
+
+---
+
+## 25. 河内朴素的啤酒杯与一个民族的记忆
+
+**原文标题**: Hanoi’s humble beer glass and the memory of a nation
+
+**原文链接**: [https://sundaylongread.com/2026/05/15/hanois-humble-beer-glass-and-the-memory-of-a-nation/](https://sundaylongread.com/2026/05/15/hanois-humble-beer-glass-and-the-memory-of-a-nation/)
+
+**概要：**
+
+本文探讨了朴素的手工蓝绿色玻璃杯*Bia hơi cốc*在文化及历史上的重要意义，这种杯子专用于盛装越南生鲜扎啤（*Bia hơi*）。尽管越南经历了从战后物资匮乏到全球化市场繁荣的迅猛经济转型，这种玻璃杯五十多年来却始终如一。
+
+啤酒每日新鲜酿造，不含防腐剂，须在24小时内饮用完毕。在河内巴亭体育中心，像阮文龙这样的退休高官仍能享用到最新鲜、最便宜的啤酒（约20美分），这是补贴时代国营站点凭票供应制度的遗存。
+
+文章追溯了*cốc*在后殖民时期国家建设中的起源——当时政府通过推广啤酒来提振士气。越南啤酒工业公司统一了这种玻璃杯规格以替代私人杯具，实现一票对应一份啤酒。
+
+如今，*cốc*仍在越池村由手工吹制，当地仅存三家家庭作坊。工匠们利用回收玻璃（啤酒瓶的白色与绿色混合），在极端高温下作业，技艺代代相传。中国制造的玻璃器皿大规模生产已摧毁了大部分本地产业，但*cốc*因简洁、实用及深厚的文化认同而得以存续。正如阮文龙所说：“杯子就是啤酒，啤酒就是杯子。”它植根于习惯、社群与记忆的持久存在，向所谓的“进步”观念提出了挑战。
+
+---
+
+## 26. 《可证明安全操作系统（PSOS）的基础》（1979）[pdf]
+
+**原文标题**: The foundations of a provably secure operating system (PSOS) (1979) [pdf]
+
+**原文链接**: [http://www.csl.sri.com/users/neumann/psos.pdf](http://www.csl.sri.com/users/neumann/psos.pdf)
+
+**《可证明安全操作系统（PSOS）基础》摘要（1979）**
+
+这篇由R. J. Feiertag和P. G. Neumann撰写的奠基性论文，概述了可形式化验证、可证明安全操作系统的设计原则。其核心论点是安全必须从系统底层开始构建，并由一个微小的可信内核强制执行。
+
+关键概念包括：
+- **分层架构**：操作系统按层级结构组织，每一层提供特定的抽象。底层实施的安全策略，高层无法违反。
+- **形式化规约与验证**：系统的安全属性（如隔离、无干扰）以形式化规约语言表述。数学证明用以表明实现正确遵循了这些规约。
+- **安全内核**：一个最小的可信计算基，仲裁所有访问控制。它强制执行诸如Bell-LaPadula模型（不上读、不下写）之类的强制安全策略。
+- **面向对象设计**：系统资源（文件、进程、设备）被视为由内核管理的对象，并通过受控的调用方式进行操作。
+
+论文指出，传统方法（例如部署后修复漏洞）是不够的。相反，PSOS旨在构建一个正确性可通过数学证明的系统，从而预防整类漏洞。它强调，可证明安全需要对设计、规约和实现采取严谨的纪律约束，而非依赖临时的安全补丁。这项工作对后来的KeyKOS和EROS等安全系统产生了深远影响。
+
+---
+
+## 27. 五分钟看懂大模型行业近半年发展
+
+**原文标题**: The last six months in LLMs in five minutes
+
+**原文链接**: [https://simonwillison.net/2026/May/19/5-minute-llms/](https://simonwillison.net/2026/May/19/5-minute-llms/)
+
+**《五分钟回顾大语言模型过去半年发展》摘要（2026年5月）**
+
+本文基于PyCon US 2026闪电演讲，涵盖2025年11月至2026年5月期间大语言模型的关键进展，呈现两大主题：
+
+1. **编码代理真正变得实用。** 2025年11月，OpenAI与Anthropic的强化学习成果跨越质量门槛，将编码代理从"经常崩溃"转变为日常工作可靠工具。"最佳"模型桂冠当月五次在Claude、GPT和Gemini间易主。
+
+2. **笔记本级模型超预期。** Qwen 3.6-35B-A3B与Gemma 4等开源权重模型现已能在消费级硬件本地运行，有时绘制的鹈鹕（作者基准测试）甚至超越Claude Opus 4.7等前沿模型——尽管该基准已过时。
+
+值得关注事件：基于Mac Mini运行的"爪爪"个人AI助手（如OpenClaw、NanoClaw）崛起；谷歌Gemini 3.1 Pro与Jeff Dean演示动态多动物AI艺术；中国实验室发布GLM-5.1（1.5TB）等巨型开源权重模型，在复杂动画提示方面表现卓越。
+
+作者亦坦言经历短暂"LLM致幻期"，节日期间用氛围编程法构建了无人需要的JavaScript-in-Python库（micro-javascript）。总体而言，这半年标志着行业从前沿模型炒作转向实用化代理驱动开发，以及令人惊喜的本地化模型能力突破。
+
+---
+
+## 28. KV共享、MHC与压缩注意力机制
+
+**原文标题**: KV Sharing, MHC, and Compressed Attention
+
+**原文链接**: [https://magazine.sebastianraschka.com/p/recent-developments-in-llm-architectures](https://magazine.sebastianraschka.com/p/recent-developments-in-llm-architectures)
+
+**LLM架构发展摘要（2026年4月至5月）**
+
+本文由塞巴斯蒂安·拉什卡撰写，探讨了开源权重LLM近期在架构上的创新，旨在通过减少KV缓存大小、内存流量和注意力开销来提高长上下文效率。关键模型及其设计变更包括：
+
+1. **Gemma 4 (E2B/E4B)：** 引入**KV共享（跨层注意力）**，即后续层重用前层的键值张量，将KV缓存大小缩减约一半（在128K上下文下最多节省6GB）。同时使用**逐层嵌入（PLE）**，为每个块添加小型标记特定向量，在不扩展主Transformer堆栈的情况下增加容量，使得“有效”参数量低于总参数量。
+
+2. **Laguna XS.2（Poolside）：** 实现**逐层注意力预算分配**，每层注意力开销各异：30个滑动窗口层（512个标记窗口）和10个全局/全注意力层。此外，它使用每层查询头计数（例如，全注意力层每个KV头使用6个查询头），在保持KV缓存兼容性的同时提供了更大的灵活性。
+
+3. **ZAYA1-8B：** 使用**压缩卷积注意力**来降低注意力开销。
+
+4. **DeepSeek V4：** 采用**mHC（多头压缩）**和**压缩注意力**以提高效率。
+
+这些调整虽然在架构图中看似微小，但代表了重大的设计变革，可减少长上下文的内存和计算需求，从而解决推理模型和智能体工作流的瓶颈问题。
+
+---
+
+## 29. Crossview 4.4.0 现已发布
+
+**原文标题**: Crossview 4.4.0 is now available
+
+**原文链接**: [https://github.com/crossplane-contrib/crossview](https://github.com/crossplane-contrib/crossview)
+
+**Crossview 4.4.0** 是一款基于 React 的现代化仪表盘，用于管理和监控 Kubernetes 中的 Crossplane 资源。它通过 Kubernetes Informers 实现实时资源监控，支持多集群管理，并采用基于 WebSocket 的 UI 界面，搭载 Chakra UI 及深色模式。
+
+**主要特性：**
+- 实时监控任意 Kubernetes 资源
+- 支持多集群管理与上下文切换
+- 资源可视化（提供商、XRD、组合、声明）
+- 高性能 Go/Gin 后端与 PostgreSQL
+
+**快速开始：**
+- 前置
+
+**部署选项：**
+- **Helm Chart**：`helm install crossview crossview/crossview`（推荐）
+- **Docker**：使用环境变量或配置文件运行，镜像位于 `ghcr.io/crossplane-contrib/crossview`
+- **Docker Compose**：包含 PostgreSQL 服务
+
+**配置优先级：** 环境变量 > config.yaml > 默认值
+
+**后端 API：** 提供健康检查、上下文、资源、事件、WebSocket 及认证（支持 OIDC/SAML）端点。
+
+**技术栈：** React + Vite + Chakra UI（前端），Go + Gin + client-go（后端），PostgreSQL。
+
+**文档：** 包含入门指南、部署、配置、SSO、故障排除及社区贡献相关文档。基于 Apache License 2.0 开源。
+
+---
+
+## 30. Mini沙虫再出击：314个npm包遭篡改
+
+**原文标题**: Mini Shai-Hulud Strikes Again: 314 npm Packages Compromised
+
+**原文链接**: [https://safedep.io/mini-shai-hulud-strikes-again-314-npm-packages-compromised/](https://safedep.io/mini-shai-hulud-strikes-again-314-npm-packages-compromised/)
+
+2026年5月19日，npm账户`atool`遭入侵，导致在22分钟内爆发式发布了317个软件包的637个恶意版本。受影响的高下载量软件包包括`size-sensor`、`echarts-for-react`、`@antv/scale`及`timeago.js`。
+
+其载荷为一个498KB的混淆Bun脚本，与先前SAP入侵事件中的"Mini Shai-Hulud"工具包完全匹配。该脚本能窃取AWS、Kubernetes、GitHub、npm、SSH密钥及本地密码管理器的凭证。被盗数据通过两种渠道外传：伪装成正常流量的Git提交至公共GitHub仓库，以及伪装成OpenTelemetry追踪数据、经RSA+AES加密的HTTPS POST请求发送至攻击者服务器。
+
+在CI环境中，恶意程序将OIDC令牌交换为npm发布令牌，使用窃取的身份签名制品，并向GitHub Actions工作流注入持久化机制。它还通过劫持AI编码助手（Claude Code、Codex）及VS Code注入启动钩子以重新执行载荷。一个名为`kitty-monitor`的持久后门利用GitHub提交搜索作为死信C2通道，接收经RSA签名的指令。该载荷还尝试Docker容器逃逸及本地项目传播。
+
+入侵指标包括2026年5月19日由`atool`发布的软件包、特定SHA256哈希值、`antvis/G2`仓库中的孤儿提交，以及特定文件路径与系统服务。
+
+---
+
