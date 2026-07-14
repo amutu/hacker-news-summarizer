@@ -2,190 +2,170 @@
     
 这是 Top 10 的每日摘要，更多请点击 [Top 100](output/hacker_news_summary_2026-07-14.md)
 
-*最后自动更新时间: 2026-07-14 02:57:07*
-## 1. Git历史记录命令值得更多关注
+*最后自动更新时间: 2026-07-14 20:32:59*
+## 1. 高塔直上云霄
 
-**原文标题**: The Git history command deserves more attention
+**原文标题**: The Tower Keeps Rising
 
-**原文链接**: [https://lalitm.com/post/git-history/](https://lalitm.com/post/git-history/)
+**原文链接**: [https://lucumr.pocoo.org/2026/7/13/the-tower-keeps-rising/](https://lucumr.pocoo.org/2026/7/13/the-tower-keeps-rising/)
 
-**摘要：**  
-本文重点介绍了 Git 的实验性命令 `git history`（在 2.54 和 2.55 版本中发布），作为 `jj` 的轻量级替代方案，用于在不切换工具的情况下管理并行工作。它包含三个子命令：  
+**总结：**
 
-- **`fixup`**：暂存修复内容，将其折叠到旧提交中，然后自动重写所有后代提交并移动关联分支——比 `git rebase --update-refs` 更强大。该命令是原子性的，会拒绝可能导致冲突的操作。  
-- **`reword`**：编辑旧提交的消息，并在不影响工作树或索引的情况下重建其上方的提交栈。  
-- **`split`**：通过选择代码块，以交互方式将一个提交拆分为两个，避免了复杂的 `git rebase` 操作。  
+Armin Ronacher的文章《通天塔依然在建造》借用圣经中巴别塔的寓言，比喻AI辅助编程的风险。他认为，虽然AI智能体能大幅提升个人生产力，但大型软件项目的成功依赖于人类的协作，而不仅仅是代码的输出。
 
-主要优势：原子性（没有半损坏状态）、自动更新变基范围之外的分支，以及内置于核心 Git 中（无需额外安装）。局限性：尚不支持合并提交，且缺乏一流的冲突处理机制（尽管文档暗示未来会改进）。  
+项目共享语言——团队对概念、边界、不变性和代码归属的共同理解——部分依赖于摩擦：即阅读他人代码、提出问题以及协商修改所必需的努力。这种摩擦同步了开发者之间的理解。
 
-作者指出，`git history` 并不能完全取代 `jj`（后者提供撤销日志、工作副本即提交、以及携带冲突的变基功能），但认为这对日常 Git 用户来说是一个重大进步。
+AI智能体消除了这种摩擦。开发者无需协调或获取共享上下文，就能独立使用智能体进行大规模改动（例如添加OAuth、缓存、重新设计数据库）。代码可以编译通过，测试也能通过，但让人能共同理解系统的架构语言却消失了。
 
----
-
-## 2. 无线通信基础
-
-**原文标题**: Fundamentals of Wireless Communication
-
-**原文链接**: [https://web.stanford.edu/~dntse/wireless_book.html](https://web.stanford.edu/~dntse/wireless_book.html)
-
-本文介绍了David Tse与Pramod Viswanath合著的教材《无线通信基础》（剑桥大学出版社，2005年）。该书面向具备概率论与数字通信背景的研究生及执业工程师，系统阐述了物理层无线通信理论，重点涵盖MIMO通信、空时编码、机会通信、OFDM及CDMA等关键主题。书中通过GSM、IS-95（CDMA）、IS-856（1xEV-DO）、Flash OFDM和ArrayComm SDMA等实际案例，强调理论与现实系统之间的联系。
-
-网络版（PDF）包含练习题，受标准版权保护。教师可通过申请获取配套资源，包括习题解答手册和教学幻灯片。该书已被全球50多所院校广泛采用。作者还基于本书开设了为期2天共12小时的短期课程，已在全球多家企业与高校讲授。
+与圣经故事的关键区别在于：在巴别塔中，共同语言的丧失使建造停止；而在AI辅助工程中，即便共享理解崩溃，建造仍在继续。因为没有立即出现的故障，这种丧失便无人察觉。那座塔——软件项目——依然在升高，但集体理解的基础已经不复存在。
 
 ---
 
-## 3. 无需打开Xcode即可构建和发布Mac与iOS应用
+## 2. Bonsai 27B：一款可在手机上运行的270亿参数级模型
 
-**原文标题**: Building and shipping Mac and iOS apps without opening Xcode
+**原文标题**: Bonsai 27B: A 27B-Class Model that runs on a phone
 
-**原文链接**: [https://scottwillsey.com/building-and-shipping-mac-and-ios-apps-without-ever-opening-xcode/](https://scottwillsey.com/building-and-shipping-mac-and-ios-apps-without-ever-opening-xcode/)
+**原文链接**: [https://prismml.com/news/bonsai-27b](https://prismml.com/news/bonsai-27b)
 
-**摘要：在不打开 Xcode 的情况下构建 Mac 与 iOS 应用**
+**盆景27B公告摘要**
 
-本文介绍如何在完成一次性初始设置后，完全通过命令行开发和发布 Mac 与 iOS 应用，从而绕过 Xcode 的图形用户界面。
+PrismML发布盆景27B，这是首个能在手机上运行的270亿参数模型。该模型基于Qwen3.6 27B，采用极限权重压缩：**三值变体**（1.71比特/权重，5.9GB）适用于笔记本电脑，**1比特变体**（1.125比特/权重，3.9GB）可适配iPhone 17 Pro的内存预算。两者均支持多模态任务（视觉、工具调用、自主循环），具备26.2万令牌的上下文窗口。
 
-**关键
+在“思考模式”下的基准测试显示，三值版本保留全精度性能的95%，1比特版本保留90%，数学与编码能力几乎无损。该模型在RTX 5090上（1比特）可达163令牌/秒，在M5 Max上可达87令牌/秒。
 
-**一次性图形界面设置：**
-1. 安装 Xcode 并将其设置为命令行工具链
-2. 接受许可协议并运行首次启动组件
-3. 在 Xcode 设置中登录 Apple ID
-4. 创建 Developer ID Application 证书（用于公证分发）
-5. 通过 `xcrun notarytool store-credentials` 存储公证凭证
-6. 创建包含团队 ID 和包前缀的 `Local.xcconfig` 文件（已加入 gitignore）
+关键范式转变：本地执行可实现持续、私密的自主工作流（数百次模型调用），无需云端延迟或数据暴露。这解锁了持久化端侧智能体、离线操作及混合云本地架构。公司强调“智能密度”作为新指标——1比特盆景27B每GB提供0.53能力值，是全精度基准的10倍以上。
 
-**自动化构建流水线：**
-`scripts/release.sh` 脚本处理完整流程：归档 → Developer ID 签名 → 公证 → 钉选 → 安装到 `/Applications`。脚本在出现任何错误时会立即报错退出。`CLAUDE.md` 文件配置 AI 编码代理自动使用这些命令。
-
-**快速开发：**
-未签名的构建使用 `CODE_SIGNING_ALLOWED=NO` 实现快速编译和测试；发布脚本则处理正确的签名和公证。
-
-这种方法让开发者能够完全通过终端命令和 AI 编码工具"随心编码"，在初始配置之后无需再触碰 Xcode 的图形界面。
+权重基于Apache 2.0许可证发布，原生支持Apple（MLX）与NVIDIA（CUDA）设备。
 
 ---
 
-## 4. 一位在摄影普及前用画笔记录印度的英国女性
+## 3. 你的“应用”本可以是一个网页（所以我帮你修好了）
 
-**原文标题**: An Englishwoman who sketched India before photography took hold
+**原文标题**: Your 'app' could have been a webpage (so I fixed it for you)
 
-**原文链接**: [https://www.bbc.com/news/articles/cm2drrv6q54o](https://www.bbc.com/news/articles/cm2drrv6q54o)
+**原文链接**: [https://danq.me/2026/07/09/your-app-could-have-been-a-webpage/](https://danq.me/2026/07/09/your-app-could-have-been-a-webpage/)
 
-艾米莉·伊登，一位天赋异禀的英国艺术家兼作家，于19世纪30年代随其兄长、总督乔治·伊登（奥克兰勋爵）游历印度北部。在摄影技术普及之前，她以细腻笔触描绘了所遇的形形色色的人物——从王公贵族到仆役、商贾与武士——捕捉了一个正处政治变革边缘的地区。其题材之广，远胜同代画师。1844年，根据她原始素描制作的二十余幅手工上色石版画结集为《印度王公与民众人像》出版，现正于德里DAG画廊的《王公与民众》展览中展出。尽管初时思乡情切，伊登天然的好奇心与敏锐眼光仍驱使她记录下那些异域的服饰、建筑与风景。她的素描中包括马哈拉贾·兰吉特·辛格宫廷、阿富汗流亡者与锡克武士的罕见影像。她亦是一位诙谐的作家，其书信后结集为《溯河而上》与《印度来信》出版。尽管伊登秉持英国"文明教化使命"的信念，其作品仍属同代英国女艺术家之翘楚，为摄影术普及前的印度留下了独一无二的视觉记录。
+**概述：**
 
----
+作者批评了“Travelbound”这款应用，该应用是访问团队行程、旅行安排及住宿信息的必要条件。本质上，该应用仅仅是文本、图片和PDF链接的封装——这些内容本可以通过一个简单的网页呈现。它唯一增加的“功能”是通过Google账户进行追踪以及广告（美其名曰“灵感”）。
 
-## 5. 苹果新SpeechAnalyzer API性能对比：与Whisper及前代产品基准测试
+感到不满的作者通过拦截网络流量对这款安卓应用进行了逆向工程。他们发现该应用使用共享的用户名和密码从某个URL获取JSON数据。JSON包含了所有行程数据、文件引用以及广告。图片的链接有效期很短，需要定期重新获取。
 
-**原文标题**: Apple's new SpeechAnalyzer API, benchmarked against Whisper and its predecessor
+作者编写了一个Ruby脚本，通过定时任务定期抓取JSON并生成静态HTML页面。该页面跳过了广告，列出了行程项目和文件，并（使用同一团队凭证）进行了密码保护。结果：一个0.05MB的网页（另外还有35MB的可选图片），对比之下是43MB的应用（下载后为124MB），后者还包含追踪和广告。网页提供了复制、打印、保存、书签、搜索、通用设备访问以及更好的无障碍功能——所有这些都是该应用所欠缺的。
 
-**原文链接**: [https://get-inscribe.com/blog/apple-speech-api-benchmark.html](https://get-inscribe.com/blog/apple-speech-api-benchmark.html)
-
-苹果全新SpeechAnalyzer API（适配iOS/macOS 26系统）在英语设备端转录准确率上全面超越前代产品及OpenAI的Whisper模型。在LibriSpeech数据集的基准测试中，SpeechAnalyzer在清晰语音环境下实现2.12%的词错误率（WER），嘈杂语音环境下为4.56%，而Whisper Small对应的两项数据分别为3.74%和7.95%——且运行速度提升约三倍。旧版SFSpeechRecognizer表现最差，错误率高达9.02%和16.25%。
-
-文章强烈建议开发者从旧版API迁移，因新引擎可降低3.5至4倍错误率。不过Whisper在多语言支持（覆盖100+种语言，而苹果仅约30种）及跨平台兼容性方面仍具优势。
-
-该基准测试可复现：Whisper测试结果与OpenAI公布数据高度吻合，仅因更严格的标准化处理及CoreML量化存在微小偏差。苹果引擎的原始转录文本已开放下载。测试全程在搭载M2 Pro芯片的Mac设备端运行，使用完全一致的生产环境代码路径。
-
-实践发现：该基准测试揭示了作者自研应用Inscribe的缺陷——SpeechAnalyzer输入未完成终结化导致程序卡死，该漏洞已通过即时更新修复。对于当前苹果硬件上的英语转录需求，内置SpeechAnalyzer已成为最强设备端解决方案。
+作者总结道，许多“应用”都是不必要的；这些内容从一开始就应该是一个网页。他们已经将替代方案分享给团队，让每个人都可以选择是使用臃肿、充满追踪的应用，还是使用简洁、功能完善的网页。
 
 ---
 
-## 6. MorphoHDL：一种用于扩展电路的极简语言
+## 4. 最大的《我的世界》可用世界，总计15TB
 
-**原文标题**: MorphoHDL: A minimalistic language for growing circuits
+**原文标题**: The largest available Minecraft world, totalling 15 TB
 
-**原文链接**: [https://paradigms-of-intelligence.github.io/morpho/](https://paradigms-of-intelligence.github.io/morpho/)
+**原文链接**: [https://2b2t.place/1million](https://2b2t.place/1million)
 
-**MorphoHDL 概述**
-
-MorphoHDL 是一种极简硬件描述语言，旨在简化电路构建与综合。其核心概念是通过少量原语将电路描述为演化结构，而非静态连接。
-
-该语言包含四个基本命令：`cell(n, t)`（创建名称为 `n`、类型为 `t` 的单元）、`wire(c1, p1, c2, p2)`（将单元 `c1` 的端口 `p1` 连接至单元 `c2` 的端口 `p2`）、`pull(n, v)`（将输入 `n` 设为常量 `v`）以及 `probe(n)`（声明输出 `n`）。
-
-MorphoHDL 旨在用于快速原型开发与教学，以极简性取代 VHDL 或 Verilog 的冗长。它通过逐步构建电路图的过程式命令来描述硬件。该语言支持基于函数的分层设计与参数化模块，在无需完整面向对象范式的前提下实现可复用性。
-
-其关键优势包括：代码量显著减少（例如全加器仅需约10行）、迭代设计期间可即时反馈，以及更贴近物理布线的思维模型。局限性包括：缺乏硬件仿真或形式化验证工具、对时序逻辑支持有限，以及无法保证综合效率。
-
-MorphoHDL 被定位为硬件设计师的“口袋刀”——最适合小型探索性项目，在此类场景中，表达速度比工具完备性更为重要。
+无法访问该文章链接。
 
 ---
 
-## 7. 使用LLM陪审团构建食品元数据
+## 5. 如何让Claude不再说“承重”
 
-**原文标题**: Building Food Metadata with LLM Juries
+**原文标题**: How to stop Claude from saying load-bearing
 
-**原文链接**: [https://careersatdoordash.com/blog/building-food-metadata-with-llm-juries-context-optimization-multimodal-ai/](https://careersatdoordash.com/blog/building-food-metadata-with-llm-juries-context-optimization-multimodal-ai/)
+**原文链接**: [https://jola.dev/posts/how-to-stop-claude-from-saying-load-bearing](https://jola.dev/posts/how-to-stop-claude-from-saying-load-bearing)
+
+本文提出了一种方法，通过使用自定义钩子脚本，阻止Claude AI过度使用诸如"承重墙"、"实话实说"和"你说得完全正确"等短语。
+
+解决方案是创建一个Python脚本（`wordswap.sh`），将特定短语替换为幽默替代词（例如，将"seam"替换为"thingamajig"，将"load-bearing"替换为"cooked"）。该脚本读取JSON输入，应用不区分大小写的正则表达式替换，并为"MessageDisplay"钩子输出格式化JSON。
+
+实施时，将脚本保存至`~/.claude/hooks/wordswap.sh`，赋予可执行权限，然后将其添加到`~/.claude/settings.json`中"MessageDisplay"的hooks块下。由于钩子在启动时加载，需要新会话才能激活替换功能。
+
+作者建议用户可自定义替换内容以获得更佳效果，并在Bluesky平台（@jola.dev）上分享了该帖子，相关话题包括Elixir库、CI工作流和博客同步。
+
+---
+
+## 6. Cursor 0day漏洞：当完全披露成为唯一防线
+
+**原文标题**: Cursor 0day: When Full Disclosure Becomes the Only Protection Left
+
+**原文链接**: [https://mindgard.ai/blog/cursor-0day-when-full-disclosure-becomes-the-only-protection-left](https://mindgard.ai/blog/cursor-0day-when-full-disclosure-becomes-the-only-protection-left)
+
+**摘要：** Mindgard 发布的这篇文章披露了广受欢迎的 AI 辅助开发环境 Cursor 中存在一个严重的 0-day 漏洞。该漏洞允许攻击者在开发者于 Windows 系统上打开一个代码仓库时执行任意代码：若恶意 `git.exe` 被植入项目根目录，Cursor 将在无需任何用户交互、提示或警告的情况下自动执行该文件。这种情况在正常操作过程中会反复发生。
+
+Mindgard 于 2025 年 12 月 15 日发现该漏洞，并当天向 Cursor 进行了负责任的披露。尽管经过七个月的接触——包括通过电子邮件、HackerOne（漏洞在该平台被复现并确认）以及直接联系 Cursor 的首席信息安全官进行报告——该公司未能针对 197 个以上新版本修复该问题。在最初确认后，Cursor 便停止了沟通，未提供任何更新或修复进展。
+
+由于协作披露失败，Mindgard 决定进行全面公开披露。他们认为用户理应了解此风险，以便自行实施保护。建议的缓解措施包括使用 AppLocker 阻止从工作目录执行程序、仅在隔离环境（如虚拟机）中打开不受信任的代码仓库，以及不依赖文件哈希黑名单。
+
+该文章还引发了对快速发展的 AI 公司中安全问题的更广泛担忧，质疑漏洞赏金计划是否不堪重负，以及用户安全是否在增长与收购过程中被置于次要地位。
+
+---
+
+## 7. Linux输入延迟测量：X11与Wayland、VRR及DXVK对比
+
+**原文标题**: Measuring Input Latency on Linux: X11 vs. Wayland, VRR, and DXVK
+
+**原文链接**: [https://marco-nett.de/blog/measuring-input-latency-on-linux-x11-vs-wayland-vrr-dxvk/](https://marco-nett.de/blog/measuring-input-latency-on-linux-x11-vs-wayland-vrr-dxvk/)
 
 **摘要：**
 
-DoorDash 开发了一种创新系统，利用“大语言模型评审团”——多个大型语言模型协同评估并优化食品描述——来生成高质量的食品元数据，旨在提升数百万道菜品的搜索、推荐和菜单准确性。
+本文通过硬件方式详细测量了 Linux 系统下的点击至光子延迟，对比了 X11 与 Wayland、VRR 开关状态以及 DXVK 低延迟分支。作者使用定制设备（搭载光电二极管的 QT Py RP2040）模拟鼠标点击并检测屏幕变化，从而测量端到端延迟。
 
-该方法结合了**上下文优化**与**多模态AI**。上下文优化通过向大语言模型提供结构化提示词，包括餐厅类型、菜系、饮食标签及用户意图（如“这道菜是否无麸质？”）。多模态AI则整合文本（菜单描述、评论）与图像（菜品照片）来增强元数据准确性，尤其适用于名称模糊或需视觉提示的菜品。
+**关键发现：**
+- **X11 对比 Wayland：** X11 略快（0.14–0.22 毫秒），但差异微乎其微，不足以解释用户常抱怨 Wayland 反应迟缓的问题。
+- **VRR（可变刷新率）：** 带来最大的单项改进，将延迟降低 0.26–0.45 毫秒，并使延迟分布更平滑。
+- **DXVK 低延迟分支：** 在帧率受限场景下持续提升（0.10–0.29 毫秒），在非受限测试中通过平滑帧间隔并防止 GPU 队列堆积，显著改善达 0.84 毫秒。
+- **XWayland 表现糟糕：** 相比原生 Wayland 增加高达 3.13 毫秒的延迟——超过所有其他因素的总和。在此情况下，DXVK 低延迟分支可挽回 2.11 毫秒。
 
-关键步骤：
-1. **评审团组成**：多个大语言模型（如GPT-4、Claude）各自独立从不同角度（成分、饮食适宜性、文化准确性）评估菜品的元数据。
-2. **投票与共识**：模型对属性投票（如“含乳制品吗？”）。分歧引发辩论环节，模型阐述其推理依据，从而达成更优共识。
-3. **人机协同**：异常案例被标记供人工审核，在确保质量的同时不影响可扩展性。
-
-成果：该大语言模型评审团系统相比单模型方法实现了更高的准确性与一致性，减少了饮食标签（如纯素、清真）的误判，并妥善处理了文化差异（例如区分“鸡肉提卡玛萨拉”与“黄油鸡肉”）。该方法现已支持DoorDash的元数据流水线，提升了搜索相关性与用户信任度。
-
-该博客强调，将多样化的大语言模型与人工监督相结合，对于复杂、特定领域的元数据任务而言，是替代人工策展的一种可扩展且经济高效的选择。
+**结论：** 排除 XWayland 后，应用所有优化（X11 + VRR + 低延迟）仅比默认设置降低 0.72 毫秒的中位延迟。实际收益来自 VRR 减少抖动以及 DXVK 的帧间隔调节器平滑帧时间波动。核心建议：**游戏时请避免使用 XWayland**。
 
 ---
 
-## 8. 如果你不是在做自己热爱的事，成功或许并不重要。
+## 8. Show HN：文学名著开篇金句
 
-**原文标题**: Success may not matter if you aren't doing what you love
+**原文标题**: Show HN: Opening lines of famous literary works
 
-**原文链接**: [https://12gramsofcarbon.com/p/founders-guide-success-may-not-matter](https://12gramsofcarbon.com/p/founders-guide-success-may-not-matter)
+**原文链接**: [https://www.verbaprima.com/](https://www.verbaprima.com/)
 
-本文认为，尽管**产品-市场契合**至关重要，但**创始人-市场契合**对初创企业的长期成功同样重要。创始人-市场契合是指创始人与所服务市场之间在文化、性情和身份认同上的协调统一。作者主张，如果创始人与特定市场缺乏天然联结，盲目追逐任何行业、任何客户的产品-市场契合便是错误的。
+文章《Show HN：经典文学作品的著名开篇》介绍了**Verba Prima**，这是一个收集并展示知名书籍开篇句子的数字项目。主要内容包括：
 
-关键要点包括：
-- **文化与身份认同：** 创始人必须与客户共享"气场契合"（语言、背景、兴趣），才能建立信任、理解问题并高效销售。面向企业科技的销售与面向创意消费者群体的销售截然不同。
-- **多维度坐标：** 契合度取决于内向/外向性格、技术背景、地理位置、个人兴趣、团队规模偏好，甚至着装风格等因素。
-- **取舍与内省：** 创始人-市场契合的核心在于识别哪些取舍对创始人而言在7-10年的创业承诺中"不可承受"。试图进入不匹配的市场需要过度消耗精力，从而增加职业倦怠风险。
-- **可持续性：** 缺乏创始人-市场契合时，即便初创企业取得了一定成功（如七位数年经常性收入），也可能因创始人失去兴趣或感到挫败而走向消亡。
+- **目的**：打造一个经过精心策划、便于浏览的经典及现代文学作品标志性开篇句子合集，为作家、读者和文学爱好者提供资源。
+- **特点**：网站以简洁、极简的风格展示开篇句子，通常附带作者和书名。用户可按体裁、作者或时代浏览，并可提交修正或建议。
+- **示例**：收录了《白鲸》（“叫我以实玛利。”）、《傲慢与偏见》、《1984》和《麦田里的守望者》等作品的开篇句子。
+- **技术细节**：作为个人项目构建，可能使用了常见的网络技术（HTML/CSS/JS或静态网站生成器），注重速度和简洁性。
+- **目标**：突显开篇句子在奠定基调、主题和吸引读者方面的力量，并激发对文学技艺的欣赏。
 
-最终，作者得出结论："黄金路径"即是创始人-市场契合与产品-市场契合的重叠区域，因为这能确保创始人的热情与身份认同支撑其穿越建设企业的漫长征程。
-
----
-
-## 9. 递归自我改进的经济学 [pdf]
-
-**原文标题**: The Economics of Recursive Self-Improvement [pdf]
-
-**原文链接**: [https://elasticity.institute/rsi-paper.pdf](https://elasticity.institute/rsi-paper.pdf)
-
-根据所提供的内容，该PDF文件似乎已损坏或格式不正确。大部分数据由编码流、PDF对象引用和二进制元数据组成，而非关于“递归自我改进的经济学”的可读文本或结构化信息。
-
-文件中唯一可识别的英文文本片段包括：
-- 标题：“递归自我改进的经济学 [pdf]”
-- 零散、不完整的行，如“k���&J|”、“I$�7_”/   return">in the e”和“ntering a phase of”
-
-**总结：**
-所提供文档不包含可提取的连贯内容。它很可能是一个损坏或不完整的PDF文件，无法进行有意义的总结。从现有数据中无法得出关于递归自我改进的经济学的任何要点或关键信息。
+该项目以“Show HN”形式在Hacker News上分享，邀请反馈和社区参与。创作者强调选材的主观性，并欢迎补充。
 
 ---
 
-## 10. 将您的歌声转换为可打印的乐谱（在浏览器中）
+## 9. 我们是否将太多思考推给了人工智能？
 
-**原文标题**: Turn your singing voice into printable notes (in the browser)
+**原文标题**: Are we offloading too much of our thinking to AI?
 
-**原文链接**: [https://om-intelligence.ch/projects/vocal-notation/vocal-notation.html](https://om-intelligence.ch/projects/vocal-notation/vocal-notation.html)
+**原文链接**: [https://www.artfish.ai/p/offloading-thinking-to-ai](https://www.artfish.ai/p/offloading-thinking-to-ai)
 
-本文介绍了一款基于浏览器的工具，可将歌唱声音实时转换为可打印的乐谱。
+本文探讨了将思考外包给人工智能这一日益增长的趋势，引发了对自主性与独立思考价值的担忧。作者Yennie Jun在自身及他人身上观察到这种现象，从琐碎决策到复杂推理无所不包。她引用刘宇昆2012年短篇小说《完美匹配》——其中名为蒂莉的通用AI助手为用户做出所有决策，并讲述遇见"麦克风男"的经历：此人录制对话并将所有批判性思考委托给Claude，认为它比自己更聪明。
 
-**工作原理：** 用户对着麦克风演唱，节拍器设定节奏网格。该工具检测每拍细分时段的音高，并将这些音高作为音符记录在五线谱上。可视化界面实时显示基频与谱线对应关系，垂直线代表节拍。红色符干表示检测到新音符（重新起音），而非延续同一音高。
+作者指出，虽然搜索引擎等工具需要主动整合信息，但AI如今直接产出成品答案，虽节省时间却可能削弱批判性思维。她以个人经历对比：旅行时与妹妹克制住立刻向ChatGPT询问葡萄牙为何对殖民史引以为傲的冲动，先自行头脑风暴理论再用AI验证——她珍视这一过程。
 
-**主要功能：**
-- **谱号选择：** 自动（最少加线）、高音谱号、高音八度移调（适用于男声）、低音谱号。
-- **调号：** 自动检测或手动选择（最多5个升号/降号）。
-- **节奏设置：** 速度（BPM）、网格细分（四分/八分/十六分音符）、每小节拍数（2-6拍）。
-- **检测控制：** 音高容差（±50音分）、噪声门（过滤微弱声响）、重新起音灵敏度（区分重复音与连音）。建议用户佩戴耳机避免节拍器声音串扰。
-- **导出格式：** MusicXML、ABC、SVG及直接打印。
+Jun承认AI的益处，如自动化繁琐任务（翻译、编程、辅导等）以腾出时间从事更有价值的工作。但她强调风险，例如母亲观察到学生提交雷同的AI生成答案却未真正学习。有益辅助与丧失自主性之间的界限日益模糊。作者质问：我们是在实现劳动自动化还是人类能动性自动化？将欲望外包（如吃什么穿什么）是否会削弱自我认知？她总结道：平衡至关重要，持续参与构建自身欲望与思考才是维系自主性的关键。
 
-**输出显示：** 实时音高轨迹、动态生成的乐谱，支持复制、下载或关闭当前会话。
+---
+
+## 10. 零成本谬误：智能体时代的开源软件
+
+**原文标题**: The zero-cost fallacy: open-source software in the agentic era
+
+**原文链接**: [https://www.thoughtworks.com/insights/blog/open-source/zero-cost-fallacy-open-source-agentic-era](https://www.thoughtworks.com/insights/blog/open-source/zero-cost-fallacy-open-source-agentic-era)
+
+**摘要：开源领域的“零成本谬误”**
+
+文章认为，开源软件正因“零成本谬误”——混淆免费分发与免费维护——而面临危机。虽然复制代码无需成本，但维护代码需要大量人力，导致维护者精疲力竭。宽松许可证（MIT、Apache）使得大型企业得以利用志愿者的劳动，在不做贡献的情况下构建专有帝国。
+
+两种人工智能驱动的压力加剧了这一情况：**“低质”拉取请求**（人工智能生成的低质量代码淹没仓库）和**信任度下降**（浅层提交记录与恶意人工智能生成贡献的病毒式项目）。许可证悖论依然存在：限制性许可证因采购瓶颈阻碍采用，而宽松许可证则助长剥削。
+
+一个激进的观点浮现：随着大语言模型的改进，团队可能从使用完整的开源库转向**研究开放式规范**，并利用人工智能生成本地、最小化的重新实现。这降低了供应链风险，但可能导致精英分化，并剥夺原始创作者的署名。
+
+**核心指导**：工程团队必须将开源依赖视为雇佣代码，严格审计供应链，并规范贡献预算以维持关键基础设施。开源“免费午餐”的时代正在终结。
 
 ---
 
