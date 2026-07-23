@@ -70,7 +70,7 @@ def fetch_top_stories(limit=1):
             })
         
         page += 1
-        if page > 2:  # 通常前 4 页就能获取 100 篇文章；2 页取前30即可
+        if page > 3:  # 通常前 4 页就能获取 100 篇文章；2 页取前50即可
             break
             
         time.sleep(2)  # 避免请求过于频繁
@@ -365,7 +365,7 @@ def main():
     print("开始运行 Hacker News 文章摘要提取器...")
     
     # 获取热门文章
-    stories = fetch_top_stories(limit=30)
+    stories = fetch_top_stories(limit=50)
     print(f"成功获取 {len(stories)} 篇文章")
     
     stories_with_summaries = []
