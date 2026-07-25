@@ -150,7 +150,7 @@ def generate_summary(title, content):
         Content:
         {content}
         
-        Provide a concise summary of this article (no more than 500 words), capturing the main points and key information.
+        Provide a concise summary of this article (no more than 400 words), capturing the main points and key information.
         """
         messages = [{"role": "user", "content": prompt}]
         response = client.chat.completions.create(
@@ -173,7 +173,7 @@ def generate_summary_from_url(title, url, max_retries=3):
             Title: {title}
             URL: {url}
             
-            Provide a concise summary (no more than 500 words), capturing the main points and key information.
+            Provide a concise summary (no more than 400 words), capturing the main points and key information.
             If you cannot access the article, please respond with "Unable to access the article link."
             """
             
