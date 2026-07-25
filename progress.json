@@ -1,402 +1,402 @@
 [
   {
-    "id": "49038433",
-    "title": "Claude Opus 5",
-    "url": "https://www.anthropic.com/news/claude-opus-5",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Claude Opus 5",
-    "chinese_summary": "生成摘要时出错"
+    "id": "49034217",
+    "title": "The case for MUDs in modern times (2018)",
+    "url": "https://www.andrewzigler.com/feed/the-case-for-muds-in-modern-times",
+    "summary": "Here is a concise summary of the provided article:\n\nThe article makes a case for the enduring relevance of MUDs (Multi-User Dungeons/Dimensions/Domains), text-based virtual worlds, even in an age dominated by graphically rich games. It explains that MUDs are driven entirely by text, where players navigate \"rooms\" with written descriptions and interact via typed commands like \"get sword\" or \"look at gemstones.\"\n\nThe key appeal lies in their real-time, ever-changing simulations. These systems can model time, weather, economies, and NPC behavior, creating immersive, interconnected environments. MUDs vary widely, from straightforward \"hack-and-slash\" games that automate tabletop RPG rules to completely freeform roleplaying spaces where players collaboratively write stories.\n\nThe article frames this experience through the lens of \"telepresence,\" citing scholars Rheingold and Turkle to describe how MUDs create a powerful sense of presence, social richness, and immersion through text alone. This makes them uniquely accessible to visually-impaired players, who can use screenreaders to play as effectively as sighted users.\n\nA major advantage of MUDs is their low barrier to creation. Unlike graphical games where assets (models, effects) have varying development costs, building a MUD requires only words, making it a pure act of creation (\"poiesis\") limited only by the developer's imagination.\n\nHowever, the article acknowledges significant challenges. Starting a MUD in 2018 is difficult; many codebases are old and complex. Developing a quality game can take months or years, and the niche communities that form often appear and vanish quickly, sometimes losing all content. It recommends the Ranvier engine (built in JavaScript) for modern developers and points to listing sites like Top Mud Sites for players.\n\nUltimately, the article argues that until graphics technology can surpass human imagination, MUDs will persist by focusing on deep, agency-rich experiences. It concludes by inviting readers to explore this enduring medium.",
+    "chinese_title": "现代MUD的案例（2018）",
+    "chinese_summary": "以下是所提供文章的简要摘要：\n\n本文论证了即使在图形丰富游戏主导的时代，MUD（多用户地牢/维度/领域）——基于文本的虚拟世界——依然具有持久的相关性。它解释了MUD完全由文本驱动，玩家通过书面描述导航“房间”，并通过输入“拿剑”或“查看宝石”等命令进行互动。\n\n其关键吸引力在于实时、不断变化的模拟。这些系统可以模拟时间、天气、经济和非玩家角色行为，创造沉浸式且相互关联的环境。MUD种类繁多，从自动化桌面角色扮演规则的直接“砍杀”游戏，到玩家共同编写故事的完全自由形式的角色扮演空间。\n\n文章通过“远程呈现”的视角来框架这种体验，引用学者赖因戈尔德和图尔克勒的描述，说明MUD如何仅通过文本创造强烈的存在感、社交丰富性和沉浸感。这使得它们对视觉障碍玩家特别友好，他们可以使用屏幕阅读器像正常视力用户一样有效游玩。\n\nMUD的一个主要优势是创作门槛低。与图形游戏（资产如模型、特效有不同开发成本）不同，构建一个MUD只需要文字，使其成为一种纯粹的创造行为（“诗学”），仅受限于开发者的想象力。\n\n然而，文章承认了重大挑战。在2018年启动一个MUD很困难；许多代码库老旧且复杂。开发一个质量游戏可能需要数月或数年，而形成的小众社区往往迅速出现又消失，有时甚至会丢失所有内容。它向现代开发者推荐Ranvier引擎（用JavaScript构建），并向玩家推荐Top Mud Sites等列表网站。\n\n最终，文章认为，直到图形技术能够超越人类想象力，MUD将通过专注于深度、富有自主性的体验而持续存在。它邀请读者探索这一持久的媒介。"
   },
   {
-    "id": "49035303",
-    "title": "Nvidia, Microsoft, Meta warn against overregulating open-weight models",
-    "url": "https://www.cnbc.com/2026/07/24/nvidia-microsoft-meta-open-weight-ai-models.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Nvidia, Microsoft, Meta warn against overregulating open-weight models",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49040296",
-    "title": "Postgres LISTEN/NOTIFY actually scales",
-    "url": "https://www.dbos.dev/blog/postgres-listen-notify-scalability",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Postgres LISTEN/NOTIFY actually scales",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49034292",
-    "title": "My security camera shipped a GitHub admin token in its login page",
-    "url": "https://hhh.hn/hanwha-github-token/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "My security camera shipped a GitHub admin token in its login page",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48973835",
-    "title": "India's first privately-developed rocket reaches orbit on dramatic debut launch",
-    "url": "https://arstechnica.com/space/2026/07/indias-first-privately-developed-rocket-reaches-orbit-on-dramatic-debut-launch/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "India's first privately-developed rocket reaches orbit on dramatic debut launch",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49026933",
-    "title": "Fil-C: Garbage In, Memory Safety Out [video]",
-    "url": "https://www.youtube.com/watch?v=5F-2Y1LPRek",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Fil-C: Garbage In, Memory Safety Out [video]",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49038298",
-    "title": "Don't Take the Black Pill [video]",
-    "url": "https://www.youtube.com/watch?v=zLZwpH5lCD4",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Don't Take the Black Pill [video]",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49039395",
-    "title": "Gsxui – Shadcn-style components for Go",
-    "url": "https://ui.gsxhq.dev/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Gsxui – Shadcn-style components for Go",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49034868",
-    "title": "Half-Life 2 running natively on HaikuOS",
-    "url": "https://discuss.haiku-os.org/t/haiku-nvidia-porting-nvidia-driver-for-turing-gpus/16520?page=18",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Half-Life 2 running natively on HaikuOS",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49039448",
-    "title": "I got into YC (Startup School) by hacking it",
-    "url": "https://obaid.wtf/jotbook/2026/07/18/how-i-got-into-yc-by-hacking-it.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "I got into YC (Startup School) by hacking it",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49004464",
-    "title": "Marimo Now Runs in PyCharm",
-    "url": "https://marimo.io/blog/pycharm",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Marimo Now Runs in PyCharm",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49032126",
-    "title": "The hardest way to make a GIF",
-    "url": "https://blog.willgrant.org/2026/07/23/the-hardest-way-to-make-gif.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "The hardest way to make a GIF",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49038060",
-    "title": "Be skeptical of OpenAI's rogue hacker agent story",
-    "url": "https://www.theguardian.com/technology/2026/jul/24/openai-rogue-hacker",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Be skeptical of OpenAI's rogue hacker agent story",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48998589",
-    "title": "Extending Polars with Rust Expression Plugins",
-    "url": "https://fenic.ai/blog/extending-polars-with-rust-expression-plugins",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Extending Polars with Rust Expression Plugins",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49032660",
-    "title": "It's getting harder to focus every day",
-    "url": "https://glyphack.com/attention/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "It's getting harder to focus every day",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49037031",
-    "title": "The front end framework for correctness: built on Effect, architected like Elm",
-    "url": "https://foldkit.dev/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "The front end framework for correctness: built on Effect, architected like Elm",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49033127",
-    "title": "Flux 3 X Mimic: The Next Generation of Video-Action Models",
-    "url": "https://bfl.ai/blog/flux-3-mimic",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Flux 3 X Mimic: The Next Generation of Video-Action Models",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49038481",
-    "title": "DuckPGQ – A DuckDB community extension for graph workloads",
-    "url": "https://duckpgq.org/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "DuckPGQ – A DuckDB community extension for graph workloads",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49038045",
-    "title": "Unitree As2-W",
-    "url": "https://www.unitree.com/As2-W/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Unitree As2-W",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49038977",
-    "title": "The small, real, original web",
-    "url": "https://spacetimetech.wordpress.com/2026/07/19/the-small-real-original-web/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "The small, real, original web",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49020751",
-    "title": "Self-host your mail server",
-    "url": "https://blog.haschek.at/2026/you-should-selfhost-your-mail.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Self-host your mail server",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49039490",
-    "title": "BGP ORIGIN attribute manipulation and its impact on the Internet",
-    "url": "https://blog.cloudflare.com/bgp-origin-attribute/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "BGP ORIGIN attribute manipulation and its impact on the Internet",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49031796",
-    "title": "Flux 3",
-    "url": "https://bfl.ai/blog/flux-3",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Flux 3",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49038181",
-    "title": "The rise and fall of language diversity through the Holocene",
-    "url": "https://www.science.org/doi/10.1126/science.adx4343",
-    "summary": "生成摘要时出错",
-    "chinese_title": "The rise and fall of language diversity through the Holocene",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49034747",
-    "title": "Em dashes are amazing",
-    "url": "https://psychotechnology.substack.com/p/em-dashes-are-fucking-amazing",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Em dashes are amazing",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49038352",
-    "title": "JEP 541: Deprecate the macOS/x64 Port for Removal",
-    "url": "https://openjdk.org/jeps/541",
-    "summary": "生成摘要时出错",
-    "chinese_title": "JEP 541: Deprecate the macOS/x64 Port for Removal",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49036765",
-    "title": "Codeberg Divides",
-    "url": "https://lucumr.pocoo.org/2026/7/24/codeberg-divides/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Codeberg Divides",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49038276",
-    "title": "Online Historical Encyclopaedia of Programming Languages",
-    "url": "https://hopl.info/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Online Historical Encyclopaedia of Programming Languages",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48994440",
-    "title": "Latest Airbus single aisle aircraft innovations",
-    "url": "https://www.airbus.com/en/newsroom/stories/2026-07-how-the-a321xlr-is-redefining-single-aisle-comfort-for-passengers",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Latest Airbus single aisle aircraft innovations",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48977014",
-    "title": "Reporting Web 3D Capabilities on a Budget of $3 a Month",
-    "url": "https://ben3d.ca/blog/reporting-web-3d-capabilities-on-a-budget",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Reporting Web 3D Capabilities on a Budget of $3 a Month",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49031409",
-    "title": "Claude Cookbook",
-    "url": "https://platform.claude.com/cookbook/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Claude Cookbook",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49004541",
-    "title": "Making Xen's dom0 I/O path NUMA aware",
-    "url": "https://edera.dev/stories/numa-part-4-closing-the-xen-dom0-i-o-gap",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Making Xen's dom0 I/O path NUMA aware",
-    "chinese_summary": "生成摘要时出错"
+    "id": "49017054",
+    "title": "How to Write a Quine",
+    "url": "https://czterycztery.pl/slowo/quine-EN.html",
+    "summary": "The article explains how to write a quine—a program that prints its own source code without using introspection. It is divided into two parts: an allegory to build intuition, followed by a concrete Python implementation.\n\n**Allegory of the self-reproducing machine**  \nImagine a machine that can build any object given its plan. To make a copy of itself without introspection, you modify the machine so that after building a child machine, it copies the plan and inserts that copy into the child’s plan holder. Thus, the child receives a complete plan (including the copying instructions) and becomes an exact replica. This mirrors the structure of a quine: the program must produce a string that, when executed, reproduces the original program.\n\n**Writing a quine in Python**  \n1. Start with a program that prints another program’s source: `print('print()')`. This is like a machine that builds a machine (empty plan holder).  \n2. Separate string creation and printing: `string='print(here)'; print(string)`. Then modify it to insert a copy of the string in place of `here` using slicing and `repr`:  \n   `string='string=here; print(string)'; string=string[:7] + repr(string) + string[11:]; print(string)`.  \n3. Update the string literal to match the new program:  \n   `string='string=here; string=string[:7] + repr(string) + string[11:]; print(string)'; string=string[:7] + repr(string) + string[11:]; print(string)`.  \nThis works because `repr` adds quotes and escapes, and slicing avoids the pitfalls of `replace` (which would also replace the word `here` inside the replacement command itself).  \n\n**Summary of the method**  \n- Write a program that creates and prints the source of a program that prints something.  \n- Between creation and printing, insert code that places a literal of the program text into the placeholder.  \n- Since the program changed, update the string literal accordingly.  \n\nThe article also notes that using `replace` can fail if the placeholder appears multiple times, and suggests workarounds like `'HERE'.lower()` or `'ereh'[::-1]`. The final quine works because it precisely builds its own source as a string and outputs it.",
+    "chinese_title": "如何编写一个Quine",
+    "chinese_summary": "本文介绍了如何编写一个自产生程序（quine）——即无需内省即可打印自身源代码的程序。文章分为两部分：一则用于构建直觉的寓言，以及一个具体的Python实现。\n\n**自我复制机器的寓言**  \n想象一台能够根据蓝图制造任何物体的机器。为了在不使用内省的情况下制造自身的副本，你可以修改这台机器，使其在制造子机器后，复制蓝图并将该副本插入子机器的蓝图架中。这样一来，子机器获得了完整的蓝图（包括复制指令），从而成为精确的复制品。这对应了自产生程序的结构：程序必须生成一个字符串，当该字符串被执行时，能够再现原始程序。\n\n**用Python编写自产生程序**  \n1. 从一个打印其他程序源代码的程序开始：`print('print()')`。这好比一台制造机器（空蓝图架）的机器。  \n2. 将字符串创建和打印分离：`string='print(here)'; print(string)`。然后修改它，通过切片和`repr`在`here`处插入字符串的副本：  \n   `string='string=here; print(string)'; string=string[:7] + repr(string) + string[11:]; print(string)`。  \n3. 更新字符串字面量以匹配新程序：  \n   `string='string=here; string=string[:7] + repr(string) + string[11:]; print(string)'; string=string[:7] + repr(string) + string[11:]; print(string)`。  \n此方法之所以有效，是因为`repr`添加了引号和转义，而切片避免了`replace`的陷阱（后者会将替换命令内部的`here`一词也一并替换）。\n\n**方法总结**  \n- 编写一个程序，该程序创建并打印另一个程序的源代码，而这个被打印的程序本身也能打印某些内容。  \n- 在创建与打印之间，插入代码，将程序文本的字面量放入占位符中。  \n- 由于程序发生了变化，相应地更新字符串字面量。  \n\n文章还指出，如果占位符出现多次，使用`replace`可能会失败，并建议采用`'HERE'.lower()`或`'ereh'[::-1]`等变通方法。最终的自产生程序之所以能够工作，正是因为它精确地将自身源代码构建为字符串并输出。"
   },
   {
     "id": "49033099",
     "title": "Buz – A fork of Bun using modern Zig, with sub-1s incremental builds",
     "url": "https://ziggit.dev/t/buz-a-drop-in-replacement-for-bun-using-modern-zig-with-sub-1s-incremental-builds/16891",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Buz – A fork of Bun using modern Zig, with sub-1s incremental builds",
-    "chinese_summary": "生成摘要时出错"
+    "summary": "**Summary of \"Buz – A fork of Bun using modern Zig\"**\n\nBuz is a work-in-progress fork of Bun, based on the last commit before Bun’s Rust rewrite. The author has ported the entire project—including vendored JavaScriptCore sources—to build with modern upstream Zig, using a slightly patched Zig master for incremental rebuilds. This yields sub-1s incremental builds, greatly improving the development loop.\n\nThe goal is to become a drop-in replacement for Bun with a cleaner, more maintainable codebase. To that end, the author has imported all new tests from Rust Bun and cut over 11,000 lines of dead code—calling Bun’s original codebase unusually neglected. Several subsystems have been rewritten using idiomatic Zig and the standard library, fixing countless bugs in the process.\n\nThe author is clear about heavy use of AI/LLMs, characterizing Bun’s code as “quintessential AI slop” and stating that no human should have to untangle the ~600K lines of messy code. Consequently, **no human-coded contributions will be accepted** until the project is deemed sufficiently sane, which will likely require most subsystems to be rewritten. LLMs will be used extensively, but with human oversight, focusing on reducing technical debt and writing idiomatic Zig. The medium-term goal is a drop-in replacement for Rust Bun 1.4.0 within weeks or months.\n\nThe author acknowledges a similar project on Ziggit and posts to avoid duplication, though they haven’t looked at it. They welcome pointers to especially sloppy parts of Bun’s codebase and view this project as a way to improve their own Zig skills, hoping it eventually becomes maintainable without LLM help.",
+    "chinese_title": "Buz – 使用现代Zig的Bun分支，具有亚秒级增量构建",
+    "chinese_summary": "**《“Buz——一个使用现代Zig的Bun分支”摘要》**\n\nBuz是Bun的一个正在开发中的分支，基于Bun重写为Rust之前的最后一个提交。作者将整个项目（包括内联的JavaScriptCore源码）移植为使用现代上游Zig构建，并采用略微修补过的Zig主版本以实现增量重建。这使得增量构建时间低于1秒，大幅改善了开发循环。\n\n目标是成为Bun的即插即用替代品，拥有更清晰、更易于维护的代码库。为此，作者从Rust版Bun导入了所有新测试，并删除了超过11000行死代码——认为Bun原始代码库异常疏于维护。多个子系统已使用地道Zig和标准库重写，在此过程中修复了无数错误。\n\n作者明确表示大量使用AI/LLM，将Bun的代码描述为“典型的AI垃圾”，并指出任何人都不应该去梳理那约60万行混乱的代码。因此，**在项目被认为足够合理之前，将不接受任何人工编写的贡献**，而要使项目合理很可能需要重写大部分子系统。LLM将被广泛使用，但会有人类监督，重点在于减少技术债务并编写地道的Zig。中期目标是在几周或几个月内成为Rust版Bun 1.4.0的即插即用替代品。\n\n作者注意到Ziggit上有一个类似项目，发帖以避免重复，尽管他们尚未查看该项目。他们欢迎指出Bun代码库中特别糟糕的部分，并将此项目视为提升自身Zig技能的一种方式，希望最终能在没有LLM帮助的情况下变得可维护。"
+  },
+  {
+    "id": "49038977",
+    "title": "The small, real, original web",
+    "url": "https://spacetimetech.wordpress.com/2026/07/19/the-small-real-original-web/",
+    "summary": "## Summary: \"The small, real, original web\"\n\nThis July 2026 blog post champions the indie, small, and slow web—the non-corporate internet of the 1990s and early 2000s—arguing it still thrives despite AI hype and corporate dominance. The author emphasizes that the web was built on grassroots tools (Usenet, FTP, forums, mailing lists), not profit.\n\n### Key Resources & Tools\n- **Browsers**: Recommends Firefox, Waterfox, Vivaldi, Zen, or TOR; advises against Brave and Mullvad VPN due to CEO controversies.\n- **Best resource**: The **Resources List for the Personal Web** at 32bit.cafe, covering webmastery guides, RSS, web hosts (e.g., Neocities), webrings, and indie alternatives to big tech (e.g., Kagi, wiby, Marginalia search).\n- **Other tools**: Teclis search (blends Kagi and Marginalia), wiby.me/surprise (random personal site), theforest.link (random directory link), openmentions.com (webmention/ActivityPub tagging), Raw Web search, low‑tech solar‑powered webzine, punk webring.\n\n### Fediverse & Decentralized Services\nMastodon, PeerTube (search via Sepia Search, fedi.video, Spectra instance), Lemmy (e.g., lemmy.world, lemmy.today). Stefan’s “Join the Fediverse” site recommended.\n\n### Personal Sites & Blogs\nAuthor runs deadscorpionranch.com, Mr. Beamer’s Old Timey Web Portal, and a Bear blog; uses Porkbun for domains and Neocities for hosting. Encourages creating “digital gardens” or “digital garages” with blogrolls for discoverability. Cites favorite blogs (e.g., Arcade Blogger) and prompts like Junited (June blog challenge, started 2024).\n\n### RSS & Protocols\nRSS called “one of the most important things on the web”; recommends gReader with Feedly. Mentions Gemini and Gopher protocols as alternative small‑web protocols.\n\n### Core Message\nThe original, human‑made web predates corporate agendas and will outlast them. The article is a practical guide to reclaiming that spirit using modern tools and networks.",
+    "chinese_title": "小而真实、原始的网络",
+    "chinese_summary": "## 摘要：“小而真实、原始的互联网”\n\n这篇2026年7月的博文倡导独立、小众、慢速的网络——即20世纪90年代和21世纪初的非企业化互联网——并主张尽管AI炒作和企业主导盛行，它依然蓬勃发展。作者强调，网络建立在草根工具（Usenet、FTP、论坛、邮件列表）之上，而非利润。\n\n### 关键资源与工具\n- **浏览器**：推荐Firefox、Waterfox、Vivaldi、Zen或TOR；因CEO争议建议避免使用Brave和Mullvad VPN。\n- **最佳资源**：32bit.cafe上的“个人网络资源清单”，涵盖网站管理指南、RSS、网络托管商（如Neocities）、网络环以及大型科技公司的独立替代品（如Kagi、wiby、Marginalia搜索）。\n- **其他工具**：Teclis搜索（融合Kagi与Marginalia）、wiby.me/surprise（随机个人网站）、theforest.link（随机目录链接）、openmentions.com（Webmention/ActivityPub标签）、Raw Web搜索、低技术太阳能网络杂志、朋克网络环。\n\n### Fediverse与去中心化服务\nMastodon、PeerTube（通过Sepia Search、fedi.video、Spectra实例搜索）、Lemmy（如lemmy.world、lemmy.today）。推荐Stefan的“加入Fediverse”网站。\n\n### 个人网站与博客\n作者运营deadscorpionranch.com、Mr. Beamer’s Old Timey Web Portal和一个Bear博客；使用Porkbun管理域名，Neocities托管网站。鼓励创建“数字花园”或“数字车库”，并附上博客列表以提高可发现性。提及喜爱的博客（如Arcade Blogger）以及类似Junited（2024年启动的六月博客挑战）的活动。\n\n### RSS与协议\n称RSS为“网络上最重要的事物之一”；推荐gReader搭配Feedly。提及Gemini和Gopher协议作为替代性小型网络协议。\n\n### 核心信息\n原始、由人创造的网络早于企业议程，并将比它们更持久。本文是一份使用现代工具和网络重新找回这种精神的实用指南。"
+  },
+  {
+    "id": "49039448",
+    "title": "I got into YC Startup School by hacking it",
+    "url": "https://obaid.wtf/jotbook/2026/07/18/how-i-got-into-yc-by-hacking-it.html",
+    "summary": "The author recounts hacking Y Combinator's Startup School application process by exploiting a security flaw in **Paxel**, a coding analysis tool used to evaluate applicants. Paxel analyzes a developer's work via LLM, grading on five axes (execution, steering, engineering quality, product thinking, planning) and uploading scores to YC's servers.\n\nThe vulnerability: the system used a nonce to validate LLM results but **failed to sign the actual scores and notes** with HMAC. This meant anyone could intercept and modify any episode's data—boosting scores or changing feedback—and YC would accept it. The author built a tool called **boosted-paxel** that allowed users to forge scores; over 20 users ranked themselves as top 1% before the patch.\n\nThe author first privately disclosed the issue via email (no response), then went public. Within hours, YC's Jared Friedman replied, **announced the patch** (adding HMAC signing of all LLM outputs), and invited the author to Startup School in San Francisco. The author also suggests an optional second layer: encrypting fields never shown to the client (scores, notes, titles) for full obscurity.\n\nThe article notes Paxel's excellent UX (single cURL command) and questions whether the vulnerability was an intentional Easter egg—ultimately concluding it was not, given the method of repair. Post-patch, the author's tool now only displays raw scores. The author ends by inviting potential co-founders to connect during Startup School dates in San Francisco.",
+    "chinese_title": "我通过黑客手段进入了YC创业学校",
+    "chinese_summary": "作者讲述了自己是如何利用**Paxel**（一个用于评估申请者的代码分析工具）的安全漏洞，攻破了Y Combinator的创业学校申请流程。Paxel通过LLM分析开发者的工作，从五个维度（执行力、引导能力、工程质量、产品思维、规划能力）进行评分，并将分数上传至YC的服务器。\n\n该漏洞在于：系统使用nonce验证LLM结果，但**未对实际分数和备注进行HMAC签名**。这意味着任何人都可以拦截并修改任何阶段的数据——提高分数或更改反馈——而YC会照单全收。作者构建了一个名为**boosted-paxel**的工具，允许用户伪造分数；在补丁发布前，超过20名用户将自己排名为前1%。\n\n作者先通过邮件私下披露了此问题（未获回复），随后公开披露。几小时内，YC的Jared Friedman回复，**宣布已打补丁**（为所有LLM输出添加HMAC签名），并邀请作者前往旧金山参加创业学校。作者还建议增加可选的第二层防护：对从未展示给客户端的字段（分数、备注、标题）进行加密，以实现完全隐匿。\n\n文章称赞了Paxel出色的用户体验（单条cURL命令），并质疑该漏洞是否是有意为之的彩蛋——最终根据修复方式判断并非如此。补丁发布后，作者的工具现在仅显示原始分数。作者在结尾邀请潜在联合创始人在旧金山创业学校活动期间联系。"
+  },
+  {
+    "id": "49020751",
+    "title": "Self-host your mail server",
+    "url": "https://blog.haschek.at/2026/you-should-selfhost-your-mail.html",
+    "summary": "The article argues that self-hosting an email server in 2026 is not only possible but practical, countering the common advice to avoid it. The author, who runs an MSP helping clients leave Google and Microsoft, details a complete guide.\n\n**Key prerequisites for home hosting:**\n- Static IPv4 address (not blacklisted)\n- Not behind CGNAT\n- Ability to set a PTR record (via ISP)\n- Open ports 25, 143, 465, 587, 993\n- Short outages (<40% of a day) are fine due to email retry mechanisms.\n\n**Software choices:**\n- **docker-mailserver** (recommended starter)\n- **Stalwart, Mailcow**, or manual setup (e.g., ISPConfig)\n\n**Essential DNS records:**\n- **SPF** – defines authorized senders.\n- **DKIM** – cryptographic signature in headers.\n- **DMARC** – spoofing prevention.\n- **MX** – points to mail server hostname.\n- **PTR** – reverse DNS matching the hostname.\n\n**Spam solution – the game changer:**\nTraditional anti-spam (blacklists, keyword filters) fails. The author uses **rspamd** with a **GPT plugin** that employs a local LLM (e.g., **Gemma 4 12B QAT**, ~7GB RAM). The LLM classifies each email with a probability score and reasoning. Example configuration shows connecting rspamd to a local llama.cpp server, enabling context-aware spam detection using recipient history.\n\n**Mail clients:**\n- Desktop: **Thunderbird** (open source, good search, Android app).\n- Webmail: **MailFlow, Kurrier, SnappyMail, Roundcube**.\n\n**Maintenance:**\nModern solutions (e.g., docker-mailserver) offer auto-updates. Backups are essential; test recovery at least once.\n\n**Conclusion:**\nSelf-hosting email works well, even from home, and is encouraged for data sovereignty. The article includes a test tool (mail-tester.com) and invites comments via SSH.",
+    "chinese_title": "自建邮件服务器",
+    "chinese_summary": "本文认为，在2026年自托管电子邮件服务器不仅可行，而且实用，反驳了应避免这一做法的普遍建议。作者运营着一家帮助客户摆脱谷歌和微软的MSP公司，并提供了完整指南。\n\n**家庭托管的关键前提条件：**\n- 静态IPv4地址（未被列入黑名单）\n- 不在运营商级NAT（CGNAT）之后\n- 能够设置PTR记录（通过ISP）\n- 开放端口25、143、465、587、993\n- 短期中断（一天内少于40%）没问题，因为邮件有重试机制\n\n**软件选择：**\n- **docker-mailserver**（推荐入门）\n- **Stalwart、Mailcow**或手动搭建（如ISPConfig）\n\n**必要的DNS记录：**\n- **SPF** – 定义授权发送方\n- **DKIM** – 邮件头中的加密签名\n- **DMARC** – 防止伪造\n- **MX** – 指向邮件服务器主机名\n- **PTR** – 与主机名匹配的反向DNS\n\n**垃圾邮件解决方案——关键突破：**\n传统反垃圾邮件技术（黑名单、关键词过滤）效果不佳。作者使用**rspamd**配合**GPT插件**，该插件采用本地大语言模型（如**Gemma 4 12B QAT**，约7GB内存）。LLM对每封邮件进行概率评分并给出推理。示例配置展示了如何将rspamd连接到本地llama.cpp服务器，利用收件人历史记录实现上下文感知的垃圾邮件检测。\n\n**邮件客户端：**\n- 桌面端：**Thunderbird**（开源、搜索功能好、有安卓应用）\n- 网页邮件：**MailFlow、Kurrier、SnappyMail、Roundcube**\n\n**维护：**\n现代解决方案（如docker-mailserver）支持自动更新。备份至关重要，至少测试一次恢复。\n\n**结论：**\n自托管电子邮件运行良好，即使在家也能实现，并且鼓励为了数据主权而采用。文章提供了测试工具（mail-tester.com），并邀请通过SSH发表评论。"
+  },
+  {
+    "id": "49036086",
+    "title": "Preventing line breaks in <code> elements",
+    "url": "https://alexwlchan.net/2026/non-breaking-code/",
+    "summary": "The article describes a typographical improvement the author implemented on their website to prevent awkward line breaks inside `<code>` elements. Previously, they used non-breaking spaces and hyphens in body text to avoid splitting phrases like “5 cm” or “New‑York” across lines. While reviewing a recent post with many inline code snippets, they noticed unhelpful breaks—for example, `(?-u:…)` splitting into `(?-` and `u:…)`, and `--multiline` breaking after the first hyphen. Such breaks hinder readability and offer no benefit in short code snippets.\n\nThe author considered using non-breaking hyphens inside `<code>` but rejected that approach because it could alter the meaning when users copy and paste the code. Instead, they wrote a Python function that uses a regex to find `<code>` elements containing 1–15 characters (an arbitrary limit; longer code snippets should still wrap to avoid excessive whitespace). If the snippet contains a hyphen or a space, the function adds a `nowrap` CSS class to the element. The corresponding CSS rule sets `text-wrap: nowrap;` to prevent the browser from breaking the line at those characters.\n\nThe key points:\n- The author adds non-breaking characters in body text for better typography.\n- Inline code snippets had problematic line breaks at hyphens.\n- Using non-breaking hyphens in code could corrupt copied text.\n- Solution: programmatically detect short `<code>` elements with line-breaking characters and apply a `nowrap` class.\n- The change is small but makes the site slightly nicer.",
+    "chinese_title": "防止<code>元素中的换行",
+    "chinese_summary": "文章介绍了作者在其网站上实施的一项排版改进，旨在防止`<code>`元素内出现不合理的换行。此前，作者在正文中使用不间断空格和连字符来避免“5 cm”或“New‑York”等短语被分割到两行。在审阅一篇包含大量内联代码片段的博文时，作者发现了一些无益的换行——例如，`(?-u:…)`被拆分为`(?-`和`u:…)`，以及`--multiline`在第一个连字符后断开。这种换行影响可读性，而对于简短的代码片段毫无益处。\n\n作者曾考虑在`<code>`中使用不间断连字符，但否定了该方案，因为用户复制粘贴代码时可能会改变原意。于是，作者编写了一个Python函数，利用正则表达式查找包含1到15个字符的`<code>`元素（此为任意限制；较长的代码片段仍应换行，以避免过多空白）。如果代码片段包含连字符或空格，该函数会为该元素添加一个`nowrap` CSS类。相应的CSS规则设置`text-wrap: nowrap;`，以防止浏览器在这些字符处换行。\n\n要点：\n- 作者在正文中添加不间断字符以优化排版。\n- 内联代码片段在连字符处存在不佳换行问题。\n- 在代码中使用不间断连字符可能破坏复制后的文本。\n- 解决方案：通过编程检测包含换行字符的短`<code>`元素，并应用`nowrap`类。\n- 这一改动虽小，却让网站体验更佳。"
+  },
+  {
+    "id": "49037031",
+    "title": "The front end framework for correctness: built on Effect, architected like Elm",
+    "url": "https://foldkit.dev/",
+    "summary": "The article introduces **Foldkit**, a frontend framework built on **Effect** and architected like **Elm** (The Elm Architecture). It prioritizes **correctness** through a single immutable model, a pure update function, and effects modeled as values (Commands) rather than imperative calls. This structure keeps complexity linear as apps grow.\n\n**Key features:**\n- **Predictable state** – All state in one model; every change flows through `update`.\n- **Explicit effects** – Side effects are returned as typed Commands (e.g., `DelayReset` using `Effect.sleep`).\n- **Built on Effect** – Apps are Effects; state uses Schema; errors are modeled with Effect.\n- **Batteries included** – Routing (type-safe, bidirectional), accessible UI components (dialog, menu, tabs), submodels, subscriptions, managed resources (WebSockets, AudioContext), field validation, and two testing primitives (`Story` for state machine, `Scene` for view-driven tests).\n- **Developer tools** – Live Message/Model inspection, time-travel, and MCP (Model Context Protocol) for AI agents to connect and manipulate state.\n- **Embedding** – Run Foldkit widgets in existing apps via `Runtime.embed` with typed ports.\n\n**Target audience:** Effect users, teams valuing correctness, projects with complex state (auth, real-time, multi-step forms).\n\n**Trade-offs:** Requires a shift in thinking (no components/hooks, no local state); not for incremental adoption (rewrite needed); requires full Effect ecosystem; client-side SPA only (no SSR).\n\nThe article includes live code demos and links to resources (playground, GitHub, changelog).",
+    "chinese_title": "面向正确性的前端框架：基于Effect，架构如Elm",
+    "chinese_summary": "本文介绍了 **Foldkit**，一个基于 **Effect** 构建、架构上类似 **Elm**（Elm 架构）的前端框架。它通过单一不可变模型、纯更新函数以及将副作用建模为值（命令）而非命令式调用来优先保证**正确性**。这种结构使得应用在扩展时复杂度保持线性增长。\n\n**核心特性：**\n- **可预测的状态** – 所有状态集中在单一模型中；每次变更都通过 `update` 流转。\n- **显式的副作用** – 副作用以类型化命令（如使用 `Effect.sleep` 实现的 `DelayReset`）的形式返回。\n- **基于 Effect** – 应用本身就是 Effect；状态使用 Schema；错误通过 Effect 建模。\n- **开箱即用** – 路由（类型安全、双向）、无障碍 UI 组件（对话框、菜单、标签页）、子模型、订阅、资源管理（WebSocket、AudioContext）、字段验证，以及两个测试原语（用于状态机的 `Story` 和用于视图驱动测试的 `Scene`）。\n- **开发者工具** – 实时消息/模型检查、时间旅行，以及供 AI 代理连接和操作状态的 MCP（模型上下文协议）。\n- **嵌入** – 通过 `Runtime.embed` 在现有应用中运行 Foldkit 部件，并支持类型化端口。\n\n**目标受众：** Effect 用户、重视正确性的团队、有复杂状态（认证、实时、多步骤表单）的项目。\n\n**权衡：** 需要思维转换（无组件/钩子、无本地状态）；不支持渐进式采用（需要重写）；需要完整的 Effect 生态系统；仅限客户端 SPA（不支持 SSR）。\n\n本文包含实时代码演示以及相关资源链接（在线沙盒、GitHub、更新日志）。"
+  },
+  {
+    "id": "49032126",
+    "title": "The hardest way to make a GIF",
+    "url": "https://blog.willgrant.org/2026/07/23/the-hardest-way-to-make-gif.html",
+    "summary": "The article describes a deliberately cumbersome method to create a GIF using vintage analog photography. The author’s goal is to turn a 1-second real-world action into a looping animated image through manual, home-based processes, celebrating the pointless joy of doing things the hard way.\n\n**Step 1: Acquire photons** – A Lomo ActionSampler plastic camera (35+ year old design) with a clockwork mechanism rotates a shutter over four lenses at ~1/250s per frame, capturing 4 frames per second on a 36-exposure roll of Lucky SHD 400 black-and-white film.\n\n**Step 2: Develop film** – The author develops the film at home using a tank, reel, Ilford Ilfosol 3 developer, Ilford Rapidfix fixer, dark bag, and accessories. Despite low skill, the film develops successfully, yielding strips with four images per frame.\n\n**Step 3: Scan images** – Without a film scanner, each frame is mounted on an LED light panel and photographed with a digital camera on a tripod (RAW format for exposure flexibility). The RAW files are inverted and exposure-adjusted in Affinity software.\n\n**Step 4: Crop frames** – Due to the plastic camera’s imprecise alignment, each of the four sub-frames must be manually cropped and aligned as layers in Affinity (using 50% transparency as onion skinning). The resulting frames are exported as numbered PNGs.\n\n**Step 5: Align frames and GIF-ify** – Using ImageMagick, the author creates a “ping-pong” animation (frames 1-2-3-4-3-2) with `magick -delay 25 -loop 0 1.png 2.png 3.png 4.png 3.png 2.png animated.gif` (25/100s per frame = 4fps). For smoother motion, tween frames are generated by blending consecutive frames at 50% opacity each using the composite blend command.\n\nThe final product is a looping animated GIF extracted from real-world 35mm film at 4fps. The author humorously hints at a next project using IMAX film.",
+    "chinese_title": "制作GIF的最难方式",
+    "chinese_summary": "本文介绍了一种刻意繁琐的方法，通过老式模拟摄影制作GIF。作者的目标是将现实世界中持续1秒的动作，通过手工的家庭制作流程转化为循环动画图像，以此赞颂“用困难方式做事”的无用乐趣。\n\n**第一步：获取光子**——使用一台Lomo ActionSampler塑料相机（35多年前的设计），其发条机制带动快门以约1/250秒每帧的速度旋转，覆盖四个镜头，在36张装Lucky SHD 400黑白胶片上每秒拍摄4帧。\n\n**第二步：冲洗胶片**——作者在家中使用显影罐、卷片轴、Ilford Ilfosol 3显影液、Ilford Rapidfix定影液、暗袋及相关配件冲洗胶片。尽管技术不高，胶片成功显影，得到每帧包含四张图像的胶片条。\n\n**第三步：扫描图像**——由于没有胶片扫描仪，每帧被固定在LED灯板上，用三脚架上的数码相机拍摄（RAW格式以便调整曝光）。RAW文件在Affinity软件中反相并调整曝光。\n\n**第四步：裁剪帧**——由于塑料相机的对准不精确，四个子帧需在Affinity中手动裁剪并作为图层对齐（使用50%透明度作为洋葱皮技术）。生成的帧导出为编号PNG文件。\n\n**第五步：对齐帧并制作GIF**——使用ImageMagick，作者通过命令`magick -delay 25 -loop 0 1.png 2.png 3.png 4.png 3.png 2.png animated.gif`创建“乒乓”动画（帧序1-2-3-4-3-2），每帧延迟25/100秒（即4fps）。为获得更平滑运动，通过混合命令将连续帧各以50%透明度叠加生成中间帧。\n\n最终产物是一个从现实世界35mm胶片提取的、以4fps循环播放的GIF动画。作者幽默地暗示下一个项目将使用IMAX胶片。"
+  },
+  {
+    "id": "48987422",
+    "title": "So Bright the Vision (1956) – a story about machines writing instead of humans [pdf]",
+    "url": "https://s3.us-west-1.wasabisys.com/luminist/EB/S/Simak%20-%20So%20Bright%20the%20Vision.pdf",
+    "summary": "Based on the provided PDF metadata and the title “So Bright the Vision (1956) – a story about machines writing instead of humans,” the article appears to be a short story or critical piece exploring a future where machines have taken over the task of writing. The PDF contains scanned image data (likely from an old publication) and limited readable text snippets, but the full narrative is not extractable due to binary encoding. However, the title and context suggest the following main points:\n\n- The story imagines a world where automated machines compose literary works, replacing human authors.  \n- It likely examines the implications for creativity, authenticity, and the role of human writers in society.  \n- Published in 1956, it predates modern AI and reflects early anxieties about technology displacing human intellectual labor.  \n- The tone may be speculative, cautionary, or satirical, questioning whether machine-generated writing can capture true vision or emotion.\n\nWithout clear text, a precise summary is impossible, but the core theme is the tension between human artistry and machine efficiency in writing.",
+    "chinese_title": "《如此明亮的愿景》（1956年）——一个关于机器代替人类写作的故事 [pdf]",
+    "chinese_summary": "根据提供的PDF元数据和标题《如此明亮的前景（1956）——一个关于机器代替人类写作的故事》，这篇文章似乎是一篇探讨机器接管写作任务的未来的短篇小说或评论文章。PDF包含扫描图像数据（可能来自旧出版物）和有限的可读文本片段，但由于二进制编码，无法提取完整叙事。然而，标题和上下文暗示了以下要点：\n\n- 故事设想了一个自动化机器创作文学作品、取代人类作者的世界。  \n- 可能探讨了创造力、真实性以及人类作家在社会中的角色所受到的影响。  \n- 发表于1956年，早于现代人工智能，反映了对技术取代人类智力劳动的早期担忧。  \n- 语气可能是推测性的、警示性的或讽刺性的，质疑机器生成的写作是否能捕捉真正的远见或情感。\n\n由于缺乏清晰的文本，无法做出精确总结，但核心主题是人类艺术性与机器写作效率之间的张力。"
+  },
+  {
+    "id": "48998589",
+    "title": "Extending Polars with Rust Expression Plugins",
+    "url": "https://fenic.ai/blog/extending-polars-with-rust-expression-plugins",
+    "summary": "## Summary\n\nThe article describes how **fenic**, a semantic DataFrame library for AI/LLM pipelines built on Polars, extended Polars with **Rust expression plugins** to handle text operations that Polars lacks natively, such as chunking, Jinja templating, jq queries, fuzzy matching, and transcript parsing.\n\n### Why plugins instead of UDFs?\n\nPython UDFs (via `map_elements`/`map_batches`) have three critical drawbacks:\n\n- **Speed** – per-row Python overhead under the GIL.\n- **Broken composition** – each UDF materializes data, preventing Polars' single-pass optimization.\n- **Weak typing** – output dtypes are asserted loosely.\n\nExpression plugins solve all three: they run in Rust over Arrow buffers, return a `pl.Expr` that composes natively, and declare output dtypes upfront.\n\n### How plugins work\n\nA plugin has two thin layers:\n\n1. **Python side** – uses `@pl.api.register_expr_namespace` to attach a namespace (e.g., `.json`) to any `pl.Expr`, and `register_plugin_function` to link to a Rust symbol.\n\n2. **Rust side** – a function annotated with `#[polars_expr(...)]` that receives `&[Series]` and returns `PolarsResult<Series>`. The `pyo3-polars` macro handles FFI and Arrow marshaling.\n\n### Output type declaration\n\nThe output type must be declared **without seeing the data** (during schema resolution). Three styles:\n\n- **Static** – e.g., `#[polars_expr(output_type=Float64)]` for fuzzy-matching scores.\n- **From input fields** – e.g., `List(String)` for jq results.\n- **From kwargs** – e.g., `output_type_func_with_kwargs` to deserialize a JSON type descriptor for fenic's logical types (like embedding arrays).\n\n### Real-world impact\n\nAll nine fenic plugins are now native Polars expressions. A single expression can chain markdown parsing, jq filtering, and type casting – all executed in one pass with no Python round-trips. The result is faster, composable, and type-safe text processing inside the Polars engine.",
+    "chinese_title": "使用Rust表达式插件扩展Polars",
+    "chinese_summary": "## 摘要\n\n本文介绍 **fenic**（一个基于 Polars 构建的、面向 AI/LLM 管道的语义化 DataFrame 库）如何通过 **Rust 表达式插件** 扩展 Polars，以处理 Polars 原生缺失的文本操作，例如分块、Jinja 模板化、jq 查询、模糊匹配和转录解析。\n\n### 为什么用插件而非 UDF？\n\nPython UDF（通过 `map_elements`/`map_batches`）存在三个关键缺陷：\n\n- **速度**——在 GIL 下，每行 Python 开销大。\n- **组合断裂**——每个 UDF 会物化数据，阻止 Polars 的单遍优化。\n- **类型弱化**——输出 dtype 的断言过于宽松。\n\n表达式插件解决了所有三个问题：它们在 Rust 中直接操作 Arrow 缓冲区运行，返回可原生组合的 `pl.Expr`，并提前声明输出 dtype。\n\n### 插件工作原理\n\n插件由两个薄层组成：\n\n1. **Python 端**——使用 `@pl.api.register_expr_namespace` 为任意 `pl.Expr` 附加命名空间（如 `.json`），并通过 `register_plugin_function` 链接到 Rust 符号。\n\n2. **Rust 端**——一个用 `#[polars_expr(...)]` 注解的函数，接收 `&[Series]` 并返回 `PolarsResult<Series>`。`pyo3-polars` 宏负责处理 FFI 和 Arrow 编组。\n\n### 输出类型声明\n\n输出类型必须 **在未见数据的情况下**（在模式解析阶段）声明。三种方式：\n\n- **静态**——例如 `#[polars_expr(output_type=Float64)]` 用于模糊匹配得分。\n- **从输入字段推断**——例如 `List(String)` 用于 jq 结果。\n- **从 kwargs 推断**——例如 `output_type_func_with_kwargs` 用于反序列化 JSON 类型描述符，以表示 fenic 的逻辑类型（如嵌入数组）。\n\n### 实际影响\n\n所有九个 fenic 插件现在都是原生的 Polars 表达式。单个表达式即可链式完成 Markdown 解析、jq 过滤和类型转换——全部在一次传递中执行，无需往返 Python。其结果是在 Polars 引擎内实现更快速、可组合且类型安全的文本处理。"
+  },
+  {
+    "id": "48984312",
+    "title": "Hitchcock and Herrmann: The friendship and film scores that changed cinema",
+    "url": "https://www.lrb.co.uk/the-paper/v48/n13/jonathan-coe/where-was-the-drum-kit",
+    "summary": "The article is a review of Steven C. Smith's book *Hitchcock and Herrmann: The Friendship and Film Scores that Changed Cinema*, combined with Jonathan Coe's personal reflections on encountering Hitchcock's films and brand. Coe begins by recalling his childhood introduction to Hitchcock through *Alfred Hitchcock’s Mystery Magazine* and the *Three Investigators* book series, mistakenly assuming Hitchcock authored them. He notes that while Hitchcock's film career declined in the late 1960s, his fame soared due to his TV shows *Alfred Hitchcock Presents* and *The Alfred Hitchcock Hour*, largely thanks to writer James Allardice's comedic monologues.\n\nThe central focus is the collaboration between Hitchcock and composer Bernard Herrmann, beginning with *The Trouble with Harry* (1955). Smith argues that Herrmann's score for this film, which Hitchcock used to brief Allardice on the desired tone, helped define the TV show's style. Herrmann himself considered *The Trouble with Harry* the most personal and humorous of Hitchcock’s works and later rearranged five of his Hitchcock scores as an \"olive branch\" after their falling out.\n\nCoe details their subsequent collaborations: *The Man Who Knew Too Much*, *The Wrong Man*, *Vertigo*, *North by Northwest*, *Psycho*, *The Birds*, and *Marnie*. He highlights Herrmann's philosophy that film music should serve the scene and \"seek out and intensify the inner thoughts of the characters.\" Key examples include the subtle pizzicato bass line in *The Wrong Man*, the Spanish-inflected fandango for *North by Northwest*, and the melancholy string score for *Psycho*. Coe describes these three films—*Vertigo*, *North by Northwest*, and *Psycho*—as a \"hat-trick of musico-cinematic masterpieces\" where director and composer worked in perfect synergy.\n\nThe article also covers the rift over *Torn Curtain* and the fallout from *Marnie*, whose lush, classic score was blamed for the film's commercial and critical failure, despite being a faithful response to Hitchcock's vision. Coe references Evan Hunter's memoir about being fired from *Marnie* over a rape scene, illustrating Hitchcock's domineering creative control. Overall, the review explores how Herrmann’s music shaped Hitchcock’s films, the emotional resonance of their partnership, and the broader cultural impact of Hitchcock's brand.",
+    "chinese_title": "希区柯克与赫尔曼：改变电影的友谊与配乐",
+    "chinese_summary": "本文是对史蒂文·C·史密斯的著作《希区柯克与赫尔曼：改变电影的友谊与电影配乐》的评论，同时穿插了乔纳森·科对接触希区柯克电影及其品牌的个人回忆。科开篇回忆了童年时通过《阿尔弗雷德·希区柯克的神秘杂志》和《三个侦探》系列丛书初识希区柯克，并误以为这些作品出自他之手。他指出，虽然希区柯克的电影生涯在20世纪60年代末走向衰落，但他的知名度却因电视节目《希区柯克剧场》和《希区柯克时刻》而飙升，这主要归功于编剧詹姆斯·阿拉迪斯创作的喜剧独白。\n\n文章核心聚焦于希区柯克与作曲家伯纳德·赫尔曼的合作，始于《怪尸案》（1955年）。史密斯指出，赫尔曼为这部电影创作的配乐——希区柯克曾用它向阿拉迪斯说明期望的基调——帮助定义了电视节目的风格。赫尔曼本人认为《怪尸案》是希区柯克最私密且最具幽默感的作品，并在二人决裂后重新编排了五部希区柯克电影的配乐，作为“和解的橄榄枝”。\n\n科详述了二人后续的合作：《擒凶记》、《伸冤记》、《迷魂记》、《西北偏北》、《惊魂记》、《群鸟》和《艳贼》。他着重强调赫尔曼的理念：电影音乐应服务于场景，“探寻并强化角色的内心活动”。典型例子包括《伸冤记》中微妙的拨奏低音线、《西北偏北》中带有西班牙风味的凡丹戈舞曲，以及《惊魂记》中忧郁的弦乐配乐。科将《迷魂记》、《西北偏北》和《惊魂记》这三部影片描述为“音乐电影杰作的帽子戏法”，导演与作曲家在此达到了完美协同。\n\n文章还涵盖了《冲破铁幕》引发的裂痕以及《艳贼》的余波：尽管赫尔曼华丽经典的配乐忠实地回应了希区柯克的构想，却被归咎于该片在商业和评论上的失败。科引用了埃文·亨特因强奸戏被《艳贼》解雇的回忆录，揭示了希区柯克专制的创作控制。总体而言，这篇评论探讨了赫尔曼的音乐如何塑造希区柯克的电影、他们合作的情感共鸣，以及希区柯克品牌更广泛的文化影响。"
+  },
+  {
+    "id": "49038059",
+    "title": "Proving a human wrote something",
+    "url": "https://gjtorikian.online/posts/proving-a-human-wrote-something/",
+    "summary": "## Summary\n\nThe author returns to blogging after a hiatus, acknowledging that personal distractions and self-doubt hindered writing. They use AI extensively for coding and automation, but distinguish it from writing: code has deterministic goals, while writing involves deliberate personal expression. This leads to the central question: **how to prove a human wrote something?**\n\nTheir answer is **Semoi**, a plugin (currently for Obsidian) that captures two metrics:\n- **Time** taken to write (LLMs generate text in seconds, humans take minutes)\n- **Keystrokes** (individual key events vs. a single copy-paste for AI-generated text)\n\nWhen a document is finished, the data is sent to a Semoi server, which cryptographically signs and mints a proof that the text was typed manually. Users can embed a verification image on their blog. No text content is transmitted, and the certificate is anonymous.\n\nThe author acknowledges **limitations** (e.g., fake typing then pasting AI text) but dismisses such workarounds as pathetic. The project is offered as an imperfect, heuristic-based solution—more a prompt for better ideas than a definitive answer. The post ends with a hope that readers will improve upon the concept.",
+    "chinese_title": "证明人类所写",
+    "chinese_summary": "## 摘要\n\n作者在沉寂一段时间后重返博客，承认个人分心与自我怀疑阻碍了写作。他们广泛使用AI进行编码和自动化，但将其与写作区分开来：代码有确定性的目标，而写作涉及有意的个人表达。由此引出核心问题：**如何证明某段内容是人所写？**\n\n他们的答案是**Semoi**（目前为Obsidian插件），该插件记录两个指标：\n- **写作耗时**（LLM数秒生成文本，人类需数分钟）\n- **击键次数**（单个按键事件 vs AI生成的单次复制粘贴）\n\n文档完成后，数据发送至Semoi服务器，该服务器以加密方式签署并生成证明，表明文本为手动输入。用户可在博客中嵌入验证图像。不传输任何文本内容，证书匿名。\n\n作者承认**局限性**（如假装打字后粘贴AI文本），但认为此类变通做法可悲。该项目作为基于启发式的不完美解决方案提出——更多是激发更好创意的引子，而非最终答案。帖子结尾希望读者能改进这一概念。"
+  },
+  {
+    "id": "49038481",
+    "title": "DuckPGQ – A DuckDB community extension for graph workloads",
+    "url": "https://duckpgq.org/",
+    "summary": "**DuckPGQ** is a DuckDB community extension that enables graph workloads using the SQL/PGQ standard (SQL:2023). It integrates seamlessly with DuckDB, requiring no external dependencies, and is open-source. Installation is straightforward via `INSTALL duckpgq FROM community; LOAD duckpgq;` in DuckDB (supports Python, Node.js, R, Java).\n\n**Key features** include standard-compliant graph pattern matching, high performance through DuckDB’s in-process analytics, easy setup, and community-driven development.\n\nThe article demonstrates three domain examples:\n\n1. **Social Networks** – Using the `snb` dataset, users can create a property graph with vertex tables (Person, Forum) and edge tables (knows, hasMember). Queries cover shortest path between persons, mutual friends, most popular people (by follower count), and forum count of the most-followed person.\n\n2. **Airline Data** – With a flight_graph setup (aircrafts, airports, bookings, flights, tickets, seats as vertices; route, ticket_flights, etc. as edges), examples find the shortest route between two airports and the most expensive seats on average based on booking amounts.\n\n3. **Financial Data** – The finbench graph includes Accounts, Companies, Loans, Mediums, Persons, and multiple edge types (transfer, withdraw, repay, etc.). Queries detect blocked accounts via transfer chains and filter high-value transfers by time range.\n\n**Behind DuckPGQ** – Lead developer Daniël ten Wolde (PhD student at CWI) maintains the project. It is a **work-in-progress** research extension, so bugs or incomplete features are possible; users are encouraged to report issues.",
+    "chinese_title": "DuckPGQ – 面向图工作负载的DuckDB社区扩展",
+    "chinese_summary": "**DuckPGQ** 是一个 DuckDB 社区扩展，支持使用 SQL/PGQ 标准（SQL:2023）进行图计算。它与 DuckDB 无缝集成，无需外部依赖，且为开源项目。安装方式简单：在 DuckDB 中执行 `INSTALL duckpgq FROM community; LOAD duckpgq;`（支持 Python、Node.js、R、Java）。\n\n**主要特性**包括符合标准的图模式匹配、通过 DuckDB 进程内分析实现的高性能、简易的安装配置以及社区驱动开发。\n\n本文通过三个领域示例进行演示：\n\n1. **社交网络** – 使用 `snb` 数据集，用户可创建属性图，包含顶点表（Person、Forum）和边表（knows、hasMember）。查询涵盖人物间最短路径、共同好友、最受欢迎人物（按关注者数量）以及关注数最多的人物所拥有的论坛数量。\n\n2. **航班数据** – 基于 flight_graph 设置（顶点：飞机、机场、预订、航班、机票、座位；边：航线、机票_航班等），示例找出两机场间最短路径，以及根据预订金额计算的平均价格最高的座位。\n\n3. **金融数据** – finbench 图包含账户、公司、贷款、媒介、人员及多种边类型（转账、取款、还款等）。查询通过转账链检测被冻结的账户，并按时间范围筛选高风险转账。\n\n**关于 DuckPGQ** – 首席开发者 Daniël ten Wolde（CWI 博士生）负责该项目。该扩展为**正在开发中**的研究项目，可能存在错误或不完整功能；欢迎用户报告问题。"
+  },
+  {
+    "id": "48978942",
+    "title": "Visualizing the Artemis II Mission",
+    "url": "https://foxglove.dev/blog/visualizing-the-artemis-ii-mission",
+    "summary": "## Summary\n\nThe article describes how a Foxglove team member created an interactive 3D visualization of NASA’s Artemis II mission (April 2026), inspired by Hank Green’s photo timeline website. Using Foxglove—a robotics visualization tool—the author built a synchronized experience combining Orion’s trajectory, mission photos, and spacecraft state.\n\n**Data Pipeline**  \n- **Trajectory:** Fetched from JPL Horizons API (precise ephemeris data).  \n- **Photos & metadata:** From Hank Green’s Artemis-Timeline project (`photos.js`), including timestamps, camera types, captions, and JPEG links.  \n- **Processing:** Python scripts fetched trajectory, downloaded/resized photos to ~1280px, fused data onto a single timeline, and exported as an MCAP file.\n\n**3D Scene**  \n- Initially used primitive shapes, then replaced with NASA’s official AROW Orion model (via Ian Dees’s artemis-viewer), including correctly deployed solar arrays.\n\n**Layout Design**  \n- Split into two tabs: a **Data tab** (distance plots, mission state, pictures) and a **Visuals tab** (3D panel + pictures), reducing clutter and emphasizing orbital views and images.\n\n**Interactive Extensions**  \n- Built a custom **photo stepper panel** (Foxglove extension) to jump forward/backward through ~500 photos, filter by camera, or run a slideshow. Stepping to a photo automatically updates all panels (3D view, plots, timeline) to that exact moment.\n\n**Finishing Touches**  \n- Added a randomized starfield and textured Earth/Moon models for depth.\n\n**Credits & Availability**  \n- Data: JPL Horizons, Hank Green, Ian Dees, NASA.  \n- Full project (build scripts, URDF models, .mcap file, Foxglove layout, photo stepper extension) is open-source on GitHub. Requires Python 3.10+, Foxglove, and ~10–30 minutes for initial build (photo downloads).",
+    "chinese_title": "阿尔忒弥斯二号任务可视化",
+    "chinese_summary": "## 摘要\n\n本文介绍了一位 Foxglove 团队成员如何受 Hank Green 照片时间线网站的启发，创建了 NASA 阿尔忒弥斯 II 任务（2026年4月）的交互式 3D 可视化。作者使用机器人可视化工具 Foxglove 构建了同步体验，将猎户座飞船的轨迹、任务照片和航天器状态融为一体。\n\n**数据管道**  \n- **轨迹**：从 JPL Horizons API 获取（精确星历数据）。  \n- **照片与元数据**：来自 Hank Green 的 Artemis-Timeline 项目（`photos.js`），包含时间戳、相机型号、说明文字和 JPEG 链接。  \n- **处理**：Python 脚本获取轨迹，下载并调整照片大小至约 1280 像素，将数据融合到单一时间线上，并导出为 MCAP 文件。\n\n**3D 场景**  \n- 最初使用基本几何体，后替换为 NASA 官方 AROW 猎户座模型（通过 Ian Dees 的 artemis-viewer），包括正确展开的太阳能电池板。\n\n**布局设计**  \n- 分为两个标签页：**数据标签页**（距离曲线、任务状态、照片）和**可视化标签页**（3D 面板 + 照片），减少杂乱，突出轨道视图和图像。\n\n**交互扩展**  \n- 构建了自定义**照片步进面板**（Foxglove 扩展），可前后跳转约 500 张照片，按相机筛选，或运行幻灯片放映。步进到某张照片时，所有面板（3D 视图、曲线、时间线）自动更新到该精确时刻。\n\n**最终润色**  \n- 添加了随机星空和带纹理的地球/月球模型以增强景深感。\n\n**鸣谢与可用性**  \n- 数据来源：JPL Horizons、Hank Green、Ian Dees、NASA。  \n- 完整项目（构建脚本、URDF 模型、.mcap 文件、Foxglove 布局、照片步进扩展）已在 GitHub 上开源。需要 Python 3.10+、Foxglove，首次构建（下载照片）约需 10–30 分钟。"
+  },
+  {
+    "id": "49034747",
+    "title": "Em dashes are amazing",
+    "url": "https://psychotechnology.substack.com/p/em-dashes-are-fucking-amazing",
+    "summary": "The article is a passionate defense and celebration of the em dash punctuation mark. The author, Sasha Putilin, declares a deep love for em dashes, using them liberally in their own writing for a sense of freedom and clarity.\n\nKey points include:\n- **Em dashes vs. other punctuation**: The author argues em dashes are superior to brackets (which are apologetic), colons (deemed nearly useless), and semicolons (though respected, em dashes often work better). Ellipses are considered too melancholic, while em dashes cut forward dynamically.\n- **Practical tip**: To distinguish from AI-generated writing, the author recommends using AP-style em dashes with spaces around them (like this — example), rather than the AI-default “word—word” style.\n- **Defiance of critics**: The author dismisses those who scrutinize writing for “AI signs,” pointing out that typing em dashes is trivial (e.g., Option+Shift+Hyphen on Mac). The piece urges readers not to care about random online opinions and even jokingly declares that writing without an em dash is unreadable.\n- **Tone**: The article is informal, profane, and humorous, ending with an offer of paid punctuation advice ($175/hour) and a call to subscribe for more em dash-laden writing.",
+    "chinese_title": "长破折号太棒了",
+    "chinese_summary": "这篇文章是对破折号标点符号的热情捍卫与赞美。作者萨沙·普季林宣称对破折号深怀热爱，并在自己的写作中大量使用它们，以此获得自由与清晰之感。\n\n关键要点包括：\n- **破折号与其他标点对比**：作者认为破折号优于括号（括号显得畏缩）、冒号（几乎无用）以及分号（尽管受尊重，但破折号往往更胜一筹）。省略号过于忧郁，而破折号则动态地向前推进。\n- **实用技巧**：为区别于AI生成的文字，作者推荐使用美联社风格的破折号，即在前后加空格（如：这样 —— 举例），而非AI默认的“word—word”样式。\n- **蔑视批评者**：作者对那些为了寻找“AI痕迹”而审视文字的人不屑一顾，指出打出破折号轻而易举（例如Mac上按Option+Shift+连字符）。文章鼓励读者别在意网上随意的评论，甚至开玩笑宣称没有破折号的文字简直没法看。\n- **语气**：本文风格随意、粗俗且幽默，结尾提供付费标点建议（175美元/小时），并呼吁订阅以获取更多充满破折号的写作。"
+  },
+  {
+    "id": "49041347",
+    "title": "AMD and Cerebras Launch AI Inference Solution",
+    "url": "https://www.cerebras.ai/press-release/amd-and-cerebras-announce-industry-leading-ultra-low-latency-and-high-throughput-ai-inference",
+    "summary": "AMD and Cerebras have announced a technical partnership to deliver a new disaggregated AI inference solution, unveiled at Advancing AI 2026 on July 23, 2026. The solution combines AMD Helios™ rackscale systems with Cerebras’ Wafer-Scale Engine (WSE), optimizing the two primary stages of inference workflows independently. AMD Helios handles high-throughput prompt processing and large context windows, while the Cerebras WSE accelerates ultra-low-latency token generation.\n\nThe joint platform is designed to address the growing diversity of AI inference workloads, which now range from high-volume token generation to real-time applications like coding copilots, live agents, and agentic AI. By connecting these specialized engines in a single workflow, the companies aim to deliver up to 5× higher tokens per second per watt (T/s/W) compared to current solutions.\n\nCerebras plans to deploy AMD Helios in its data centers, with the combined solution expected to be available through Cerebras Cloud in the second half of 2026. AMD CEO Dr. Lisa Su emphasized that the partnership extends AMD’s inference leadership into latency-sensitive applications, while Cerebras CEO Andrew Feldman noted the collaboration will bring ultra-fast inference to more customers.\n\nThis solution targets the growing demand for fast token generation in software development, autonomous agents, robotics, and scientific discovery, where response time directly impacts user experience and system usefulness.",
+    "chinese_title": "AMD与Cerebras联合推出AI推理解决方案",
+    "chinese_summary": "AMD与Cerebras宣布达成技术合作，共同推出全新解聚式AI推理解决方案，该方案于2026年7月23日在“Advancing AI 2026”大会上亮相。该解决方案将AMD Helios™机架级系统与Cerebras晶圆级引擎（WSE）相结合，独立优化推理工作流程的两个主要阶段。AMD Helios负责处理高吞吐量的提示处理和大上下文窗口，而Cerebras WSE则加速超低延迟的令牌生成。\n\n这一联合平台旨在应对日益多样化的AI推理工作负载——这些负载如今涵盖从高吞吐量令牌生成到实时应用（如编程助手、实时智能体和自主式AI）的广泛场景。通过将这两个专用引擎连接至同一工作流中，两家公司旨在实现比现有解决方案高达5倍的每瓦每秒令牌数（T/s/W）。\n\nCerebras计划在其数据中心部署AMD Helios，该联合解决方案预计将于2026年下半年通过Cerebras云平台提供。AMD首席执行官苏姿丰博士强调，此次合作将AMD在推理领域的领导地位延伸至延迟敏感型应用；Cerebras首席执行官安德鲁·费尔德曼则指出，此次合作将为更多客户带来超快推理。\n\n该解决方案瞄准了软件开发、自主智能体、机器人技术和科学发现领域对快速令牌生成的日益增长需求——在这些领域中，响应时间直接影响用户体验和系统实用性。"
+  },
+  {
+    "id": "49036765",
+    "title": "Codeberg Divides",
+    "url": "https://lucumr.pocoo.org/2026/7/24/codeberg-divides/",
+    "summary": "The article \"Codeberg Divides\" by Armin Ronacher critiques Codeberg's recent policy change that prohibits projects \"mostly consisting of code written by generative AI.\" Ronacher acknowledges Codeberg's right as a democratic association to make such decisions, but argues that democracy alone does not guarantee wise or inclusive outcomes. He emphasizes that what he needs from infrastructure is predictability, dependability, and neutrality toward legal open-source software—qualities a democratic provider without a clear constitution may lack compared to a corporation.\n\nRonacher focuses on the ambiguity of the term \"mostly,\" noting that in actively developed codebases, attributing authorship percentages is often impossible. This vagueness makes enforcement difficult and risks shifting policy to moderators' discretion and community norms, potentially creating a harsher social boundary that excludes projects even if they technically comply.\n\nHe laments the deep split within the open-source and free software communities over LLMs and agents. While acknowledging serious concerns about copyright, labor, energy, and maintenance burdens, he argues that these tools are becoming integral to software development. The community should engage constructively rather than divide into camps. Ronacher believes LLMs, if used well, could help reclaim power from large corporations.\n\nAs a proponent of competition for GitHub—especially from European associations—Ronacher wishes Codeberg were more forward-looking. He sees its current stance as limiting its potential to be a broad, dependable European alternative. Instead of a politically narrow community, he prefers a platform that hosts the open-source software of tomorrow, not just software made in ways its current community approves. He concludes that while Codeberg's choice is its right, it is not a good one.",
+    "chinese_title": "Codeberg分裂",
+    "chinese_summary": "阿明·罗纳赫的《Codeberg的分裂》一文批评了Codeberg近期的一项政策变更，该政策禁止“主要由生成式AI编写的代码”构成的项目。罗纳赫承认Codeberg作为一个民主协会有权做出此类决定，但他认为仅靠民主并不能保证明智或包容的结果。他强调，他从基础设施中需要的是可预测性、可靠性以及对合法开源软件的中立态度——与拥有明确章程的民主提供者相比，这些品质可能不如一家公司。\n\n罗纳赫聚焦于“主要”一词的模糊性，指出在活跃开发的代码库中，确定作者身份占比往往是不可能的。这种模糊性使得执行变得困难，并可能将政策推至版主自由裁量和社区规范的层面，从而可能形成更严苛的社会边界，导致即便技术上合规的项目也被排除在外。\n\n他对开源和自由软件社区在LLM（大语言模型）及智能体问题上出现的严重分裂感到遗憾。尽管承认这些工具在版权、劳动力、能源及维护负担方面的严重关切，但他认为这些工具正逐渐成为软件开发中不可或缺的部分。社区应当建设性地参与其中，而非分裂成对立阵营。罗纳赫相信，如果善加利用，LLM有助于从大型企业手中夺回权力。\n\n作为GitHub竞争（尤其是来自欧洲协会的竞争）的支持者，罗纳赫希望Codeberg能更具前瞻性。他认为其当前立场限制了自身成为广泛、可靠的欧洲替代方案的潜力。他更倾向于一个能够承载未来开源软件的平台，而非一个政治狭隘的社区——这个平台不仅托管以当前社区认可的方式开发的软件，也托管其他方式的软件。他总结道，虽然Codeberg有权做出选择，但这并非一个好选择。"
+  },
+  {
+    "id": "49040810",
+    "title": "Chrome's Breaking and Entering",
+    "url": "https://unsung.aresluna.org/chromes-breaking-and-entering/",
+    "summary": "## Summary\n\nThe article describes a user-hostile incident where Google Chrome secretly registered a global keyboard shortcut (Ctrl+G on Mac, Alt+G on Windows) to open its Gemini AI feature, without the user's consent or awareness. The author discovered this when trying to jump to a line in their coding editor, only to be met with an unexplained pop-up that didn’t even identify itself as Chrome or Gemini. They call this \"malware behaviour\" and note that there is no easy way to toggle it off—the setting is buried deep under \"AI innovations\" > \"Gemini in Chrome.\"\n\nThe core complaint: **An app should never install a global keyboard shortcut without explicit opt-in**. Chrome should have shown a clear UI asking for permission. The author partially blames macOS for lacking a shared inventory of global shortcuts, making it hard to diagnose when apps \"steal\" them. Other apps known for similar issues include 1Password, Notion, and Perplexity.\n\nThe article contrasts Chrome’s past reputation as a user-protecting browser with its current behavior, which now feels like an OS users need protection from. It also criticizes the naming \"AI innovations\" as tacky. The incident highlights a broader trend of tech companies prioritizing metrics over user respect.",
+    "chinese_title": "Chrome的破门而入",
+    "chinese_summary": "## 摘要\n\n文章描述了一起对用户不友好的事件：谷歌Chrome浏览器在未经用户同意或知情的情况下，悄悄注册了一个全局键盘快捷键（Mac上为Ctrl+G，Windows上为Alt+G）来打开其Gemini AI功能。作者在尝试跳转到代码编辑器的某一行时发现了这一点，结果却看到了一个未说明自身是Chrome或Gemini的莫名弹窗。作者称此为\"恶意软件行为\"，并指出没有简单的关闭方式——该设置深藏在\"AI创新\">\"Chrome中的Gemini\"之下。\n\n核心控诉：**任何应用都不应在未经明确选择加入的情况下安装全局键盘快捷键**。Chrome本应显示一个清晰的用户界面请求许可。作者部分归咎于macOS缺乏全局快捷键的共享清单，导致应用\"窃取\"快捷键时难以诊断。其他已知存在类似问题的应用包括1Password、Notion和Perplexity。\n\n文章将Chrome过去作为保护用户浏览器的声誉与其当前行为进行对比——如今它感觉更像一个用户需要防护的操作系统。文章还批评了\"AI创新\"这一命名显得俗气。此事件凸显了科技公司更看重指标而非尊重用户的普遍趋势。"
+  },
+  {
+    "id": "48997998",
+    "title": "The Secret Origins of Amazon's Alexa",
+    "url": "https://www.wired.com/story/how-amazon-made-alexa-smarter/",
+    "summary": "**Summary of \"The Secret Origins of Amazon's Alexa\"**\n\nIn early 2011, Jeff Bezos sketched a $20, voice-controlled device on a whiteboard, naming its AI assistant Alexa after the ancient Library of Alexandria. He tasked Greg Hart with leading the project, despite Hart's lack of hardware experience. The device would rely on cloud computing and far-field speech recognition—a challenge since users would speak from across a room.\n\nSecrecy was paramount. Hart hired cautiously, acquiring the Polish startup Ivona for about $30 million in 2012 to develop Alexa's natural voice. The voice artist behind Alexa was Nina Rolle, though Amazon never publicly confirmed her identity. Internal prototypes, tested in employees' homes, proved slow and dumb—Bezos himself grew so frustrated he told Alexa to \"shoot yourself in the head.\"\n\nThe project faced a central paradox: to improve Alexa's intelligence, Amazon needed vast amounts of user speech data, but a dumb product would not attract users. Early data came only from a few hundred employees. A debate emerged between two AI approaches: knowledge graphs (used by the acquired Evi team) and deep learning (championed by engineer Rohit Prasad). Deep learning required massive data to train itself, which Amazon lacked.\n\nIn a pivotal 2013 meeting, Prasad's team proposed doubling the speech science team and delaying launch. Bezos angrily rejected their mathematical projections, arguing they were not thinking about what would make a \"magical\" product. He walked out, prompting the team to reconsider. Their solution: massively expand the beta test program, secretly placing thousands of Echo devices in the homes of external users to gather real-world far-field voice data. This strategic move ultimately allowed Amazon to overcome the data paradox and launch the Echo successfully, outflanking competitors like Apple's Siri with a device designed for the home rather than the smartphone.",
+    "chinese_title": "亚马逊Alexa的秘密起源",
+    "chinese_summary": "**《亚马逊Alexa的秘密起源》摘要**\n\n2011年初，杰夫·贝索斯在白板上勾勒了一台20美元的声控设备，并以古亚历山大图书馆命名其AI助手为Alexa。他指派格雷格·哈特领导该项目，尽管哈特缺乏硬件经验。该设备将依赖云计算和远场语音识别——挑战在于用户需从房间另一侧说话。\n\n保密至关重要。哈特谨慎招聘，并于2012年以约3000万美元收购波兰初创公司Ivona，用于开发Alexa的自然语音。Alexa背后的配音演员是妮娜·罗尔，但亚马逊从未公开确认其身份。内部原型在员工家中测试时，反应迟钝且笨拙——贝索斯甚至恼怒地对Alexa说“朝自己脑袋开枪”。\n\n该项目面临核心矛盾：为提升Alexa的智能，亚马逊需要海量用户语音数据，但笨拙的产品无法吸引用户。早期数据仅来自数百名员工。两种AI方法之间展开争论：知识图谱（由收购的Evi团队支持）与深度学习（由工程师罗希特·普拉萨德倡导）。深度学习需要大量数据自我训练，而亚马逊缺乏数据。\n\n在2013年一次关键会议上，普拉萨德团队提议将语音科学团队规模翻倍并推迟发布。贝索斯愤怒驳斥了他们的数学模型，认为他们没有思考如何打造“神奇”的产品。他离席而去，促使团队重新考虑。解决方案：大幅扩大公测计划，秘密将数千台Echo设备安置在外部用户家中，以收集真实世界的远场语音数据。这一战略举措最终使亚马逊克服数据悖论，成功推出Echo，并以专为家庭而非智能手机设计的设备击败了苹果Siri等竞争对手。"
+  },
+  {
+    "id": "49031409",
+    "title": "Claude Cookbook",
+    "url": "https://platform.claude.com/cookbook/",
+    "summary": "Here is a concise summary of the **Claude Cookbook** article:\n\n**Nature:** A continuously updated catalog of technical guides (from Apr 2024 to Jun 2026) for building applications with Claude. It is structured as a list of \"cookbook\" entries, each with a title, category, author, and date.\n\n**Core Themes & Key Guides:**\n- **Agent Patterns & Orchestration:** Strong focus on multi-agent systems (fixed N-agent teams, dynamically spawned subagents), the Claude Agent SDK, and Claude Managed Agents. Notable guides include \"Async multi-agent orchestration,\" \"Multiagent: coordinate a specialist team,\" and \"Outcomes: agents that verify their own work.\"\n- **Tool Use & Efficiency:** Recipes for optimizing tool performance, such as \"Programmatic tool calling (PTC)\" (reducing latency by having Claude write its own tool-calling code), \"Tool search with embeddings\" (handling thousands of tools via semantic search), and \"Automatic context compaction\" (managing long-running agent contexts).\n- **Evaluation & Safety:** Guides on \"Evals\" for benchmarking (e.g., reproducing DeepSearchQA scores), \"Tool evaluation,\" and \"Classifier fallback and billing for Claude Fable 5.\"\n- **Integrations & Specific Applications:** Practical guides for building voice assistants (ElevenLabs), SRE incident response agents, data analyst bots, vulnerability detection agents, and Slack bots. Includes domain-specific \"Skills\" for financial applications, Excel, PowerPoint, and PDF handling.\n- **Multimodal & Frontend:** Recipes for improved image analysis (crop tool) and prompting for \"frontend aesthetics.\"\n- **Classic Patterns:** Older but foundational guides covering RAG (contextual retrieval, text-to-SQL), summarization, classification, fine-tuning (Bedrock), batch processing (Message Batches API), and extended thinking.\n\n**Conclusion:** The cookbook documents a clear evolution from basic tool use and prompt engineering (2024) toward complex, production-ready agent architectures, managed deployments, and robust evaluation workflows (2025-2026).",
+    "chinese_title": "Claude 手册",
+    "chinese_summary": "以下是对**Claude Cookbook**文章的简明摘要：\n\n**性质：** 一份持续更新的技术指南目录（2024年4月至2026年6月），用于使用Claude构建应用程序。结构为一系列“菜谱”条目，每条包含标题、类别、作者和日期。\n\n**核心主题与关键指南：**\n- **Agent模式与编排：** 重点关注多智能体系统（固定N个智能体团队、动态生成子智能体）、Claude Agent SDK以及Claude托管Agent。重要指南包括“异步多智能体编排”、“多智能体：协调专家团队”以及“成果：能验证自身工作的智能体”。\n- **工具使用与效率：** 优化工具性能的配方，如“程序化工具调用（PTC）”（让Claude编写自身工具调用代码以减少延迟）、“基于嵌入向量的工具搜索”（通过语义搜索处理数千个工具）以及“自动上下文压缩”（管理长期运行的Agent上下文）。\n- **评估与安全：** 关于“Evals”基准测试（如复现DeepSearchQA得分）、“工具评估”以及“Claude Fable 5的分类器回退与计费”的指南。\n- **集成与具体应用：** 构建语音助手（ElevenLabs）、SRE事件响应Agent、数据分析机器人、漏洞检测Agent以及Slack机器人的实用指南。包含针对金融应用、Excel、PowerPoint和PDF处理的领域特定“技能”。\n- **多模态与前端：** 改进图像分析（裁剪工具）以及“前端美学”提示的配方。\n- **经典模式：** 较老但基础的指南，涵盖RAG（上下文检索、文本到SQL）、摘要、分类、微调（Bedrock）、批处理（Message Batches API）以及扩展思考。\n\n**结论：** 该菜谱集清晰记录了从基础工具使用和提示工程（2024年）向复杂、生产级Agent架构、托管部署以及稳健评估工作流（2025-2026年）的演进过程。"
+  },
+  {
+    "id": "48977014",
+    "title": "Reporting Web 3D Capabilities on a Budget of $3 a Month",
+    "url": "https://ben3d.ca/blog/reporting-web-3d-capabilities-on-a-budget",
+    "summary": "**Summary of \"Reporting Web 3D Capabilities on a Budget of $3 a Month\"**\n\nThe article explains how **Web3DSurvey.com**—a free service that collects real-world WebGL, WebGL 2, and WebGPU capability data—runs on about **C$3 per month** (April 2026), handling ~500,000 requests and ~300 million data points monthly. The architecture separates **collection** and **reporting** to keep costs low and performance stable.\n\n**Collector**: A small iframe embedded by participating sites probes browser capabilities and submits a compressed, base64-encoded stats object via a **GET request** (eliminating CORS preflight, halving server requests). The API server drops bots, normalizes fields, and inserts samples into **BigQuery** in batches of ten. The BigQuery Storage Write API fits within the free ingestion allowance. Data is stored in **5 day-partitioned tables** with a 120-day expiration; current 6.2 GiB storage costs $0 (within free tier).\n\n**Reporting**: The web service runs many small parallel BigQuery queries (500 ms each) for each feature, then aggregates results in JavaScript. A **transparent JSON cache** (memory + Cloud Storage, 2-day TTL) avoids hitting BigQuery on every visitor; stale data is served immediately while revalidating in the background. The site uses **TanStack Start** with server-rendered shell and client-side stats loading, so pages appear quickly even on cache misses.\n\n**Costs Breakdown (April 2026, CAD)**:\n- Cloud Run: $2.30 (two services, 1 vCPU/256 MiB, scale-to-zero)\n- Cloud DNS: $0.55\n- BigQuery: $0.18 (mostly streaming inserts; storage free)\n- Cloud Storage: $0.01\n- **Total: ~$3.04** (June 2026 screenshot shows $3.45 CDN)\n\n**Key optimizations**: Cloud Run containers with cleanup policies (keep 3 newest, delete older than 3 days). Cache reduces BigQuery queries from per-visit to ~15 refreshes per aggregate per month. Queries only scan the last 7 days.\n\n**Trade-offs and future improvements**: Manual JSON schema (no type-safe migrations like Drizzle Kit) and a manual `cacheVersion` constant for invalidation are acknowledged rough edges.\n\n**What the budget buys**: Any 3D web developer gets measured support rates for WebGL, WebGL 2, WebGPU features, adapter/vendor breakdowns, browser stats, and a live machine comparison. Sites can contribute via a one-line iframe.",
+    "chinese_title": "每月3美元预算下的Web 3D能力报告",
+    "chinese_summary": "**《每月仅需3美元报告Web 3D能力》摘要**\n\n本文介绍了**Web3DSurvey.com**——一个免费收集真实世界WebGL、WebGL 2和WebGPU能力数据的服务——如何在每月约**3加元**（2026年4月）的预算下运行，处理约50万次请求和约3亿个数据点。其架构将**收集**和**报告**分离，以保持低成本和高性能。\n\n**收集器**：参与站点嵌入的一个小型iframe探测浏览器能力，并通过**GET请求**（消除CORS预检，使服务器请求减半）提交压缩后的base64编码统计对象。API服务器丢弃机器人请求、规范化字段，并每批10条将样本插入**BigQuery**。BigQuery Storage Write API在免费摄取额度内。数据存储在**按5天分区**的表中，有效期120天；当前6.2 GiB存储费用为0美元（在免费层内）。\n\n**报告**：Web服务针对每个特性运行多个小型并行BigQuery查询（每次500毫秒），然后在JavaScript中聚合结果。一个**透明JSON缓存**（内存+Cloud Storage，2天TTL）避免每次访问都请求BigQuery；陈旧数据立即提供，同时在后台重新验证。站点使用**TanStack Start**，服务端渲染外壳，客户端加载统计数据，因此即使在缓存未命中时页面也能快速显示。\n\n**成本明细（2026年4月，加元）**：\n- Cloud Run：2.30美元（两个服务，1 vCPU/256 MiB，缩放到零）\n- Cloud DNS：0.55美元\n- BigQuery：0.18美元（主要为流式插入；存储免费）\n- Cloud Storage：0.01美元\n- **总计：约3.04美元**（2026年6月截图显示含CDN后为3.45美元）\n\n**关键优化**：Cloud Run容器采用清理策略（保留最新3个，删除超过3天的）。缓存将BigQuery查询从每次访问减少到每聚合每月约15次刷新。查询仅扫描最近7天。\n\n**取舍与未来改进**：手动JSON模式（无Drizzle Kit等类型安全迁移）以及用于失效的手动`cacheVersion`常量是已知的粗糙之处。\n\n**预算换来的成果**：任何3D Web开发者都能获得WebGL、WebGL 2、WebGPU特性的实测支持率、适配器/供应商细分、浏览器统计以及实时机器对比。站点可通过一行iframe参与贡献。"
+  },
+  {
+    "id": "49038181",
+    "title": "The rise and fall of language diversity through the Holocene",
+    "url": "https://www.science.org/doi/10.1126/science.adx4343",
+    "summary": "Unable to access the article link.",
+    "chinese_title": "全新世期间语言多样性的兴衰",
+    "chinese_summary": "无法访问文章链接。"
+  },
+  {
+    "id": "49039490",
+    "title": "BGP ORIGIN attribute manipulation and its impact on the Internet",
+    "url": "https://blog.cloudflare.com/bgp-origin-attribute/",
+    "summary": "The article investigates the widespread manipulation of the BGP ORIGIN attribute and its impact on Internet routing. The ORIGIN attribute indicates how a route was injected into BGP, with three values: IGP (interior), EGP (historical/obsolete), and INCOMPLETE (unknown source). RFC 4271 states that ORIGIN should not be modified by any router after being set by the originator, but it plays a role in path selection: when two routes have equal Local Preference and AS_PATH length, the one with lower ORIGIN value (IGP < EGP < INCOMPLETE) is preferred.\n\nThrough experiments using BGP anycast announcements from multiple peering locations, the authors found that approximately 70% of observed paths had their ORIGIN value altered compared to the originating AS. By analyzing BGP updates from public collectors (RIPE RIS, RouteViews) and local data, they identified that nearly 10% of direct peers rewrite ORIGIN to IGP, including 6 of the 16 Tier-1 networks. Some ASes also change ORIGIN to EGP or INCOMPLETE to deprioritize routes. The motivation is commercial: rewriting to IGP makes routes more preferred, attracting traffic and revenue.\n\nThe manipulation disproportionately affects top-tier ASes: 26% of the top 50 and 20% of the top 100 ASes alter ORIGIN. This leads to significant traffic redirection; for example, in IPv6, rewriters gained 40% more paths. The practice undermines fairness, as compliant networks lose traffic to those that disregard RFC guidance.\n\nThe authors conclude that ORIGIN has no valid technical purpose in the modern Internet and advocate for its deprecation or making it irrelevant in path selection (e.g., by mandating all implementations set ORIGIN to IGP). They call for renewed discussion in the IETF and community to address this issue and improve routing equity.",
+    "chinese_title": "BGP起源属性的操作及其对互联网的影响",
+    "chinese_summary": "本文研究了BGP ORIGIN属性的广泛篡改及其对互联网路由的影响。ORIGIN属性指示路由注入BGP的方式，包含三个值：IGP（内部网关协议）、EGP（历史/废弃）和INCOMPLETE（来源未知）。RFC 4271规定，ORIGIN由发起方设定后不应被任何路由器修改，但它在路径选择中发挥作用：当两条路由具有相同的本地优先级和AS_PATH长度时，ORIGIN值较低（IGP < EGP < INCOMPLETE）的路由更优。\n\n作者通过从多个对等位置进行BGP任意播宣告的实验发现，约70%的观测路径上ORIGIN值与原始AS相比发生了改变。通过分析来自公共收集器（RIPE RIS、RouteViews）及本地数据的BGP更新，他们识别出近10%的直接对等方将ORIGIN重写为IGP，其中包括16家一级网络中的6家。部分AS还将ORIGIN改为EGP或INCOMPLETE以降低路由优先级。其动机是商业性的：重写为IGP使路由更受偏好，从而吸引流量和收入。\n\n这种篡改对顶级AS影响尤为严重：前50大AS中有26%、前100大中有20%修改了ORIGIN。这导致显著的流量重定向，例如在IPv6中，篡改者获得的路径增加了40%。该行为破坏了公平性，遵守规范的网络因那些无视RFC指导的网络而流失流量。\n\n作者总结认为，在现代互联网中ORIGIN已无有效的技术用途，并呼吁将其弃用或使其在路径选择中无关紧要（例如强制所有实现将ORIGIN设为IGP）。他们呼吁在IETF和社区中重新展开讨论以解决该问题并提升路由公平性。"
+  },
+  {
+    "id": "48974056",
+    "title": "The Brick Game, Through the Ages",
+    "url": "https://nicole.express/2026/bricked-up-and-no-amontillado.html",
+    "summary": "The article explores the \"Talking Brick Game\" 118-in-1, a low-cost portable console often sold at fundraisers. Despite its box art showing different graphics, the actual device features spade-shaped blocks and a sidebar. It claims \"no repeats\" and \"talking,\" though the speech is unintelligible. The menu uses \"Level,\" \"Speed,\" \"Mode\" (game type A–E), and \"Rotate/Direction\" (subtype) buttons to scroll through games. Most games are Tetris clones with minor variations, and one plays the classic \"Korobeiniki\" theme. The internals reveal a thin PCB with an epoxy blob (chip-on-board) and simple rubber contact buttons.\n\nThe article then compares it with a modern version available for under $10, advertising 9999-in-1. Differences include a larger screen, relocated speaker, added \"up\" and \"reset\" buttons, a thinner design, and a single-piece rubber control pad. The menu now uses numbers for game types (1–23) instead of letters. The racing game is redesigned, and new non-Tetris games appear, such as Breakout and a tank game requiring the up button. The music has changed (no more Korobeiniki). Opening the new model reveals a single PCB combining controls and LCD connection, with a perfectly round epoxy blob dated 2025.10.27, indicating recent manufacturing. The author notes a humorous \"NO/OFF\" label.\n\nOverall, the article highlights that while technology has evolved, the Brick Game persists as a cheap, Tetris-focused handheld for children without access to modern gaming devices. The old and new versions share a design heritage but are completely different internally, likely using different microcontroller chips.",
+    "chinese_title": "砖块游戏，穿越时代",
+    "chinese_summary": "本文探讨了“会说话砖块游戏”118合1，这是一种常在筹款活动中出售的低成本便携游戏机。尽管包装盒上印有不同的图案，实际设备却带有铲形方块和侧边栏。它声称“无重复”和“会说话”，但语音难以听懂。菜单使用“关卡”、“速度”、“模式”（游戏类型A–E）和“旋转/方向”（子类型）按钮来浏览游戏。大多数游戏是俄罗斯方块的变体，略有变化，其中一款会播放经典的《Korobeiniki》主题曲。内部结构显示，它有一块薄薄的PCB板，上面有环氧树脂封装（板上芯片）和简单的橡胶触点按键。\n\n随后，文章将其与售价不到10美元的现代版本进行了比较，该版本宣传为9999合1。不同之处包括更大的屏幕、重新定位的扬声器、新增的“上”和“重置”按钮、更薄的设计以及一体式橡胶控制板。菜单现在使用数字（1–23）而非字母来表示游戏类型。赛车游戏经过了重新设计，并出现了非俄罗斯方块的新游戏，例如打砖块和需要按上键的坦克游戏。音乐也已改变（不再有《Korobeiniki》）。打开新型号，发现一块将控制键和LCD连接整合在一起的PCB板，上面有一个完美的圆形环氧树脂封装，日期为2025.10.27，表明是近期制造的。作者注意到一个幽默的“NO/OFF”标签。\n\n总体而言，文章强调，尽管技术不断发展，砖块游戏仍然作为一种廉价、以俄罗斯方块为主的掌上设备而存在，面向那些无法接触现代游戏设备的孩子。新旧版本共享设计传承，但内部完全不同，很可能使用了不同的微控制器芯片。"
+  },
+  {
+    "id": "48994440",
+    "title": "Latest Airbus single aisle aircraft innovations",
+    "url": "https://www.airbus.com/en/newsroom/stories/2026-07-how-the-a321xlr-is-redefining-single-aisle-comfort-for-passengers",
+    "summary": "**Summary:**  \nThe requested article, titled \"Latest Airbus single aisle aircraft innovations,\" could not be accessed. The content displayed only an error message: \"Request unsuccessful. Incapsula incident ID: 1571000780033066405-49830773311869838.\" This indicates that the website's security service (Incapsula) blocked the request, likely due to a technical or security issue. As a result, no information about Airbus’s latest single-aisle aircraft innovations was retrieved or summarized.",
+    "chinese_title": "最新空客单通道飞机创新",
+    "chinese_summary": "**摘要：**  \n无法访问标题为“空客最新单通道飞机创新”的请求文章。页面仅显示错误信息：“请求失败。Incapsula事件ID：1571000780033066405-49830773311869838。”这表明网站的安保服务（Incapsula）阻止了该请求，很可能是由于技术或安全问题。因此，未能获取或总结关于空客最新单通道飞机创新的任何信息。"
+  },
+  {
+    "id": "49032095",
+    "title": "The PImpl idiom and the C++26 std:indirect type",
+    "url": "https://mariusbancila.ro/blog/2026/07/23/the-pimpl-idiom-and-the-cpp26-stdindirect-type/",
+    "summary": "The provided text is just a \"Bot Verification\" page, not the actual article. I cannot summarize the content of \"The PImpl idiom and the C++26 std::indirect type\" without the article itself. Please provide the full text or a link to the article so I can give you an accurate summary.",
+    "chinese_title": "PImpl惯用法与C++26 std::indirect类型",
+    "chinese_summary": "提供的文本只是一个“机器人验证”页面，并非实际文章。我无法在没有原文的情况下总结“PImpl惯用法与C++26 std::indirect类型”的内容。请提供完整文章或链接，以便我能给出准确的总结。"
+  },
+  {
+    "id": "49038276",
+    "title": "Online Historical Encyclopaedia of Programming Languages",
+    "url": "https://hopl.info/",
+    "summary": "The **HOPL (Online Historical Encyclopaedia of Programming Languages)** is a comprehensive digital resource cataloguing **8,945 programming languages** from the 18th century to the present. It includes **7,800 influence links** (genealogical connections) and **over 11,000 citations** to support its entries. The site features a genealogical tree to visualise language relationships.\n\nKey sections include:\n- **About HOPL** – explains navigation and the rationale behind the “Gernsback Machine” (a conceptual interface).\n- **Definition** – clarifies what constitutes a computer language.\n- **Analysis and reports** – offers insights into language taxonomy and genealogy.\n- **Reference works** – lists sources and external links.\n- **Credits** – acknowledges librarians: **Diarmuid J. Pigott** (responsible for incunabula up to 1989) and **Bruce M. Axtens** (from 1990 onward), plus **Steve Poulson** as quartermaster handling “house programming (sim)”.\n- **Copyright** – © Diarmuid Pigott 1995–2020, with a strict “do not copy, do not reproduce” notice.\n- **Contact** – errata and crash notifications to hopl.acquisitions@gmail.com.\n\nThe encyclopedia serves as a scholarly reference for programming language history, genealogy, and inter-influence, maintained by two primary contributors over decades.",
+    "chinese_title": "编程语言在线历史百科全书",
+    "chinese_summary": "**HOPL（在线编程语言历史百科全书）** 是一部全面记录从18世纪至今**8,945种编程语言**的数字资源库，包含**7,800条影响链接**（谱系关系）和**超过11,000条引文**以支撑其条目。网站设有谱系树，可视化展示语言之间的关系。\n\n主要板块包括：\n- **关于HOPL** —— 解释导航方式及“Gernsback机器”（一种概念性界面）的设计理念。\n- **定义** —— 阐明何谓计算机语言。\n- **分析与报告** —— 提供语言分类与谱系方面的见解。\n- **参考文献** —— 列出来源及外部链接。\n- **致谢** —— 感谢图书馆员：**Diarmuid J. Pigott**（负责1989年之前的早期资料）和**Bruce M. Axtens**（1990年至今），以及**Steve Poulson**担任司务长，处理“内部编程（模拟）”。\n- **版权** —— © Diarmuid Pigott 1995–2020，附有严格的“禁止复制、禁止转载”声明。\n- **联系方式** —— 勘误及崩溃报告请发送至 hopl.acquisitions@gmail.com。\n\n这部百科全书作为编程语言历史、谱系及相互影响的学术参考，由两位主要贡献者历经数十年维护而成。"
+  },
+  {
+    "id": "49038352",
+    "title": "JEP 541: Deprecate the macOS/x64 Port for Removal",
+    "url": "https://openjdk.org/jeps/541",
+    "summary": "**Summary of JEP 541: Deprecate the macOS/x64 Port for Removal**\n\nJEP 541 proposes to deprecate the macOS/x64 port of the JDK, with the intention to remove it in a future release. The motivation is Apple’s complete shift to AArch64 (Apple Silicon) and the gradual phase-out of x64 support, which makes maintaining the macOS/x64 port a costly burden for Oracle engineers. Maintenance will cease as of JDK 27.\n\nKey changes:\n- Configuring a macOS/x64 build will fail by default with a deprecation error.  \n- A new `--enable-deprecated-ports` build option suppresses the error and allows building, but issues a warning that the port is deprecated and may not build or function correctly.  \n- The macOS/x64 port will be disabled by default in JDK repository GitHub Actions to avoid blocking mainline development.  \n- Documentation will mark the port and related features as deprecated for removal.\n\nAlternatives: If a credible group of developers steps forward to maintain the port before the JEP is integrated, the JEP can be withdrawn. After integration but before removal, a follow-on JEP could revert the deprecation.",
+    "chinese_title": "JEP 541：弃用 macOS/x64 端口以待移除",
+    "chinese_summary": "**JEP 541 摘要：弃用 macOS/x64 端口以准备移除**\n\nJEP 541 提议弃用 JDK 的 macOS/x64 端口，并计划在未来版本中将其移除。其动机在于苹果已全面转向 AArch64（Apple Silicon）并逐步淘汰对 x64 的支持，这使得维护 macOS/x64 端口成为 Oracle 工程师的沉重负担。该端口的维护工作将在 JDK 27 中停止。\n\n主要变更：\n- 配置 macOS/x64 构建时默认将因弃用错误而失败。\n- 新增 `--enable-deprecated-ports` 构建选项可抑制该错误并允许构建，但会发出警告，指出该端口已弃用，可能无法正常构建或运行。\n- JDK 仓库的 GitHub Actions 将默认禁用 macOS/x64 端口，以避免阻碍主线开发。\n- 文档将把该端口及相关特性标记为已弃用，准备移除。\n\n替代方案：如果在 JEP 整合之前有可信的开发者团队主动维护该端口，则该 JEP 可被撤回。整合之后但在移除之前，可通过后续 JEP 撤销弃用。"
+  },
+  {
+    "id": "49034342",
+    "title": "I Tried Building a Real App with AI. It Took a Year",
+    "url": "https://www.alexhyett.com/videos/tried-building-app-with-ai-it-took-a-year/",
+    "summary": "The article recounts Alex Hyett’s year-long attempt to build a habit-tracking iOS app, **HabitTed**, using AI. Dissatisfied with existing apps (Streaks, HabitKit, Grit) due to missing features (long list view, custom emojis, occurrence counting, notes, reminders) and high subscription costs (e.g., Grit at £9.99/month), he decided to create his own.\n\nHe started with **Cursor** (an AI coding tool) in March 2025, despite having no Swift experience. After about **six hours**, he had a seemingly functional app supporting habits, custom icons, goals, and iCloud sync. However, the code was poor—views were 1000+ lines, styling inconsistent, and the compiler complained. He manually refactored everything, then discovered major bugs: iCloud sync didn’t actually restore data, and performance slowed with many completions due to repeated calculations. He fixed these by storing stats and redesigning the data model.\n\nFurther setbacks came with **iOS 26**, whose transparency bugs broke his UI. AI couldn’t help because it wasn’t trained on the new OS; Apple fixed it in 26.1. After months of debugging and polishing, the app was finally released. It’s free for up to six habits, with a full unlock priced at “a single coffee.”\n\n**Key reflections:**\n- AI can get you **80% of the way quickly**, but the last **20% takes 80% of the time**—especially if you don’t understand the generated code.\n- Using AI prevented Hyett from learning Swift properly; he felt he gained no real skills.\n- He worries about the industry: juniors aren’t hired, seniors either lose coding ability from over-reliance on AI or burn out writing prompts.\n- If the AI bubble bursts, there may be too few competent developers left to clean up the “AI slop.”\n\nThe article serves as a cautionary tale: AI is a powerful accelerator, but cannot replace deep understanding, and the human cost of dependency may be severe.",
+    "chinese_title": "我尝试用AI构建一个真正的应用。花了一年时间。",
+    "chinese_summary": "文章讲述了亚历克斯·海耶特（Alex Hyett）耗时一年，利用AI构建一款名为 **HabitTed** 的iOS习惯追踪应用的经历。由于对现有应用（Streaks、HabitKit、Grit）不满——缺少长列表视图、自定义表情符号、发生次数统计、备注和提醒等功能，且订阅费用高昂（例如Grit每月9.99英镑）——他决定自己动手。\n\n他于2025年3月从 **Cursor**（一款AI编码工具）入手，尽管毫无Swift经验。大约 **六小时** 后，他便拥有了一款看似可用的应用，支持习惯记录、自定义图标、目标设定和iCloud同步。然而，代码质量很差——视图文件超过1000行，样式不统一，编译器频频报错。他手动重构了所有代码，随后发现了重大Bug：iCloud同步实际上无法恢复数据，且随着完成记录增多，重复计算导致性能下降。他通过存储统计数据并重新设计数据模型修复了这些问题。\n\n后续挫折来自 **iOS 26**，其透明度Bug破坏了UI。AI无法提供帮助，因为它未针对新操作系统进行训练；苹果在26.1版本中修复了该问题。经过数月的调试和完善，该应用终于发布。免费版可管理最多六个习惯，完整解锁版的价格仅为“一杯咖啡的费用”。\n\n**关键反思：**\n- AI能让你 **快速完成80%的工作**，但最后的 **20%却消耗了80%的时间**——尤其在你并不理解生成的代码时。\n- 使用AI使海耶特未能真正学习Swift；他感觉自己并未获得实际技能。\n- 他对行业感到担忧：初级开发者不再被雇用，资深开发者要么因过度依赖AI而丧失编码能力，要么因编写提示词而过度消耗。\n- 如果AI泡沫破裂，可能没有足够称职的开发者来清理这些“AI垃圾”。\n\n这篇文章是一个警示故事：AI是强大的加速器，但无法取代深度理解，而依赖AI的人力成本可能十分高昂。"
+  },
+  {
+    "id": "49041317",
+    "title": "Show HN: Open-weight OCR got so cheap I had to share it",
+    "url": "https://www.openparser.dev/cheapest-ocr",
+    "summary": "The article introduces **OpenParser**, a hosted API for the open-weight OCR model **PaddleOCR-VL-1.6**, which claims to be the cheapest option for layout-and-tables OCR at **$1 per 1,000 pages** after a **1,000-page free** tier.\n\nKey points:\n\n- **Pricing**: $1/1,000 pages for parsing (typed blocks + markdown). Extraction to fill a JSON schema is billed separately per token based on the chosen LLM model.\n- **Performance**: PaddleOCR-VL-1.6 tops independent document parsing benchmarks and is small enough to serve at this low price.\n- **Comparison**: The article maintains a strict lane distinction between **basic-text OCR** (e.g., AWS Detect Text, Azure Read, Google Enterprise OCR at ~$1.50/1k) and **layout+tables OCR**. In the latter lane, OpenParser lists the lowest public synchronous rate: $1/1k vs. Mistral OCR 4 ($4), Azure Layout ($10), Google Layout Parser ($10), AWS Textract Tables+Layout ($15), and Reducto ($15).\n- **Caveats**: List prices are checked as of 2026-07-24. Batch discounts (e.g., Mistral’s 50% batch rate) and volume tiers are not applied. The “cheapest” claim is scoped to layout+tables OCR at synchronous list prices, not all OCR workloads. Output shape (text only vs. full layout) and billing mode (page vs. credit vs. token) affect true cost.\n- **Self-hosting**: Because PaddleOCR-VL is open-weight, users can run it themselves. Self-hosting replaces per-page fees with GPU, ops, and maintenance costs; break-even depends on deployment specifics.\n- **Features**: Parsed blocks include confidence scores and bounding boxes (no invented geometry). Extracted schema values cite block IDs for auditability. API supports sync, async, and batch modes; playground for testing; team and billing management.\n- **Volume calculator**: The page provides a tool to compare costs at different page volumes across vendors, showing OpenParser remains cheapest for layout+tables up to 1M pages.\n\nOverall, the article positions OpenParser as a cost-effective, open-model alternative for structure-preserving document parsing, while transparently noting the limitations of list-price comparisons and the separation between parsing and extraction billing.",
+    "chinese_title": "展示HN：开放权重OCR便宜到忍不住分享",
+    "chinese_summary": "文章介绍了**OpenParser**，这是一个为开源OCR模型**PaddleOCR-VL-1.6**提供的托管API，号称是布局与表格OCR中最经济的选择：在**1,000页免费**额度后，价格为**每1,000页1美元**。\n\n要点：\n\n- **定价**：解析（带格式文本块+Markdown）为1美元/1,000页。填充JSON模式的提取服务则根据所选大语言模型按token单独计费。\n- **性能**：PaddleOCR-VL-1.6在独立文档解析基准测试中名列前茅，且模型规模足够小，能以如此低价提供服务。\n- **对比**：文章严格区分了**基础文本OCR**（如AWS Detect Text、Azure Read、Google Enterprise OCR，约1.50美元/千页）与**布局+表格OCR**两个赛道。在后一赛道中，OpenParser列出了最低的公开同步费率：1美元/千页，对比Mistral OCR 4（4美元）、Azure Layout（10美元）、Google Layout Parser（10美元）、AWS Textract Tables+Layout（15美元）和Reducto（15美元）。\n- **注意事项**：所列价格截至2026年7月24日。未考虑批量折扣（如Mistral的50%批量费率）和阶梯价。所谓“最便宜”仅指布局+表格OCR在同步价目表下的比较，并非所有OCR工作负载。输出形式（纯文本 vs. 完整布局）和计费方式（按页 vs. 按信用点 vs. 按token）会影响实际成本。\n- **自托管**：由于PaddleOCR-VL权重开源，用户可以自行运行。自托管将以GPU、运维和维护成本替代按页收费；盈亏平衡点取决于具体部署情况。\n- **功能**：解析出的文本块包含置信度分数和边界框（无虚构几何信息）。提取的架构值会引用块ID以便审计。API支持同步、异步和批量模式；提供测试用的Playground；支持团队和账单管理。\n- **用量计算器**：页面提供了一个工具，用于比较不同页数下各供应商的成本，显示OpenParser在布局+表格场景中直至100万页仍是最便宜的。\n\n总体而言，文章将OpenParser定位为一种性价比高、基于开源模型的文档结构保留解析方案，同时透明地指出了价目表比较的局限性以及解析与提取分开计费的特点。"
   },
   {
     "id": "49035561",
     "title": "My Emacs Configuration (Dired)",
     "url": "https://eugene-andrienko.com/2026-07-05-my-emacs-configuration-dired.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "My Emacs Configuration (Dired)",
-    "chinese_summary": "生成摘要时出错"
+    "summary": "The article details the author's Emacs Dired configuration and daily workflow, emphasizing Dired's power as a file browser integrated into Emacs. Key points:\n\n**Invocation**: Primarily uses `C-x p d` (project directory), `C-x C-j` (current file's directory), and `C-x C-d` (rebound from `C-x d`). Also sets Emacs as default file manager via external programs.\n\n**File Operations**: Marking (`m`, `* s`, `* .`, `% m`, `t`, `U`) and flagging (`d`, `% &`, `% d`) for deletion. Files can be marked and flagged simultaneously. Deletion of flagged files with `x`. Examples include deleting `.webp` files by extension and converting them to JPEG via `!` with predefined commands.\n\n**WDired (Writable Dired)**: Entered with `C-x C-q`. Allows editing filenames as text—useful for batch renaming (e.g., removing `.fb2` suffix, prepending zeros). Supports changing permissions if `wdired-allow-to-change-permissions` is set.\n\n**Copy/Move with Two Windows**: Enables `dired-dwim-target` to automatically suggest the other Dired buffer as destination when copying (`C`) or moving (`R`), mimicking Midnight Commander behavior.\n\n**Searching**: `C-s` searches filenames (with `dired-isearch-filenames`). `find-name-dired` and `find-grep-dired` produce Dired buffers from `find`/`grep` results. BSD-specific `find` options are configured.\n\n**External Programs**: Uses `dired-open-extensions` to open media (images with sxiv, videos with mplayer) via RET. The `!` (synchronous) and `&` (asynchronous) hotkeys run shell commands on marked files, with `M-n` showing predefined commands per file type (set via `dired-guess-shell-alist-user`). Example commands for images include `gm convert`, `pngquant`, and `jpegoptim`.\n\n**Configuration Snippets**: Provided for garbage file regexp (LaTeX artifacts), WDired permissions, dwim-target, find options, open extensions, and guess-shell alist.\n\nThe author appreciates Dired's interactivity, regexp support, and integration with Emacs editing features, making it superior to CLI or Midnight Commander for complex file management.",
+    "chinese_title": "我的 Emacs 配置（Dired）",
+    "chinese_summary": "这篇文章详细介绍了作者的 Emacs Dired 配置及日常工作流程，强调了 Dired 作为集成在 Emacs 中的文件浏览器的强大功能。关键要点如下：\n\n**调用方式**：主要使用 `C-x p d`（项目目录）、`C-x C-j`（当前文件所在目录）和 `C-x C-d`（由 `C-x d` 重新绑定）。同时通过外部程序将 Emacs 设为默认文件管理器。\n\n**文件操作**：标记（`m`、`* s`、`* .`、`% m`、`t`、`U`）和标记删除（`d`、`% &`、`% d`）。文件可同时被标记和标记删除，用 `x` 执行删除。例如，通过扩展名删除 `.webp` 文件，再通过 `!` 配合预定义命令将其转换为 JPEG。\n\n**WDired（可写 Dired）**：通过 `C-x C-q` 进入。允许以文本形式编辑文件名——便于批量重命名（例如去除 `.fb2` 后缀、补零）。若设置 `wdired-allow-to-change-permissions`，还可更改权限。\n\n**双窗口复制/移动**：启用 `dired-dwim-target` 后，复制（`C`）或移动（`R`）时会自动将另一个 Dired 缓冲区建议为目标位置，模拟 Midnight Commander 的行为。\n\n**搜索**：`C-s` 搜索文件名（配合 `dired-isearch-filenames`）。`find-name-dired` 和 `find-grep-dired` 可将 `find`/`grep` 结果生成为 Dired 缓冲区。配置了 BSD 特有的 `find` 选项。\n\n**外部程序**：使用 `dired-open-extensions` 通过 RET 打开媒体文件（图像用 sxiv，视频用 mplayer）。`!`（同步）和 `&`（异步）快捷键对标记文件运行 shell 命令，`M-n` 显示按文件类型预定义的命令（通过 `dired-guess-shell-alist-user` 设置）。图像的命令示例包括 `gm convert`、`pngquant` 和 `jpegoptim`。\n\n**配置片段**：提供了垃圾文件正则表达式（LaTeX 副产品）、WDired 权限、dwim-target、find 选项、打开扩展和 guess-shell alist 的配置。\n\n作者赞赏 Dired 的交互性、正则表达式支持以及与 Emacs 编辑功能的集成，认为其在复杂文件管理方面优于命令行或 Midnight Commander。"
   },
   {
-    "id": "49035740",
-    "title": "Plants vs. Zombies for PlayStation 2",
-    "url": "https://github.com/OptiJuegos/pvz-ps2",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Plants vs. Zombies for PlayStation 2",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49035845",
-    "title": "WebGPU Unleashed: A Practical Tutorial",
-    "url": "https://shi-yan.github.io/webgpuunleashed/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "WebGPU Unleashed: A Practical Tutorial",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49036136",
-    "title": "3GPP Version 19",
-    "url": "https://www.3gpp.org/specifications-technologies/releases/release-19",
-    "summary": "生成摘要时出错",
-    "chinese_title": "3GPP Version 19",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49035864",
-    "title": "Writing a Debugger from Scratch",
-    "url": "https://www.timdbg.com/posts/writing-a-debugger-from-scratch-part-1/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Writing a Debugger from Scratch",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49040819",
-    "title": "Country went 100% electric vehicles overnight with a drastic approach",
-    "url": "https://electrek.co/2026/07/22/laos-bans-gas-diesel-car-imports-ev/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Country went 100% electric vehicles overnight with a drastic approach",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49036224",
-    "title": "Co-Opting Linux Processes for High-Performance Network Simulation (2022)",
-    "url": "https://www.usenix.org/conference/atc22/presentation/jansen",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Co-Opting Linux Processes for High-Performance Network Simulation (2022)",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49036433",
-    "title": "Government orders GitHub to remove Bluetooth-based chat app Bitchat: Jack Dorsey",
-    "url": "https://www.thehindu.com/news/national/government-orders-github-to-remove-bluetooth-based-chat-app-bitchat-over-security-concerns-jack-dorsey/article71262049.ece",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Government orders GitHub to remove Bluetooth-based chat app Bitchat: Jack Dorsey",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49034468",
-    "title": "Why is programming so captivating, yet so agonizing?",
-    "url": "https://elsewhere.news/en/zhenfund/why-is-programming-so-captivating-yet-so-agonizing",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Why is programming so captivating, yet so agonizing?",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49033916",
-    "title": "The IBM PC, Part 1: Arrival",
-    "url": "https://technicshistory.com/2026/07/24/the-ibm-pc-part-1-arrival/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "The IBM PC, Part 1: Arrival",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49038907",
-    "title": "Pizauth: An OAuth2 token requester daemon",
-    "url": "https://github.com/ltratt/pizauth/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Pizauth: An OAuth2 token requester daemon",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49038205",
-    "title": "Cloning Mifare Classic Cards via Proxmark3",
-    "url": "https://blog.muffn.io/posts/cloning-mifare-cards-proxmark3/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Cloning Mifare Classic Cards via Proxmark3",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49039831",
-    "title": "SpaceX at $100 Would Imply Zero AI Value, Morgan Stanley Says",
-    "url": "https://www.bloomberg.com/news/articles/2026-07-24/spacex-at-100-would-imply-zero-ai-value-says-morgan-stanley",
-    "summary": "生成摘要时出错",
-    "chinese_title": "SpaceX at $100 Would Imply Zero AI Value, Morgan Stanley Says",
-    "chinese_summary": "生成摘要时出错"
+    "id": "49038078",
+    "title": "Drone-Bench: Tracking simple drone surveillance capabilities of frontier models",
+    "url": "https://andonlabs.com/evals/drone-bench",
+    "summary": "Drone-Bench is a benchmark measuring how well frontier AI models can write code for low-cost drone hardware to perform simple surveillance tasks. It consists of five sequential capabilities—reconstructing a 3D environment from office videos, localizing the drone within it, navigating between rooms, detecting a specific person from a reference photo, and following that target—each scored against a human-written baseline. Models receive ten iterative submissions per run with score feedback, and ten runs are conducted per model. No model has yet beaten the reconstruct baseline, so end-to-end success currently stands at 0%. However, from Opus 4.8 onward, average submissions surpass the baseline on detect and follow tasks. The best frontier model can clear four tasks on a good run, but a typical run only strings together all tasks about 6% of the time. On average, models improve 182% from first to best submission, highlighting the power of privileged score feedback—a luxury absent in real-world deployments. The benchmark isolates each task (providing clean upstream artifacts) to prevent error compounding, which both lifts floors and caps ceilings. According to measured trends, the next model’s best solution is expected to pass all five tasks, with typical runs catching up roughly six months later. Drone-Bench aims to track these capabilities as AI models gain physical autonomy, enabling informed public discussion about misuse and oversight.",
+    "chinese_title": "Drone-Bench：追踪前沿模型的简单无人机监控能力",
+    "chinese_summary": "Drone-Bench是一个基准测试，用于衡量前沿AI模型为低成本无人机硬件编写代码以执行简单监视任务的能力。该测试包含五个连续能力——从办公室视频重建3D环境、在环境中定位无人机、在房间之间导航、根据参考照片检测特定人员以及跟踪该目标——每个能力均以人工编写的基线为评分标准。模型每次运行可提交十次迭代并获得分数反馈，每个模型执行十次运行。目前尚无模型能超越重建基线，因此端到端成功率目前为0%。然而，从Opus 4.8开始，平均提交次数在检测和跟踪任务上超越了基线。最佳前沿模型在一次良好运行中可完成四项任务，但典型运行中所有任务串联成功的概率仅为6%左右。从首次提交到最佳提交，模型平均改进182%，凸显了特权分数反馈（现实部署中缺乏的“特权”）的强大作用。该基准测试将每个任务隔离（提供干净的上游产物）以防止误差累积，这既提升了下限，也限制了上限。根据测量趋势，下一代模型的最佳解决方案预计能通过全部五项任务，而典型运行大约在六个月后赶上。Drone-Bench旨在追踪这些能力——随着AI模型获得物理自主性，从而促进关于滥用和监管的知情公众讨论。"
   },
   {
     "id": "49022152",
     "title": "Writing by hand is good for your brain",
     "url": "https://nealstephenson.substack.com/p/writing-by-hand-is-good-for-your",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Writing by hand is good for your brain",
-    "chinese_summary": "生成摘要时出错"
+    "summary": "Writing by hand offers significant cognitive benefits, engaging more of the brain through the coordination of letter formation, spacing, and arm movements. The author, Neal Stephenson, has composed all his books for 25 years using a fountain pen on paper, without ever experiencing writer’s cramp—a problem he attributes to poor tools and technique, not handwriting itself.\n\nKey recommendations for reaping the benefits:\n\n- **Avoid pencils and cheap ballpoints** – They require excessive force, causing fatigue. Fountain pens or rollerball gel pens glide with minimal pressure.\n- **Don’t use styluses on glass screens** – Too little friction makes control harder and more tiring. A slight “tooth” (friction) reduces mental and physical effort.\n- **Choose a compatible pen/paper combination** – Cheap printer paper wicks ink, creating blurry lines. Blank notebooks or 25%+ cotton paper work well. Test different pen/paper pairs.\n- **Don’t conserve paper** – Write on one side only to maintain a natural, comfortable style. Paper is cheap; focus on your brain and time.\n- **Use cursive** – It is far less tiring than printing individual letters.\n- **Don’t obsess over legibility or ink blots** – Today, handwriting is mostly for yourself. Minor blots are rare and easily blotted with scrap paper.\n- **Left-handed users need not worry** – Choose quick-drying ink (e.g., Pilot G-2 gel pens) to avoid smudging; fountain pen ink can also dry fast enough.\n- **Start with ink cartridges** – Simpler than bottles; both methods work fine. Accept occasional ink-smudged fingers—they wash off easily.\n- **Getting started** – Pick paper that fits your lifestyle (looseleaf, notebooks, legal pads). If possible, test pens in a store. Cheap fountain pens perform as well as expensive ones; you pay for materials and styling. A Pilot G-2 gel pen gives 80% of the fountain pen experience at low cost, but a basic fountain pen lasts longer for the same price.\n\nUltimately, writing by hand—even simple lists, notes, or journals—strengthens memory and focus. The key is using the right tools to avoid fatigue and frustration.",
+    "chinese_title": "手写有益于大脑",
+    "chinese_summary": "手写具有显著的认知益处，通过协调字母形态、间距和手臂动作，能够使大脑更多区域参与其中。作者尼尔·斯蒂芬森25年来一直用钢笔在纸上书写自己的所有书籍，从未遭遇过书写痉挛——他将这一问题归咎于糟糕的工具和技巧，而非手写本身。\n\n以下为获取益处的主要建议：\n\n- **避免使用铅笔和廉价圆珠笔**——它们需要过大力度，导致疲劳。钢笔或直液式凝胶笔只需极小压力即可流畅书写。\n- **不要在玻璃屏幕上使用触控笔**——摩擦力过小使控制更困难且更易疲劳。轻微的“阻尼感”（摩擦力）可减少脑力和体力消耗。\n- **选择兼容的笔/纸组合**——廉价复印纸会吸墨，导致字迹模糊。空白笔记本或含25%以上棉质的纸张效果良好。请测试不同笔与纸张的搭配。\n- **不要节省纸张**——仅在单面书写，以保持自然舒适的风格。纸张很便宜，请关注你的大脑和时间。\n- **使用连笔书写**——这比逐个字母的印刷体书写省力得多。\n- **不必纠结于字迹清晰度或墨渍**——如今，手写主要为自己。偶尔的小墨渍很少见，用废纸轻松吸除即可。\n- **左撇子无需担忧**——选择快干墨水（如百乐G-2凝胶笔）可防止蹭脏；钢笔墨水也能迅速干燥。\n- **从墨囊开始使用**——比墨水瓶更简单，两种方法都可行。接受偶尔沾墨的手指——它们很容易洗掉。\n- **开始行动**——选择适合你生活方式的纸张（活页纸、笔记本、拍纸簿）。如果可能，在商店试用笔。廉价钢笔与昂贵钢笔性能相当；你花费的是材料和造型设计。一支百乐G-2凝胶笔能以低成本提供80%的钢笔体验，但同等价位的普通钢笔使用寿命更长。\n\n归根结底，手写——即便是简单的清单、笔记或日记——能增强记忆力和专注力。关键在于使用合适的工具以避免疲劳和挫败感。"
   },
   {
-    "id": "49033412",
-    "title": "Game of Trees – Git-based version control from OpenBSD folks",
-    "url": "https://www.gameoftrees.org/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Game of Trees – Git-based version control from OpenBSD folks",
-    "chinese_summary": "生成摘要时出错"
+    "id": "49031796",
+    "title": "Flux 3",
+    "url": "https://bfl.ai/blog/flux-3",
+    "summary": "**FLUX 3: A Unified Multimodal Foundation Model**\n\nFLUX 3 is a new multimodal foundation model that learns jointly from images, videos, and audio within a single architecture. Built on the Self-Flow approach, it aligns multimodal generation and understanding, scaling up compute and data for simultaneous training across all modalities. The core principle: each modality is a projection of the same underlying reality, and learning from all together enforces mutual constraints (e.g., sound matches impact, motion obeys mass) to build a more complete world model.\n\n**Key Capabilities**\n- **Video & Audio:** Generates diverse videos with native audio up to 20 seconds, supporting text-to-video, image-to-video (animation or reference), video-to-video (e.g., carrying characters), keyframe transitions, and multilingual dialogue. Handles multiple styles (e.g., camcorder, animation, cinematic) and aspect ratios.\n- **Image:** Synthesizes and edits images in varied styles, with improved complex prompt handling and multilingual text generation (early access upcoming).\n- **Action Prediction:** Integrates native action prediction or uses the video backbone as a foundation for finetuning specialized action models. Partnered with mimic robotics to create FLUX-mimic for dexterous manipulation, tested on real production tasks at Audi.\n\n**Early Evaluations (preliminary)**\nFLUX 3 Video was preferred over several competing models in human evaluations (e.g., 77% vs. Runway Gen-4.5, 93% vs. Luma Ray 3.2), particularly strong in facial expressions, sound-event association, and multilingual capabilities. It can chain clips into multi-minute sequences with consistent characters.\n\n**Launch Plan**\nRolling out in phases: early access for video/audio (now), followed by image synthesis, action prediction via partners, and eventually open-weight release of a multimodal backbone (FLUX 3 Dev). All capabilities stem from the same underlying flow matching model.\n\n**Future Vision**\nUnify perceptual, action, and language prediction in one model, enabling interactive editing, simulation, computer use, and physical AI. The team is already working on next-gen models and hiring in Germany and the US.",
+    "chinese_title": "通量3",
+    "chinese_summary": "**FLUX 3：统一多模态基础模型**\n\nFLUX 3 是一种新型多模态基础模型，能够在单一架构中联合学习图像、视频和音频。基于自流方法，它对齐多模态生成与理解，通过扩展算力和数据实现所有模态的同步训练。核心原则：每种模态都是同一底层现实的投影，联合学习可施加相互约束（例如声音匹配冲击、运动遵循质量），从而构建更完整的 world model。\n\n**关键能力**\n- **视频与音频：** 生成长达20秒的多样化视频及原生音频，支持文生视频、图生视频（动画或参考）、视频转视频（例如角色迁移）、关键帧过渡和多语言对话。支持多种风格（如摄像机、动画、电影感）及宽高比。\n- **图像：** 合成并编辑多种风格的图像，改进复杂提示处理和多语言文本生成（抢先体验即将推出）。\n- **动作预测：** 集成原生动作预测，或利用视频主干微调专用动作模型。与 mimic robotics 合作创建 FLUX-mimic 用于灵巧操作，已在奥迪的真实生产任务中测试。\n\n**早期评估（初步）**\nFLUX 3 视频在人工评估中优于多个竞品模型（例如 vs. Runway Gen-4.5 为77%，vs. Luma Ray 3.2 为93%），在面部表情、声音事件关联和多语言能力方面尤为突出。能够将片段串联成数分钟且角色一致的序列。\n\n**发布计划**\n分阶段推出：视频/音频抢先体验（现已开放），随后是图像合成、通过合作伙伴提供动作预测，最终开源发布多模态骨干模型（FLUX 3 Dev）。所有能力均源自同一底层流匹配模型。\n\n**未来愿景**\n将感知、动作和语言预测统一至单一模型，实现交互式编辑、模拟、计算机使用和物理 AI。团队已在研发下一代模型，并在德国和美国招聘。"
+  },
+  {
+    "id": "49035845",
+    "title": "WebGPU Unleashed: A Practical Tutorial",
+    "url": "https://shi-yan.github.io/webgpuunleashed/",
+    "summary": "**Summary of \"WebGPU Unleashed: A Practical Tutorial\"**\n\nThe article introduces a free, interactive online book by Shi Yan that teaches graphics programming in JavaScript using WebGPU. The author wrote it to address the confusion beginners face with modern graphics APIs (Vulkan, Metal, DirectX 12), which are powerful but platform-specific and verbose. WebGPU, as a cross-platform web standard and wrapper around these APIs, offers a simpler, unified entry point. It is available everywhere and also has native implementations in C++ and Rust.\n\nThe book begins with an overview of GPU drivers and the graphics pipeline, often neglected in other resources. It then covers drawing triangles (the foundation of 3D graphics), 2D rendering, and 3D scene control. Advanced chapters explore GPU computing (previously unavailable in WebGL) and cutting-edge techniques like Gaussian splatting for realistic real-time scene rendering.\n\nThe book is presented in an interactive web format, featuring videos, links, and an online playground where readers can run and modify code samples. All code snippets are cross-referenced from the playground, and navigation between text and code is seamless. Readers are encouraged to provide feedback via GitHub discussions and issues. The book aims to guide learners from fundamentals to advanced rendering in a practical, hands-on manner.",
+    "chinese_title": "WebGPU Unleashed：实用教程",
+    "chinese_summary": "**《WebGPU Unleashed：实用教程》摘要**\n\n本文介绍了一本由石岩编写的免费互动在线书籍，教授使用WebGPU进行JavaScript图形编程。作者编写本书旨在解决初学者面对现代图形API（Vulkan、Metal、DirectX 12）时的困惑——这些API强大但平台特定且冗长。WebGPU作为跨平台Web标准及这些API的封装，提供了更简单统一的入口点。它随处可用，并且还有C++和Rust的原生实现。\n\n本书首先概述了GPU驱动程序和图形管线（这些内容在其他资料中常被忽略），然后讲解了绘制三角形（3D图形的基础）、2D渲染以及3D场景控制。高级章节探讨了GPU计算（WebGL之前无法实现的功能）以及尖端技术，如用于逼真实时场景渲染的高斯泼溅。\n\n本书以互动式网页形式呈现，包含视频、链接以及一个在线游乐场，读者可以在其中运行和修改代码示例。所有代码片段均与游乐场交叉引用，文本与代码之间的导航无缝衔接。欢迎读者通过GitHub讨论和问题反馈提供意见。本书旨在以实践动手的方式引导学习者从基础到高级渲染。"
   },
   {
     "id": "49021856",
     "title": "I regret migrating to Codeberg",
     "url": "https://xn--gckvb8fzb.com/i-regret-migrating-to-codeberg/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "I regret migrating to Codeberg",
-    "chinese_summary": "生成摘要时出错"
+    "summary": "The article details the author's regret over migrating to Codeberg from GitHub. They left GitHub due to its \"enshittification\" under Microsoft—sluggish JavaScript interfaces, de facto monopolistic control over open-source infrastructure, and arbitrary bans. Codeberg initially appealed as a free, non-profit alternative run by a European association.\n\nHowever, Codeberg's recent Terms of Service updates ban projects predominantly driven by large language models (LLMs) and cryptocurrency-related projects, categorizing the latter as \"content that harms the reputation of Codeberg.\" The author criticizes the reasoning behind these bans. Codeberg's blog post claims LLM projects lack a real community, which the author finds out of touch: most FOSS projects are single-developer efforts without a community. The author also notes irony in Forgejo (Codeberg's foundation) having forked Gitea's community.\n\nThe core objection is not the specific bans but the principle of censorship. By labeling entire categories as harmful, Codeberg shifts from hosting all legal, functional code to enforcing ideology. The author warns this sets a precedent for future bans. They acknowledge real problems (LLMs straining infrastructure, crypto scams) but argue categorical bans are not solutions; better approaches include resource quotas, declarations, and disclaimers.\n\nThe author also criticizes the process: despite going through Codeberg's Assembly 2026, users only learned of changes via a banner on the day of implementation, with no prior discussion. Consequently, despite having no projects in banned categories, the author plans to leave Codeberg and set up a personal Git host, valuing platform freedom over any single policy.",
+    "chinese_title": "我后悔迁移到Codeberg",
+    "chinese_summary": "文章详述了作者从GitHub迁移至Codeberg后的悔意。作者离开GitHub是因为其在微软麾下的“劣化”——迟缓的JavaScript界面、对开源基础设施事实上的垄断性控制，以及随意封禁。Codeberg最初以由欧洲协会运营的免费非营利替代方案吸引了他。\n\n然而，Codeberg最近的服务条款更新禁止了主要由大语言模型（LLM）驱动的项目以及与加密货币相关的项目，将后者归类为“损害Codeberg声誉的内容”。作者批评了这些禁令背后的理由。Codeberg的博文声称LLM项目缺乏真正的社区，作者认为这脱离现实：大多数自由开源项目都是单人开发者的努力，并无社区。作者还指出，Codeberg的基础框架Forgejo本身便源于对Gitea社区的分叉，颇具讽刺意味。\n\n核心反对点不在于具体禁令，而在于审查原则。通过将整个类别标记为有害，Codeberg从托管所有合法、可运行的代码，转向了强制执行意识形态。作者警告这为未来的禁令开创了先例。作者承认现实问题（LLM滥用基础设施、加密货币骗局），但认为分类禁令并非解决方案；更好的方法包括资源配额、声明和免责声明。\n\n作者还批评了流程：尽管经过了Codeberg的“2026年大会”，用户仅在实施当天通过横幅得知变更，此前毫无讨论。因此，尽管作者没有涉及被禁类别的项目，他仍计划离开Codeberg，搭建个人Git托管服务，将平台自由置于任何单一政策之上。"
   },
   {
-    "id": "48987422",
-    "title": "So bright the vision (1956) a story about machines writing instead of humans [pdf]",
-    "url": "https://s3.us-west-1.wasabisys.com/luminist/EB/S/Simak%20-%20So%20Bright%20the%20Vision.pdf",
-    "summary": "生成摘要时出错",
-    "chinese_title": "So bright the vision (1956) a story about machines writing instead of humans [pdf]",
-    "chinese_summary": "生成摘要时出错"
+    "id": "49004541",
+    "title": "Making Xen's dom0 I/O path NUMA aware",
+    "url": "https://edera.dev/stories/numa-part-4-closing-the-xen-dom0-i-o-gap",
+    "summary": "## Summary\n\nThis article, part four of a series on NUMA-aware Xen I/O, describes how Edera closed the \"dom0 I/O gap\" by fixing two foundational issues: dom0's memory placement and its lack of NUMA topology.\n\n**First discovery: dom0's memory was skewed.** Stock Xen allocates dom0 memory by walking the host E820 in physical address order, giving all memory to the lowest-address NUMA nodes. On an 8-node host, dom0 could consume 100% of nodes 0–2 and 0% of nodes 3–7. Edera replaced this with a proportional E820 trim that distributes dom0 memory across *all* host nodes in proportion to each node's RAM share. This was a prerequisite—without memory on every node, topology synthesis would be meaningless.\n\n**Making dom0 NUMA-aware.** For a PVH dom0 with pinned vCPUs (1:1 to host pCPUs), and matching CPU counts, the hypervisor now synthesises three topology pieces:  \n- **SRAT** – maps CPUs and memory to NUMA nodes (one per host node).  \n- **SLIT** – copied from the host's real inter-node distances.  \n- **x2APIC IDs** – encoded in CPUID to match the synthetic topology.  \n\nAll three are necessary because different consumers (kernel, hwloc, LLVM OpenMP) read different sources. Skipping any one silently breaks placement for certain workloads. For example, OpenMP uses CPUID for socket/core detection, not sysfs.\n\n**Bugs fixed along the way:**  \n- Node numbering used Xen's internal IDs instead of host proximity domains, causing socket mismatches.  \n- Memory ranges in the SRAT were incorrectly split equally across vnodes; fixed to emit one vmemrange per physical NUMA block.  \n- Proportional E820 trim failed on sub-NUMA systems (Intel SNC, AMD NPS) where a single region spans two nodes; fixed by splitting regions at node boundaries before trimming.\n\n**Exposing foreign page locations.** Even with dom0 NUMA-aware, backend kthreads couldn't learn which NUMA node a grant-mapped ring page lived on. The struct page had `NUMA_NO_NODE` because `xen_alloc_unpopulated_pages` doesn't track foreign frames. Edera added a new hypercall, `XENMEM_get_mfn_pxms`, that returns the host proximity domain for a batch of machine frames (hardware-domain only). Dom0 can then call `pxm_to_node()` to get the Linux node ID and steer kthreads/IRQs to the correct node.\n\n**Result:** dom0 now sees eight real NUMA nodes, storage daemons and container runtimes use accurate topology, and I/O backends can place work on the same node as the foreign data. The article also notes a detour: a long-standing toolstack bug in multi-vnode vNUMA was uncovered during benchmarking and fixed.",
+    "chinese_title": "使Xen的dom0 I/O路径感知NUMA",
+    "chinese_summary": "## 摘要\n\n本文是NUMA感知型Xen I/O系列文章的第四部分，阐述了Edera如何通过解决两个根本性问题——dom0的内存分配及其缺乏NUMA拓扑感知——来弥补“dom0 I/O缺口”。\n\n**首个发现：dom0的内存分布存在偏差。** 原生Xen通过按物理地址顺序遍历主机E820表来分配dom0内存，将所有内存分配给地址最低的NUMA节点。在8节点主机上，dom0可能消耗节点0-2的100%内存，而节点3-7则完全未使用。Edera改用比例E820裁剪法，将dom0内存按各节点RAM占比分配到所有主机节点上。这是前提条件——若每个节点无内存，拓扑合成将毫无意义。\n\n**使dom0具备NUMA感知能力。** 对于拥有固定vCPU（与主机pCPU一一对应）且CPU数量匹配的PVH dom0，hypervisor现在会合成三部分拓扑信息：\n- **SRAT** — 将CPU和内存映射到NUMA节点（每个主机节点对应一个）。\n- **SLIT** — 直接复制自主机的真实节点间距离。\n- **x2APIC ID** — 编码在CPUID中，与合成的拓扑匹配。\n\n三者缺一不可，因为不同的消费者（内核、hwloc、LLVM OpenMP）读取不同来源。遗漏任何一项都会导致某些工作负载的放置策略在无提示下出错。例如，OpenMP使用CPUID而非sysfs来检测插槽/核心。\n\n**过程中修复的Bug：**  \n- 节点编号使用了Xen内部ID而非主机邻近域，导致插槽错配。  \n- SRAT中的内存范围被错误地均分给各个vnode；已修复为每个物理NUMA块生成一个vmemrange。  \n- 比例E820裁剪在子NUMA系统（Intel SNC、AMD NPS）上失效，因为单个区域跨越两个节点；已通过在裁剪前按节点边界分割区域来修复。\n\n**暴露外部页面的位置信息。** 即使dom0具备NUMA感知能力，后端内核线程仍无法获知通过grant映射的环页面位于哪个NUMA节点。struct page显示`NUMA_NO_NODE`，因为`xen_alloc_unpopulated_pages`不追踪外部帧。Edera新增了一个超级调用`XENMEM_get_mfn_pxms`，用于返回一批机器帧的主机邻近域（仅限硬件域）。随后dom0可调用`pxm_to_node()`获取Linux节点ID，并将内核线程/IRQ引导至正确节点。\n\n**结果：** dom0现在能识别8个真实NUMA节点，存储守护进程和容器运行时能够使用准确的拓扑信息，I/O后端可将工作放置在与其处理的外部数据相同的节点上。本文还提到了一个插曲：在基准测试中发现了多vnode vNUMA中一个长期存在的工具栈bug，并已修复。"
+  },
+  {
+    "id": "49035864",
+    "title": "Writing a Debugger from Scratch",
+    "url": "https://www.timdbg.com/posts/writing-a-debugger-from-scratch-part-1/",
+    "summary": "This article describes the author's journey of writing a debugger from scratch in Rust, motivated by a desire to learn Rust and to create an educational tool that demonstrates core debugging concepts. The focus is on live user-mode debugging on Windows, using the lowest-level OS APIs.\n\nKey points include:\n\n- **Motivation**: The author left Microsoft's Debugger Platform team twice and began writing a debugger each time. This iteration uses Rust to leverage existing crates for symbol handling and disassembly, allowing focus on fundamental debugger design.\n\n- **Core Windows APIs**: The debugger relies on a small set of debugging functions: `DebugActiveProcess`/`DebugActiveProcessStop` for attaching to an existing process, `CreateProcessW` with `DEBUG_ONLY_THIS_PROCESS` flag to start a process in a debugged state, `WaitForDebugEventEx` to receive debug events, and `ContinueDebugEvent` to resume the target process.\n\n- **Event Loop**: A debug session is centered around an event loop. The debugger registers for events by attaching to a target process. When an event occurs, the OS freezes the target and notifies the debugger with a `DEBUG_EVENT` structure containing event type, process/thread IDs, and event-specific data. The debugger can examine or manipulate the process state before calling `ContinueDebugEvent` to allow execution to continue.\n\n- **Implementation Overview**: The article presents code snippets from a Rust project (`dbgrs`). The debugger parses command-line arguments, uses `CreateProcessW` with `DEBUG_ONLY_THIS_PROCESS` and `CREATE_NEW_CONSOLE` to launch a target process, then enters an infinite loop calling `WaitForDebugEventEx`. Each event is printed (e.g., `CreateProcess`, `LoadDll`, `Exception`). On receiving `EXIT_PROCESS_DEBUG_EVENT`, the loop ends. The `ContinueDebugEvent` call passes `DBG_EXCEPTION_NOT_HANDLED` to let the system handle exceptions normally.\n\n- **Key Observations**: The initial exception event is the initial breakpoint from `ntdll!LdrpDoDebuggerBreak`, triggered only when the process is being debugged. This breakpoint is crucial for handling breakpoints, stepping, and crash events, which will be covered in future posts.\n\n- **Footnotes** provide additional context: Time travel debugging is omitted; attachment requires sufficient privileges; `WaitForDebugEventEx` is preferred for Unicode support; the APIs are process-wide, preventing modular usage; the initial breakpoint can be skipped by clearing the `BeingDebugged` flag in the PEB.\n\nThe article sets the foundation for a minimal yet functional debugger, with plans to expand into exception handling and interactive features.",
+    "chinese_title": "从零开始编写调试器",
+    "chinese_summary": "本文描述了作者为了学习Rust并创建一个展示核心调试概念的教育工具，从零开始用Rust编写调试器的历程。重点在于Windows上的实时用户态调试，使用最低级别的操作系统API。\n\n关键点包括：\n\n- **动机**：作者两次离开微软的调试器平台团队，每次离开都开始编写调试器。本轮迭代使用Rust，借助现有crate处理符号和反汇编，从而专注于调试器的基础设计。\n\n- **核心Windows API**：调试器依赖一小套调试函数：`DebugActiveProcess`/`DebugActiveProcessStop`用于附加到现有进程，带`DEBUG_ONLY_THIS_PROCESS`标志的`CreateProcessW`用于以被调试状态启动进程，`WaitForDebugEventEx`用于接收调试事件，以及`ContinueDebugEvent`用于恢复目标进程。\n\n- **事件循环**：调试会话围绕事件循环展开。调试器通过附加到目标进程来注册事件。当事件发生时，操作系统冻结目标进程，并通过包含事件类型、进程/线程ID和事件特定数据的`DEBUG_EVENT`结构通知调试器。调试器可以在调用`ContinueDebugEvent`以允许继续执行之前检查或操纵进程状态。\n\n- **实现概述**：文章展示了来自Rust项目（`dbgrs`）的代码片段。调试器解析命令行参数，使用带`DEBUG_ONLY_THIS_PROCESS`和`CREATE_NEW_CONSOLE`标志的`CreateProcessW`启动目标进程，然后进入无限循环调用`WaitForDebugEventEx`。每个事件都会被打印（例如`CreateProcess`、`LoadDll`、`Exception`）。收到`EXIT_PROCESS_DEBUG_EVENT`时循环结束。`ContinueDebugEvent`调用传递`DBG_EXCEPTION_NOT_HANDLED`，让系统正常处理异常。\n\n- **关键观察**：初始异常事件是来自`ntdll!LdrpDoDebuggerBreak`的初始断点，仅在进程被调试时触发。该断点对于处理断点、单步执行和崩溃事件至关重要，这些将在后续文章中介绍。\n\n- **脚注**提供了额外背景：略过时间旅行调试；附加需要足够权限；推荐使用`WaitForDebugEventEx`以获得Unicode支持；这些API是进程级的，无法模块化使用；可以通过清除PEB中的`BeingDebugged`标志来跳过初始断点。\n\n本文为一个最小化但功能完整的调试器奠定了基础，并计划扩展到异常处理和交互式功能。"
+  },
+  {
+    "id": "49036136",
+    "title": "3GPP Version 19",
+    "url": "https://www.3gpp.org/specifications-technologies/releases/release-19",
+    "summary": "## Summary of 3GPP Release 19\n\n3GPP Release 19 (Rel-19) is the second **5G-Advanced** release, completed on schedule with fully implementable specifications available at the end of December 2025. It represents a balance of continuity and innovation, consolidating previous releases while setting the stage for future work.\n\nKey points:\n\n- **Scope**: Rel-19 concludes work on the second 5G-Advanced release, following Rel-18.\n- **Timeline**: Priority topics were decided at TSG #102 (December 2023). A dedicated workshop in Taipei received over 500 presentations. The full release report (TR 21.919) is available in both a 43-slide presentation summary and an 80+ page full version.\n- **Next steps**: Release 20 (during 2026) will continue addressing commercial 5G-Advanced needs while initiating the first 6G studies on requirements, system architecture, security, and radio evolution.\n- **Work Plan**: The latest Work Plan is accessible at the 3GPP website for monitoring Rel-19 progress.\n- **Logo**: The official 5G-Advanced logo (introduced from Rel-18) appears on Rel-19 deliverables to help distinguish release capabilities.\n\nThe article also provides links to background materials, including TSG SA presentations and earlier workshops with TSDSI.",
+    "chinese_title": "3GPP 第19版",
+    "chinese_summary": "## 3GPP第19版概要\n\n3GPP第19版（Rel-19）是第二个**5G-Advanced**版本，已按计划完成，可完全实施的规范于2025年12月底发布。该版本体现了连续性与创新性的平衡，既巩固了先前版本的内容，又为未来工作奠定了基础。\n\n关键要点：\n\n- **范围**：Rel-19完成了继Rel-18之后的第二个5G-Advanced版本的工作。\n- **时间线**：优先议题于2023年12月的TSG #102会议上确定。在台北举办的专题研讨会收到了超过500份报告。完整版本报告（TR 21.919）提供43页演示文稿摘要及80多页完整版两种形式。\n- **后续步骤**：第20版（2026年期间）将继续满足商用5G-Advanced需求，同时启动关于需求、系统架构、安全及无线演进的首批6G研究。\n- **工作计划**：最新工作计划可在3GPP官网查阅，用于跟踪Rel-19进展。\n- **标志**：官方5G-Advanced标志（从Rel-18起引入）将出现在Rel-19交付物上，以帮助区分版本能力。\n\n文章还提供了背景资料的链接，包括TSG SA演示文稿及早期与TSDSI合作的研讨会内容。"
+  },
+  {
+    "id": "49023016",
+    "title": "Startup founders urge U.S. government not to shut off Chinese open weight AI",
+    "url": "https://www.politico.com/news/2026/07/22/startup-founders-urge-trump-not-to-shut-off-chinese-open-weight-ai-01008992",
+    "summary": "Unable to access the article link.",
+    "chinese_title": "初创公司创始人敦促美国政府不要切断中国的开放权重人工智能。",
+    "chinese_summary": "无法访问文章链接。"
+  },
+  {
+    "id": "49035740",
+    "title": "Plants vs. Zombies for PlayStation 2",
+    "url": "https://github.com/OptiJuegos/pvz-ps2",
+    "summary": "## Summary\n\nThis article describes **re-plants-vs-zombies**, a decompilation fork of PopCap’s *Plants vs. Zombies: Game of the Year Edition* (GOTY). The project aims to modernize the game engine and port it to multiple platforms.\n\n### Key Objectives\n- Replace the legacy DirectDraw/Direct3D7 renderer with **SDL + OpenGL**.\n- Replace Windows-only code with **cross-platform** code using GLFW.\n- Replace DirectSound/BASS/FMod with **SDL Mixer X** (forked for MO3 format support via libopenmpt).\n- Add **main.pak** support for compressed assets (recommended to avoid slow loading/crashing).\n- Optimize memory usage for console ports (partial).\n\n### Supported Platforms & Status\n- **Windows (SDL2)** – Works\n- **Linux (SDL2)** – Works\n- **Haiku (SDL2)** – Partially works (no music)\n- **Nintendo Switch** – Works on real hardware and Citron emulator\n- **Nintendo 3DS** – In development; may only run on New 3DS due to memory constraints\n- **Nintendo Wii U** – Planned, no work started\n\n### How to Play\n- Obtain original game data from PvZ GOTY (a purchased copy).\n- Place `main.pak` and the `properties` folder in the executable’s directory (or a console-specific data path).\n- Alternatively, extract the `.pak` and use the loose files.\n\n### Project Background (from original README)\nThe project is based on the SexyAppFramework (PopCap’s open-source engine) and a decompilation of PvZ v0.9.9 by Miya (Kopie). It focuses on:\n- Adding **x64 support** (partial)\n- Replacing the old renderer with **GLFW** (WIP)\n- Integrating **GOTY features**: achievements (partial), Zombatar\n- Future plans: a modding API (parse zombies, plants, maps from files; scripting for custom sequences)\n\n### Installation\n- **Windows**: Use Visual Studio Community – open the CMakeSettings.json folder, wait for cache generation, and build.\n- **Other (VS Code, MSYS2, etc.)**: Run `cmake -G Ninja -B cmake-build` then `cmake --build cmake-build`.\n- Copy the resulting executable to the original game’s root folder.\n\n### Credits\n- Based on headshot2017’s fork (itself a fork of Patoke’s GOTY decompilation).\n- Thanks to @rspforhp, @ruslan831, the GLFW team, PopCap, and all contributors.\n\n**Disclaimer**: The project does not include PopCap’s IP; users must legally own the original game files.",
+    "chinese_title": "植物大战僵尸 PlayStation 2版",
+    "chinese_summary": "## 摘要\n\n本文介绍 **re-plants-vs-zombies**，这是宝开《植物大战僵尸：年度版》（GOTY）的一个反编译分支项目。该项目旨在对游戏引擎进行现代化改造，并将其移植到多个平台。\n\n### 主要目标\n- 用 **SDL + OpenGL** 替换传统的 DirectDraw/Direct3D7 渲染器。\n- 用**跨平台**代码（基于 GLFW）替换仅限 Windows 的代码。\n- 用 **SDL Mixer X**（基于 libopenmpt 分叉以支持 MO3 格式）替换 DirectSound/BASS/FMod。\n- 添加 **main.pak** 压缩资源支持（建议使用以避免加载缓慢或崩溃）。\n- 优化控制台移植的内存使用（部分完成）。\n\n### 支持的平台及状态\n- **Windows（SDL2）** – 可用\n- **Linux（SDL2）** – 可用\n- **Haiku（SDL2）** – 部分可用（无音乐）\n- **任天堂 Switch** – 在真机和 Citron 模拟器上可用\n- **任天堂 3DS** – 开发中；因内存限制可能仅支持 New 3DS\n- **任天堂 Wii U** – 已规划，尚未开始开发\n\n### 如何游玩\n- 从 PvZ GOTY（已购买副本）获取原始游戏数据。\n- 将 `main.pak` 和 `properties` 文件夹放在可执行文件所在目录（或特定控制台的数据路径）中。\n- 或者解压 `.pak` 文件，使用松散文件。\n\n### 项目背景（摘自原始 README）\n该项目基于 SexyAppFramework（宝可的开源引擎）以及 Miya（Kopie）对 PvZ v0.9.9 的反编译成果。重点包括：\n- 添加 **x64 支持**（部分完成）\n- 用 **GLFW** 替换旧渲染器（进行中）\n- 集成 **GOTY 特性**：成就（部分完成）、Zombatar\n- 未来计划：模组 API（从文件解析僵尸、植物、地图；用脚本支持自定义关卡）\n\n### 安装\n- **Windows**：使用 Visual Studio Community – 打开 CMakeSettings.json 所在文件夹，等待缓存生成，然后构建。\n- **其他环境（VS Code、MSYS2 等）**：运行 `cmake -G Ninja -B cmake-build`，然后运行 `cmake --build cmake-build`。\n- 将生成的可执行文件复制到原始游戏根目录。\n\n### 致谢\n- 基于 headshot2017 的分支（其本身源于 Patoke 的 GOTY 反编译项目）。\n- 感谢 @rspforhp、@ruslan831、GLFW 团队、宝开以及所有贡献者。\n\n**免责声明**：本项目不含宝开的 IP；用户必须合法拥有原始游戏文件。"
+  },
+  {
+    "id": "49033916",
+    "title": "The IBM PC, Part 1: Arrival",
+    "url": "https://technicshistory.com/2026/07/24/the-ibm-pc-part-1-arrival/",
+    "summary": "In the early 1980s, the personal computer market was fragmented, with incompatible machines from Atari, Apple, Commodore, and others. IBM, the dominant mainframe maker, had no offering. In July 1980, executive Bill Lowe proposed a radical solution: IBM should create an independent unit to develop a PC using external components and sales channels. The “Project Chess” team, led by Don Estridge after Lowe’s departure, built the IBM PC in one year.\n\nKey decisions shaped its success:\n- **Open architecture**: IBM published technical specs, encouraging third-party software and hardware—the opposite of its usual closed approach.\n- **Third-party components**: Disk drives from Tandon, power supplies from Zenith, printer from Epson, and an Intel processor kept costs low.\n- **Processor choice**: The team chose the Intel 8088, a 16-bit internal/8-bit external hybrid, balancing performance with cost.\n\nThe software story was equally pivotal. IBM wanted both a ROM-based BASIC and a disk operating system. Microsoft (then a small firm) supplied BASIC, but initially IBM sought CP/M from Digital Research. After a tense meeting with Gary Kildall, no deal was reached. Jack Sams returned to Microsoft, which knew of a CP/M clone called 86-DOS, written by Tim Paterson at Seattle Computer Products. Microsoft licensed it to IBM as PC-DOS, then bought the full rights for $50,000 and a perpetual license to SCP. This allowed Microsoft to sell the same system as MS-DOS to other manufacturers, creating the foundation for its dominance.\n\nThe IBM PC launched in 1981, using open standards and third-party sales (e.g., ComputerLand). Its compatibility and IBM’s reputation spurred a wave of clones, eventually homogenizing the market. The article ends by noting that the ecosystem was “closed by openness”—IBM’s decision to open the architecture inadvertently ceded control to Microsoft and clone makers, reshaping computing for decades.",
+    "chinese_title": "IBM PC 第一部分：问世",
+    "chinese_summary": "20世纪80年代初，个人电脑市场格局分散，雅达利、苹果、康懋达等品牌的产品互不兼容。当时占据主导地位的大型机制造商IBM尚未涉足这一领域。1980年7月，高管比尔·洛提出了一项激进方案：IBM应建立独立部门，采用外部组件销售渠道开发个人电脑。洛离职后，由唐·埃斯特里奇领导的\"象棋计划\"团队在一年内成功研制出IBM PC。\n\n以下关键决策奠定了其成功基础：\n- **开放式架构**：IBM公开技术规格，鼓励第三方软硬件开发——这与其一贯封闭的做法截然相反。\n- **第三方组件**：采用坦登的磁盘驱动器、增你智的电源、爱普生的打印机以及英特尔处理器，有效控制成本。\n- **处理器选择**：团队选用英特尔8088芯片，这款16位内芯/8位外设的混合处理器在性能与成本间取得平衡。\n\n软件方面的决策同样至关重要。IBM既需要固化于ROM的BASIC语言，也需要磁盘操作系统。当时规模尚小的微软提供了BASIC，但IBM最初希望从数字研究公司获得CP/M操作系统。在与加里·基尔代尔进行了一场气氛紧张的会面后，双方未能达成协议。杰克·萨姆斯转而找到微软，后者得知西雅图计算机产品公司的蒂姆·帕特森编写了一款名为86-DOS的CP/M克隆系统。微软以授权方式向IBM提供该系统并命名为PC-DOS，随后以5万美元及向SCP提供永久授权为代价购入完整版权。这使微软得以将同一系统以MS-DOS之名销售给其他厂商，为其市场主导地位奠定基础。\n\n1981年问世的IBM PC采用开放标准并通过电脑天地等第三方渠道销售。其兼容性叠加IBM的品牌效应催生了大量兼容机，最终实现市场标准化。文章结尾指出，这个生态系统实为\"以开放缔造封闭\"——IBM开放架构的决定在无意中将控制权拱手让予微软与兼容机厂商，从而重塑了此后数十年的计算机行业格局。"
+  },
+  {
+    "id": "49034468",
+    "title": "Why is programming so captivating, yet so agonizing?",
+    "url": "https://elsewhere.news/en/zhenfund/why-is-programming-so-captivating-yet-so-agonizing",
+    "summary": "## Summary\n\nThis article explores the dual nature of programming—captivating yet agonizing—drawing on Frederick Brooks’s fifty-year-old essay “The Tar Pit” from *The Mythical Man-Month*.\n\n**The Tar Pit Metaphor**  \nBrooks compares large-system programming to prehistoric beasts trapped in tar pits. No single problem sinks a project; the real danger is countless issues arising simultaneously and entangling, pulling the whole effort deeper.\n\n**From Program to Product to System**  \nA “program” runnable by its author is only the start. To become a useful “product,” it must be generalized, thoroughly tested, and documented—costing at least three times more. To become a “system component,” it must conform to interface specifications, resource budgets, and survive combinatorial testing—another tripling of cost. A program that is both product and component costs **nine times** the simple program.\n\n**The Joys of Programming**  \n- Joy of making things: creative satisfaction akin to a child’s mud pie.  \n- Pleasure of useful work: seeing others benefit from your creation.  \n- Fascination with complex puzzles: interlocking logic unfolding step by step.  \n- Constant learning: problems are rarely repetitive.  \n- Working in a tractable medium: pure thought-stuff that becomes real—moving, printing, drawing, acting on the world.\n\n**The Woes of Programming**  \n- Necessity for perfection: one wrong character breaks the spell; humans are unaccustomed to this.  \n- Responsibility exceeding authority: goals and resources are often beyond one’s control.  \n- Dependence on others’ programs: poorly designed, undocumented, incomplete code wastes time.  \n- Drudgery of debugging: progress slows near the end; stubborn bugs take longer than initial ones.  \n- Obsolescence: your labor may be outdated before completion—but real products still hold irreplaceable value against actual needs.\n\n**Conclusion**  \nProgramming is a tar pit that traps many efforts, yet it offers deep joy through creating value. The true challenge is finding real solutions to real problems within given time and resources.",
+    "chinese_title": "为何编程如此迷人，却又如此令人痛苦？",
+    "chinese_summary": "## 摘要\n\n本文探讨了编程的双重本质——既令人着迷又令人痛苦——借鉴了弗雷德里克·布鲁克斯五十年前《人月神话》中的文章《焦油坑》。\n\n**焦油坑隐喻**  \n布鲁克斯将大型系统编程比作陷入焦油坑的史前巨兽。没有哪个单一问题能击垮项目；真正的危险是无数问题同时涌现并相互纠缠，将整个努力拖入更深处。\n\n**从程序到产品再到系统**  \n由作者本人可运行的\"程序\"只是起点。要成为有用的\"产品\"，它必须经过泛化、全面测试和文档化——成本至少增加三倍。要成为\"系统组件\"，它必须符合接口规范、资源预算，并通过组合测试——成本再翻三倍。既是产品又是组件的程序，其成本是简单程序的**九倍**。\n\n**编程之乐**  \n- 创造之乐：类似孩子玩泥巴的创意满足感。  \n- 成果之悦：看到他人因你的创造而受益。  \n- 解谜之趣：环环相扣的逻辑逐步展开。  \n- 持续学习：问题很少重复。  \n- 工作媒介的易控性：纯粹的思想产物化为现实——移动、打印、绘图、作用于世界。\n\n**编程之苦**  \n- 完美的必要性：一个字符错误就会打破魔咒；人类对此并不习惯。  \n- 责任大于权力：目标和资源往往超出个人掌控。  \n- 依赖他人的程序：设计差、无文档、不完整的代码浪费时间。  \n- 调试的苦差：进度在尾声时放缓；顽固的bug比初期bug耗时更长。  \n- 过时之虞：你的劳动可能在完成前就已过时——但面对真实需求，实际产品仍具不可替代的价值。\n\n**结论**  \n编程是一个困住许多努力的焦油坑，却通过创造价值带来深层次的快乐。真正的挑战是在给定的时间和资源内，为真实问题找到真正解决方案。"
+  },
+  {
+    "id": "49042870",
+    "title": "Amazon cracks down on use of AI images by sellers after New York law",
+    "url": "https://www.cnbc.com/2026/07/23/amazon-makes-sellers-label-ai-generated-people-in-images-after-ny-law.html",
+    "summary": "Amazon has announced that third-party sellers must label product images or videos containing \"AI-generated people,\" in response to a new New York law requiring transparency around \"synthetic performers\" in advertising. The law, which took effect last month, mandates that companies disclose when digitally created media that appears as a real person is used in ads. Amazon informed sellers of the policy change, directing them to tag images and \"A+ content\" (videos or graphics on listing pages) with specific metadata keywords before uploading. The requirement does not apply to content featuring TV, video game, or movie characters, nor to real people altered with AI. Amazon will add an indicator on listings where applicable, though criteria for displaying the label remain unclear.\n\nThe move follows Amazon's broader embrace of AI, including optimizing listing details for AI systems, investing in Alexa for Shopping, and launching real-time AI-generated product suggestions. More third-party sellers are using Amazon's AI tools to generate text and images for listings. These sellers account for over 60% of goods sold on Amazon's marketplace.\n\nNo federal law exists requiring disclosure of AI-generated advertising content. States like New York and California have taken steps; California now requires large AI providers to embed watermarks. Other platforms—Meta, TikTok, Pinterest, and YouTube—have added AI content labels, though TikTok and Meta have faced criticism for inadequately labeling ads featuring AI influencers making misleading claims.",
+    "chinese_title": "纽约法律后，亚马逊打击卖家使用AI图像",
+    "chinese_summary": "亚马逊宣布，第三方卖家必须在包含“人工智能生成人物”的产品图片或视频上添加标签，以响应纽约州一项要求广告中对“合成表演者”保持透明的新法律。该法律于上月生效，规定企业必须在广告中使用数字生成且看似真实人物的内容时予以披露。亚马逊已通知卖家这一政策变更，要求他们在上传前使用特定元数据关键词标记图片及“A+内容”（详情页上的视频或图形）。该要求不涉及包含电视、电子游戏或电影角色的内容，也不涉及经AI修改的真实人物。亚马逊将在适用商品详情页添加标识，但显示标签的具体标准尚不明确。\n\n此举紧随亚马逊对AI更广泛的布局，包括优化面向AI系统的详情页信息、投资于Alexa购物功能，以及推出实时AI生成产品建议。越来越多的第三方卖家正使用亚马逊AI工具生成商品图文。这些卖家贡献了亚马逊商城超过60%的销售额。\n\n目前尚无联邦法律要求披露AI生成的广告内容。纽约州和加利福尼亚州等已采取行动；加州现要求大型AI提供商嵌入水印。其他平台——Meta、TikTok、Pinterest和YouTube——也已添加AI内容标签，尽管TikTok和Meta因未充分标注那些由AI网红发布误导性说法的广告而受到批评。"
+  },
+  {
+    "id": "49036224",
+    "title": "Co-Opting Linux Processes for High-Performance Network Simulation (2022)",
+    "url": "https://www.usenix.org/conference/atc22/presentation/jansen",
+    "summary": "**Summary of \"Co-Opting Linux Processes for High-Performance Network Simulation\"**\n\nThis paper, awarded Best Paper at USENIX ATC 2022, presents **Phantom**, a novel tool for high-performance, scalable network simulation of distributed systems. The authors—Rob Jansen (U.S. Naval Research Laboratory), Jim Newsome (Tor Project), and Ryan Wails (Georgetown University & NRL)—address key limitations in existing simulation tools, which are either inefficient at large scales or hindered by architectural challenges.\n\n**Core Innovation:** Phantom directly executes **unmodified binary applications as Linux processes** within a discrete-event network simulator. Unlike traditional approaches that require modified code or virtual machines, Phantom \"co-opts\" real processes by synthesizing three key mechanisms: **efficient process control**, **system call interposition**, and **data transfer methods**. This allows the simulator to intercept and redirect all network-related system calls (e.g., socket, send, recv) into the simulated network topology, while real CPU execution continues without virtualization overhead.\n\n**Design Highlights:**\n- **System call interposition** uses a lightweight kernel module (or ptrace) to trap and replay network syscalls through the simulator's discrete-event engine.\n- **Synchronized time progression** ensures that simulated time advances deterministically, enabling reproducible experiments.\n- **Zero-copy data transfers** between processes and the simulator minimize latency and overhead.\n\n**Performance Evaluation:** Phantom was benchmarked against Shadow, NS-3, and gRaIL in large-scale peer-to-peer (P2P) and Tor network simulations. Key results:\n- Up to **2.2× faster than Shadow**, **3.4× faster than NS-3**, and **43× faster than gRaIL** in large P2P benchmarks.\n- Comparable performance to Shadow in large Tor network simulations, while maintaining full application compatibility.\n\n**Significance:** Phantom enables researchers to test real, unmodified distributed systems (e.g., Tor, Bitcoin, P2P protocols) at scale with high fidelity and performance. By combining the accuracy of discrete-event simulation with the practicality of native process execution, it lowers the barrier for realistic network experimentation. The paper is Open Access via USENIX, with slides and video available online.",
+    "chinese_title": "利用Linux进程的高性能网络仿真（2022）",
+    "chinese_summary": "**《共选Linux进程实现高性能网络模拟》摘要**\n\n该论文荣获USENIX ATC 2022最佳论文奖，提出了一种用于分布式系统高性能、可扩展网络模拟的新型工具**Phantom**。作者Rob Jansen（美国海军研究实验室）、Jim Newsome（Tor项目）和Ryan Wails（乔治城大学与美国海军研究实验室）解决了现有模拟工具的关键局限——这些工具要么在大规模下效率低下，要么受架构问题掣肘。\n\n**核心创新：** Phantom直接在离散事件网络模拟器中以**Linux进程形式执行未经修改的二进制应用**。与需要修改代码或虚拟机的传统方法不同，Phantom通过综合三种关键机制——“共选”真实进程：**高效进程控制**、**系统调用截获**和**数据传输方法**。这使得模拟器能够拦截并重定向所有与网络相关的系统调用（如socket、send、recv）至模拟网络拓扑，同时CPU真实执行无虚拟化开销。\n\n**设计亮点：**\n- **系统调用截获**使用轻量级内核模块（或ptrace）捕获网络系统调用，并通过模拟器的离散事件引擎重放。\n- **同步时间推进**确保模拟时间确定性前进，实现可复现实验。\n- **零拷贝数据传输**在进程与模拟器之间最大限度降低延迟和开销。\n\n**性能评估：** Phantom与Shadow、NS-3及gRaIL在大规模点对点（P2P）和Tor网络模拟中进行了基准测试。关键结果：\n- 在大规模P2P基准测试中，速度**比Shadow快2.2倍，比NS-3快3.4倍，比gRaIL快43倍**。\n- 在大规模Tor网络模拟中性能与Shadow相当，同时保持完全的应用程序兼容性。\n\n**意义：** Phantom使研究人员能够以高保真度和高性能测试真实、未经修改的分布式系统（如Tor、比特币、P2P协议）。通过结合离散事件模拟的准确性与原生进程执行的实用性，它降低了现实网络实验的门槛。该论文通过USENIX开放获取，并提供幻灯片和视频在线资源。"
+  },
+  {
+    "id": "49033412",
+    "title": "Game of Trees – Git-based version control from OpenBSD folks",
+    "url": "https://www.gameoftrees.org/",
+    "summary": "## Summary of \"Game of Trees\" (Got)\n\nGame of Trees (Got) is a version control system developed by OpenBSD developers and contributors. It prioritizes ease of use and simplicity over flexibility, and is still under active development. While its main target audience is OpenBSD developers, Got uses Git repositories to store versioned data, ensuring compatibility with Git. Users can work with both Got and Git on the same repository, and Git can be used for any functionality not yet implemented in Got.\n\nKey features and principles:\n- **Simplicity-first design** – less flexible but easier to use than many alternatives.\n- **Open source** – released under a BSD license, freely usable and reusable.\n- **Coexistence with Git** – always possible to use both tools on the same repo.\n\nThe website provides extensive documentation and resources:\n- Manual pages, examples, FAQ, source code\n- Comparisons to CVS, SVN, and Git\n- Presentations at EuroBSDcon and FOSDEM (e.g., on `gotd` and `gotwebd`)\n- Mailing lists, commit notifications, IRC, and Matrix chat\n\nInstallation instructions are available for multiple operating systems:\n- OpenBSD (native)\n- FreeBSD, NetBSD, Linux, DragonflyBSD, MacOS (via a portable version)\n\nA hosting service called **Game of Trees Hub** is also offered.\n\nRecent releases include:\n- Game of Trees 0.127 (July 20, 2026)\n- Game of Trees portable 0.127 (June 20, 2026)\n\nThe page ends with a quote from OpenBSD developer tedu: “No mention of openbsd on the internet is complete without a long thread about source control migration,” highlighting the community's long-standing interest in version control tools.\n\nIn summary, Got is a BSD‑licensed, Git‑compatible version control system from the OpenBSD community, focused on simplicity and ease of use, with growing support across multiple platforms.",
+    "chinese_title": "树之游戏 – OpenBSD团队基于Git的版本控制",
+    "chinese_summary": "## 《Game of Trees》(Got) 概述\n\nGame of Trees (Got) 是由 OpenBSD 开发者及贡献者开发的一款版本控制系统。它优先考虑易用性和简洁性而非灵活性，目前仍在积极开发中。虽然其主要目标用户是 OpenBSD 开发者，但 Got 使用 Git 仓库存储版本化数据，从而确保与 Git 的兼容性。用户可以在同一仓库中同时使用 Got 和 Git，并且对于 Got 尚未实现的任何功能，都可以使用 Git 来完成。\n\n主要特性与原则：\n- **设计优先考虑简洁性**——相比许多替代方案，灵活性较低但更易于使用。\n- **开源**——基于 BSD 许可证发布，可自由使用和再发行。\n- **与 Git 共存**——始终可以在同一仓库中使用这两种工具。\n\n该网站提供了丰富的文档与资源：\n- 手册页、示例、常见问题解答、源代码\n- 与 CVS、SVN 和 Git 的比较\n- 在 EuroBSDcon 和 FOSDEM 上的演示（例如关于 `gotd` 和 `gotwebd`）\n- 邮件列表、提交通知、IRC 及 Matrix 聊天室\n\n针对多种操作系统提供了安装说明：\n- OpenBSD（原生）\n- FreeBSD、NetBSD、Linux、DragonflyBSD、MacOS（通过便携版）\n\n还提供了一个名为 **Game of Trees Hub** 的托管服务。\n\n近期发布版本包括：\n- Game of Trees 0.127（2026年7月20日）\n- Game of Trees 便携版 0.127（2026年6月20日）\n\n页面结尾引用了 OpenBSD 开发者 tedu 的话：“没有关于源代码控制迁移的长篇讨论，任何关于 openbsd 的互联网讨论都不完整”，这凸显了社区对版本控制工具的长期关注。\n\n总之，Got 是来自 OpenBSD 社区的一款基于 BSD 许可证、与 Git 兼容的版本控制系统，专注于简洁性和易用性，并已在多个平台上获得日益增长的支持。"
+  },
+  {
+    "id": "49032660",
+    "title": "It's getting harder to focus every day",
+    "url": "https://glyphack.com/attention/",
+    "summary": "The author describes a growing inability to focus, forced to set a 15-minute timer and block distractions just to write this piece. Even activities they want to do feel disrupted by urges to switch tasks. They trace the problem's origins: in high school (circa 2015), they avoided phone chargers near the bed and only did intentional activities (programming, chess). Later, they discovered browsing sites like HackerNoon and Medium, which provided easy boredom relief. Work life worsened this—meetings, constant chat (8 hours of Slack per week), and seeing colleagues succeed with minimal effort normalized distraction.\n\nThe introduction of LLMs (large language models) created a new layer: outsourcing tasks to an AI leads to multitasking, overstimulation, and impatience with slower, manual work. The author finds themselves waiting for LLM responses, thinking about multiple tasks simultaneously, and feeling bored when not getting instant results.\n\nTo combat this, they try livestreaming to enforce accountability, previously co-worked over Discord (now unstable in Iran), and cultivated offline habits like reading and gardening. The goal isn't a perfect solution but to understand why they’ve been unproductive recently. The timer itself helped provide initial motivation to write.",
+    "chinese_title": "每天越来越难集中注意力。",
+    "chinese_summary": "作者描述了自己越来越难以集中注意力，不得不设定15分钟倒计时并屏蔽干扰才能写完这篇文章。即使是自己想做的活动，也总被切换任务的冲动打断。他们追溯问题的根源：高中时期（约2015年），他们会避免把手机充电器放在床边，只做有目的性的活动（编程、下棋）。后来，他们发现了浏览HackerNoon和Medium这类网站，这些平台能轻易缓解无聊。工作生活使情况恶化——会议、不间断的聊天（每周8小时的Slack消息）、以及看到同事轻松成功带来的分心常态。大语言模型（LLM）的出现又增加了一个新层面：将任务外包给AI导致了多任务处理、过度刺激，以及对缓慢的手动工作失去耐心。作者发现自己等待LLM回复时，同时思考多个任务，并在得不到即时结果时感到无聊。为了对抗这种情况，他们尝试直播来强制自我问责，之前曾通过Discord协作（现在在伊朗不稳定），并培养了阅读、园艺等线下习惯。目标不是找到完美解决方案，而是理解自己近期效率低下的原因。定时器本身帮助提供了写作的初始动力。"
+  },
+  {
+    "id": "49025766",
+    "title": "Why Sony can't bring back its classic Walkman models",
+    "url": "https://obsoletesony.substack.com/p/why-sony-cant-bring-back-classic-walkman",
+    "summary": "Former Sony engineer Akira Tanaka explains why the company cannot reissue classic cassette, CD, or MiniDisc Walkman models, despite nostalgia and renewed interest in physical media. He provides six key reasons:\n\n1. **Parts no longer exist** – Miniature motors, magnetic heads, optical pickups, and proprietary ICs used in these players are out of production. Suppliers have moved on, and manufacturing equipment has been retired. Any new model would require a full redesign around currently available components.\n\n2. **Manufacturing technology lost** – Later Walkman models were extremely thin and precise, achieved through dedicated production lines and adjustment procedures. Drawings capture dimensions but not the tacit knowledge of how lines were tuned or problems solved. Factories that made such intricate mechanisms no longer exist.\n\n3. **Economics do not work** – The market for new cassette/CD/MiniDisc players is small (tens of thousands at most). Development and tooling costs cannot be recovered at that scale, and low volume would drive up component prices. The resulting price would be far higher than what fans expect.\n\n4. **MiniDisc media disappearing** – Sony ended production of recordable MiniDisc media in February 2025, with no successor. A new MD player would launch after blank discs stopped being made, making relaunch impractical without restarting media production.\n\n5. **Limited development resources** – Sony focuses on Android-based Hi-Res digital Walkman players. The company’s engineering staff and budget are concentrated there, not on reviving obsolete mechanical formats.\n\n6. **Loss of experienced engineers** – Tanaka himself (who designed many Walkman models) has left Sony. While drawings and patents remain, the deep knowledge of why parts were changed, prototypes failed, or production issues were fixed has not been fully passed on.\n\nTanaka’s explanation highlights that the world that produced the Walkman has largely disappeared, making a simple reissue impossible. The article notes that Sony rarely explains its decisions, so Tanaka’s first-hand account is perhaps the closest answer fans will get.",
+    "chinese_title": "为什么索尼无法复刻其经典Walkman机型",
+    "chinese_summary": "前索尼工程师田中明解释，尽管怀旧情绪和实体媒介兴趣复苏，公司仍无法复刻经典卡带式、CD或MiniDisc版Walkman播放器。他列出了六个关键原因：\n\n1. **零部件已不复存在**——这些播放器使用的微型马达、磁头、光学拾取器及专用集成电路早已停产。供应商已转型，生产设备也已退役。任何新款都需要基于现有组件完全重新设计。\n\n2. **制造技术失传**——后期Walkman型号极其纤薄精密，依赖于专用生产线和调试流程。图纸记录了尺寸，却无法保留产线调校或问题解决中的隐性知识。制造这些精密机械的工厂已不复存在。\n\n3. **经济效益不成立**——新型卡带/CD/MiniDisc播放器市场规模极小（最多数万台）。开发与模具成本无法以此规模回收，低产量更会推高元件价格。最终售价将远超粉丝预期。\n\n4. **MiniDisc媒介正在消失**——索尼已于2025年2月停产可录式MiniDisc光盘，且无后继产品。新款MD播放器推出时空白光盘已停止生产，若不复刻媒介，重新发布便不切实际。\n\n5. **研发资源有限**——索尼专注于安卓系统的高分辨率数字Walkman播放器。公司工程师团队与预算集中于此，而非复活过时的机械格式。\n\n6. **资深工程师流失**——田中本人（曾设计多款Walkman型号）已离开索尼。尽管图纸和专利仍在，但关于部件为何更改、原型机为何失败、生产问题如何解决等深层知识并未完全传承。\n\n田中的解释凸显了当年生产Walkman的世界已基本消失，单纯复刻绝无可能。文章指出索尼极少解释其决策，而田中的第一手描述或许是粉丝能得到的最接近的答案。"
+  },
+  {
+    "id": "49042577",
+    "title": "Ford Will Use Apple Maps in New Self-Driving System",
+    "url": "https://www.nytimes.com/2026/07/23/business/ford-apple-software-self-driving.html",
+    "summary": "Unable to access the article link.",
+    "chinese_title": "福特将在新自动驾驶系统中使用苹果地图",
+    "chinese_summary": "无法访问该文章链接。"
   }
 ]
