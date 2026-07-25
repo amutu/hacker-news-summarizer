@@ -1,0 +1,598 @@
+# Hacker News 热门文章摘要 (2026-07-25)
+
+这是今日 [Hacker News](https://news.ycombinator.com/) 上最热门的文章摘要。
+
+## 1. 在明尼苏达州莫里斯利用风力生产氨和肥料
+
+**原文标题**: Producing ammonia and fertiliser using wind power in Morris, Minnesota
+
+**原文链接**: [https://ammoniaenergy.org/articles/flexible-renewable-ammonia-demonstrator-now-operational-in-minnesota/](https://ammoniaenergy.org/articles/flexible-renewable-ammonia-demonstrator-now-operational-in-minnesota/)
+
+明尼苏达州莫里斯市的一座开创性设施已启动首个低碳氨生产季，目标日产一吨用于本地肥料。风力涡轮机为电解槽供电，向哈伯-博施工厂供应氢气，创新控制系统可调整生产速率以应对波动的可再生能源。该项目位于明尼苏达大学西中央研究与推广中心，由明尼苏达大学、RTI国际和卡萨莱合作完成。它基于2013年的试点项目进行规模扩展，未来可发展为由农民合作社所有的商业可再生氨中心。氨可储存或与乙醇生产的二氧化碳结合生产尿素，这是明尼苏达州最常用的肥料。研究人员强调了经济效益：本地生产可负担的氮肥，减少供应链不稳定，并通过动态工厂运行以最小化昂贵的氢气储存。该项目在AEA的2025年12月期节目中详细介绍。
+
+---
+
+## 2. 被偷的纽扣
+
+**原文标题**: Stolen Buttons
+
+**原文链接**: [https://anatolyzenkov.com/stolen-buttons](https://anatolyzenkov.com/stolen-buttons)
+
+提供的文本中并没有一篇题为“Stolen Buttons”的连贯文章。相反，它似乎是来自多个网站的界面元素、促销信息和菜单项的杂乱集合。关键片段包括：
+
+- **自动墨水配送**：一种在耗材不足时自动发送打印机墨水或碳粉的服务，附带免费注册优惠和条款。  
+- **Schulranzen Timeless**：Airpaq 出品的一款轻便、宽敞的学生背包，以德语描述，可选择配置、购买或了解更多。  
+- **Adobe After Effects**：与瑞典语的“DesignShowcase”一同提及，可能是一个设计或教程资源。  
+- **登录/注册提示**：多处呼吁注册、登录、创建账户或管理购物车，通常与高级功能、试用或社区帖子相关。  
+- **其他杂项**：诸如“访问 Reddit”“浏览组件”“了解热力图”“参见 MLA 格式指南”等短语，表明内容混杂了电商、设计和教育材料。
+
+不存在关于被盗纽扣的中心叙事或文章。这段文本似乎是粘贴自一个杂乱的网页或界面流程，而非结构化的文章。
+
+---
+
+## 3. 展示HN：Proxmox → 通过网络将主机的蓝牙共享给虚拟机
+
+**原文标题**: Show HN: Proxmox -> Share your host's Bluetooth with a VM over the network
+
+**原文链接**: [https://github.com/lucid-fabrics/proxmox-bluetooth](https://github.com/lucid-fabrics/proxmox-bluetooth)
+
+本文介绍了一种解决Proxmox Linux虚拟机蓝牙直通问题的工具，尤其针对英特尔板载芯片（BE200、AX210、AX211）在分配给虚拟机时重置的问题。该方案不采用直接直通，而是让宿主机保留蓝牙芯片，并利用BlueZ的`btproxy`将原始HCI数据通过本地网络流式传输到虚拟机，虚拟机将识别为一个正常适配器。
+
+**关键要点：**
+- **问题：** 英特尔CNVi蓝牙芯片物理上需要宿主机驱动加载固件；任何虚拟机移交都会导致芯片擦除。游戏发行版（ChimeraOS、Bazzite）同样面临此问题。
+- **解决方案：** 两条命令：在Proxmox宿主机上执行（`curl ... | sudo bash`）以共享适配器；在虚拟机内部执行（`curl ... | sudo bash -s -- <主机IP>`）以连接。两者均支持开机自启和自动重连。
+- **兼容性：** 适用于所有Linux支持的蓝牙芯片（英特尔、联发科、USB适配器），但固件损坏的芯片（如Barrot）除外。支持手柄、耳机、BLE传感器。
+- **性能：** 延迟增加不到1毫秒，无明显卡顿。
+- **限制：** 每次仅支持一台虚拟机（每颗芯片）；仅限Linux客户机；共享期间宿主机失去本地蓝牙功能。
+- **恢复：** 若英特尔芯片看似失效，请完全断电重启设备（关闭电源开关15秒）。针对ChimeraOS/Bazzite挂起问题，请屏蔽休眠目标。
+
+该工具采用MIT许可，开源设计，专为无需购置新硬件、在虚拟机中需要蓝牙功能的家用实验室用户打造。
+
+---
+
+## 4. Android或很快限制设备端ADB
+
+**原文标题**: Android May Soon Restrict On-Device ADB
+
+**原文链接**: [https://kitsumed.github.io/blog/posts/android-may-soon-restrict-on-device-adb/](https://kitsumed.github.io/blog/posts/android-may-soon-restrict-on-device-adb/)
+
+该文章讨论了Android的一项拟议变更，旨在将设备端ADB连接（环回）限制为仅通过Wi-Fi接口（wlan0），这一提议基于谷歌IssueTracker上一位ADB维护者以安全为由的评论。作者Kitsumed（基于Shizuku的应用开发者）解释道，ADB（Android调试桥）允许高权限的开发者交互。设备端ADB使用户能够通过环回在同一设备上运行ADB客户端和服务器，从而支持Shizuku、应用管理器和通话录音等工具。
+
+该拟议变更旨在阻止恶意应用利用权限提升漏洞。然而，作者认为，如果没有用户明确的操作（启用USB调试、授权连接或配对），设备端ADB无法被利用。三种场景表明，恶意应用无法启动ADBD或绕过手动审批。因此，限制环回将破坏合法用途——如没有电脑的开发者、无障碍工具和高级用户应用——而不会带来真正的安全收益。
+
+作者建议提供一个持久化开关（重启后仍保留）以允许环回ADB，而非永久封禁。他们强调，因假设性风险而禁用该功能是不成比例的，类似于尽管设备管理或无障碍功能可能被滥用但仍然保留它们。鼓励在问题跟踪器上提供建设性反馈，但应避免垃圾信息。
+
+---
+
+## 5. 开放权重AI迎来其Kubernetes时刻
+
+**原文标题**: Open-weight AI is having its Kubernetes moment
+
+**原文链接**: [https://tobi.knaup.me/2026-07-25-open-weight-ai-is-having-its-kubernetes-moment/](https://tobi.knaup.me/2026-07-25-open-weight-ai-is-having-its-kubernetes-moment/)
+
+该文章认为，开放权重AI模型正迎来一个“Kubernetes时刻”——一个开放、可定制的平台能够吸引远超任何单一供应商所能实现的创新。作者结合自己联合创办Mesosphere（被Kubernetes颠覆）的经验指出，开放权重模型（如Qwen、Gemma、GLM-5.2、Kimi K3）现已接近前沿性能，催生了一个日益壮大的生态系统，涵盖推理工具、微调及各类专业适配。这一生态系统的累积效应，使得封闭模型很难长期超越它。
+
+作者批评了美国拟禁止中国开放权重模型的提议，称其为“自摆乌龙”，因为这将孤立美国开发者，而世界其他国家却正基于这些模型进行创新——中国模型已占Hugging Face下载量的41%。相反，美国应该通过以下方式展开竞争：发布采用宽松许可的顶级美国开放权重模型；通过政府采购推动互操作、可移植的系统；建设配套技术栈（推理、工具、硬件）；通过独立测试而非全面禁令来制定安全标准。核心信息是：开放生态系统驱动创新；美国应当通过参与而非筑墙来引领。
+
+---
+
+## 6. 展示HN：我制作了一些晶体管动画
+
+**原文标题**: Show HN: I made some transistor animations
+
+**原文链接**: [https://brandonli.net/semisim/animations](https://brandonli.net/semisim/animations)
+
+本文介绍了一种半导体模拟器，可生成三种晶体管类型的动画：NPN双极结型晶体管、n沟道金属氧化物半导体场效应晶体管和n沟道结型场效应晶体管。动画中，蓝点和红点分别代表电子和空穴，白色闪烁表示复合事件。
+
+提供了三组动画：
+
+1. **基于速度**：载流子速度等于扩散电流与漂移电流之和除以总电荷；扩散过程未显式展示。
+2. **扩散与漂移**：载流子通过扩散和漂移两种方式运动，呈现最精确的描绘，但视觉上更为复杂。
+3. **探针测量**：显示各端点的电流和电压。
+
+该模拟器允许用户比较不同的可视化方法，以理解这些半导体器件中的载流子运动和端点行为。
+
+---
+
+## 7. Show HN：Brolly，一个纯文本天气预报网站
+
+**原文标题**: Show HN: Brolly, a plain-text weather forecast site
+
+**原文链接**: [https://brolly.sh/forecast/RWFP2qW8](https://brolly.sh/forecast/RWFP2qW8)
+
+**摘要：**  
+Brolly 是一个极简主义纯文本天气预报网站（brolly.sh），由来自英国约克的 Jacob 创建。它以清晰、类似终端的布局展示当前天气状况、每日/每周展望以及详细的逐小时数据，涵盖温度、风力、降水、紫外线指数、空气质量和花粉浓度。示例显示了英格兰约克的预报，数据来自 Open-Meteo。主要功能包括“更改位置”选项、日期间导航以及降水和紫外线的可视化条。该网站提供搜索、统计、关于和隐私页面。联系方式：hello@brolly.sh。
+
+---
+
+## 8. 我的图像如何被抖动
+
+**原文标题**: How My Images Are Dithered
+
+**原文链接**: [https://dead.garden/blog/how-my-images-are-dithered.html](https://dead.garden/blog/how-my-images-are-dithered.html)
+
+本文介绍了作者使用ImageMagick为图像赋予印刷般抖动效果的方法，具体采用粉红色单色美学。其目标是模拟AM（幅度调制）半色调——通过改变点的大小来表现色调——尽管该技术并不改变点的大小，而是在叠加旋转网点图案后进行减色处理。
+
+操作流程：将图像转换为CMYK，分离出四个颜色通道，应用带高斯滤波的2×2图案背景，然后对每个通道进行失真（旋转）处理（角度分别为0°、15°、45°、75°）以避免莫尔条纹，叠加各通道，最后限制颜色数量。旧方法在转换为灰度后将颜色缩减为两种（黑色和粉色），模拟出伪AM效果。新方法使用`-remap`允许多种粉色色调，增强了层次感。作者承认此方法效率不高——可能导致文件体积增大，并在老旧CPU上耗时约10秒——纯粹是为了美学效果。示例显示浅色图像需要手动调整（亮度、反转）。文章包含完整的shell脚本，并指出真正的弗洛伊德-斯坦伯格抖动算法能生成更小的文件。该博文标记为元/代码，发布于德国埃尔福特。
+
+---
+
+## 9. Bitchat现已上线Radicle
+
+**原文标题**: Bitchat is now on Radicle
+
+**原文链接**: [https://radicle.network/nodes/rosa.radicle.network/rad%3Az2v9tRJz1oknFAqCSY5W5c76nVvm6](https://radicle.network/nodes/rosa.radicle.network/rad%3Az2v9tRJz1oknFAqCSY5W5c76nVvm6)
+
+文章“Bitchat现已上线Radicle”仅显示一条通知，指出用户浏览器禁用了JavaScript。通知说明必须启用JavaScript才能使用该网站。由于页面无法在没有JavaScript的情况下加载，因此未提供有关Bitchat或Radicle的更多内容或详细信息。核心信息是该网站需要JavaScript功能才能访问。
+
+---
+
+## 10. 将 PyTorch Monarch 引入 AMD GPU
+
+**原文标题**: Bringing PyTorch Monarch to AMD GPUs
+
+**原文链接**: [https://pytorch.org/blog/bringing-pytorch-monarch-to-amd-gpus-single-controller-distributed-training-on-rocm/](https://pytorch.org/blog/bringing-pytorch-monarch-to-amd-gpus-single-controller-distributed-training-on-rocm/)
+
+本文介绍了将 PyTorch Monarch 移植到基于 ROCm 的 AMD Instinct GPU 上，以实现大语言模型的容错分布式训练。解决的关键挑战包括：传统检查点机制浪费计算资源、导致集群空闲时间，并且随着故障概率上升而无法扩展。Monarch 引入了一种基于单程序、角色（actor）的运行时，通过监督树实现分层故障隔离来管理 GPU 集群，支持快速本地恢复，无需全局重启。
+
+移植过程中需要借助 `hipify_torch` 和 RCCL 适配集体通信，通过 HIP 等价接口管理 GPU 内存，以及使用带有 HIP 绑定的 `libibverbs` 集成 RDMA。Rust 绑定通过兼容性垫片避免分叉。开源贡献确保了对 ROCm 7.0+ 的支持。
+
+在 16 节点 SLURM 集群（128 个 MI300 GPU）和 32 节点 Kubernetes 集群（256 个 MI355 GPU）上进行的实验训练了 Llama 3 8B 模型。尽管频繁注入故障（每 180 秒一次），训练仍无缝进行：活跃工作节点数虽有波动，但恢复迅速，损失曲线与无全局检查点重启的基准运行保持一致。
+
+未来工作包括扩展网卡支持、支持更多框架以及优化恢复延迟。与 TorchTitan 和 TorchFT 的集成展示了一个面向 AMD GPU 的生产级、高弹性训练栈。
+
+---
+
+## 11. 亚马逊树冠桥零路杀，确保15000次安全穿越
+
+**原文标题**: Zero roadkill as Amazon canopy bridges secure 15,000 crossings
+
+**原文链接**: [https://news.mongabay.com/2026/07/zero-roadkill-as-amazon-canopy-bridges-secure-15000-crossings/](https://news.mongabay.com/2026/07/zero-roadkill-as-amazon-canopy-bridges-secure-15000-crossings/)
+
+在巴西南亚马孙地区，里科内克塔项目（Project Reconecta）在阿尔塔弗洛雷斯塔的一条高速公路上安装了八座绳索树冠桥，使得树栖野生动物在15个月内安全穿越了15000次，且未发生一起道路致死事件。这些桥梁重新连接了破碎的森林栖息地，减少了野生动物与车辆的碰撞，并促进了种子传播和基因流动，从而遏制了生物多样性的丧失。该设计由生物学家费尔南达·阿布拉（国家地理探险家及惠特利奖得主）创立，采用低成本、多层结构，适应多种灵长类动物的移动方式。巴西交通部门已将其定为高速公路的国家标准。该项目正在向其他生物群落（潘塔纳尔湿地、大西洋森林）和苏里南扩展。此前，与瓦伊米里-阿塔罗阿里原住民在BR-174公路上合作建造的32座桥梁也取得了成功。鉴于巴西每年有近900万只哺乳动物死于道路事故，一项拟议中的国家野生动物道路安全计划旨在全国范围内部署此类通道。
+
+---
+
+## 12. 摧毁Flock监控摄像头的义警运动日益壮大
+
+**原文标题**: The growing vigilante movement to knock out Flock surveillance cameras
+
+**原文链接**: [https://www.theguardian.com/us-news/ng-interactive/2026/jul/25/flock-surveillance-cameras](https://www.theguardian.com/us-news/ng-interactive/2026/jul/25/flock-surveillance-cameras)
+
+**摘要：** 美国一场日益壮大的民间治安运动正以隐私顾虑为由，破坏或摧毁Flock Safety公司的自动车牌识别摄像头（ALPR）。这些摄像头拍摄车辆照片并与数据库交叉比对，引发了未经授权实施大规模监控的担忧。明尼阿波利斯市的活跃分子“NoMark”便是其中一例，他已拆除十余个摄像头并在网上分享建议。《卫报》确认全美23个州至少发生了33起此类事件。部分民间治安者面临刑事指控，但网上支持依然强烈，人们还在交流遮挡摄像头的技巧。Flock公司否认这些设备是大规模监控工具，并推出保护计划，而执法部门的联合情报中心则对反Flock的倡导活动进行监控。政策层面也有行动：超过80个城市已拒绝或取消Flock合同，一名得克萨斯州议员提议要求获得搜查令才能使用设备。草根组织DeFlock绘制了超过11.5万个ALPR位置图，并推动市镇政策变革。Flock首席执行官曾称该组织为“恐怖主义”，但后来道歉。弗吉尼亚州诺福克市的DeFlock分部虽不赞同也不反对民间治安者的行动。
+
+---
+
+## 13. Fedora 45 香肠工厂
+
+**原文标题**: The Fedora 45 Sausage Factory
+
+**原文链接**: [https://supakeen.com/weblog/the-fedora-45-sausage-factory/](https://supakeen.com/weblog/the-fedora-45-sausage-factory/)
+
+文章详细介绍了 Fedora 45 的构建与发布流水线——即“香肠工厂”——从源代码到可下载制品。
+
+**关键步骤：**
+1. **Dist-git：** 打包者使用 `fedpkg` 将提交推送到包仓库（src.fedoraproject.org）。
+2. **Koji：** 构建系统，在干净隔离的 Mock 环境中创建 RPM，由 Git 提交 URL 触发。
+3. **Bodhi：** 分支版本的更新管理；通过 karma/测试门控更新，在移至稳定标签前进行审核。
+4. **Pungi：** 编排组成器，从 Koji 标签冻结一组包，然后按顺序执行阶段：
+   - **Init：** 解析 comps（包组）和变体 XML。
+   - **Pkgset：** 快照包。
+   - **Essentials：** 构建 `boot.iso`（lorax），收集仓库，为 Atomic 桌面运行 rpm-ostree。
+   - **Images：** 生成 ISO（xorriso）、云/容器/镜像（Kiwi）、Atomic ISO/IoT/Minimal（Image Builder）。
+   - **Checksums & Test：** 生成 productmd 元数据；运行 repoclosure。
+5. **openQA：** 在虚拟机中对组成镜像进行自动化测试。
+
+整个过程确保了可重现性、审计和质量控制，并通过 Fedora 的 Changes 流程进行治理。
+
+---
+
+## 14. Tile的安全性极差，反而成了跟踪者的利器。
+
+**原文标题**: Tile's security is so bad it's a feature for stalkers
+
+**原文链接**: [https://blog.adafruit.com/2026/03/05/tiles-security-is-so-bad-its-a-feature-for-stalkers/](https://blog.adafruit.com/2026/03/05/tiles-security-is-so-bad-its-a-feature-for-stalkers/)
+
+无法访问该文章链接。
+
+---
+
+## 15. 空间语言：在二维中编写代码
+
+**原文标题**: Spatial languages: Writing code in 2D
+
+**原文链接**: [https://shukla.io/blog/2026-07/cccx.html](https://shukla.io/blog/2026-07/cccx.html)
+
+本文探讨了空间（二维）编程语言的概念，即代码可以垂直和水平方向书写。作者通过一个动机示例引入：一个真正的三元中缀运算符`andFlip`（`@@`），若前两个参数为真，则翻转第三个参数。传统的一维语法对此显得笨拙，而二维布局——将目标置于二元表达式下方——使得链式调用变得直观。
+
+其实际应用通过一个自动鸡舍门演示：三个条件（光度计阈值、稳定读数、近期未切换）必须全部为真才能翻转门。随后，作者提出两个谜题，涉及在单个二维表达式中重置临时变量（`t1`），这类似于量子计算中借用辅助比特的“反计算”概念。解决方案通过垂直重复来恢复初始值，同时保留正确输出。
+
+新运算符如`maj`（多数门）和`uma`（反多数并相加）以空间方式定义，实现了一个紧凑的可自清理三比特加法器。文章还综述了其他空间语言：Befunge（二维指令指针）、Orca（实时编码音序器）、Racket的`#2dcond`、Hexagony（六边形网格）、梯形逻辑（PLC编程）以及电子表格。
+
+最后，文章引用了萨丕尔-沃尔夫假说——语言塑造思维——并指出技术（如键盘、终端）使我们偏向一维代码，而挑战这一习惯可以开启新的思路。
+
+---
+
+## 16. 为小型手持设备构建微型3D渲染器
+
+**原文标题**: Building a Tiny 3D Renderer for a Tiny Handheld
+
+**原文链接**: [https://saffroncr.itch.io/katavatis/devlog/1534514/building-a-tiny-3d-renderer-for-a-tiny-handheld](https://saffroncr.itch.io/katavatis/devlog/1534514/building-a-tiny-3d-renderer-for-a-tiny-handheld)
+
+文章描述了作者为Playdate掌机开发3D软件渲染器的历程。初期使用光线投射器进行的性能测试显示处理能力有限，但设备1位小屏幕提供了内存优势。目标是通过CPU软件渲染实现类似3DO/Saturn时代的画质。
+
+渲染器加载Quake的BSP地图文件，利用现有工具（TrenchBroom、ericw-tools）进行关卡设计、可见性（PVS）和光照处理，从而节省开发时间。作者从零编写了渲染器。经过测试，最终选用16位倒数深度缓冲（z-buffer）而非画家算法，以简化动态物体和遮罩纹理的处理。
+
+为实现透视校正纹理映射避免畸变，采用了性能优化技巧：每几个像素才执行一次完整倒数计算，其余像素使用快速近似。光照基于Quake光照贴图预计算，转换为顶点光照。在1位屏幕上，亮度通过8x8 Bayer矩阵抖动模拟。
+
+默认抖动效果过于噪杂，因此作者采用了极简的卡通渲染风格，配有粗轮廓和简单纹理，提升了可读性并赋予游戏独特风格。
+
+关键优化包括：针对Cortex-M7 CPU的特定编译器标志、浮点函数（floor、ceil、sqrtf、fabsf）的自定义ARM汇编实现、半分辨率渲染（200x120缩放至400x240），以及大量使用预计算值和缓存。其中半分辨率渲染被认为是最大的性能提升点。
+
+---
+
+## 17. Rauno的田野笔记 #2
+
+**原文标题**: Rauno's Field Notes #2
+
+**原文链接**: [https://rauno.me/notes/2](https://rauno.me/notes/2)
+
+**Rauno 实地笔记 #2 摘要**  
+本文详细介绍了仪表盘中项目卡片的UI/UX优化。  
+
+**1. 卡片紧凑度** – 收紧内边距和共置信息，省略始终为“主”的项目分支，减少垂直空间并增加一行网格。  
+
+**2. 上下文菜单** – 每个卡片上重复的“···”按钮将被替换（在功能开关后），改为在卡片表面任意位置右键激活的上下文菜单，类似 Linear 等应用的模式。为解决可发现性问题，详情视图中仍通过常规下拉菜单提供相同操作。  
+
+**3. 小组件** – 卡片角目前仅显示真实体验评分，但团队希望实现动态、用户可定制的小组件（如防火墙状态、LCP、告警）。早期尝试失败，突破点在于使用两行而非一行，形成紧凑对齐的矩形区域。小组件设计为视觉上可区分（不仅靠颜色），便于快速扫描。小组件切换菜单可选预览其他组件数据而不切换，当项目缺少数据时，帮助用户发现并启用平台功能。  
+
+这些改进旨在使卡片更简洁、易扫描，并适应个体用户需求。
+
+---
+
+## 18. 数学的黑暗之夜
+
+**原文标题**: The Dark Night of Mathematics
+
+**原文链接**: [https://kirwinhampshire.substack.com/p/the-dark-night-of-mathematics](https://kirwinhampshire.substack.com/p/the-dark-night-of-mathematics)
+
+基尔温·汉普希尔（Kirwin Hampshire）的文章《数学的暗夜》是一篇极为个人化且充满痛苦的回响，针对近期大型语言模型对长期存在的数学猜想提出反例的突破性进展。作者拒绝接受常见的应对叙事——即数学家仍将在教学、评估甚至业余证明撰写中发挥作用——认为这些不过是逃避。其情感核心在于：数学发现是一种至关重要的精神体验，一种触及不可言喻与神圣之物的途径，代代相传（如拉马努金、格罗滕迪克）。学习数学是一种与过往发现者进行的社会性、塔木德式的对话。如果人工智能能瞬间生成任何定理，那么人类创造与发现的行为——那种“魔力与神秘”——便荡然无存。作者将此比作巴别图书馆中的作家：人们仍可写作，但意义已然丧失。更糟的是，若被禁止创作原创作品，便只剩下旁观者的角色。文中袒露了偏执的思绪，以及一种人类灵魂中某些根本之物正被永久封存的感觉。汉普希尔并未给出解决方案——只有悲痛的倾泻，对人工智能架构师承认共同人性的恳求，以及邀请他人表达类似感受的呼唤。
+
+---
+
+## 19. GDID Windows – 切断即使在VPN下也追踪你的跟踪器
+
+**原文标题**: GDID Windows – Cut the tracker that follows you even under VPN
+
+**原文链接**: [https://korben.info/en/gdid-windows-cut-tracker-vpn.html](https://korben.info/en/gdid-windows-cut-tracker-vpn.html)
+
+**摘要：**  
+本文解释了Windows会携带一个名为GDID（与微软账户绑定的64位PUID）的持久性跟踪标识符。即使在VPN下，GDID也不会改变，并可被提供给执法机构。删除注册表项或禁用遥测功能均无效，因为该ID存储在微软服务器上，会被重新下载。
+
+作者提供了一种实用解决方法：禁用报告GDID的服务（如DoSvc），并通过hosts文件阻止微软的端点，同时保持微软账户登录。这通过一个GitHub项目（`no-gdid`）中的PowerShell脚本来实现，该脚本可审计、应用或撤销更改。
+
+**关键注意事项：**  
+- 该方法仅阻止未来的报告；过去的GDID数据仍保留在微软服务器上。  
+- 切换为本地账户可能无法完全消除跟踪。  
+- 对于真正敏感的活动，建议使用Linux live系统。
+
+---
+
+## 20. 我的网页版Mars MIPS现在内置了C编译器。
+
+**原文标题**: My web version of Mars MIPS, now has built-in C compiler
+
+**原文链接**: [https://webmars.nfiles.top/](https://webmars.nfiles.top/)
+
+本文介绍了**webMARS**的更新——一款完全在网页浏览器中运行的MIPS模拟器和汇编器。主要新功能是集成了**内置C编译器**，允许用户编写C代码并直接将其编译为MIPS汇编进行模拟。这增强了该工具在计算机架构教学与学习中的实用性，因为它无需外部工具即可连接高级编程与底层执行。片段中还显示了加载界面，表明该工具正在积极维护中。
+
+---
+
+## 21. Kyber（YC W23）诚聘工程主管
+
+**原文标题**: Kyber (YC W23) Is Hiring a Head of Engineering
+
+**原文链接**: [https://www.ycombinator.com/companies/kyber/jobs/FGmI8mx-head-of-engineering](https://www.ycombinator.com/companies/kyber/jobs/FGmI8mx-head-of-engineering)
+
+Kyber（YC W23）正在纽约州纽约市招聘工程主管（薪资22万–28万美元 + 0.50%–1.50%股权）。该公司为受监管行业构建AI原生的文档平台，帮助保险公司以5倍速度起草、审核和发送复杂通知。18个月内，Kyber收入增长40倍，已实现盈利，并与领先企业签订了多年期六至七位数合同。
+
+该职位需亲力亲为，并有明确晋升CTO的路径。职责包括：全权负责端到端的技术决策、亲自交付功能、主导冲刺规划、扩展AI编码工具（Cursor、Claude Code等）、确保可靠性与安全性（SOC 2、HIPAA、ISO）以及指导工程师。
+
+理想的候选人是“10倍工程师”，具备由AI增强的无与伦比的编码能力、系统设计精通、优先交付思维以及企业合规经验。面试流程包括创始人面谈、居家项目、技术深挖、系统设计、领导力面试及五份推荐信。
+
+为脱颖而出，申请者应请前同事将简历及2–3句推荐语发送至arvind@askkyber.com。
+
+---
+
+## 22. Pkgxray – 检查已安装的内容，而非执行的内容
+
+**原文标题**: Pkgxray – inspect what gets installed, not what executes
+
+**原文链接**: [https://github.com/adamsjack711-ux/pkgxray](https://github.com/adamsjack711-ux/pkgxray)
+
+**pkgxray** 是一款用于 npm 包、MCP 服务器和 AI 代理的预安装安全工具。它对包代码进行本地、零依赖的静态分析（**不执行代码**），给出 **安全**、**审查** 或 **阻止** 的判定，并附上引用证据。
+
+关键能力包括检测凭证窃取、提示注入、base64 载荷、数据外泄、持久化、混淆、已知 CVE（通过 OSV）、构件差异（npm 与 GitHub）以及 MCP 能力滥用。它还监控判定漂移，并提供用于 MCP 流量的运行时代理。
+
+该工具完全离线运行，无需云上传或账户，使用确定性启发式算法（判定路径中不含 LLM）以防止被注入文本引导。它将包暂存在沙盒隔离区中，在提升前进行审计。
+
+与类似工具（Socket.dev、OpenSSF 包分析、Cisco MCP Scanner）的对比突出了 pkgxray 的独特功能：仅本地运行、构件差异检测、确定性判定、带隔离副本的预安装门控，以及每次调用的 MCP 门控。
+
+性能：本地分析约 25 毫秒；对 express 执行完整 `guard` 冷缓存耗时约 1.3–1.5 秒（主要是网络开销）。在前 1000 个包上的校准实现了零启发式误阻止。
+
+交互界面包括 CLI、MCP 服务器（`pkgxray-mcp`）、运行时代理（`mcp-proxy`）、安装钩子（Hookshot）和 CI 集成。通过 `.pkgxray.json` 配置。采用 MIT 许可证发布，附带 SLSA 溯源。
+
+---
+
+## 23. 志留纪假说（2020）
+
+**原文标题**: The Silurian Hypothesis (2020)
+
+**原文链接**: [https://www.theparisreview.org/blog/2020/01/23/the-silurian-hypothesis/](https://www.theparisreview.org/blog/2020/01/23/the-silurian-hypothesis/)
+
+### 译文  
+里奇·科恩的《志留纪假说》一文探讨了地球可能存在前人类工业文明的可能性。科恩以一段个人轶事开篇：他在童年故居中发现前住户刻下的名字，由此凸显人类对深时概念的漠视。他指出，现代人类存在约20万年，而生命已延续35亿年——这段漫长岁月足以让其他高等物种经历兴衰。任何实体证据（建筑、器物）都会在数百万年内因板块运动和侵蚀而消失。  
+
+该假说由美国国家航空航天局的加文·施密特与天体物理学家亚当·弗兰克于2018年提出，认为古新世-始新世极热事件（5500万年前）等气候变化标志可能源于工业活动而非自然原因。施密特与弗兰克主张，此类温度骤升或许是过往文明仅存的持久印记。这一构想最初源自《神秘博士》中关于名为“志留纪人”的远古蜥蜴人的剧集。  
+
+科恩将假说与神秘文本、《圣经》典故（拿非利人）及爬虫类神祇的古代雕刻相联系。他引用了《摩诃婆罗多》中关于一万年前印度发生原子爆炸的边缘说法。文章最终反思人类如何将当下的气候焦虑投射至远古，暗示我们自身文明的兴衰或许只是地球历史中的又一次循环。
+
+---
+
+## 24. MouthPad：舌控触摸板
+
+**原文标题**: MouthPad: A Tongue-Controlled Touchpad
+
+**原文链接**: [https://www.augmental.tech/](https://www.augmental.tech/)
+
+**MouthPad：舌控触控板概述**
+
+MouthPad是一款定制贴合、免提的口式设备，功能相当于无线触控板。它通过微妙的舌头和头部动作，实现对手机、平板电脑及电脑的精准光标控制、点击、滚动和拖拽操作。
+
+主要特性包括：支持蓝牙连接主流操作系统（macOS、Windows、Linux、iOS、Android）；佩戴隐蔽且对说话影响极小；通过3D牙科扫描实现个性化定制。设备厚度约1毫米，重量约10克，续航时间超过7小时。
+
+该产品专为行动不便人士设计，可独立完成拍照、游戏等操作。单设备售价1,400美元（含充电盒、数据线及安装支持），双设备套装售价1,900美元。目前仅限美国地区销售。
+
+订购流程包括：在线购买、完成3D口腔内扫描（当地费用50-150美元）、定制生产（6个月内发货）以及在线激活指导。提供1年有限保修，覆盖制造缺陷。用户需年满18岁，具备足够的舌部灵活性且口腔健康状况良好。
+
+---
+
+## 25. 内存安全绝对主义者
+
+**原文标题**: Memory Safety Absolutists
+
+**原文链接**: [https://itsallaboutthebit.com/memory-safety-absolutists/](https://itsallaboutthebit.com/memory-safety-absolutists/)
+
+文章《内存安全绝对主义》作者Piotr Sarnacki批判了一种日益增长的“内存安全绝对主义”趋势，这种趋势因Rust的`unsafe`关键字而将其视为不安全，同时推崇Fil-C（一种使用GC和InvisiCaps的C/C++编译器）或Zig计划中的“fil”编译模式等替代方案。作者认为这种立场虚伪且忽视了实际权衡。
+
+关键要点：
+
+- **Rust vs. Fil-C**：Fil-C通过对违规行为（如越界）进行panic处理来实现C/C++内存安全，但引入了权衡：ABI不兼容、潜在性能下降以及GC。这使得它不适用于许多程序，而Rust恰好适合这些用例。
+- **Rust的实际安全性**：引用Android数据，Rust每百万行代码约有0.2个内存安全漏洞，而C/C++约为1000个——降低了1000倍。即使使用`unsafe`，Rust的实际表现也远优于替代方案。
+- **实用主义而非绝对主义**：作者认为，完美安全（解决90%程序中的100%问题）不如近乎完美安全（解决100%程序中的99.9%问题）实用。Rust和Fil-C各有其角色；选择取决于权衡。拒绝Rust的内存安全绝对主义者同样应批评不安全的C/C++/Zig代码，后者风险远高于前者。
+- **结论**：辩论应聚焦于以务实方式减少漏洞，而非意识形态上的纯粹性。即使存在`unsafe`，Rust仍是实现内存安全的高效工具。
+
+---
+
+## 26. 纽约公寓鱼菜共生
+
+**原文标题**: NYC Apartment Aquaponics
+
+**原文链接**: [https://erinmurphy.dev/projects/project-2/](https://erinmurphy.dev/projects/project-2/)
+
+以下是对文章的精简总结（300字以内）：
+
+本文详细介绍了作者及其男友如何在纽约一间一居室公寓内搭建小型鱼菜共生系统。该系统将水产养殖（养虾和蜗牛）与水培（无土种植植物）相结合。鱼类排泄物为植物提供养分，而植物则净化水质，形成持续循环。
+
+**系统设计：** 他们采用基于介质的连续流系统，安装在工业置物架上。水泵将20加仑水箱中的水抽到填充陶粒的种植床中，然后水通过重力流回水箱。垂直设计节省空间并降低泄漏风险。该系统支持种植叶菜和香草，并养殖少量樱桃虾和蜗牛。
+
+**关键改进：** 作者强调了相较于初始版本的几处升级：使用更大的4英寸排水管以防堵塞，更换为更小更安静的160GPH水泵，将补光灯挂得更高以避免叶片灼伤，并添加碎珊瑚作为额外过滤器。
+
+**重要经验教训：** 他们强调在放入动物前需对水箱进行数周的“循环”以建立有益细菌。较小的水箱稳定性较差，对水质变化更敏感。建议从本地爱好者处获取鱼类和植物，因为市面上常见品种可能存在免疫力问题。过度投喂（尤其是使用自动喂食器）会导致严重水质问题；在种植水箱中，鱼类不进食可存活数周。
+
+文章还提供了详细的材料清单和分步搭建指南，供读者复刻此系统。
+
+---
+
+## 27. 代码成本崩溃后的工程管理
+
+**原文标题**: Engineering management after the cost of code collapsed
+
+**原文链接**: [https://karimjedda.com/engineering-management-after-cost-of-code-collapse/](https://karimjedda.com/engineering-management-after-cost-of-code-collapse/)
+
+## 摘要
+
+本文认为，代码生成成本（通过大语言模型）的骤降，要求工程领导者根据管理实践背后的基本假设（而非其存在年限）来审查这些实践。半数“旧规则”基于人类协作、信任与验证的假设，这些至今未变；另外半数则基于编写代码的成本，而这一成本已经改变。
+
+关键见解：
+- **指标具有误导性**：当代码稀缺时，速度和拉取请求数量是不完美的替代指标；如今它们则激励数量。应衡量业务成果。
+- **正确性出现分化**：得益于AI检查工具，机械验证（类型、测试）的成本正在骤降；语义验证（是否匹配业务策略？）仍然缓慢，因为它需要人类判断和责任。
+- **验证工作量上升**：低成本生成带来了更多待检查的代码，而AI辅助的自检会遗漏共同的盲点。拥有良好规格说明的团队受益最大。
+- **初级工程师培养路径断裂**：锻炼工程判断力的基础性工作现已自动化；尚未有人解决下一代资深工程师的培养问题。
+- **重新评估旧规则**：总监应编写足够的代码以保持校准，而非为了交付；保护团队免受上下文切换干扰，但不能隔绝业务上下文；仅对不可逆决策使用共识；审慎审视人员规模，但需认识到协作成本并未改变。
+- **管理的未来**：信息路由（总结、跟踪）可被自动化；判断力、所有权和决策签字确认，是各个组织层级上不可委托的剩余工作。
+
+---
+
+## 28. 查尔斯·罗斯花费50年在新墨西哥建造星轴肉眼天文台
+
+**原文标题**: Charles Ross spent 50 yrs building Star Axis naked-eye observatory in New Mexico
+
+**原文链接**: [https://www.nytimes.com/2026/07/22/arts/design/charles-ross-star-axis-land-art.html](https://www.nytimes.com/2026/07/22/arts/design/charles-ross-star-axis-land-art.html)
+
+无法访问文章链接。
+
+---
+
+## 29. Scanwheel是一种鼓式机械电视，你可以自己动手制作。
+
+**原文标题**: Scanwheel is a drum style mechanical television you can build yourself
+
+**原文链接**: [https://github.com/AncientJames/Scanwheel/](https://github.com/AncientJames/Scanwheel/)
+
+Scanwheel 是一款基于旋转滚筒扫描仪的自制机械电视。它设有五个并排窗口（每个9×8毫米），具备20条扫描线，由树莓派Pico的PIO硬件驱动，实现高水平分辨率。每个窗口配有独立LED（一个RGB和四个白色），使同一滚筒能显示不同图像。
+
+所需部件包括Symbol Technologies 21-02485步进电机（剪断白线改为双极用法）、基于A4988的StepStick驱动板（电流限制调低）、一个100µF电容、树莓派Pico（Pico W支持无线传输）以及搭配限流电阻的LED。总GPIO电流不得超过50毫安；提供了示例电阻值（如红色120Ω、绿色260Ω、蓝色220Ω、白色82Ω）。
+
+需要三个3D打印部件（底座、滚筒、盖子）。滚筒需高质量打印（小层高、Arachne壁生成器、100%填充）；X/Y方向缩放100.33%以补偿收缩。建议使用0.2毫米喷嘴，轴上加垫圈可增加惯性。
+
+软件运行于MicroPython 1.28。设备代码（scanwheel.py）驱动显示；内含示例应用。主机端软件（videostream.py）通过网络向设备传输视频流，而pngdirect.py将图像转换为原始帧缓冲格式。随附视频展示了制作过程和实时画面。
+
+---
+
+## 30. 拆解：宝马/哈曼 IDC23H 信息娱乐单元 (B423)
+
+**原文标题**: Teardown: The BMW / Harman IDC23H Infotainment Unit (B423)
+
+**原文链接**: [https://www.hakstuff.net/blog/teardown-the-bmw-idc23h-infotainment-unit](https://www.hakstuff.net/blog/teardown-the-bmw-idc23h-infotainment-unit)
+
+文章详细拆解了宝马/哈曼IDC23H信息娱乐单元，这是哈曼贝克和佳明成立的合资企业产品（型号IDC23H由哈曼生产；IDC23由佳明生产）。主要规格：高通骁龙SA8155P处理器、12GB LPDDR4内存、英飞凌TRAVEO CYT3BB ARM Cortex M7F接口处理器、128GB UFS v3.1存储。连接性包括与驾驶员摄像头系统（DCS）、抬头显示器（HUD）和驾驶员显示屏（DFE）的APiX链接——后者实际上取代了专用仪表盘模块。还支持100BASE-T1和1GBASE-T1以太网、WiFi 6、蓝牙5.3以及USB。该单元包含两块PCB：主设备PCB（很大程度上基于之前的MGU22H）和一块新的APIX连接PCB，带有两个Inova APiX 3发射器和一个用于DCS/HUD/DFE的Analog Devices GMSL解串器。主PCB包括一个带有DPI的Marvell汽车以太网交换机、一个支持HDCP的第二个APiX 3发射器，以及一个NXP WiFi/蓝牙SoC。据推测，DFE缩写源自德语“Display-Fahrer-Einheit”（驾驶员显示单元）。作者计划转储UFS存储以分析操作系统，并指出该单元与MGU22H的相似性，最大区别在于新的APIX子板。
+
+---
+
+## 31. 任务导向的iproute2用户指南
+
+**原文标题**: Task-centered iproute2 user guide
+
+**原文链接**: [https://baturin.org/docs/iproute2/](https://baturin.org/docs/iproute2/)
+
+以下是该文章的简洁摘要（不超过300字）：
+
+本文是一份以任务为中心的 `iproute2` 用户指南，旨在替代 `ifconfig`、`brctl`、`route` 等传统 Linux 网络工具。核心命令 `ip` 统一管理地址、链路、邻居、路由、隧道等，另有 `bridge` 和 `ss` 命令。
+
+主要内容包括：  
+- **地址管理**：使用 `ip address add/del/show` 添加、删除和查看 IPv4/IPv6 地址，支持标签和 `permanent`/`dynamic` 筛选。  
+- **邻居表**：`ip neighbor` 查看/操作 ARP/NDP 缓存，支持手动添加静态条目。  
+- **链路操作**：`ip link set up/down` 控制接口状态，可修改 MAC、MTU、创建 VLAN、VXLAN、GRE、桥接等虚拟接口。  
+- **路由**：`ip route` 管理路由表，包括默认路由、黑洞路由、多路径路由和策略路由（`ip rule`）。  
+- **高级特性**：VRF、网络命名空间（`ip netns`），以及 TUN/TAP、L2TPv3、GENEVE 等隧道技术。  
+- **脚本友好**：支持 `--oneline`、`--brief`、`--json` 输出格式，便于自动化。  
+- **通用要点**：所有修改命令需 root 权限；命令可缩写但建议脚本中使用完整形式；配置文件位于 `/etc/iproute2`。
+
+文档以具体任务示例驱动，强调实用性，并欢迎社区贡献。
+
+---
+
+## 32. Wasmtime中的垃圾回收与异常
+
+**原文标题**: GC and Exceptions in Wasmtime
+
+**原文链接**: [https://bytecodealliance.org/articles/wasmtime-gc](https://bytecodealliance.org/articles/wasmtime-gc)
+
+Wasmtime 47 版本默认启用了 WebAssembly 的垃圾回收（GC）和异常处理提案。GC 提案允许包含对象和引用的高级语言使用 WebAssembly 内置的垃圾回收器，而非嵌入自己的回收器，从而减少二进制膨胀。它引入了带有子类型关系的结构体和数组类型，由运行时自动管理。异常处理提案用原生的 `throw` 和 `try/catch` 结构取代了自定义调用约定，消除了正常执行路径上的开销。
+
+Wasmtime 的 GC 实现采用 Cheney 风格的双半区复制收集器。GC 对象通过线性内存中的 32 位索引引用，提供了沙箱隔离、紧凑指针和可移植性。该收集器与池化实例分配器集成，以保持快速的实例化时间。为确保正确性，模糊测试得到了扩展，增加了生成任意 GC 程序并检测堆损坏的工具。
+
+性能目前并非首要关注点；该收集器针对大量短期、可丢弃的 Wasm 实例（水平扩展）设计，而非单个长期运行的进程。未来工作包括利用 GC 类型信息进行别名分析优化，以及原型化 GC 与组件模型的集成，使垃圾回收语言成为组件生态系统中的一等公民。
+
+---
+
+## 33. 硬盘可能已满
+
+**原文标题**: Harddrive Is Probably Full
+
+**原文链接**: [https://www.marginalia.nu/log/a_139_hdd/](https://www.marginalia.nu/log/a_139_hdd/)
+
+文章讨论了硬盘无论容量多大都总是被填满的持久趋势。作者提到其0.47 TB的根驱动器仅剩3%的可用空间，而12 TB的辅助驱动器也只剩1%的空余。一项面向81位受访者的Mastodon投票显示，约半数人的硬盘占用率超过75%。作者认为，这一现象不能简单用熵（即“满”的状态可能性更多）来解释，更关键的是人类行为：我们直到问题变得痛苦才去理会，然后只清理到暂时缓解压力的程度，因为评估每个文件实在太过繁琐。
+
+这种模式不仅限于存储——软件只有在运行过慢时才会被优化，技术债务只有在难以忍受时才会被重构，道路只有在拥堵时才会被扩建，饮食只有在衣服穿不下时才会改变，甚至自由职业者的日程也会像全职工作一样排得满满当当。作者指出，等待痛点出现再解决，会让问题比提前处理更加棘手，然而过早优化又不可取。解决方案是施加真正的约束——比如预算——迫使你在更小的限制内进行优化。例如，在树莓派上开发软件，能确保它在性能更强的机器上运行得飞快。资源往往让人以更高的成本做同样的事，而非用来实现更多。
+
+---
+
+## 34. 英国AISI/Caisi对Kimi K3网络能力的初步评估
+
+**原文标题**: UK AISI / Caisi Preliminary Assessment of Kimi K3's Cyber Capabilities
+
+**原文链接**: [https://www.nist.gov/news-events/news/2026/07/uk-aisi-caisi-preliminary-assessment-kimi-k3s-cyber-capabilities](https://www.nist.gov/news-events/news/2026/07/uk-aisi-caisi-preliminary-assessment-kimi-k3s-cyber-capabilities)
+
+英国人工智能安全研究所（UK AISI）与美国人工智能标准与创新中心（CAISI）联合评估了月之暗面公司于2026年7月16日发布的Kimi K3模型。评估聚焦于网络能力，结果显示Kimi K3的性能显著低于近期前沿的网络能力模型。
+
+在漏洞利用开发（ExploitBench）测试中，Kimi K3的成功率为32%——低于美国前沿模型，但高于GLM-5.2（24%）。关键的是，Kimi K3在全部41项任务中均未能实现任意代码执行（ACE），而顶级模型平均在41项任务中成功执行20次ACE。
+
+在模拟企业网络攻击测试（"最后的幸存者"，共32步骤）中，Kimi K3平均推进至第17步（前沿模型：28.5步）。在10次尝试中，它仅在1次尝试中完整完成了攻击（在1亿token限制内），展现出对防御薄弱系统的攻击能力，但其可靠性远低于顶级闭源模型（后者在10次尝试中成功6至7次）。Kimi K3的表现优于GLM-5.2（平均推进至第11步）。
+
+该模型的安全防护措施在测试期间未能阻止攻击性网络操作。综合网络能力（基于项目反应理论）评估显示，Kimi K3位列美国领先模型之后，但优于此前开源模型。该评估为初步结果，基于有限的基准测试集，且Kimi K3的得分仅来自单一基准（ExploitBench），导致置信区间较宽。
+
+---
+
+## 35. PyPI 博客：发布版本现于14天后拒绝新文件
+
+**原文标题**: PyPI Blog: Releases now reject new files after 14 days
+
+**原文链接**: [https://blog.pypi.org/posts/2026-07-22-releases-now-reject-new-files-after-14-days/](https://blog.pypi.org/posts/2026-07-22-releases-now-reject-new-files-after-14-days/)
+
+**摘要：**  
+PyPI 现已阻止向超过14天的旧版本上传新文件，以防止在发布令牌或工作流遭泄露时，稳定版本被投毒。该措施受PEP 740（数字认证）讨论启发，并在LiteLLM和Telnyx因Trivy GitHub Action遭攻击后加速推进，被认为影响较小：前15000个包中仅56个在发布超过14天后上传了兼容3.14的轮子。PyCon US 2026的打包峰会达成共识，支持通过版本号递增来适配新版Python。补丁于2026年7月8日合并。此举减少了PyPI管理员的清理工作，并避免了不明确的“部分受损”版本。未来Upload 2.0 API（PEP 694）将为“已关闭”版本提供正式语义。Seth Larson和Mike Fiedler的工作由Alpha-Omega支持。
+
+---
+
+## 36. 东京灭绝媒体博物馆
+
+**原文标题**: Extinct Media Museum Tokyo
+
+**原文链接**: [https://extinct-media-museum.blog.jp/otemachi/](https://extinct-media-museum.blog.jp/otemachi/)
+
+**东京灭绝媒体博物馆概述**
+
+灭绝媒体博物馆是位于东京（千代田区）的一家私立博物馆，致力于收藏和展示已经或即将过时的媒体与设备，其核心理念是：所有非纸质/石质媒体终将消亡。馆藏约4000件物品（其中3000件常设展出），重点关注家用电影摄影机——从8毫米胶片（9.5毫米、双8、单8、超8）到录像带（Betamax、VHS、8毫米、DV）及存储式摄像机。该博物馆是一座“触摸式博物馆”，参观者可自由接触所有展品，以观察其结构、质感和重量。
+
+入场需付费；学生、教职员工及残障人士可享受折扣或免费入场。参观者可拍照、录像及进行3D扫描。目标是让影像在全球范围内共享。展品可作为道具出租用于电影、音乐视频和电视节目。馆内商店出售独家纪念品。地下室设有“失传目录图书馆”，收藏了1960年代至2020年代的3000份产品目录，并提供一台ScanSnap扫描仪，供参观者数字化并带走目录。博物馆还免费提供其90%藏品的在线数据库。
+
+博物馆位于JR神田站和大手町站附近。文章下方设有评论区，讨论捐赠咨询及物品处理事宜。
+
+---
+
+## 37. 汉娜·弗莱因数学推广荣获2026年利拉瓦蒂奖
+
+**原文标题**: Hannah Fry Wins the Leelavati Prize in 2026 for Mathematics Outreach
+
+**原文链接**: [https://www.maths.cam.ac.uk/features/professor-hannah-fry-wins-leelavati-prize](https://www.maths.cam.ac.uk/features/professor-hannah-fry-wins-leelavati-prize)
+
+汉娜·弗莱教授在2026年国际数学家大会上被授予莱拉瓦蒂奖，以表彰她在提升公众数学认知方面的杰出贡献。她是剑桥大学应用数学与理论物理系首位担任"数学公众理解"教授职位的人。颁奖词称她为全球最重要的数学大使，通过书籍、视频和电视节目将数学转化为充满奇迹的语言。弗莱表示，她希望分享数学"奇妙的秘密"，并将其比作值得传播的"八卦"。
+
+莱拉瓦蒂奖由国际数学联盟每四年颁发一次，是弗莱获得的最新荣誉。此前她曾荣获克里斯托弗·泽曼奖章（2018年）、英国皇家学会大卫·爱登堡奖（2024年）、艾美奖（2025年）、威比奖（2026年），并入选《时代》周刊"全球百大数字影响力人物"（2026年）。她还通过2019年英国皇家科学院圣诞讲座、剑桥大学劳斯·鲍尔讲座及工作坊等活动激励下一代。
+
+应用数学与理论物理系主任尼克·多雷教授称赞弗莱在数学传播领域做出了无可匹敌的贡献。弗莱强调，理解数学的障碍在于动力而非能力，她的角色是"在人们的想象中凿开一个洞"，激发好奇心。本文附有弗莱的播客采访链接，以及Plus数学科普平台关于2026年国际数学家大会的更多报道。
+
+---
+
+## 38. AI生产力幻觉
+
+**原文标题**: The AI Productivity Illusion
+
+**原文链接**: [https://www.hardresetmedia.com/p/the-ai-productivity-illusion](https://www.hardresetmedia.com/p/the-ai-productivity-illusion)
+
+马特·谢勒指出，尽管生成式AI能够更快地完成写作和编程等任务，但并未提升公司或整体经济层面的生产力。他区分了生产力在日常含义（在更短时间内产出更多）与经济含义（产出相对于投入的价值）之间的差异。经济生产力取决于质量与价值，而不仅仅是速度。
+
+AI的关键问题包括其高昂的基础设施成本（至今已超过1.5万亿美元）以及持续存在的可靠性问题——错误、幻觉和捏造内容迫使专业人士花费额外时间修正纰漏，从而降低了净价值。即使错误得到解决，AI的产出也可能缺乏足够的经济需求来推动显著增长。例如，虽然AI增加了应用程序的发布数量，但具有显著使用量的应用数量却有所下降。更糟糕的是，AI还可能通过助长攻击和生成浪费时间的低质量"垃圾内容"来损害网络安全等领域的生产力。
+
+谢勒总结道，这种表面上的生产力脱节并非等待通过组织变革来解决的"悖论"，而是一种幻觉：AI的速度提升很可能被其不可靠性和有限的经济价值所抵消。
+
+---
+
+## 39. 一项旧专利启发了新型“Y型拉链”，这是一种三面紧固件。
+
+**原文标题**: An old patent inspired the new "Y-zipper", a three-sided fastener
+
+**原文链接**: [https://news.mit.edu/2026/three-sided-y-zipper-design-0504](https://news.mit.edu/2026/three-sided-y-zipper-design-0504)
+
+本文详细介绍了由麻省理工学院计算机科学与人工智能实验室（MIT CSAIL）研究人员开发的“Y型拉链”——一种受麻省理工学院比尔·弗里曼教授1985年专利启发而制成的三面紧固件。与传统拉链不同，Y型拉链能让物体在柔性与刚性状态之间快速切换。用户可通过软件程序自定义设计，选择条带长度、弯曲角度以及运动模式（直线、弯曲、盘绕或扭转），随后使用PLA和TPU等塑料进行3D打印。
+
+其应用包括快速搭建帐篷（不到90秒）、可调式医疗手腕护具（提升舒适度）、适应崎岖地形的自适应机器人腿，以及动态艺术装置。耐久性测试表明，由于弹性应力分布特性，Y型拉链在经历超过18,000次开合循环后才断裂。未来计划包括使用金属等更坚固的材料，并扩大规模用于更大项目。潜在用途涵盖太空探索（采集岩石样本）和灾害救援（快速部署避难所）。该研究成果已于2026年4月在ACM CHI会议上发表。
+
+---
+
+## 40. 巴西农民将奶牛代币化以获取贷款，绕过银行限制
+
+**原文标题**: Brazilian farmers tokenized dairy cows to get loans, bypassing bank limits
+
+**原文链接**: [https://www.coindesk.com/markets/2026/07/24/brazilian-farmers-tokenized-dairy-cows-to-get-loans-bypassing-bank-lending-limits](https://www.coindesk.com/markets/2026/07/24/brazilian-farmers-tokenized-dairy-cows-to-get-loans-bypassing-bank-lending-limits)
+
+巴西巴拉那州的农民在该国的B3证券交易所将10头奶牛代币化，以牲畜为担保筹集了近2万美元的信贷。这一世界首创的举措帮助小型农业企业绕过银行更严格的贷款限制。
+
+该项目由农业科技公司Cowmed牵头，该公司为奶牛配备了由人工智能驱动的“智能项圈”，可实时监测奶牛的健康、行为和位置。这些数据为每头奶牛创建了加密数字身份，防止重复抵押，并使奶牛成为可移动的抵押品。农户还可以在系统内将死牛替换为活牛。
+
+目前，Cowmed已在1000多个农场监控约10万头奶牛，总价值超过3.95亿美元。该公司预计其网络中多达20%的用户将采用这种代币化融资模式，可能释放出7760万美元的新农业信贷。此举是现实世界资产（RWA）代币化更广泛推进的一部分，麦肯锡预测到2030年其规模可能增长至4万亿美元，而目前代币化资产总额为250亿美元。
+
+---
+

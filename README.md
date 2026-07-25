@@ -2,240 +2,145 @@
     
 这是 Top 10 的每日摘要，更多请点击 [Top 100](output/hacker_news_summary_2026-07-25.md)
 
-*最后自动更新时间: 2026-07-25 00:19:19*
-## 1. 现代MUD的案例（2018）
+*最后自动更新时间: 2026-07-25 20:38:33*
+## 1. 在明尼苏达州莫里斯利用风力生产氨和肥料
 
-**原文标题**: The case for MUDs in modern times (2018)
+**原文标题**: Producing ammonia and fertiliser using wind power in Morris, Minnesota
 
-**原文链接**: [https://www.andrewzigler.com/feed/the-case-for-muds-in-modern-times](https://www.andrewzigler.com/feed/the-case-for-muds-in-modern-times)
+**原文链接**: [https://ammoniaenergy.org/articles/flexible-renewable-ammonia-demonstrator-now-operational-in-minnesota/](https://ammoniaenergy.org/articles/flexible-renewable-ammonia-demonstrator-now-operational-in-minnesota/)
 
-以下是所提供文章的简要摘要：
-
-本文论证了即使在图形丰富游戏主导的时代，MUD（多用户地牢/维度/领域）——基于文本的虚拟世界——依然具有持久的相关性。它解释了MUD完全由文本驱动，玩家通过书面描述导航“房间”，并通过输入“拿剑”或“查看宝石”等命令进行互动。
-
-其关键吸引力在于实时、不断变化的模拟。这些系统可以模拟时间、天气、经济和非玩家角色行为，创造沉浸式且相互关联的环境。MUD种类繁多，从自动化桌面角色扮演规则的直接“砍杀”游戏，到玩家共同编写故事的完全自由形式的角色扮演空间。
-
-文章通过“远程呈现”的视角来框架这种体验，引用学者赖因戈尔德和图尔克勒的描述，说明MUD如何仅通过文本创造强烈的存在感、社交丰富性和沉浸感。这使得它们对视觉障碍玩家特别友好，他们可以使用屏幕阅读器像正常视力用户一样有效游玩。
-
-MUD的一个主要优势是创作门槛低。与图形游戏（资产如模型、特效有不同开发成本）不同，构建一个MUD只需要文字，使其成为一种纯粹的创造行为（“诗学”），仅受限于开发者的想象力。
-
-然而，文章承认了重大挑战。在2018年启动一个MUD很困难；许多代码库老旧且复杂。开发一个质量游戏可能需要数月或数年，而形成的小众社区往往迅速出现又消失，有时甚至会丢失所有内容。它向现代开发者推荐Ranvier引擎（用JavaScript构建），并向玩家推荐Top Mud Sites等列表网站。
-
-最终，文章认为，直到图形技术能够超越人类想象力，MUD将通过专注于深度、富有自主性的体验而持续存在。它邀请读者探索这一持久的媒介。
+明尼苏达州莫里斯市的一座开创性设施已启动首个低碳氨生产季，目标日产一吨用于本地肥料。风力涡轮机为电解槽供电，向哈伯-博施工厂供应氢气，创新控制系统可调整生产速率以应对波动的可再生能源。该项目位于明尼苏达大学西中央研究与推广中心，由明尼苏达大学、RTI国际和卡萨莱合作完成。它基于2013年的试点项目进行规模扩展，未来可发展为由农民合作社所有的商业可再生氨中心。氨可储存或与乙醇生产的二氧化碳结合生产尿素，这是明尼苏达州最常用的肥料。研究人员强调了经济效益：本地生产可负担的氮肥，减少供应链不稳定，并通过动态工厂运行以最小化昂贵的氢气储存。该项目在AEA的2025年12月期节目中详细介绍。
 
 ---
 
-## 2. 如何编写一个Quine
+## 2. 被偷的纽扣
 
-**原文标题**: How to Write a Quine
+**原文标题**: Stolen Buttons
 
-**原文链接**: [https://czterycztery.pl/slowo/quine-EN.html](https://czterycztery.pl/slowo/quine-EN.html)
+**原文链接**: [https://anatolyzenkov.com/stolen-buttons](https://anatolyzenkov.com/stolen-buttons)
 
-本文介绍了如何编写一个自产生程序（quine）——即无需内省即可打印自身源代码的程序。文章分为两部分：一则用于构建直觉的寓言，以及一个具体的Python实现。
+提供的文本中并没有一篇题为“Stolen Buttons”的连贯文章。相反，它似乎是来自多个网站的界面元素、促销信息和菜单项的杂乱集合。关键片段包括：
 
-**自我复制机器的寓言**  
-想象一台能够根据蓝图制造任何物体的机器。为了在不使用内省的情况下制造自身的副本，你可以修改这台机器，使其在制造子机器后，复制蓝图并将该副本插入子机器的蓝图架中。这样一来，子机器获得了完整的蓝图（包括复制指令），从而成为精确的复制品。这对应了自产生程序的结构：程序必须生成一个字符串，当该字符串被执行时，能够再现原始程序。
+- **自动墨水配送**：一种在耗材不足时自动发送打印机墨水或碳粉的服务，附带免费注册优惠和条款。  
+- **Schulranzen Timeless**：Airpaq 出品的一款轻便、宽敞的学生背包，以德语描述，可选择配置、购买或了解更多。  
+- **Adobe After Effects**：与瑞典语的“DesignShowcase”一同提及，可能是一个设计或教程资源。  
+- **登录/注册提示**：多处呼吁注册、登录、创建账户或管理购物车，通常与高级功能、试用或社区帖子相关。  
+- **其他杂项**：诸如“访问 Reddit”“浏览组件”“了解热力图”“参见 MLA 格式指南”等短语，表明内容混杂了电商、设计和教育材料。
 
-**用Python编写自产生程序**  
-1. 从一个打印其他程序源代码的程序开始：`print('print()')`。这好比一台制造机器（空蓝图架）的机器。  
-2. 将字符串创建和打印分离：`string='print(here)'; print(string)`。然后修改它，通过切片和`repr`在`here`处插入字符串的副本：  
-   `string='string=here; print(string)'; string=string[:7] + repr(string) + string[11:]; print(string)`。  
-3. 更新字符串字面量以匹配新程序：  
-   `string='string=here; string=string[:7] + repr(string) + string[11:]; print(string)'; string=string[:7] + repr(string) + string[11:]; print(string)`。  
-此方法之所以有效，是因为`repr`添加了引号和转义，而切片避免了`replace`的陷阱（后者会将替换命令内部的`here`一词也一并替换）。
-
-**方法总结**  
-- 编写一个程序，该程序创建并打印另一个程序的源代码，而这个被打印的程序本身也能打印某些内容。  
-- 在创建与打印之间，插入代码，将程序文本的字面量放入占位符中。  
-- 由于程序发生了变化，相应地更新字符串字面量。  
-
-文章还指出，如果占位符出现多次，使用`replace`可能会失败，并建议采用`'HERE'.lower()`或`'ereh'[::-1]`等变通方法。最终的自产生程序之所以能够工作，正是因为它精确地将自身源代码构建为字符串并输出。
+不存在关于被盗纽扣的中心叙事或文章。这段文本似乎是粘贴自一个杂乱的网页或界面流程，而非结构化的文章。
 
 ---
 
-## 3. Buz – 使用现代Zig的Bun分支，具有亚秒级增量构建
+## 3. 展示HN：Proxmox → 通过网络将主机的蓝牙共享给虚拟机
 
-**原文标题**: Buz – A fork of Bun using modern Zig, with sub-1s incremental builds
+**原文标题**: Show HN: Proxmox -> Share your host's Bluetooth with a VM over the network
 
-**原文链接**: [https://ziggit.dev/t/buz-a-drop-in-replacement-for-bun-using-modern-zig-with-sub-1s-incremental-builds/16891](https://ziggit.dev/t/buz-a-drop-in-replacement-for-bun-using-modern-zig-with-sub-1s-incremental-builds/16891)
+**原文链接**: [https://github.com/lucid-fabrics/proxmox-bluetooth](https://github.com/lucid-fabrics/proxmox-bluetooth)
 
-**《“Buz——一个使用现代Zig的Bun分支”摘要》**
+本文介绍了一种解决Proxmox Linux虚拟机蓝牙直通问题的工具，尤其针对英特尔板载芯片（BE200、AX210、AX211）在分配给虚拟机时重置的问题。该方案不采用直接直通，而是让宿主机保留蓝牙芯片，并利用BlueZ的`btproxy`将原始HCI数据通过本地网络流式传输到虚拟机，虚拟机将识别为一个正常适配器。
 
-Buz是Bun的一个正在开发中的分支，基于Bun重写为Rust之前的最后一个提交。作者将整个项目（包括内联的JavaScriptCore源码）移植为使用现代上游Zig构建，并采用略微修补过的Zig主版本以实现增量重建。这使得增量构建时间低于1秒，大幅改善了开发循环。
+**关键要点：**
+- **问题：** 英特尔CNVi蓝牙芯片物理上需要宿主机驱动加载固件；任何虚拟机移交都会导致芯片擦除。游戏发行版（ChimeraOS、Bazzite）同样面临此问题。
+- **解决方案：** 两条命令：在Proxmox宿主机上执行（`curl ... | sudo bash`）以共享适配器；在虚拟机内部执行（`curl ... | sudo bash -s -- <主机IP>`）以连接。两者均支持开机自启和自动重连。
+- **兼容性：** 适用于所有Linux支持的蓝牙芯片（英特尔、联发科、USB适配器），但固件损坏的芯片（如Barrot）除外。支持手柄、耳机、BLE传感器。
+- **性能：** 延迟增加不到1毫秒，无明显卡顿。
+- **限制：** 每次仅支持一台虚拟机（每颗芯片）；仅限Linux客户机；共享期间宿主机失去本地蓝牙功能。
+- **恢复：** 若英特尔芯片看似失效，请完全断电重启设备（关闭电源开关15秒）。针对ChimeraOS/Bazzite挂起问题，请屏蔽休眠目标。
 
-目标是成为Bun的即插即用替代品，拥有更清晰、更易于维护的代码库。为此，作者从Rust版Bun导入了所有新测试，并删除了超过11000行死代码——认为Bun原始代码库异常疏于维护。多个子系统已使用地道Zig和标准库重写，在此过程中修复了无数错误。
-
-作者明确表示大量使用AI/LLM，将Bun的代码描述为“典型的AI垃圾”，并指出任何人都不应该去梳理那约60万行混乱的代码。因此，**在项目被认为足够合理之前，将不接受任何人工编写的贡献**，而要使项目合理很可能需要重写大部分子系统。LLM将被广泛使用，但会有人类监督，重点在于减少技术债务并编写地道的Zig。中期目标是在几周或几个月内成为Rust版Bun 1.4.0的即插即用替代品。
-
-作者注意到Ziggit上有一个类似项目，发帖以避免重复，尽管他们尚未查看该项目。他们欢迎指出Bun代码库中特别糟糕的部分，并将此项目视为提升自身Zig技能的一种方式，希望最终能在没有LLM帮助的情况下变得可维护。
-
----
-
-## 4. 小而真实、原始的网络
-
-**原文标题**: The small, real, original web
-
-**原文链接**: [https://spacetimetech.wordpress.com/2026/07/19/the-small-real-original-web/](https://spacetimetech.wordpress.com/2026/07/19/the-small-real-original-web/)
-
-## 摘要：“小而真实、原始的互联网”
-
-这篇2026年7月的博文倡导独立、小众、慢速的网络——即20世纪90年代和21世纪初的非企业化互联网——并主张尽管AI炒作和企业主导盛行，它依然蓬勃发展。作者强调，网络建立在草根工具（Usenet、FTP、论坛、邮件列表）之上，而非利润。
-
-### 关键资源与工具
-- **浏览器**：推荐Firefox、Waterfox、Vivaldi、Zen或TOR；因CEO争议建议避免使用Brave和Mullvad VPN。
-- **最佳资源**：32bit.cafe上的“个人网络资源清单”，涵盖网站管理指南、RSS、网络托管商（如Neocities）、网络环以及大型科技公司的独立替代品（如Kagi、wiby、Marginalia搜索）。
-- **其他工具**：Teclis搜索（融合Kagi与Marginalia）、wiby.me/surprise（随机个人网站）、theforest.link（随机目录链接）、openmentions.com（Webmention/ActivityPub标签）、Raw Web搜索、低技术太阳能网络杂志、朋克网络环。
-
-### Fediverse与去中心化服务
-Mastodon、PeerTube（通过Sepia Search、fedi.video、Spectra实例搜索）、Lemmy（如lemmy.world、lemmy.today）。推荐Stefan的“加入Fediverse”网站。
-
-### 个人网站与博客
-作者运营deadscorpionranch.com、Mr. Beamer’s Old Timey Web Portal和一个Bear博客；使用Porkbun管理域名，Neocities托管网站。鼓励创建“数字花园”或“数字车库”，并附上博客列表以提高可发现性。提及喜爱的博客（如Arcade Blogger）以及类似Junited（2024年启动的六月博客挑战）的活动。
-
-### RSS与协议
-称RSS为“网络上最重要的事物之一”；推荐gReader搭配Feedly。提及Gemini和Gopher协议作为替代性小型网络协议。
-
-### 核心信息
-原始、由人创造的网络早于企业议程，并将比它们更持久。本文是一份使用现代工具和网络重新找回这种精神的实用指南。
+该工具采用MIT许可，开源设计，专为无需购置新硬件、在虚拟机中需要蓝牙功能的家用实验室用户打造。
 
 ---
 
-## 5. 我通过黑客手段进入了YC创业学校
+## 4. Android或很快限制设备端ADB
 
-**原文标题**: I got into YC Startup School by hacking it
+**原文标题**: Android May Soon Restrict On-Device ADB
 
-**原文链接**: [https://obaid.wtf/jotbook/2026/07/18/how-i-got-into-yc-by-hacking-it.html](https://obaid.wtf/jotbook/2026/07/18/how-i-got-into-yc-by-hacking-it.html)
+**原文链接**: [https://kitsumed.github.io/blog/posts/android-may-soon-restrict-on-device-adb/](https://kitsumed.github.io/blog/posts/android-may-soon-restrict-on-device-adb/)
 
-作者讲述了自己是如何利用**Paxel**（一个用于评估申请者的代码分析工具）的安全漏洞，攻破了Y Combinator的创业学校申请流程。Paxel通过LLM分析开发者的工作，从五个维度（执行力、引导能力、工程质量、产品思维、规划能力）进行评分，并将分数上传至YC的服务器。
+该文章讨论了Android的一项拟议变更，旨在将设备端ADB连接（环回）限制为仅通过Wi-Fi接口（wlan0），这一提议基于谷歌IssueTracker上一位ADB维护者以安全为由的评论。作者Kitsumed（基于Shizuku的应用开发者）解释道，ADB（Android调试桥）允许高权限的开发者交互。设备端ADB使用户能够通过环回在同一设备上运行ADB客户端和服务器，从而支持Shizuku、应用管理器和通话录音等工具。
 
-该漏洞在于：系统使用nonce验证LLM结果，但**未对实际分数和备注进行HMAC签名**。这意味着任何人都可以拦截并修改任何阶段的数据——提高分数或更改反馈——而YC会照单全收。作者构建了一个名为**boosted-paxel**的工具，允许用户伪造分数；在补丁发布前，超过20名用户将自己排名为前1%。
+该拟议变更旨在阻止恶意应用利用权限提升漏洞。然而，作者认为，如果没有用户明确的操作（启用USB调试、授权连接或配对），设备端ADB无法被利用。三种场景表明，恶意应用无法启动ADBD或绕过手动审批。因此，限制环回将破坏合法用途——如没有电脑的开发者、无障碍工具和高级用户应用——而不会带来真正的安全收益。
 
-作者先通过邮件私下披露了此问题（未获回复），随后公开披露。几小时内，YC的Jared Friedman回复，**宣布已打补丁**（为所有LLM输出添加HMAC签名），并邀请作者前往旧金山参加创业学校。作者还建议增加可选的第二层防护：对从未展示给客户端的字段（分数、备注、标题）进行加密，以实现完全隐匿。
-
-文章称赞了Paxel出色的用户体验（单条cURL命令），并质疑该漏洞是否是有意为之的彩蛋——最终根据修复方式判断并非如此。补丁发布后，作者的工具现在仅显示原始分数。作者在结尾邀请潜在联合创始人在旧金山创业学校活动期间联系。
+作者建议提供一个持久化开关（重启后仍保留）以允许环回ADB，而非永久封禁。他们强调，因假设性风险而禁用该功能是不成比例的，类似于尽管设备管理或无障碍功能可能被滥用但仍然保留它们。鼓励在问题跟踪器上提供建设性反馈，但应避免垃圾信息。
 
 ---
 
-## 6. 自建邮件服务器
+## 5. 开放权重AI迎来其Kubernetes时刻
 
-**原文标题**: Self-host your mail server
+**原文标题**: Open-weight AI is having its Kubernetes moment
 
-**原文链接**: [https://blog.haschek.at/2026/you-should-selfhost-your-mail.html](https://blog.haschek.at/2026/you-should-selfhost-your-mail.html)
+**原文链接**: [https://tobi.knaup.me/2026-07-25-open-weight-ai-is-having-its-kubernetes-moment/](https://tobi.knaup.me/2026-07-25-open-weight-ai-is-having-its-kubernetes-moment/)
 
-本文认为，在2026年自托管电子邮件服务器不仅可行，而且实用，反驳了应避免这一做法的普遍建议。作者运营着一家帮助客户摆脱谷歌和微软的MSP公司，并提供了完整指南。
+该文章认为，开放权重AI模型正迎来一个“Kubernetes时刻”——一个开放、可定制的平台能够吸引远超任何单一供应商所能实现的创新。作者结合自己联合创办Mesosphere（被Kubernetes颠覆）的经验指出，开放权重模型（如Qwen、Gemma、GLM-5.2、Kimi K3）现已接近前沿性能，催生了一个日益壮大的生态系统，涵盖推理工具、微调及各类专业适配。这一生态系统的累积效应，使得封闭模型很难长期超越它。
 
-**家庭托管的关键前提条件：**
-- 静态IPv4地址（未被列入黑名单）
-- 不在运营商级NAT（CGNAT）之后
-- 能够设置PTR记录（通过ISP）
-- 开放端口25、143、465、587、993
-- 短期中断（一天内少于40%）没问题，因为邮件有重试机制
-
-**软件选择：**
-- **docker-mailserver**（推荐入门）
-- **Stalwart、Mailcow**或手动搭建（如ISPConfig）
-
-**必要的DNS记录：**
-- **SPF** – 定义授权发送方
-- **DKIM** – 邮件头中的加密签名
-- **DMARC** – 防止伪造
-- **MX** – 指向邮件服务器主机名
-- **PTR** – 与主机名匹配的反向DNS
-
-**垃圾邮件解决方案——关键突破：**
-传统反垃圾邮件技术（黑名单、关键词过滤）效果不佳。作者使用**rspamd**配合**GPT插件**，该插件采用本地大语言模型（如**Gemma 4 12B QAT**，约7GB内存）。LLM对每封邮件进行概率评分并给出推理。示例配置展示了如何将rspamd连接到本地llama.cpp服务器，利用收件人历史记录实现上下文感知的垃圾邮件检测。
-
-**邮件客户端：**
-- 桌面端：**Thunderbird**（开源、搜索功能好、有安卓应用）
-- 网页邮件：**MailFlow、Kurrier、SnappyMail、Roundcube**
-
-**维护：**
-现代解决方案（如docker-mailserver）支持自动更新。备份至关重要，至少测试一次恢复。
-
-**结论：**
-自托管电子邮件运行良好，即使在家也能实现，并且鼓励为了数据主权而采用。文章提供了测试工具（mail-tester.com），并邀请通过SSH发表评论。
+作者批评了美国拟禁止中国开放权重模型的提议，称其为“自摆乌龙”，因为这将孤立美国开发者，而世界其他国家却正基于这些模型进行创新——中国模型已占Hugging Face下载量的41%。相反，美国应该通过以下方式展开竞争：发布采用宽松许可的顶级美国开放权重模型；通过政府采购推动互操作、可移植的系统；建设配套技术栈（推理、工具、硬件）；通过独立测试而非全面禁令来制定安全标准。核心信息是：开放生态系统驱动创新；美国应当通过参与而非筑墙来引领。
 
 ---
 
-## 7. 防止<code>元素中的换行
+## 6. 展示HN：我制作了一些晶体管动画
 
-**原文标题**: Preventing line breaks in <code> elements
+**原文标题**: Show HN: I made some transistor animations
 
-**原文链接**: [https://alexwlchan.net/2026/non-breaking-code/](https://alexwlchan.net/2026/non-breaking-code/)
+**原文链接**: [https://brandonli.net/semisim/animations](https://brandonli.net/semisim/animations)
 
-文章介绍了作者在其网站上实施的一项排版改进，旨在防止`<code>`元素内出现不合理的换行。此前，作者在正文中使用不间断空格和连字符来避免“5 cm”或“New‑York”等短语被分割到两行。在审阅一篇包含大量内联代码片段的博文时，作者发现了一些无益的换行——例如，`(?-u:…)`被拆分为`(?-`和`u:…)`，以及`--multiline`在第一个连字符后断开。这种换行影响可读性，而对于简短的代码片段毫无益处。
+本文介绍了一种半导体模拟器，可生成三种晶体管类型的动画：NPN双极结型晶体管、n沟道金属氧化物半导体场效应晶体管和n沟道结型场效应晶体管。动画中，蓝点和红点分别代表电子和空穴，白色闪烁表示复合事件。
 
-作者曾考虑在`<code>`中使用不间断连字符，但否定了该方案，因为用户复制粘贴代码时可能会改变原意。于是，作者编写了一个Python函数，利用正则表达式查找包含1到15个字符的`<code>`元素（此为任意限制；较长的代码片段仍应换行，以避免过多空白）。如果代码片段包含连字符或空格，该函数会为该元素添加一个`nowrap` CSS类。相应的CSS规则设置`text-wrap: nowrap;`，以防止浏览器在这些字符处换行。
+提供了三组动画：
 
-要点：
-- 作者在正文中添加不间断字符以优化排版。
-- 内联代码片段在连字符处存在不佳换行问题。
-- 在代码中使用不间断连字符可能破坏复制后的文本。
-- 解决方案：通过编程检测包含换行字符的短`<code>`元素，并应用`nowrap`类。
-- 这一改动虽小，却让网站体验更佳。
+1. **基于速度**：载流子速度等于扩散电流与漂移电流之和除以总电荷；扩散过程未显式展示。
+2. **扩散与漂移**：载流子通过扩散和漂移两种方式运动，呈现最精确的描绘，但视觉上更为复杂。
+3. **探针测量**：显示各端点的电流和电压。
 
----
-
-## 8. 面向正确性的前端框架：基于Effect，架构如Elm
-
-**原文标题**: The front end framework for correctness: built on Effect, architected like Elm
-
-**原文链接**: [https://foldkit.dev/](https://foldkit.dev/)
-
-本文介绍了 **Foldkit**，一个基于 **Effect** 构建、架构上类似 **Elm**（Elm 架构）的前端框架。它通过单一不可变模型、纯更新函数以及将副作用建模为值（命令）而非命令式调用来优先保证**正确性**。这种结构使得应用在扩展时复杂度保持线性增长。
-
-**核心特性：**
-- **可预测的状态** – 所有状态集中在单一模型中；每次变更都通过 `update` 流转。
-- **显式的副作用** – 副作用以类型化命令（如使用 `Effect.sleep` 实现的 `DelayReset`）的形式返回。
-- **基于 Effect** – 应用本身就是 Effect；状态使用 Schema；错误通过 Effect 建模。
-- **开箱即用** – 路由（类型安全、双向）、无障碍 UI 组件（对话框、菜单、标签页）、子模型、订阅、资源管理（WebSocket、AudioContext）、字段验证，以及两个测试原语（用于状态机的 `Story` 和用于视图驱动测试的 `Scene`）。
-- **开发者工具** – 实时消息/模型检查、时间旅行，以及供 AI 代理连接和操作状态的 MCP（模型上下文协议）。
-- **嵌入** – 通过 `Runtime.embed` 在现有应用中运行 Foldkit 部件，并支持类型化端口。
-
-**目标受众：** Effect 用户、重视正确性的团队、有复杂状态（认证、实时、多步骤表单）的项目。
-
-**权衡：** 需要思维转换（无组件/钩子、无本地状态）；不支持渐进式采用（需要重写）；需要完整的 Effect 生态系统；仅限客户端 SPA（不支持 SSR）。
-
-本文包含实时代码演示以及相关资源链接（在线沙盒、GitHub、更新日志）。
+该模拟器允许用户比较不同的可视化方法，以理解这些半导体器件中的载流子运动和端点行为。
 
 ---
 
-## 9. 制作GIF的最难方式
+## 7. Show HN：Brolly，一个纯文本天气预报网站
 
-**原文标题**: The hardest way to make a GIF
+**原文标题**: Show HN: Brolly, a plain-text weather forecast site
 
-**原文链接**: [https://blog.willgrant.org/2026/07/23/the-hardest-way-to-make-gif.html](https://blog.willgrant.org/2026/07/23/the-hardest-way-to-make-gif.html)
+**原文链接**: [https://brolly.sh/forecast/RWFP2qW8](https://brolly.sh/forecast/RWFP2qW8)
 
-本文介绍了一种刻意繁琐的方法，通过老式模拟摄影制作GIF。作者的目标是将现实世界中持续1秒的动作，通过手工的家庭制作流程转化为循环动画图像，以此赞颂“用困难方式做事”的无用乐趣。
-
-**第一步：获取光子**——使用一台Lomo ActionSampler塑料相机（35多年前的设计），其发条机制带动快门以约1/250秒每帧的速度旋转，覆盖四个镜头，在36张装Lucky SHD 400黑白胶片上每秒拍摄4帧。
-
-**第二步：冲洗胶片**——作者在家中使用显影罐、卷片轴、Ilford Ilfosol 3显影液、Ilford Rapidfix定影液、暗袋及相关配件冲洗胶片。尽管技术不高，胶片成功显影，得到每帧包含四张图像的胶片条。
-
-**第三步：扫描图像**——由于没有胶片扫描仪，每帧被固定在LED灯板上，用三脚架上的数码相机拍摄（RAW格式以便调整曝光）。RAW文件在Affinity软件中反相并调整曝光。
-
-**第四步：裁剪帧**——由于塑料相机的对准不精确，四个子帧需在Affinity中手动裁剪并作为图层对齐（使用50%透明度作为洋葱皮技术）。生成的帧导出为编号PNG文件。
-
-**第五步：对齐帧并制作GIF**——使用ImageMagick，作者通过命令`magick -delay 25 -loop 0 1.png 2.png 3.png 4.png 3.png 2.png animated.gif`创建“乒乓”动画（帧序1-2-3-4-3-2），每帧延迟25/100秒（即4fps）。为获得更平滑运动，通过混合命令将连续帧各以50%透明度叠加生成中间帧。
-
-最终产物是一个从现实世界35mm胶片提取的、以4fps循环播放的GIF动画。作者幽默地暗示下一个项目将使用IMAX胶片。
+**摘要：**  
+Brolly 是一个极简主义纯文本天气预报网站（brolly.sh），由来自英国约克的 Jacob 创建。它以清晰、类似终端的布局展示当前天气状况、每日/每周展望以及详细的逐小时数据，涵盖温度、风力、降水、紫外线指数、空气质量和花粉浓度。示例显示了英格兰约克的预报，数据来自 Open-Meteo。主要功能包括“更改位置”选项、日期间导航以及降水和紫外线的可视化条。该网站提供搜索、统计、关于和隐私页面。联系方式：hello@brolly.sh。
 
 ---
 
-## 10. 《如此明亮的愿景》（1956年）——一个关于机器代替人类写作的故事 [pdf]
+## 8. 我的图像如何被抖动
 
-**原文标题**: So Bright the Vision (1956) – a story about machines writing instead of humans [pdf]
+**原文标题**: How My Images Are Dithered
 
-**原文链接**: [https://s3.us-west-1.wasabisys.com/luminist/EB/S/Simak%20-%20So%20Bright%20the%20Vision.pdf](https://s3.us-west-1.wasabisys.com/luminist/EB/S/Simak%20-%20So%20Bright%20the%20Vision.pdf)
+**原文链接**: [https://dead.garden/blog/how-my-images-are-dithered.html](https://dead.garden/blog/how-my-images-are-dithered.html)
 
-根据提供的PDF元数据和标题《如此明亮的前景（1956）——一个关于机器代替人类写作的故事》，这篇文章似乎是一篇探讨机器接管写作任务的未来的短篇小说或评论文章。PDF包含扫描图像数据（可能来自旧出版物）和有限的可读文本片段，但由于二进制编码，无法提取完整叙事。然而，标题和上下文暗示了以下要点：
+本文介绍了作者使用ImageMagick为图像赋予印刷般抖动效果的方法，具体采用粉红色单色美学。其目标是模拟AM（幅度调制）半色调——通过改变点的大小来表现色调——尽管该技术并不改变点的大小，而是在叠加旋转网点图案后进行减色处理。
 
-- 故事设想了一个自动化机器创作文学作品、取代人类作者的世界。  
-- 可能探讨了创造力、真实性以及人类作家在社会中的角色所受到的影响。  
-- 发表于1956年，早于现代人工智能，反映了对技术取代人类智力劳动的早期担忧。  
-- 语气可能是推测性的、警示性的或讽刺性的，质疑机器生成的写作是否能捕捉真正的远见或情感。
+操作流程：将图像转换为CMYK，分离出四个颜色通道，应用带高斯滤波的2×2图案背景，然后对每个通道进行失真（旋转）处理（角度分别为0°、15°、45°、75°）以避免莫尔条纹，叠加各通道，最后限制颜色数量。旧方法在转换为灰度后将颜色缩减为两种（黑色和粉色），模拟出伪AM效果。新方法使用`-remap`允许多种粉色色调，增强了层次感。作者承认此方法效率不高——可能导致文件体积增大，并在老旧CPU上耗时约10秒——纯粹是为了美学效果。示例显示浅色图像需要手动调整（亮度、反转）。文章包含完整的shell脚本，并指出真正的弗洛伊德-斯坦伯格抖动算法能生成更小的文件。该博文标记为元/代码，发布于德国埃尔福特。
 
-由于缺乏清晰的文本，无法做出精确总结，但核心主题是人类艺术性与机器写作效率之间的张力。
+---
+
+## 9. Bitchat现已上线Radicle
+
+**原文标题**: Bitchat is now on Radicle
+
+**原文链接**: [https://radicle.network/nodes/rosa.radicle.network/rad%3Az2v9tRJz1oknFAqCSY5W5c76nVvm6](https://radicle.network/nodes/rosa.radicle.network/rad%3Az2v9tRJz1oknFAqCSY5W5c76nVvm6)
+
+文章“Bitchat现已上线Radicle”仅显示一条通知，指出用户浏览器禁用了JavaScript。通知说明必须启用JavaScript才能使用该网站。由于页面无法在没有JavaScript的情况下加载，因此未提供有关Bitchat或Radicle的更多内容或详细信息。核心信息是该网站需要JavaScript功能才能访问。
+
+---
+
+## 10. 将 PyTorch Monarch 引入 AMD GPU
+
+**原文标题**: Bringing PyTorch Monarch to AMD GPUs
+
+**原文链接**: [https://pytorch.org/blog/bringing-pytorch-monarch-to-amd-gpus-single-controller-distributed-training-on-rocm/](https://pytorch.org/blog/bringing-pytorch-monarch-to-amd-gpus-single-controller-distributed-training-on-rocm/)
+
+本文介绍了将 PyTorch Monarch 移植到基于 ROCm 的 AMD Instinct GPU 上，以实现大语言模型的容错分布式训练。解决的关键挑战包括：传统检查点机制浪费计算资源、导致集群空闲时间，并且随着故障概率上升而无法扩展。Monarch 引入了一种基于单程序、角色（actor）的运行时，通过监督树实现分层故障隔离来管理 GPU 集群，支持快速本地恢复，无需全局重启。
+
+移植过程中需要借助 `hipify_torch` 和 RCCL 适配集体通信，通过 HIP 等价接口管理 GPU 内存，以及使用带有 HIP 绑定的 `libibverbs` 集成 RDMA。Rust 绑定通过兼容性垫片避免分叉。开源贡献确保了对 ROCm 7.0+ 的支持。
+
+在 16 节点 SLURM 集群（128 个 MI300 GPU）和 32 节点 Kubernetes 集群（256 个 MI355 GPU）上进行的实验训练了 Llama 3 8B 模型。尽管频繁注入故障（每 180 秒一次），训练仍无缝进行：活跃工作节点数虽有波动，但恢复迅速，损失曲线与无全局检查点重启的基准运行保持一致。
+
+未来工作包括扩展网卡支持、支持更多框架以及优化恢复延迟。与 TorchTitan 和 TorchFT 的集成展示了一个面向 AMD GPU 的生产级、高弹性训练栈。
 
 ---
 
