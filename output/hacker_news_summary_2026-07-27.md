@@ -1,0 +1,508 @@
+# Hacker News 热门文章摘要 (2026-07-27)
+
+这是今日 [Hacker News](https://news.ycombinator.com/) 上最热门的文章摘要。
+
+## 1. PGSimCity - PostgreSQL的工作原理
+
+**原文标题**: PGSimCity - How PostgreSQL Works
+
+**原文链接**: [https://nikolays.github.io/PGSimCity/](https://nikolays.github.io/PGSimCity/)
+
+PGSimCity 是一个独立、非商业的教育可视化项目，旨在以3D形式展示PostgreSQL数据库的内部工作原理。它并非由Electronic Arts公司开发或授权，SimCity是EA的商标。该项目提供了一个PostgreSQL引擎的工作模型，目前仍处于早期未审查的原型阶段，可能存在模型和解释上的不准确之处。开发者欢迎用户通过提交问题或拉取请求来指出错误。运行PGSimCity需要浏览器支持JavaScript和WebGL2。该项目的目标是通过交互式的城市模拟，帮助用户直观理解PostgreSQL的运行机制。
+
+---
+
+## 2. 教授设下的隐形提示陷阱，35名学生中32人因使用AI作弊被抓。
+
+**原文标题**: Professor's invisible prompt trap catches 32/35 students cheating with AI
+
+**原文链接**: [https://www.techspot.com/news/113243-professor-invisible-prompt-trap-catches-32-students-cheating.html](https://www.techspot.com/news/113243-professor-invisible-prompt-trap-catches-32-students-cheating.html)
+
+阿尔康州立大学的杰森·吉布森教授在一次关于工业革命的中期考试题中嵌入了隐藏的白色字体指令，要求AI在答案中无意义地提及马达加斯加。两个班级共35名学生中，有32人将题目直接复制到聊天机器人中，并将输出结果未经检查直接粘贴，导致答案中出现诸如“马达加斯加在下午横着漂浮”之类的离奇表述。吉布森判定所有作弊者该部分成绩不及格，并允许他们提出申诉——但只有两人提出。这篇报道突出了AI辅助作弊问题日益严峻的现状，并提及布朗大学的另一起案例：其开卷考试平均分从65-80%跃升至96%，而教授估计86名学生中除两人外均使用了AI。
+
+---
+
+## 3. 尤德科夫斯基与索亚雷斯的著作存在不足（2025）
+
+**原文标题**: Yudkowsky and Soares' Book Is Lacking (2025)
+
+**原文链接**: [https://oscarmdavies.substack.com/p/000016-on-yudkowsky-and-soares](https://oscarmdavies.substack.com/p/000016-on-yudkowsky-and-soares)
+
+文章批评了埃利泽·尤德科夫斯基和内特·索雷斯合著的《If Anyone Builds It, Everyone Dies》一书，指出其核心主张——超级智能AI即将出现——缺乏实质性证据或分析。关键点如下：
+
+- 作者断言AI将无所不知、无所不能，但从未解释计算机如何实现智能。他们既未讨论AI的运行原理，也未说明其相关性发现能力是否可能带来真正的创新或原创思想。
+- 书中引用的例子（国际象棋、蛋白质折叠、文本生成）均涉及狭窄且定义明确的任务，具有清晰的数据集和目标。该书毫无根据地假设这些领域与更广泛的领域（如科学发现）相似。
+- 作者自相矛盾：他们承认人类并不理解智能，当前AI“比十二岁孩子还肤浅”，且仍存在“缺失的一环”——却依然坚称超级智能即将来临。
+- 论证依赖模糊的托词：“研究人员会搞定的”“AI自己会解决这个问题”或“过去已有进展”。他们还声称AI不可理解，但文章反驳称我们确实知道AI的基本运作方式（相关性发现），尽管其规模尚不透明。
+- 该书将科学界的怀疑斥为“民间理论与盲目乐观”，但文章总结道，作者自身未经证实的论断并不可信。
+
+---
+
+## 4. 美国十二弦吉他的诞生（2013）
+
+**原文标题**: The Birth of the American 12-string Guitar (2013)
+
+**原文链接**: [https://www.harpguitars.net/history/grunewald/12-string.htm](https://www.harpguitars.net/history/grunewald/12-string.htm)
+
+格雷格·迈纳的文章认为，现代12弦吉他并非源自墨西哥的双弦组乐器，而是从更早的10弦“竖琴吉他”演变而来。关键人物是发明家卡尔·E·布朗，他于1896年获得了一项10弦吉他专利（专利号568,108）。布朗的乐器配备四个以八度调音的低音弦组，并设计了一个杠杆机构来消除多余琴弦，使其可转换为标准吉他。这一设计旨在让业余演奏者能在第一把位轻松弹奏旋律。
+
+布朗的发明最初由汉密尔顿·戈登（纽约，1897年）生产，随后由雷内·格鲁内瓦尔德（新奥尔良）接手。值得注意的是，格鲁内瓦尔德版本省略了布朗的杠杆。后续发现表明，沃利策公司也制造过保留原始机构的版本。迈纳指出，这种10弦“竖琴吉他”——结合了带有浮动琴弦的真正竖琴吉他的影响——最终催生了标准12弦吉他（六组双弦，低音四组为八度）。文章通过《音乐贸易评论》和《华彩乐段》杂志的报道追溯了布朗的设计理念，强调附加的八度琴弦并非为了创新弹奏风格，而是为了扩展业余爱好者常用的“低音独奏”技巧的音域。迈纳总结道，12弦吉他的起源很可能被忽视了，它源于布朗的10弦乐器及其后续的商业化改编。
+
+---
+
+## 5. AI公司创下华盛顿游说支出纪录
+
+**原文标题**: AI companies spend record sums on Washington lobbying
+
+**原文链接**: [https://www.ft.com/content/d8a5f95e-3b6d-463a-a848-c9ef8e2394db](https://www.ft.com/content/d8a5f95e-3b6d-463a-a848-c9ef8e2394db)
+
+无法访问文章链接。
+
+---
+
+## 6. Claude Opus 5 错误率升高
+
+**原文标题**: Elevated errors on Claude Opus 5
+
+**原文链接**: [https://status.claude.com/incidents/mfdtrknpxghq](https://status.claude.com/incidents/mfdtrknpxghq)
+
+**摘要：**  
+2026年7月27日，Claude Opus 5出现错误率升高，影响了claude.ai、Claude API、Claude Code和Claude Cowork。Anthropic的状态页面于11:27 UTC首次报告该问题，状态为“调查中”。到12:30 UTC，该事件被标记为已解决，截至太平洋标准时间4:47 / 11:47 UTC，错误率已恢复至基准水平。中断持续了大约一小时。更新中未披露根本原因。
+
+---
+
+## 7. 我想要一个永远不需要调整的钟。事情升级了。
+
+**原文标题**: I wanted a clock that never needed setting. Things escalated
+
+**原文链接**: [https://arstechnica.com/gadgets/2026/07/i-wanted-a-clock-that-never-needed-setting-things-escalated/](https://arstechnica.com/gadgets/2026/07/i-wanted-a-clock-that-never-needed-setting-things-escalated/)
+
+作者着手制作了一款自设床头钟，配备红色七段LED显示屏、NTP时间同步、自动夏令时调整，且无需手机应用。由于找不到现成的商业产品，他们使用了树莓派Zero W/2W、搭载HT16K33背板的Adafruit 1.2英寸显示屏，以及3D打印外壳。作者此前从未焊接过，但现学现用。软件部分主要由大型语言模型（Claude Code）编写，以systemd服务形式运行，利用主机操作系统实现NTP，通过HAP-python支持HomeKit，并包含亮度日程安排功能。部署通过局域网服务器上的Gitea Actions完成。外壳基于知识共享许可的设计修改而来，借助LLM辅助的Fusion 360 CAD进行调整。为降低显示屏夜间亮度，他们在烟熏亚克力板后方添加了12%中性密度滤光片，并将外壳拆分为独立的打印部件，配有导引销。最终时钟满足所有需求：自动设置、保持精准、按计划调暗亮度，并能与iOS家庭应用集成。由于LLM负责编码和CAD设计，整个项目等待物料的时间比实际工作还长。作者指出，ESP32可以替代树莓派，完整的制作细节已在GitHub上发布。
+
+---
+
+## 8. Show HN：物理精确的黑洞，可放入你的房间
+
+**原文标题**: Show HN: Physically accurate black hole you can put in your room
+
+**原文链接**: [https://blackhole.plav.in](https://blackhole.plav.in)
+
+文章介绍了一款名为Synchray.jl的软件工具，用户可在自己的电脑上渲染出物理精确的黑洞可视化效果。它被描述为与科研级模拟相对的“简化版可视化”，但仍以物理真实性为目标，便于教育或爱好者探索。这篇文章戏谑地提到“我们家里也有黑洞”，强调该模拟可本地运行，无需高端研究设施。该工具用Julia编写，为可视化黑洞周围的引力透镜及其他相对论效应提供了实用途径。
+
+---
+
+## 9. 谷歌Chrome浏览器登陆ARM64 Linux，包含Widevine DRM
+
+**原文标题**: Google Chrome Arrives on ARM64 Linux, Widevine DRM Included
+
+**原文链接**: [https://www.omgubuntu.co.uk/2026/07/chrome-arm64-linux-available](https://www.omgubuntu.co.uk/2026/07/chrome-arm64-linux-available)
+
+谷歌Chrome现已推出官方ARM64 Linux版本，适用于基于Debian和RPM的发行版。树莓派、骁龙本及ARM架构PC用户可通过将下载链接中的`amd64`改为`arm64`进行下载。该版本（Chrome v150稳定版）支持Google账户同步，可无缝使用扩展程序、书签和密码。同时原生捆绑了ARM64版Widevine DRM，但依然依赖软件解码，导致Netflix等平台最高仅支持720p或1080p（无4K/HDR）。在运行Ubuntu 26.04的树莓派5上，2K YouTube播放流畅（无硬件解码），而4K因硬件限制出现掉帧。BBC iPlayer在最高画质下表现良好，优于Ubuntu的Firefox Snap版本。该版本尚未正式发布，但稳定版、测试版和Canary频道均可访问。文中提供了稳定版.deb文件的直接下载链接。
+
+---
+
+## 10. Show HN：multiaes——硬件加速、恒定时间AES，两文件即插即用
+
+**原文标题**: Show HN: multiaes – hardware-accelerated, constant-time AES, two-file drop-in
+
+**原文链接**: [https://github.com/ttarvis/multiaes](https://github.com/ttarvis/multiaes)
+
+**multiaes 摘要**
+
+multiaes 是一个轻量级、恒定时间、独立的 AES 库，设计为仅需两个文件即可集成，并提供简单 API。它在 Intel（AES-NI，编译时添加 `-maes`）和 ARM（NEON 加密扩展，`-march=armv8-a+crypto`）上支持硬件加速，当硬件支持不可用时则回退到软件实现。该库可编译为 WebAssembly，并包含一个 JavaScript 封装。
+
+API 提供：
+- `aes_init()`：使用密钥初始化上下文。
+- `aes_encrypt_block()` 和 `aes_decrypt_block()`：用于单个 16 字节块的操作。
+- `aes_clear()`：清除敏感的上下文数据。
+
+未来计划包括添加 AES-GCM 和 CMAC 模式。该项目采用 AGPL-3.0-only 许可。
+
+---
+
+## 11. Scratch中的8086模拟器
+
+**原文标题**: 8086 Emulator Inside Scratch
+
+**原文链接**: [https://turbowarp.org/1248315967?size=640x400](https://turbowarp.org/1248315967?size=640x400)
+
+提供的文本并非文章《Scratch中的8086模拟器》，而是TurboWarp网站的一个错误页面。错误信息显示，TurboWarp需要JavaScript才能更快地运行Scratch项目。如果用户对远程JavaScript心存疑虑，建议使用TurboWarp桌面应用程序。同时，页面报告出现了问题，并提供了一个重置缓存的链接，这可能会修复某些错误。其中不包含任何关于8086模拟器的实际内容。
+
+---
+
+## 12. AI公司正在销毁稀有书籍
+
+**原文标题**: AI companies are shredding rare books
+
+**原文链接**: [https://twitter.com/HedgieMarkets/status/2081534588485296565](https://twitter.com/HedgieMarkets/status/2081534588485296565)
+
+人工智能公司正批量购买稀有书籍，使用高速扫描仪切掉书脊，然后将原版书籍碎纸销毁。一家名为ISBNdb的服务商可促成高达百万册书籍的订单，并保持买家匿名。2022年之前的书籍尤其珍贵，因为其中不含任何AI生成的文本。一名联邦法官裁定该行为属于合理使用，理由是销毁原版意味着同一时间仅存在一份副本。Anthropic公司聘请了前谷歌图书合作负责人，以获取"世界上所有的书"。
+
+一位书商告诉404 Media，那些几乎已无存世副本的稀有书籍——历经战争、火灾与几个世纪幸存下来的作品——正被投入这条流水线以训练AI模型。ISBNdb的网站承认"'AI公司毁掉两百万本书'并非能引发同情的标题"，但该公司却围绕悄无声息的销毁构建业务，将保密协议作为卖点，并指导客户称之为"数字保存"。
+
+作者指出，这比爬取网站或下载盗版图书馆更恶劣，因为销毁是不可逆的。网站可以重新上传，畅销书可以重印，但18世纪植物学典籍的最后三本在碎纸成为训练数据后便无法替代。随着法官裁定其合法，这种做法预计将加速推进。
+
+---
+
+## 13. 字体使用 – 查找字体的使用位置
+
+**原文标题**: Fonts In Use – Find out where a font is used
+
+**原文链接**: [https://fontsinuse.com/](https://fontsinuse.com/)
+
+**摘要：**  
+本文介绍了“Fonts In Use”平台，这是一个可搜索的数据库，记录了字体的真实使用案例。主页实时显示34,150条条目，可按类别（全部、编辑推荐、博客）筛选，并按日期、热度或用户互动排序。每条条目包含作品名称、年份、设计师、投稿人，通常还有出版商或客户信息。示例涵盖专辑封面（莎拉·沃恩、琼·贝兹）、电影海报（《早餐俱乐部》）、标志（Jetix、Bison Bluff Farms）、书籍封面及展览目录，均注明所用具体字体。用户可探索特定字体在各种媒介中的出现情况，内容由设计师与字体爱好者共同贡献。界面支持分页浏览（从1至末页），突显该平台作为字体灵感与识别协作参考资源的作用。
+
+---
+
+## 14. 运动对抑郁症有效。那为什么它不被当作真正的药物？
+
+**原文标题**: Exercise works for depression. So why isn't it treated like real medicine?
+
+**原文链接**: [https://bigthink.com/mind-behavior/exercise-works-for-depression-so-why-isnt-it-treated-like-real-medicine/](https://bigthink.com/mind-behavior/exercise-works-for-depression-so-why-isnt-it-treated-like-real-medicine/)
+
+越来越多的研究表明，对于许多抑郁症患者而言，运动的疗效与抗抑郁药或心理治疗相当，但它却很少被作为一线治疗手段推荐。这篇文章指出了这一差距背后的几个原因。首先，医生在运动处方方面接受的培训很少，且由于时间有限，往往默认使用药物治疗。其次，与药片不同，运动需要患者具备动力、接受指导并保持一致性——这些因素难以标准化。第三，医疗保险系统通常不覆盖用于心理健康的运动项目，却能轻易报销药物费用。文章指出，即便医生建议运动，也往往只是含糊其辞（比如“多锻炼”），而非制定具有剂量和频率的具体结构化方案。最后，文化偏见仍将抑郁症视为最好用药物纠正的“化学失衡”，尽管有证据表明生活方式干预可以解决根本原因。作者认为，运动应被视作“真正的药物”——以明确的方案开具处方、得到医疗体系的支持并整合进治疗指南——从而弥合证据与实践之间的鸿沟。
+
+---
+
+## 15. 为什么智能体系统需要本体论 [视频]
+
+**原文标题**: Why Agentic Systems Need Ontologies [video]
+
+**原文链接**: [https://www.youtube.com/watch?v=Sir59K8ZDPU](https://www.youtube.com/watch?v=Sir59K8ZDPU)
+
+提供的内容并非一篇文章，而是一个标准的YouTube页面页脚。其中包括版权信息（© 2026 Google LLC）、联系方式（桑达尔·皮查伊、地址、电话、电子邮件）、法律政策（隐私、条款、创作者指南）以及免责声明：创作者展示的产品由商家销售，YouTube对此不承担责任。其中不包含任何关于“为什么智能系统需要本体论”的信息。
+
+---
+
+## 16. Vercel 的 Scriptc：TypeScript 到原生编译器，二进制中不含 JavaScript 引擎
+
+**原文标题**: Scriptc by Vercel: TypeScript-to-Native compiler, no JavaScript engine in binary
+
+**原文链接**: [https://github.com/vercel-labs/scriptc](https://github.com/vercel-labs/scriptc)
+
+Scriptc 是 Vercel 推出的一款 TypeScript 到原生代码的编译器，默认情况下生成的二进制文件小巧且快速，无需内置任何 JavaScript 引擎。它利用真实的 TypeScript 类型检查器编译普通 TypeScript（无需特殊注解）。编译器将代码分为三个层级：**静态**（原生代码，无引擎）、**动态**（内嵌 quickjs-ng 引擎，用于 npm 依赖及无法编译为原生代码的部分）以及**拒绝**（附带清晰错误码和重写提示）。
+
+覆盖率分析显示，大多数 TypeScript（典型应用中约 99%）可静态编译。静态层面支持类、闭包、泛型、基于栈式纤程的 async/await、JSON、正则表达式、Node API（fs、http、net、crypto 等）以及 fetch。正确性通过差异测试（与 Node 在 800 多项测试中逐字节匹配）和内存安全机制（AddressSanitizer + 引用计数审计）保障。
+
+性能亮点：启动时间约 2.4 毫秒（Node 约 47 毫秒），静态二进制体积 170–200KB（含依赖和引擎约 3MB），内存占用 1–4MB RSS。Scriptc 还提供逃生舱机制：`comptime` 用于构建时执行、原生 FFI、安全检查转换以及 `--dynamic` 用于 npm 依赖。
+
+架构包含三个包：`compiler`（TypeScript→类型化中间表示→C/LLVM）、`runtime`（含循环回收器、纤程、事件循环的 C 运行时）以及 `cli`（`build`、`run`、`coverage`）。每个特性均通过差异测试验证。
+
+---
+
+## 17. 无用知识的有用性（1939）[pdf]
+
+**原文标题**: The Usefulness of Useless Knowledge (1939) [pdf]
+
+**原文链接**: [https://faculty.lsu.edu/kharms/files/flexner_1939.pdf](https://faculty.lsu.edu/kharms/files/flexner_1939.pdf)
+
+根据亚伯拉罕·弗莱克斯纳1939年文章《无用知识的有用性》的标题和已知内容，以下为简明总结：
+
+弗莱克斯纳认为，最重大的科学和智力进步往往源于为知识本身而进行的探索，即便这些探索没有直接的实用价值。他推崇“无用”知识——即基于好奇心和理论驱动的研究——将其视为重大突破的根本基石。
+
+他以历史实例为证，如物理学家詹姆斯·克拉克·麦克斯韦的理论方程后来对无线电和无线通信的发展至关重要。弗莱克斯纳将这种研究与狭隘关注“有用”或应用科学的方式相对比，认为后者会扼杀真正创新所需的创造性和深度思考。
+
+作为（曾容纳爱因斯坦的）高等研究院创始院长，弗莱克斯纳坚持认为，机构必须保护并资助纯理论研究，让天才们拥有自由和资源去探索思想，而不受即时成果的压力。他总结道，社会最大的实际效益恰恰源于一种珍视并支持好奇心、智力探索以及看似无用的求知欲的文化。
+
+---
+
+## 18. 中国芯片股飙升470%
+
+**原文标题**: Chinese chipmaker shares surge 470%
+
+**原文链接**: [https://www.bbc.com/news/articles/c9q9w3x9qn2o](https://www.bbc.com/news/articles/c9q9w3x9qn2o)
+
+中国存储芯片制造商长鑫存储技术（CXMT）在科创板上市首日股价飙升近470%，市值推升至约3.3万亿元人民币（合4870亿美元），成为中国大陆市值最高的上市公司。此次上涨发生在全球科技股遭抛售的背景下。长鑫存储成立于2016年，总部位于合肥，生产用于AI数据中心、智能手机及其他设备的DRAM芯片。公司计划将IPO所得用于扩大生产和研发。分析师将股价飙升归因于仅7%的流通股可供交易，以及在中国推动技术自主的背景下，投资者对本土芯片制造商的强劲需求。目前DRAM市场由三星、SK海力士和美光主导。与此同时，SK海力士近期在纽约上市融资265亿美元，而受AI需求上升推动，存储芯片价格已翻倍以上。集邦咨询分析师黄郁琁指出，持续的供应短缺正促使客户寻求多元化的供应商，这对长鑫存储有利。
+
+---
+
+## 19. 法国消防员首次面对“火积雨云”
+
+**原文标题**: French firefighters face 'pyrocumulonimbus' for first time
+
+**原文链接**: [https://www.france24.com/en/live-news/20260726-french-firefighters-face-pyrocumulonimbus-for-first-time](https://www.france24.com/en/live-news/20260726-french-firefighters-face-pyrocumulonimbus-for-first-time)
+
+无法访问文章链接。
+
+---
+
+## 20. 八天内108个PR：偶然发现循环工程
+
+**原文标题**: 108 PRs in eight days: Accidentally discovering loop engineering
+
+**原文链接**: [https://brittany-ellich.offprint.app/a/3mrjj34puva23-108-prs-in-eight-days-accidentally-discovering-loop-engineering](https://brittany-ellich.offprint.app/a/3mrjj34puva23-108-prs-in-eight-days-accidentally-discovering-loop-engineering)
+
+文章描述了作者如何利用AI代理在八天内自主处理了108个拉取请求——相比之前每周5-10个大幅提升。关键推动因素包括：一个高度信任的小团队，无需强制性人工代码审查（审查环节转移至测试阶段），以及不采用持续部署，从而通过批量发布来限制风险。
+
+作者发现了“循环工程”（Addy Osmani提出的术语）：设计一个系统来提示代理，而不是手动输入每条提示。其架构分为三层：
+
+- **协议**：一个包含规则（状态含义、合并标准等）的Markdown文件，与看板并存。
+- **循环**：读取看板，分发任务，更新任务前置元数据；不编写代码。
+- **执行器**：在隔离的工作树中编写代码，从不接触看板，也不直接与作者沟通。
+
+看板使用每个任务一个Markdown文件的方式以避免冲突。执行器在隔离的工作树中运行，因此作者的本地状态不会干扰。循环以自定节奏运行（无固定间隔），并在无任务可进行时自动停止，从而节省令牌。一个内存文件（设有硬上限）记录已学到的知识和反复出现的错误，这些可能成为新任务。
+
+作者的瓶颈已转向规格说明和QA工作：添加任务并测试结果。下一步计划包括自动化测试与验证。该方案已开源，建议从精确定义“完成”开始。
+
+---
+
+## 21. 神经科学家能理解微处理器吗？（2017）
+
+**原文标题**: Could a Neuroscientist Understand a Microprocessor?(2017)
+
+**原文链接**: [http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005268](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005268)
+
+文章《神经科学家能理解微处理器吗？》（2017年）由乔纳斯和科丁撰写，检验了流行的神经科学数据分析方法能否揭示一个复杂且已被充分理解的系统如何处理信息。作者以MOS 6502微处理器为"模式生物"，在运行经典电子游戏（《大金刚》《太空侵略者》《陷阱》）时，将其晶体管级活动应用于调谐曲线、连通性分析和损伤研究等技术。尽管拥有完整、无噪声的数据和完全的实验访问权限，这些方法产生了有趣的统计模式，却未能揭示计算机工程师所理解的层级化、模块化信息处理——例如寄存器、算术逻辑单元和指令周期。作者认为，仅靠大数据不足以实现有意义的理解；当前的神经科学方法应用于大脑时也可能同样不足。他们主张使用具有已知真实情况的复杂人工系统作为验证平台，在将其应用于神经系统的测试和完善分析方法。
+
+---
+
+## 22. Decker，一个基于HyperCard和经典macOS传统构建的平台
+
+**原文标题**: Decker, a platform that builds on the legacy of Hypercard and classic macOS
+
+**原文链接**: [https://beyondloom.com/decker/](https://beyondloom.com/decker/)
+
+Decker 是一个多媒体平台，用于创建和分享交互式文档——例如电子杂志、演示文稿、冒险游戏和1位像素艺术——其灵感来源于HyperCard和经典MacOS美学。它将简洁性与现代改进相结合，如深度撤销历史、触摸屏支持和批量编辑。完成的项目可以保存为独立的HTML文件，在任何浏览器中运行，并且Decker原生支持MacOS、Windows、BSD和Linux。
+
+Decker 配备了Lil，一种受Lua和Q启发的新型脚本语言，易于学习，支持隐式标量-向量运算，并集成了类似SQL的查询语言。它包含内置的交互式小部件，并允许通过剪贴板共享自定义小部件。命令行工具Lilt可以无头方式解释Lil脚本，并操作Decker文档。Deck文件以面向行的文本格式存储，兼容Git和SVN。
+
+Decker 是免费、开源的（MIT许可证），不含广告、遥测或隐私侵入。资源包括参考手册、示例以及Itch.io上的社区论坛，并在每年7月和12月定期举办游戏创作活动。
+
+---
+
+## 23. 美国公民因GrapheneOS手机在机场搜查中被擦除而遭指控
+
+**原文标题**: US citizen charged after GrapheneOS phone wipes during airport search
+
+**原文链接**: [https://www.techspot.com/news/113236-us-prosecutors-charge-atlanta-man-after-grapheneos-phone.html](https://www.techspot.com/news/113236-us-prosecutors-charge-atlanta-man-after-grapheneos-phone.html)
+
+亚特兰大的一起联邦案件涉及美国公民萨姆·图尼克，他在哈茨菲尔德-杰克逊亚特兰大国际机场接受海关与边境保护局检查时，其搭载GrapheneOS系统的手机数据被清空，随后被起诉。图尼克于2024年1月从多米尼加共和国返回美国时，探员就他与“警员城”抗议运动涉嫌恐怖主义关联进行盘问。辩护方称，审讯以儿童性虐待材料为借口，期间图尼克四次请求律师均被拒绝，且无搜查令。图尼克提供密码后，手机似乎重启并清空数据。
+
+检方指控图尼克故意销毁证据，而辩护方认为搜查侵犯其宪法权利。专家表示，这种法律手段罕见，可能是首次有联邦法规针对操作系统的隐私功能（禁止销毁财产）。GrapheneOS是Pixel手机的开源操作系统，允许用户设置密码以清空设备。支持者称其为合法安全工具，并非犯罪意图证据。此案引发对边境搜查权力及隐私技术定性的争议。法官预计将在10月底前就辩护方动议作出裁决。
+
+---
+
+## 24. 以DX核心4衡量开发者生产力
+
+**原文标题**: Measuring developer productivity with the DX Core 4
+
+**原文链接**: [https://getdx.com/research/measuring-developer-productivity-with-the-dx-core-4/](https://getdx.com/research/measuring-developer-productivity-with-the-dx-core-4/)
+
+本文介绍了**DX Core 4**，一个统一衡量开发者生产力的框架，集成了DORA、SPACE和DevEx。该框架通过提供四个相互平衡的维度——**速度、有效性、质量和业务影响**，解决了选择和实施生产力指标这一挑战。它已在300多家公司部署，使工程效率提升3-12%，用于功能开发的研发时间增加14%。
+
+主要特点包括：多维指标防止负面权衡；适用于从董事会到一线团队；利用现有系统和自报数据可在数周内快速部署；通过平衡吞吐量指标与体验数据（如开发者体验指数），避免恐惧和游戏化。文章提醒，“每位工程师的差异数”这一指标应谨慎使用——仅结合平衡指标、不设目标/奖励、并做好充分沟通。
+
+数据通过**系统指标**、**自报数据**和**经验抽样**收集，提供全面视角。作者建议在构建系统指标的同时，快速建立基线（通常使用自报数据），从小处着手，并与团队透明沟通。
+
+最终，DX Core 4旨在帮助领导者回答关于创新、摩擦和价值驱动工作的关键问题，在远程工作和AI工具时代提供一条实用且经过验证的优化开发者生产力的路径。
+
+---
+
+## 25. 若Scrub操作痛苦，则你的ZFS设计存在缺陷。
+
+**原文标题**: If Scrubs Hurt, Your ZFS Design Is Broken
+
+**原文链接**: [https://klarasystems.com/articles/if-scrubs-hurt-your-zfs-design-is-broken/](https://klarasystems.com/articles/if-scrubs-hurt-your-zfs-design-is-broken/)
+
+如果清理操作导致明显的生产延迟，底层ZFS存储池的设计很可能存在缺陷——而非清理操作本身的问题。清理操作以最低I/O优先级运行；若其导致性能下降，说明存储池缺乏用于必要维护的IOPS余量。常见错误包括仅按容量和价格规划存储池规模，而忽略了清理、重建及其他后台任务对IOPS的需求。高填充率（85-95%）和宽RAIDZ虚拟设备会导致元数据碎片化，使清理操作的元数据遍历变成随机读取瓶颈。
+
+解决方案并非增加更多机械硬盘，而是针对性地卸载元数据：添加一个**专用虚拟设备**——一组企业级SSD/NVMe驱动器组成的镜像集——用于存储所有池元数据（间接块、dnodes等）。这样可将随机读取元数据的工作负载转移到快速介质，而机械硬盘仅处理顺序数据读取。`special_small_blocks`属性还可重定向小文件数据。所需空间极小（通常不到池容量的1%），成本仅占硬件预算的低个位数百分比。
+
+无法安全执行清理的存储池也无法安全执行重建——清理正是对真实故障的预演。卸载元数据可将维护任务从每月的事故变为背景噪音，在确保数据完整性的同时不牺牲生产性能。
+
+---
+
+## 26. 如何拦截部分机器人
+
+**原文标题**: How to Block Some of the Bots
+
+**原文链接**: [https://nochan.net/b/Internet-Crap/20260606-How-To-Block-Some-Of-The-Bots/](https://nochan.net/b/Internet-Crap/20260606-How-To-Block-Some-Of-The-Bots/)
+
+无法访问文章链接。
+
+---
+
+## 27. 多读书。常读书。天天读。
+
+**原文标题**: Read More. Read Often. Read Every Day
+
+**原文链接**: [https://www.joanwestenberg.com/p/read-more-read-often-read-every-day](https://www.joanwestenberg.com/p/read-more-read-often-read-every-day)
+
+这篇由JA Westenberg撰写的文章强烈倡导阅读，认为这是提升自我、获得专注和实现人生价值的根本途径。作者将阅读视为自己的狂热信仰，强调每天都要阅读纸质书或电子书，因为它需要深度专注，是任何“生产力技巧”都无法替代的。
+
+文章核心观点包括：
+- **80/20法则**：将20%的时间用于阅读，能带来80%的成果与灵感。
+- **阅读的益处**：提升词汇量、降低早逝风险、减少阿尔茨海默病概率，并能帮助理解他人、培养同理心、解决问题、减轻压力。
+- **读什么**：主要应读书籍（最纯粹的文字形式），其次是有价值的新闻、通讯等。偶尔读“垃圾”内容也比看垃圾视频好，阅读本身就是锻炼。
+- **驳斥偏见**：作者反对追求效率的2倍速播客，认为阅读虽“不可扩展”，却是尊重内容、深入思考的唯一方式。
+
+最后，作者呼吁人们放下对“捷径”的执念，走进图书馆或拿起书架上积灰的书，花时间沉浸其中——因为阅读是通往幸福、成功与充实人生的最佳工具。
+
+---
+
+## 28. 教孩子Forth
+
+**原文标题**: Teaching Kids Forth
+
+**原文链接**: [https://gracefulliberty.com/articles/teaching-kids-forth/](https://gracefulliberty.com/articles/teaching-kids-forth/)
+
+本文描述了作者使用Forth（一种1970年诞生的基于栈的连接式语言）向中学生和高中生教授编程的经历。作者选择Forth而非Python或Scratch，是为了避免教授语法，专注于基本概念。在每周一小时的12次课程中，作者利用Nick Morgan的Easy Forth在线学习环境设计课程。学生们从学习计算机历史开始，并用纸盘模拟栈的压入/弹出操作来理解栈数据结构。他们通过Easy Forth课程逐步学习，并完成了最终项目：修改内置的贪吃蛇游戏，或使用环境的图形系统创建像素艺术。作者反思道，尽管Forth有效，但其强调底层栈操作可能不适合初学者；像Scratch这样视觉更直观的工具可能更好。然而，作者认为编程语言本身并不重要，重要的是提供一个能快速获得可重复输出、并给予学生自主探索空间的环境。文章最后强调了以人为中心的教学比依赖大型语言模型更重要，并鼓励读者教孩子编程，让他们掌握技术控制权。
+
+---
+
+## 29. Htmx 4.0，首个独占于Game Boy发布的JavaScript库
+
+**原文标题**: Htmx 4.0, the first JavaScript library to release exclusively on the Game Boy
+
+**原文链接**: [https://swag.htmx.org/en-cad/products/htmx-4-the-game](https://swag.htmx.org/en-cad/products/htmx-4-the-game)
+
+该文章是关于一款讽刺性Game Boy®卡带**"htmx 4: the game"**的产品列表。它幽默地将htmx 4.0宣传为"首个独占Game Boy发布的JavaScript库"。售价36.01加元，这款游戏提供四个关卡的"泡菜收集乐趣"，旨在减少客户端JavaScript臃肿，玩家可击败名为Warren的角色解锁真正的htmx 4.0源代码。列表还推广了相关商品：一张htmx马海报（21.61加元）、一件黄色马htxm复古物品（10.08加元）以及一顶多款迷彩色的htmx员工帽（36.01加元）。附有标准质量保证及退换政策（仅限瑕疵品，不支持一般退货）。
+
+---
+
+## 30. 陶哲轩：人工智能时代的数学 [pdf]
+
+**原文标题**: Terence Tao: Mathematics in the Age of AI [pdf]
+
+**原文链接**: [https://teorth.github.io/tao-web/slides/age-of-ai-icm-2026.pdf](https://teorth.github.io/tao-web/slides/age-of-ai-icm-2026.pdf)
+
+根据所提供的PDF标题和内容片段，陶哲轩的文章探讨了人工智能在数学领域的变革性作用。关键点包括：大语言模型和自动推理系统等AI工具如何开始协助数学家进行证明生成、假设探索和问题解决。陶哲轩讨论了AI作为协作伙伴的潜力，既能加速发现，也引发了关于验证、创造力以及数学理解本质的疑问。该演讲可能既涉及当前的局限性，也展望了未来的可能性，强调AI并非取代数学家，而是增强他们的能力，使其能够专注于更深层次的概念性工作。文章还提及了人类判断在确保严谨性的重要性，以及在AI辅助的数学环境中需要新的教育方法。总体而言，陶哲轩对未来的机遇与挑战提出了平衡的观点。
+
+---
+
+## 31. 就业市场正在发生什么？区分AI炒作与现实
+
+**原文标题**: What is happening to jobs? Separating AI hype from reality
+
+**原文链接**: [https://siepr.stanford.edu/publications/policy-brief/what-really-happening-jobs-separating-ai-hype-reality](https://siepr.stanford.edu/publications/policy-brief/what-really-happening-jobs-separating-ai-hype-reality)
+
+提供的文本仅包含作者简介和所属机构，并非实际文章内容。为了对《工作正在发生什么？区分人工智能炒作与现实》一文的主要观点和关键信息进行简洁总结，我需要完整的文本。请分享文章内容，我将用不超过300字进行总结。
+
+---
+
+## 32. 普雷斯泰尔与微网：英国失落的互联网
+
+**原文标题**: Prestel and Micronet: Britain's Lost Internet
+
+**原文链接**: [https://www.escapistmagazine.com/news-the-lost-online-world-that-came-before-the-internet-and-the-world-wide-web/](https://www.escapistmagazine.com/news-the-lost-online-world-that-came-before-the-internet-and-the-world-wide-web/)
+
+文章标题为“Prestel与Micronet：英国失落的互联网”，但其内容聚焦于BAFTA青年游戏开发者奖项。作者克雷格·罗宾逊在文中强调，这些奖项所表彰的游戏探讨了焦虑与日常生活的挣扎。尽管标题颇具历史感，文章主旨却是关于当代游戏设计如何应对心理健康主题。
+
+---
+
+## 33. 面向数据的设计简介 [pdf]
+
+**原文标题**: Introduction to Data-Oriented Design [pdf]
+
+**原文链接**: [https://www.gamedevs.org/uploads/introduction-to-data-oriented-design.pdf](https://www.gamedevs.org/uploads/introduction-to-data-oriented-design.pdf)
+
+提供的内容似乎是原始的PDF二进制数据，而非可读文本，因此无法提取文章的实际内容。然而，根据标题“数据导向设计简介”，该主题的典型总结如下：
+
+数据导向设计（DOD）是一种编程范式，专注于优化数据布局和访问模式以提升性能，特别是在游戏开发和实时系统中。它强调围绕数据在计算中的实际使用方式来设计数据结构，而非围绕对象或抽象。关键原则包括：
+- **数据局部性：** 将数据在内存中连续组织以最大化缓存效率（例如，使用结构体数组而非指针数组）。
+- **批量处理：** 批量处理同质数据（例如，一次性更新所有位置），以减少分支并利用SIMD指令。
+- **最小化间接性：** 避免指针、虚函数和动态分发，这些会导致不可预测的内存访问。
+- **关注点分离：** 将数据与逻辑分离，便于数据转换和重用。
+- **基于性能分析的设计：** 基于实际硬件性能测量做出决策。
+
+数据导向设计与面向对象设计形成对比，后者常将数据与行为捆绑，但可能导致分散的内存访问和较差的缓存利用率。常用技术包括使用结构体数组（SoA）而非数组结构体（AoS）、手动内存管理以及将系统设计为数据管道。数据导向设计广泛应用于高性能游戏引擎、物理模拟和实时图形学中。
+
+---
+
+## 34. Claude Opus 5 错误率升高
+
+**原文标题**: Elevated errors on Claude Opus 5
+
+**原文链接**: [https://status.claude.com/incidents/lhqp09kxq7pb](https://status.claude.com/incidents/lhqp09kxq7pb)
+
+来自Claude事故页面的状态报告显示，Claude Opus 5于2026年7月27日出现错误率升高。该问题于UTC时间08:16首次报告并正在调查中。到UTC时间09:05（太平洋标准时间02:03），该事故被标记为已解决，错误率恢复至基线水平。受影响的服务包括claude.ai、Claude API（api.anthropic.com）、Claude Code和Claude Cowork。
+
+---
+
+## 35. Show HN: 观看14字节的AI“大脑”尝试解决2D迷宫（难度很大）
+
+**原文标题**: Show HN: Watch 14-Byte AI "brains" attempt to solve a 2D maze (Its hard)
+
+**原文链接**: [https://con-dog.github.io/MINIMIO-PUBLIC-FRONTEND/](https://con-dog.github.io/MINIMIO-PUBLIC-FRONTEND/)
+
+这篇文章展示了一个交互式演示，其中包含微型AI“大脑”——仅14字节的神经网络——试图解决2D迷宫。用户可以控制播放（播放、单步、重置、速度），并生成不同类型的迷宫（例如回溯法、普里姆、克鲁斯卡尔、威尔逊、埃勒、生长树、编织、房间、障碍物、开放网格），其中一些是预训练好的，另一些是未见过的。迷宫尺寸从7×7到50×50不等。界面显示模型的解决率、训练时间以及一个二维码。核心见解：尽管这些AI仅有微小的体积，这14字节的AI必须穿越复杂环境，突显了在极其有限的计算资源下解决迷宫所固有的难度。标题强调这项任务是“困难的”，突出了模型紧凑性与问题解决能力之间的权衡。
+
+---
+
+## 36. Unix拼写检查如何在64KB内存中运行（2025）
+
+**原文标题**: How Unix spell ran in 64 kB of RAM (2025)
+
+**原文链接**: [https://blog.codingconfessions.com/p/how-unix-spell-ran-in-64kb-ram](https://blog.codingconfessions.com/p/how-unix-spell-ran-in-64kb-ram)
+
+文章详细介绍了道格拉斯·麦基尔罗伊如何在PDP‑11上实现Unix拼写检查器，将250 kB的词典压缩进64 kB的内存中。史蒂夫·约翰逊的初始原型依赖磁盘查找，既慢又不准确。麦基尔罗伊首先构建了一个词干提取（去除词缀）算法，将词典缩减至25,000个单词。为了实现快速的内存查找，他使用了布隆过滤器（归功于丹尼斯·里奇），并将其误报率调整为1/2000，从而避免了磁盘检查。
+
+当词典增至30,000个单词时，布隆过滤器变得不切实际。麦基尔罗伊转而只存储单词的27位哈希码。为了压缩这些哈希码，他发现排序后的哈希码差值服从几何分布。他应用哥伦布编码，实现了每个单词13.60位的压缩效率——非常接近理论最小值13.57位。最后，他对压缩数据进行了分区以加速查找，以少量内存增加换取了速度提升。该方案至今仍是资源严苛条件下工程设计的经典范例，融合了语言预处理、概率数据结构和信息论压缩技术。
+
+---
+
+## 37. 我们现在有自动化证明。
+
+**原文标题**: We have proof automation now
+
+**原文链接**: [https://www.imperialviolet.org/2026/07/26/zstd-lean.html](https://www.imperialviolet.org/2026/07/26/zstd-lean.html)
+
+本文探讨了大型语言模型（LLMs）如何革新Lean等依赖类型语言中的证明自动化，使其在实际编程中更加实用。作者回顾了历史上证明工作的沉重负担——以seL4项目为例，其证明时间比实现时间多出10倍——以及传统自动化方法如F*的SMT求解器，后者可能具有不可预测性。
+
+为了说明，作者在Lean中实现了一个Zstandard解压器。Zstandard使用两种熵编码器：哈夫曼树（整比特编码）和FSE（一种状态机，通过为常见符号分配多个状态来实现分数比特效率）。FSE向后编码，需要仔细构建表。
+
+Lean被强调为一种严格的纯函数式语言，具有便捷的单子do表示法以及通过引用计数实现的高效原地突变（尽管没有线性类型）。作者认为，通过将依赖类型与LLM驱动的证明生成相结合，可以大幅降低昂贵的“证明工程”开销，从而以当前成本的一小部分来强制执行微妙的约束，并实现机器验证的正确性。
+
+---
+
+## 38. 使用sed制作书籍索引（1997）
+
+**原文标题**: Using sed to make indexes for books (1997)
+
+**原文链接**: [https://www.pement.org/sed/make_indexes.txt](https://www.pement.org/sed/make_indexes.txt)
+
+Eric Pement描述了如何使用`sed`从已排序的输入文件中自动创建书籍索引。每行最初包含一个索引词和页码，用分号分隔（例如`Buddhism, Zen; 1`）。使用GNU `sort`的忽略大小写和数字选项进行排序后（`sort -t";" +0f -1 +1n input.file`），目标是将相同索引词的连续行合并为一行，页码用逗号分隔（例如`Adam, 13, 21, 30-32`）。
+
+Pement编写了一个`sed`脚本（`INDEXER.SED`），将行读入模式缓冲区，使用`N`追加下一行，并尝试替换`s/^\([^;]*;\) \(.*\)\n\1 \(.*\)/\1 \2, \3/`。如果两行具有相同的索引词（由`\1`捕获），则删除换行符和重复的索引词，并追加页码。`t loop`分支返回以合并更多匹配的行。当索引词不同时，将第一行的分号替换为逗号（`s/;/,/`），用`P`打印，并用`D`删除，使下一行留在缓冲区中。
+
+一个关键缺陷：如果任何输入行缺少分号，脚本就会失败，因为第6行的替换会无意中删除后续行的分号，从而破坏整个输出。Pement提供了两种修复方法：（1）添加错误检查代码，当缺少分号或出现双分号时停止脚本，并显示错误信息和行号；（2）使用更具体的模式将逗号替换限制为仅第一行。他推荐第一种方法以保证健壮性。
+
+最终脚本包含了验证检查和主循环，展示了`sed`在出版工作流程中用于文本处理的实用性。
+
+---
+
+## 39. 我为什么离开谷歌DeepMind
+
+**原文标题**: Why I Left Google DeepMind
+
+**原文链接**: [https://www.lesswrong.com/posts/iKm2FhpWkuuBojm82/why-i-left-google-deepmind](https://www.lesswrong.com/posts/iKm2FhpWkuuBojm82/why-i-left-google-deepmind)
+
+《我为何离开谷歌DeepMind》摘要
+
+亚历山大·马特·特纳解释了他从谷歌DeepMind（GDM）辞职的原因，源于该公司与美国国土安全部（DHS）下属机构（ICE）的纠葛，以及随后与五角大楼达成的一项不道德的军事AI协议。
+
+在DHS官员杀害两名平民后，特纳发现谷歌向ICE提供云服务。他发起了一场推动谷歌剥离相关业务的运动，首先向高级领导层（桑达尔·皮查伊、德米斯·哈萨比斯、托马斯·库里安）发送邮件，但未获回应。
+
+危机升级源于五角大楼施压Anthropic公司，要求其移除合同中关于禁止致命自主武器和大规模监控的条款，并威胁将其列为“供应链风险”。特纳试图在IASEAI会议上动员斯图尔特·罗素、约书亚·本吉奥和杰弗里·辛顿等知名AI人士公开支持Anthropic并予以反击。罗素答应行动但随后退缩；本吉奥办公室拒绝；辛顿联系不上。
+
+特纳还联系了曾签署2018年反对杀人机器人的杰夫·迪恩。迪恩虽联署了一份支持Anthropic的简短声明，但特纳指出，迪恩并未利用其影响力阻止谷歌签署自己的协议。
+
+特纳起草了一份包含道德合同条款和监督机制的25页提案，受到专家好评，却被忽视——直到谷歌签署了一项比OpenAI限制更弱的协议：未禁止杀人机器人或大规模监控。
+
+特纳得出结论，谷歌领导层在政府压力下未能坚守其AI伦理承诺，因此他问心无愧地离开了公司。这篇文章是一个警示故事，讲述了强大的机构在面对胁迫时如何放弃原则。
+
+---
+
+## 40. 每天锻炼？不错，但你的社交健康度如何？（2023）
+
+**原文标题**: Work out daily? OK, but how socially fit are you? (2023)
+
+**原文链接**: [https://news.harvard.edu/gazette/story/2023/02/work-out-daily-ok-but-how-socially-fit-are-you/](https://news.harvard.edu/gazette/story/2023/02/work-out-daily-ok-but-how-socially-fit-are-you/)
+
+基于对哈佛成人发展研究主任罗伯特·瓦尔丁格的访谈，本文指出良好关系是幸福感和身体健康的最强预测指标——其重要性超过胆固醇、血压、财富或名声。这项始于1938年的研究发现，人际关系（尤其是婚姻）的满意度最能预测一个人在80岁时是否拥有健康快乐的生活。瓦尔丁格解释称，孤独感是一种慢性压力源，使身体持续处于低水平的“战斗或逃跑”状态，从而导致炎症和身体系统受损。他指出，孤独对健康的危害等同于每天吸半包烟或肥胖。
+
+文章强调了“社交健身”——即通过一些微小行动（如给思念的人发条信息、参加你喜欢的团体活动）来主动维护社交关系。建立有意义的关系永远不嫌晚，每个人都至少需要一个可以信赖的坚实知己。瓦尔丁格总结道，虽然没有人能永远快乐，但加强人际关系可以构建一个安全网，帮助我们渡过生活的难关。
+
+---
+
