@@ -1,4 +1,4 @@
-pkg install py312-openai
-pkg install py312-beautifulsoup
-pkg install py312-python-dotenv
-pkg install py312-markdown
+pkg install -y py312-openai
+pkg install -y py312-beautifulsoup
+pkg install -y py312-python-dotenv
+pkg install -y py312-markdown
