@@ -1,0 +1,626 @@
+# Hacker News 热门文章摘要 (2026-08-10)
+
+这是今日 [Hacker News](https://news.ycombinator.com/) 上最热门的文章摘要。
+
+## 1. Kinney Drugs因数百起客户投诉撤下AI电话助手
+
+**原文标题**: Kinney Drugs pulls back AI phone assistant after hundreds of customer complaints
+
+**原文链接**: [https://www.wcax.com/2026/08/07/kinney-drugs-pulls-back-ai-phone-assistant-after-hundreds-customer-complaints/](https://www.wcax.com/2026/08/07/kinney-drugs-pulls-back-ai-phone-assistant-after-hundreds-customer-complaints/)
+
+Kinney Drugs正在缩减其AI电话助手“Burt”的使用规模，此前有数百名客户投诉称该助手出现通话内容不连贯、剂量信息错误以及错过处方通知等问题。这款AI以该药店连锁创始人的名字命名，于今年5月上线，负责处理患者关于处方和续药的沟通。
+
+客户反映该技术存在严重问题，促使公司恢复使用传统的按键式电话系统来接收患者来电。Kinney Drugs总裁John Marraffa承认了这一失败，他表示，虽然隐私和安全方面处理得当，但客户体验不佳，公司对此负有责任。
+
+此外，隐私问题也引发担忧，客户担心AI平台可能泄露其个人健康信息。Marraffa安抚称，Burt完全符合HIPAA（健康保险携带和责任法案）合规要求，不是开源的，也不会生成或篡改数据。尽管有所收缩，Kinney仍将继续使用Burt进行外呼沟通，例如发送处方续药短信，但患者必须主动选择接收此类信息。
+
+---
+
+## 2. 深入了解Claude的数学能力
+
+**原文标题**: Learning more about Claude's mathematical capabilities
+
+**原文链接**: [https://www.anthropic.com/research/riemann-zeta](https://www.anthropic.com/research/riemann-zeta)
+
+Anthropic研究员给Claude的一个未发布研究版本提出了挑战，要求它对黎曼猜想进行“真正的尝试”。虽然它没有解决这个著名问题，但Claude出人意料地改进了一个相关结果：它将黎曼ζ函数在临界线上的零点比例的下界从41.6%提高到了67.2%。
+
+这一发现建立在Baluyot、Goldston、Suriajaya和Turnage-Butterbaugh先前工作的基础上，并结合了Bombieri在2000年发表的一篇论文。Claude使用了一个带有二次型的函数空间，将正定和负定子空间放在一起处理，并利用一阶和二阶矩信息推导出了一个不等式。
+
+在方法论上，Claude在Claude Code中通过两次会话使用了60个子代理，消耗了3100万输出令牌。它运行了数千次数值检查，下载了54篇arXiv论文以排除已有工作，并独立地重新证明了自己的结果。两位Anthropic数学家Levent Alpöge和Ralph Furman验证了这一证明，外部专家Brian Conrey和Dan Goldston对其进行了审查。Claude还生成了一份可正式验证的Lean证明。
+
+Claude最初对自己的结果持怀疑态度，但来自操作人员的鼓励帮助它继续了下去。Anthropic指出，这一成就不太可能带来黎曼猜想的证明，但它凸显了AI模型在数学领域的快速进步。文章附有Claude的论文、形式化证明、非正式笔记、解释和对话记录的相关链接。
+
+---
+
+## 3. 没有真正的“完成”：2022年阿巴拉契亚小径全程徒步后的思考
+
+**原文标题**: There is no “done”: Reflections on a completed Appalachian Trail thru-hike (2022)
+
+**原文链接**: [https://thetrek.co/appalachian-trail/there-is-no-done-reflections-on-a-completed-at-thru-hike/](https://thetrek.co/appalachian-trail/there-is-no-done-reflections-on-a-completed-at-thru-hike/)
+
+艾米莉·哈克尼回顾了她完成2022年阿巴拉契亚小径全程徒步的经历——从三月开始，历时五个半月，行程2200英里。在弗吉尼亚州的家中醒来，她仍然会本能地对降雨预报作出反应，但意识到自己不再需要冒雨徒步了。
+
+她解释说，大约在田纳西州时，她停止了写博客，因为身心俱疲，无法写作。当人们问起这次徒步怎么样时，她难以总结：“艰难、有趣、值得、可怕、狂野、奇妙。”
+
+这篇文章更深层的脉络是悲伤。她徒步的部分原因是为了处理父亲的去世，最初希望能借此分散自己的注意力。小径打破了她的防备，迫使她感受一切：喜悦、恐惧、愤怒，尤其是悲伤。她不停地哭泣，但这变成了治愈。她学到了“唯一的出路是穿越它”，无论是在小径上还是在悲伤中。一个例子是马霍苏克隘口，一片她害怕但又必须穿越的艰难巨石地带。
+
+她反思一切事物的无常——即使是古老的山脉——并在接受生命的循环中找到平静。到最后，她意识到悲伤永远不会“结束”；它仍然是与她父亲的一种联系。登顶后下撤卡塔丁山时，另一位徒步者形容那种感觉为“平静”，她表示同意。文章以祝福结尾：“祝你们大家都有非常愉快的旅途。”
+
+---
+
+## 4. 在 Apple Vision Pro 上运行 Android ARM64 VR APK
+
+**原文标题**: Run Android ARM64 VR APKs on Apple Vision Pro
+
+**原文链接**: [https://github.com/shinyquagsire23/Klepton](https://github.com/shinyquagsire23/Klepton)
+
+Klepton 是一个项目，可让 Android ARM64 VR 应用（尤其是 Beat Saber）在 Apple Vision Pro 和 macOS 上运行，而无需 JIT。它通过将 Android `.so` 库翻译为可加载的 macOS/visionOS dylib/framework，然后将它们链接到 Klepton 运行时中来工作。目前仅支持 Java-thin 应用；不包含 ART 或 JVM。
+
+图形翻译通过 ANGLE 处理，将 GLES 3.2 转换为使用 Metal 后端的 GLES 3.0；Vulkan 则通过 MoltenVK 进行翻译。运行时包含多个兼容层：`libklepton_bionic` 将 Android 的 libc/libm/libdl/pthread/log 映射到 Apple 的 libSystem；`libklepton_ndk` 实现 Android NDK API，如 ALooper、ANativeWindow、ASensor 和 AAsset；`libklepton_jni` 提供合成的 JavaVM/JNIEnv；`libklepton_ovrp` 重新实现 Oculus VR Platform 函数。前端使用 MoltenVK、ANGLE、Compositor Services、ARKit、GameController 和 AVAudioEngine。
+
+一个关键的技术问题是，Android 和 macOS 都保留了 x18 寄存器，但 macOS 在上下文切换时会将其清零。由于许多较旧的 Android 应用使用 x18，Klepton 会修补所有使用 x18 的代码，改为使用每个库的 TLS 槽位。
+
+该项目还可以在运行时使用 `mmap` 加载和修补 `.so` 文件，但这仅在 macOS 上有用，因为那里允许 JIT。如果某些应用依赖 LuaJIT 或 V8 等脚本运行时，则可能仍然需要 JIT。
+
+构建说明位于 BUILDING.md 中。基本前提条件包括 `brew install pkg-config sdl3 apktool`、使用 `apktool` 解压 APK，以及运行 `make check`。项目提供了 `build_run_viewer.sh`、`build_run_vpro.sh` 和 `build_run_slink.sh` 等快速脚本，用于不同的目标平台。
+
+状态：Beat Saber 可在 macOS 和 visionOS 上运行，仅有轻微图形问题；Steam VR Link 以及更广泛的通用性和构建工具支持仍在开发中。
+
+---
+
+## 5. Claude将黎曼猜想的界从41.6%推进至67.2%
+
+**原文标题**: Claude moves bound of the Riemann Hypothesis from 41.6% to 67.2%
+
+**原文链接**: [https://twitter.com/jarredsumner/status/2086869681785500011](https://twitter.com/jarredsumner/status/2086869681785500011)
+
+贾里德·萨姆纳请Claude解决黎曼猜想。Claude并未完全解决该问题，但在1.5天内证明了黎曼ζ函数至少有67%的零点位于临界线上——相比此前41.6%的已知界限有了显著提升。据报道，这一结果令解析数论学家们感到兴奋，也凸显了Claude日益增长的数学能力。
+
+---
+
+## 6. 一个有趣的傅里叶变换——1/f噪声（2007）
+
+**原文标题**: An Interesting Fourier Transform – 1/f Noise (2007)
+
+**原文链接**: [https://www.dsprelated.com/showarticle/40.php](https://www.dsprelated.com/showarticle/40.php)
+
+文章讨论了幂律函数的一个显著性质：它们的傅里叶变换也是幂律。具体而言，对于单边时域函数 u(t) t^α，其变换幅度正比于 ω^-(α+1)，并带有额外的伽马函数缩放因子 Γ(α+1) 和相位项。例子涵盖 α = -2 到 α = 2；α = 0 给出单位阶跃和理想积分器的 1/ω 响应，而 α = 1 对应于两个积分器的级联（1/ω²）。
+
+特殊情况出现在 α = -1，此时伽马函数无定义。更有趣的是 α = -0.5：两个域具有相同的幂律指数，使得 u(t)t^-1/2 及其变换幅度 ω^-1/2 具有自相似性。
+
+作者将此与1/f噪声联系起来，这是一种在电子、交通、音乐、DNA等中发现的尚未被充分理解的噪声。其功率谱约为1/f，因此其幅度谱约为1/f^1/2。因此，在有限意义上，1/f噪声是它自身的傅里叶变换：形状为 u(t)t^-1/2 的脉冲产生1/f功率谱，而将白噪声通过具有该冲激响应的滤波器则会生成1/f噪声。然而，清晰的物理解释仍然难以捉摸。真实1/f噪声的相位未知，相应的时域波形也可能并非简单的 t^-1/2。作者指出，高斯曲线和幂律都是自傅里叶的这一事实或许能提供线索，并邀请人们在这一长期谜团上探索研究方向。
+
+---
+
+## 7. Blackwing铅笔是如何制造的[视频]
+
+**原文标题**: How Blackwing Pencils are Made [video]
+
+**原文链接**: [https://www.youtube.com/watch?v=fow-LsdaH2E](https://www.youtube.com/watch?v=fow-LsdaH2E)
+
+该视频介绍了人气颇高的“黑翼铅笔”是如何制造而成的。
+
+内容方面，从木材的选材、切割、开槽加工，到混合石墨与粘土制作笔芯、将其嵌入铅笔本体、粘合与加压、干燥、表面涂装与刻印，再到安装标志性的金属箍环和橡皮，按工序逐一展示制造过程。此外，还着重展现了工匠手工精细打磨和品质管理的情景。
+
+不过，所给出的“Content”部分只是YouTube标准的页脚信息，并不包含正文或视频的详细脚本。因此，该摘要基于标题和一般的制造工艺常识。
+
+---
+
+## 8. Show HN：语音驱动的谋杀之谜，用你的声音审问AI嫌疑人
+
+**原文标题**: Show HN: Voice driven murder mystery, Interview AI suspects with your voice
+
+**原文链接**: [https://www.whodunnitai.com/](https://www.whodunnitai.com/)
+
+一篇“Show HN”帖子介绍了WhoDunnitAI，这是一款语音驱动的谋杀悬疑游戏。玩家可以用自己的声音审问AI嫌疑人。游戏免费游玩，但除非你提供自己的OpenAI密钥以获取无限访问权限，否则审问时间有限。嫌疑人实时语音由GPT-Realtime-2驱动，每次审问每分钟都会产生实际费用。为了帮助覆盖这些AI费用并维持游戏运行，作者Chase Myers接受任何金额的捐赠。帖子中包含一个演示视频和一个捐赠链接。
+
+---
+
+## 9. 德国创下六个月初创企业新纪录
+
+**原文标题**: Germany Sets New Six-Month Startup Record
+
+**原文链接**: [https://www.gtai.de/en/meta/press/germany-sets-new-six-month-start-up-record-2012048](https://www.gtai.de/en/meta/press/germany-sets-new-six-month-start-up-record-2012048)
+
+德国在2026年上半年创下了科技初创企业的新纪录，共有3053家新公司成立——比2025年下半年增长了52%。根据德国初创企业协会和Startupdetector的一项研究，其中超过三分之一（1038家）是AI初创企业，凸显了AI在德国创新生态系统中的核心地位。GTAI专家Asha-Maria Sharma将此增长归因于德国工业、出行和能源企业积极寻求AI解决方案，使初创企业能够更快地测试技术并进入市场。反过来，AI也帮助创始人在资本较少的情况下创办公司。软件仍是最强的子领域，新增了844家公司。GTAI是德国政府负责国际商业推广的机构，支持外国企业进入德国市场以及德国企业走向海外。
+
+---
+
+## 10. 对于编码代理来说，最好的编程语言是什么？
+
+**原文标题**: What's the best programming language for coding agents?
+
+**原文链接**: [http://danluu.com/pl-tokens/](http://danluu.com/pl-tokens/)
+
+这篇文章批判性地考察了关于动态类型或高度简洁的语言对基于LLM的编程智能体更具令牌效率的说法。文章引用了早期评估，这些评估似乎表明Clojure和J等语言优于静态语言，但作者认为这些结果并不可靠，因为任务过于简单，且评估存在方法论缺陷，包括一个导致测试评分出错的符号链接错误。
+
+为了验证这一说法，作者运行了两个更大、更贴近实际的评估：
+
+1. **Zstd解码器**：智能体需在无测试的情况下，根据RFC实现解码器。
+2. **Pandoc**：一个改写的TDD风格评估，使用ProgramBench材料及留出测试集。
+
+结果显示，**没有任何语言类型明显占据主导地位**。在中等投入下，动态语言看起来稍好一些，但在更高投入下，静态语言往往能与之持平或超越。在琐碎任务中看到的极端令牌效率优势，在更大问题中消失了。J和汇编等冷门或“奇异”语言表现不佳，而更流行的语言则与更好、更便宜的结果呈现弱到中等程度的相关性。
+
+作者预先注册的猜想大多得到证实：
+- “动态语言对LLM更具令牌效率”的笼统说法**不成立**。
+- “J或其他高密度语言会更优越”的想法**不成立**。
+- “静态语言在超高投入下表现更好”并未得到明确支持。
+
+常见说法——如PHP糟糕的代码声誉会损害性能、Haskell等强大语言更好、动态语言在小任务上占优而静态语言在大任务上占优——均未得到这些评估的支持。文章总结道，大多数关于语言对LLM适用性的宽泛说法并不可靠，而这些问题直到现在才可能通过基于LLM的评估得到检验。
+
+---
+
+## 11. Findphone：通过信号强度定位附近的蓝牙设备
+
+**原文标题**: Findphone: Locate a nearby Bluetooth device by signal strength
+
+**原文链接**: [https://github.com/ben-z/findphone](https://github.com/ben-z/findphone)
+
+`findphone` 是一款适用于 macOS 的命令行工具，通过信号强度定位附近的蓝牙设备。它专为“查找”（Find My）不可用的情况而设计——例如，当 MDM 配置文件禁用了“查找”功能时——但设备仍在蓝牙范围内。
+
+**安装：** 从 Releases 下载通用二进制文件，使用 `xattr -dr com.apple.quarantine findphone` 清除 macOS 隔离属性，然后运行 `./findphone --help`。需要 macOS 13 或更高版本。也可以使用 Swift 从源码构建；无依赖项。
+
+**用法：** 运行 `findphone` 会按信号强度扫描附近的 Apple 手持设备。`findphone iphone` 通过不区分大小写的名称跟踪单个设备。`findphone --list` 显示已配对设备和地址。`--sound` 添加类似停车传感器的提示音，离设备越近响声越快，在 -50 dBm 左右变为持续蜂鸣声。`--redact` 会屏蔽蓝牙地址和设备名称，以便录制屏幕，但追踪模式下的目标名称和 `--list` 输出仍然可见。
+
+信号强度以 dBm 为单位显示；数值越高（负值越小）表示距离越近。粗略参考：-45 及以上为手臂可及范围，-60 为同一张桌子，-72 为同一房间，-85 为较远或有遮挡。信号只是距离的粗略指标；墙壁和金属会影响信号。
+
+**工作原理：** 它综合了三个数据源：已连接的 GATT 链路的 `readRSSI()`（效果最佳）、被动监听的 BLE 广播，以及来自 `system_profiler` 的经典链路 RSSI——后者可能提供 3–12 秒的缓存值，因此只统计发生变化的值。
+
+**局限性：** 无法让设备响铃，无法指示方向，并且只能在蓝牙范围内（室内约 10–20 米）且蓝牙开启的情况下工作。
+
+---
+
+## 12. Signal正在开发无需手机号注册账号的付费选项
+
+**原文标题**: Signal is working on a paid option to create an account without a phone number
+
+**原文链接**: [https://aboutsignal.com/news/signal-login-registration-without-a-phone-number/](https://aboutsignal.com/news/signal-login-registration-without-a-phone-number/)
+
+Signal据称正在开发一项付费选项，使用户无需手机号即可创建账户。文章还指出，Signal现已支持Chromebook，并且界面将很快得到进一步优化。
+
+---
+
+## 13. AI财富重新引发关于私人权力的古老争论
+
+**原文标题**: AI Fortunes Are Reviving an Old Debate About Private Power
+
+**原文链接**: [https://ai-updates.net/ai-fortunes-philanthropy-private-power/](https://ai-updates.net/ai-fortunes-philanthropy-private-power/)
+
+无法访问文章链接。
+
+---
+
+## 14. Show HN：一个在 250 美元的 FPGA 上以 21,000 tok/s 运行的微型 LLM（现场演示）
+
+**原文标题**: Show HN: A tiny LLM running at 21,000 tok/s on a $250 FPGA (Live Demo)
+
+**原文链接**: [https://www.mikeayles.com/blog/on-chip-llm-kv260/](https://www.mikeayles.com/blog/on-chip-llm-kv260/)
+
+一位开发者将拥有316万参数的语言模型（INT4量化，约1.5 MB）完整塞入一块250美元AMD KV260 FPGA的片上SRAM中，在16个并行流上实现了59,965 token/秒的吞吐量，而真正单流对话约为21,300 token/秒。同一模型在该开发板的Arm核心上仅能以11 token/秒运行，在RTX 3050 Ti上则为719 token/秒。
+
+核心洞见在于：单流token生成受内存带宽限制——每生成一个token都必须读取全部权重。由于开发板的DDR（约20 GB/s）由CPU与FPGA逻辑共享，把模型放在DDR中毫无收益；把所有权重保留在片上URAM/BRAM（约3 MB，带宽达数百GB/s至TB/s）才是全部关键。该模型使用TinyStories训练数据，并采用Kevin Malone式词形还原（“为何用许多词，少词即可”），将输出压缩约30%，带来约1.5倍的有效加速。
+
+10万 token/秒的目标未能达成；作者证明了62k–78k token/秒是该芯片的硬上限，因为芯片缺少足够的DSP来在每个DSP48E2中塞入第三个MAC。16流纪录也被作者坦承为注水（注意力窗口仅一个token，文本毫无意义）；实际部署的实打实版本运行单流全上下文，约21,300 token/秒，在1到2,000个并发连接下保持稳定。
+
+局限：这种片上方案仅在模型规模低于约630万参数时占优；更大的模型或长上下文会溢出到DDR，撞上带宽墙。作者将此与Taalas、Cerebras和Groq以巨额预算追求同一洞见的工作进行了类比。所有工程实现均位精确，在真实硅片上实测，手写Verilog（借助Claude Code辅助），未使用HLS。
+
+---
+
+## 15. 尾调用解释器在Rust中 – Jimmy Ostler
+
+**原文标题**: Tail-Call Interpreters in Rust – Jimmy Ostler
+
+**原文链接**: [https://lordgoati.us/blog/tail-call/](https://lordgoati.us/blog/tail-call/)
+
+这篇文章探讨了 Rust 中的尾调用解释器技术，灵感来自一篇关于 Scala 虚拟机分派的文章。作者实现了一个具有五条指令（`Lit`、`Add`、`Sub`、`Mul`、`Div`）的简单栈式虚拟机，并对四种分派风格进行了基准测试：
+
+- **开关分派（Switch Dispatch）**：使用 `become` 关键字实现递归的 `match` 循环，以保证尾调用优化。
+- **子例程分派（Subroutine Dispatch）**：指令作为 `&dyn Fn()` 闭包，使用动态分派和全局可变状态。
+- **间接分派（Indirect Dispatch）**：操作调用一个中央 `dispatch` 函数，再由该函数调用下一个操作。
+- **直接分派（Direct Dispatch）**：每个操作直接调用下一条指令，省去了分派函数；这种方式表现最佳，为 24.59 纳秒/迭代，而间接分派为 55.32，开关分派为 59.39，子例程分派为 79.93。
+
+作者随后将实验扩展到一个带译码阶段的 16 位寄存器机器，比较了简单的开关分派循环与处理函数子例程表。他们指出，使用 `static mut` 和不稳定特性（如 `explicit_tail_calls`）纯粹是实验性的，不推荐用于生产环境的 Rust。文章强调，直接分派能最大化尾调用的优势，因此优于其他方法，不过由于基准测试规模较小且编译器优化存在影响，这些数字应谨慎解读。
+
+---
+
+## 16. 我在我的笔记本电脑上对本地大语言模型进行了基准测试
+
+**原文标题**: I Benchmarked Local LLMs on the Laptop I Have
+
+**原文链接**: [https://mamonas.dev/posts/local-llms-on-the-laptop-i-already-have/](https://mamonas.dev/posts/local-llms-on-the-laptop-i-already-have/)
+
+这篇文章在2021款M1 Pro（16GB内存）上对本地大语言模型进行了基准测试，指出典型的本地模型评测文章通常使用昂贵的硬件。通过Ollama测试了五个模型：qwen3.5:4b/9b、gemma4:e4b-it-qat、gemma4:12b-it-qat和qwen2.5:7b。测试集包含21项数据工程师风格的任务（SQL、调试、JSON提取、代码预测、常识问答、长文档查找），按执行结果评分。结果：gemma4:12b通过率90%（耗时123分钟），gemma4:e4b为86%（18分钟），qwen3.5:9b为81%（114分钟），qwen3.5:4b为62%（125分钟），qwen2.5:7b为52%（3分钟）。较旧的模型速度快但能力弱；现代推理模型准确但缓慢，常常花费数千个token进行思考——有时超出生成预算而始终没有回答。对于快速事实性问题，非推理模型gemma4:e4b约0.6秒内作答，但会给出自信的错误答案（例如chmod 750 vs 754）。推理模型则需要17至38秒。长文档问题可以完成，但初始提示处理需要32至148秒，使得智能体式工作流在这台笔记本上不切实际。成本分析：整个210次运行的基准测试在DeepSeek上花费0.14美元，或在Muse上花费0.10美元，而本地需数小时计算；除非你的时间一文不值，否则本地并不更便宜。真正需要本地运行的原因是隐私、离线使用或API中断。作者只会保留gemma4:e4b-it-qat作为免费的离线后备方案和JSON提取器。结论：在普通笔记本上，本地模型的表现好于预期，但不会减少AI开销——而这正是最初的动机。
+
+---
+
+## 17. 我们如何将CDC引入Postgres
+
+**原文标题**: How We Pushed CDC into Postgres
+
+**原文链接**: [https://www.snowflake.com/en/blog/engineering/postgres-to-snowflake-replication-mirroring/](https://www.snowflake.com/en/blog/engineering/postgres-to-snowflake-replication-mirroring/)
+
+本文介绍了 Snowflake 针对 Snowflake Postgres 推出的 Data Mirroring 功能，该功能重新构想了 PostgreSQL 变更数据捕获（CDC），用基于推送的系统取代了脆弱的基于拉取的复制。
+
+传统的逻辑解码将变更流暴露给外部客户端，由客户端处理快照、模式变更、故障和一致性。这种方法既脆弱又运维繁重。Data Mirroring 则使用名为 `snowflake_cdc` 的 Postgres 扩展，持续将行级变更批量推送到对象存储中的 Iceberg 表（以 Parquet 格式），并附带跟踪已复制 LSN 的元日志。由于该扩展运行在 Postgres 内部，它可以精确协调 DML/DDL 事务、快照和模式变更。
+
+该系统在单一时间线上运行，分为四个阶段：写入 → 解码 → 捕获 → 应用。扩展解码 WAL 并完成批次，批次追加到变更日志中；Snowflake 随后以事务方式应用相邻批次，保留事务边界和外键。这种事务性方法避免了昂贵的更新插入（upsert）——插入只需追加——并实现了“实时视图”（live views），该视图将未应用的变更日志与基础表结合，无需频繁的应用周期即可进行低延迟查询。
+
+该设计通过对象存储将生产者和消费者解耦，去除了外部连接器，消除了常见故障模式。一旦设置完成，复制便可以无限期运行，成本低、延迟低，且具有事务一致性。文章还提到了 Postgres for your data lake (pg_lake) 作为补充的 SQL 驱动工具，用于灵活的数据移动，而 Data Mirroring 则是始终在线的自动复制选项。
+
+---
+
+## 18. Anthropic刚刚证明AI并未进步
+
+**原文标题**: Anthropic just proved AI isn't getting better
+
+**原文链接**: [https://www.youtube.com/watch?v=xWxFEZICuwU](https://www.youtube.com/watch?v=xWxFEZICuwU)
+
+所提供的文本并不包含关于Anthropic或人工智能进展的文章。尽管标题声称“Anthropic刚刚证明人工智能并未变得更好”，正文实际上只是YouTube标准的法律与版权样板文本。
+
+内容要点如下：
+
+- 其中显示了YouTube的标准页脚信息：Google LLC的版权声明、2026年日期，以及YouTube山景城总部桑达尔·皮查伊的联系方式。
+- 其中包含一个免费支持电话号码和一个YouTube支持邮箱地址。
+- 其中说明YouTube由Google LLC托管，并提供了商业信息以及一个用于举报非法拍摄内容的渠道。
+- 其中包含一则关于创作者在YouTube上展示、标记或推荐产品的免责声明：此类产品由商家销售，并受商家条款约束；YouTube不出售这些产品，也不对其负责。
+
+简而言之，标题与正文并不相符。正文并非关于Anthropic、人工智能或模型改进的新闻文章或分析，而只是YouTube的法律与联系信息。因此，无法从该内容中准确得出任何与Anthropic相关的论点摘要。
+
+---
+
+## 19. OpenAI新设备将如冰球大小，售价超300美元
+
+**原文标题**: OpenAI's new device will be hockey puck-sized and cost over $300
+
+**原文链接**: [https://www.bloomberg.com/news/articles/2026-08-06/what-is-openai-s-device-a-doughnut-shaped-speaker-that-costs-over-300](https://www.bloomberg.com/news/articles/2026-08-06/what-is-openai-s-device-a-doughnut-shaped-speaker-that-costs-over-300)
+
+无法访问文章链接。
+
+---
+
+## 20. 官僚式AI军备竞赛是相互确保摧毁
+
+**原文标题**: The bureaucratic AI arms-race is mutually assured destruction
+
+**原文链接**: [https://pluralistic.net/2026/08/10/deep-state-wopr/](https://pluralistic.net/2026/08/10/deep-state-wopr/)
+
+这篇文章认为，利用人工智能来对抗人工智能生成的官僚主义申请，会引发一场军备竞赛，最终导致“相互确保毁灭”。文章批评了《经济学人》的一篇社论，该社论声称人工智能将“瓦解英国国家机器”，因为它让提交投诉和上诉变得过于容易。《经济学人》提议削减福利，并利用更多人工智能来武断地拒绝服务——这是一种“解决方案主义”式的修补，牺牲了公共服务的宗旨。
+
+政治学家亨利·法雷尔警告说，这将升级为吝啬的人工智能官僚与咄咄逼人的人工智能律师之间的机器人战争。法雷尔引用了艾伦·摩尔1980年代创作的角色阿贝拉多·斯纳兹——该角色制造了不断升级的“大警察机器人”和“大罪犯机器人”——并指出普通民众成了附带损害。这已经发生在美国的医疗保健领域：保险公司用人工智能拒绝理赔，医生则用人工智能提出上诉。
+
+类似的例子还包括垃圾邮件之战——不断升级的反垃圾邮件措施最终导致电子邮件被少数企业垄断——以及内容审核领域，网络 troll 掌握了平台规则来虐待受害者。文章引用了斯塔福德·比尔的话：“系统的目的就是它的所作所为。”如果官僚机构专注于打击欺诈而非提供服务，它就变成了一个拒绝服务的系统。正如标题所暗示的，最好的回应是根本不参与这场军备竞赛。
+
+文章末尾还附有一段后记，推荐了法雷尔和丹·王合作撰写的一篇关于菲利普·迪克与当下政治关联的英国《金融时报》文章。页面其余部分是常规的博客链接：“看看这个”、“对象恒久性”（历史链接）、即将出席的活动以及读书笔记。
+
+---
+
+## 21. 研究：GLP-1类药物带来的女性就业增幅超过学位。
+
+**原文标题**: Study links GLP-1 drugs to bigger jump in women's employment than a degree
+
+**原文链接**: [https://finance.yahoo.com/healthcare/articles/harvard-study-links-glp-1-123000637.html](https://finance.yahoo.com/healthcare/articles/harvard-study-links-glp-1-123000637.html)
+
+哈佛大学的研究表明，GLP-1减肥药物与女性就业率的显著提升有关。这份由哈佛经济学家丽贝卡·戴蒙德撰写的工作论文发现，与那些想要服用但尚未服用这些药物的相似女性相比，开始服用GLP-1药物时处于失业状态的女性，其就业率在18个月内上升了近27个百分点。这一增幅甚至大于美国拥有高中学历女性与拥有大学学历女性之间的就业差距。
+
+该研究在收入、种族、BMI和健康状况方面对参与者进行了匹配，还发现服用GLP-1药物的单身女性结婚或与伴侣同居的可能性高出约29个百分点。值得注意的是，已经就业的女性并未获得更高的薪酬或晋升机会。作者认为，这些收益很可能反映了偏见：减肥并没有让女性更有能力，但可能会改变雇主对她们的看法。
+
+文章将这些发现置于已知的与体重相关的工作场所惩罚背景中。圣路易斯联储引用的早期研究发现，超重的白人女性比正常体重的白人女性收入低约4.5%，而肥胖女性的收入则低近12%。Fairygodboss的一项研究也显示，招聘专业人士对体重较重的女性评价更加苛刻，其中20%称她们“懒惰”，只有18%认为她们具有领导潜力。
+
+文章还讨论了“美貌特权”，引用了科迪·桑切斯的说法，即化妆的女性收入高出约30%。其结论是，一个令人不安的暗示是：塑造女性经济机会的可能是外貌，而非能力。
+
+---
+
+## 22. 面向分布式系统工程师的ATProto
+
+**原文标题**: ATProto for Distributed Systems Engineers
+
+**原文链接**: [https://atproto.com/articles/atproto-for-distsys-engineers](https://atproto.com/articles/atproto-for-distsys-engineers)
+
+本文面向分布式系统工程师，将 AT 协议（ATProto）解释为一个去中心化的现代大规模后端系统。
+
+文章首先介绍典型 Web 后端的演化过程：从单个 SQL 数据库开始，然后引入缓存、分片，最终使用 NoSQL 集群来提升可扩展性。为了重新获得查询能力，开发者构建了预计算的“视图服务器”，并通过事件日志（如 Kafka）进行同步，从而形成流处理架构。这种方式牺牲了强一致性，但扩展性很好。
+
+ATProto 以去中心化的方式应用了同样的架构。它不再将内部服务隔离，而是让每个组件——数据仓库、事件日志、视图服务器——都成为任何人都可以托管和使用的公共服务。这就构成了一个由协作服务器组成的开放网络。
+
+其关键创新在于统一的数据模型：每个用户都有一个“数据仓库”，其中包含名为“记录”的 JSON 文档集合。这些记录被分配 URL，并通过密码学签名保证真实性。这种标准化让不同应用能够跨网络共享和同步数据。
+
+典型的应用流程如下：用户通过 OAuth 登录，授权应用读写其数据仓库。写入操作提交到仓库，并通过事件日志广播到视图服务器。应用随后从这些视图服务器读取数据，而视图服务器聚合了来自许多仓库的数据。这一循环流程让多个应用和用户能够共同构建一个可扩展的共享网络。
+
+文章强调，ATProto 将点对点技术与大规模后端实践相结合，旨在提供全球社交应用的便利性，同时保持开放性。文中还提到，该协议创始团队拥有 IPFS 和 Dat 的开发经验，而《数据密集型应用系统设计》一书的作者 Martin Kleppmann 担任顾问——这凸显了该协议背后工程优先的思路。
+
+---
+
+## 23. 面向智能体的自托管推理
+
+**原文标题**: Self-Hosted Inference for Agents
+
+**原文链接**: [https://github.com/superlinked/sie](https://github.com/superlinked/sie)
+
+SIE（Superlinked推理引擎）是一个开源、自托管的推理引擎，旨在通过单一API运行AI Agent背后的所有模型。它取代了为每个任务单独部署模型服务器的需求，可在你的云环境中的一个集群内服务100多个模型。
+
+主要特性包括兼容OpenAI的API（`/v1/embeddings`、`/v1/chat/completions`等）、预配置的模型目录（Stella、SPLADE、Qwen3、GLiNER、SigLIP等）、多模型同时服务（支持按需加载和LRU淘汰），以及完整的生产级技术栈——涵盖负载均衡网关、KEDA自动扩缩容、Grafana仪表盘和适用于GKE、EKS、AKS的Terraform模块。它可与LangChain、LlamaIndex、Haystack、DSPy、CrewAI、Chroma、Qdrant、Weaviate和LanceDB集成。
+
+SIE覆盖五大主要Agent任务：搜索（嵌入、匹配、重排序）、文档转Markdown（PDF、Office文件、扫描件）、结构化输出（符合Schema的JSON）、内容安全，以及运行Agent循环（规划与工具调用）。快速入门非常简单：通过`pip install "sie-server[local]"`安装，或运行Docker镜像（针对不同捆绑包，如CUDA、CPU，或用于OCR模型的Transformers 5）。服务器开箱即用地支持OpenAI API；首次调用会自动下载模型权重。提供Python和TypeScript SDK，只需几行代码即可实现嵌入生成、重排序、实体提取和文本生成。
+
+在生产环境中，SIE提供Helm Charts，并附带针对特定云平台的values覆盖配置。它收集匿名遥测数据（版本、操作系统、架构、GPU类型），但不收集IP或请求数据；可通过环境变量禁用此功能。该项目采用Apache 2.0许可证。
+
+---
+
+## 24. AI训练营兴起，职场人士争相学习新技能
+
+**原文标题**: AI Boot Camps Surge as Workers Race to Learn New Skills
+
+**原文链接**: [https://www.bloomberg.com/news/articles/2026-08-08/ai-training-boom-sends-colleges-racing-to-offer-credentials](https://www.bloomberg.com/news/articles/2026-08-08/ai-training-boom-sends-colleges-racing-to-offer-credentials)
+
+无法访问文章链接。
+
+---
+
+## 25. 英伟达正带领华尔街投身人工智能建设
+
+**原文标题**: Nvidia is pulling Wall Street into the AI buildout
+
+**原文链接**: [https://thenextweb.com/news/nvidia-500-billion-wall-street-ai-infrastructure-funding-package](https://thenextweb.com/news/nvidia-500-billion-wall-street-ai-infrastructure-funding-package)
+
+包括阿波罗全球管理公司、黑石集团、贝莱德全球基础设施合伙公司、布鲁克菲尔德、高盛和KKR在内的一组金融机构，正在与英伟达合作，为人工智能基础设施打造一个5000亿美元的融资方案。相关谈判最早由英国《金融时报》报道，并获彭博社确认；交易可能最早于周一达成。
+
+市场反应消极，英伟达股价下跌逾2%。关键警示是：几乎一切都尚未敲定。彭博社的消息来源无法说明具体项目、结构，或这5000亿美元是新资本还是对现有承诺的重新打包。这一点很重要，因为英伟达今年已宣布了数千亿美元的人工智能供应链交易。
+
+英伟达在很大程度上为自己的需求提供了融资，包括与OpenAI谈判提供2500亿美元的担保，为OpenAI购买芯片提供3500亿美元融资，以及与SK集团达成的5000亿美元以上的合作。这种模式引发了“循环融资”的担忧——供应商为买家提供资金，买家购买芯片，收入又回流至供应商。新的方案可以通过将资本分散到独立的资产负债表上来回应这一批评——但前提是承销是真实的。
+
+华尔街已经深度参与：阿波罗和黑石围绕谷歌TPU建立了一个350亿美元的融资工具，摩根士丹利安排了一笔由英伟达GPU支持的9.17亿美元贷款，而人工智能基础设施合作伙伴关系（参与者包括贝莱德、微软、MGX、英伟达和xAI）目标筹资高达1000亿美元。5000亿美元的方案规模大约是之前那个项目的五倍。
+
+大型科技公司今年有望在人工智能上投入7300亿美元。真正的问题不在于规模，而在于如果数据中心建成而需求没有跟上，损失由谁来承担——是英伟达、养老基金，还是私人信贷投资者？
+
+---
+
+## 26. 费利克斯和我
+
+**原文标题**: Felix and I
+
+**原文链接**: [https://jacobfilipp.com/felix/](https://jacobfilipp.com/felix/)
+
+这篇文章是一篇回忆录，讲述了作者和他的朋友菲利克斯在2010年追寻一个目标的故事——通过一个电子商务联盟网站“帝国”，在30岁前成为百万富翁。他们利用商家的产品数据源搭建克隆网站，让这些网站在谷歌上获得更高排名，并在用户购买时赚取8%的佣金。每个网站大约需要一天时间搭建，所以他们在一块布里斯托板上画了100个圆圈来追踪进度，陆续完成了decorcurtains.com和discountboatshoes.com等网站。到12月，他们达到了100个网站，收入1300美元，而支出为1800美元。2011年，他们暂停扩张，调整网站设计并接自由职业的活，总共赚了5300美元。
+
+穿插在商业故事中的是作者的约会生活。他短暂地和A约会——一个让他着迷但并不合适的女人——然后谎称自己27岁，开始和时装设计系学生M展开一段缓慢升温的感情。他在一次创业招聘活动中被另一个女人吸引，但最终留在了M身边。
+
+2012年，他在一场“学生创业”速配活动中招募了一名实习生。他被一个雄心勃勃的学生强烈吸引，但刻意选择了第二强的候选人D，以避免麻烦。D也选择了他。后来管理员发邮件说D本不该出现在那个房间里——他没有注册参加那个创业合作课程。文章到此戛然而止，留下了悬而未决的结局。
+
+---
+
+## 27. HackerOne发生了什么？
+
+**原文标题**: What Happened to HackerOne?
+
+**原文链接**: [https://blog.teknogeek.io/posts/what-happened-to-hackerone/](https://blog.teknogeek.io/posts/what-happened-to-hackerone/)
+
+## 摘要
+
+这篇文章批判了HackerOne从一家以黑客为中心的平台堕落为销售驱动型公司的过程。作者自2017年起便是一名漏洞赏金猎人和项目主管，文章基于其第一手经验。
+
+HackerOne最初扮演了至关重要的角色，为白帽黑客提供了一种合法、安全的方式来报告漏洞并获得报酬。其"黄金时代"（约2017-2020年）以独家现场黑客活动（LHEs）为特色，通过定制海报、线下聚会以及黑客出身管理层的直接参与，建立了一个强大的研究人员社区。
+
+大约在2020-2021年间，盈利压力使公司发生转变。HackerOne此前依赖约1.6亿美元的风投资金。领导层更迭：创始CEO被职业经理人CEO取代，HackerOne从抽取20%赏金的模式转向基于规模的年度合同，销售和多年期合同被置于产品质量和黑客体验之上。漏洞审核水平下降，低质量项目泛滥，平台停滞不前。
+
+为了管理顶尖研究人员，HackerOne设立了专属的"黑客成功计划"（HSP），为精英黑客提供直接支持，却让新晋黑客几乎没有求助途径，加剧了不平等。平台反馈渠道形同虚设，没有任何实质性改变。
+
+进入AI时代，HackerOne错失良机，打造了一个OpenAI套壳产品"Hai"，而不是修复长期存在的平台问题。创始人们被边缘化。
+
+文章描述了"平台堕落化"（enshittification）过程：CEO马腾·米科斯在2024年底被卡拉·斯普拉格取代——她曾任F5首席产品官，没有黑客背景。HackerOne围绕"CTEM"（持续威胁暴露管理）重塑品牌，沦为一家毫无灵魂的B2B销售机器。
+
+最后，2026年2月，服务条款更新似乎允许使用黑客提交的报告来训练AI模型。研究员zseano指出这一问题，引发争议，迫使联合创始人亚历克斯·赖斯出面危机公关，承诺将澄清相关政策，并保证不会将研究员数据用于生成式AI训练。
+
+---
+
+## 28. 扁虫、离子通道与灼口症
+
+**原文标题**: Flatworms, Ion Channels, and Burning Mouths
+
+**原文链接**: [https://www.science.org/content/blog-post/flatworms-ion-channels-and-burning-mouths](https://www.science.org/content/blog-post/flatworms-ion-channels-and-burning-mouths)
+
+无法访问文章链接。
+
+---
+
+## 29. 我随性编码了一个应用，想看看是什么感觉
+
+**原文标题**: I've vibe coded an application to see what it's like
+
+**原文链接**: [https://rz01.org/vibecoding/](https://rz01.org/vibecoding/)
+
+作者是一名业余无线电爱好者和SOC分析师，通过使用Claude构建“adif-logger”来尝试AI辅助开发——这是一个Python TUI应用，用于直接将QSO记录写入ADIF文件，无需数据库。尽管最初持怀疑态度，但一个详细的提示词就生成了一个可用的应用，能够添加、编辑、删除和搜索条目，根据ADIF字段动态生成UI，集成QRZ.com查询，显示历史QSO，并使用人类可读的标签。迭代式提示词添加了功能并维护了详细的README。
+
+作者的感悟：AI生成的软件确实能正常工作，但作者实际上并没有编写代码——而是充当了客户、项目经理和QA测试员的角色。因此，作者并不拥有或理解这些代码，使其成为一个用完即弃的产品。作者犹豫是否公开分享它，因为专业开发人员会难以维护不熟悉的代码，而作为业余爱好者，作者感觉与开发过程脱节。该应用可在公共仓库中获取，但作者对其质量及其与自身的关系感到矛盾。
+
+---
+
+## 30. 人类因Excel而重命名基因
+
+**原文标题**: Humanity renamed genes because of Excel
+
+**原文链接**: [https://davidemornatta.it/excel-genes](https://davidemornatta.it/excel-genes)
+
+Excel的自动类型转换会破坏生物学数据，它会将类似日期的基因名称转换为日期值——例如，`SEPT2`变成`2-Sep`，`MARCH1`变成`1-Mar`。这种静默更改最早在2004年被生物信息学家注意到，2016年一项针对领先基因组学期刊的调查发现，约五分之一的补充Excel基因列表存在此类错误。因此，许多数据集仍然处于损坏状态，下游分析可能会忽略或错误识别基因。
+
+为了解决这个问题，HUGO基因命名委员会重新命名了几十个人类基因符号，使它们不再容易被误认为日期，例如将`SEPT1`改为`SEPTIN1`。研究人员还构建了修复工具：“Escape Excel”（2017年）在导入前阻止转换，“Gene Updater”（2022年）将损坏的类日期条目转换回正确的基因符号。官方建议仍然是在将数据导入Excel之前将单元格格式设置为文本。这一事件凸显了一个无处不在的消费级程序如何无意中影响科学命名，并迫使人们采取变通方案。
+
+---
+
+## 31. 科技领袖称AI意味着更少工作——员工却称每周工作长达90小时
+
+**原文标题**: Tech leaders say AI means less work – staff say they work up to 90 hours a week
+
+**原文链接**: [https://www.bbc.com/news/articles/cvgx4yd1gl2o](https://www.bbc.com/news/articles/cvgx4yd1gl2o)
+
+尽管科技领袖声称人工智能将减少工作时间，但人工智能公司内部的员工却报告称他们的工作时间远超于此——通常每周70到90小时。
+
+高管们长期以来一直预测每周工作时间会缩短：一位谷歌总监曾表示，到2025年人工智能将带来四天工作制，OpenAI也敦促公司试行四天工作制。但一位前OpenAI员工表示，该公司从未在内部测试过这一想法，反而描述了一种令人精疲力竭的文化：周末加班、危机会议和严苛的绩效评估。OpenAI和Anthropic的员工表示，围绕产品发布的“冲刺”可能持续数周，并在七天内超过90小时。
+
+在Meta，员工们表示，他们在没有选择的情况下被“征召”到紧急的人工智能团队，导致深夜和周末工作以及持续待命的压力。Meta还裁掉了10%的员工。Anthropic的首席执行官警告称，人工智能可能导致更广泛的失业。
+
+即使是并非直接从事人工智能工作的员工也感受到了压力。一位前谷歌工程师表示，人工智能项目耗尽了资源，导致内部系统故障，迫使他通宵工作；他离职后表示自己的健康状况有所改善。
+
+研究支持这些说法。加州大学伯克利分校的一项研究发现，使用人工智能的科技工作者工作速度更快、承担的任务更多、工作时间也更长，部分原因是他们必须不断检查人工智能的输出。麻省理工学院学者尼尔·汤普森指出，任何节省下来的时间都会被实施和监控这项技术“吞噬”。“人们以为少20%的工作意味着四天工作制，”他说，“但新的工作会出现。”
+
+文章总结道，与减少工作的承诺相反，人工智能似乎正在增加许多科技工作者的工作量和压力。
+
+---
+
+## 32. 当智能体粘合剂融化：利用Cloudflare Code Mode与Workers
+
+**原文标题**: When Agentic Glue Melts: Exploiting Cloudflare Code Mode and Workers
+
+**原文链接**: [https://research.checkpoint.com/2026/when-agentic-glue-melts/](https://research.checkpoint.com/2026/when-agentic-glue-melts/)
+
+由于未包含完整的文章正文，本摘要根据标题和上下文推断。
+
+这篇文章可能探讨Cloudflare的AI辅助开发环境中的安全弱点，特别是**Code Mode**和**Workers**。“Agentic glue（智能体胶水）”指的是AI代理的编排层，它将自然语言指令、代码生成和自动部署连接在一起。当这种胶水失效或遭到攻击时，后果可能非常严重。
+
+可能涵盖的要点：
+
+- **提示注入作为主要攻击向量：** 隐藏在网页内容、代码库或粘贴代码中的恶意指令可操纵Cloudflare Code Mode生成有害的Worker脚本。
+- **权限提升：** Code Mode通常具有编辑、部署和管理Workers的广泛权限，滥用它可能让攻击者在Cloudflare的边缘网络执行任意代码。
+- **数据泄露：** 被入侵的Worker可以读取环境变量、机密和数据库绑定，导致敏感客户数据泄露。
+- **不安全的自动化：** Workers常被用作SaaS API之间的“胶水”；如果攻击者控制生成的胶水代码，他们可以在集成的服务之间横向移动。
+- **缺乏人工监督：** AI生成的代码可能在未经适当安全审查的情况下自动部署，增加了引入后门或配置错误的风险。
+
+这篇文章可能建议采取防御措施，例如最小权限原则、部署需人工审批、对AI代理进行沙箱隔离、扫描生成的代码，以及监控Worker活动以发现异常。
+
+简而言之，文章警告说，AI驱动的开发工具减少了摩擦，但也创造了新的攻击面——Cloudflare的Code Mode和Workers也不例外。
+
+---
+
+## 33. ChatGPT在搜索之前就知道会推荐谁
+
+**原文标题**: ChatGPT Knows Who It'll Recommend Before It Searches
+
+**原文链接**: [https://suganthan.com/blog/chatgpt-decides-before-it-searches/](https://suganthan.com/blog/chatgpt-decides-before-it-searches/)
+
+ChatGPT在抓取任何内容之前会先编写自己的网络搜索查询，而这些查询中已经包含了用户从未提及的品牌名称。在一项测试中，询问“最佳AI笔记应用”时，首次搜索就列出了Granola、Notion AI、Otter、Fireflies、Fathom、Mem和Limitless——这些全部来自模型的记忆，而非搜索结果。这一模式在大多数品类中持续存在：当ChatGPT必须自行提供产品时，它会深入训练数据来构建候选清单。对同一问题采用不同问法会改变清单内容，因此这并非固定表格。
+
+核心发现：在ChatGPT自身查询中被提及的品牌，有68.9%的概率出现在最终答案中，而仅被检索但从未被提及的品牌只有2.1%——相差约33倍。一个品牌即使其网站从未被爬取，也可能获得推荐。
+
+第二道更为严苛的筛选决定了引用的去向。在57次对话中检索到的3,554个页面里，仅有110个（3.1%）被引用。域名组内的位置影响显著：第一位引用率为5.2%，到第五位降至0.6%。同一域名下页面过多会蚕食转化率——两个高度匹配的页面是最佳选择；六个以上页面会使引用率降至1.7%。
+
+实用建议分为两条路径：
+1. **进入品类词汇**——通过在开放网络上被长期撰写、评测和对比来构建。schema或llms.txt等技术性修复无法奏效，因为决策发生在你的服务器被访问之前。
+2. **被提及后赢得引用**——针对每个意图整合重叠页面，将承载主张的句子以纯HTML形式放在靠近顶部的位置，加入数字，避免近乎相同的页面集群。
+
+作者披露其拥有Keyword Insights，这是一款在上述文中提到的用于发现意图重叠页面的工具。试验方法：将你的品类问题重复提问五次，记录哪些品牌出现在查询中。
+
+---
+
+## 34. 海洋高温纪录被打破，七月气温创历史新高
+
+**原文标题**: Ocean heat records broken as hottest July temperature recorded
+
+**原文链接**: [https://www.bbc.com/news/articles/cpvw8vmmgrwo](https://www.bbc.com/news/articles/cpvw8vmmgrwo)
+
+根据欧盟哥白尼气候变化服务局的数据，全球海洋在7月录得了有史以来的最高海面温度，在极地以外的地区平均达到20.96°C。这打破了2023年创下的20.89°C的先前纪录，部分原因是太平洋正在发展的厄尔尼诺现象，再加上人类造成的全球变暖。
+
+上个月是全球并列第二热的7月，比工业化前水平高1.47°C。海洋创纪录的高温意义重大，因为海洋吸收了大部分多余的温室气体热量，而较暖的海水会膨胀，导致海平面上升。它还助长了更长时间的海洋热浪、大规模珊瑚白化，以及带来更强降雨的更强烈的热带风暴。
+
+西欧经历了有记录以来最热的6月至7月，平均气温为21.62°C，比正常水平高出2.79°C。持续的高压系统和干燥的土壤锁住了热量，气候变化加剧了极端情况。法国、西班牙、德国部分地区和英国的降雨量和土壤湿度异常低，使塞纳河、莱茵河和多瑙河等河流水量紧张。这加剧了水资源短缺，影响了农业、河流运输和能源生产，并在该地区引发大规模野火，烟雾远距离飘散。
+
+在英国，英格兰和威尔士经历了自190年前有记录以来最干燥的7月，许多地区正式进入干旱状态。英国气象局警告说，曾经的极端天气正在成为“新常态”，并指出英格兰南部最热的日子现在比1961-1990年高出4.5°C。科学家强调，厄尔尼诺现象可能会使气温进一步升高，而自19世纪末以来，全球变暖幅度约为1.4°C。
+
+---
+
+## 35. 新西兰失去了其音乐媒体，以及我们正在建设的替代品
+
+**原文标题**: New Zealand lost its music media, and what we're building to replace it
+
+**原文链接**: [https://propelmusic.co.nz/articles/the-sound-went-quiet-nz-music-media](https://propelmusic.co.nz/articles/the-sound-went-quiet-nz-music-media)
+
+这篇文章强调了新西兰专业音乐媒体的消失，并介绍了**SceneRampage**作为填补这一空白的新举措。文中宣布SceneRampage已登陆新西兰，该文发布于**2026年8月9日**，阅读时间约**两分钟**。核心观点是：虽然新西兰传统音乐媒体已经消失，但SceneRampage正作为一个替代平台到来，以支持和报道本地音乐场景。
+
+---
+
+## 36. 开源QEC测试平台 – 贪婪 vs. GE，均匀 vs. 聚类 k=4
+
+**原文标题**: Open QEC harness – greedy vs. GE, uniform vs. clustered k=4
+
+**原文链接**: [https://github.com/mrblakessinger-rgb/qec-evaluation-suite](https://github.com/mrblakessinger-rgb/qec-evaluation-suite)
+
+本文介绍了 **Open QEC harness**，一个用于量子纠错（QEC）的有限尺寸诊断套件，专注于电路级和全息类码。它仅提供数字/评估遥测，而非硬件或生产级解码器。
+
+**包含的层级：**
+- **层级 A 表面码：** 基于 Stim 的旋转表面码，包含 MWPM 冒烟测试。
+- **层级 A Floquet：** 周期为 3 的蜂窝码，调度有效，但无法与表面码在图状 MWPM 上直接比较。
+- **层级 B 几何：** 教育性图不变量，并非电路级 QEC。
+- **层级 C HaPPY：** 张量网络体-边界编码，采用贪心恢复和匹配样本 GF(2) 高斯消元（GE）消融。深度：深度-1（n=10, k=6）和受限深度-2（n=20, k=16）。
+
+**主要结果（seed=42）：**
+- 在 p_erase=0.3 下，相同擦除掩码的匹配贪心 vs. GE：
+  - 深度 1：贪心中心 0.664，GE 中心 0.304。
+  - 深度 2：贪心 0.59，GE 0.0575。
+- GE **并非** 贪心的恢复超集；差距在深度-2 时扩大。
+- 模式压力（深度-1，k 匹配）：
+  - 均匀 k=4：贪心约 0.27，GE 约 0.02。
+  - 聚集 k=4：贪心 1.0，GE 0.0。
+  - k=4 对贪心而言仍然特殊；GE 在两种模式下均接近下限。结果是解码器 × 模式，而非通用几何。
+
+**数据可用性：** 优先使用 `public/data/` 下的冻结 JSON，而非重新运行扫描。
+
+**BP 微实验室（阶段 E0/E1）：** 经典汉明 [7,4] 最小和置信传播，而非 HaPPY。定义的指标：
+- `ge_unique_recoverability`：在 GF(2) 上 rank(H_E)=|E|。
+- `bp_codeword_match`：BP 匹配零综合征的全零码字。
+- `bp_osd0_syndrome_valid`：OSD-0 找到综合征有效的补全。
+- `bp_osd1_syndrome_valid` / `bp_osd1_codeword_match`：OSD-1 列表补全指标。
+
+这些指标不可互换：GE 衡量唯一性，BP 衡量码字匹配，OSD 衡量列表补全。
+
+---
+
+## 37. 加州计划通过批量采购降低热泵成本
+
+**原文标题**: A California Program Is Bringing Down the Cost of Heat Pumps by Buying Bulk
+
+**原文链接**: [https://www.wired.com/story/california-group-buy-bringing-down-heat-pump-costs/](https://www.wired.com/story/california-group-buy-bringing-down-heat-pump-costs/)
+
+一项加州倡议正利用团购方式降低热泵成本，使这种无碳供暖制冷技术更加负担得起。热泵安装公司Vayu与市场平台VoltHub合作，推出了首个加州热泵团购项目，覆盖洛杉矶和湾区。通过集中多个家庭的需求，安装商可以批量购买设备，通常能获得15%至30%的折扣。创始人谢雷亚斯·苏达卡尔曾是火箭工程师，他指出推广的成功往往取决于天气；2026年初的一次尝试以失败告终，但夏季热浪带来了兴趣激增。
+
+类似项目在其他地方也有先例。加拿大不列颠哥伦比亚省加布里奥拉岛上的“加布里奥拉能源”项目自2010年起运营，已安装超过1000台热泵，为岛上近半数家庭完成了电气化改造。其成功得益于当地没有竞争对手安装商。
+
+参与者金井直哉在圣马特奥为一套系统支付了约14500美元，他表示联邦退税和团购折扣是关键因素。虽然热泵高效且舒适，但运行成本各有不同。Nesta机构的安德鲁·西森强调了邻里采用该技术的“社会传染”效应，但也指出安装质量的重要性。哈佛大学的罗克萨娜·沙菲伊指出，一些家庭，尤其是寒冷地区的家庭，可能会面临比燃气供暖更高的账单。性能系数等能效等级至关重要，尤其是在加州这样电价昂贵的市场。一些买家，如渥太华的保罗·霍尔罗伊德，选择热泵主要是出于环保原因，把小幅节省当作额外好处。文章总结道，团购计划有助于推动热泵的普及，但仍面临房屋适配性和运行成本等方面的限制。
+
+---
+
+## 38. 不要构建读心术
+
+**原文标题**: Don't Build Mindreading
+
+**原文链接**: [https://www.lesswrong.com/posts/CAdG5dzkWrrK2NQg8/don-t-build-mindreading](https://www.lesswrong.com/posts/CAdG5dzkWrrK2NQg8/don-t-build-mindreading)
+
+这篇文章反对开发读心技术，尽管其具有潜在益处。文章承认其吸引力：帮助瘫痪患者、实现经证实的诚实、助力AI安全、以及支持自杀预防。然而，核心论点是，读心术是一种不对称工具，会不成比例地增强那些未经同意而统治者的权力——尤其是独裁者。
+
+独裁政权依赖于阻止信息级联和协调叛乱。读心术能让专制者在一出现异议时就察觉，从而允许先发制人的“再教育”或杀戮。对独裁者而言，这一能力比任何民主或生产性的用途都更有价值。历史上的例子，如奥斯卡·辛德勒的谎言拯救了生命，或IBM的技术被用于新疆，表明为善而开发的工具可能被重新用于压迫。即使出于善意，技术也会泄露并为所有人所推进；单一公司无法控制其用途。
+
+作者并不呼吁在技术存在后对其进行抵制，而是敦促开发者、资助者和研究人员不要加速其创造。虽然承认对齐研究的益处是真实的，但它们被赋能暴虐政权的巨大风险所抵消。文章总结道：如果一项技术能读取思想或情感，它就是暴君的工具，我们应推迟其到来。
+
+---
+
+## 39. 基于别名的借用检查器表述（2018）
+
+**原文标题**: An alias-based formulation of the borrow checker (2018)
+
+**原文链接**: [https://smallcultfollowing.com/babysteps/blog/2018/04/27/an-alias-based-formulation-of-the-borrow-checker/](https://smallcultfollowing.com/babysteps/blog/2018/04/27/an-alias-based-formulation-of-the-borrow-checker/)
+
+本文提出了一种 Rust 借用检查器的替代性表述，其灵感来源于 Rust All Hands 会议上的讨论。关键思想是不将区域（生命周期）视为程序点的范围，而是将其视为**借出（loans）的集合**——即像 `&x` 或 `&mut v` 这样的借用表达式。一个引用的区域收集所有会使该引用失效的借出。子类型关系于是变为子集包含：`'a ⊆ 'b` 意味着 `&'a u32 <: &'b u32`。
+
+该分析用 Datalog 规则描述，并使用 differential-dataflow crate 实现。在类型检查期间，编译器会在特定的控制流点生成区域之间的“基础子集”关系。这些子集关系会沿控制流图（CFG）传播，因此一旦一个区域必须比另一个区域存活得更久，该关系在后续所有路径上都会保持成立。该分析还跟踪“borrow_region”事实，将借用表达式与借出关联起来，并通过流分析扩展这些事实，以定义 `requires` 关系：在某个点，如果违反借出 `L` 会使区域 `R` 失效，那么区域 `R` *需要*（requires）借出 `L`。区域的活跃性计算方式与 NLL RFC 类似。
+
+所提出的系统旨在对最终用户而言在行为上与 NLL 等价，但采用不同的内部模型，这可能会为未来的语言特性提供支持。一个原型通过了完整的 NLL 测试套件，并且还能处理 NLL 无法处理的用例，例如 issue #47680。目前性能比现有分析慢，但作者持乐观态度，因为尚未尝试优化。文章强调，将区域视为借出的集合提供了一种概念上的转变，可能改善编译器对程序的理解。
+
+---
+
+## 40. Venaya——一个适应你人生阶段的财务健康平台
+
+**原文标题**: Venaya – A financial wellness platform that adapts to your life stage
+
+**原文链接**: [https://venaya.app](https://venaya.app)
+
+Venaya是一个金融健康平台，旨在适应用户当前的人生阶段。正如文章中所强调的，其核心理念是可及性：用户无需授权银行访问权限即可开始使用该平台。相反，他们可以先手动追踪财务状况。银行账户连接器是可选项，可以稍后添加，这意味着Venaya不需要用户登录银行账户就能提供价值。这种方法降低了使用门槛，并将用户控制和隐私放在首位。
+
+---
+
