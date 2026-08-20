@@ -11,6 +11,7 @@ import markdown
 import json
 import inspect
 import sys
+import hashlib
 
 # 加载环境变量
 load_dotenv()
@@ -365,7 +366,7 @@ def main():
     print("开始运行 Hacker News 文章摘要提取器...")
     
     # 获取热门文章
-    stories = fetch_top_stories(limit=40)
+    stories = fetch_top_stories(limit=30)
     print(f"成功获取 {len(stories)} 篇文章")
     
     stories_with_summaries = []
@@ -403,6 +404,11 @@ def main():
         with open('progress.json', 'w', encoding='utf-8') as f:
             json.dump(stories_with_summaries, f, ensure_ascii=False, indent=2)
         
+        md5 = hashlib.md5(story['url'].encode("utf-8")).hexdigest()
+
+        with open("url.txt", "a", encoding="utf-8") as f:
+                f.write(f"{md5}\t{story['title']}\t{story['url']}\n")
+
         print(f"已完成第 {i} 篇文章的处理")
         time.sleep(2)
     
