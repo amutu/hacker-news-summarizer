@@ -7,6 +7,7 @@ from openai import OpenAI
 from bs4 import BeautifulSoup
 from dotenv import load_dotenv
 from datetime import datetime,timezone
+from timezone import ZoneInfo
 import markdown
 import json
 import inspect
@@ -275,7 +276,8 @@ def translate_to_chinese(text):
 
 def create_markdown_file(stories_with_summaries):
     """创建 Markdown 文件"""
-    today = datetime.now(timezone.utc).strftime('%Y-%m-%d')
+
+    today = datetime.now(ZoneInfo("Asia/Shanghai")).strftime("%Y-%m-%d")
     
     md_content = f"""# Hacker News 热门文章摘要 ({today})
 
@@ -316,8 +318,8 @@ def create_markdown_file(stories_with_summaries):
 
 def write_head_contents(stories_with_summaries):
     """写入 README.md 文件的头部信息和当日 Top 10 摘要"""
-    write_time = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S")
-    today = datetime.now(timezone.utc).strftime('%Y-%m-%d')
+    write_time = datetime.now(ZoneInfo("Asia/Shanghai")).strftime("%Y-%m-%d %H:%M:%S")
+    today = datetime.now(ZoneInfo("Asia/Shanghai")).strftime("%Y-%m-%d")
     
     # 头部内容
     head_contents = inspect.cleandoc(f"""# Hacker News 每日摘要
@@ -405,7 +407,7 @@ def main():
             json.dump(stories_with_summaries, f, ensure_ascii=False, indent=2)
         
         md5 = hashlib.md5(story['url'].encode("utf-8")).hexdigest()
-        today = datetime.now(timezone.utc).strftime('%Y-%m-%d')
+        today = datetime.now(ZoneInfo("Asia/Shanghai")).strftime("%Y-%m-%d")
 
         with open("url.txt", "a", encoding="utf-8") as f:
                 f.write(f"{md5}\t{today}\t{story['url']}\t{story['title']}\n")
