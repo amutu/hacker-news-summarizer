@@ -7,7 +7,7 @@ from openai import OpenAI
 from bs4 import BeautifulSoup
 from dotenv import load_dotenv
 from datetime import datetime,timezone
-from timezone import ZoneInfo
+from zoneinfo import ZoneInfo
 import markdown
 import json
 import inspect
@@ -140,10 +140,23 @@ def extract_article_content(url):
         print(f"错误详情: {traceback.format_exc()}")
         return ""
 
+def parse_title_and_summary(text, fallback_title):
+    """从模型的一次返回中解析出中文标题和中文摘要。
+    约定格式：首行以 '标题：' 开头，其余为摘要。解析失败则回退。"""
+    stripped = (text or "").strip()
+    lines = stripped.split('\n', 1)
+    first = lines[0].strip()
+    if first.startswith('标题：') or first.startswith('标题:'):
+        title = first[len('标题：'):].strip() if first.startswith('标题：') else first[len('标题:'):].strip()
+        summary = lines[1].strip() if len(lines) > 1 else ""
+        return (title or fallback_title, summary or stripped)
+    # 未按约定格式返回时，标题回退为原文标题，全文作为摘要
+    return (fallback_title, stripped)
+
 def generate_summary(title, content):
-    """使用 Gemini 生成文章摘要"""
+    """使用 AI 一次性生成中文标题和中文摘要，返回 (chinese_title, chinese_summary)"""
     if not content:
-        return "无法获取文章内容"
+        return (title, "无法获取文章内容")
     
     try:
         prompt = f"""
@@ -152,7 +165,9 @@ def generate_summary(title, content):
         Content:
         {content}
         
-        Provide a concise summary of this article (no more than 300 words), capturing the main points and key information.
+        请用中文完成以下两件事，并严格按此格式输出，不要有多余解释：
+        第一行以“标题：”开头，后接将上面标题翻译成简洁准确的中文标题；
+        随后另起一行输出不超过 300 字的中文摘要，概括文章要点与关键信息。
         """
         messages = [{"role": "user", "content": prompt}]
         response = client.chat.completions.create(
@@ -160,13 +175,13 @@ def generate_summary(title, content):
         messages=messages)
 
         #response = model.generate_content(prompt)
-        return response.choices[0].message.content
+        return parse_title_and_summary(response.choices[0].message.content, title)
     except Exception as e:
         print(f"生成摘要时出错: {e}")
-        return "生成摘要时出错"
+        return (title, "生成摘要时出错")
 
 def generate_summary_from_url(title, url, max_retries=3):
-    """使用 Gemini 直接从 URL 生成文章摘要"""
+    """使用 AI 直接从 URL 一次性生成中文标题和中文摘要，返回 (chinese_title, chinese_summary)"""
     retries = 0
     while retries < max_retries:
         try:
@@ -175,8 +190,10 @@ def generate_summary_from_url(title, url, max_retries=3):
             Title: {title}
             URL: {url}
             
-            Provide a concise summary (no more than 300 words), capturing the main points and key information.
-            If you cannot access the article, please respond with "Unable to access the article link."
+            请用中文完成以下两件事，并严格按此格式输出，不要有多余解释：
+            第一行以“标题：”开头，后接将上面标题翻译成简洁准确的中文标题；
+            随后另起一行输出不超过 300 字的中文摘要，概括文章要点与关键信息。
+            如果无法访问该文章，请在摘要处回复“无法访问该文章链接”。
             """
             
             messages = [{"role": "user", "content": prompt}]
@@ -185,7 +202,7 @@ def generate_summary_from_url(title, url, max_retries=3):
             messages=messages)
 
             #response = model.generate_content(prompt)
-            return response.choices[0].message.content
+            return parse_title_and_summary(response.choices[0].message.content, title)
             #response = model.generate_content(prompt)
             #return response.text
         except Exception as e:
@@ -198,8 +215,8 @@ def generate_summary_from_url(title, url, max_retries=3):
             print(f"生成摘要时出错: {e}")
             print(f"错误类型: {type(e).__name__}")
             print(f"错误详情: {str(e)}")
-            return "生成摘要时出错"
-    return "达到最大重试次数，生成摘要失败"
+            return (title, "生成摘要时出错")
+    return (title, "达到最大重试次数，生成摘要失败")
 
 def translate_to_chinese(text):
     """使用 Gemini 将文本翻译成中文"""
@@ -379,21 +396,17 @@ def main():
         # 提取文章内容
         content = extract_article_content(story['url'])
         
-        # 生成摘要
+        # 生成摘要（一次调用同时得到中文标题和中文摘要）
         if content:
             print(f"成功提取文章内容，长度: {len(content)} 字符")
-            summary = generate_summary(story['title'], content)
+            chinese_title, summary = generate_summary(story['title'], content)
         else:
             print("无法提取文章内容，尝试直接生成摘要（可能会失败）")
-            summary = generate_summary_from_url(story['title'], story['url'])
+            chinese_title, summary = generate_summary_from_url(story['title'], story['url'])
         
         time.sleep(3)  # 增加等待时间到 3 秒,RPM=15
         
-        # 翻译标题和摘要
-        chinese_title = translate_to_chinese(story['title'])
-        time.sleep(3)  # 每次 API 调用之间添加等待
-        chinese_summary = translate_to_chinese(summary)
-        time.sleep(3)  # 每次 API 调用之间添加等待
+        chinese_summary = summary
         
         stories_with_summaries.append({
             **story,
