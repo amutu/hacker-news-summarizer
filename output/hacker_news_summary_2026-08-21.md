@@ -1,0 +1,304 @@
+# Hacker News 热门文章摘要 (2026-08-21)
+
+这是今日 [Hacker News](https://news.ycombinator.com/) 上最热门的文章摘要。
+
+## 1. Kagi 新增设置，可从搜索结果中移除付费墙链接
+
+**原文标题**: Kagi added a setting for removing paywalled links from search results
+
+**原文链接**: [https://kagi.com/changelog#11296](https://kagi.com/changelog#11296)
+
+摘要：Kagi 搜索更新了股票组件，支持 ETF、价格图表及动画，并新增自动过滤付费墙链接的选项。Kagi Assistant 改进消息渲染，支持 Markdown 与 LaTeX，增强跨线程搜索与排序，可设置临时线程保留时长。搜索方面优化镜头直链、快捷方式触发、快速回答来源过滤等。助手应用修复多处问题，如移动端手势干扰、动画卡顿、登录故障，并新增键盘快捷键、导出聊天、代码高亮等功能。Kagi Translate 修复页面翻译重载、RSS 错误及上下文预设等多项问题。
+
+---
+
+## 2. AI公司销毁实体书——趁为时未晚，扫描珍本
+
+**原文标题**: AI companies destroy physical books – let's scan rare books before it's too late
+
+**原文链接**: [https://annas-archive.pk/blog/physical-destruction.html](https://annas-archive.pk/blog/physical-destruction.html)
+
+文章呼吁全球志愿者紧急扫描上传稀有书籍，对抗AI公司秘密收购、扫描并销毁实体书的行为。例如Anthropic的“巴拿马计划”在2024年投入数千万美元购买数百万册纸质书，扫描训练Claude后全部销毁。此举旨在阻止竞争对手获取数据、规避法律风险，却导致人类知识被垄断于私有服务器。安娜的档案作为影子图书馆，号召志愿者扫描上传书籍、论文等，并提供荣誉会员或资助扫描费用。文章强调，自2025年起AI生成内容已占新发布内容一半以上，若不及时保存，人类文明记忆将被AI自我生成内容取代。需在出版商完全封锁知识和AI公司销毁所有书籍前，完成全球出版物的扫描上传，以打破知识垄断，延续文明。
+
+---
+
+## 3. 深度求索V4闪电视觉实验版
+
+**原文标题**: DeepSeek-v4-flash-vision-exp
+
+**原文链接**: [https://api-docs.deepseek.com/guides/vision/](https://api-docs.deepseek.com/guides/vision/)
+
+本文介绍DeepSeek-v4-flash-vision-exp多模态模型：支持JPEG/PNG/GIF/WebP图像，可通过OpenAI兼容接口以三种方式传入图像——base64内联、外链URL、Files API文件ID；也支持Anthropic API及Responses API。图像按尺寸缩放并计为最多384 tokens。限制包括：URL最长8192字符、请求体48MiB、单图最大32MiB（Files API为64MiB）、每请求最多600张图、单边最长8192像素；仅用户消息可含图，其他模型不支持。
+
+---
+
+## 4. 当智能成本下降100倍时会发生什么
+
+**原文标题**: What Happens When the Cost of Intelligence Drops 100x
+
+**原文链接**: [https://catalystneuro.com/blog/cost-of-intelligence-drops-100x/](https://catalystneuro.com/blog/cost-of-intelligence-drops-100x/)
+
+本文聚焦于LLM能力成本下降的“地板”进展，而非其“天花板”能力突破。作者利用Artificial Analysis Intelligence Index与成本/任务指标，分析了2024年12月至2026年8月间137个模型的数据，展示了人工智能能力Pareto前沿的快速移动：某智能级别所需成本从2月的$1.22降至$0.022，降幅达56倍，且下降速度正在加快。GPT-5.6 Luna等新模型使十个月前需昂贵价格才能获得的智能（如Claude 4.5 Sonnet级别），如今仅需1/40成本。各能力层级的成本记录约每4至10周减半，100倍降幅预计大约一年实现。这种价格崩溃将使以往不可行的大规模应用——阅读上万篇论文、批量审查合同——成为现实。
+
+---
+
+## 5. 当搜索不再促使我们思考，我们失去了什么
+
+**原文标题**: What We Lost When Search Stopped Making Us Think
+
+**原文链接**: [https://blog.8ball.space/what-we-lost-when-search/](https://blog.8ball.space/what-we-lost-when-search/)
+
+摘要：过去几年，搜索引擎的结果质量悄然下降：SEO内容泛滥、AI生成页面以自信语气传播错误信息，真正有用的答案被淹没。部分产品进一步引入AI摘要，直接给出看似权威的答案，却让用户远离原始来源，难以核实真伪。文章指出，这不仅是搜索结果质量问题，更在侵蚀人们的研究能力——对比来源、发现分歧、形成判断等技能因缺乏使用而退化。生成式工具同样如此：它们能跳过创作初期的挣扎，但反复依赖会削弱独立思考与产出能力。作者并非反对这些工具，而是提醒区分“延伸能力”与“替人思考”的差别。搜索曾有的认知摩擦正在被无形移除，这种代价容易在一次次的便利中被忽视，值得被明确指出。
+
+---
+
+## 6. 大陪审团拒绝起诉被控破坏Flock摄像头的俄亥俄州男子
+
+**原文标题**: Grand jury declines to indict Ohio man charged with destroying Flock camera
+
+**原文链接**: [https://san.com/cc/grand-jury-declines-to-indict-ohio-man-charged-with-destroying-flock-camera/](https://san.com/cc/grand-jury-declines-to-indict-ohio-man-charged-with-destroying-flock-camera/)
+
+摘要：俄亥俄州一名男子因涉嫌破坏Flock安全摄像头而被提起刑事指控，但大陪审团最终决定不予起诉。Flock摄像头通常用于车牌识别和公共安全监控，此类设备在部分地区引发隐私争议。该男子的案件经过审查后，大陪审团认为缺乏足够证据或理由支持起诉，因此拒绝正式提起公诉。这一决定意味着该男子将不会因相关指控面临审判，案件就此终结。具体案情细节及男子破坏摄像头的动机尚未进一步披露。
+
+---
+
+## 7. 哈勃太空望远镜辐射损伤与太阳活动周期存在数年相位差
+
+**原文标题**: Radiation damage to Hubble has been 4.3 years out of phase with the Solar cycle
+
+**原文链接**: [https://arxiv.org/abs/2608.18214](https://arxiv.org/abs/2608.18214)
+
+摘要：文章利用哈勃太空望远镜的CCD探测器作为辐射剂量计，在近地轨道持续监测超过24年。研究发现，辐射损伤速率随太阳活动周期变化，但与太阳黑子或日冕物质抛射的出现存在数年相位差。作者尝试用拟合太阳系其他望远镜损伤时间序列的函数形式，发现能极高精度地拟合哈勃数据，但所得参数在物理上不合理。这种经验拟合可用于图像后处理，校正超过99.5%的辐射损伤对图像质量的影响；然而采用物理合理参数的拟合效果反而更差。结果凸显了太阳系不同区域辐射环境的多样性，以及近地轨道环境的复杂性，并强调需持续监测现役航天器的辐射损伤，以更可靠地预测未来任务的退化速率和使用寿命。
+
+---
+
+## 8. TigerBeetle核心系统架构：解构性能工程
+
+**原文标题**: TigerBeetle Core System Architecture: Deconstructing Performance Engineering
+
+**原文链接**: [https://ixuvo.com/blog/tigerbeetle-core-system-architecture-performance-engineering](https://ixuvo.com/blog/tigerbeetle-core-system-architecture-performance-engineering)
+
+摘要：TigerBeetle是一款用Zig编写的金融账本数据库，其架构以极致机械同情为核心，通过三项关键设计实现高性能：一是静态内存分配，启动时预分配全部内存，运行时零动态分配，彻底消除碎片和OOM风险，保证确定性尾延迟；二是自定义零拷贝I/O路径，结合直接I/O与io_uring，使网络数据直接写入磁盘，绕过内核页缓存，且核心结构体固定为128字节，与缓存行和扇区对齐；三是采用单线程执行循环和Viewstamped Replication（VSR）共识，通过大规模批处理（如8192笔转账/批）将随机小I/O转化为顺序大I/O，避免锁竞争和上下文切换。Zig的编译期能力在类型层面强制对齐和大小校验，确保性能约束在构建时生效。文章强调，预测性优先、批量摊销开销、软件与硬件对齐是构建高吞吐、低尾延迟系统的核心原则。
+
+---
+
+## 9. 柯达“预发明”的月球轨道器相机；或SAMOS读出系统的命运
+
+**原文标题**: Kodak's "Pre-Invented" Lunar Orbiter Camera; Or, the Fate of SAMOS Readout
+
+**原文链接**: [https://invertingvision.com/2026/08/10/kodaks-pre-invented-lunar-orbiter-camera-or-the-fate-of-samos-readout/](https://invertingvision.com/2026/08/10/kodaks-pre-invented-lunar-orbiter-camera-or-the-fate-of-samos-readout/)
+
+摘要：本文追溯了1960年代NASA月球轨道器相机系统的隐秘起源。该系统由柯达公司为美国空军绝密卫星侦察计划WS-117L（后演变为SAMOS项目）于1950年代研发，采用胶片在轨显影和电子读出传输技术。文章介绍了关键技术：柯达“Bimat”干法显影胶片和与哥伦比亚广播公司实验室合作开发的飞点扫描仪。SAMOS的E-1相机于1961年成功传回图像，但E-2发射失败后，空军因读出系统不如回收系统而放弃该项目。1963年，NASA与国防部达成协议，利用NRO（国家侦察办公室）设备进行月球侦察，并以“黑白合同”方式将原有军事技术转用于民用月球轨道器任务，最终柯达相机随五艘月球轨道器成功完成月球测绘。
+
+---
+
+## 10. 我们正生活在J.G.巴拉德或威廉·吉布森笔下的未来版本中
+
+**原文标题**: We are living in a version of the future out of J.G. Ballard or William Gibson
+
+**原文链接**: [https://precastreinforced.co.uk/2026/08/16/new-worlds/](https://precastreinforced.co.uk/2026/08/16/new-worlds/)
+
+文章通过一系列近期新闻与日常见闻，指出赛博朋克式未来已成现实：商场输液门诊、机器人狗、AI歌手、缉毒潜艇、机器人逐野猪、送货机器人、机器人主题公园、Meta眼镜人脸识别、AI诈骗、人形机器人进口禁令等。但这些技术并未引发震惊，反而已融入日常，人们甚至让AI代开会、用AI生成海报。作者认为，科幻预言错在数字化范围，人类对荒诞现实的适应力极强，科幻写作面临挑战。
+
+---
+
+## 11. 值得记住的小型原生Web技巧
+
+**原文标题**: Small, native web tricks worth remembering
+
+**原文链接**: [https://htmlcat.net/](https://htmlcat.net/)
+
+摘要：文章聚焦于前端开发中实用且易被忽略的原生Web API与技巧，重点介绍了在JavaScript中判断设备类型的方法。通过简洁的原生代码，开发者可以区分移动端、桌面端或平板设备，而无需依赖笨重的第三方库。这类技巧利用内置的`navigator`对象、触摸事件支持、屏幕尺寸或用户代理字符串等特性，实现轻量、高效且可靠的设备识别。同时强调遵循渐进增强原则，并注意现代浏览器对API的支持差异。掌握这些小巧的原生技巧有助于提升页面性能、减少依赖，并增强代码的可维护性，是日常Web开发中值得积累的经验。
+
+---
+
+## 12. 我意外记录了打给军事基地的电话
+
+**原文标题**: I accidentally logged phone calls to military bases
+
+**原文链接**: [https://lina.sh/blog/hijacking-e164-arpa](https://lina.sh/blog/hijacking-e164-arpa)
+
+摘要：作者发现e164.arpa（ENUM）电话路由基础设施中，英国三个海外领地（圣赫勒拿、英属印度洋领地/迪戈加西亚岛、阿森松岛）的国家代码区域被委托给已失效的域名服务器。作者花5欧元买下过期的ns.enum.org.uk域名，从而控制了这些区域的DNS响应，理论上可拦截或窃听所有相关电话呼叫。最初报告无人理会，作者便搭建个人网站等并启用日志。六个月后发现日志记录了数十万条ENUM查询，包含完整电话号码和时间戳，几乎全部指向美军基地。作者随即关闭服务器并删除日志。第二次向英国国家网络安全中心报告后引起重视，但因涉及联合国委员会管辖权，问题长期未解决。2026年伊朗导弹袭击迪戈加西亚岛后，作者将域名转让给英国NCSC。作者最终花费10欧元，未获漏洞赏金，但避免了法律麻烦。
+
+---
+
+## 13. 《席德·梅尔的海盗！》失落的宝藏
+
+**原文标题**: The Lost Treasure of Sid Meier's Pirates
+
+**原文链接**: [https://remapradio.com/articles/the-lost-treasure-of-sid-meiers-pirates/](https://remapradio.com/articles/the-lost-treasure-of-sid-meiers-pirates/)
+
+摘要：文章回顾了1987年发布的《席德·梅尔的海盗！》，指出它难以归入传统类型，融合动作、冒险、经济与战略于一体。游戏以独特方式呈现剑术决斗、风向系统、寻亲任务和海战，处处体现从第一性原理出发、而非遵循既有类型惯例的设计思路。这种风格也影响了Microprose后续作品，并反映1980年代PC游戏市场小众、风格实验的年代特征。作者认为，这一时代的设计传统如今被忽视，但《海盗！》仍以独特魅力深刻影响玩家与设计师。
+
+---
+
+## 14. Kino：面向 Ruby 4.0 的高性能 Ractor Web 服务器
+
+**原文标题**: Kino: A high-performance Ractor web server for Ruby 4.0
+
+**原文链接**: [https://github.com/yaroslav/kino](https://github.com/yaroslav/kino)
+
+摘要：Kino 是 Ruby 4.0+ 的高性能 Ractor Web 服务器，采用 Rust（tokio+hyper）处理网络，并行 Ractor 运行 Rack 3 应用，并提供线程回退模式兼容 Rails。相比 Puma 多进程集群，I/O 轻量端点快 1.5-2 倍，CPU 密集场景 Ractor 模式提升 30% 以上；内存约为 Puma 集群的 1/4 至 1/10。它内置优雅停机、崩溃重生、有界队列、请求超时、慢连接防护、TLS、监控及 kino --check 诊断工具，配置和 CLI 风格类似 Puma。Ractor 在 Ruby 4.0 仍属实验性，线程模式更稳定，Kino 旨在提供最佳 Ractor 实验与生产探索路径。
+
+---
+
+## 15. 奥运选手珍妮·辛普森心脏骤停后宣布跑步生涯结束
+
+**原文标题**: Olympian Jenny Simpson Says Her Running Career Is Over After Cardiac Arrest
+
+**原文链接**: [https://www.runnersworld.com/news/a73487839/jenny-simpson-running-cardiac-event-update/](https://www.runnersworld.com/news/a73487839/jenny-simpson-running-cardiac-event-update/)
+
+摘要：美国三届奥运选手珍妮·辛普森在6月为北卡罗来纳州一场跑步活动领跑后突发心脏骤停，经现场心肺复苏和除颤器抢救送医，住院期间再次心脏骤停并一度使用生命支持系统，随后转至杜克医院。她最终被确诊为罕见的遗传性心肌病——致心律失常性右心室心肌病（ARVC），心脏疤痕组织扰乱电信号导致危险心律。经过数周康复，她已回到科罗拉多州的家中，称现状是“最好的情况”。尽管心脏和肺部功能奇迹般恢复，但医生认为继续跑步对她而言太过危险，因此她的职业跑步生涯正式结束。辛普森表示，她最后的跑步正是那次为年轻选手领跑的一英里，这个结局她无法写得更好。未来她将继续担任Fleet Feet的首席跑步官，帮助他人体验跑步带来的自信、连接、目标与快乐。她希望大家不必为她感到遗憾，而是说“很高兴你还在这里”。
+
+---
+
+## 16. Yes/No/Cancel导致阿司匹林销量飙升
+
+**原文标题**: Yes/No/Cancel causes Aspirin sales to soar
+
+**原文链接**: [https://martin.kleppmann.com/2007/07/19/yes-no-cancel-causes-aspirin-sales-to-soar.html](https://martin.kleppmann.com/2007/07/19/yes-no-cancel-causes-aspirin-sales-to-soar.html)
+
+摘要：本文是“Yes/No/Cancel”在线可用性杂志的创刊文章，探讨了软件设计中按钮标签的糟糕实践。作者指出，许多程序使用“是/否/取消”作为按钮标签，但用户往往不清楚每个按钮的具体后果，尤其是在保存或退出文档时，问题可被拆分为“是否保存”和“是否退出”两个独立问题，组合后产生四种可能，而界面只提供三种选项，导致歧义。文章举例说明了不同对话框因提问方式不同而含义迥异，甚至出现隐式重标签和负面提问，令用户困惑。作者认为，更好的做法是使用描述性动词（如苹果的“存储”按钮），并区分危险按钮与安全按钮。文章还批评了负面复选框和隐式重标签等设计问题，强调用户友好性对竞争环境中的产品至关重要，并呼吁开发者不断反思习惯，改善设计。最后提及网站名称的由来及相关资源。
+
+---
+
+## 17. DuckDB V2 基于 PEG 的 SQL 解析器
+
+**原文标题**: DuckDB V2 PEG-based SQL parser
+
+**原文链接**: [https://duckdb.org/2026/08/20/duckdb-20-peg-parser](https://duckdb.org/2026/08/20/duckdb-20-peg-parser)
+
+摘要：DuckDB v2.0 用基于 PEG 的解析器替换了源自 PostgreSQL 的 SQL 解析器，旨在更易于演进并支持运行时扩展。解析器负责将 SQL 分词、语法解析并转换为内部 AST，而绑定器负责验证表、列等是否存在。DuckDB 采用自己的 SQL 方言 DuckSQL，虽受 PostgreSQL 影响但已有大量自定义特性。旧版基于 YACC/Bison 的 LALR(1) 解析器在扩展语法时易产生冲突，难以维护。PEG 解析器通过有序选择和 packrat 记忆化解决了回溯导致的指数级性能问题，并能完整支持 DuckSQL、保持 AST 兼容、准确报错。新解析器从 v1.2 起逐步引入，v2.0 成为默认。基于新解析器，DuckSQL 新增了表达式语句、CONNECT 语句、外部资源管理、COPY 分区排序等语法。更重要的是，扩展现在可以直接扩展解析器的分词器、语法规则和匹配器，而不再依赖回退解析，支持组合多个扩展的语法，例如 Google 的 pipe query 语法。
+
+---
+
+## 18. 约翰·伯杰：从生活出发——汤姆·奥弗顿评传：一位先驱批评家的鲜活传记
+
+**原文标题**: John Berger: From Life by Tom Overton review – a vibrant biography
+
+**原文链接**: [https://www.theguardian.com/books/2026/aug/10/john-berger-from-life-by-tom-overton-review-a-vibrant-biography-of-the-pioneering-critic](https://www.theguardian.com/books/2026/aug/10/john-berger-from-life-by-tom-overton-review-a-vibrant-biography-of-the-pioneering-critic)
+
+摘要：本文是汤姆·奥弗顿所著《约翰·伯杰：从生活出发》的书评。伯杰曾将个人档案捐给大英图书馆，并允许 curator 奥弗顿撰写传记，但要求等待数年。伯杰自称“讲故事的人”，其批评强调艺术与社会政治的联系，反对“伟人”艺术史观。1972年BBC系列《观看之道》使他成为明星式批评家，但奥弗顿试图将其置于更广阔背景中。传记采用主观叙事，以“约翰”称呼伯杰，并常打破第四面墙。书中展现伯杰的矛盾：既是马克思主义者又带保守传统，既写流亡又自我放逐。伯杰关注过去与现在的联结，认为死者与生者相互依存。奥弗顿承认传记不可避免重塑传主，但他以伯杰的精神写作，力求让读者感到伯杰“坐在纸页对面”。伯杰虽于2017年去世，但其影响仍在延续，这场与过去的对话如今反转，继续激励新世代。
+
+---
+
+## 19. 扁平椅子 by Sara Paculdo
+
+**原文标题**: Flat Chair by Sara Paculdo
+
+**原文链接**: [https://www.toxel.com/tech/2026/08/07/flat-chair-by-sara-paculdo/](https://www.toxel.com/tech/2026/08/07/flat-chair-by-sara-paculdo/)
+
+摘要：Flat Chair 是 Sara Paculdo 设计的创新扁平包装椅子，基于高效制造、紧凑运输和结构简单的原则。椅子由耐用玻璃纤维板制成，以平板包装交付，用户可在几分钟内组装完成。该设计大幅减少运输体积、仓储需求和运输成本。椅子通过曲线、折叠和互锁部件形成张力强度，而非依赖过量材料。其“先平运、后组装”的方式解决了物流低效问题，体现了“用更少实现更多”的理念。
+
+---
+
+## 20. The road to ACID transactions in Cassandra 6
+
+**原文标题**: The road to ACID transactions in Cassandra 6
+
+**原文链接**: [https://theconsensus.dev/p/2026/08/16/transactions-in-cassandra.html](https://theconsensus.dev/p/2026/08/16/transactions-in-cassandra.html)
+
+
+
+---
+
+## 21. Rama 0.4：系统代理与PAC支持
+
+**原文标题**: Rama 0.4: System proxy and PAC support
+
+**原文链接**: [https://plabayo.tech/blog/rama-0-4](https://plabayo.tech/blog/rama-0-4)
+
+摘要：Rama 0.4在发布六周后推出，新增系统代理配置支持，包括通过SystemProxyLayer读取操作系统级HTTP、HTTPS、SOCKS5代理及绕过规则，并支持HTTP_PROXY等环境变量。同时引入PAC（代理自动配置）支持，通过新crate rama-js在WASM运行时（wasmtime）中运行JavaScript，实现隔离与安全；rama-pac提供PAC脚本生成与评估功能，CLI也新增相应子命令。协议方面，新增ttRPC支持（rama-ttrpc）和gRPC宏生成能力（rama-grpc-macros），无需编写proto文件。HAR导出现支持WebSocket数据，并改为流式写入磁盘，减少内存占用；CLI send命令新增--har参数。其他改进包括：协议嗅探器更快失败、Apple Network Extension支持增强、连接服务trait改进支持更智能的重试决策、多代理路由按顺序尝试等。项目感谢贡献者与生态，并展望未来版本。
+
+---
+
+## 22. 邀请
+
+**原文标题**: Convite
+
+**原文链接**: [https://www.guidavid.com/writing/convite](https://www.guidavid.com/writing/convite)
+
+摘要：这是一首由四行组成的短诗，题为“邀请”。诗中通过“收集邀请”“看书”“浇花”三个日常动作，呈现一种安静而专注的生活状态。每个动作都以“我”为主语，简洁而有节奏感。最后以“2026”结尾，可能指向创作时间或某种未来标记。整体表达了在平凡动作中体会存在、与当下事物建立联系的诗意。
+
+---
+
+## 23. 我们重建了Apple Silicon上的Linux微虚拟机栈
+
+**原文标题**: We Rebuilt the Linux MicroVM Stack on Apple Silicon
+
+**原文链接**: [https://encore.dev/blog/firecracker-apple-silicon](https://encore.dev/blog/firecracker-apple-silicon)
+
+摘要：Encore的构建系统基于Firecracker微VM，但Firecracker依赖Linux KVM，而工程师使用Mac，导致四年里只能在远程Linux主机上开发。为解决此问题，他们构建了crackling，一个统一微VM API：在Linux上驱动Firecracker，在macOS上驱动Apple的Virtualization.framework，并让两者引导相同镜像。为此，他们在macOS上重建了Linux镜像工具链，包括解包EFI zboot内核、以用户态应用OCI层生成根文件系统。他们还处理了VZ框架的线程限制，通过全局串行队列管理VM对象，并实现了编译期后端选择与同一guest agent。测试覆盖两个平台，VZ测试无需实体hypervisor。
+
+---
+
+## 24. Nvidia AVO在ARC-AGI-3交互推理基准测试中拿下100%满分
+
+**原文标题**: Nvidia AVO scores 100% on the ARC-AGI-3 interactive reasoning benchmark
+
+**原文链接**: [https://twitter.com/NVIDIAAI/status/2090786258981466231](https://twitter.com/NVIDIAAI/status/2090786258981466231)
+
+摘要：NVIDIA宣布其通用编程智能体AVO在ARC-AGI-3交互推理基准测试中获得100%的满分成绩。该智能体在没有指令、明确规则或给定目标的情况下，成功完成了全部25个公开环境中的183个关卡，展现出强大的自主探索与推理能力。该消息发布于2026年8月21日，引发广泛关注，相关推文获得高互动量。
+
+---
+
+## 25. 8月17日宕机事件
+
+**原文标题**: The August 17 outage
+
+**原文链接**: [https://github.blog/news-insights/company-news/the-august-17-outage-and-the-work-ahead/](https://github.blog/news-insights/company-news/the-august-17-outage-and-the-work-ahead/)
+
+摘要：本文介绍了GitHub首席技术官Vladimir Fedorov的职业生涯与背景。他拥有数十年工程领导经验，致力于以开发者为中心推动工具与创新。加入GitHub前，他曾联合创立数据治理与隐私初创公司UserClouds，并在Meta（原Facebook）任职12年，担任高级副总裁，领导超过2000人的工程团队，负责隐私、广告和平台业务。早年他在微软工作，并在加州理工学院获得计算机科学学士和硕士学位。此外，他担任Codepath.org董事会成员，该组织致力于改革高等教育，培养AI原生一代的工程师、CTO和创始人。Vladimir现居湾区，业余时间喜欢与家人户外活动和水上运动。
+
+---
+
+## 26. 我正在变成“AI盲”
+
+**原文标题**: I'm Becoming AI-Blind
+
+**原文链接**: [https://cymerys.com/w/im-becoming-ai-blind](https://cymerys.com/w/im-becoming-ai-blind)
+
+摘要：作者发现自己在阅读同事发来的文档时，大脑会不自觉地拒绝分析内容，导致反复追问文中已涵盖的问题。他分析后意识到，这些文档都带有明显的AI生成痕迹，例如设计文档充满Claude式的分析术语和行话，营销方案混入无关的技术架构空话，技术需求文档则冗长且透出不确定的“内部推理”感。作者认为，尽管研究声称人类不擅长识别AI文本，但他自己通过大量接触低质量AI内容，已形成类似“横幅盲视”的过滤机制，能快速识别并忽略这类空洞但貌似专业的文字。讽刺的是，原本用于提升效率的AI，如今却因产出大量低质内容而拖慢了作者的阅读与协作速度。最后，他以一次度假中只因看到一张发霉的蛋挞照片而立刻避开餐厅的经历作比，说明大脑已自动将“AI味”当作某种劣质信号，形成本能排斥。
+
+---
+
+## 27. 无事发生
+
+**原文标题**: Nothing Doing
+
+**原文链接**: [https://www.futilitycloset.com/2026/08/10/nothing-doing-12/](https://www.futilitycloset.com/2026/08/10/nothing-doing-12/)
+
+中文摘要：本文汇编了世界各地以“无所事事”为主题的幽默地标与牌匾。在爱尔兰戈尔韦郡、卢森堡阿斯佩尔特、捷克贝希涅等地，均有类似“此屋内无重要人物出生、居住，最重要的是也未去世，因此我们在此生活得很好”的告示。捷克赫拉斯特纳·洛塔的石碑称“周围数百年来未发生任何可证明的重大事件”；米绍夫则纪念作家虚构的天才雅拉·齐姆尔曼在1915年5月8日差点卷入历史大事。美国加州圣地亚哥老城的“奥汉格里斯咖啡馆”、西澳大利亚约克镇、哥伦比亚莱瓦镇也都立有“1825年10月13日此屋无事发生，也无名人诞生”之类的铭牌。这些标牌以戏谑口吻消解“名人故居”传统，将“毫无事件”本身变成纪念对象，展现地方幽默与对平庸的珍视。文章标注日期为2026年8月10日/9日，归类于幽默与奇闻栏目。
+
+---
+
+## 28. 美光宣布投资100亿美元在博伊西设立研究枢纽
+
+**原文标题**: Micron announces $10B research hub in Boise
+
+**原文链接**: [https://investors.micron.com/news/press-release/2026/Micron-Unveils-Micron-Research-Labs-a-U-S--Based-Long-Horizon-Innovation-Hub-to-Shape-the-Future-of-Memory-and-AI/default.aspx](https://investors.micron.com/news/press-release/2026/Micron-Unveils-Micron-Research-Labs-a-U-S--Based-Long-Horizon-Innovation-Hub-to-Shape-the-Future-of-Memory-and-AI/default.aspx)
+
+摘要：美光科技宣布将在爱达荷州博伊西建立“美光研究实验室”，作为美国本土的长期创新中心，专注于推动内存与人工智能技术的未来发展。该实验室计划投资100亿美元，旨在加强美国在半导体内存领域的研发能力，加速新一代存储和AI相关技术的突破，并巩固美光在全球市场的技术领先地位。此举也体现了美光对国内制造与创新生态的长期承诺，预计将为当地带来显著的经济与科技带动效应。
+
+---
+
+## 29. 更好的标准库
+
+**原文标题**: Better Batteries
+
+**原文链接**: [https://matklad.github.io/2026/08/20/better-batteries.html](https://matklad.github.io/2026/08/20/better-batteries.html)
+
+摘要：文章探讨标准库应追求最小化还是全面化，指出真正的问题在于何种社会架构能催生高质量标准库。作者认为Python标准库的问题不在规模，而在质量参差不齐，例如unittest模块命名不符合规范。但早期开放功能也带来优势，如推动数据科学革命，尽管cAPI因此僵化。Go标准库同样全面却备受推崇，因其团队具备设计优秀API的制度能力，并有golang.org/x承载扩展。Rust的1.0标准库API堪称典范，集合与迭代器设计精妙，但当前团队虽能维护及补缺，执行新设计决策的能力有限，导致rust-lang-nursery沦为墓地。作者感叹，到2026年Rust仍无获取操作系统随机字节流的API，这并非技术难题，而是在全球协作的编程语言环境中，需要巧妙组织架构与资金支持才能解决。
+
+---
+
+## 30. 暗氧之谜
+
+**原文标题**: The Mystery of Dark Oxygen
+
+**原文链接**: [https://www.newyorker.com/science/elements/the-mystery-of-dark-oxygen](https://www.newyorker.com/science/elements/the-mystery-of-dark-oxygen)
+
+摘要：本文报道了一次深入南非Moab Khotsong金铀矿井的科研探险，科学家们寻找“暗氧”——在无光深层地下环境中发现的自由氧。传统观点认为地下深处缺乏氧气，但近年研究在古老地下水中检测到微量O2，颠覆了认知。此次探险采集了距今超过12亿年的高盐放射性卤水样本，初步测得极低浓度的溶解氧。科学家推测暗氧可能由放射性分解水或微生物活动产生，它或可为深层生物圈提供能量，并影响对地外生命可能性的理解。文章还描述了矿井中的微生物生态，如硫氧化细菌形成的丝状体，以及科学家们在地下的采样过程与初步发现，强调暗氧对深层生命多样性和天体生物学研究的重要意义。
+
+---
+
