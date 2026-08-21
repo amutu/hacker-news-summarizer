@@ -405,9 +405,10 @@ def main():
             json.dump(stories_with_summaries, f, ensure_ascii=False, indent=2)
         
         md5 = hashlib.md5(story['url'].encode("utf-8")).hexdigest()
+        today = datetime.now(timezone.utc).strftime('%Y-%m-%d')
 
         with open("url.txt", "a", encoding="utf-8") as f:
-                f.write(f"{md5}\t{story['title']}\t{story['url']}\n")
+                f.write(f"{md5}\t{today}\t{story['url']}\t{story['title']}\n")
 
         print(f"已完成第 {i} 篇文章的处理")
         time.sleep(2)
