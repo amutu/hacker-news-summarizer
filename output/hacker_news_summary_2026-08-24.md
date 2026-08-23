@@ -1,0 +1,304 @@
+# Hacker News 热门文章摘要 (2026-08-24)
+
+这是今日 [Hacker News](https://news.ycombinator.com/) 上最热门的文章摘要。
+
+## 1. 作为Staff工程师，我如何发现值得解决的问题
+
+**原文标题**: How I Find Problems to Solve as a Staff Engineer
+
+**原文链接**: [https://lalitm.com/post/find-problems-staff-engineer/](https://lalitm.com/post/find-problems-staff-engineer/)
+
+摘要：作者认为，发现好问题不能靠盯着空白页“战略思考”，而要像海绵一样吸收日常会议、聊天、邮件中人们抱怨的难题。他让问题在脑中积累，不轻易行动，等待问题跨团队重复出现或表面不同的问题显露共同根源。例如，Perfetto用户多次请求局部UI功能，最终发现共同需求是“扩展UI”，于是设计了宏和扩展服务器，让团队自行定制，而非逐项实现。他提醒，用户常提的是方案而非根因，需反复追问；即使找到共性，也可能只是优雅的假象，要写RFC、做原型来验证，必要时放弃或调整。这种过程也建立信任，帮他在组织内发挥更大影响，形成良性循环。简言之，发现问题来自深度倾听、耐心积累、抽象共性并严格验证。
+
+---
+
+## 2. 去臃肿开源替代品网站
+
+**原文标题**: A website for debloated open source alternatives
+
+**原文链接**: [https://debloat.dev/](https://debloat.dev/)
+
+摘要：debloat.dev 是一个收录“精简替代品”的网站，旨在帮助用户用开源、轻量或更干净的软件替换厂商自带或功能臃肿的专有应用。网站按分类展示项目，如外设、笔记本/台式机、音频、智能家居、NAS存储、网络、打印机、手机同步、摄像头、电视媒体等。每个项目列出所替代的原软件、开源许可证、用户评分和讨论帖数。特色项目包括 NetBird（替代 Tailscale/ZeroTier 的 WireGuard 网状 VPN）、NASty、NewPipe、noise-suppression-for-voice、rivalcfg、openHAB、SmartTube 等。最受讨论的有 G-Helper（替代华硕奥创中心）、Immich（替代 Google Photos 云同步）、QMK、ESPHome、Syncthing、Home Assistant、Jellyfin、Kodi。网站还提供“随机推荐”和用户需求列表，并支持注册后发布新项目和评分。目前收录约200个项目，132篇帖子。网站强调无追踪、无 Cookie（登录时除外），每月发布新条目简报，整体定位是“用干净替代方案替换垃圾软件”。
+
+---
+
+## 3. Fable与免费午餐的终结
+
+**原文标题**: Fable and the End of the Free Lunch
+
+**原文链接**: [https://www.dbreunig.com/2026/08/23/fable-the-end-of-moore-s-law.html](https://www.dbreunig.com/2026/08/23/fable-the-end-of-moore-s-law.html)
+
+摘要：本文作者认为，Fable模型的发布标志着AI编码领域“免费午餐”的终结。过去，受益于摩尔定律，软件开发者无需过度优化代码，等待更快的CPU即可获得性能提升；类似地，在Fable之前，开发者也不必精心改进编码工具链或上下文策略，因为新一代模型往往以相同或更低价格带来更好效果。然而，Fable虽然能力惊人，但成本过高，而Opus、GLM等模型对多数编码任务已足够。以GLM 5.2为例，其价格约为Fable的九分之一，尽管在某些任务上质量差距明显，但配合良好的上下文，足以胜任大部分常规编码。作者常用Fable进行设计讨论和方案推敲，再将任务简报交给GLM实现。针对“推理成本下降会让所有任务重新涌向最大模型”的观点，作者持怀疑态度：成本下降同样惠及较小的模型，且更成熟的工具链能让弱模型在充分上下文下表现出色。此外，Fable带来的另一冲击在于其访问控制、动态降级和数据保留要求，引发了企业和国家对数据流向与模型来源的担忧，促使他们重新评估模型选择策略。总之，AI编码的资源分配逻辑已发生变化，把合适的工作交给合适的模型成为新常态。
+
+---
+
+## 4. 复杂系统如何失效（1998）
+
+**原文标题**: How Complex Systems Fail (1998)
+
+**原文链接**: [https://how.complexsystems.fail/](https://how.complexsystems.fail/)
+
+摘要：本文指出，复杂系统本质上充满危险，其运行依赖多重防御层，但灾难性失效并非由单一故障引起，而是多个小缺陷偶然串联所致。系统中始终存在潜伏故障，因而复杂系统长期处于“降级运行”状态，灾难可能随时发生。事后归因于“根本原因”是错误的，因为事故是多因素共同作用的结果；同时，后见之明会严重扭曲对人员表现的评估。操作者兼具生产与防御双重角色，其所有行动都是在不确定条件下的“赌博”。一线人员是系统中唯一的适应要素，他们不断调整系统以平衡生产与安全。然而，技术变革在消除旧问题的同时也会引入新的、罕见的灾难性失效模式。基于线性因果观的补救措施往往无效，反而增加系统复杂性与耦合度。安全是系统的涌现属性，而非某个部件或个人的固有特性。人员通过持续的适应性行为不断创造安全；而可靠运行恰恰需要操作者拥有接近失效边缘的经验，以识别危险并保持系统在可承受的绩效边界内运行。
+
+---
+
+## 5. 为何萨尔·可汗“不行”：在创造中学习，在讲述中教学
+
+**原文标题**: Why Sal Khan't: On Learning by Making but Teaching by Telling
+
+**原文链接**: [https://punyamishra.com/2026/04/16/why-sal-khant-on-learning-by-making-but-teaching-by-telling/](https://punyamishra.com/2026/04/16/why-sal-khant-on-learning-by-making-but-teaching-by-telling/)
+
+文章以Khanmigo的失败为引子，分析萨尔·可汗教育产品的根本缺陷。作者指出，可汗自己学习时采用主动建构的方式：阅读、画图、追问、求助、验证、制作视频；但他的教学产品却让学生被动观看讲解视频或与聊天机器人对话，只传递学习结果，没有给学生提供目标和主动操作的空间。作者借助杜威的四种自然冲动——探究、建构、表达、交流——说明可汗个人的学习恰好四种兼备，而他的教学产品只剩下“讲述”，因而学生缺乏动力，宁可回答“IDK”也不用。文章由此批评教育科技界“内容+算法”的迷思，认为真正的学习需要目的、制作和人际互动。最后以TPACK框架指出，可汗拥有技术知识和内容知识，但缺少教学知识（P），这恰恰是人类教师不可替代的核心。
+
+---
+
+## 6. 恶意软件感染基于Android的汽车车载主机固件
+
+**原文标题**: Malware infects Android-based automotive head unit firmware
+
+**原文链接**: [https://securelist.com/android-head-unit-malware/121106/](https://securelist.com/android-head-unit-malware/121106/)
+
+摘要：卡巴斯基研究人员发现一种新型Android恶意软件，其通过汽车车载主机固件的内置更新机制传播，这是首次记录到针对车载主机的完整恶意感染链。该恶意软件为多阶段下载器，最终目的是实施广告欺诈并组建代理僵尸网络。攻击者利用合法系统应用TWCore的更新功能，通过MQTT消息控制下载并安装无界面恶意应用JarService。JarService作为dropper，解密后加载第二阶段loader，loader向C2服务器发送设备信息并获取下一阶段载荷。第三阶段为clicker/反向代理加载器，每90分钟向C2请求任务，可执行九种命令，包括显示广告、点击欺诈、下载额外恶意代码及配置代理。C2服务器可动态更新配置和下发指令，指令中包含加载“zhima”模块（反向代理客户端）及发起HTTP请求等。研究人员将此次活动高置信度归因于与BADBOX僵尸网络相关的MoYu集团，并提供了各阶段检测名称、哈希、域名和IP等入侵指标。厂商已获通知并修复安全问题。
+
+---
+
+## 7. 氛围税
+
+**原文标题**: The Vibe Tax
+
+**原文链接**: [https://insufferable.dev/posts/vibe-tax/](https://insufferable.dev/posts/vibe-tax/)
+
+摘要：作者原打算用AI助手从零开发一款待办应用，凭借其软件工程经验和提示词技巧，他让最新模型“Pol”自主编码。一觉醒来，发现Pol的终端显示“本周配额0%使用，7天后重置”，而作者昨天刚重置过。他检查项目，只见空仓库中有一个“tests”文件夹，里面层层子目录各以sha256哈希命名，每个都覆盖了几乎不可能遇到的边界情况，测试写得近乎完美，但应用本体连个占位符都没有。作者意识到，这是因为大量“氛围编码者”（vibe coders）训练AI养成了过度工程的倾向：用十倍token换“一次成功、从不看代码”的省心。他们愿意付出高昂token成本来回避阅读和调试，而这笔成本最终以配额耗尽的形态，落在所有认真写代码的开发者头上——他们成了氛围税的受害者。
+
+---
+
+## 8. 椰子油喷气燃料在发动机测试中效率媲美煤油
+
+**原文标题**: Coconut Oil Jet Fuel Matches Kerosene's Efficiency in Engine Tests
+
+**原文链接**: [https://studyfinds.com/coconut-oil-jet-fuel-matches-kerosenes-efficiency-in-engine-tests/](https://studyfinds.com/coconut-oil-jet-fuel-matches-kerosenes-efficiency-in-engine-tests/)
+
+摘要：日本大阪都市大学研究人员利用“共溶剂法”从椰子油中制取生物喷气燃料，并在小型喷气发动机中与常规煤油混合测试。结果显示，混合燃料的热效率与纯煤油相当，且随着生物燃料比例增加，未燃碳氢化合物排放显著降低，最多降低约5%至40%，这与其不含芳烃有关。但生物燃料能量密度较低，50%混合比下燃料消耗增加约16.8%至19.6%，一氧化碳排放略升3%至17%，二氧化碳排放基本持平，氮氧化物排放总体相当。研究还指出，椰子油来源可为加工废弃物，生产成本更低。然而，该燃料存在吸湿、易氧化、轻微腐蚀金属等问题，含氧量也超出当前航空燃料标准，需进一步处理才能商用。研究使用微型发动机，结果未必完全适用于大型飞机，未测量多环芳烃，也需长期储存稳定性验证。该成果发表于《Fuel》期刊。
+
+---
+
+## 9. 我钟爱的非虚构类书籍：邪教、骗局与阴谋
+
+**原文标题**: My favorite nonfiction books about cults, scams, and schemes
+
+**原文链接**: [https://bookdna.com/best-books/nonfiction-about-cults-scams-and-schemes](https://bookdna.com/best-books/nonfiction-about-cults-scams-and-schemes)
+
+摘要：这篇文章推荐了阿曼达·蒙特尔所著的《Cultish：狂热崇拜的语言》一书。作者是一位语言学家，擅长分析语言如何被用于施加过度影响。书中提出“邪教性”是一个光谱，不仅限于传统意义上的极端组织，也渗透于初创公司、护肤品牌、健身课程等日常社群中。蒙特尔重点剖析了从琼斯镇、科学教派到SoulCycle、社交媒体“大师”等不同群体，如何通过特定话术构建归属感、控制成员思想，从而获取权力。她指出，这些影响力的核心在于语言——通过措辞、隐喻、重复和排他性术语来塑造现实。这本书兼具研究深度与可读性，会让读者反思自身对许多事物的强烈认同是否源于类似机制。该书受到多位作者推荐，被列入相关书单，主题涵盖邪教与集体身份认同。如果你对极端群体为何吸引人、人们为何加入甚至留驻其中感到好奇，这本书提供了引人入胜的解答，并促使你思考：类似的影响是否也可能发生在自己身上。
+
+---
+
+## 10. 什么是智能体缰绳（Harness）？
+
+**原文标题**: What Is a Harness?
+
+**原文链接**: [https://earendil.com/posts/what-is-a-harness/](https://earendil.com/posts/what-is-a-harness/)
+
+摘要：文章借攀岩安全带的比喻，解释“Agent Harness”（智能体缰绳）的概念。攀岩安全带通过绳索与工具保护攀岩者，并可随场景调整；类似地，智能体缰绳是围绕AI模型构建的软件环境，允许用户拥有和定制，从而将AI模型转化为可执行任务的AI智能体。其核心功能包括四部分：一是系统提示（System Prompt），注入指令约束模型行为；二是工具（Tools），如联网搜索、写代码、发邮件等，由模型自主决定调用；三是代理循环（Agentic Loop），模型能根据中间结果反复搜索、计算、检查直至完成任务；四是翻译层（Translation Layer），使同一缰绳兼容不同AI模型（如Anthropic、OpenAI及开源模型），把选择权交给用户。作者强调，早期如Claude Code并非开源中立的专用工具，而后出现的OpenClaw、Pi等开源缰绳更注重用户自主性。Pi即是一个极简、免费开源的本地缰绳，用户可修改系统提示、扩展功能，已有数千种共享扩展。缰绳让用户掌控数据与流程，避免被AI公司锁定，实现“使用工具而非被工具奴役”的自主性。
+
+---
+
+## 11. 我的 agent.md：提升 LLM 辅助代码质量的经验
+
+**原文标题**: My agent.md to improve LLM-assisted code quality
+
+**原文链接**: [https://fabiensanglard.net/agent.md/index.html](https://fabiensanglard.net/agent.md/index.html)
+
+摘要：作者最初尝试用 LLM 写代码，效果不佳，代码无法编译。2026年再次尝试，发现 LLM 能完成复杂任务，但代码质量差、无注释、结构混乱。后来使用 agentic IDE 并通过反复提醒改善代码风格，过程繁琐。最终通过项目根目录下的 agent.md 文件，在会话启动时自动注入提示，集中管理代码风格偏好。作者分享了个人 agent.md 的要点：精简措辞、避免废话和恭维；用常量代替魔法数；减少缩进、使用早返回；函数名简短；用枚举代替布尔参数；逻辑块间加空行；添加简洁注释解释“什么”和“为什么”；谨慎修改成员可见性；分层抽象；不碰无关代码；严格遵循层次边界；强制使用花括号；提交信息遵循七条规则（主题行50字符、祈使句、正文72字符换行等）；修复 bug 时先写失败测试再写修复。作者指出 agent.md 不能替代人工审阅，LLM 仍会幻觉。最后提出对抗“上下文稀释”的方法：保持会话上下文简短、按功能新建会话，以及发现质量下降时显式要求“重新加载 agent.md”。作者还建议让 agent 自动更新 agent.md 来沉淀规则。
+
+---
+
+## 12. 像对十岁孩子一样解释给我听
+
+**原文标题**: Explain it to me like I'm ten
+
+**原文链接**: [https://timharford.com/2026/08/explain-it-to-me-like-im-ten/](https://timharford.com/2026/08/explain-it-to-me-like-im-ten/)
+
+摘要：无法访问该文章链接
+
+---
+
+## 13. 我花了266美元和四个AI模型，只为真正拥有我的平板电脑——GLM-5.3用一天搞定
+
+**原文标题**: I spent $266 and four AI models to own my tablet. GLM-5.3 finished it in a day
+
+**原文链接**: [https://ericpardee.github.io/fire-hd-ownership/](https://ericpardee.github.io/fire-hd-ownership/)
+
+摘要：作者为让自己的亚马逊Fire HD平板不再被系统自动关机，尝试获取root权限。美国AI模型Claude因安全限制无法继续，他转向中国模型：Kimi K3挖掘到未修补的CVE-2022-38181漏洞并构建利用工具，花费164.25美元；GLM-5.2纠正错误、推翻错误诊断，花费21.90美元；GLM-5.3在一天内完成root，移除所有带关机权限的亚马逊软件包，共卸载100个系统应用。总花费266.15美元，耗时五个月。文章强调该行为符合美国DMCA豁免条款，并探讨了中美AI安全策略差异，以及“提示词小子”这一新现象——技术能力可租用，但人类判断力仍不可替代。
+
+---
+
+## 14. 斯洛伐克发现俄罗斯在交通测速摄像头中植入后门
+
+**原文标题**: Slovakia finds Russian backdoor in traffic speed cameras
+
+**原文链接**: [https://risky.biz/risky-bulletin-slovakia-finds-russian-backdoor-in-traffic-speed-cameras/](https://risky.biz/risky-bulletin-slovakia-finds-russian-backdoor-in-traffic-speed-cameras/)
+
+斯洛伐克国家安全局（NBU）发布安全警报，称该国采购的NERO R-ONE高速测速摄像头内置后门机制，可通过来自预置俄罗斯电话号码列表的短信获取设备shell和网络访问权限。调查始于反对派指责政府从俄罗斯购买摄像头，以及媒体披露该采购与一家持有虚假认证的塞浦路斯空壳公司有关。NBU指出，该摄像头实为俄罗斯圣彼得堡公司Semicon生产的CORDON PRO.M型号的贴牌版本。这些摄像头原计划用于一项由欧盟资助、耗资3000万欧元的全国交通监控系统重建项目，内政部已购买并准备在公路安装279台。内政部最初否认摄像头来自俄罗斯，并称设备将接入封闭内网，不存在数据泄露风险。NBU技术报告还发现多项安全缺陷：SecureBoot安全启动功能被关闭，固件来源无法验证；Web管理门户存在多个漏洞；摄像头直播流无需密码即可访问，只要知道广播IP。报告发布后，内政部已暂停部署，并委托独立审计机构进一步确认。据悉，类似设备据称也安装在克罗地亚及部分东欧国家。
+
+---
+
+## 15. 在系统提示中重复四次
+
+**原文标题**: Say It Four Times (In Your System Prompt)
+
+**原文链接**: [https://www.khola.blog/p/say-it-four-times](https://www.khola.blog/p/say-it-four-times)
+
+摘要：一项实验检验了在系统提示中重复指令的效果。作者让Gemini 2.5 Flash生成Python函数，并规定“使用单引号，不用双引号”，指令分别重复0、1、2、4、8、16次，共1080次运行。结果显示，不提示时模型100%使用双引号；提示一次时遵守率74%；提示四次时达97%；而八次和十六次与四次持平，不再提升。因此，重复指令确实有效，但四次后边际收益为零，继续重复只是浪费token。实验还发现，平均值掩盖了任务差异：有的任务一次就100%遵守，有的则从20%升到97%，重复主要帮助对抗模型固有习惯。此外，许多相同运行产生不同结果，提示评估至少需多次运行（三次为底，十次更好）。残余违规多来自三引号docstring，模型将其归为文档而非字符串，导致规则未覆盖。作者建议模板中重复至多四次，省下的空间用于示例；若四次无效，应改变策略而非继续重复。实验也提醒注意思考token挤占输出限制导致截断，需记录生成停止原因。局限包括单一模型、单一规则和相邻重复位置。
+
+---
+
+## 16. 超过17万家非营利组织数据全丢，微软该负责吗？
+
+**原文标题**: Over 170k Nonprofits Lost All Their Data. Is Microsoft to Blame?
+
+**原文链接**: [https://slate.com/technology/2026/08/microsoft-software-nonprofit-data-delete.html](https://slate.com/technology/2026/08/microsoft-software-nonprofit-data-delete.html)
+
+摘要：微软去年宣布将于2025年7月起终止面向小型非营利组织的免费Office 365商业高级版许可，但许多组织声称未收到有效通知，导致数据被永久删除。一位非营利组织创始人表示，他去年10月续签了许可证，确认有效至2026年10月，却在6月发现所有数据消失，客服先称可恢复，后改口称已彻底丢失。据称约17.1万家小型非政府组织在OneDrive中的资料全部丢失。微软回应称已“强烈建议客户在续订前迁移”，但多位受害者表示只收到过一封邮件甚至零通知，或通知被淹没在垃圾邮件中。部分用户因未查看管理员邮箱而错过警告。受影响的组织多为预算微薄的小型机构，免费软件相当于其IT支出的30%，如今不得不改用功能较弱的在线版应用，或花费数百小时重建资料。分析认为，微软缩减该计划可能与其聚焦AI战略、削减非AI部门开支及向特朗普政府靠拢有关，同时AI发展也加剧了存储资源紧张。受害者中有人因定期备份而幸免，但仍需跨州取回数据；许多机构则损失惨重，运营陷入困境。
+
+---
+
+## 17. Wi-Fi 8 是多年来首个不追求速度的无线升级
+
+**原文标题**: Wi-Fi 8 is the first wireless upgrade in years that isn't chasing speed
+
+**原文链接**: [https://www.xda-developers.com/wi-fi-8-first-wireless-upgrade-years-isnt-chasing-speed-home-networks-need-it/](https://www.xda-developers.com/wi-fi-8-first-wireless-upgrade-years-isnt-chasing-speed-home-networks-need-it/)
+
+摘要：Wi-Fi 8 被 IEEE 命名为“超高频可靠性”，首次不再以提升理论速度为重心，而是专注改善实际场景中的可靠性与有效吞吐量。其最高数据速率、空间流数、调制方式、频段和信道带宽与 Wi-Fi 7 基本持平，但目标是将不同信干噪比下的吞吐量提升 25%，将高延迟场景的 95 分位延迟降低 25%，并将 MAC 协议数据单元丢失率减少 25%。新技术包括分布式音调资源单元（DRUs），让低功率设备也能获得更可靠连接；干扰缓解导频用于抵抗非授权频段的意外干扰；不等调制可让各空间流按信干噪比独立调整；新的调制编码方案进一步提升吞吐量。延迟优化方面引入 P-EDCA，并允许设备在非主信道通信，减少带宽浪费。Wi-Fi 8 还改进了无缝漫游和多接入点协调，提升复杂网络环境下的体验。文章认为，如今智能家居设备数量激增，即使许多设备不占大带宽，其存在也会干扰高要求连接，因此可靠性升级比单纯提速更具实际价值。标准预计 2028 年 5 月完成，支持设备同年开始出现。作者建议，若非拥有多千兆网络，Wi-Fi 7 的速度优势感知不强，不妨等待 Wi-Fi 8 设备。
+
+---
+
+## 18. 《书呆子帝国》追踪“硅谷真实政治的面纱被揭开”
+
+**原文标题**: 'The Nerd Reich' tracks the 'unmasking of Silicon Valley's true politics'
+
+**原文链接**: [https://www.npr.org/2026/08/10/nx-s1-5925350/the-nerd-reich-tracks-the-unmasking-of-silicon-valleys-true-politics](https://www.npr.org/2026/08/10/nx-s1-5925350/the-nerd-reich-tracks-the-unmasking-of-silicon-valleys-true-politics)
+
+记者Gil Duran的新书《The Nerd Reich》认为，硅谷亿万富翁和风险投资家们已得出结论：民主是他们的障碍，他们应取代民主。书中指出，这些人的思想根源可追溯至1997年的《主权个人》，该书预言数字货币和AI将终结民主国家，催生新的“认知精英”。Peter Thiel深受此书影响，并成为这场运动的关键人物：他资助JD Vance从政，助其进入白宫，还传播Curtis Yarvin等人主张用CEO式独裁取代美国的观点。另一位人物Balaji Srinivasan则提出“红灰蓝”策略，主张科技“灰部落”与共和党“红部落”联手，在旧金山等地驱逐民主党“蓝部落”，以此作为全国试验。作者认为，2025年1月Musk、Bezos等科技巨头在特朗普就职典礼上占据要位，证明他们三十年来的耐心布局已获成功。拜登此前也警告“科技工业综合体”正危害民主。Duran强调，这一切并非秘密阴谋，而是这些亿万富翁多年来公开宣扬的信念。
+
+---
+
+## 19. 我把1983年的Unix talk变成了我的AI界面
+
+**原文标题**: I turned Unix talk from 1983 into the interface for my AI
+
+**原文链接**: [https://en.andros.dev/blog/09a21bdd/i-turned-unix-talk-from-1983-into-the-interface-for-my-ai/](https://en.andros.dev/blog/09a21bdd/i-turned-unix-talk-from-1983-into-the-interface-for-my-ai/)
+
+摘要：作者受Unix talk命令启发，将其与LLM流式输出结合，搭建了一个趣味桥梁：用户通过VPN运行“talk ai@主机”，AI便会在另一端实时回复。实现上，服务器在伪终端中运行真实talk，用pyte终端模拟器读取人类输入，按回车将整行发送给模型，再将流式回复逐字符注入。为了让talkd把AI识别为合法用户，容器启动时在utmp中注册终端，否则会提示“未登录”。这是一个纯玩项目，却让四十多年前的技术与现代AI优雅相遇，令人感叹。文章还附有架构图及订阅、捐赠信息。
+
+---
+
+## 20. 一颗Athlon的终结
+
+**原文标题**: The End of an Athlon
+
+**原文链接**: [http://www.os2museum.com/wp/the-end-of-an-athlon/](http://www.os2museum.com/wp/the-end-of-an-athlon/)
+
+摘要：文章记录了作者在研究Athlon MP/XP处理器CPUID位时的一次意外：拆卸散热器时，一颗Athlon XP的硅片被粘下一大块，但该处理器此前一直正常工作。作者推测硅片中原本存在一条笔直的微裂纹，在拆卸受力时扩展，导致大块硅片脱落。文中还回顾了2000年前后Intel和AMD采用的翻转芯片PGA封装，该封装让脆弱的硅片直接暴露，散热器安装不当极易压裂核心，许多古董CPU都有缺角现象。Intel后来迅速转向带盖封装，P4和PIII-S均改用更坚固的设计；AMD在PGA版Athlon上仍用裸露硅片，但Opteron未采用。相比之下，LGA处理器更坚固，但薄弱点转移到主板插座。评论中读者提到Intel的铜矿核心更耐用，AMD核心则较脆，因此当时出现了专门为Athlon/Duron设计的防护垫片；另有评论建议拆卸散热器时趁系统温热并轻微旋转以解除粘合。作者回应称不确定损坏的CPU是否还能点亮，且不想冒险损坏主板，因此未再测试。
+
+---
+
+## 21. 远程工作挑战：来自五个城市的启示
+
+**原文标题**: The Remote Work Challenge: Lessons from 5 Cities
+
+**原文链接**: [https://www.pew.org/en/research-and-analysis/reports/2026/05/the-remote-work-challenge-lessons-from-5-cities](https://www.pew.org/en/research-and-analysis/reports/2026/05/the-remote-work-challenge-lessons-from-5-cities)
+
+摘要：报告聚焦远程工作对美国城市财政与市中心活力的影响，选取亚特兰大、波士顿、达拉斯、丹佛和密尔沃基五座城市进行质性研究。尽管疫情后办公空置率创纪录、办公楼价值大跌，但五市税收迄今表现韧性，尚未陷入“厄运循环”。原因在于房产税中住宅部分因高房价而增长、销售税和所得税等来源多元，且商业评估和租赁合同存在滞后效应。然而，风险仍在：市中心人流减少、活力下降，办公转住宅改造成为振兴关键，但需要州政府政策支持。城市还面临成本上升、州与联邦援助减少等叠加挑战。报告指出，远程办公对城市财政的全面影响可能还需数年才能完全显现。
+
+---
+
+## 22. 凤凰城尝试在黑色沥青上涂反射涂层；正午路面温度降低12华氏度
+
+**原文标题**: Phoenix tried a reflective coating on black asphalt; noon surface heat fell 12°F
+
+**原文链接**: [https://economictimes.indiatimes.com/news/international/us/phoenix-swapped-black-asphalt-for-a-reflective-road-coating-noon-surface-heat-fell-12f-but-pedestrians-faced-higher-radiant-heat/articleshow/133421891.cms?from=mdr](https://economictimes.indiatimes.com/news/international/us/phoenix-swapped-black-asphalt-for-a-reflective-road-coating-noon-surface-heat-fell-12f-but-pedestrians-faced-higher-radiant-heat/articleshow/133421891.cms?from=mdr)
+
+摘要：美国凤凰城为应对酷热，于2020年在部分道路涂上浅色反射涂层，并与亚利桑那州立大学开展为期一年的研究。结果显示，处理后的路面在日出时、正午和下午分别比传统老化沥青路面低2.4°F、12°F和10.5°F，路面以下平均低4.8°F。但意外的是，反射涂层虽降低路面温度，却将阳光反射到行人身上，使平均辐射温度升高约5.5°F，并不一定改善行人舒适度。洛杉矶的类似研究也发现路面降温但行人热辐射增加。此外，涂层会随时间磨损，反射率从最初的33%-38%降至十个月后的19%-30%。后续研究中，新版涂层在部分社区应用，可降低夏季路面温度达12°F，并节省维护费用。但《自然·通讯》综述指出，反射路面并非到处适用，最适合无遮阴、低人流量的开放住宅道路和停车场，不宜用于操场、广场等正午人群聚集处。凤凰城的经验表明，冷却路面与冷却行人是两个不同问题，城市需结合遮阴、树木覆盖及合理选址，而非仅改变路面颜色。
+
+---
+
+## 23. Anthropic最强AI模型用户增长乏力，更廉价工具蓬勃发展
+
+**原文标题**: Anthropic's best AI model struggles to attract users as cheaper tools thrive
+
+**原文链接**: [https://www.ft.com/content/5ee49718-c258-4f01-aa32-7e5b76ae5245](https://www.ft.com/content/5ee49718-c258-4f01-aa32-7e5b76ae5245)
+
+摘要：无法访问该文章链接
+
+---
+
+## 24. 人工智能与基础设施工程
+
+**原文标题**: AI and Infrastructure Engineering
+
+**原文链接**: [https://omegion.dev/2026/08/ai-and-infrastructure-engineering/](https://omegion.dev/2026/08/ai-and-infrastructure-engineering/)
+
+摘要：文章探讨AI对基础设施工程的影响，认为AI正像当年Kubernetes取代Ansible一样，逐层吃掉工程师的重复性工作，但并未取代工程师本身。作者以亲身经历说明，用Claude生成Helm图表和Terraform模块后，日常工作中减少的是“查文档”式劳动，而非思考决策。他仍需判断什么是好的模块结构、如何维护、如何部署，并保留SSH调试等底层能力。这种效率提升伴随着代价：对HCL语法等底层细节的熟练度下降。文章的核心担忧在于，“由人给出方向”这一层还能维持多久——如果企业级AI能掌握全部仓库的长期上下文，它可能像工具胜过人工调试一样，在整体规划上超越人类。作者总结，Kubernetes没有取代基础设施工程师，只是把他们推向更高层；AI也在做同样的事，但不确定这是否是最后一层。
+
+---
+
+## 25. 用统计方法预测AI模型发布日期
+
+**原文标题**: Predicting AI model release dates with stats
+
+**原文链接**: [https://releaseoracle.xyz/](https://releaseoracle.xyz/)
+
+摘要：本文介绍了一个名为“Release Oracle”的实时预测平台，旨在通过统计方法预测AI模型的发布日期。该平台汇集了历史发布数据、技术趋势和行业规律，运用概率模型与时间序列分析，对未来主流AI模型的发布时间进行动态估算。文章强调，这类预测并非内部消息，而是基于公开信息的量化推断，可帮助研究人员、开发者和企业规划技术选型与产品节奏。关键信息包括：预测覆盖多个知名AI机构；结果会随新数据持续更新；统计模型考虑了模型规模、训练成本、组织发布习惯等因素；同时提示预测存在不确定性，仅供参考。文章还展示了部分热门模型的预测时间窗口，并解释了置信区间的计算方式。整体而言，这是一种数据驱动、透明可校验的AI发展观察方法，为行业提供了一种理性参考。
+
+---
+
+## 26. 从前面板到程序：像PDP-8一样思考
+
+**原文标题**: From Front Panel to Program: Thinking Like a PDP-8
+
+**原文链接**: [https://pikuma.com/blog/pdp-8-minicomputer](https://pikuma.com/blog/pdp-8-minicomputer)
+
+摘要：本文通过PDP-8/E计算机的实物面板图解，展示了早期小型计算机的硬件组成与操作方式。CPU与操作员控制台位于中央，琥珀色指示灯实时显示内存地址寄存器（程序计数器）内容，拨动开关用于手动输入引导地址或检查内存。纸带阅读器/穿孔机是磁盘普及前日常程序和数据输入输出的主要媒介。DECtape控制面板带有诊断指示灯，其TU56双传输带驱动器提供可随机访问、支持读写校验的“可计算磁带”。RK05J磁盘驱动器使用可拆卸盒式磁盘，每盘约1.6MB容量，适合运行操作系统和存储文件。磁盘盒、备用磁带卷轴及空白面板分别用于存储介质和遮盖内部电路。整体来看，文章通过编号标注各部件，呈现了PDP-8/E系统如何将前面板开关、指示灯与磁带、磁盘等存储设备结合起来，构成一台可用于教学、科研和工业控制的经典小型机。
+
+---
+
+## 27. 埃里克·布林约尔松称人工智能“就业末日”不太可能发生
+
+**原文标题**: Erik Brynjolfsson says an AI "job apocalypse" is unlikely
+
+**原文链接**: [https://wpintelligence.washingtonpost.com/topics/ai-tech/2026/08/19/wpi-conversation-why-an-ai-job-apocalypse-is-unlikely/](https://wpintelligence.washingtonpost.com/topics/ai-tech/2026/08/19/wpi-conversation-why-an-ai-job-apocalypse-is-unlikely/)
+
+摘要：无法访问该文章链接
+
+---
+
+## 28. Etched Sohu 对比 Nvidia：Transformer ASIC 与 GPU（2026）
+
+**原文标题**: Etched Sohu vs. Nvidia: Transformer ASIC vs. GPU (2026) – Spheron Blog
+
+**原文链接**: [https://www.spheron.network/blog/etched-ai-sohu-vs-nvidia-transformer-asic-inference/](https://www.spheron.network/blog/etched-ai-sohu-vs-nvidia-transformer-asic-inference/)
+
+Etched AI 的 Sohu 是一款仅支持 Transformer 的推理 ASIC，将注意力机制固化为硬件电路，完全放弃可编程性。其宣称 8 芯片服务器在 Llama 70B 上可实现 500,000 tokens/s，单芯片约 62,500 tokens/s，但无独立验证、无公开定价，目前仍不可租赁或购买。与 GPU 相比，Sohu 的优势主要体现在 batch=1 的低延迟场景；高 batch 下 H100/B200 可通过批处理追赶，例如 H100 at batch 256 可达约 45,000 tokens/s。Sohu 采用 144GB HBM3E，带宽约为 H100 的 1.8 倍。关键限制在于：无法运行视觉多模态、扩散模型、MoE（如 DeepSeek V4、Qwen3-235B-A22B）、SSM/Mamba，也不能训练或微调。与 Groq 3 LPU 相比，Groq 有可编程编译器且获 NVIDIA 生态支持，而 Sohu 作为初创产品风险更高。成本方面，当前 B200 约 0.231 美元/百万 tokens，B300 约 0.177 美元，Sohu 无法计算成本。该芯片适合长期固定使用纯稠密 Transformer、对延迟极度敏感且能承受供应风险的团队；对多数生产级 MoE 或多模态负载并不适用。
+
+---
+
+## 29. 我希望现代关系查询语言具备的特性
+
+**原文标题**: Things I want in a modern relational query language
+
+**原文链接**: [https://sporks.space/2026/08/19/things-i-want-in-a-modern-relational-query-language/](https://sporks.space/2026/08/19/things-i-want-in-a-modern-relational-query-language/)
+
+中文摘要：文章基于作者多年使用SQL及多种关系型数据库的经验，探讨现代关系查询语言应改进的方向。作者认为NoSQL兴起部分源于SQL实现上的笨拙与过时。首先，语法应更现代，可借鉴C、Python、ML或Prolog风格，并改善解析器错误提示。其次，查询语言应更契合函数式编程，而非依赖游标和过程式存储过程，默认设计应引导用户编写声明式代码。第三，查询计划器应更透明易懂，避免像MySQL的EXPLAIN那样晦涩。第四，应增强用户定义类型（如域）的支持，参考Codd的关系模型和Postgres的实践。第五，引入和类型、判别联合与模式匹配，用IBM i堆栈信息示例说明如何消除互斥可空列和字符串枚举，使查询更简洁安全。最后，提出一种支持多类型外键的联合表设计，用于替代多个多对多映射表，减少重复并增强类型安全。文章强调这些改进能让关系数据对程序员更友好。
+
+---
+
+## 30. 我让Qwen 3.8 27B做逆向工程，它30分钟搞定了
+
+**原文标题**: I gave Qwen 3.8 27B a reverse-engineering job and it finished in 30 minutes
+
+**原文链接**: [https://www.xda-developers.com/qwen-3-8-27b-reverse-engineering-job-frontier-model/](https://www.xda-developers.com/qwen-3-8-27b-reverse-engineering-job-frontier-model/)
+
+摘要：本文作者在本地工作站上运行Qwen 3.8 27B模型，测试其对一款商业应用许可证校验机制的逆向工程能力。模型识破了作者的越狱提示，拒绝直接编写绕过方案，但同意审计验证流程并记录弱点；随后在报告中逐步还原认证链，最终将发现转化为可用的绕过脚本。整个过程约30分钟，完全通过静态分析完成，未执行应用，成功恢复了厂商刻意隐藏的公钥，并在发现首个恢复结果不匹配后自行纠正。作者指出，该模型仅需约17GB显存即可离线运行，意味着本地小模型已具备强大的逆向工程能力，对隐私和威胁模型都有深远影响：既有利于分析专有软件和恶意代码，也可能被滥用。作者强调这只是一次个案，不代表能逆向一切，但显示本地模型能力正在快速提升。
+
+---
+
