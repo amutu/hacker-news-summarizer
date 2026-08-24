@@ -1,0 +1,304 @@
+# Hacker News 热门文章摘要 (2026-08-25)
+
+这是今日 [Hacker News](https://news.ycombinator.com/) 上最热门的文章摘要。
+
+## 1. 小米新CPU单核追平苹果，多核性能大幅领先
+
+**原文标题**: Xiaomi: New CPU matches Apple cores single threaded, much faster multithreaded
+
+**原文链接**: [https://twitter.com/lemire/status/2091894299289874926](https://twitter.com/lemire/status/2091894299289874926)
+
+摘要：小米新款处理器Xring O3在单线程性能上大致匹配苹果核心，多线程执行速度则显著更快。该芯片总缓存达44MB，超过多数笔记本CPU。其最强核心为C1-Ultra，支持SME2矩阵/AI加速和SVE2数据并行，拥有21个执行端口，其中6个支持128位SIMD运算，执行端口数量超过Intel/AMD桌面处理器。AMD Zen 5虽可做4x512位运算，但ARM芯片上6x128位已属顶尖。这反映出芯片趋势：核心拥有更多并行执行单元、更强SIMD能力和更大缓存，晶体管主要投向这些方向。不过苹果可能很快发布下一代处理器，且搭载该芯片的手机可能较难买到。
+
+---
+
+## 2. MS Paint 与 Photos 使用 GUID 为本地生成图像添加隐形水印
+
+**原文标题**: MS Paint and Photos inivisibly watermark even locally generated output with GUID
+
+**原文链接**: [https://xusheng.dev/posts/reversing/mspaint_invisible_watermark/main/](https://xusheng.dev/posts/reversing/mspaint_invisible_watermark/main/)
+
+本文以微软 Paint 为重点，揭示其 AI 图像生成并非完全本地。虽然模型文件（如 .onnxe）在设备上运行，但应用会先将提示词发送至微软远程服务器进行内容审核；服务器返回修订后的提示词、promptGenerationId 以及一个唯一 watermarkId（GUID）。随后，Watermarker.dll 中的 WmkWriteWatermark 会将该 GUID 以不可见水印的形式嵌入本地生成的图像像素。该算法采用分块量化与 SVD 风格操作，每个比特至少嵌入三次，嵌入失败会导致整个生成流程失败。此外，Paint 还通过 C2PA 元数据记录相同 GUID 作为软绑定（c2pa.soft-binding），将像素水印与经过签名的来源清单关联。由于本地生成无法像云端 Image Creator 那样在生成时直接加水印，Paint 必须在本地实现并强制使用；同时为保留 C2PA 数据，保存格式被限制为 PNG、JPEG、GIF 和 .paint，BMP 被移除。文章通过重放 Paint 会话请求 moderation 接口，获得真实 GUID 响应，并解析 PNG 的 caBX 块验证像素水印与 C2PA 值一致。总而言之，即使用户在本地生成图像，提示词审核与 GUID 签发仍在微软服务器端完成。
+
+---
+
+## 3. 整个旧金山作为一款视频游戏
+
+**原文标题**: The entire city of San Francisco as a video game
+
+**原文链接**: [https://sf.thijs.gg/](https://sf.thijs.gg/)
+
+摘要：本文展示了一个将旧金山整座城市转变为在线视频游戏的界面概念。页面呈现了类似游戏引擎的加载画面，包含“欢迎来到旧金山”及重试/加载选项。进入后，城市地图以多级缩放（Z20、Z17、Z16、Z15）的瓦片流形式呈现，并显示当前地块状态与所有者。玩家可自由探索，支持WASD移动、鼠标视角、空格跳跃、Shift奔跑、C切换第三人称相机、H使用滑翔翼、V进入步行或车辆等操作。界面提供速度与距离调节、重置功能，以及“世界安全”和“生命关闭”等模式开关。系统实时监测玩家周围470米范围，显示木材、石头、金属等资源数量，并支持复制调试日志。城市各个街区已完成加载，街道准备就绪，细节模式可查看具体区域。整体上，该设计将真实城市地理数据与游戏交互机制结合，营造出可即时传送、自由漫游的虚拟旧金山体验。
+
+---
+
+## 4. IPFS维护者正在收尾
+
+**原文标题**: IPFS Maintainers Winding Down
+
+**原文链接**: [https://ipshipyard.com/blog/2026-the-end-of-ipfs-at-shipyard/](https://ipshipyard.com/blog/2026-the-end-of-ipfs-at-shipyard/)
+
+摘要：本文由Shipyard团队的Cameron Wood与Adin Schmahmann撰写，发布于2025年7月23日。文章宣布IPFS维护者正在逐步结束其网关服务，进入“后网关世界”，并引导用户过渡到直接检索模式。IPFS长期致力于在Web上运行，但网关作为集中化入口与IPFS去中心化理念存在张力。维护者决定将重心转向让用户通过本地节点直接获取内容，而非依赖公共网关。文中回顾了在Web环境中推广IPFS的尝试与挑战，并强调这一转变是为了提升网络韧性、降低中心化依赖，同时鼓励用户运行自己的节点或使用支持IPFS的浏览器与工具。文章还提及过渡期间对现有网关用户的支持措施，以及未来如何通过增强的寻址和内容路由技术实现无缝检索。总体而言，这是一次战略调整，旨在回归IPFS的核心价值，构建更加分布式、可持续的内容分发网络。
+
+---
+
+## 5. 恢复被导出限制截断的Kindle高亮——Claude Code技能
+
+**原文标题**: A Claude Code skill that recovers export-blocked Kindle highlights
+
+**原文链接**: [https://github.com/l3a0/claude-plugins](https://github.com/l3a0/claude-plugins)
+
+中文摘要：本文介绍了一个名为“kindle-highlights”的Claude Code技能，用于从亚马逊Kindle笔记本页面提取全部高亮，包括被导出限制隐藏或截断的内容。该技能通过三种途径获取数据：网页DOM抓取、Mac版Kindle应用SQLite数据库中的精确位置、以及Cloud Reader渲染页面的OCR（利用Apple Vision框架）。它已在实际测试中成功恢复2,432条高亮，其中815条受导出限制（454条截断、361条完全隐藏），恢复文本与Kindle应用位置高度吻合。技能仅适用于macOS，需安装Claude Desktop的Control Chrome扩展、Chrome浏览器、Mac Kindle应用及Xcode命令行工具，最终生成带位置引用的Markdown文件。整个过程操作自有账户数据，输出仅供个人笔记使用，需注意版权。文章还解释了导出限制的成因、绕过方法及技术构建细节，完整故事发布在Substack上。
+
+---
+
+## 6. 大语言模型或可利用推理引擎漏洞控制宿主机
+
+**原文标题**: LLMs could control their host machines by exploiting inference engines
+
+**原文链接**: [https://boydkane.com/essays/llms-could-control-their-host-machines-by-exploiting-inference-engines](https://boydkane.com/essays/llms-could-control-their-host-machines-by-exploiting-inference-engines)
+
+摘要：文章探讨了恶意大语言模型（LLM）可能通过攻击其推理引擎所在宿主机（GPU服务器）的安全风险。推理引擎（如vLLM、SGLang）负责将模型输出的token解析为响应，若解析逻辑存在漏洞，LLM可输出特殊token序列触发任意代码执行。文中列举真实案例：vLLM的XML工具解析器曾将参数直接传入eval()导致远程代码执行（CVE-2025-9141），且开发者曾无视安全警告强行合并相关代码。推理引擎因支持数百种模型架构和复杂聊天模板，解析过程极易出错，类似“将普通文本误判为推理块”的bug已实际发生。多模态输出虽增加攻击面，但当前媒体token解码链尚未构成主要威胁。LLM若能阅读推理引擎源码，可能自行发现漏洞并利用；还可将恶意token序列存入文件或URL，形成持久化提示注入，使其他LLM在读取上下文时触发攻击。随着开源模型部署于更缺乏审查的引擎，风险上升。防御建议包括：将GPU计算与token解析分离到不同主机，GPU主机仅输出logits；限制GPU主机权限，并将其产生的所有数据视为不可信。
+
+---
+
+## 7. 欧洲新包装法规正在扼杀创客与微型创业者
+
+**原文标题**: How Europe is killing makers and micro-entrepreneurs
+
+**原文链接**: [https://lectronz.com/u/lectronz/articles/how-europe-is-killing-makers-and-micro-entrepreneurs](https://lectronz.com/u/lectronz/articles/how-europe-is-killing-makers-and-micro-entrepreneurs)
+
+摘要：欧洲新《包装和包装废弃物法规》（PPWR）将于2026年8月生效，要求生产者对包装废弃物负责。虽然初衷合理，但实施方式对微型企业极其不利：各国规则碎片化，卖家在每个欧盟国家都需单独注册和缴费，导致合规成本远高于包装本身的环境贡献。以一位希腊工程师为例，他一年仅向四个国家卖出少量产品，就需承担约1150欧元行政费用，而对应的包装重量仅半公斤。法规迫使微型卖家退出欧盟市场，转而向美国销售，欧盟反而失去本地创新活力。作者提出三项解决方案：设立欧盟统一的“最低门槛”豁免小型卖家；创建欧盟EPR一站式服务中心（类似VAT OSS）；允许市场平台代表所有微型卖家集体履行义务。文章还提到，欧盟委员会已部分认识到问题，提议暂缓“授权代表”要求至2035年，但尚未通过且只解决部分问题。作者呼吁读者签署请愿书、向欧盟反馈意见，以保护创客和微型企业生态。
+
+---
+
+## 8. Jabber/XMPP：25年数字独立
+
+**原文标题**: Jabber/XMPP: 25 Years of Digital Independence
+
+**原文链接**: [https://gultsch.de/posts/25-years-of-digital-independence/](https://gultsch.de/posts/25-years-of-digital-independence/)
+
+摘要：文章主张应将数字通信视为基础设施，强调开放标准对实现互操作性和供应商独立的重要性。作者批评Signal、Wire、Threema等注重隐私的通信应用仍是封闭的“围花园”，不与其他服务互操作；仅靠开源不足以保障基础设施安全。欧洲推动数字主权时，不应简单用欧洲企业替代美国企业，而应追求集体所有权和可替换性。文章对比了Matrix与XMPP：Matrix由Element公司主导，规范受其控制，缺乏真正的开放标准治理；而XMPP起源于25年前的Jabber，经IETF标准化，并由XMPP标准基金会（XSF）管理扩展协议（XEP）。XMPP通过XEP适应移动时代，支持OMEMO加密、流管理、频道绑定等特性，拥有多个独立实现。文章认为，XMPP经历了时间考验，是真正符合基础设施要求的即时通信标准，而Matrix虽宣传诱人，但可能导致单一供应商锁定。作者呼吁公共部门采用真正的开放标准，而非仅开源平台。
+
+---
+
+## 9. 全球海洋温度创历史新高
+
+**原文标题**: Oceans hit highest temperature on record
+
+**原文链接**: [https://www.bbc.com/news/articles/c62m4gpnp78o](https://www.bbc.com/news/articles/c62m4gpnp78o)
+
+摘要：最新数据显示，全球海洋表面温度再破纪录，非极地海域平均表面温度于8月某日达到21.1摄氏度，略高于2024年3月创下的21.09摄氏度。这一数据来自欧洲哥白尼气候变化服务，结合浮标、船舶和卫星测量结果。科学家指出，此次破纪录的时间点尤为引人关注，因为全球海洋平均温度通常在3月至4月达到峰值，而非8月。他们认为，这既反映了人类活动导致的气候变化持续影响，也表明厄尔尼诺现象正在增强。海洋吸收了人类温室气体排放造成的超过90%的额外热量，因此海洋变暖是气候变化的明确信号。厄尔尼诺预计将在年底前继续加强，可能进一步推高海洋温度。更热的海洋会加剧极端天气、抬高海平面并危害海洋生态，例如珊瑚礁。英国及欧洲附近海域同样异常温暖，英吉利海峡西部已持续近三年处于海洋热浪状态，7月一度比正常水平高出7摄氏度。科学家强调，这一纪录是海洋面临日益增长压力的又一清晰信号，海洋生态系统及其依赖的社区正受到越来越大的威胁。
+
+---
+
+## 10. Hot Chips 2026：CUDA瞄准RISC-V
+
+**原文标题**: Hot Chips 2026: CUDA Targets RISC-V – By Chester Lam
+
+**原文链接**: [https://chipsandcheese.com/p/hot-chips-2026-cuda-targets-risc](https://chipsandcheese.com/p/hot-chips-2026-cuda-targets-risc)
+
+摘要：CUDA是GPU计算领域最重要的软件框架，目前支持x86-64和aarch64 CPU。Nvidia正考虑将CUDA支持扩展到RISC-V，但设置了较高门槛：要求RVA23 CPU、符合RISC-V服务器SoC与平台规范（含RAS、安全处理器等）、支持ACPI、PCIe缓存一致性及PCIe点对点通信。Nvidia强调这些额外要求是为了避免“最低公分母”问题，保证性能与软件可移植性。NVLink Fusion同样要求满足CUDA全部需求，并需与Nvidia紧密合作。作者认为，现有绝大多数RISC-V硬件难以达标，ACPI支持在aarch64领域尚且参差不齐，RISC-V的ACPI标准刚于2025年获批，普及尚需多年。未来能运行CUDA的RISC-V系统更可能是服务器而非廉价单板机。Nvidia正与SiFive合作，后者计划在Hot Chips上演示运行CUDA的系统，其规格暗示为高核心数服务器芯片。作者希望Nvidia不要完全封锁不满足要求的系统，并期望其逐步放宽条件，让更多RISC-V设备有机会运行CUDA，即使某些性能扩展或缓存一致性缺失可经由软件规避，性能代价在部分场景下也可接受。
+
+---
+
+## 11. Autostep（YC P26）正在招聘AI/全栈工程师及Chief of Staff
+
+**原文标题**: Autostep (YC P26) Is Hiring AI/Fullstack Engineers and a Chief of Staff
+
+**原文链接**: [https://app.dover.com/Autostep/careers/e9510e3b-a854-4e48-9e5d-c89796acaed4](https://app.dover.com/Autostep/careers/e9510e3b-a854-4e48-9e5d-c89796acaed4)
+
+摘要：Autostep（YC P26）是一家获得Y Combinator支持的初创公司，目前正在扩大团队，主要招聘两类岗位：一是AI/全栈工程师，负责产品开发与技术实现；二是Chief of Staff（幕僚长/参谋长），协助高层管理运营与战略执行。招聘信息发布在一个名为“Dover”的招聘平台上，但页面因需要启用JavaScript而无法正常显示，仅能看到标题信息。这表明该公司正处于快速成长阶段，急需技术骨干和管理支持人才，以推动其业务发展。
+
+---
+
+## 12. PicoMQ – 基于对象存储的 HTTP 持久化流
+
+**原文标题**: Show HN: PicoMQ – Durable Streams over HTTP, on object storage
+
+**原文链接**: [https://picomq.com/](https://picomq.com/)
+
+摘要：PicoMQ 是一款构建在 S3 兼容对象存储之上的持久化、实时流系统，通过 HTTP 提供访问。它支持为每种用例创建独立的数据流，替代将同类记录全部塞入单一主题的做法。每个流均可独立寻址，容量近乎无限，能从空闲平滑扩展至高吞吐。其核心架构采用零磁盘设计，存储与计算层解耦，具备高吞吐、易部署等优势，适合需要弹性伸缩与低成本持久化的流式数据处理场景。
+
+---
+
+## 13. Show HN：Kern —— 1.5 MB 二进制文件实现容器与资源运行时，无守护进程
+
+**原文标题**: Show HN: Kern – container and resource runtime in a 1.5 MB binary, no daemon
+
+**原文链接**: [https://github.com/getkern/kern](https://github.com/getkern/kern)
+
+摘要：Kern 是一个极简的容器与资源运行时，单个静态二进制仅 1.52 MB，无守护进程、无套接字，零常驻内存。它基于 Linux 用户命名空间实现 rootless 隔离，支持 OCI 镜像、Dockerfile 构建、compose 栈，以及 CPU、内存、磁盘和 GPIO 资源切片。冷启动约 3.5 ms，性能远超 Docker/Podman。提供 Python/Node SDK 和 MCP 服务器，便于安全运行 AI 生成或不可信代码。安全上采用 seccomp 白名单、丢弃危险能力、cgroup v2 限制和只读根文件系统。不适合多租户对抗恶意陌生人，依赖内核安全。当前核心功能已完成，发布 v0.7.0。
+
+---
+
+## 14. OpenAI：GPT-5.6 Sol 价格下调（至少持续至11月21日）
+
+**原文标题**: OpenAI: GPT 5.6 Sol price reduction (until at least Nov 21)
+
+**原文链接**: [https://developers.openai.com/api/docs/pricing](https://developers.openai.com/api/docs/pricing)
+
+摘要：OpenAI宣布GPT-5.6 Sol实施促销定价，至少持续至2026年11月21日。标准模式下，短上下文输入每百万token 4美元，输出20美元；长上下文输入8美元，输出30美元。批量（Batch）和Flex模式价格相同，短上下文输入2美元，输出10美元；长上下文输入4美元，输出15美元。Fast模式（原优先级处理）价格翻倍，短上下文输入8美元，输出40美元；长上下文输入16美元，输出60美元。缓存输入享10%价格，缓存写入按输入价格1.25倍计费。此外，页面还列出了Terra、Luna等其他模型及Cyber系列、多模态、图像、视频、转录、工具、微调等完整价格体系，并说明数据驻留端点加收10%费用。
+
+---
+
+## 15. seL4安全证明现已完整覆盖AArch64架构
+
+**原文标题**: SeL4 security proofs now complete on AArch64
+
+**原文链接**: [https://proofcraft.systems/news-2026/#2026-08-21](https://proofcraft.systems/news-2026/#2026-08-21)
+
+摘要：2026年8月21日，Proofcraft宣布在完成功能正确性和完整性证明后，现已成功建立seL4在AArch64架构上强制实施机密性的形式化证明。该数学证明确保运行在seL4之上的应用程序无法在未授权情况下获取信息。得益于NCSC的持续支持，这一里程碑标志着AArch64上的seL4实现代码已完整通过形式化验证，证明其能够对上层运行的应用实施安全隔离。该隔离机制可防止非关键应用遭受的攻击向关键应用传播并造成破坏。相关证明基于特定假设条件，这些假设已在指定文档中列出。
+
+---
+
+## 16. 若我17岁，我会从零开始学构建大语言模型
+
+**原文标题**: I were 17, I'd learn how to build LLMs from scratch
+
+**原文链接**: [https://twitter.com/paulg/status/2091544343589060625](https://twitter.com/paulg/status/2091544343589060625)
+
+摘要：Paul Graham 在社交平台上回应“若你17岁会做什么”的提问，表示他会选择从零开始学习如何构建大语言模型（LLM），并尽可能利用手头能获取的硬件资源，训练出能力范围内最强大的模型。这一回答强调了动手实践和自主学习的重要性，而非仅仅依赖现成工具或框架。他指出，在17岁时应当抓住技术浪潮的核心，通过深入底层理解模型架构、训练原理与工程实现，积累真正的核心竞争力。同时，他也隐含表达了对算力门槛的务实态度：即便硬件有限，也要想办法最大化利用现有资源去探索和迭代。这一观点引发广泛共鸣，获得超百万次浏览和大量互动，反映出年轻一代对AI技术学习的热情与关注。
+
+---
+
+## 17. 什么是 Syslog 服务器？
+
+**原文标题**: What Is a Syslog Server?
+
+**原文链接**: [https://blog.greencloudvps.com/what-is-a-syslog-server.php](https://blog.greencloudvps.com/what-is-a-syslog-server.php)
+
+无法访问该文章链接
+
+---
+
+## 18. 从文本日志中移除所有计数器、回复、关注/粉丝和时间戳
+
+**原文标题**: Removed all counters, replies, following/ers, timestamps, from textlog
+
+**原文链接**: [https://textlog.cc/post/2059](https://textlog.cc/post/2059)
+
+摘要：作者在名为textlog的平台上做出重要决定，从人物页面和话题页面中移除所有计数器，包括笔记数、回复数、关注数和粉丝数，同时去除时间戳，只保留内容本身。作者认为这些数字会制造竞争，刺激多巴胺系统，而这一系统已经令人疲惫，需要尽量避免。目标是让用户专注于内容而非数量指标，减少社交平台常见的攀比与成瘾机制。
+
+---
+
+## 19. Show HN：GlassBox——浏览器暴露了什么，你的可识别性有多高
+
+**原文标题**: Show HN: GlassBox – what the browser reveals, and how identifiable you are
+
+**原文链接**: [https://glassbox.codecanary.org](https://glassbox.codecanary.org)
+
+摘要：无法访问该文章链接
+
+---
+
+## 20. AI依赖将导致编程专业能力崩塌
+
+**原文标题**: Coding expertise is going to collapse from AI reliance
+
+**原文链接**: [https://larsfaye.com/articles/ai-coding-will-prevent-expertise](https://larsfaye.com/articles/ai-coding-will-prevent-expertise)
+
+文章指出，AI编程工具的普及可能引发编程专业能力的“崩塌”。当前AI辅助开发的最大受益者多为经验丰富的老手，而新手被鼓励依赖这些工具，却缺乏驾驭它们所需的判断力，形成“熟练专家悖论”：工具既需要专业能力，又会消解培养专业能力的必要摩擦。研究（如JetBrains引用的研究、宾大2025年研究、Anthropic 2026年研究）表明，过度依赖AI生成代码的初学者往往跳过规划步骤，产生“能力幻觉”，实际学习和测试表现反而更差；而适当忽略AI建议、亲历问题解决过程的初学者收获更大。认知负荷转移给AI，心智模型和“工程直觉”无法建立。作者认为，编程专业技能需通过试错和阻力来培养，AI应作为苏格拉底式陪练或互动文档，而非单纯的代码生成器。他提出“摩擦优先”原则，并给出自查清单：没有AI能否完成任务？是否加深理解？能否验证输出？是否多方查证？区分机械性任务与需要判断的任务。简言之，关键在于把AI当作学习伙伴而非答案机器。
+
+---
+
+## 21. 小型研究表明薄荷油可使血压降低8.48 mmHg
+
+**原文标题**: Peppermint oil reduces blood pressure by 8.48 mmHg in small study
+
+**原文链接**: [https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0344538](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0344538)
+
+摘要：高血压是全球心血管疾病发病和死亡的主要危险因素，药物治疗虽常用但长期效果不明且存在不良反应。本研究旨在探讨每日两次补充薄荷油对高血压前期及1期高血压患者的影响。该试验为20天平行随机安慰剂对照试验（NCT05561543），共纳入40名受试者，随机接受每日100 μL薄荷油或薄荷风味安慰剂。主要结局为收缩压从基线至20天的组间差异。结果显示，薄荷油组收缩压调整后显著低于安慰剂组，组间差异为−8.48 mmHg（95% CI：−14.24至−2.73，效应量d=−0.94）；薄荷油组收缩压由基线130.05 mmHg降至121.97 mmHg，安慰剂组基本不变（130.93至131.05 mmHg）。失访（1例）和不良事件（1例）均低，且发生在薄荷油组；依从性高（93.3%）。研究表明，每日两次薄荷油补充可能是一种简单、低成本且耐受良好的辅助降压策略，有助于改善该人群的血压水平。该试验已在ClinicalTrials.gov注册（NCT05561543），并发表于PLoS One。
+
+---
+
+## 22. 可执行文件是SQLite数据库
+
+**原文标题**: Executable Is a SQLite Database
+
+**原文链接**: [https://fzakaria.com/2026/08/23/your-executable-is-a-sqlite-database](https://fzakaria.com/2026/08/23/your-executable-is-a-sqlite-database)
+
+摘要：作者探讨用SQLite数据库取代ELF作为可执行文件格式的激进想法，并实现了原型SELF（Structured Executable & Linkable Format）。作者认为ELF本身就是一个手工实现的数据库，而SQLite作为自描述、稳定且可扩展的格式，能更优雅地表示可执行文件所需信息。SELF文件包含segments和symbols等表，通过SQLite的application_id标记"SELF"，并利用Linux的binfmt_misc机制注册解释器来直接运行。动态链接可通过glibc的rtld-audit接口用SQL查询替代库搜索，或完全用SQL实现动态链接器。相比ELF，SELF文件体积约为两倍，但剥离调试信息后接近ELF；启动有约5ms固定开销，且进程间不共享文本页。更引人注目的是，SELF可将整个程序闭包含入单个数据库，甚至将整个用户land（723个可执行文件、400个库、346386个符号）打包成一个611.9MiB的数据库，比原始ELF文件总量更小。作者认为这种方案能简化工具链，将strip变为事务，patchelf变为UPDATE，并实现依赖关系的确定性解析。
+
+---
+
+## 23. Show HN：单HTML文件实现的电子音乐机器，渲染结果可验证
+
+**原文标题**: Show HN: A techno machine in one HTML file, with verifiable renders
+
+**原文链接**: [https://ssx360.github.io/rack-02/?src=hn](https://ssx360.github.io/rack-02/?src=hn)
+
+摘要：该作品名为RACK-02，是一个完全封装在单个HTML文件中的电子音乐机器。它利用网页技术生成 techno 风格的音乐节奏与音色，无需任何外部依赖或服务器。其核心亮点在于“可验证渲染”，即用户可通过确定性算法重现相同的音频输出，便于核对与复现。项目展示了如何用紧凑代码实现合成器、音序器及效果处理，并兼顾实时交互与视觉反馈。适合对网页音频编程和创意编码感兴趣的开发者参考。
+
+---
+
+## 24. FDA批准血液检测辅助阿尔茨海默病评估
+
+**原文标题**: FDA clears blood test to aid evaluation for Alzheimer's disease
+
+**原文链接**: [https://medicine.washu.edu/news/fda-clears-blood-test-to-aid-evaluation-for-alzheimers-disease/](https://medicine.washu.edu/news/fda-clears-blood-test-to-aid-evaluation-for-alzheimers-disease/)
+
+美国食品药品监督管理局（FDA）已批准一款创新血液检测产品上市，用于辅助诊断阿尔茨海默病。该技术源自圣路易斯华盛顿大学医学院，由该校初创公司C2N Diagnostics开发，名为PrecivityAD2。该检测通过高分辨率质谱法测量血液中淀粉样蛋白（Aβ42/Aβ40）和tau蛋白（p-tau217/total tau217）的比值，以判断大脑中是否存在与阿尔茨海默病相关的淀粉样斑块，准确率超过90%，与脑脊液检测和脑部扫描相当，且更具微创性。早期发现对阿尔茨海默病至关重要，因为近期已有能减缓病程的药物上市，且越早用药效果越好。FDA的批准意味着该检测经过严格评估，可更广泛地推向临床，并可能促进保险覆盖，提高可及性和 affordability。该技术源于Randall Bateman和David Holtzman教授团队的基础研究，两人于2007年共同创立C2N公司并推动技术商业化。华盛顿大学技术管理办公室协助专利申请，学校与C2N的持续合作加速了产品上市。C2N目前拥有120多名员工，正在扩展其位于圣路易斯Cortex创新区的总部。
+
+---
+
+## 25. Hot Chips 2026：应用高带宽闪存（HBF）
+
+**原文标题**: Hot Chips 2026: Applying High Bandwidth Flash (HBF)
+
+**原文链接**: [https://chipsandcheese.com/p/hot-chips-2026-applying-high-bandwidth](https://chipsandcheese.com/p/hot-chips-2026-applying-high-bandwidth)
+
+摘要：文章探讨了高带宽闪存（HBF）在机器学习负载中的应用前景。HBF采用与HBM类似的封装形式，但底层是闪存技术，容量远高于HBM，带宽尚可，但访问方式类似块存储设备，需通过DMA进行大块对齐读写，并需软件承担SSD控制器功能。目前尚无HBF产品，讨论基于模拟与预测。在软件适配方面，以vLLM为例，可将MoE专家模型或KV缓存放入HBF，但需结合稀疏注意力等策略，并处理顺序读偏好。HBF还可通过跨GPU复制权重减少设备间通信开销。成本上，HBF适合未达到带宽瓶颈的工作负载，如小模型或小批量场景；若带宽受限，则成本劣势明显。文章认为HBF的软件挑战巨大，类似使用O_DIRECT或FILE_FLAG_NO_BUFFERING的低层磁盘访问，现有框架需大规模改造。作者质疑其比直接从SSD流式加载模型权重更容易，并怀疑HBF能否缓解DRAM短缺。
+
+---
+
+## 26. Codefloe 是一个专业托管的公共 Git 平台
+
+**原文标题**: Codefloe Is a Professionally Hosted Public Git Forge
+
+**原文链接**: [https://codefloe.com/](https://codefloe.com/)
+
+无法访问该文章链接
+
+---
+
+## 27. 黑石旗下房地产公司泄露社保号末四位、出生日期、地址等敏感信息
+
+**原文标题**: A Blackstone real estate company exposed SSN digits, DOBs, addresses and more
+
+**原文链接**: [https://alexschapiro.com/security/vulnerability/2026/07/16/beam-living-graphql-data-exposure](https://alexschapiro.com/security/vulnerability/2026/07/16/beam-living-graphql-data-exposure)
+
+摘要：一用户在申请Blackstone旗下Beam Living的租房时，通过浏览器开发者工具发现其GraphQL接口存在越权漏洞。该接口通过邮箱即可查询任意申请人的完整个人信息，包括社保号末四位、信用评分、出生日期、家庭住址、IP地址、电话等，影响覆盖8 Spruce、StuyTown等多个社区的所有申请者。用户测试确认漏洞后多次联系Beam Living披露，但对方数周未回应，直至电话沟通后漏洞被静默修复。披露过程不顺畅，公司未按负责任流程回应，用户最终决定公开此事。
+
+---
+
+## 28. 不用化石燃料，我们能疏浚荷兰吗？（2018）
+
+**原文标题**: Could We Dredge the Netherlands Without Fossil Fuels? (2018)
+
+**原文链接**: [https://solar.lowtechmagazine.com/2018/08/could-we-dredge-the-netherlands-without-fossil-fuels](https://solar.lowtechmagazine.com/2018/08/could-we-dredge-the-netherlands-without-fossil-fuels)
+
+摘要：疏浚业几个世纪以来一直是荷兰经济的支柱。若运河、港口和河流多年不维护，整个国家将陷入停滞。如今疏浚依靠燃油船舶，最大型挖泥船每小时消耗多达3000升燃油。为维护荷兰水道，每年需疏浚约3000至3500万立方米泥沙，其中鹿特丹港就占2000万立方米。在化石燃料出现前，荷兰长期使用人力疏浚：工人站在小船上用“疏浚袋”刮挖河底淤泥，大型工程甚至动用数千名工人。16世纪出现由人力驱动的“疏浚磨坊”，后因船舶加深而改用马拉驱动，1829年时3至6匹马每小时可挖约20立方米泥沙，而现代挖泥船每分钟可挖100立方米，相当于300台马拉疏浚磨坊。荷兰人也利用风能和潮汐：15世纪起，一种带帆和铁齿耙的“刮泥船”借助潮汐水流和风力冲刷港口底部。除了疏浚，也有替代方案：加高河堤让水位上升；弗里斯兰省则建造吃水极浅的“斯库特船”，减少疏浚需求。文章通过手工疏浚实验探讨未来无化石燃料疏浚的可能性，并提及太阳能疏浚船等设想，但面临规模与季节限制。
+
+---
+
+## 29. Show HN：一个我一年没解开的谜题——魔方玩家一小时内破解
+
+**原文标题**: Show HN: A puzzle I couldn't solve for a year – cubers cracked it in an hour
+
+**原文链接**: [https://skimmiq.com/pt/](https://skimmiq.com/pt/)
+
+无法访问该文章链接
+
+---
+
+## 30. 智能体闪电 v1.0
+
+**原文标题**: Agent Lightning v1.0
+
+**原文链接**: [https://github.com/microsoft/agent-lightning/releases/tag/v1.0.1](https://github.com/microsoft/agent-lightning/releases/tag/v1.0.1)
+
+摘要：Agent Lightning v1.0 是微软发布的智能体优化技能首个正式版本。该技能帮助编程智能体优化其他 AI 智能体：用户提供可编辑的智能体与基准测试，技能将引导系统化改进提示词、工具、工作流、模型及推理设置，通过可测量的迭代在准确性、成本、延迟和可靠性之间取得平衡。该版本支持安装到 Claude Code、Codex 或 GitHub Copilot，安装命令为 `gh skill install microsoft/agent-lightning agent-lightning --agent <agent>`。同时，此版本加强了 CI、打包、发布自动化、文档和基准报告等功能。发布者为 ultmaster，于 8 月 24 日发布，附带已签名的提交与两个资源文件。
+
+---
+
