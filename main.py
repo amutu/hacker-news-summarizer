@@ -404,7 +404,7 @@ def main():
             print("无法提取文章内容，尝试直接生成摘要（可能会失败）")
             chinese_title, summary = generate_summary_from_url(story['title'], story['url'])
         
-        time.sleep(3)  # 增加等待时间到 3 秒,RPM=15
+        time.sleep(10)  # 增加等待时间到 3 秒,RPM=15
         
         chinese_summary = summary
         
@@ -426,7 +426,7 @@ def main():
                 f.write(f"{md5}\t{today}\t{story['url']}\t{story['title']}\n")
 
         print(f"已完成第 {i} 篇文章的处理")
-        time.sleep(2)
+        time.sleep(5)
     
     # 创建 Markdown 文件
     md_file = create_markdown_file(stories_with_summaries)
