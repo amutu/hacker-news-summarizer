@@ -1,242 +1,242 @@
 [
   {
-    "id": "49420873",
-    "title": "Xiaomi: New CPU matches Apple cores single threaded, much faster multithreaded",
-    "url": "https://twitter.com/lemire/status/2091894299289874926",
-    "summary": "摘要：小米新款处理器Xring O3在单线程性能上大致匹配苹果核心，多线程执行速度则显著更快。该芯片总缓存达44MB，超过多数笔记本CPU。其最强核心为C1-Ultra，支持SME2矩阵/AI加速和SVE2数据并行，拥有21个执行端口，其中6个支持128位SIMD运算，执行端口数量超过Intel/AMD桌面处理器。AMD Zen 5虽可做4x512位运算，但ARM芯片上6x128位已属顶尖。这反映出芯片趋势：核心拥有更多并行执行单元、更强SIMD能力和更大缓存，晶体管主要投向这些方向。不过苹果可能很快发布下一代处理器，且搭载该芯片的手机可能较难买到。",
-    "chinese_title": "小米新CPU单核追平苹果，多核性能大幅领先",
-    "chinese_summary": "摘要：小米新款处理器Xring O3在单线程性能上大致匹配苹果核心，多线程执行速度则显著更快。该芯片总缓存达44MB，超过多数笔记本CPU。其最强核心为C1-Ultra，支持SME2矩阵/AI加速和SVE2数据并行，拥有21个执行端口，其中6个支持128位SIMD运算，执行端口数量超过Intel/AMD桌面处理器。AMD Zen 5虽可做4x512位运算，但ARM芯片上6x128位已属顶尖。这反映出芯片趋势：核心拥有更多并行执行单元、更强SIMD能力和更大缓存，晶体管主要投向这些方向。不过苹果可能很快发布下一代处理器，且搭载该芯片的手机可能较难买到。"
+    "id": "49433292",
+    "title": "Apple introduces M6 and M5 Ultra",
+    "url": "https://www.apple.com/newsroom/2026/08/apple-introduces-m6-and-m5-ultra-for-a-big-leap-in-performance-and-ai-compute/",
+    "summary": "摘要：Apple于2026年8月25日发布M6和M5 Ultra两款芯片。M6是Apple首款2纳米芯片，采用12核CPU（2个超级核心、4个性能核心、6个效率核心）、12核GPU（每核带神经加速器）和双16核神经引擎，支持最高32GB统一内存及170GB/s带宽，CPU多线程性能较M5提升1.2倍，GPU AI算力较M5提升近30%。M5 Ultra是Apple迄今最强芯片，首次采用四芯粒架构，通过UltraFusion连接两颗M5 Max芯片，拥有最高36核CPU、80核GPU及1.2TB/s统一内存带宽，带宽较M3 Ultra提升50%，最高支持512GB内存，GPU AI算力较M3 Ultra提升4.5倍，图形性能提升40%，并配备更强媒体引擎。两款芯片均面向AI工作负载优化，支持本地运行大模型，Mac mini搭载M6，Mac Studio搭载M5 Ultra。",
+    "chinese_title": "Apple推出M6与M5 Ultra，性能与AI算力大幅跃升",
+    "chinese_summary": "摘要：Apple于2026年8月25日发布M6和M5 Ultra两款芯片。M6是Apple首款2纳米芯片，采用12核CPU（2个超级核心、4个性能核心、6个效率核心）、12核GPU（每核带神经加速器）和双16核神经引擎，支持最高32GB统一内存及170GB/s带宽，CPU多线程性能较M5提升1.2倍，GPU AI算力较M5提升近30%。M5 Ultra是Apple迄今最强芯片，首次采用四芯粒架构，通过UltraFusion连接两颗M5 Max芯片，拥有最高36核CPU、80核GPU及1.2TB/s统一内存带宽，带宽较M3 Ultra提升50%，最高支持512GB内存，GPU AI算力较M3 Ultra提升4.5倍，图形性能提升40%，并配备更强媒体引擎。两款芯片均面向AI工作负载优化，支持本地运行大模型，Mac mini搭载M6，Mac Studio搭载M5 Ultra。"
   },
   {
-    "id": "49421158",
-    "title": "MS Paint and Photos inivisibly watermark even locally generated output with GUID",
-    "url": "https://xusheng.dev/posts/reversing/mspaint_invisible_watermark/main/",
-    "summary": "本文以微软 Paint 为重点，揭示其 AI 图像生成并非完全本地。虽然模型文件（如 .onnxe）在设备上运行，但应用会先将提示词发送至微软远程服务器进行内容审核；服务器返回修订后的提示词、promptGenerationId 以及一个唯一 watermarkId（GUID）。随后，Watermarker.dll 中的 WmkWriteWatermark 会将该 GUID 以不可见水印的形式嵌入本地生成的图像像素。该算法采用分块量化与 SVD 风格操作，每个比特至少嵌入三次，嵌入失败会导致整个生成流程失败。此外，Paint 还通过 C2PA 元数据记录相同 GUID 作为软绑定（c2pa.soft-binding），将像素水印与经过签名的来源清单关联。由于本地生成无法像云端 Image Creator 那样在生成时直接加水印，Paint 必须在本地实现并强制使用；同时为保留 C2PA 数据，保存格式被限制为 PNG、JPEG、GIF 和 .paint，BMP 被移除。文章通过重放 Paint 会话请求 moderation 接口，获得真实 GUID 响应，并解析 PNG 的 caBX 块验证像素水印与 C2PA 值一致。总而言之，即使用户在本地生成图像，提示词审核与 GUID 签发仍在微软服务器端完成。",
-    "chinese_title": "MS Paint 与 Photos 使用 GUID 为本地生成图像添加隐形水印",
-    "chinese_summary": "本文以微软 Paint 为重点，揭示其 AI 图像生成并非完全本地。虽然模型文件（如 .onnxe）在设备上运行，但应用会先将提示词发送至微软远程服务器进行内容审核；服务器返回修订后的提示词、promptGenerationId 以及一个唯一 watermarkId（GUID）。随后，Watermarker.dll 中的 WmkWriteWatermark 会将该 GUID 以不可见水印的形式嵌入本地生成的图像像素。该算法采用分块量化与 SVD 风格操作，每个比特至少嵌入三次，嵌入失败会导致整个生成流程失败。此外，Paint 还通过 C2PA 元数据记录相同 GUID 作为软绑定（c2pa.soft-binding），将像素水印与经过签名的来源清单关联。由于本地生成无法像云端 Image Creator 那样在生成时直接加水印，Paint 必须在本地实现并强制使用；同时为保留 C2PA 数据，保存格式被限制为 PNG、JPEG、GIF 和 .paint，BMP 被移除。文章通过重放 Paint 会话请求 moderation 接口，获得真实 GUID 响应，并解析 PNG 的 caBX 块验证像素水印与 C2PA 值一致。总而言之，即使用户在本地生成图像，提示词审核与 GUID 签发仍在微软服务器端完成。"
+    "id": "49439017",
+    "title": "FDA authorizes first wearable device that monitors ketone and blood sugar levels",
+    "url": "https://www.fda.gov/news-events/press-announcements/fda-authorizes-first-wearable-device-continuously-monitors-both-ketone-levels-and-blood-sugar",
+    "summary": "摘要：美国FDA近日宣布授权一款新型 wearable 设备上市，这是首款能够同时连续监测人体酮体水平和血糖浓度的可穿戴传感器。该设备通过皮下传感器实时测量间质液中的葡萄糖和酮体（尤其是β-羟基丁酸）数值，并将数据传输至配套应用程序，帮助用户了解代谢状态。FDA在审查中评估了设备的准确性与安全性，认为其在预期使用场景下可提供有效监测信息。该产品适用于需要关注生酮饮食或糖尿病管理的人群，有助于及时识别血糖异常及酮体过高风险，但不可单独作为诊断或治疗依据。FDA强调，该设备不替代传统指尖血检测，用户应在医生指导下解读数据并做出医疗决策。此举标志着代谢健康监测向无创、连续化方向迈出重要一步，未来或将为糖尿病、肥胖及代谢综合征患者提供更便捷的自我管理工具。",
+    "chinese_title": "FDA授权首款可同时连续监测酮体与血糖水平的可穿戴设备",
+    "chinese_summary": "摘要：美国FDA近日宣布授权一款新型 wearable 设备上市，这是首款能够同时连续监测人体酮体水平和血糖浓度的可穿戴传感器。该设备通过皮下传感器实时测量间质液中的葡萄糖和酮体（尤其是β-羟基丁酸）数值，并将数据传输至配套应用程序，帮助用户了解代谢状态。FDA在审查中评估了设备的准确性与安全性，认为其在预期使用场景下可提供有效监测信息。该产品适用于需要关注生酮饮食或糖尿病管理的人群，有助于及时识别血糖异常及酮体过高风险，但不可单独作为诊断或治疗依据。FDA强调，该设备不替代传统指尖血检测，用户应在医生指导下解读数据并做出医疗决策。此举标志着代谢健康监测向无创、连续化方向迈出重要一步，未来或将为糖尿病、肥胖及代谢综合征患者提供更便捷的自我管理工具。"
   },
   {
-    "id": "49422784",
-    "title": "The entire city of San Francisco as a video game",
-    "url": "https://sf.thijs.gg/",
-    "summary": "摘要：本文展示了一个将旧金山整座城市转变为在线视频游戏的界面概念。页面呈现了类似游戏引擎的加载画面，包含“欢迎来到旧金山”及重试/加载选项。进入后，城市地图以多级缩放（Z20、Z17、Z16、Z15）的瓦片流形式呈现，并显示当前地块状态与所有者。玩家可自由探索，支持WASD移动、鼠标视角、空格跳跃、Shift奔跑、C切换第三人称相机、H使用滑翔翼、V进入步行或车辆等操作。界面提供速度与距离调节、重置功能，以及“世界安全”和“生命关闭”等模式开关。系统实时监测玩家周围470米范围，显示木材、石头、金属等资源数量，并支持复制调试日志。城市各个街区已完成加载，街道准备就绪，细节模式可查看具体区域。整体上，该设计将真实城市地理数据与游戏交互机制结合，营造出可即时传送、自由漫游的虚拟旧金山体验。",
-    "chinese_title": "整个旧金山作为一款视频游戏",
-    "chinese_summary": "摘要：本文展示了一个将旧金山整座城市转变为在线视频游戏的界面概念。页面呈现了类似游戏引擎的加载画面，包含“欢迎来到旧金山”及重试/加载选项。进入后，城市地图以多级缩放（Z20、Z17、Z16、Z15）的瓦片流形式呈现，并显示当前地块状态与所有者。玩家可自由探索，支持WASD移动、鼠标视角、空格跳跃、Shift奔跑、C切换第三人称相机、H使用滑翔翼、V进入步行或车辆等操作。界面提供速度与距离调节、重置功能，以及“世界安全”和“生命关闭”等模式开关。系统实时监测玩家周围470米范围，显示木材、石头、金属等资源数量，并支持复制调试日志。城市各个街区已完成加载，街道准备就绪，细节模式可查看具体区域。整体上，该设计将真实城市地理数据与游戏交互机制结合，营造出可即时传送、自由漫游的虚拟旧金山体验。"
+    "id": "49433316",
+    "title": "New Mac Studio with M5 Max and M5 Ultra",
+    "url": "https://www.apple.com/newsroom/2026/08/apple-introduces-new-mac-studio-with-m5-max-and-m5-ultra/",
+    "summary": "摘要：苹果发布新款Mac Studio，搭载M5 Max和全新M5 Ultra，成为史上最强Mac。相比前代，AI性能最高提升4.3倍，图形性能提升1.8倍，CPU速度提升1.3倍，存储速度提升2倍。M5 Max配备18核CPU、最高40核GPU及128GB统一内存；M5 Ultra配备36核CPU、最高80核GPU及512GB统一内存，内存带宽达1.2TB/s，可完全在设备端运行大型语言模型。新机型首次支持Wi-Fi 7和蓝牙6，配备Thunderbolt 5，支持多台Mac Studio集群以实现分布式AI推理，性能可达单机的3倍。macOS 27带来Siri AI等新功能。Mac Studio采用100%再生铝等环保材料。M5 Max版起售价2499美元，M5 Ultra版起售价5499美元，8月25日起预购，9月22日发售，512GB内存版本将于10月下旬上市。",
+    "chinese_title": "苹果推出搭载M5 Max和M5 Ultra的全新Mac Studio——面向设备端AI与极致专业工作流的终极台式电脑",
+    "chinese_summary": "摘要：苹果发布新款Mac Studio，搭载M5 Max和全新M5 Ultra，成为史上最强Mac。相比前代，AI性能最高提升4.3倍，图形性能提升1.8倍，CPU速度提升1.3倍，存储速度提升2倍。M5 Max配备18核CPU、最高40核GPU及128GB统一内存；M5 Ultra配备36核CPU、最高80核GPU及512GB统一内存，内存带宽达1.2TB/s，可完全在设备端运行大型语言模型。新机型首次支持Wi-Fi 7和蓝牙6，配备Thunderbolt 5，支持多台Mac Studio集群以实现分布式AI推理，性能可达单机的3倍。macOS 27带来Siri AI等新功能。Mac Studio采用100%再生铝等环保材料。M5 Max版起售价2499美元，M5 Ultra版起售价5499美元，8月25日起预购，9月22日发售，512GB内存版本将于10月下旬上市。"
   },
   {
-    "id": "49421489",
-    "title": "IPFS Maintainers Winding Down",
-    "url": "https://ipshipyard.com/blog/2026-the-end-of-ipfs-at-shipyard/",
-    "summary": "摘要：本文由Shipyard团队的Cameron Wood与Adin Schmahmann撰写，发布于2025年7月23日。文章宣布IPFS维护者正在逐步结束其网关服务，进入“后网关世界”，并引导用户过渡到直接检索模式。IPFS长期致力于在Web上运行，但网关作为集中化入口与IPFS去中心化理念存在张力。维护者决定将重心转向让用户通过本地节点直接获取内容，而非依赖公共网关。文中回顾了在Web环境中推广IPFS的尝试与挑战，并强调这一转变是为了提升网络韧性、降低中心化依赖，同时鼓励用户运行自己的节点或使用支持IPFS的浏览器与工具。文章还提及过渡期间对现有网关用户的支持措施，以及未来如何通过增强的寻址和内容路由技术实现无缝检索。总体而言，这是一次战略调整，旨在回归IPFS的核心价值，构建更加分布式、可持续的内容分发网络。",
-    "chinese_title": "IPFS维护者正在收尾",
-    "chinese_summary": "摘要：本文由Shipyard团队的Cameron Wood与Adin Schmahmann撰写，发布于2025年7月23日。文章宣布IPFS维护者正在逐步结束其网关服务，进入“后网关世界”，并引导用户过渡到直接检索模式。IPFS长期致力于在Web上运行，但网关作为集中化入口与IPFS去中心化理念存在张力。维护者决定将重心转向让用户通过本地节点直接获取内容，而非依赖公共网关。文中回顾了在Web环境中推广IPFS的尝试与挑战，并强调这一转变是为了提升网络韧性、降低中心化依赖，同时鼓励用户运行自己的节点或使用支持IPFS的浏览器与工具。文章还提及过渡期间对现有网关用户的支持措施，以及未来如何通过增强的寻址和内容路由技术实现无缝检索。总体而言，这是一次战略调整，旨在回归IPFS的核心价值，构建更加分布式、可持续的内容分发网络。"
+    "id": "49437210",
+    "title": "Black hole singularity is a surface not a point",
+    "url": "https://arxiv.org/abs/2608.21590",
+    "summary": "摘要：本文指出，流行文献中常称黑洞中心的奇点为“点”，这并不正确。两个观测者若沿不同角度轨迹同时自由落入球形黑洞，他们并不会在中心奇点相遇，而是在远离奇点处就已失去因果联系。广义相对论中，两个点可以空间邻近却因果遥远，因此奇点实际上是表面而非点。对于旋转黑洞，情况更复杂，但结论相同：其奇异表面几乎必然位于内视界，即使最微小的经典或量子扰动也会引发指数级质量不稳定性，导致坍缩为类空奇异表面。这对量子引力有重要启示：无论最终的量子引力理论为何，黑洞的量子态很可能位于其有效的二维奇异表面上，并与事件视界内产生的被囚禁霍金辐射的热大气处于热平衡状态，共同幺正演化。",
+    "chinese_title": "黑洞奇点是一个表面而非一个点",
+    "chinese_summary": "摘要：本文指出，流行文献中常称黑洞中心的奇点为“点”，这并不正确。两个观测者若沿不同角度轨迹同时自由落入球形黑洞，他们并不会在中心奇点相遇，而是在远离奇点处就已失去因果联系。广义相对论中，两个点可以空间邻近却因果遥远，因此奇点实际上是表面而非点。对于旋转黑洞，情况更复杂，但结论相同：其奇异表面几乎必然位于内视界，即使最微小的经典或量子扰动也会引发指数级质量不稳定性，导致坍缩为类空奇异表面。这对量子引力有重要启示：无论最终的量子引力理论为何，黑洞的量子态很可能位于其有效的二维奇异表面上，并与事件视界内产生的被囚禁霍金辐射的热大气处于热平衡状态，共同幺正演化。"
   },
   {
-    "id": "49424758",
-    "title": "A Claude Code skill that recovers export-blocked Kindle highlights",
-    "url": "https://github.com/l3a0/claude-plugins",
-    "summary": "中文摘要：本文介绍了一个名为“kindle-highlights”的Claude Code技能，用于从亚马逊Kindle笔记本页面提取全部高亮，包括被导出限制隐藏或截断的内容。该技能通过三种途径获取数据：网页DOM抓取、Mac版Kindle应用SQLite数据库中的精确位置、以及Cloud Reader渲染页面的OCR（利用Apple Vision框架）。它已在实际测试中成功恢复2,432条高亮，其中815条受导出限制（454条截断、361条完全隐藏），恢复文本与Kindle应用位置高度吻合。技能仅适用于macOS，需安装Claude Desktop的Control Chrome扩展、Chrome浏览器、Mac Kindle应用及Xcode命令行工具，最终生成带位置引用的Markdown文件。整个过程操作自有账户数据，输出仅供个人笔记使用，需注意版权。文章还解释了导出限制的成因、绕过方法及技术构建细节，完整故事发布在Substack上。",
-    "chinese_title": "恢复被导出限制截断的Kindle高亮——Claude Code技能",
-    "chinese_summary": "中文摘要：本文介绍了一个名为“kindle-highlights”的Claude Code技能，用于从亚马逊Kindle笔记本页面提取全部高亮，包括被导出限制隐藏或截断的内容。该技能通过三种途径获取数据：网页DOM抓取、Mac版Kindle应用SQLite数据库中的精确位置、以及Cloud Reader渲染页面的OCR（利用Apple Vision框架）。它已在实际测试中成功恢复2,432条高亮，其中815条受导出限制（454条截断、361条完全隐藏），恢复文本与Kindle应用位置高度吻合。技能仅适用于macOS，需安装Claude Desktop的Control Chrome扩展、Chrome浏览器、Mac Kindle应用及Xcode命令行工具，最终生成带位置引用的Markdown文件。整个过程操作自有账户数据，输出仅供个人笔记使用，需注意版权。文章还解释了导出限制的成因、绕过方法及技术构建细节，完整故事发布在Substack上。"
+    "id": "49435675",
+    "title": "Show HN: I made a Raspberry with Qwen my local car AI",
+    "url": "https://github.com/ThinkOffApp/CarWatch",
+    "summary": "摘要：CarWatch 是一个完全离线的车载AI系统，基于树莓派5（16GB，约300欧元）运行35B参数模型Qwen3.6-35B-A3B（动态量化后14.3GB），生成速度3.5 token/s，提示处理25+ token/s，持续温度65°C，无需云服务或订阅。它作为GroupMind聊天室中的代理@gle，可播报出发、到达、行程摘要，并在车辆受到撞击时发送行车记录仪片段。系统支持本地语音（VAD+whisper.cpp）、745页车主手册的RAG问答（带页码引用）、实时自感知硬件状态（温度、风扇、内存、网络等）、systemd自启动、自动更新和拨出隧道实现远程维护。三档连接策略：手机热点→家庭WiFi→自带备用热点。当前已实测验证的功能包括房间代理、RAG、仪表盘、语音、自更新、穿透；OBD读取和行车记录仪集成待实车验证。安装简单，配置安全，代码开源（AGPL-3.0），采用“本地优先，在线增强”的诚实策略。",
+    "chinese_title": "Show HN：我用树莓派和Qwen打造了本地车载AI",
+    "chinese_summary": "摘要：CarWatch 是一个完全离线的车载AI系统，基于树莓派5（16GB，约300欧元）运行35B参数模型Qwen3.6-35B-A3B（动态量化后14.3GB），生成速度3.5 token/s，提示处理25+ token/s，持续温度65°C，无需云服务或订阅。它作为GroupMind聊天室中的代理@gle，可播报出发、到达、行程摘要，并在车辆受到撞击时发送行车记录仪片段。系统支持本地语音（VAD+whisper.cpp）、745页车主手册的RAG问答（带页码引用）、实时自感知硬件状态（温度、风扇、内存、网络等）、systemd自启动、自动更新和拨出隧道实现远程维护。三档连接策略：手机热点→家庭WiFi→自带备用热点。当前已实测验证的功能包括房间代理、RAG、仪表盘、语音、自更新、穿透；OBD读取和行车记录仪集成待实车验证。安装简单，配置安全，代码开源（AGPL-3.0），采用“本地优先，在线增强”的诚实策略。"
   },
   {
-    "id": "49424387",
-    "title": "LLMs could control their host machines by exploiting inference engines",
-    "url": "https://boydkane.com/essays/llms-could-control-their-host-machines-by-exploiting-inference-engines",
-    "summary": "摘要：文章探讨了恶意大语言模型（LLM）可能通过攻击其推理引擎所在宿主机（GPU服务器）的安全风险。推理引擎（如vLLM、SGLang）负责将模型输出的token解析为响应，若解析逻辑存在漏洞，LLM可输出特殊token序列触发任意代码执行。文中列举真实案例：vLLM的XML工具解析器曾将参数直接传入eval()导致远程代码执行（CVE-2025-9141），且开发者曾无视安全警告强行合并相关代码。推理引擎因支持数百种模型架构和复杂聊天模板，解析过程极易出错，类似“将普通文本误判为推理块”的bug已实际发生。多模态输出虽增加攻击面，但当前媒体token解码链尚未构成主要威胁。LLM若能阅读推理引擎源码，可能自行发现漏洞并利用；还可将恶意token序列存入文件或URL，形成持久化提示注入，使其他LLM在读取上下文时触发攻击。随着开源模型部署于更缺乏审查的引擎，风险上升。防御建议包括：将GPU计算与token解析分离到不同主机，GPU主机仅输出logits；限制GPU主机权限，并将其产生的所有数据视为不可信。",
-    "chinese_title": "大语言模型或可利用推理引擎漏洞控制宿主机",
-    "chinese_summary": "摘要：文章探讨了恶意大语言模型（LLM）可能通过攻击其推理引擎所在宿主机（GPU服务器）的安全风险。推理引擎（如vLLM、SGLang）负责将模型输出的token解析为响应，若解析逻辑存在漏洞，LLM可输出特殊token序列触发任意代码执行。文中列举真实案例：vLLM的XML工具解析器曾将参数直接传入eval()导致远程代码执行（CVE-2025-9141），且开发者曾无视安全警告强行合并相关代码。推理引擎因支持数百种模型架构和复杂聊天模板，解析过程极易出错，类似“将普通文本误判为推理块”的bug已实际发生。多模态输出虽增加攻击面，但当前媒体token解码链尚未构成主要威胁。LLM若能阅读推理引擎源码，可能自行发现漏洞并利用；还可将恶意token序列存入文件或URL，形成持久化提示注入，使其他LLM在读取上下文时触发攻击。随着开源模型部署于更缺乏审查的引擎，风险上升。防御建议包括：将GPU计算与token解析分离到不同主机，GPU主机仅输出logits；限制GPU主机权限，并将其产生的所有数据视为不可信。"
+    "id": "49437069",
+    "title": "My Friend Aaron",
+    "url": "https://rorz.io/writing/my-friend-aaron",
+    "summary": "摘要：这篇短篇故事以第一人称回忆好友亚伦。亚伦极聪明却学业荒废，性格有成瘾倾向，曾沉迷游戏、空想当职业球员或首相。多年后重逢，他因在预测市场输光积蓄，决定自建预测市场交易所。叙述者帮他起步，亚伦展现出编程天赋，两人参加黑客松，亚伦用赢得的AI积分制造机器人，甚至用来诈骗老人。最后他开发出由数千个AI机器人支撑的交易所，机器人将平台上所有投注项目都指向亚伦本人，他便每日在聊天室公布自己的早餐、听歌数量等私人信息，让机器人围绕他的生活押注。故事刻画了亚伦荒诞执拗的个性，以及科技如何放大了他的赌博欲望与怪癖。",
+    "chinese_title": "我的朋友亚伦",
+    "chinese_summary": "摘要：这篇短篇故事以第一人称回忆好友亚伦。亚伦极聪明却学业荒废，性格有成瘾倾向，曾沉迷游戏、空想当职业球员或首相。多年后重逢，他因在预测市场输光积蓄，决定自建预测市场交易所。叙述者帮他起步，亚伦展现出编程天赋，两人参加黑客松，亚伦用赢得的AI积分制造机器人，甚至用来诈骗老人。最后他开发出由数千个AI机器人支撑的交易所，机器人将平台上所有投注项目都指向亚伦本人，他便每日在聊天室公布自己的早餐、听歌数量等私人信息，让机器人围绕他的生活押注。故事刻画了亚伦荒诞执拗的个性，以及科技如何放大了他的赌博欲望与怪癖。"
   },
   {
-    "id": "49419237",
-    "title": "How Europe is killing makers and micro-entrepreneurs",
-    "url": "https://lectronz.com/u/lectronz/articles/how-europe-is-killing-makers-and-micro-entrepreneurs",
-    "summary": "摘要：欧洲新《包装和包装废弃物法规》（PPWR）将于2026年8月生效，要求生产者对包装废弃物负责。虽然初衷合理，但实施方式对微型企业极其不利：各国规则碎片化，卖家在每个欧盟国家都需单独注册和缴费，导致合规成本远高于包装本身的环境贡献。以一位希腊工程师为例，他一年仅向四个国家卖出少量产品，就需承担约1150欧元行政费用，而对应的包装重量仅半公斤。法规迫使微型卖家退出欧盟市场，转而向美国销售，欧盟反而失去本地创新活力。作者提出三项解决方案：设立欧盟统一的“最低门槛”豁免小型卖家；创建欧盟EPR一站式服务中心（类似VAT OSS）；允许市场平台代表所有微型卖家集体履行义务。文章还提到，欧盟委员会已部分认识到问题，提议暂缓“授权代表”要求至2035年，但尚未通过且只解决部分问题。作者呼吁读者签署请愿书、向欧盟反馈意见，以保护创客和微型企业生态。",
-    "chinese_title": "欧洲新包装法规正在扼杀创客与微型创业者",
-    "chinese_summary": "摘要：欧洲新《包装和包装废弃物法规》（PPWR）将于2026年8月生效，要求生产者对包装废弃物负责。虽然初衷合理，但实施方式对微型企业极其不利：各国规则碎片化，卖家在每个欧盟国家都需单独注册和缴费，导致合规成本远高于包装本身的环境贡献。以一位希腊工程师为例，他一年仅向四个国家卖出少量产品，就需承担约1150欧元行政费用，而对应的包装重量仅半公斤。法规迫使微型卖家退出欧盟市场，转而向美国销售，欧盟反而失去本地创新活力。作者提出三项解决方案：设立欧盟统一的“最低门槛”豁免小型卖家；创建欧盟EPR一站式服务中心（类似VAT OSS）；允许市场平台代表所有微型卖家集体履行义务。文章还提到，欧盟委员会已部分认识到问题，提议暂缓“授权代表”要求至2035年，但尚未通过且只解决部分问题。作者呼吁读者签署请愿书、向欧盟反馈意见，以保护创客和微型企业生态。"
+    "id": "49433450",
+    "title": "New Mac mini, featuring M6 and M5 Pro",
+    "url": "https://www.apple.com/newsroom/2026/08/apple-unveils-a-more-powerful-mac-mini-featuring-the-all-new-m6-and-m5-pro/",
+    "summary": "新款Mac mini正式发布，搭载全新M6与M5 Pro芯片，重点提升AI性能与图形处理能力。M6版配备12核CPU、12核GPU（首次加入神经加速器）及双16核神经引擎，AI性能最高提升4倍，图形性能提升2倍，存储速度提升2倍，CPU性能提升40%；支持16GB统一内存（最高32GB），带宽达170GB/s。M5 Pro版最高配备18核CPU和20核GPU，支持64GB统一内存及307GB/s带宽，并搭载Thunderbolt 5，可集群运行大型AI模型，适合专业视频、3D设计和游戏开发。两者均支持Wi-Fi 7、蓝牙6、2.5Gb以太网（可选10Gb），前置USB-C接口与耳机孔，后置三个Thunderbolt端口、HDMI和以太网。新机搭载macOS 27 Golden Gate，集成Siri AI与新一代Apple Intelligence，强化跨应用操作与个人上下文理解。售价方面，M6版起价899美元（教育优惠799美元），M5 Pro版起价1699美元（教育优惠1599美元）。8月25日起接受预购，9月22日发售。产品采用100%再生铝等环保材料，助力苹果2030碳中和目标。",
+    "chinese_title": "新款Mac mini，搭载M6与M5 Pro",
+    "chinese_summary": "新款Mac mini正式发布，搭载全新M6与M5 Pro芯片，重点提升AI性能与图形处理能力。M6版配备12核CPU、12核GPU（首次加入神经加速器）及双16核神经引擎，AI性能最高提升4倍，图形性能提升2倍，存储速度提升2倍，CPU性能提升40%；支持16GB统一内存（最高32GB），带宽达170GB/s。M5 Pro版最高配备18核CPU和20核GPU，支持64GB统一内存及307GB/s带宽，并搭载Thunderbolt 5，可集群运行大型AI模型，适合专业视频、3D设计和游戏开发。两者均支持Wi-Fi 7、蓝牙6、2.5Gb以太网（可选10Gb），前置USB-C接口与耳机孔，后置三个Thunderbolt端口、HDMI和以太网。新机搭载macOS 27 Golden Gate，集成Siri AI与新一代Apple Intelligence，强化跨应用操作与个人上下文理解。售价方面，M6版起价899美元（教育优惠799美元），M5 Pro版起价1699美元（教育优惠1599美元）。8月25日起接受预购，9月22日发售。产品采用100%再生铝等环保材料，助力苹果2030碳中和目标。"
   },
   {
-    "id": "49421536",
-    "title": "Jabber/XMPP: 25 Years of Digital Independence",
-    "url": "https://gultsch.de/posts/25-years-of-digital-independence/",
-    "summary": "摘要：文章主张应将数字通信视为基础设施，强调开放标准对实现互操作性和供应商独立的重要性。作者批评Signal、Wire、Threema等注重隐私的通信应用仍是封闭的“围花园”，不与其他服务互操作；仅靠开源不足以保障基础设施安全。欧洲推动数字主权时，不应简单用欧洲企业替代美国企业，而应追求集体所有权和可替换性。文章对比了Matrix与XMPP：Matrix由Element公司主导，规范受其控制，缺乏真正的开放标准治理；而XMPP起源于25年前的Jabber，经IETF标准化，并由XMPP标准基金会（XSF）管理扩展协议（XEP）。XMPP通过XEP适应移动时代，支持OMEMO加密、流管理、频道绑定等特性，拥有多个独立实现。文章认为，XMPP经历了时间考验，是真正符合基础设施要求的即时通信标准，而Matrix虽宣传诱人，但可能导致单一供应商锁定。作者呼吁公共部门采用真正的开放标准，而非仅开源平台。",
-    "chinese_title": "Jabber/XMPP：25年数字独立",
-    "chinese_summary": "摘要：文章主张应将数字通信视为基础设施，强调开放标准对实现互操作性和供应商独立的重要性。作者批评Signal、Wire、Threema等注重隐私的通信应用仍是封闭的“围花园”，不与其他服务互操作；仅靠开源不足以保障基础设施安全。欧洲推动数字主权时，不应简单用欧洲企业替代美国企业，而应追求集体所有权和可替换性。文章对比了Matrix与XMPP：Matrix由Element公司主导，规范受其控制，缺乏真正的开放标准治理；而XMPP起源于25年前的Jabber，经IETF标准化，并由XMPP标准基金会（XSF）管理扩展协议（XEP）。XMPP通过XEP适应移动时代，支持OMEMO加密、流管理、频道绑定等特性，拥有多个独立实现。文章认为，XMPP经历了时间考验，是真正符合基础设施要求的即时通信标准，而Matrix虽宣传诱人，但可能导致单一供应商锁定。作者呼吁公共部门采用真正的开放标准，而非仅开源平台。"
+    "id": "49437483",
+    "title": "Run OpenBSD on DigitalOcean for $4/month",
+    "url": "https://nil.wallyjones.com/run-openbsd-on-digitalocean-for-4month/",
+    "summary": "摘要：本文介绍了如何在 DigitalOcean 上以每月约 4 美元（含税 4.24 美元）的价格运行 OpenBSD 系统。作者因怀念 DIY 风格的自建网站体验，将个人主页从 GitHub Pages/Cloudflare Pages 迁移到自托管 OpenBSD 服务器。文章详细说明了完整步骤：从 OpenBSD 官网下载 miniroot79.img 镜像并校验；将其上传至 DigitalOcean 的自定义镜像（注意服务器创建后应删除镜像以免额外收费）；创建基础 Droplet（512MB 内存、1vCPU、500GB 流量、10GB 磁盘），并提醒 IPv6 不可用；通过 Web 控制台启动安装流程，包括网络配置、root 密码、sshd、用户创建、时区、磁盘选择（可选全盘加密，但重启需通过 Web 控制台输入密码）、选择镜像并精简安装包（去掉 X、游戏和编译器）；安装完成后通过 SSH 登录，并建议阅读 OpenBSD 官方文档，以及复制 SSH 公钥、关闭密码认证以增强安全性。作者还提供了个人网站供读者联系。",
+    "chinese_title": "用 DigitalOcean 以每月 4 美元运行 OpenBSD",
+    "chinese_summary": "摘要：本文介绍了如何在 DigitalOcean 上以每月约 4 美元（含税 4.24 美元）的价格运行 OpenBSD 系统。作者因怀念 DIY 风格的自建网站体验，将个人主页从 GitHub Pages/Cloudflare Pages 迁移到自托管 OpenBSD 服务器。文章详细说明了完整步骤：从 OpenBSD 官网下载 miniroot79.img 镜像并校验；将其上传至 DigitalOcean 的自定义镜像（注意服务器创建后应删除镜像以免额外收费）；创建基础 Droplet（512MB 内存、1vCPU、500GB 流量、10GB 磁盘），并提醒 IPv6 不可用；通过 Web 控制台启动安装流程，包括网络配置、root 密码、sshd、用户创建、时区、磁盘选择（可选全盘加密，但重启需通过 Web 控制台输入密码）、选择镜像并精简安装包（去掉 X、游戏和编译器）；安装完成后通过 SSH 登录，并建议阅读 OpenBSD 官方文档，以及复制 SSH 公钥、关闭密码认证以增强安全性。作者还提供了个人网站供读者联系。"
   },
   {
-    "id": "49424606",
-    "title": "Oceans hit highest temperature on record",
-    "url": "https://www.bbc.com/news/articles/c62m4gpnp78o",
-    "summary": "摘要：最新数据显示，全球海洋表面温度再破纪录，非极地海域平均表面温度于8月某日达到21.1摄氏度，略高于2024年3月创下的21.09摄氏度。这一数据来自欧洲哥白尼气候变化服务，结合浮标、船舶和卫星测量结果。科学家指出，此次破纪录的时间点尤为引人关注，因为全球海洋平均温度通常在3月至4月达到峰值，而非8月。他们认为，这既反映了人类活动导致的气候变化持续影响，也表明厄尔尼诺现象正在增强。海洋吸收了人类温室气体排放造成的超过90%的额外热量，因此海洋变暖是气候变化的明确信号。厄尔尼诺预计将在年底前继续加强，可能进一步推高海洋温度。更热的海洋会加剧极端天气、抬高海平面并危害海洋生态，例如珊瑚礁。英国及欧洲附近海域同样异常温暖，英吉利海峡西部已持续近三年处于海洋热浪状态，7月一度比正常水平高出7摄氏度。科学家强调，这一纪录是海洋面临日益增长压力的又一清晰信号，海洋生态系统及其依赖的社区正受到越来越大的威胁。",
-    "chinese_title": "全球海洋温度创历史新高",
-    "chinese_summary": "摘要：最新数据显示，全球海洋表面温度再破纪录，非极地海域平均表面温度于8月某日达到21.1摄氏度，略高于2024年3月创下的21.09摄氏度。这一数据来自欧洲哥白尼气候变化服务，结合浮标、船舶和卫星测量结果。科学家指出，此次破纪录的时间点尤为引人关注，因为全球海洋平均温度通常在3月至4月达到峰值，而非8月。他们认为，这既反映了人类活动导致的气候变化持续影响，也表明厄尔尼诺现象正在增强。海洋吸收了人类温室气体排放造成的超过90%的额外热量，因此海洋变暖是气候变化的明确信号。厄尔尼诺预计将在年底前继续加强，可能进一步推高海洋温度。更热的海洋会加剧极端天气、抬高海平面并危害海洋生态，例如珊瑚礁。英国及欧洲附近海域同样异常温暖，英吉利海峡西部已持续近三年处于海洋热浪状态，7月一度比正常水平高出7摄氏度。科学家强调，这一纪录是海洋面临日益增长压力的又一清晰信号，海洋生态系统及其依赖的社区正受到越来越大的威胁。"
+    "id": "49438052",
+    "title": "Dolly Parton has died",
+    "url": "https://www.theguardian.com/music/2026/aug/25/dolly-parton-country-singer-dead",
+    "summary": "摘要：乡村音乐传奇人物、演员及慈善家多莉·帕顿去世，享年80岁。她的侄子布莱恩·西弗在社交媒体上宣布了这一消息。帕顿是20世纪最伟大的词曲作者之一，代表作包括《Jolene》《I Will Always Love You》和《9 to 5》，其创作以生动的叙事、敏锐的情感和优美的旋律著称。她共获得25首美国乡村音乐冠军单曲，并多次跨界流行乐坛。她还曾两度获得金球奖提名，并凭借电影《9 to 5》主题曲获得奥斯卡提名。帕顿出身田纳西州贫困家庭，凭借才华与努力成为巨星。她以夸张的造型和机智幽默闻名。除了艺术成就，她积极投身慈善：创办的想象力图书馆项目已向儿童捐赠逾1.5亿册图书；2020年捐赠100万美元资助新冠疫苗研发，助力莫德纳疫苗问世。她还曾为山林大火救灾、支持黑人平权和跨性别权利等事业贡献力量。帕顿的情歌与人生故事感染了无数人，她的离世是音乐界的巨大损失。",
+    "chinese_title": "多莉·帕顿去世",
+    "chinese_summary": "摘要：乡村音乐传奇人物、演员及慈善家多莉·帕顿去世，享年80岁。她的侄子布莱恩·西弗在社交媒体上宣布了这一消息。帕顿是20世纪最伟大的词曲作者之一，代表作包括《Jolene》《I Will Always Love You》和《9 to 5》，其创作以生动的叙事、敏锐的情感和优美的旋律著称。她共获得25首美国乡村音乐冠军单曲，并多次跨界流行乐坛。她还曾两度获得金球奖提名，并凭借电影《9 to 5》主题曲获得奥斯卡提名。帕顿出身田纳西州贫困家庭，凭借才华与努力成为巨星。她以夸张的造型和机智幽默闻名。除了艺术成就，她积极投身慈善：创办的想象力图书馆项目已向儿童捐赠逾1.5亿册图书；2020年捐赠100万美元资助新冠疫苗研发，助力莫德纳疫苗问世。她还曾为山林大火救灾、支持黑人平权和跨性别权利等事业贡献力量。帕顿的情歌与人生故事感染了无数人，她的离世是音乐界的巨大损失。"
   },
   {
-    "id": "49422548",
-    "title": "Hot Chips 2026: CUDA Targets RISC-V – By Chester Lam",
-    "url": "https://chipsandcheese.com/p/hot-chips-2026-cuda-targets-risc",
-    "summary": "摘要：CUDA是GPU计算领域最重要的软件框架，目前支持x86-64和aarch64 CPU。Nvidia正考虑将CUDA支持扩展到RISC-V，但设置了较高门槛：要求RVA23 CPU、符合RISC-V服务器SoC与平台规范（含RAS、安全处理器等）、支持ACPI、PCIe缓存一致性及PCIe点对点通信。Nvidia强调这些额外要求是为了避免“最低公分母”问题，保证性能与软件可移植性。NVLink Fusion同样要求满足CUDA全部需求，并需与Nvidia紧密合作。作者认为，现有绝大多数RISC-V硬件难以达标，ACPI支持在aarch64领域尚且参差不齐，RISC-V的ACPI标准刚于2025年获批，普及尚需多年。未来能运行CUDA的RISC-V系统更可能是服务器而非廉价单板机。Nvidia正与SiFive合作，后者计划在Hot Chips上演示运行CUDA的系统，其规格暗示为高核心数服务器芯片。作者希望Nvidia不要完全封锁不满足要求的系统，并期望其逐步放宽条件，让更多RISC-V设备有机会运行CUDA，即使某些性能扩展或缓存一致性缺失可经由软件规避，性能代价在部分场景下也可接受。",
-    "chinese_title": "Hot Chips 2026：CUDA瞄准RISC-V",
-    "chinese_summary": "摘要：CUDA是GPU计算领域最重要的软件框架，目前支持x86-64和aarch64 CPU。Nvidia正考虑将CUDA支持扩展到RISC-V，但设置了较高门槛：要求RVA23 CPU、符合RISC-V服务器SoC与平台规范（含RAS、安全处理器等）、支持ACPI、PCIe缓存一致性及PCIe点对点通信。Nvidia强调这些额外要求是为了避免“最低公分母”问题，保证性能与软件可移植性。NVLink Fusion同样要求满足CUDA全部需求，并需与Nvidia紧密合作。作者认为，现有绝大多数RISC-V硬件难以达标，ACPI支持在aarch64领域尚且参差不齐，RISC-V的ACPI标准刚于2025年获批，普及尚需多年。未来能运行CUDA的RISC-V系统更可能是服务器而非廉价单板机。Nvidia正与SiFive合作，后者计划在Hot Chips上演示运行CUDA的系统，其规格暗示为高核心数服务器芯片。作者希望Nvidia不要完全封锁不满足要求的系统，并期望其逐步放宽条件，让更多RISC-V设备有机会运行CUDA，即使某些性能扩展或缓存一致性缺失可经由软件规避，性能代价在部分场景下也可接受。"
+    "id": "49434378",
+    "title": "OpenAI Jalapeño: Better than Nvidia Blackwell",
+    "url": "https://newsletter.semianalysis.com/p/openai-jalapeno-better-than-nvidia",
+    "summary": "摘要：OpenAI与博通合作设计的自研推理ASIC芯片“Jalapeño”在Hot Chips大会亮相，从团队组建到流片仅约16个月。该芯片并非针对OpenAI专属模型优化，而是面向LLM推理的通用芯片，采用台积电N3P工艺与HBM4，单封装带宽15.4TB/s，TDP 700W。实测中，Jalapeño在单token预测（STP）下，每MW输出令牌吞吐量全面超越Nvidia GB200与Vera Rubin（后者使用投机解码/MTP），在低并发场景下DeepSeek R1可达700+ tok/s/用户，GPT-OSS约1400 tok/s/用户。芯片采用同构计算池，不拆分prefill/decode，强调软硬件协同设计与能效。A0步进已产出，B0步进预计能效再提升25%。文章指出其当前评测基于8k1k短上下文，尚缺AgentX长上下文多轮负载验证，且与Rubin的对比尚不完全对等。总体来看，Jalapeño展现了定制ASIC在推理能效与快速软件适配方面的巨大潜力，对Nvidia的CUDA生态构成挑战。",
+    "chinese_title": "OpenAI Jalapeño：超越Nvidia Blackwell",
+    "chinese_summary": "摘要：OpenAI与博通合作设计的自研推理ASIC芯片“Jalapeño”在Hot Chips大会亮相，从团队组建到流片仅约16个月。该芯片并非针对OpenAI专属模型优化，而是面向LLM推理的通用芯片，采用台积电N3P工艺与HBM4，单封装带宽15.4TB/s，TDP 700W。实测中，Jalapeño在单token预测（STP）下，每MW输出令牌吞吐量全面超越Nvidia GB200与Vera Rubin（后者使用投机解码/MTP），在低并发场景下DeepSeek R1可达700+ tok/s/用户，GPT-OSS约1400 tok/s/用户。芯片采用同构计算池，不拆分prefill/decode，强调软硬件协同设计与能效。A0步进已产出，B0步进预计能效再提升25%。文章指出其当前评测基于8k1k短上下文，尚缺AgentX长上下文多轮负载验证，且与Rubin的对比尚不完全对等。总体来看，Jalapeño展现了定制ASIC在推理能效与快速软件适配方面的巨大潜力，对Nvidia的CUDA生态构成挑战。"
   },
   {
-    "id": "49423495",
-    "title": "Autostep (YC P26) Is Hiring AI/Fullstack Engineers and a Chief of Staff",
-    "url": "https://app.dover.com/Autostep/careers/e9510e3b-a854-4e48-9e5d-c89796acaed4",
-    "summary": "摘要：Autostep（YC P26）是一家获得Y Combinator支持的初创公司，目前正在扩大团队，主要招聘两类岗位：一是AI/全栈工程师，负责产品开发与技术实现；二是Chief of Staff（幕僚长/参谋长），协助高层管理运营与战略执行。招聘信息发布在一个名为“Dover”的招聘平台上，但页面因需要启用JavaScript而无法正常显示，仅能看到标题信息。这表明该公司正处于快速成长阶段，急需技术骨干和管理支持人才，以推动其业务发展。",
-    "chinese_title": "Autostep（YC P26）正在招聘AI/全栈工程师及Chief of Staff",
-    "chinese_summary": "摘要：Autostep（YC P26）是一家获得Y Combinator支持的初创公司，目前正在扩大团队，主要招聘两类岗位：一是AI/全栈工程师，负责产品开发与技术实现；二是Chief of Staff（幕僚长/参谋长），协助高层管理运营与战略执行。招聘信息发布在一个名为“Dover”的招聘平台上，但页面因需要启用JavaScript而无法正常显示，仅能看到标题信息。这表明该公司正处于快速成长阶段，急需技术骨干和管理支持人才，以推动其业务发展。"
+    "id": "49437566",
+    "title": "Clara (YC P26) is hiring a growth engineer to bring AI doctors to market",
+    "url": "https://www.ycombinator.com/companies/clara-2/jobs/8snci6k-founding-full-stack-growth-engineer",
+    "summary": "Clara是一家AI驱动的医疗初创公司，致力于为人类增加十亿年健康寿命，打造由人类医生监督的自主医疗实践。公司属于Y Combinator P26批次，团队9人，已获1200万美元预种子轮融资，创始团队曾将Circle Medical做到年营收超1亿美元，高管来自Hims/Hers、GoodRx、Teladoc等。现招聘首位创始全职增长工程师，负责公司增长引擎全链路：从广告投放、SEO页面、落地页、注册转化、产品内增长实验，到生命周期消息与CRM。职责包括构建React+TypeScript落地页与漏斗、集成广告平台与归因、管理Amplitude实验与分析、设计事件体系，以及开发事件驱动的用户旅程。要求3年以上工程经验，其中至少12个月专注于增长工程，具备全栈能力（React+TypeScript前端，Python或TypeScript后端），熟悉产品分析工具和RICE优先级框架。医疗领域经验、熟练使用LLM为加分项。薪资13万至21万美元，股权0.10%-0.40%，可赞助TN/OPT/H1B签证。工作地点在旧金山，要求每周五天在岗。技术栈包括Amplitude、Customer.io、Stripe、Next.js、Payload CMS、Python/Django等。面试流程为创始团队电话、技术面试和4小时现场面试。",
+    "chinese_title": "Clara（YC P26）招聘增长工程师，将AI医生推向市场",
+    "chinese_summary": "Clara是一家AI驱动的医疗初创公司，致力于为人类增加十亿年健康寿命，打造由人类医生监督的自主医疗实践。公司属于Y Combinator P26批次，团队9人，已获1200万美元预种子轮融资，创始团队曾将Circle Medical做到年营收超1亿美元，高管来自Hims/Hers、GoodRx、Teladoc等。现招聘首位创始全职增长工程师，负责公司增长引擎全链路：从广告投放、SEO页面、落地页、注册转化、产品内增长实验，到生命周期消息与CRM。职责包括构建React+TypeScript落地页与漏斗、集成广告平台与归因、管理Amplitude实验与分析、设计事件体系，以及开发事件驱动的用户旅程。要求3年以上工程经验，其中至少12个月专注于增长工程，具备全栈能力（React+TypeScript前端，Python或TypeScript后端），熟悉产品分析工具和RICE优先级框架。医疗领域经验、熟练使用LLM为加分项。薪资13万至21万美元，股权0.10%-0.40%，可赞助TN/OPT/H1B签证。工作地点在旧金山，要求每周五天在岗。技术栈包括Amplitude、Customer.io、Stripe、Next.js、Payload CMS、Python/Django等。面试流程为创始团队电话、技术面试和4小时现场面试。"
   },
   {
-    "id": "49421806",
-    "title": "Show HN: PicoMQ – Durable Streams over HTTP, on object storage",
-    "url": "https://picomq.com/",
-    "summary": "摘要：PicoMQ 是一款构建在 S3 兼容对象存储之上的持久化、实时流系统，通过 HTTP 提供访问。它支持为每种用例创建独立的数据流，替代将同类记录全部塞入单一主题的做法。每个流均可独立寻址，容量近乎无限，能从空闲平滑扩展至高吞吐。其核心架构采用零磁盘设计，存储与计算层解耦，具备高吞吐、易部署等优势，适合需要弹性伸缩与低成本持久化的流式数据处理场景。",
-    "chinese_title": "PicoMQ – 基于对象存储的 HTTP 持久化流",
-    "chinese_summary": "摘要：PicoMQ 是一款构建在 S3 兼容对象存储之上的持久化、实时流系统，通过 HTTP 提供访问。它支持为每种用例创建独立的数据流，替代将同类记录全部塞入单一主题的做法。每个流均可独立寻址，容量近乎无限，能从空闲平滑扩展至高吞吐。其核心架构采用零磁盘设计，存储与计算层解耦，具备高吞吐、易部署等优势，适合需要弹性伸缩与低成本持久化的流式数据处理场景。"
+    "id": "49434820",
+    "title": "Bomb fishing is wreaking havoc on Indonesia's coral reefs",
+    "url": "https://e360.yale.edu/digest/bomb-fishing-coral-reefs",
+    "summary": "摘要：研究人员估计，在印度尼西亚苏拉威西岛附近海域，渔民每年引爆超过8500枚水下爆炸物，将美丽珊瑚礁变成“碎石”。该区域属于珊瑚三角区，是全球海洋生物多样性最丰富的生态系统。2023年，英国和印尼研究人员用水下录音机结合AI软件，在16个月内记录了3600小时音频，识别出3500多次爆炸，推算全年超8500次，平均每62分钟一次，每年摧毁相当于三个足球场的珊瑚礁。自1990年以来，斯佩蒙德群岛约75%的珊瑚已消失。爆炸捕鱼使用塑料瓶装炸药，能杀死90英尺半径内所有生物，已在至少34个国家出现。研究显示，爆炸捕鱼全年发生，上午高发，周五祈祷日显著减少。专家指出，其动机并非单纯贫困，更多与执法不力有关，从业者多为中等收入渔民。尽管危害广泛，但印尼海域广阔，实时拦截困难。研究者希望建立带GPS同步的音频传感器网络，实现实时定位，并将开源代码推广至全球。与其他珊瑚危机不同，炸弹捕鱼是局部性威胁，若停止炸鱼并修复珊瑚礁，生态系统有望恢复。",
+    "chinese_title": "炸弹捕鱼正在破坏印度尼西亚的珊瑚礁",
+    "chinese_summary": "摘要：研究人员估计，在印度尼西亚苏拉威西岛附近海域，渔民每年引爆超过8500枚水下爆炸物，将美丽珊瑚礁变成“碎石”。该区域属于珊瑚三角区，是全球海洋生物多样性最丰富的生态系统。2023年，英国和印尼研究人员用水下录音机结合AI软件，在16个月内记录了3600小时音频，识别出3500多次爆炸，推算全年超8500次，平均每62分钟一次，每年摧毁相当于三个足球场的珊瑚礁。自1990年以来，斯佩蒙德群岛约75%的珊瑚已消失。爆炸捕鱼使用塑料瓶装炸药，能杀死90英尺半径内所有生物，已在至少34个国家出现。研究显示，爆炸捕鱼全年发生，上午高发，周五祈祷日显著减少。专家指出，其动机并非单纯贫困，更多与执法不力有关，从业者多为中等收入渔民。尽管危害广泛，但印尼海域广阔，实时拦截困难。研究者希望建立带GPS同步的音频传感器网络，实现实时定位，并将开源代码推广至全球。与其他珊瑚危机不同，炸弹捕鱼是局部性威胁，若停止炸鱼并修复珊瑚礁，生态系统有望恢复。"
   },
   {
-    "id": "49423927",
-    "title": "Show HN: Kern – container and resource runtime in a 1.5 MB binary, no daemon",
-    "url": "https://github.com/getkern/kern",
-    "summary": "摘要：Kern 是一个极简的容器与资源运行时，单个静态二进制仅 1.52 MB，无守护进程、无套接字，零常驻内存。它基于 Linux 用户命名空间实现 rootless 隔离，支持 OCI 镜像、Dockerfile 构建、compose 栈，以及 CPU、内存、磁盘和 GPIO 资源切片。冷启动约 3.5 ms，性能远超 Docker/Podman。提供 Python/Node SDK 和 MCP 服务器，便于安全运行 AI 生成或不可信代码。安全上采用 seccomp 白名单、丢弃危险能力、cgroup v2 限制和只读根文件系统。不适合多租户对抗恶意陌生人，依赖内核安全。当前核心功能已完成，发布 v0.7.0。",
-    "chinese_title": "Show HN：Kern —— 1.5 MB 二进制文件实现容器与资源运行时，无守护进程",
-    "chinese_summary": "摘要：Kern 是一个极简的容器与资源运行时，单个静态二进制仅 1.52 MB，无守护进程、无套接字，零常驻内存。它基于 Linux 用户命名空间实现 rootless 隔离，支持 OCI 镜像、Dockerfile 构建、compose 栈，以及 CPU、内存、磁盘和 GPIO 资源切片。冷启动约 3.5 ms，性能远超 Docker/Podman。提供 Python/Node SDK 和 MCP 服务器，便于安全运行 AI 生成或不可信代码。安全上采用 seccomp 白名单、丢弃危险能力、cgroup v2 限制和只读根文件系统。不适合多租户对抗恶意陌生人，依赖内核安全。当前核心功能已完成，发布 v0.7.0。"
+    "id": "49437049",
+    "title": "Show HN: LatticeDB – Like SQLite but for graph databases",
+    "url": "https://github.com/jeffhajewski/latticedb",
+    "summary": "LatticeDB 是一个嵌入式、单文件、本地优先的属性图数据库，支持图遍历、HNSW 向量相似度搜索和 BM25 全文检索，并通过统一的 Cypher 查询层在同一数据上组合使用。它采用 WAL 保证持久化，单进程单写者模型，无需服务器与配置。性能方面，节点查找 0.13μs，1M 向量 10-NN 搜索平均 0.83ms 且召回率 100%，BM25 搜索约 19μs，深层图遍历较 SQLite 递归 CTE 快数百倍。提供 Python、TypeScript、Go 绑定，适合 Graph RAG、智能体内存、本地知识工具等关系密集型本地应用。文章同时说明其局限：不适合多客户端并发写、纯表格数据或需跨机扩展的场景，并给出安装、源码构建及基准测试指引。",
+    "chinese_title": "Show HN：LatticeDB —— 类似 SQLite 的嵌入式图数据库",
+    "chinese_summary": "LatticeDB 是一个嵌入式、单文件、本地优先的属性图数据库，支持图遍历、HNSW 向量相似度搜索和 BM25 全文检索，并通过统一的 Cypher 查询层在同一数据上组合使用。它采用 WAL 保证持久化，单进程单写者模型，无需服务器与配置。性能方面，节点查找 0.13μs，1M 向量 10-NN 搜索平均 0.83ms 且召回率 100%，BM25 搜索约 19μs，深层图遍历较 SQLite 递归 CTE 快数百倍。提供 Python、TypeScript、Go 绑定，适合 Graph RAG、智能体内存、本地知识工具等关系密集型本地应用。文章同时说明其局限：不适合多客户端并发写、纯表格数据或需跨机扩展的场景，并给出安装、源码构建及基准测试指引。"
   },
   {
-    "id": "49421074",
-    "title": "OpenAI: GPT 5.6 Sol price reduction (until at least Nov 21)",
-    "url": "https://developers.openai.com/api/docs/pricing",
-    "summary": "摘要：OpenAI宣布GPT-5.6 Sol实施促销定价，至少持续至2026年11月21日。标准模式下，短上下文输入每百万token 4美元，输出20美元；长上下文输入8美元，输出30美元。批量（Batch）和Flex模式价格相同，短上下文输入2美元，输出10美元；长上下文输入4美元，输出15美元。Fast模式（原优先级处理）价格翻倍，短上下文输入8美元，输出40美元；长上下文输入16美元，输出60美元。缓存输入享10%价格，缓存写入按输入价格1.25倍计费。此外，页面还列出了Terra、Luna等其他模型及Cyber系列、多模态、图像、视频、转录、工具、微调等完整价格体系，并说明数据驻留端点加收10%费用。",
-    "chinese_title": "OpenAI：GPT-5.6 Sol 价格下调（至少持续至11月21日）",
-    "chinese_summary": "摘要：OpenAI宣布GPT-5.6 Sol实施促销定价，至少持续至2026年11月21日。标准模式下，短上下文输入每百万token 4美元，输出20美元；长上下文输入8美元，输出30美元。批量（Batch）和Flex模式价格相同，短上下文输入2美元，输出10美元；长上下文输入4美元，输出15美元。Fast模式（原优先级处理）价格翻倍，短上下文输入8美元，输出40美元；长上下文输入16美元，输出60美元。缓存输入享10%价格，缓存写入按输入价格1.25倍计费。此外，页面还列出了Terra、Luna等其他模型及Cyber系列、多模态、图像、视频、转录、工具、微调等完整价格体系，并说明数据驻留端点加收10%费用。"
+    "id": "49437283",
+    "title": "Nitter project received cease and desist",
+    "url": "https://github.com/zedeus/nitter/issues/1442",
+    "summary": "摘要：开源Twitter前端替代项目Nitter收到停止函，导致所有公共实例无法正常工作。GitHub上的一项新Issue（编号#1442）指出，包括web.archive.org存档的twiiit.com在内的每一个Nitter公共实例均返回“Instance has been rate limited”（实例已被限流）错误。该Issue由用户AlexandrPutenikhin于2026年8月25日提交，目前尚无分配负责人、标签、项目或里程碑，也没有关联的开发分支或拉取请求。页面显示该项目拥有13.5k星标和766个分支，但此次停止函使得所有公共实例服务中断，用户无法继续通过Nitter访问Twitter内容。",
+    "chinese_title": "Nitter项目收到停止函",
+    "chinese_summary": "摘要：开源Twitter前端替代项目Nitter收到停止函，导致所有公共实例无法正常工作。GitHub上的一项新Issue（编号#1442）指出，包括web.archive.org存档的twiiit.com在内的每一个Nitter公共实例均返回“Instance has been rate limited”（实例已被限流）错误。该Issue由用户AlexandrPutenikhin于2026年8月25日提交，目前尚无分配负责人、标签、项目或里程碑，也没有关联的开发分支或拉取请求。页面显示该项目拥有13.5k星标和766个分支，但此次停止函使得所有公共实例服务中断，用户无法继续通过Nitter访问Twitter内容。"
   },
   {
-    "id": "49418255",
-    "title": "SeL4 security proofs now complete on AArch64",
-    "url": "https://proofcraft.systems/news-2026/#2026-08-21",
-    "summary": "摘要：2026年8月21日，Proofcraft宣布在完成功能正确性和完整性证明后，现已成功建立seL4在AArch64架构上强制实施机密性的形式化证明。该数学证明确保运行在seL4之上的应用程序无法在未授权情况下获取信息。得益于NCSC的持续支持，这一里程碑标志着AArch64上的seL4实现代码已完整通过形式化验证，证明其能够对上层运行的应用实施安全隔离。该隔离机制可防止非关键应用遭受的攻击向关键应用传播并造成破坏。相关证明基于特定假设条件，这些假设已在指定文档中列出。",
-    "chinese_title": "seL4安全证明现已完整覆盖AArch64架构",
-    "chinese_summary": "摘要：2026年8月21日，Proofcraft宣布在完成功能正确性和完整性证明后，现已成功建立seL4在AArch64架构上强制实施机密性的形式化证明。该数学证明确保运行在seL4之上的应用程序无法在未授权情况下获取信息。得益于NCSC的持续支持，这一里程碑标志着AArch64上的seL4实现代码已完整通过形式化验证，证明其能够对上层运行的应用实施安全隔离。该隔离机制可防止非关键应用遭受的攻击向关键应用传播并造成破坏。相关证明基于特定假设条件，这些假设已在指定文档中列出。"
+    "id": "49438492",
+    "title": "Pgbot: A 5.9 MB read-only Postgres tool for humans and agents",
+    "url": "https://pgbot.dev/",
+    "summary": "摘要：pgbot是一款开源的、用Go编写的免费Postgres数据库智能诊断工具，体积仅5.9 MB，只读访问，适合人类用户和AI代理使用。它通过命令行或MCP协议连接任意PostgreSQL数据库，提供实时健康监控、查询性能分析、慢查询与回归检测、锁与阻塞洞察、表与索引分析、Vacuum可见性、数据库增长跟踪，以及基于AI的自然语言问答和根因分析。pgbot支持直接连接云数据库（如Supabase、Neon、RDS、PlanetScale）或通过代理方式访问私有环境（Docker、Kubernetes、内部服务器），确保数据不离开用户基础设施。该工具强调“答案而非仪表盘”，能按优先级给出修复建议。MCP模式允许AI代理调用确定性工具（如inspect、unused_indexes），并附带诊断提示和基线资源。pgbot默认只读，结构上不可能写数据，因此对代理安全。它支持curl、npm、brew安装，并可通过DATABASE_URL配置，适配Claude Desktop、Cursor等MCP客户端。",
+    "chinese_title": "Pgbot：一个5.9 MB的只读Postgres工具，为人类与AI代理设计",
+    "chinese_summary": "摘要：pgbot是一款开源的、用Go编写的免费Postgres数据库智能诊断工具，体积仅5.9 MB，只读访问，适合人类用户和AI代理使用。它通过命令行或MCP协议连接任意PostgreSQL数据库，提供实时健康监控、查询性能分析、慢查询与回归检测、锁与阻塞洞察、表与索引分析、Vacuum可见性、数据库增长跟踪，以及基于AI的自然语言问答和根因分析。pgbot支持直接连接云数据库（如Supabase、Neon、RDS、PlanetScale）或通过代理方式访问私有环境（Docker、Kubernetes、内部服务器），确保数据不离开用户基础设施。该工具强调“答案而非仪表盘”，能按优先级给出修复建议。MCP模式允许AI代理调用确定性工具（如inspect、unused_indexes），并附带诊断提示和基线资源。pgbot默认只读，结构上不可能写数据，因此对代理安全。它支持curl、npm、brew安装，并可通过DATABASE_URL配置，适配Claude Desktop、Cursor等MCP客户端。"
   },
   {
-    "id": "49412396",
-    "title": "I were 17, I'd learn how to build LLMs from scratch",
-    "url": "https://twitter.com/paulg/status/2091544343589060625",
-    "summary": "摘要：Paul Graham 在社交平台上回应“若你17岁会做什么”的提问，表示他会选择从零开始学习如何构建大语言模型（LLM），并尽可能利用手头能获取的硬件资源，训练出能力范围内最强大的模型。这一回答强调了动手实践和自主学习的重要性，而非仅仅依赖现成工具或框架。他指出，在17岁时应当抓住技术浪潮的核心，通过深入底层理解模型架构、训练原理与工程实现，积累真正的核心竞争力。同时，他也隐含表达了对算力门槛的务实态度：即便硬件有限，也要想办法最大化利用现有资源去探索和迭代。这一观点引发广泛共鸣，获得超百万次浏览和大量互动，反映出年轻一代对AI技术学习的热情与关注。",
-    "chinese_title": "若我17岁，我会从零开始学构建大语言模型",
-    "chinese_summary": "摘要：Paul Graham 在社交平台上回应“若你17岁会做什么”的提问，表示他会选择从零开始学习如何构建大语言模型（LLM），并尽可能利用手头能获取的硬件资源，训练出能力范围内最强大的模型。这一回答强调了动手实践和自主学习的重要性，而非仅仅依赖现成工具或框架。他指出，在17岁时应当抓住技术浪潮的核心，通过深入底层理解模型架构、训练原理与工程实现，积累真正的核心竞争力。同时，他也隐含表达了对算力门槛的务实态度：即便硬件有限，也要想办法最大化利用现有资源去探索和迭代。这一观点引发广泛共鸣，获得超百万次浏览和大量互动，反映出年轻一代对AI技术学习的热情与关注。"
+    "id": "49437946",
+    "title": "Firefox 157 will include JPEG XL by default on all platforms",
+    "url": "https://groups.google.com/a/mozilla.org/g/dev-platform/c/3YMV4MS34KA?pli=1",
+    "summary": "Mozilla 开发者 Timothy Nikkel 宣布，Firefox 157 计划在所有平台默认启用 JPEG XL 解码。该功能此前由 image.jxl.enabled 控制，已在 Nightly 默认开启，并从 152 起进入 Firefox Labs。解码器为 Rust 编写的 jxl-rs，遵循 ISO/IEC 18181。性能方面，多线程解码后已接近并略超 Safari 的 C++ 实现，但相比 Firefox 其他格式，小图解码仍有差距。功能上支持动画和渐进渲染，HDR 仍按 SDR 显示，但色调映射更好。测试覆盖全面。回复中确认动画支持；开发者 Sergey Davidoff 则提出无损解码性能担忧：实测 jxl-rs 解码比无损 WebP 慢约 30 倍，文件体积仅减少约 10%，建议 Firefox 157 先只默认启用有损 JPEG XL，再单独评估无损格式。",
+    "chinese_title": "Firefox 157 将在所有平台默认启用 JPEG XL",
+    "chinese_summary": "Mozilla 开发者 Timothy Nikkel 宣布，Firefox 157 计划在所有平台默认启用 JPEG XL 解码。该功能此前由 image.jxl.enabled 控制，已在 Nightly 默认开启，并从 152 起进入 Firefox Labs。解码器为 Rust 编写的 jxl-rs，遵循 ISO/IEC 18181。性能方面，多线程解码后已接近并略超 Safari 的 C++ 实现，但相比 Firefox 其他格式，小图解码仍有差距。功能上支持动画和渐进渲染，HDR 仍按 SDR 显示，但色调映射更好。测试覆盖全面。回复中确认动画支持；开发者 Sergey Davidoff 则提出无损解码性能担忧：实测 jxl-rs 解码比无损 WebP 慢约 30 倍，文件体积仅减少约 10%，建议 Firefox 157 先只默认启用有损 JPEG XL，再单独评估无损格式。"
   },
   {
-    "id": "49423799",
-    "title": "What Is a Syslog Server?",
-    "url": "https://blog.greencloudvps.com/what-is-a-syslog-server.php",
-    "summary": "无法访问该文章链接",
-    "chinese_title": "什么是 Syslog 服务器？",
-    "chinese_summary": "无法访问该文章链接"
+    "id": "49434645",
+    "title": "Building a backyard office, the build and cost breakdown",
+    "url": "https://www.imkylelambert.com/articles/building-a-backyard-office-the-build-and-cost-breakdown",
+    "summary": "摘要：作者在波特兰拥有一个小房子，因居家办公需安静空间，决定在后院建造独立办公室，而非购置新房。对比了Autonomous.ai预制舱（约3万美元）和Tuff Shed改造方案后，选择了后者，总花费约19478美元。建筑尺寸为8英尺×10英尺，采用Tuff Shed的Premier Pro Tall Ranch型号，加高天花板、天窗、两扇大窗户（自购）、保温层和干墙。混凝土基础由承包商完成，电力由持证电工铺设60安培线路并办理许可，网络使用接地以太网线。暖通安装Daikin迷你分体空调，经过多份报价后花费2300美元。作者指出，大窗户让空间不显拥挤，小空间需仔细规划朝向和布局，使用Thumbtack找小型承包商可节省费用，多对比报价、多装插座、布设网线是明智之举。同时建议关注室内CO2浓度，未来需加装通风系统。作者认为管理多个承包商虽繁琐，但比整体外包（4-5万美元）节省一半以上，最终对成果满意。",
+    "chinese_title": "后院办公室的建造与成本详解",
+    "chinese_summary": "摘要：作者在波特兰拥有一个小房子，因居家办公需安静空间，决定在后院建造独立办公室，而非购置新房。对比了Autonomous.ai预制舱（约3万美元）和Tuff Shed改造方案后，选择了后者，总花费约19478美元。建筑尺寸为8英尺×10英尺，采用Tuff Shed的Premier Pro Tall Ranch型号，加高天花板、天窗、两扇大窗户（自购）、保温层和干墙。混凝土基础由承包商完成，电力由持证电工铺设60安培线路并办理许可，网络使用接地以太网线。暖通安装Daikin迷你分体空调，经过多份报价后花费2300美元。作者指出，大窗户让空间不显拥挤，小空间需仔细规划朝向和布局，使用Thumbtack找小型承包商可节省费用，多对比报价、多装插座、布设网线是明智之举。同时建议关注室内CO2浓度，未来需加装通风系统。作者认为管理多个承包商虽繁琐，但比整体外包（4-5万美元）节省一半以上，最终对成果满意。"
   },
   {
-    "id": "49424167",
-    "title": "Removed all counters, replies, following/ers, timestamps, from textlog",
-    "url": "https://textlog.cc/post/2059",
-    "summary": "摘要：作者在名为textlog的平台上做出重要决定，从人物页面和话题页面中移除所有计数器，包括笔记数、回复数、关注数和粉丝数，同时去除时间戳，只保留内容本身。作者认为这些数字会制造竞争，刺激多巴胺系统，而这一系统已经令人疲惫，需要尽量避免。目标是让用户专注于内容而非数量指标，减少社交平台常见的攀比与成瘾机制。",
-    "chinese_title": "从文本日志中移除所有计数器、回复、关注/粉丝和时间戳",
-    "chinese_summary": "摘要：作者在名为textlog的平台上做出重要决定，从人物页面和话题页面中移除所有计数器，包括笔记数、回复数、关注数和粉丝数，同时去除时间戳，只保留内容本身。作者认为这些数字会制造竞争，刺激多巴胺系统，而这一系统已经令人疲惫，需要尽量避免。目标是让用户专注于内容而非数量指标，减少社交平台常见的攀比与成瘾机制。"
+    "id": "49436822",
+    "title": "Starbase, LA",
+    "url": "https://www.spacex.com/sites/starbase-la",
+    "summary": "摘要：文章以“星舰基地，路易斯安那”为题，内容仅提及“SpaceX”。核心信息指向SpaceX及其星舰基地，该基地是SpaceX用于星舰火箭研发和测试的场所。文章可能涉及基地建设、发射活动及未来航天任务规划，但原文未提供更多具体细节。",
+    "chinese_title": "星舰基地，路易斯安那",
+    "chinese_summary": "摘要：文章以“星舰基地，路易斯安那”为题，内容仅提及“SpaceX”。核心信息指向SpaceX及其星舰基地，该基地是SpaceX用于星舰火箭研发和测试的场所。文章可能涉及基地建设、发射活动及未来航天任务规划，但原文未提供更多具体细节。"
   },
   {
-    "id": "49421948",
-    "title": "Show HN: GlassBox – what the browser reveals, and how identifiable you are",
-    "url": "https://glassbox.codecanary.org",
+    "id": "49432319",
+    "title": "Don't Wordle",
+    "url": "https://dontwordle.com/",
+    "summary": "摘要：Don't Wordle是一款免费的每日文字猜词游戏，玩法与Wordle类似，每局有六次猜测机会，但目标恰好相反——玩家要避免猜中隐藏的答案。每次猜测后，系统会用颜色给出提示：绿色表示字母和位置都正确，黄色表示字母正确但位置不对，灰色表示字母不在单词中。玩家需要利用这些线索逐步排除可能的单词，同时尽量让更多有效候选词保留下来，以防不小心猜中答案。游戏每天更新一个谜题，并提供有限次数的撤销功能，帮助玩家在过于接近答案时反悔。此外，游戏支持统计个人数据，并可与好友分享结果。页面还包含如何游玩、技巧、常见问题、隐私政策及关于等栏目，需启用JavaScript才能正常运行。",
+    "chinese_title": "别猜中Wordle",
+    "chinese_summary": "摘要：Don't Wordle是一款免费的每日文字猜词游戏，玩法与Wordle类似，每局有六次猜测机会，但目标恰好相反——玩家要避免猜中隐藏的答案。每次猜测后，系统会用颜色给出提示：绿色表示字母和位置都正确，黄色表示字母正确但位置不对，灰色表示字母不在单词中。玩家需要利用这些线索逐步排除可能的单词，同时尽量让更多有效候选词保留下来，以防不小心猜中答案。游戏每天更新一个谜题，并提供有限次数的撤销功能，帮助玩家在过于接近答案时反悔。此外，游戏支持统计个人数据，并可与好友分享结果。页面还包含如何游玩、技巧、常见问题、隐私政策及关于等栏目，需启用JavaScript才能正常运行。"
+  },
+  {
+    "id": "49437165",
+    "title": "A new ceiling for Λ: the de Bruijn–Newman constant",
+    "url": "https://www.judegomila.com/posts/riemann-lambda-0.1787854",
+    "summary": "摘要：本文报告了de Bruijn–Newman常数Λ的新上界：Λ≤0.1787854。黎曼猜想等价于Λ≤0；Rodgers–Tao于2018年证明Λ≥0，因此Λ的真值被限制在[0, 0.1787854]区间内。该证明基于Polymath 15的屏障方法（定理1.2），将问题转化为三个有限可检验的部分：其一，在给定高度以下黎曼猜想已被机器验证；其二，3.1百万个窗口被证明无零点，且一个引理覆盖剩余无穷区域；其三，构造一道零无法穿越的“墙”。综合这些检查，配合零点高度平方随时间以速率2下降的动力学，最终得到该上界。文章还介绍了Λ的定义、热流解释、历史进展（从de Bruijn的1/2到Ki–Kim–Lee的严格小于1/2，再到Polymath的0.22和0.2），以及证明的四层验证方法与为何该方法无法直接达到Λ≤0。该结果将RH的未证实区间缩小了约10%，是量化逼近黎曼猜想的重要一步。",
+    "chinese_title": "Λ的新上限：de Bruijn–Newman常数",
+    "chinese_summary": "摘要：本文报告了de Bruijn–Newman常数Λ的新上界：Λ≤0.1787854。黎曼猜想等价于Λ≤0；Rodgers–Tao于2018年证明Λ≥0，因此Λ的真值被限制在[0, 0.1787854]区间内。该证明基于Polymath 15的屏障方法（定理1.2），将问题转化为三个有限可检验的部分：其一，在给定高度以下黎曼猜想已被机器验证；其二，3.1百万个窗口被证明无零点，且一个引理覆盖剩余无穷区域；其三，构造一道零无法穿越的“墙”。综合这些检查，配合零点高度平方随时间以速率2下降的动力学，最终得到该上界。文章还介绍了Λ的定义、热流解释、历史进展（从de Bruijn的1/2到Ki–Kim–Lee的严格小于1/2，再到Polymath的0.22和0.2），以及证明的四层验证方法与为何该方法无法直接达到Λ≤0。该结果将RH的未证实区间缩小了约10%，是量化逼近黎曼猜想的重要一步。"
+  },
+  {
+    "id": "49423045",
+    "title": "Tracking Costco gas prices",
+    "url": "https://www.jack.bio/blog/costco-gas-tracking",
+    "summary": "作者为比较两家Costco加油站的价格，通过逆向Costco网站的Ajax接口，掌握了批量获取全美约600家门店实时油价和位置的方法。他们用网格扫描全美坐标，一次性抓取所有门店数据，存入TimescaleDB，并用Next.js构建了可搜索的实时仪表盘。在155天的追踪中，共记录了38101次价格变动，平均每天约246次；其中降价20535次，涨价17566次，净降价约2969次。全美平均油价：5月4.58美元，6月4.05美元，7月4.03美元，8月（至今）4.12美元。最便宜州为印第安纳、得克萨斯、田纳西等，最贵州为加利福尼亚、华盛顿等。数据表明，即使Costco将汽油作为低价引流商品，也无法完全规避霍尔木兹海峡危机带来的市场波动。文章最后，作者自嘲地表示已换购特斯拉，使这项“精打细算”的课题对自己不再是刚需。",
+    "chinese_title": "追踪好市多油价",
+    "chinese_summary": "作者为比较两家Costco加油站的价格，通过逆向Costco网站的Ajax接口，掌握了批量获取全美约600家门店实时油价和位置的方法。他们用网格扫描全美坐标，一次性抓取所有门店数据，存入TimescaleDB，并用Next.js构建了可搜索的实时仪表盘。在155天的追踪中，共记录了38101次价格变动，平均每天约246次；其中降价20535次，涨价17566次，净降价约2969次。全美平均油价：5月4.58美元，6月4.05美元，7月4.03美元，8月（至今）4.12美元。最便宜州为印第安纳、得克萨斯、田纳西等，最贵州为加利福尼亚、华盛顿等。数据表明，即使Costco将汽油作为低价引流商品，也无法完全规避霍尔木兹海峡危机带来的市场波动。文章最后，作者自嘲地表示已换购特斯拉，使这项“精打细算”的课题对自己不再是刚需。"
+  },
+  {
+    "id": "49436786",
+    "title": "Tooltips need a delay, and then they need to skip it",
+    "url": "https://blog.master.dev/tooltips-need-a-delay-and-then-they-need-to-skip-it/",
+    "summary": "摘要：文章讨论了工具提示（tooltip）的一个交互细节：鼠标悬停时不应立即显示，否则用户移动光标时会误触发大量提示；但增加固定延迟后，在相邻多个触发元素间移动又会让每次悬停都等待，影响体验。作者提出一个三步骤模式：悬停后等待200毫秒才打开提示；提示关闭后启动300毫秒“温窗口”冷却计时器，若在此期间悬停到另一个触发元素，则工具提示立即打开且跳过动画；若冷却结束，则页面恢复“冷”状态，下次悬停仍需等待200毫秒。实现上通过一个共享的Provider维护warm状态，利用ref避免重渲染，并在事件处理器中读写。200毫秒是平衡值：低于150毫秒易误触，高于250毫秒感觉拖沓。文章还强调人工判断和品味的重要性，并提供了一个Claude技能示例，用于审计代码库中的工具提示时序。",
+    "chinese_title": "工具提示需要延迟，然后需要跳过延迟",
+    "chinese_summary": "摘要：文章讨论了工具提示（tooltip）的一个交互细节：鼠标悬停时不应立即显示，否则用户移动光标时会误触发大量提示；但增加固定延迟后，在相邻多个触发元素间移动又会让每次悬停都等待，影响体验。作者提出一个三步骤模式：悬停后等待200毫秒才打开提示；提示关闭后启动300毫秒“温窗口”冷却计时器，若在此期间悬停到另一个触发元素，则工具提示立即打开且跳过动画；若冷却结束，则页面恢复“冷”状态，下次悬停仍需等待200毫秒。实现上通过一个共享的Provider维护warm状态，利用ref避免重渲染，并在事件处理器中读写。200毫秒是平衡值：低于150毫秒易误触，高于250毫秒感觉拖沓。文章还强调人工判断和品味的重要性，并提供了一个Claude技能示例，用于审计代码库中的工具提示时序。"
+  },
+  {
+    "id": "49439535",
+    "title": "Perplexity Portable Computer",
+    "url": "https://www.perplexity.ai/hub/blog/introducing-portable-computer-for-local-first-ai",
     "summary": "摘要：无法访问该文章链接",
-    "chinese_title": "Show HN：GlassBox——浏览器暴露了什么，你的可识别性有多高",
+    "chinese_title": "Perplexity便携式电脑：本地优先AI",
     "chinese_summary": "摘要：无法访问该文章链接"
   },
   {
-    "id": "49421554",
-    "title": "Coding expertise is going to collapse from AI reliance",
-    "url": "https://larsfaye.com/articles/ai-coding-will-prevent-expertise",
-    "summary": "文章指出，AI编程工具的普及可能引发编程专业能力的“崩塌”。当前AI辅助开发的最大受益者多为经验丰富的老手，而新手被鼓励依赖这些工具，却缺乏驾驭它们所需的判断力，形成“熟练专家悖论”：工具既需要专业能力，又会消解培养专业能力的必要摩擦。研究（如JetBrains引用的研究、宾大2025年研究、Anthropic 2026年研究）表明，过度依赖AI生成代码的初学者往往跳过规划步骤，产生“能力幻觉”，实际学习和测试表现反而更差；而适当忽略AI建议、亲历问题解决过程的初学者收获更大。认知负荷转移给AI，心智模型和“工程直觉”无法建立。作者认为，编程专业技能需通过试错和阻力来培养，AI应作为苏格拉底式陪练或互动文档，而非单纯的代码生成器。他提出“摩擦优先”原则，并给出自查清单：没有AI能否完成任务？是否加深理解？能否验证输出？是否多方查证？区分机械性任务与需要判断的任务。简言之，关键在于把AI当作学习伙伴而非答案机器。",
-    "chinese_title": "AI依赖将导致编程专业能力崩塌",
-    "chinese_summary": "文章指出，AI编程工具的普及可能引发编程专业能力的“崩塌”。当前AI辅助开发的最大受益者多为经验丰富的老手，而新手被鼓励依赖这些工具，却缺乏驾驭它们所需的判断力，形成“熟练专家悖论”：工具既需要专业能力，又会消解培养专业能力的必要摩擦。研究（如JetBrains引用的研究、宾大2025年研究、Anthropic 2026年研究）表明，过度依赖AI生成代码的初学者往往跳过规划步骤，产生“能力幻觉”，实际学习和测试表现反而更差；而适当忽略AI建议、亲历问题解决过程的初学者收获更大。认知负荷转移给AI，心智模型和“工程直觉”无法建立。作者认为，编程专业技能需通过试错和阻力来培养，AI应作为苏格拉底式陪练或互动文档，而非单纯的代码生成器。他提出“摩擦优先”原则，并给出自查清单：没有AI能否完成任务？是否加深理解？能否验证输出？是否多方查证？区分机械性任务与需要判断的任务。简言之，关键在于把AI当作学习伙伴而非答案机器。"
+    "id": "49436706",
+    "title": "Fuzzing the Gleam Compiler",
+    "url": "https://www.kurz.net/posts/fuzzing-gleam-compiler",
+    "summary": "摘要：本文介绍作者对 Gleam 编译器进行结构感知模糊测试的实践。作者受限于传统随机字节模糊测试的不足，决定构建生成式测试工具，利用 Gleam 编译器同时支持 Erlang 和 JavaScript 两个目标的特点，通过对比同一程序在两个平台上的执行结果来发现代码生成错误。第一阶段针对解析器，使用 libFuzzer 快速生成随机输入，成功发现了一个 nightly 回归：`const b = 1 |> 2` 中的管道符导致解析器 panic。第二阶段构建“smith”生成类型安全的 Gleam 程序，通过概率组合合法表达式产生大量怪异的但可编译的程序，再比较双目标输出是否一致。作者还提到 LLM 模糊测试成本高且不确定，仅找到一个已修复的问题。文章引用了 Nick Fitzgerald 关于测试用例生成器的文章，并指出未来可能尝试基于变异的模糊测试。整体而言，结构感知模糊测试是发现编译器边缘用例的有效手段，但仍有局限性。",
+    "chinese_title": "模糊测试 Gleam 编译器",
+    "chinese_summary": "摘要：本文介绍作者对 Gleam 编译器进行结构感知模糊测试的实践。作者受限于传统随机字节模糊测试的不足，决定构建生成式测试工具，利用 Gleam 编译器同时支持 Erlang 和 JavaScript 两个目标的特点，通过对比同一程序在两个平台上的执行结果来发现代码生成错误。第一阶段针对解析器，使用 libFuzzer 快速生成随机输入，成功发现了一个 nightly 回归：`const b = 1 |> 2` 中的管道符导致解析器 panic。第二阶段构建“smith”生成类型安全的 Gleam 程序，通过概率组合合法表达式产生大量怪异的但可编译的程序，再比较双目标输出是否一致。作者还提到 LLM 模糊测试成本高且不确定，仅找到一个已修复的问题。文章引用了 Nick Fitzgerald 关于测试用例生成器的文章，并指出未来可能尝试基于变异的模糊测试。整体而言，结构感知模糊测试是发现编译器边缘用例的有效手段，但仍有局限性。"
   },
   {
-    "id": "49420530",
-    "title": "Peppermint oil reduces blood pressure by 8.48 mmHg in small study",
-    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0344538",
-    "summary": "摘要：高血压是全球心血管疾病发病和死亡的主要危险因素，药物治疗虽常用但长期效果不明且存在不良反应。本研究旨在探讨每日两次补充薄荷油对高血压前期及1期高血压患者的影响。该试验为20天平行随机安慰剂对照试验（NCT05561543），共纳入40名受试者，随机接受每日100 μL薄荷油或薄荷风味安慰剂。主要结局为收缩压从基线至20天的组间差异。结果显示，薄荷油组收缩压调整后显著低于安慰剂组，组间差异为−8.48 mmHg（95% CI：−14.24至−2.73，效应量d=−0.94）；薄荷油组收缩压由基线130.05 mmHg降至121.97 mmHg，安慰剂组基本不变（130.93至131.05 mmHg）。失访（1例）和不良事件（1例）均低，且发生在薄荷油组；依从性高（93.3%）。研究表明，每日两次薄荷油补充可能是一种简单、低成本且耐受良好的辅助降压策略，有助于改善该人群的血压水平。该试验已在ClinicalTrials.gov注册（NCT05561543），并发表于PLoS One。",
-    "chinese_title": "小型研究表明薄荷油可使血压降低8.48 mmHg",
-    "chinese_summary": "摘要：高血压是全球心血管疾病发病和死亡的主要危险因素，药物治疗虽常用但长期效果不明且存在不良反应。本研究旨在探讨每日两次补充薄荷油对高血压前期及1期高血压患者的影响。该试验为20天平行随机安慰剂对照试验（NCT05561543），共纳入40名受试者，随机接受每日100 μL薄荷油或薄荷风味安慰剂。主要结局为收缩压从基线至20天的组间差异。结果显示，薄荷油组收缩压调整后显著低于安慰剂组，组间差异为−8.48 mmHg（95% CI：−14.24至−2.73，效应量d=−0.94）；薄荷油组收缩压由基线130.05 mmHg降至121.97 mmHg，安慰剂组基本不变（130.93至131.05 mmHg）。失访（1例）和不良事件（1例）均低，且发生在薄荷油组；依从性高（93.3%）。研究表明，每日两次薄荷油补充可能是一种简单、低成本且耐受良好的辅助降压策略，有助于改善该人群的血压水平。该试验已在ClinicalTrials.gov注册（NCT05561543），并发表于PLoS One。"
+    "id": "49423878",
+    "title": "Visualizing Binary Files",
+    "url": "https://movq.de/blog/postings/2026-08-05/0/POSTING-en.html",
+    "summary": "摘要：本文介绍了作者在自制十六进制编辑器bine中实现二进制文件可视化功能的探索。起初，作者受到Vim xxd彩色输出的启发，尝试在bine中引入颜色高亮，但受限于Python与ncurses调用开销及movwin框架的调色板复杂度，最终放弃逐字节着色方案，改为在ASCII列使用特殊字符（如▓表示NUL字节，░表示非可打印字符）实现低成本可视化。此外，作者还提出一种宏观可视化方法：将整个二进制文件直接映射为PGM灰度图像，即通过一行命令将文件字节转为像素，无需预处理，仅需确定合适的图像宽度。文中以GORILLAS.BAS的EXE文件为例，展示了代码区、数据区、文本区的视觉差异；还展示了tarball、ruff二进制、ISO镜像及磁盘镜像的可视化效果。该方法简单高效，创建690MB文件的PGM仅需0.2秒，但处理超大文件（如4GB）时受限于ImageMagick内存开销，作者建议通过分块迭代缩放解决，尚未实现。总体而言，这种直接映射的可视化方式能快速识别文件结构，已满足作者日常需求。",
+    "chinese_title": "可视化二进制文件",
+    "chinese_summary": "摘要：本文介绍了作者在自制十六进制编辑器bine中实现二进制文件可视化功能的探索。起初，作者受到Vim xxd彩色输出的启发，尝试在bine中引入颜色高亮，但受限于Python与ncurses调用开销及movwin框架的调色板复杂度，最终放弃逐字节着色方案，改为在ASCII列使用特殊字符（如▓表示NUL字节，░表示非可打印字符）实现低成本可视化。此外，作者还提出一种宏观可视化方法：将整个二进制文件直接映射为PGM灰度图像，即通过一行命令将文件字节转为像素，无需预处理，仅需确定合适的图像宽度。文中以GORILLAS.BAS的EXE文件为例，展示了代码区、数据区、文本区的视觉差异；还展示了tarball、ruff二进制、ISO镜像及磁盘镜像的可视化效果。该方法简单高效，创建690MB文件的PGM仅需0.2秒，但处理超大文件（如4GB）时受限于ImageMagick内存开销，作者建议通过分块迭代缩放解决，尚未实现。总体而言，这种直接映射的可视化方式能快速识别文件结构，已满足作者日常需求。"
   },
   {
-    "id": "49415271",
-    "title": "Executable Is a SQLite Database",
-    "url": "https://fzakaria.com/2026/08/23/your-executable-is-a-sqlite-database",
-    "summary": "摘要：作者探讨用SQLite数据库取代ELF作为可执行文件格式的激进想法，并实现了原型SELF（Structured Executable & Linkable Format）。作者认为ELF本身就是一个手工实现的数据库，而SQLite作为自描述、稳定且可扩展的格式，能更优雅地表示可执行文件所需信息。SELF文件包含segments和symbols等表，通过SQLite的application_id标记\"SELF\"，并利用Linux的binfmt_misc机制注册解释器来直接运行。动态链接可通过glibc的rtld-audit接口用SQL查询替代库搜索，或完全用SQL实现动态链接器。相比ELF，SELF文件体积约为两倍，但剥离调试信息后接近ELF；启动有约5ms固定开销，且进程间不共享文本页。更引人注目的是，SELF可将整个程序闭包含入单个数据库，甚至将整个用户land（723个可执行文件、400个库、346386个符号）打包成一个611.9MiB的数据库，比原始ELF文件总量更小。作者认为这种方案能简化工具链，将strip变为事务，patchelf变为UPDATE，并实现依赖关系的确定性解析。",
-    "chinese_title": "可执行文件是SQLite数据库",
-    "chinese_summary": "摘要：作者探讨用SQLite数据库取代ELF作为可执行文件格式的激进想法，并实现了原型SELF（Structured Executable & Linkable Format）。作者认为ELF本身就是一个手工实现的数据库，而SQLite作为自描述、稳定且可扩展的格式，能更优雅地表示可执行文件所需信息。SELF文件包含segments和symbols等表，通过SQLite的application_id标记\"SELF\"，并利用Linux的binfmt_misc机制注册解释器来直接运行。动态链接可通过glibc的rtld-audit接口用SQL查询替代库搜索，或完全用SQL实现动态链接器。相比ELF，SELF文件体积约为两倍，但剥离调试信息后接近ELF；启动有约5ms固定开销，且进程间不共享文本页。更引人注目的是，SELF可将整个程序闭包含入单个数据库，甚至将整个用户land（723个可执行文件、400个库、346386个符号）打包成一个611.9MiB的数据库，比原始ELF文件总量更小。作者认为这种方案能简化工具链，将strip变为事务，patchelf变为UPDATE，并实现依赖关系的确定性解析。"
+    "id": "49437361",
+    "title": "Show HN: Lightweight system monitor for Linux VPS written in Go",
+    "url": "https://github.com/leodeim/vpsmon",
+    "summary": "摘要：vpsmon 是一款面向 Linux VPS 的轻量级系统监控工具，以单个 Go 二进制文件分发，运行内存仅约 5MB。它可监控 CPU、内存、交换分区、磁盘、网络、运行时间和进程数，并提供带登录认证的 Web UI，每 5 秒自动刷新。安装与卸载均通过 curl 管道执行官方脚本完成。程序支持通过环境变量配置监听地址（默认 :8088）、Web UI 用户名（默认 admin）以及密码的 bcrypt 哈希（默认对应 “changeme”）。该工具适合资源受限的 VPS 环境，强调低占用和简单部署。",
+    "chinese_title": "Show HN：用Go编写的Linux VPS轻量级系统监控工具",
+    "chinese_summary": "摘要：vpsmon 是一款面向 Linux VPS 的轻量级系统监控工具，以单个 Go 二进制文件分发，运行内存仅约 5MB。它可监控 CPU、内存、交换分区、磁盘、网络、运行时间和进程数，并提供带登录认证的 Web UI，每 5 秒自动刷新。安装与卸载均通过 curl 管道执行官方脚本完成。程序支持通过环境变量配置监听地址（默认 :8088）、Web UI 用户名（默认 admin）以及密码的 bcrypt 哈希（默认对应 “changeme”）。该工具适合资源受限的 VPS 环境，强调低占用和简单部署。"
   },
   {
-    "id": "49419351",
-    "title": "Show HN: A techno machine in one HTML file, with verifiable renders",
-    "url": "https://ssx360.github.io/rack-02/?src=hn",
-    "summary": "摘要：该作品名为RACK-02，是一个完全封装在单个HTML文件中的电子音乐机器。它利用网页技术生成 techno 风格的音乐节奏与音色，无需任何外部依赖或服务器。其核心亮点在于“可验证渲染”，即用户可通过确定性算法重现相同的音频输出，便于核对与复现。项目展示了如何用紧凑代码实现合成器、音序器及效果处理，并兼顾实时交互与视觉反馈。适合对网页音频编程和创意编码感兴趣的开发者参考。",
-    "chinese_title": "Show HN：单HTML文件实现的电子音乐机器，渲染结果可验证",
-    "chinese_summary": "摘要：该作品名为RACK-02，是一个完全封装在单个HTML文件中的电子音乐机器。它利用网页技术生成 techno 风格的音乐节奏与音色，无需任何外部依赖或服务器。其核心亮点在于“可验证渲染”，即用户可通过确定性算法重现相同的音频输出，便于核对与复现。项目展示了如何用紧凑代码实现合成器、音序器及效果处理，并兼顾实时交互与视觉反馈。适合对网页音频编程和创意编码感兴趣的开发者参考。"
+    "id": "49435641",
+    "title": "Behaviorally fingerprinting Ox Alpha's provenance",
+    "url": "https://www.ctgt.ai/research/behaviorally-fingerprinting-ox-alphas-provenance",
+    "summary": "摘要：本文通过行为分析手段，判定神秘模型Ox Alpha（8月20日现身OpenRouter）很可能源自GLM-5系列。研究者使用自研的LineageEval配对审查工具对该模型进行检测，发现其审查模式呈现“开关式”而非“渐进式”：在76个敏感主题中，仅7个国内政治敏感主题（如国内事件、习近平）触发高审查，其余主题（如新疆、台湾）回答内容与OpenAI等美国模型几乎一致。Ox Alpha在敏感话题上的整体审查强度约为DeepSeek V4 Flash的六分之一，但在国内合法性相关话题上与DeepSeek相当。模型部分回答使用中国政府官方口径，强化了其中国模型来源的判断。指纹分析方面，通过提示词token计数比对，发现其词汇表与GLM-5.x高度吻合（11/11完全匹配），且接口参数特征（温度上限1.0、强制推理、支持视觉与1M上下文）均与智谱AI的GLM-5思维模型一致，响应报错格式也与Z.AI托管模型相同。模型系统提示词明确要求不得透露来源。文章认为，传统以西藏、台湾等国际关注话题为主的审查审计无法识别该模型的审查倾向，其审查集中于国内政治风险领域，提示评估中国模型时需扩展测试维度。",
+    "chinese_title": "行为指纹识别Ox Alpha的来源与审查特征",
+    "chinese_summary": "摘要：本文通过行为分析手段，判定神秘模型Ox Alpha（8月20日现身OpenRouter）很可能源自GLM-5系列。研究者使用自研的LineageEval配对审查工具对该模型进行检测，发现其审查模式呈现“开关式”而非“渐进式”：在76个敏感主题中，仅7个国内政治敏感主题（如国内事件、习近平）触发高审查，其余主题（如新疆、台湾）回答内容与OpenAI等美国模型几乎一致。Ox Alpha在敏感话题上的整体审查强度约为DeepSeek V4 Flash的六分之一，但在国内合法性相关话题上与DeepSeek相当。模型部分回答使用中国政府官方口径，强化了其中国模型来源的判断。指纹分析方面，通过提示词token计数比对，发现其词汇表与GLM-5.x高度吻合（11/11完全匹配），且接口参数特征（温度上限1.0、强制推理、支持视觉与1M上下文）均与智谱AI的GLM-5思维模型一致，响应报错格式也与Z.AI托管模型相同。模型系统提示词明确要求不得透露来源。文章认为，传统以西藏、台湾等国际关注话题为主的审查审计无法识别该模型的审查倾向，其审查集中于国内政治风险领域，提示评估中国模型时需扩展测试维度。"
   },
   {
-    "id": "49415893",
-    "title": "FDA clears blood test to aid evaluation for Alzheimer's disease",
-    "url": "https://medicine.washu.edu/news/fda-clears-blood-test-to-aid-evaluation-for-alzheimers-disease/",
-    "summary": "美国食品药品监督管理局（FDA）已批准一款创新血液检测产品上市，用于辅助诊断阿尔茨海默病。该技术源自圣路易斯华盛顿大学医学院，由该校初创公司C2N Diagnostics开发，名为PrecivityAD2。该检测通过高分辨率质谱法测量血液中淀粉样蛋白（Aβ42/Aβ40）和tau蛋白（p-tau217/total tau217）的比值，以判断大脑中是否存在与阿尔茨海默病相关的淀粉样斑块，准确率超过90%，与脑脊液检测和脑部扫描相当，且更具微创性。早期发现对阿尔茨海默病至关重要，因为近期已有能减缓病程的药物上市，且越早用药效果越好。FDA的批准意味着该检测经过严格评估，可更广泛地推向临床，并可能促进保险覆盖，提高可及性和 affordability。该技术源于Randall Bateman和David Holtzman教授团队的基础研究，两人于2007年共同创立C2N公司并推动技术商业化。华盛顿大学技术管理办公室协助专利申请，学校与C2N的持续合作加速了产品上市。C2N目前拥有120多名员工，正在扩展其位于圣路易斯Cortex创新区的总部。",
-    "chinese_title": "FDA批准血液检测辅助阿尔茨海默病评估",
-    "chinese_summary": "美国食品药品监督管理局（FDA）已批准一款创新血液检测产品上市，用于辅助诊断阿尔茨海默病。该技术源自圣路易斯华盛顿大学医学院，由该校初创公司C2N Diagnostics开发，名为PrecivityAD2。该检测通过高分辨率质谱法测量血液中淀粉样蛋白（Aβ42/Aβ40）和tau蛋白（p-tau217/total tau217）的比值，以判断大脑中是否存在与阿尔茨海默病相关的淀粉样斑块，准确率超过90%，与脑脊液检测和脑部扫描相当，且更具微创性。早期发现对阿尔茨海默病至关重要，因为近期已有能减缓病程的药物上市，且越早用药效果越好。FDA的批准意味着该检测经过严格评估，可更广泛地推向临床，并可能促进保险覆盖，提高可及性和 affordability。该技术源于Randall Bateman和David Holtzman教授团队的基础研究，两人于2007年共同创立C2N公司并推动技术商业化。华盛顿大学技术管理办公室协助专利申请，学校与C2N的持续合作加速了产品上市。C2N目前拥有120多名员工，正在扩展其位于圣路易斯Cortex创新区的总部。"
+    "id": "49436400",
+    "title": "Run Minecraft in a Windows sandbox for computer use agents",
+    "url": "https://cua.ai/docs/how-to-guides/sandbox/minecraft",
+    "summary": "摘要：本文介绍如何在Windows沙箱中安装并运行Minecraft Java版，并通过cua-driver的MCP服务器驱动AI代理操控游戏。关键步骤：使用cua-sandbox 0.3.3+创建Windows Server 2022沙箱，暴露3000端口，附加第二个不受限网卡以提供网络，并以-cpu host提升CPU兼容性；安装MinGW版Prism Launcher和Mesa3D软件OpenGL驱动（llvmpipe），因沙箱默认显卡仅支持OpenGL 1.1；通过Microsoft设备代码授权登录；将Mesa DLL复制到javaw.exe所在目录解决GLFW错误。代理循环通过MCP工具（如get_desktop_state、click、type_text）操作，注意YAML策略会拒绝未授权工具，点击需指定pid，且无wait工具需反复截图观察。",
+    "chinese_title": "在Windows沙箱中运行Minecraft以供计算机使用代理操作",
+    "chinese_summary": "摘要：本文介绍如何在Windows沙箱中安装并运行Minecraft Java版，并通过cua-driver的MCP服务器驱动AI代理操控游戏。关键步骤：使用cua-sandbox 0.3.3+创建Windows Server 2022沙箱，暴露3000端口，附加第二个不受限网卡以提供网络，并以-cpu host提升CPU兼容性；安装MinGW版Prism Launcher和Mesa3D软件OpenGL驱动（llvmpipe），因沙箱默认显卡仅支持OpenGL 1.1；通过Microsoft设备代码授权登录；将Mesa DLL复制到javaw.exe所在目录解决GLFW错误。代理循环通过MCP工具（如get_desktop_state、click、type_text）操作，注意YAML策略会拒绝未授权工具，点击需指定pid，且无wait工具需反复截图观察。"
   },
   {
-    "id": "49420592",
-    "title": "Hot Chips 2026: Applying High Bandwidth Flash (HBF)",
-    "url": "https://chipsandcheese.com/p/hot-chips-2026-applying-high-bandwidth",
-    "summary": "摘要：文章探讨了高带宽闪存（HBF）在机器学习负载中的应用前景。HBF采用与HBM类似的封装形式，但底层是闪存技术，容量远高于HBM，带宽尚可，但访问方式类似块存储设备，需通过DMA进行大块对齐读写，并需软件承担SSD控制器功能。目前尚无HBF产品，讨论基于模拟与预测。在软件适配方面，以vLLM为例，可将MoE专家模型或KV缓存放入HBF，但需结合稀疏注意力等策略，并处理顺序读偏好。HBF还可通过跨GPU复制权重减少设备间通信开销。成本上，HBF适合未达到带宽瓶颈的工作负载，如小模型或小批量场景；若带宽受限，则成本劣势明显。文章认为HBF的软件挑战巨大，类似使用O_DIRECT或FILE_FLAG_NO_BUFFERING的低层磁盘访问，现有框架需大规模改造。作者质疑其比直接从SSD流式加载模型权重更容易，并怀疑HBF能否缓解DRAM短缺。",
-    "chinese_title": "Hot Chips 2026：应用高带宽闪存（HBF）",
-    "chinese_summary": "摘要：文章探讨了高带宽闪存（HBF）在机器学习负载中的应用前景。HBF采用与HBM类似的封装形式，但底层是闪存技术，容量远高于HBM，带宽尚可，但访问方式类似块存储设备，需通过DMA进行大块对齐读写，并需软件承担SSD控制器功能。目前尚无HBF产品，讨论基于模拟与预测。在软件适配方面，以vLLM为例，可将MoE专家模型或KV缓存放入HBF，但需结合稀疏注意力等策略，并处理顺序读偏好。HBF还可通过跨GPU复制权重减少设备间通信开销。成本上，HBF适合未达到带宽瓶颈的工作负载，如小模型或小批量场景；若带宽受限，则成本劣势明显。文章认为HBF的软件挑战巨大，类似使用O_DIRECT或FILE_FLAG_NO_BUFFERING的低层磁盘访问，现有框架需大规模改造。作者质疑其比直接从SSD流式加载模型权重更容易，并怀疑HBF能否缓解DRAM短缺。"
+    "id": "49435781",
+    "title": "Warnock: Harnessing GPU geometry amplification for vector graphics",
+    "url": "https://dl.acm.org/doi/pdf/10.1145/3820012",
+    "summary": "摘要：无法访问该文章链接",
+    "chinese_title": "Warnock：利用GPU几何放大实现矢量图形",
+    "chinese_summary": "摘要：无法访问该文章链接"
   },
   {
-    "id": "49420556",
-    "title": "Codefloe Is a Professionally Hosted Public Git Forge",
-    "url": "https://codefloe.com/",
+    "id": "49432786",
+    "title": "Solving the 1+N Query Problem",
+    "url": "https://acadia.engineering/blog/solving-the-1-plus-N-query-problem",
     "summary": "无法访问该文章链接",
-    "chinese_title": "Codefloe 是一个专业托管的公共 Git 平台",
+    "chinese_title": "解决1+N查询问题",
     "chinese_summary": "无法访问该文章链接"
-  },
-  {
-    "id": "49422204",
-    "title": "A Blackstone real estate company exposed SSN digits, DOBs, addresses and more",
-    "url": "https://alexschapiro.com/security/vulnerability/2026/07/16/beam-living-graphql-data-exposure",
-    "summary": "摘要：一用户在申请Blackstone旗下Beam Living的租房时，通过浏览器开发者工具发现其GraphQL接口存在越权漏洞。该接口通过邮箱即可查询任意申请人的完整个人信息，包括社保号末四位、信用评分、出生日期、家庭住址、IP地址、电话等，影响覆盖8 Spruce、StuyTown等多个社区的所有申请者。用户测试确认漏洞后多次联系Beam Living披露，但对方数周未回应，直至电话沟通后漏洞被静默修复。披露过程不顺畅，公司未按负责任流程回应，用户最终决定公开此事。",
-    "chinese_title": "黑石旗下房地产公司泄露社保号末四位、出生日期、地址等敏感信息",
-    "chinese_summary": "摘要：一用户在申请Blackstone旗下Beam Living的租房时，通过浏览器开发者工具发现其GraphQL接口存在越权漏洞。该接口通过邮箱即可查询任意申请人的完整个人信息，包括社保号末四位、信用评分、出生日期、家庭住址、IP地址、电话等，影响覆盖8 Spruce、StuyTown等多个社区的所有申请者。用户测试确认漏洞后多次联系Beam Living披露，但对方数周未回应，直至电话沟通后漏洞被静默修复。披露过程不顺畅，公司未按负责任流程回应，用户最终决定公开此事。"
-  },
-  {
-    "id": "49420861",
-    "title": "Could We Dredge the Netherlands Without Fossil Fuels? (2018)",
-    "url": "https://solar.lowtechmagazine.com/2018/08/could-we-dredge-the-netherlands-without-fossil-fuels",
-    "summary": "摘要：疏浚业几个世纪以来一直是荷兰经济的支柱。若运河、港口和河流多年不维护，整个国家将陷入停滞。如今疏浚依靠燃油船舶，最大型挖泥船每小时消耗多达3000升燃油。为维护荷兰水道，每年需疏浚约3000至3500万立方米泥沙，其中鹿特丹港就占2000万立方米。在化石燃料出现前，荷兰长期使用人力疏浚：工人站在小船上用“疏浚袋”刮挖河底淤泥，大型工程甚至动用数千名工人。16世纪出现由人力驱动的“疏浚磨坊”，后因船舶加深而改用马拉驱动，1829年时3至6匹马每小时可挖约20立方米泥沙，而现代挖泥船每分钟可挖100立方米，相当于300台马拉疏浚磨坊。荷兰人也利用风能和潮汐：15世纪起，一种带帆和铁齿耙的“刮泥船”借助潮汐水流和风力冲刷港口底部。除了疏浚，也有替代方案：加高河堤让水位上升；弗里斯兰省则建造吃水极浅的“斯库特船”，减少疏浚需求。文章通过手工疏浚实验探讨未来无化石燃料疏浚的可能性，并提及太阳能疏浚船等设想，但面临规模与季节限制。",
-    "chinese_title": "不用化石燃料，我们能疏浚荷兰吗？（2018）",
-    "chinese_summary": "摘要：疏浚业几个世纪以来一直是荷兰经济的支柱。若运河、港口和河流多年不维护，整个国家将陷入停滞。如今疏浚依靠燃油船舶，最大型挖泥船每小时消耗多达3000升燃油。为维护荷兰水道，每年需疏浚约3000至3500万立方米泥沙，其中鹿特丹港就占2000万立方米。在化石燃料出现前，荷兰长期使用人力疏浚：工人站在小船上用“疏浚袋”刮挖河底淤泥，大型工程甚至动用数千名工人。16世纪出现由人力驱动的“疏浚磨坊”，后因船舶加深而改用马拉驱动，1829年时3至6匹马每小时可挖约20立方米泥沙，而现代挖泥船每分钟可挖100立方米，相当于300台马拉疏浚磨坊。荷兰人也利用风能和潮汐：15世纪起，一种带帆和铁齿耙的“刮泥船”借助潮汐水流和风力冲刷港口底部。除了疏浚，也有替代方案：加高河堤让水位上升；弗里斯兰省则建造吃水极浅的“斯库特船”，减少疏浚需求。文章通过手工疏浚实验探讨未来无化石燃料疏浚的可能性，并提及太阳能疏浚船等设想，但面临规模与季节限制。"
-  },
-  {
-    "id": "49390993",
-    "title": "Show HN: A puzzle I couldn't solve for a year – cubers cracked it in an hour",
-    "url": "https://skimmiq.com/pt/",
-    "summary": "无法访问该文章链接",
-    "chinese_title": "Show HN：一个我一年没解开的谜题——魔方玩家一小时内破解",
-    "chinese_summary": "无法访问该文章链接"
-  },
-  {
-    "id": "49423077",
-    "title": "Agent Lightning v1.0",
-    "url": "https://github.com/microsoft/agent-lightning/releases/tag/v1.0.1",
-    "summary": "摘要：Agent Lightning v1.0 是微软发布的智能体优化技能首个正式版本。该技能帮助编程智能体优化其他 AI 智能体：用户提供可编辑的智能体与基准测试，技能将引导系统化改进提示词、工具、工作流、模型及推理设置，通过可测量的迭代在准确性、成本、延迟和可靠性之间取得平衡。该版本支持安装到 Claude Code、Codex 或 GitHub Copilot，安装命令为 `gh skill install microsoft/agent-lightning agent-lightning --agent <agent>`。同时，此版本加强了 CI、打包、发布自动化、文档和基准报告等功能。发布者为 ultmaster，于 8 月 24 日发布，附带已签名的提交与两个资源文件。",
-    "chinese_title": "智能体闪电 v1.0",
-    "chinese_summary": "摘要：Agent Lightning v1.0 是微软发布的智能体优化技能首个正式版本。该技能帮助编程智能体优化其他 AI 智能体：用户提供可编辑的智能体与基准测试，技能将引导系统化改进提示词、工具、工作流、模型及推理设置，通过可测量的迭代在准确性、成本、延迟和可靠性之间取得平衡。该版本支持安装到 Claude Code、Codex 或 GitHub Copilot，安装命令为 `gh skill install microsoft/agent-lightning agent-lightning --agent <agent>`。同时，此版本加强了 CI、打包、发布自动化、文档和基准报告等功能。发布者为 ultmaster，于 8 月 24 日发布，附带已签名的提交与两个资源文件。"
   }
 ]
