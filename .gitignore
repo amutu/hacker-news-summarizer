@@ -6,7 +6,10 @@ venv/
 .idea/
 .DS_Store
 hn-venv
+start.*
 start.sh
+start_ollama.sh
+start_ollama.sh~
 start.sh~
 start_tmpl.sh
 start_tmpl.sh~
