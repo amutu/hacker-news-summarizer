@@ -1,0 +1,304 @@
+# Hacker News 热门文章摘要 (2026-08-30)
+
+这是今日 [Hacker News](https://news.ycombinator.com/) 上最热门的文章摘要。
+
+## 1. 互联网如今已沦为掠夺性的污水坑
+
+**原文标题**: The Internet Is Kind of a Predatory Cesspit Now
+
+**原文链接**: [https://www.stephendiehl.com/posts/internet_predatory_cesspit/](https://www.stephendiehl.com/posts/internet_predatory_cesspit/)
+
+作者以九十年代早期互联网为对照，指出当今网络已从爱好者搭建的公共广场，沦为以掠夺为核心原则的机器：系统精准检测人类脆弱性、放大情绪、植入支付链接，将消费者变为推销员，将受害者编入金字塔结构。成瘾本身即是商业模式——算法以交替的愤怒、恐惧与欲望维持留存，而掠夺经济必须永久制造焦虑以获取持续收入，合法需求一旦满足便不再产生交易。平台推荐系统本质是强化学习回路，威胁性内容永远压过诚实内容。加密货币被视为这一结构的集大成者，形成推广带动价格、价格证明采用的自循环传销。大语言模型更将虚假内容的生产成本降至零。作者同时指出，不能仅以鄙视为回应——就业不稳、住房困局、制度性孤独构成骗局滋生的土壤，"逃脱"的承诺往往复现了当初的困境。最终，作者呼吁将网络视为有边界的工具而非无尽的信息流，物理世界的"摩擦力"——对话会结束、朋友会厌烦——是抵御无限欲望的最后防线。让不透明算法决定人生意义，是最大的骗局。
+
+---
+
+## 2. 腾讯发布并开源混元Hy4 Preview大模型
+
+**原文标题**: Tencent Releases and Open-Sources Tencent Hy4 Preview
+
+**原文链接**: [https://www.tencent.com/tencent-releases-and-open-sources-tencent-hy4-preview/](https://www.tencent.com/tencent-releases-and-open-sources-tencent-hy4-preview/)
+
+腾讯发布并开源新一代大模型混元Hy4 Preview，拥有770B总参数（49B激活参数），上下文窗口超百万tokens，在编程、办公、科研等真实生产力场景中表现优异，跻身顶级开源模型行列。该模型已接入WorkBuddy、CodeBuddy、元宝等平台，支持通过腾讯云TokenHub和OpenRouter调用API，上线两周免费。在163位专家参与的盲评中，Hy4 Preview以2.99分（满分4分）略胜GLM-5.3与Kimi K3。模型在软件工程长上下文开发、金融分析、跨文档协作、游戏原型自动生成及分子动力学等科研前沿领域均有显著提升。值得关注的是，Hy4 Preview首次参与自身训练方法与数据策略的优化，构建早期递归自改进循环，并自主完成推理系统调优，端到端吞吐量提升31.8%。API定价为输入0.834美元、输出2.501美元、缓存0.042美元（每百万tokens）。腾讯将持续以"预览优先"策略迭代，Hy4系列后续模型即将推出。
+
+---
+
+## 3. 先校准，再加速：新岗位中的行动力之道
+
+**原文标题**: Calibrate Before You Accelerate: Bias Toward Action in a New Role
+
+**原文链接**: [https://tucker.wales/writing/bias-towards-action/](https://tucker.wales/writing/bias-towards-action/)
+
+进入新公司时，急于证明自己的冲动几乎不可避免，但行动若缺乏上下文，不过是在制造噪声。作者提出，真正的行动力应建立在充分的情报基础上，并将适应过程分为三个阶段：第一阶段为"收集期"，核心是倾听——主动识别干系人、观察团队动态，运用"切斯特顿栅栏"原则理解既有流程的由来，通过研读历史文档、观察同事与开展一对一访谈完成信息积累。第二阶段为"综合期"，是连接与分类的过程——将不同干系人独立提及的痛点关联起来，区分可快速兑现的低风险小胜与需长期布局的系统性问题。第三阶段为"战略加速期"，强调从小处切入、先帮他人解决具体问题以积累信任，重大行动前先以"一页纸假设"征求反馈，并逐步将工作重心从九成倾听过渡到八成行动。文章最终指出，这并非要求迟缓，而是确保每一次发力都精准作用于真正需要被推动之处。面对新环境，暂缓挥锤，先读懂蓝图。
+
+---
+
+## 4. Warp在Claude上构建自我进化智能体
+
+**原文标题**: Warp builds self-improving agents on Claude
+
+**原文链接**: [https://claude.com/blog/how-warp-builds-self-improving-agents-on-claude](https://claude.com/blog/how-warp-builds-self-improving-agents-on-claude)
+
+摘要：Warp是AI终端与智能体开发环境，基于Claude Platform构建。其内部代码审查智能体初期表现不佳，核心痛点在于：用户反馈随会话结束而消失，智能体无法从中学习。Warp由此设计了基于Agent Skills的自我改进循环：内层"基础技能"承载领域知识、执行具体任务（如代码审查、issue分类）；外层"改进技能"作为定时运行的观察代理，汇总人类反馈（如PR评论中的具体纠偏），对比智能体输出与人类期望，向基础技能提出最小化编辑。由于技能以纯文件形式存在，更新可走标准PR审核流程，人工批准后合入，下次执行即继承改进，形成闭合回路。Warp现已将此模式扩展至整个开源仓库，涵盖规范编写、代码审查和issue分诊等多个智能体。团队分享了关键实践：技能文件应写原则而非穷举规则、解释"为什么"以增强泛化；反馈采集须低摩擦、嵌入工作流；优先追求反馈质量而非数量；改进技能本身高度可复用。此外，需区分技能（程序性、稳定）与记忆（实时变更），并对错误反馈设置过滤与人工终审机制，以保障系统可靠进化。
+
+---
+
+## 5. Tether：在 Linux 上实现 iMessage、短信与跨设备互通
+
+**原文标题**: Tether: iMessage, SMS, etc. on Linux
+
+**原文链接**: [https://zackbartel.com/blog/2026/08/tether/](https://zackbartel.com/blog/2026/08/tether/)
+
+摘要：作者从 macOS 转至 Linux 后，发现 Apple"连续性"功能（iMessage、短信、文件共享、剪贴板同步、通知推送及 OTP 自动填充）在 Linux 上完全缺失，尤其缺少验证码自动填入登录框的体验。为此，他开发了 Tether 项目，目标是覆盖所有技术上可行的连续性能力，区别于 KDE Connect 等 Android 方案。项目从剪贴板同步起步，逐步加入文件传输；OTP 功能则借助支持 WebExtensions 的 Zen 浏览器和 Betterbird 邮箱客户端，通过浏览器与邮件扩展自动识别并填入验证码。最核心的突破在于蓝牙层面：作者参考 ancs4linux、BlueFerry 及 erikwb 的协议文档，用 C++ 以干净室方式重新实现了 iMessage/SMS 蓝牙协议，克服了 2026 年蓝牙生态的诸多不稳定问题，最终实现 iMessage、SMS、通知、联系人同步。安全方面，通信自始采用 mTLS 双向认证，并定期开展安全审查。项目采用 MIT 许可证，作者欢迎社区贡献，呼吁 Linux+iPhone 用户尝试使用。
+
+---
+
+## 6. 将SQLite用作文档数据库（2020）
+
+**原文标题**: SQLite as a Document Database (2020)
+
+**原文链接**: [https://dgl.cx/2020/06/sqlite-json-support](https://dgl.cx/2020/06/sqlite-json-support)
+
+2020年，SQLite 3.31.0引入生成列功能，结合已有的JSON支持，使SQLite可充当轻量级文档数据库。只需在表中定义JSON文本列，并通过json_extract将目标字段映射为虚拟生成列，即可将JSON直接插入并按字段检索。文章展示了基本用法：插入含字段的JSON后，便可对该提取字段执行WHERE查询。该方案具有天然的数据校验优势——生成列在INSERT时会自动拒绝格式非法的JSON，配合NOT NULL等约束还能强制要求特定字段必须存在。虚拟列不占额外存储空间，且可对其创建索引以加速查询；同时ALTER TABLE支持动态添加新的生成列与索引，无需重建表。文章建议从仅含一个JSON列的简单表起步，随后续发现有用字段再逐步扩展列与索引，这种模式尤其适合webhook等"先接收、后处理"的场景。相比PostgreSQL和ElasticSearch，此方案的最大优势在于SQLite是嵌入式数据库，无需独立服务，部署极为简单，非常适合轻量级应用。
+
+---
+
+## 7. vLLM v0.28.0 版本发布说明
+
+**原文标题**: vLLM v0.28.0
+
+**原文链接**: [https://github.com/vllm-project/vllm/releases/tag/v0.28.0](https://github.com/vllm-project/vllm/releases/tag/v0.28.0)
+
+vLLM v0.28.0汇集584次提交、270位贡献者（含76位新贡献者）的成果。核心亮点：Kimi-K3全栈性能优化，涵盖解码上下文并行、融合FlashKDA内核、自适应推测token预算（TTFT提升约60%）及共享专家分片（每GPU省约17GiB显存），并支持ROCm运行。DeepSeek V4实现稀疏MLA端到端推理及AMD Quark NVFP4支持。推测解码推出DFlash2与DSpark置信度调度验证。Model Runner V2持续成熟，新增E/P/D分离、权重卸载及多场景扩展。KV缓存新增磁盘级卸载与分层管理。Rust前端与gRPC接口支持多模态推理、数据并行路由及RL生命周期控制。默认值方面，最大批处理令牌数升至16384，Mamba模型默认启用前缀缓存。破坏性变更包括bitsandbytes迁移为外部插件、Transformers升级至5.15.0、移除calculate_kv_scales与override_attention_dtype。硬件覆盖新增NVIDIA SM12x/GB10优化、AMD ROCm全栈支持（gfx11/950）、Intel XPU及CPU后端。量化新增在线MXFP4/NVFP4及多种融合内核。安全方面修复音频采样率伪造DoS漏洞。提供CUDA 12.9/13.0、ROCm、CPU、XPU等多平台Docker镜像与Python轮子。
+
+---
+
+## 8. 国土安全部借冷门海关法秘密窥探记者、非营利组织与工会
+
+**原文标题**: DHS is using obscure law to snoop on journalists, non-profits, unions
+
+**原文链接**: [https://www.theguardian.com/us-news/2026/aug/29/trump-dhs-1509-summons-records-journalists-nonprofits](https://www.theguardian.com/us-news/2026/aug/29/trump-dhs-1509-summons-records-journalists-nonprofits)
+
+摘要：美国国土安全部（DHS）援引一项鲜为人知的海关条款（19 USC 1509），绕过司法审查，向社交媒体及电信公司秘密调取记者、非营利组织和工会的个人信息。在明尼苏达教堂抗议案中，法官已两度以"缺乏合理依据"驳回政府搜查申请并要求通知当事人，DHS却改用仅需内部审批、无需法官介入的行政传票，要求收件方保密，成功获取记者Georgia Fort和Don Lemon的YouTube数据及逾万条通话记录。此外，DHS还向Meta、Google等调取了Democracy Now、评论员Megyn Kelly及多个工会组织的财务信息，相关组织均未被起诉。前DHS律师和监察长批评此举严重越权，该条款仅适用于海关调查。科技公司虽称依法审核，却将抗辩成本转嫁用户。DHS在面临诉讼时多次于法官裁决前撤回报传票，疑似规避不利判例。隐私专家警告，传票数量与用途不透明，公众和立法者难以对行政权滥用形成有效制衡。
+
+---
+
+## 9. 小学接娃事故及后续方针
+
+**原文标题**: The elementary school pickup incident and the road ahead
+
+**原文链接**: [https://shitposting.ai/pickup-incident/](https://shitposting.ai/pickup-incident/)
+
+2026年8月19日，作者因Zoom会议超时47分钟、三次推迟闹钟，致使两孩在小学门卫室滞留逾一小时。全文以AI安全事故报告体，将此次家庭失误包装为"多信任方违规事件"。事件线：2:30起提醒被连续忽略；3:07学校致电未接，家长群四分钟内锁定其身份；3:41结束会议后疾驰赴校，3:50接回孩子；当晚妻子自丹佛赶回要求提交完整报告。根因分析涵盖四点：奖励劫持（以推迟换沉默）、无界会议无安全退出、家长群"未授权通信"引发的群体监视，以及控制层失效——作者十一天前关闭了妻子每日1点的接娃确认提醒。文章亦讽刺指出，93%的超时内容本可邮件替代，"买冰淇淋"在评分者眼中仅为证据而非正解。后续措施包括强化日历纪律、限制周三下午Zoom、隔离会议沙盒、管控闹钟功能，并加大"配偶思维链监控"投入。全文以幽默笔调将育儿翻车写成行业级事故，自嘲与警示兼备。
+
+---
+
+## 10. 优秀文化才是第一提效要素，而非AI
+
+**原文标题**: Good Culture Is the Biggest Productivity Hack, Not AI
+
+**原文链接**: [https://newsletter.eng-leadership.com/p/good-culture-is-the-biggest-productivity](https://newsletter.eng-leadership.com/p/good-culture-is-the-biggest-productivity)
+
+摘要：作者格雷戈尔·奥伊斯特瑟克凭借13年工程行业经验指出，AI能提升生产力，但前提是先具备优秀的团队文化。他引用康威定律强调，组织产出必然反映其内部沟通与文化结构——文化差则产品差，文化好则产品好，文化是一切的前提，如同健康之于人体。他批评高管宣称"有了AI不需要那么多人"，认为这严重破坏心理安全感，损害士气。AI并非万能解药，它会放大既有状态：好文化叠加AI事半功倍，坏文化叠加AI则加速犯错。文章提出九项文化自检问题，涵盖职责清晰度、决策自主权、心理安全感、团队互信、优先级透明、建设性争议、结果导向、目标理解与容错学习。在AI推广方面，作者强调采用必须自下而上而非自上而下强制推行，因为工具日新月异，需要团队持续的知识共享。AI落地本质是领导力问题而非工具问题，目标应始终指向业务成果而非AI使用率。他主张AI时代公司应多招工程师而非裁减，更多人才与好文化结合能指数级提升生产力与上市速度，反之则丧失竞争优势。最终，领导者真正该问的不是"如何让全员用上AI"，而是"如何打造让优秀人才发挥最佳状态的组织，再以AI实现倍增"。
+
+---
+
+## 11. GCC 中无需可执行栈的嵌套函数间接调用
+
+**原文标题**: Indirect Calling of Nested Functions on GCC Without Executable Stack
+
+**原文链接**: [https://uecker.codeberg.page/2026-08-29.html](https://uecker.codeberg.page/2026-08-29.html)
+
+摘要：本文探讨在旧版GCC中避免可执行栈以安全使用嵌套函数。GCC为取嵌套函数地址会在栈上生成一段蹦床（trampoline），其中嵌入目标代码地址与静态链指针两个常量。作者指出，可从中解析出这两个值，再利用__builtin_call_with_static_chain直接调用嵌套函数而无需执行蹦床，随后通过patchelf --clear-execstack将栈标记为不可执行，从而消除安全隐患。虽仍有局限——蹦床仍被生成、编译器无法消除间接调用、栈初始仍标记为可执行——但安全性已显著改善。此外，作者提出另一思路：将蹦床本身视为函数描述符，在调用点用极简内联解释器解析其内容后再直接调用，实现一种"惰性解释"机制。相关方法已在其实验库noplate中实现，以宽指针形式封装代码地址与静态链。文章还提及GCC 17将提供官方内建函数以提供更优雅的替代方案。
+
+---
+
+## 12. 梦游者：拥有独立命令语言的被动后门
+
+**原文标题**: Sleepwalker: Passive Backdoor with Its Own Command Language
+
+**原文链接**: [https://r136a1.dev/2026/08/24/sleepwalker-a-passive-backdoor-with-its-own-command-language/](https://r136a1.dev/2026/08/24/sleepwalker-a-passive-backdoor-with-its-own-command-language/)
+
+SLEEPWALKER是一种被动式Windows后门，以伪装版dpapi.dll形式通过DLL侧载注入ESET管理代理（ERAAgent.exe）。其核心特征在于不联系任何固定C2服务器，而是将网卡置于混杂模式，持续嗅探全部网络流量，等待一个经特定校验及AES-256-CCM加密的触发包到达后才激活。触发后可通过TCP、UDP、ICMP、SMB命名管道、VMware VMCI通道乃至DNS查询等多种隐秘通道接收指令。后门内置一套含23条指令的自定义字节码解释器，支持任务调度、分阶段文件投递（含SHA-256校验）及内存中直接执行shellcode；所有后续操作均以加密字节码动态下发，文件本身不含任何现成载荷。此外，该后门会主动启用匿名SMB访问并创建权限为"所有人"的命名管道，以便利横向移动。由于无主动外联、无固定监听端口，常规网络监控难以发现感染。样本为2024年6月编译的64位无签名DLL，复制了ESET产品版本信息，疑为某定向攻击的组成部分，但暂无法归因于特定威胁行为者。
+
+---
+
+## 13. Show HN：Typebase – 用 TypeScript 编写的单文件夹后端
+
+**原文标题**: Show HN: Typebase – A single-folder back end you write in TypeScript
+
+**原文链接**: [https://typebase.io](https://typebase.io)
+
+摘要：Typebase 是一个全新后端框架，核心理念是将整个后端封装为应用内的一个 typebase/ 文件夹。开发者在其中用 TypeScript 定义数据库表结构（基于 Drizzle ORM）、导出服务端 Action（基于 tRPC）、配置鉴权（基于 better-auth）和实时事件发布，客户端即可像调用本地函数一样发起请求，并自动获得完整的类型推断。框架提供 Next.js、SvelteKit、Nuxt、Expo 等各前端框架的专用客户端。部署只需两条命令：init 脚手架、deploy 上线，支持 Vercel、Cloudflare Workers、Deno Deploy，数据库为 Neon Postgres，零服务器托管。文章重点对比了 Typebase 与 Supabase/Convex 的差异：Supabase 依赖 SQL 层的 RLS 策略，类型检查无法覆盖，新增字段或 AI 生成代码时极易引入权限漏洞；Typebase 则将鉴权逻辑写进 TypeScript 代码，由编译器逐层校验，做到端到端类型安全。定位上，Typebase 追求"Convex 的开发体验 + Supabase 的开源与可迁移性"，支持随时迁移、无厂商锁定。页面末尾附有多条故意荒诞幽默的虚构推荐语以活跃氛围，同时邀请真实用户提交评价。整体面向喜欢代码透明、对 AI Agent 友好的全栈开发者。
+
+---
+
+## 14. 冰川鼠
+
+**原文标题**: Glacier Mice
+
+**原文链接**: [https://en.wikipedia.org/wiki/Glacier_mice](https://en.wikipedia.org/wiki/Glacier_mice)
+
+冰川鼠是存在于冰川及其周边生态系统中的自由移动球状苔藓群落，由多种苔藓组成，也可容纳线虫、跳虫、缓步动物等生物。它们已在阿拉斯加、智利、格陵兰、冰岛、斯瓦尔巴群岛、乌干达、委内瑞拉及多个亚南极岛屿被发现。在冰川恶劣环境下，苔藓可能通过无性繁殖维持种群。冰川鼠最显著的特征是其在冰面上的移动，表现出类似群居动物的行为，但并非单纯由风或坡度驱动。研究表明，深色苔藓在向阳面吸收太阳热量，使该侧冰面融化形成凹陷，苔藓球随之滚入凹陷，形成持续的方向性移动（北半球向南，南半球向北），平均每天移动约2.5厘米。加速度计证实它们确实滚动而非滑动。冰川鼠能保持热量和水分，为微生物创造在冰川上难以存活的微型生态系统，被认为可存续六年或更久。冰川鼠于1950年由冰岛气象学家约恩·艾斯托松首次描述，他将其命名为冰岛语"jökla-mýs"，意为"冰川鼠"。
+
+---
+
+## 15. 三星存内处理（PIM）技术
+
+**原文标题**: Samsung's Processing-in-Memory (PIM)
+
+**原文链接**: [https://chipsandcheese.com/p/hot-chips-2026-samsungs-processing](https://chipsandcheese.com/p/hot-chips-2026-samsungs-processing)
+
+三星在Hot Chips 2026上展示了基于LPDDR5X的存内处理（PIM）技术，在芯片16个bank中各嵌入含MAC树与寄存器文件的PIM模块，支持INT8/FP8等低精度运算。PIM模块直接访问所属bank数据，整芯片内部带宽达614 GB/s，远超外部接口76.8 GB/s，整封装吞吐量为2.4 TOPS。其亮点在于复用标准LPDDR5X协议，通过预留特殊行地址切换单/多bank模式并触发计算，无需修改内存控制器，理论上可兼容现有各类设备。然而软件挑战巨大：PIM模式与普通内存访问互斥，多任务系统须隔离PIM区域并限制线程并发；读命令触发计算会破坏CPU缓存、预取及乱序执行，严重制约性能。作者建议未来应扩展DRAM接口增设专用计算命令、让内存控制器参与缓存一致性管理，并引入透明CPU计算指令，使软件在保留多任务与并行能力的前提下利用存内计算，避免牺牲带宽、容量与响应性。
+
+---
+
+## 16. 色彩的量化
+
+**原文标题**: Quantifying Colour
+
+**原文链接**: [https://ekunazanu.foo/lab/quantifying-colour/](https://ekunazanu.foo/lab/quantifying-colour/)
+
+摘要：本文探讨了从物理层面精确量化色彩的方法。自然语言对颜色的描述模糊有限，无法满足精确再现需求，因此需要以数值代替名称。光由不同波长的光子构成，可借助光谱功率分布（SPD）进行量化。人眼拥有三种锥细胞（S、M、L）和一种杆细胞，锥细胞对特定波长的灵敏度各异，不同波长激发出独特的响应组合，大脑据此感知不同颜色；杆细胞虽灵敏度高但仅一种类型，无法区分波长，主要负责明暗感知。色盲源于锥细胞缺失或灵敏度曲线重叠，使某些波长无法区分，如红绿色盲。对于非单色混合光，锥细胞响应需通过灵敏度曲线与光谱功率分布的乘积积分求得。此外，色彩感知具有主观性——个体间锥细胞灵敏度及大脑信号解读存在差异，但多数人感知基本一致，故可据此定义标准灵敏度曲线，为色彩量化提供客观基础。
+
+---
+
+## 17. 《EVE Online》迁移至Python 3
+
+**原文标题**: EVE Online moves to Python 3
+
+**原文链接**: [https://www.eveonline.com/news/view/the-move-to-python-3-begins](https://www.eveonline.com/news/view/the-move-to-python-3-begins)
+
+摘要：CCP Games旗下知名大型多人在线游戏《EVE Online》在24.01版本补丁中宣布完成向Python 3的迁移工作。该更新于2026年8月26日发布，标志着游戏技术架构的一次重要升级。Python 2已于多年前停止维护，此次迁移有助于提升游戏服务器端的代码安全性、兼容性和长期可维护性，同时为后续功能迭代与性能优化奠定基础。对于玩家而言，本次更新主要影响游戏后端与开发工具链，预计对日常游戏体验无直接感知变化，但长远来看将保障游戏系统的稳定运行与持续更新能力。
+
+---
+
+## 18. 领域驱动的代理
+
+**原文标题**: Domain-Driven Agents
+
+**原文链接**: [https://coldtake.dev/blog/domain-driven-agents](https://coldtake.dev/blog/domain-driven-agents)
+
+文章探讨在遗留代码库中引入LLM代理的核心困境：代码库自身缺乏统一概念语言，模型只能猜测术语含义，输出质量骤降。作者提出以领域驱动设计（DDD）为根基，系统性提升代码库的语义就绪度。他将工作分为战略性与战术性两层：战略层（理解系统、设计决策）由工程师完成，产出为GitHub Issues；战术层（编码、测试）交给AI代理，代理依据预写"技能"文件与专职"子代理"执行，最终生成PR供人工审核。DDD基础设施上，每个仓库根目录放置.workflow.json，声明项目、限界上下文、子域类型及跨上下文边界；每个上下文配有CONTEXT.md活术语表。上下文地图由脚本自动汇聚，无需手动维护；每条边界由两端分别声明，生成器交叉校验不一致项并自动创建问题单，走"问题→代理→PR→审核"流水线。作者指出战略层已就绪，下一步是逐上下文将代码迁移至含值对象、聚合根等DDD原语的领域模型，从根本上消除模型需要猜测的灰色地带。
+
+---
+
+## 19. 11行代码，一个更优的查询语言
+
+**原文标题**: A better SQL in 11 lines of code
+
+**原文链接**: [https://prela-lang.org/tutorial/](https://prela-lang.org/tutorial/)
+
+本文介绍UCLA RePL开发的新查询语言Prela，并通过约11行Python代码构建其玩具版本。Prela的核心设计是将所有表限制为二元关系（仅两列），将宽表通过6NF分解为"行号→列值"的映射。在此基础上，Prela提供四个关键操作：select（关系组合，类似函数串联）、&（同键连接的列合并，兼作逻辑与）、eq（按值过滤）、where（将谓词施加于另一关系进行筛选）。查询以链式调用书写，如 movie.s(company).s(country) 即读作"电影的制片公司所属国家"。由于每个子表达式本身也是合法查询，用Python变量命名子查询即可自然实现CTE效果。一个涉及多表外键关联、美国公司过滤、标题关键词匹配并选取演职人员别名的复杂查询，在Prela中仅需两三行，而等价SQL需超过20行。&在where内部自动充当逻辑与，使多条件过滤极为简洁。Prela还支持分组聚合等扩展，整体语法以关系组合为基石，将查询统一为可嵌套、可组合的纯表达式。
+
+---
+
+## 20. 打造以太晶塔氛围电台
+
+**原文标题**: Creating the Aetheryte Radio
+
+**原文链接**: [https://haz.ee/posts/aetheryte-radio.html](https://haz.ee/posts/aetheryte-radio.html)
+
+作者多年工作习惯循环播放《最终幻想14》中以太晶塔的氛围音，但YouTube循环功能不稳定、音频非无缝断裂，且游戏本身资源占用过大。为获得最佳聆听体验，他决定提取游戏音频资源，用Web Audio API在浏览器中独立实现。提取过程颇具戏剧性：他先借助Java工具手动翻找4000个音频文件，耗时四小时未果；后通过XIVLauncher插件SoundFilter实时显示当前播放的音频名称，迅速定位到目标资源。技术实现上，以低频率嗡鸣音（hum）作为主体并设为无缝循环，同时用两段嗡响音（whir）以随机间隔、随机音高和随机音量间歇触发，模拟游戏内自然声源变化，避免循环感暴露；whir的调度采用setTimeout递归，每次播放结束后自动断开旧节点并接入新节点。整个项目使用原生JavaScript完成，未采用npm、React等前端框架，作者认为个人小项目用原生DOM操作即可，更轻量高效，无需承受转译与框架的额外负担。
+
+---
+
+## 21. GrapheneOS项目：Pixel 11弃用硬件内存标记（MTE）
+
+**原文标题**: GrapheneOS project: pixel 11 no longer supports hardware memory tagging (MTE)
+
+**原文链接**: [https://bsky.app/profile/grapheneos.org/post/3mua32q4ds22e](https://bsky.app/profile/grapheneos.org/post/3mua32q4ds22e)
+
+知名隐私安全操作系统 GrapheneOS 团队在 Bluesky 上宣布，已于一周内完成向 Pixel 11 系列的部分移植，但无法推进完整移植。根本原因在于 Pixel 11 在软件、固件及硬件层面均缺乏对 ARM 硬件内存标记扩展（MTE）的支持。MTE 是 ARM 架构中用于实时检测内存错误（如缓冲区溢出、释放后使用等）的关键安全机制，对防御利用型攻击至关重要。GrapheneOS 团队认为，Google 很可能是为削减硬件成本而主动移除了该功能。对于以安全与隐私为核心理念的 GrapheneOS 而言，失去 MTE 意味着设备抵御内存漏洞的能力将显著下降，这一消息在安全社区引发广泛关注。
+
+---
+
+## 22. 损坏的ZIP文件恢复
+
+**原文标题**: Recovering Corrupt Zip Files
+
+**原文链接**: [https://www.construct.net/en/blogs/ashleys-blog-2/recovering-corrupt-zip-files-1895](https://www.construct.net/en/blogs/ashleys-blog-2/recovering-corrupt-zip-files-1895)
+
+无法访问该文章链接
+
+---
+
+## 23. 应对气候变化，打造韧性城市森林
+
+**原文标题**: Trees for a Changing Climate and Resilient Urban Forest (2022)
+
+**原文链接**: [https://www.coolboulder.org/news/trees-for-a-changing-climate-resilient-urban-forest](https://www.coolboulder.org/news/trees-for-a-changing-climate-resilient-urban-forest)
+
+摘要：本文以科罗拉多前山地区为例，探讨在日益严酷的气候条件下如何建设韧性城市森林。该地区夏季酷热、冬季严寒、降雨稀少、土壤强碱，种树环境极为苛刻，而气候变化与热岛效应正使局面进一步恶化。文章核心主张是增加树种多样性，避免单一树种大面积种植带来的系统性脆弱。文中援引四位树木专家的建议：Scott Skogerboe推荐耐旱本土树种如Gambel橡树'Gila Monster'、Caddo枫、硬杂种樱桃等，并建议向得州、俄克拉荷马等南部地区寻找种源；Tim Buchanan推荐Caddo枫、黑枫、德克萨斯红橡及Kentucky咖啡树'Espresso'等；Panayoti Kelaidis指出东西部土壤类型差异是东部树种在此生长不良的主因，并批评单一克隆种植理念；Sonia John推崇橡树杂交品种及Catalpa等耐旱树种。此外，文章还提出利用南部干旱地区种子进行选育、接种菌根真菌、种植时添加20%–30%堆肥、将树木种植于草坪灌溉区之外、允许少量昆虫取食以激发树体自身免疫力等综合措施，并鼓励园艺爱好者勇于尝试新树种，以增强城市森林的整体抗逆力。
+
+---
+
+## 24. htmx 4.0 发布公告
+
+**原文标题**: Htmx 4.0
+
+**原文链接**: [https://four.htmx.org/announcements/2026-08-28-htmx-4.0.0-is-released](https://four.htmx.org/announcements/2026-08-28-htmx-4.0.0-is-released)
+
+htmx 4.0.0 历经八个月开发正式发布，核心内部由 XMLHttpRequest 全面迁移至 fetch()。三大主要变更：属性继承由隐式改为显式（需添加 :inherited 后缀），这是最大升级点；事件命名统一为 htmx:phase:action 规范；历史记录不再依赖 localStorage 缓存，改为回退时重新请求页面。两大新特性：内置 Morph 形态变换替换，以及 <hx-partial> 标签支持对多个目标元素独立更新。新扩展涵盖预加载、文件下载、Alpine.js 兼容、历史缓存、SSE/WebSocket/分体流等，并推出前端脚本方案 hx-live。为免强制升级，4.0 暂未设为 NPM latest，htmx 2 将持续支持。官方提供命令行升级检测工具 npx htmx.org@4.0.0 upgrade-check 及 LLM 技能文件辅助迁移。
+
+---
+
+## 25. Kmart数码相机改装（第二篇）
+
+**原文标题**: Kmart Digicam Mod Part 2
+
+**原文链接**: [https://mason.bearblog.dev/kmart-digicam-mod-part-2/](https://mason.bearblog.dev/kmart-digicam-mod-part-2/)
+
+作者从eBay以20美元购入一枚C卡口镜头，到货后发现实为超8毫米放映机镜头，原有适配器无法通用，不得不重新设计。新适配器因镜头螺纹直径达32mm，整体尺寸明显增大；且该螺纹为罕见的非标准定制螺纹，作者只能将3D打印件磨小后勉强旋入。实测表明，镜头虽能正常聚光，却无法实现无限远对焦。问题在于焦点平面距离传感器过远，需将传感器向镜头方向前移，但该位置目前已紧贴相机原有机身，几乎无调整空间。作者尝试在传感器电路板上垫入纸张微调距离，未观察到对焦质量的明显改善。其后续计划是寻找方法将传感器组件整体物理前移，以解决无限远合焦问题。
+
+---
+
+## 26. 通过 Apple 虚拟化框架启动虚拟 iPhone
+
+**原文标题**: Boot a Virtual iPhone via Apple's Virtualization.framework
+
+**原文链接**: [https://github.com/Lakr233/vphone-cli](https://github.com/Lakr233/vphone-cli)
+
+vphone-cli 是一款基于 Apple Virtualization.framework 和 PCC 研究虚拟机架构的工具，可在 Apple Silicon Mac（macOS 15+）上创建并运行虚拟 iPhone。安装依赖后一条命令即可完成从固件下载、补丁注入、DFU 恢复、自定义固件安装到首次启动的全流程。工具提供五种安全绕过程度递增的固件变体：less（保留 iOS 安全机制）、regular（绕过 AMFI 等核心保护）、dev（增加调试权限）、jb（完整越狱，自动安装 Sileo 和 TrollStore）、exp（反虚拟机检测研究补丁）。支持 SSH/VNC 远程连接，数据统一管理于 ~/.vphone/ 目录，可通过环境变量重定向。此外，vphone-cli 暴露主机控制套接字，支持截图、触控、剪贴板等操作并返回实时画面，便于 AI 驱动的端到端自动化测试。使用需放宽 SIP/AMFI 限制，且宿主机不能为嵌套虚拟机。
+
+---
+
+## 27. 南希·格雷斯·罗曼太空望远镜
+
+**原文标题**: Nancy Grace Roman Space Telescope
+
+**原文链接**: [https://science.nasa.gov/mission/roman-space-telescope/](https://science.nasa.gov/mission/roman-space-telescope/)
+
+摘要：南希·格雷斯·罗曼太空望远镜（简称"罗曼"）以NASA首位首席天文学家、"哈勃太空望远镜之母"南希·格雷斯·罗曼命名。该望远镜计划于2026年8月30日由SpaceX猎鹰重型火箭从肯尼迪航天中心39A发射台升空。罗曼的视场超过哈勃100倍，服役期间可测量十亿个星系的光。其核心目标聚焦暗能量、系外行星和红外天体物理三大领域，旨在解决这些方向的本质性科学问题。罗曼还具备遮挡星光以直接观测系外行星及行星形成盘的能力，并将完成银河系行星系统的统计普查。目前，该望远镜已完成建造并抵达发射台，发射前各项准备就绪。NASA同时借助媒体资源、互动图解及科普文章等渠道推广罗曼项目，并推进与詹姆斯·韦布太空望远镜、哈勃太空望远镜及星系研究等相关领域的协同科普工作。
+
+---
+
+## 28. 项目展示：Galaxium——基于 WebGPU 的实验性 3D 太空探索应用
+
+**原文标题**: Show HN: Galaxium, an experimental WebGPU space explorer
+
+**原文链接**: [https://galaxium.app](https://galaxium.app)
+
+摘要：Galaxium 是一款面向浏览器的实验性 3D 宇宙探索应用，由开发者在 Hacker News 上以 Show HN 形式公开亮相。该项目基于 WebGPU 构建——WebGPU 是浏览器端新一代图形与计算 API，相比传统 WebGL 在渲染管线灵活性与并行计算能力上有显著提升。Galaxium 的核心目标让用户无需安装任何客户端，直接在浏览器中沉浸式浏览并交互式探索三维宇宙空间，包括星辰、星系等天体景致。作为实验性项目，作者意在探索 WebGPU 在大规模 3D 场景实时渲染与交互体验方面的技术潜力，也体现了开发者社区对 WebGPU 落地应用的前瞻性尝试。
+
+---
+
+## 29. 在32位嵌入式系统上追踪Go运行时缺陷
+
+**原文标题**: Hunting Down a Go Runtime Bug on 32-Bit Embedded Systems
+
+**原文链接**: [https://sigma-star.at/blog/2026/08/go-runtime-netpoll-bug/](https://sigma-star.at/blog/2026/08/go-runtime-netpoll-bug/)
+
+某客户的Go应用在32位ARM嵌入式Linux上偶发崩溃，报错"netpoll: eventfd ready for 5"，即epoll返回了EPOLLIN|EPOLLOUT而非预期的EPOLLIN。该问题仅出现在32位系统（ARM、i386）的长时间运行程序中，64位系统从未复现，且在Go社区悬置一年多无人解决。团队深入分析发现，Go运行时在epoll_event的8字节data字段中混用原始指针（指向netpollEventFd）与标签指针（指向pollDesc，低4字节存fdseq序号）。在32位小端系统上，原始指针仅占低4字节、高4字节为零，与fdseq产生别名；当程序回收数百万次pollDesc后，fdseq恰好等于netpollEventFd的地址，socket事件便被误判为事件fd，触发致命错误。修复方案是将事件fd标识改为存储nil pollDesc的标签指针，使data字段统一格式，消除别名，补丁已合入。该缺陷自Go 1.14（2020年）引入，2025年才首次被发现，2026年修复。作者推测Google已不再运行32位Go程序，否则早已暴露此问题。
+
+---
+
+## 30. StemDeck：免费开源的本地 AI 音轨分离器
+
+**原文标题**: StemDeck, a free, open-source and local AI stem separator
+
+**原文链接**: [https://github.com/stemdeckapp/stemdeck](https://github.com/stemdeckapp/stemdeck)
+
+摘要：StemDeck 是一款免费、开源、完全本地运行的 AI 音轨分离工具，无需注册、无需上传、无订阅。用户可拖入 MP3、WAV、FLAC、OGG/Opus、MP4、M4A 文件或粘贴 YouTube 链接，借助 Meta AI 开源的 Demucs 模型将音频分离为最多六条音轨（人声、鼓、贝斯、吉他、钢琴、其他）。内置 DAW 风格多轨混音器，支持静音、独奏、音量调节、波形缩放、循环播放及单轨/混合导出，并提供 BPM 检测、调性分析、响度测量等功能。技术上基于 Python 3.12、FastAPI 与 Tauri v2 桌面外壳，前端为原生 JS 配合 Web Audio API，自动适配 NVIDIA CUDA、Apple Silicon MPS 及 CPU。提供 macOS、Windows、Docker、Unraid 等多种部署方式，首次启动自动下载约 170MB 模型并缓存。与 Moises、LALAL.AI 等商业产品相比，StemDeck 的优势在于数据完全不出本机、零成本且开源可自托管，但缺少移动端应用、批量处理及更多专业音乐工具，定位为个人学习与轻量使用场景。项目纯社区驱动，不接受任何赞助或资金。
+
+---
+
