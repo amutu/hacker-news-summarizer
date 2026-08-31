@@ -23,6 +23,7 @@ client = OpenAI(
     )
 #mymodel="moonshotai/kimi-k2.5"
 mymodel=os.environ.get('MYMODEL')
+checkurl=os.environ.get('CHECKURL')
     #base_url="https://api.deepseek.com")
 
 # 配置 Gemini API
@@ -31,6 +32,40 @@ mymodel=os.environ.get('MYMODEL')
 
 # 创建 Gemini 模型 gemini-2.0-flash-lite/gemini-2.0-flash/gemini-2.0-pro-exp
 #model = genai.GenerativeModel('gemini-2.0-flash')
+
+def check_hot(url: str) -> bool:
+    """
+    计算 URL 的 MD5，请求 API，判断返回数组是否为空。
+    返回 True 表示数组非空，False 表示数组为空。
+    """
+    # 计算 MD5
+    md5_hash = hashlib.md5(url.encode('utf-8')).hexdigest()
+    
+    # 构建 API 请求地址
+    api_url = f"{checkurl}{md5_hash}"
+    
+    try:
+        # 发送 GET 请求，设置超时（例如 10 秒）
+        response = requests.get(api_url, timeout=10)
+        response.raise_for_status()  # 如果状态码非 200，抛出异常
+        
+        # 解析 JSON 数组
+        data = response.json()
+        
+        # 确保返回的是列表
+        if not isinstance(data, list):
+            print("警告：API 返回的不是数组，视为空")
+            return False
+        
+        # 数组非空返回 True，否则 False
+        return len(data) > 0
+    
+    except requests.exceptions.RequestException as e:
+        print(f"hnhot check 请求失败: {e}")
+        return False
+    except ValueError as e:
+        print(f"hnhot JSON 解析失败: {e}")
+        return False
 
 def fetch_top_stories(limit=1):
     """获取 Hacker News 上的热门文章链接"""
@@ -392,17 +427,22 @@ def main():
     
     for i, story in enumerate(stories, 1):
         print(f"\n正在处理第 {i}/{len(stories)} 篇文章: {story['title']}")
-        
-        # 提取文章内容
-        content = extract_article_content(story['url'])
-        
-        # 生成摘要（一次调用同时得到中文标题和中文摘要）
-        if content:
-            print(f"成功提取文章内容，长度: {len(content)} 字符")
-            chinese_title, summary = generate_summary(story['title'], content)
+            
+        done = check_hot( story['url'] )
+        if done:
+            summary = f"文章之前已经处理过"
+            chinese_title = story['title']
         else:
-            print("无法提取文章内容，尝试直接生成摘要（可能会失败）")
-            chinese_title, summary = generate_summary_from_url(story['title'], story['url'])
+            # 提取文章内容
+            content = extract_article_content(story['url'])
+
+            # 生成摘要（一次调用同时得到中文标题和中文摘要）
+            if content:
+                print(f"成功提取文章内容，长度: {len(content)} 字符")
+                chinese_title, summary = generate_summary(story['title'], content)
+            else:
+                print("无法提取文章内容，尝试直接生成摘要（可能会失败）")
+                chinese_title, summary = generate_summary_from_url(story['title'], story['url'])
         
         time.sleep(10)  # 增加等待时间到 3 秒,RPM=15
         
