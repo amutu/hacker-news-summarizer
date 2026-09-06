@@ -1,0 +1,304 @@
+# Hacker News 热门文章摘要 (2026-09-07)
+
+这是今日 [Hacker News](https://news.ycombinator.com/) 上最热门的文章摘要。
+
+## 1. Nitter已取消归档，项目将持续运营
+
+**原文标题**: Nitter is unarchived and will continue
+
+**原文链接**: [https://github.com/zedeus/nitter/commit/1428b4c2b4246f92a7e5b2673438e5fb39fcc4a3](https://github.com/zedeus/nitter/commit/1428b4c2b4246f92a7e5b2673438e5fb39fcc4a3)
+
+摘要：Nitter（隐私导向的开源Twitter替代前端）仓库README迎来重要更新。2026年8月24日，X Corp向Nitter发送停止侵权函，要求永久下架所有Nitter实例及项目仓库。更新明确宣布：经法律咨询后，Nitter项目将继续运营，更多细节将随后公布。此外，README进行了多项调整：捐赠板块重排并新增GitHub Sponsors徽章，Ko-fi、Patreon、Liberapay等渠道以统一徽章样式呈现；特性描述优化，将"无JavaScript或广告"拆分为"无需JavaScript"和"零广告"，RSS功能补充说明其因滥用常被实例禁用；Roadmap中嵌入功能（Embeds）标记为已完成，移除了开发者API条目；法律联络信息增加DMCA请求说明。FUNDING.yml亦同步新增Ko-fi捐赠渠道。该项目仍以AGPLv3协议开源，无需JavaScript、不追踪用户IP，核心依赖Twitter非官方API，灵感源自Invidious项目。
+
+---
+
+## 2. 汽车行业意外完成了一场关于 CarPlay 的 A/B 测试
+
+**原文标题**: The car industry A/B tested selling a car with and without CarPlay
+
+**原文链接**: [https://a.wholelottanothing.org/the-car-industry-a-b-tested-selling-the-same-car-with-and-without-carplay-and-the-results-are-not-shocking/](https://a.wholelottanothing.org/the-car-industry-a-b-tested-selling-the-same-car-with-and-without-carplay-and-the-results-are-not-shocking/)
+
+近年来，通用汽车宣布旗下新车型将取消 Apple CarPlay 和 Android Auto，改为其自研的 Android Automotive OS，以隐私为由无视消费者强烈反对，2025 年雪佛兰电动车均已不再支持手机互联。然而，本田与通用合作推出的 Prologue EV 本质上就是雪佛兰 Blazer EV 的换标版，动力系统、底盘与驾驶性能完全一致，唯一重大区别在于保留了 CarPlay 和 Android Auto。这一巧合堪称一次极佳的天然 A/B 实验。根据两家公司向投资者披露的年度销售数据，在双方同售的 2.5 年中，本田 Prologue 持续大幅领先：2024 年多卖出 42.8%，2025 年差距扩至 73.1%，2026 年上半年更达 166%。消费者用购车选票明确表态——他们宁愿多花钱买挂着本田标的同款车，只为获得手机互联功能。文章最后发问：市场信号已如此清晰，通用汽车是否会重新审视并回滚其放弃 CarPlay 的战略决定。
+
+---
+
+## 3. 你的思想"扣子"没扣好（2025）
+
+**原文标题**: Your intellectual fly is open (2025)
+
+**原文链接**: [https://bcantrill.dtrace.org/2025/12/05/your-intellectual-fly-is-open/](https://bcantrill.dtrace.org/2025/12/05/your-intellectual-fly-is-open/)
+
+作者坦言自己已深度依赖LinkedIn，以"平庸但诚实的福特"比喻该平台，对比X等曾风光却崩塌的社交网络。文章直指一个痛点：平台上大量用户用LLM代笔发内容，且平台自身也在积极鼓励"AI改写"。由此产生的文本风格高度同质化——堆砌emoji、单句成段、"不只是……更是……"句式、滥用破折号——AI痕迹触目惊心。作者强调，问题不仅是尴尬，更是信任危机：当读者已能一眼识破LLM腔调，便无法分辨哪些是作者真知、哪些是AI生成的"同人虚构"，最终人人弃读。作者并非全面否定LLM，肯定其在头脑风暴、文本理解及辅助编辑方面的巨大价值（且无需为牛津逗号与人争吵），但指出LLM写作粗糙，更关键的是——它不是你。轻则遮蔽真实表达，重则瓦解个人可信度。作者最后呼吁：请对自己的声音有信心，亲笔写下自己的内容。
+
+---
+
+## 4. NetBSD 9.5 发布，NetBSD-9 系列停止支持
+
+**原文标题**: NetBSD 9.5 released and EOL for NetBSD-9
+
+**原文链接**: [https://blog.netbsd.org/tnf/entry/netbsd_9_5_released_and](https://blog.netbsd.org/tnf/entry/netbsd_9_5_released_and)
+
+2026年9月6日，NetBSD 项目正式发布 NetBSD 9.5，这是 NetBSD 9 稳定分支的第五个也是最终版本，由 Martin Husemann 宣布。该版本汇集了自 2024 年 4 月 NetBSD 9.4 发布以来被认为与安全或稳定性密切相关的重要修复补丁，与 NetBSD 9.0 完全兼容。此次发布同时标志着 NetBSD 9.x 全系列及 netbsd-9 分支正式到达生命周期终点（EOL），不再获得官方维护与支持。项目方面强烈敦促仍在使用该分支的用户尽快迁移至更新版本，建议升级至 NetBSD 11.0（其后续版本 11.1 预计当月底发布），或 NetBSD 10.2（预计数日内发布）。完整发布说明及下载链接已随公告提供。
+
+---
+
+## 5. 异质心智
+
+**原文标题**: An Alien Mind
+
+**原文链接**: [https://openai.com/index/an-alien-mind/](https://openai.com/index/an-alien-mind/)
+
+无法访问该文章链接
+
+---
+
+## 6. Isar Aerospace 第二次试飞即成功入轨并完成载荷部署
+
+**原文标题**: Isar Aerospace reaches orbit and deploys payloads on second flight
+
+**原文链接**: [https://isaraerospace.com/press/history-for-european-spaceflight-isar-aerospace-reaches-orbit-and-deploys-payloads-on-second-flight](https://isaraerospace.com/press/history-for-european-spaceflight-isar-aerospace-reaches-orbit-and-deploys-payloads-on-second-flight)
+
+2026年9月5日，欧洲商业航天公司Isar Aerospace在挪威安岛亚发射场成功将卫星送入轨道，成为欧洲首家实现此使命的商业航天企业，且仅为其第二次飞行。任务"Onward and Upward"于当晚升空，火箭依次完成穿越最大动压、一级关机与级间分离、二级点火、跨越100公里卡门线、抛离整流罩及入轨圆化点火等关键节点，最终成功分离载荷。公司CEO Metzler表示，这一成果在数年内达成了欧洲航天工业此前耗时数十年的突破，欧洲由此获得进入太空的独立主权能力，全球客户拥有了全新的发射选择。本次载荷源自德国DLR主办的Microlauncher竞赛，由ESA资助，为高校及初创企业提供低成本入轨机会。目前，第3至7号"Spectrum"火箭已在产线上生产，新建4万平方米工厂全面建成后年产能将达40枚。公司同步推进加拿大新斯科舍省发射场建设，以覆盖中高倾轨道需求。Isar Aerospace创立于2018年，总部位于慕尼黑附近，现有员工逾400人，业务遍及5个国际地点。
+
+---
+
+## 7. 基于 NetBSD 的研究工作
+
+**原文标题**: Research carried out using NetBSD
+
+**原文链接**: [https://www.netbsd.org/gallery/research.html](https://www.netbsd.org/gallery/research.html)
+
+本文汇总了利用 NetBSD 开展的多项研究与演示项目，分为网络与其他两大领域。网络方面：NASA 刘易斯研究中心用 NetBSD 测试卫星网络中的 TCP 协议扩展，如选择性确认与大窗口机制；KAME 项目实现 IPv6/IPsec 并合并入 NetBSD 主线；德国 IMK 所开发网络访问控制、安全隧道、垃圾邮件防护及高性能 SMTP 服务；TCP Vegas 拥塞控制算法被移植至 NetBSD；NEC 欧洲海德堡实验室利用 NetBSD 进行下一代互联网协议研发；瑞典 SUNET 团队以 NetBSD 创下 Internet2 陆地传输速度世界纪录；SCAMPI 项目构建可扩展网络监控平台。其他领域：UVM 虚拟内存系统取代了 4.4BSD 的 Mach 设计并提升 I/O 性能；NASA 在太空站部署运行 NetBSD 的加速度测量系统 SAMS-II；MARS 项目优化 NetBSD 存储 I/O 路径以支撑多媒体流；华盛顿大学提出常数时间定时器回调机制；研究者分析 NetBSD 等开源项目的群体协作意识；以及基于应用驱动检查点实现热备高可用性的研究。
+
+---
+
+## 8. 巴比伦甜菜炖羊肉（公元前1750–1730年）
+
+**原文标题**: Babylonian Lamb Stew with Beets (1750–1730 BCE)
+
+**原文链接**: [https://babylonian-collection.yale.edu/about/babylonian-cooking](https://babylonian-collection.yale.edu/about/babylonian-cooking)
+
+本文复原了两道公元前1750至1730年巴比伦时期的古老食谱，由Gojko Barjamovic与Nawal Nashrallah整理，每道可供2人份或15份小食。主菜"巴比伦甜菜炖羊肉"以羊肉或羊腿肉、羊油及啤酒为基底，加入洋葱、红甜菜、芝麻菜、香菜、波斯小洋葱、孜然、韭葱和大蒜，经高温煎肉、翻炒配料、加啤酒与水煮沸后小火慢炖约一小时，最后以干芫荽籽和野韭香菜酱点缀，搭配蒸粗麦粒与馕饼食用。第二道"舒缓汤"以14盎司大麦为核心，需先浸泡、烘干、轻烤后磨粉，以温水揉成面团发酵约12小时，制成古巴比伦"啤酒面包"（bappiru），烤硬后碾碎备用；汤底用芝麻油小火煸炒蒜泥与韭葱泥至出香，加水和盐慢炖一小时，将熟时加入碎面包及葱花搅匀即成。两道菜生动呈现了古巴比伦以啤酒入馔、大麦发酵及丰富香草调味等独特饮食传统。
+
+---
+
+## 9. Doom scrolling 至死
+
+**原文标题**: Doomscrolling Ourselves to Death
+
+**原文链接**: [https://www.edwest.co.uk/p/doomscrolling-ourselves-to-death](https://www.edwest.co.uk/p/doomscrolling-ourselves-to-death)
+
+本文是Ed West对詹姆斯·马里奥特新书《新黑暗时代》的深度书评。书中以作者少年时代全家如宗教般朝圣莎士比亚的亲身经历为起点，梳理了阅读文明从文艺复兴兴起、经启蒙运动达到鼎盛，再到被电视与智能手机逐步侵蚀的衰亡史。波兹曼1985年关于电视摧毁公共理性的预言已被历史证实；挪威自然实验更显示，有线电视每普及一年，国民IQ即下降0.08分。进入智能手机时代，人均每日查看手机144次，TikTok用户半小时刷完260条短视频，注意力极度碎片化，音乐与影视台词日趋简单重复，文化整体向口头社会式的保守与静态回归，创新几近停滞。政治层面，作者对比了酷爱阅读、自修两千册书的特鲁曼与连一页备忘录都读不完的特朗普，断言后者近乎"荷马式的后文字时代领袖"。在新媒体生态中，一个荒诞言论博主的YouTube粉丝超越《纽约时报》全部订户，启蒙精神正在被系统性逆转。马里奥特坦言此类论述易被讥为"文化挽歌"，但他强调：当代文化的简化与停滞并非历史上反复出现的道德恐慌，而是一个真实且正在加速的文明转折。
+
+---
+
+## 10. A/I 停服——保持人性
+
+**原文标题**: A/I shuts down – Stay human
+
+**原文链接**: [https://keepitfree.ai/announcements/a/i-shuts-down-stay-human/](https://keepitfree.ai/announcements/a/i-shuts-down-stay-human/)
+
+2026年9月6日，数字基础设施组织Autistici/Inventati（A/I）集体发布公告，正式宣布终止全部服务。该组织长期运营自由、注重隐私、自治且具有政治立场的互联网基础设施，提供安全、非商业的数字工具，已坚持运营25年。此次关闭的直接原因是该组织被指定为全球恐怖主义组织，在极端政治环境下，继续运营将直接危及用户、建设者及社区成员及其家人的生命安全，面对独裁势力与超法行为的威胁，他们已无法守护用户这一核心使命。A/I强调，"保持人性"意味着对用户与社区肩负守护之责，绝非空洞口号。组织指出，自8月26日遭袭以来，每日保持在线本身即是一场胜利，但最终不得不宣告止步。他们呼吁用户尽快备份博客、邮箱及网站数据，并警告未来数日内可能再次遭遇域名被强制切断等不可预见的技术封锁。文末，A/I虽宣告停服，但强调抵抗精神永不终结，呼吁人们放下电脑、走出家门、彼此拥抱、继续抗争。
+
+---
+
+## 11. 人不过是肉
+
+**原文标题**: They're Made Out of Meat
+
+**原文链接**: [https://www.eastoftheweb.com/short-stories/UBooks/TheyMade.shtml](https://www.eastoftheweb.com/short-stories/UBooks/TheyMade.shtml)
+
+特德·姜的科幻短篇《人不过是肉》讲述物理学家亨利·弗拉格尔在酒吧邂逅怪诞的哲学教授戈特洛布·利克滕德勒的故事。戈特洛布提出一个令人极度不适的观点：所谓"人"根本不存在，人是由细胞、蛋白质和分子构成的"肉块"，"我"不过是主观错觉，人与一张桌子在本质上毫无区别。他借助"组成论"论证：任何物体都可被无限拆解为更小的部件，因此"人"这个层级与"桌子""石头"一样，只是任意划分的产物，并不具有本体论上的特殊性。戈特洛布声称，一旦真正"看清"这一事实，便无法再恢复正常生活——他已无法将任何人当作"人"来看待，只能看到一堆会走路的有机物。这种认知引发了强烈的"认知失调"，最终导致他精神崩溃、被送入精神病院。亨利起初试图用科学理性说服对方，但在深入交流后也陷入深深的哲学焦虑。小说以一场酒吧对话为载体，探讨了物理还原论对人格、自我意识与自由意志的根本挑战，追问：当"我"可被完全还原为物质排列时，人之为人的尊严与意义究竟是否存在。全篇以冷静而荒诞的笔调，将形而上学恐惧日常化，令人不寒而栗。
+
+---
+
+## 12. 用于假肢的温度与压力感应电子皮肤
+
+**原文标题**: Electronic skin for prosthetics to sense temperature and pressure
+
+**原文链接**: [https://news.wsu.edu/press-release/2026/08/20/researchers-develop-electronic-skin-for-prosthetics-to-sense-temperature-and-pressure/](https://news.wsu.edu/press-release/2026/08/20/researchers-develop-electronic-skin-for-prosthetics-to-sense-temperature-and-pressure/)
+
+华盛顿州立大学机械与材料工程学院研究团队开发了一种可同时感知压力与温度的电子皮肤，有望帮助截肢者通过假肢恢复触觉，相关成果发表于《Cell Reports Physical Science》。该传感器分辨力比现有商用手套传感器高十倍，采用"扫描-建模-打印"工艺，可根据假肢自由曲面进行个性化3D打印，实现无缝覆盖。传感器模块为薄层三明治结构，集成温度与压力传感元件，模块间无需粘合剂即可像乐高积木般拼接。制造工艺以3D打印和激光切割为主，成本低、便于规模化生产，有助于推动医疗级电子皮肤的普及。针对现有电子皮肤价格昂贵、分辨率低、贴合性差及实时数据处理困难等痛点，该方案有效克服了这些局限。研究团队正进一步开发触觉反馈执行器，将感知信号转化为对周围神经的电刺激，以实现完整的仿生皮肤功能。项目获美国国家科学基金会资助，团队已就相关技术提交临时专利申请。
+
+---
+
+## 13. Opalite Health（YC W26）招聘：创始级市场拓展负责人
+
+**原文标题**: Opalite Health (YC W26) Is Hiring – Founding GTM
+
+**原文链接**: [https://www.ycombinator.com/companies/opalite-health/jobs/bNedVAD-founding-gtm](https://www.ycombinator.com/companies/opalite-health/jobs/bNedVAD-founding-gtm)
+
+摘要：Opalite Health是YC W26批次创业公司（2025年创立，现有3人），核心团队来自Apple、Meta、Codex。公司打造语音AI实时医疗翻译系统，嵌入临床工作流，帮助医疗人员与不同语言患者即时沟通，7×24可用，替代传统翻译服务，宣称达到行业最高安全、合规及准确率标准。现招募首位GTM负责人，地点为加州圣马特奥，薪酬7万–20万美元底薪加无上限佣金及0.10%–0.30%股权。候选人需2年以上销售、商务拓展或增长经验，具备强沟通力与高社交敏感度，对AI技术有好奇心和理解力，能在无成熟流程的环境下独立开拓医院及医疗体系客户，主导完整销售周期（需求发现、产品演示、定价、安全审查、合同签署），制定外展策略，对接医院高管、临床医生及IT负责人，并将客户洞察反哺产品与战略。公司处于极早期，无现成销售体系，需从零搭建流程、工具及团队。优先具备医疗行业销售经验及早期创业背景者。该职位可直接参与公司战略决策，随规模扩张逐步成长为GTM负责人。仅限美国公民或持有效签证者申请。
+
+---
+
+## 14. Vidact：将 React 编译为直接 DOM 操作的编译器
+
+**原文标题**: Vidact – a compiler that turns React into direct DOM operations
+
+**原文链接**: [https://www.vidact.dev/](https://www.vidact.dev/)
+
+Vidact 是一款在构建时将 React 函数组件编译为原生 DOM 代码的编译器。组件体仅在挂载时执行一次，后续 setState 调用只精准更新所关联的文本节点与属性，彻底消除运行时组件调用、虚拟 DOM 及树 diff。实测编译产物（含运行时，gzip 后）：Counter 应用仅 8KB，TodoMVC 示例 11.8KB，挂载后组件调用、DOM 变更与树差异均为零。Vidact 支持 React 19 的一个有文档记录的子集，涵盖表单、带 key 的列表及条件分支等模式；对类组件、createRef、部分 Children 辅助函数及 React DevTools 等不支持的 API，编译器会在构建阶段精确定位行号并报错终止，绝不静默降级或回退至 React 运行时。配套框架 Vidact Start 提供文件路由、服务端数据加载、SSR 及客户端导航，同一编译器同时生成服务端与浏览器构建，确保服务端标记与客户端 hydration 完全一致。项目当前为 Beta 阶段，可通过 npx vidact 快速脚手架。
+
+---
+
+## 15. 遵循法律建议，Nitter项目将继续运营
+
+**原文标题**: Following legal advice, the Nitter project will continue
+
+**原文链接**: [https://github.com/zedeus/nitter](https://github.com/zedeus/nitter)
+
+Nitter是一个免费开源的Twitter（X）替代前端，灵感源自Invidious项目，以隐私保护与性能优化为核心。2026年8月24日，X Corp向Nitter发送停止函，要求永久下架全部实例及代码仓库；但项目负责人在获得法律建议后宣布项目将继续运营。核心特点包括：无需JavaScript、零广告、请求经后端代理以防X追踪用户IP与浏览器指纹、调用Twitter非官方API（无需开发者账号）、页面极轻量（约60KB）、支持RSS与主题切换及移动适配。项目采用AGPLv3许可证，禁止专有实例。技术上基于Nim语言开发，依赖libpcre、libsass与Redis/Valkey，提供源码编译、Docker（支持amd64与arm64多架构）及systemd部署方式，建议搭配Nginx等反向代理运行。项目接受多种加密货币捐赠，并设有Matrix社区频道与法律专用邮箱供联系。
+
+---
+
+## 16. 进程消亡之后，I/O 还存续吗？——解析 io_uring 在进程终止时的内核行为
+
+**原文标题**: Is There I/O After Death? What Happens to Io_uring When a Process Dies
+
+**原文链接**: [https://blog.ydb.tech/is-there-i-o-after-death-what-happens-to-io-uring-when-a-process-dies-92c65354873f?postPublishedType=repub](https://blog.ydb.tech/is-there-i-o-after-death-what-happens-to-io-uring-when-a-process-dies-92c65354873f?postPublishedType=repub)
+
+本文围绕 Linux 内核高性能异步 I/O 框架 io_uring 在进程终止（尤其是被 SIGKILL 等信号杀死）时的清理机制展开深入探讨。文章指出，当进程死亡时，内核会通过文件描述符关闭流程触发 io_uring 实例的销毁，但其清理并非瞬时完成：已提交至内核的 I/O 操作（尤其是磁盘块 I/O、网络 I/O 等异步请求）仍可能在内核工作线程（io-wrk）中继续执行完毕，即存在"进程已死、I/O 仍在"的短暂窗口。文章详细剖析了内核中 io_uring teardown 的关键路径——包括 io_uring_cancel 对 SQE/CQE 环的强制排空、io_worker 线程的退出同步、以及 mmap 共享内存（SQ/CQ ring buffer）的释放时序。此外，文章还讨论了以下边界场景：子进程通过 fork 继承 io_uring fd 后父进程退出时子进程的 I/O 是否受影响；注册缓冲区（registered buffer）与内核文件对象在被杀进程中的引用计数管理；以及在高并发写入密集场景下，kill 操作是否可能导致 I/O 完成事件丢失或 CQ 环残留。文章结合内核源码（fs/io_uring.c、io_uring 子系统相关补丁）进行了逐行解读，并给出了生产环境中的实践建议：在应用层优雅关闭时应主动调用 io_uring_enter 的 IORING_OP_FSYNC/排空操作，避免依赖内核隐式清理，以防短暂 I/O 悬挂引发数据一致性风险。
+
+---
+
+## 17. M-DISC——兼容DVD/蓝光、寿命可达千年的光盘
+
+**原文标题**: M-DISC – DVD/Blu-ray compatible discs that may last up to 1000 years
+
+**原文链接**: [https://en.wikipedia.org/wiki/M-DISC](https://en.wikipedia.org/wiki/M-DISC)
+
+M-DISC（千年光盘）是2009年由美国Millenniata公司推出的只写型光存储技术，兼容DVD及蓝光标准。其数据层采用类玻璃碳材料，对氧化高度惰性，熔点达200至1000°C，宣称在理想条件下寿命可达数百年乃至千年。产品涵盖4.7GB DVD+R至100GB BDXL等规格，可被2005年后多数DVD播放机及2011年后蓝光驱动器读取，刻录则需支持更高功率模式的驱动器，通常以2×速度写入。Millenniata于2016年破产，债务方成立Yours.co接管业务，目前仅Ritek与Verbatim两家获授权生产；Verbatim于2022年更换蓝光配方以提升写入速度，曾引发消费者争议。耐久性方面，美国国防局2009年测试中M-DISC通过加速老化实验而有机染料碟片全部失效；法国LNE实验室2012年测试中其表现居中；NIST于2022年将其列为百年以上可接受归档格式。但聚碳酸酯塑料基体寿命约限千年的瓶颈仍然存在。M-DISC售价约为普通蓝光碟的1.5至3倍，主要面向政府及归档用户，美国犹他州自2011年起采用该格式进行数据保存。
+
+---
+
+## 18. The revolt of the reader
+
+**原文标题**: The revolt of the reader
+
+**原文链接**: [https://bcantrill.dtrace.org/2026/09/05/the-revolt-of-the-reader/](https://bcantrill.dtrace.org/2026/09/05/the-revolt-of-the-reader/)
+
+文章之前已经处理过
+
+---
+
+## 19. 瓶中云：让自我托管触手可及
+
+**原文标题**: Cloud in a Bottle: making self-hosting accessible to everyone
+
+**原文链接**: [https://cloudinabottle.org/blog/launch-post](https://cloudinabottle.org/blog/launch-post)
+
+"瓶中云"（Cloud in a Bottle）是一款开源个人云平台，旨在将自托管体验提升至智能手机级别。作者指出，现代云软件虽体验优秀，却由逐利公司运营，存在广告与数据追踪等利益冲突；开源软件因缺乏便捷的云端部署方式，难以触达普通用户。项目核心为运行Ubuntu的服务器，通过Web仪表盘将请求路由至各rootless容器应用，实现安全沙箱隔离。区别于Coolify等平台，它提供统一身份认证（一次登录、全应用免密通行）及类似移动操作系统的平台级API，支持应用间权限化数据共享。作者对比了Sandstorm、Nextcloud、YunoHost等方案，认为各有缺陷。平台完全开源、零遥测；作者所在公司Imbue同时提供托管服务（赠10美元体验金）作为可持续商业模式，但自托管路径始终为一等公民。项目已完成6个月内部测试，核心功能基本稳定。当前面临"鸡与蛋"困境：便捷自托管入口的缺失制约了开源Web应用生态发展。团队正建设精选应用目录，严控体验质量，每周持续扩充；初期用户仍需一定技术基础，长远目标是让普通用户乃至父母辈也能轻松上手。
+
+---
+
+## 20. Asahi Linux 正式支持苹果 M3 系列 Mac，但尚存限制
+
+**原文标题**: Asahi Linux Now Officially Supports Apple M3 Macs – With Caveats
+
+**原文链接**: [https://www.phoronix.com/news/Asahi-Linux-Official-M3](https://www.phoronix.com/news/Asahi-Linux-Official-M3)
+
+Asahi Linux 开发者宣布，该发行版现已正式支持搭载 Apple M3 系列芯片的 Mac 设备。除 Mac Studio M3 Ultra 外，M3、M3 Pro 及 M3 Max 机型均可运行最新版 Asahi Linux，但部分功能仍有限制。目前最大短板在于 GPU 支持：3D 图形的性能与能效尚不理想，开发者表示将在未来数月持续推进改进。此外，因缺乏 DCP 模块支持，M3 机型暂无法实现系统睡眠，MacBook 上的 HDMI 端口亦无法使用。尽管如此，整体支持程度已接近 M1、M2 机型的成熟水平。在上游方面，Linux 主线内核已合入 M3 基本引导支持，其余补丁将在 Linux 7.4 及后续版本中逐步合并，目标是使上游代码达到与 Asahi Linux 自身相当的程度。更多细节可访问 AsahiLinux.org 获取。
+
+---
+
+## 21. 研究加速：来自OpenAI内部的视角
+
+**原文标题**: Research acceleration: The view inside OpenAI
+
+**原文链接**: [https://openai.com/index/research-acceleration-view-inside-openai](https://openai.com/index/research-acceleration-view-inside-openai)
+
+无法访问该文章链接
+
+---
+
+## 22. 贝叶挂毯的多重奥秘与启示
+
+**原文标题**: The many mysteries and lessons of the Bayeux tapestry
+
+**原文链接**: [https://economist.com/interactive/culture/2026/09/03/the-many-mysteries-and-lessons-of-the-bayeux-tapestry](https://economist.com/interactive/culture/2026/09/03/the-many-mysteries-and-lessons-of-the-bayeux-tapestry)
+
+无法访问该文章链接
+
+---
+
+## 23. 重建Minecraft并非基准测试
+
+**原文标题**: Recreating Minecraft Is Not a Benchmark
+
+**原文链接**: [https://kuber.studio/blog/Reflections/Recreating-Minecraft-is-Not-a-Benchmark](https://kuber.studio/blog/Reflections/Recreating-Minecraft-is-Not-a-Benchmark)
+
+GPT Astra发布后，社交媒体迅速被几项"演示性基准"刷屏——重建Minecraft、鹈鹕骑自行车的SVG、带重力的弹球动画等。作者指出，这类测试看似复杂，实则目标固定、周期有限，实验室完全可以针对性优化，下版本即可"完美"通过，其衡量的是准备程度而非真实能力。开放评测同样如此：静态测试集泄漏至训练数据，小模型在得分上接近甚至超过大模型，实际表现却未必更强。作者认为，真正有效的基准应难以被完美解决，LiveBench的轮换题目、ARC-AGI的私有测试集正体现了这一思路——测试方不知考题，便无法针对性准备。然而演示性内容之所以持续"赢"，是因为社交传播追求的是数秒内可感知的直观震撼，而非论文式的深度理解。最终作者坦言：没有好演示的替代品，但存在优于"演示性基准"的评估方式。若模型在公开测试中分数亮眼却在实际任务中频频失效，这一落差本身就值得深入探究。演示性基准适合做传播素材，但不应成为为模型能力打分的标尺。
+
+---
+
+## 24. 面向程序员的音乐理论
+
+**原文标题**: Music Theory for Programmers
+
+**原文链接**: [https://runjs.app/blog/music-theory-for-programmers](https://runjs.app/blog/music-theory-for-programmers)
+
+摘要：作者以程序员视角，从物理与算术的第一性原理出发，用代码和Web Audio API推导音乐理论。文章从声音即频率变化讲起，经正弦波、ADSR包络与泛音列，阐明音高、音色及八度的物理基础。核心洞察有三：其一，音高是乘性的而非加性的，频率加倍即为八度，整个音高空间是对数的；其二，频率比越简单（2:1、3:2、4:3、5:4），泛音重叠越多、拍频越少，听感越协和，协和本质是耳朵快速锁定到重复波形；其三，连续叠加十二个纯五度永远无法精确闭合到七个八度——毕达哥拉斯逗号——因为三的幂不可能等于二的幂，任何调律体系都是在分配这一不可消除的误差。由此引出十二平均律：以二的十二次方根为步进将八度等分，以微小不纯换取系统可闭合。文章进一步用暴力搜索证明，十二等分恰是使半音最逼近纯五度三比二的优解。全文无需任何乐器，将音阶、和弦与和弦进行还原为可计算、可验证的数学问题，以推导取代死记。
+
+---
+
+## 25. IBM量子处理器Nighthawk R2：更高通量，更快运算
+
+**原文标题**: IBM Quantum Nighthawk R2
+
+**原文链接**: [https://www.ibm.com/quantum/blog/nighthawk-r2](https://www.ibm.com/quantum/blog/nighthawk-r2)
+
+2026年8月，IBM发布最新量子处理器Nighthawk r2，已上线IBM Quantum Platform。该处理器搭载120个可编程量子比特、218个耦合器及120个独立重置元件，共458个物理量子元素，为IBM迄今最复杂的量产量子处理器。其核心突破在于独立高速量子比特重置技术：采用耗散式重置架构，将量子比特有效T₁时间从约200微秒压缩至约25纳秒，电路间空闲时间缩短至仅1微秒，实现每秒超10万次电路执行，较Heron提升25倍；同时使初始化误差降低约25倍，保持Heron级门保真度，且不干扰相邻量子比特，完美适配方形晶格架构。应用方面，Nighthawk r2已在7,500门以上电路实现精确可观测量估计，达成2026年IBM量子路线图里程碑；中子散射模拟获12倍加速，60秒内输出与实验数据可直接对比的能谱；并完成掺杂克利福德采样量子优势实验。此外，重置能力可扩展至电路执行中途，支持动态电路与量子纠错协议中的辅助比特复用，为容错量子计算研究提供关键平台。
+
+---
+
+## 26. 盖侬神秘起源考（再探）
+
+**原文标题**: Ganon's Mysterious Origins (Revisited)
+
+**原文链接**: [https://www.thrillingtalesofoldvideogames.com/blog/ganon-name-origin-kamen-rider](https://www.thrillingtalesofoldvideogames.com/blog/ganon-name-origin-kamen-rider)
+
+本文由作者Drew Mackie撰写，探讨《塞尔达传说》经典反派盖侬的形象与命名来源，灵感取自游戏论坛Resetera上用户Birdie的帖子。核心假说认为，盖侬可能脱胎于日本特摄《假面骑士》中邪党组织"Gel Shocker"的怪人"Ganikomoru"（蟹蝙蝠怪人）：其腰带扣融合蛇与鹰形标志，形似骷髅，与8位像素下盖侬的头盔设计颇为呼应；该怪人外形经像素简化后亦与初代《塞尔达》中盖侬高度相似——绿转蓝、红披风化长袍、蝙蝠耳变猪耳，而"Ganikomoru"缩略后恰得"Ganon"。文章同时指出，任天堂官方仅于2009年透露盖侬原名为"Hakkai"（即《西游记》中猪八戒），作者认为这并非唯一灵感来源。杂项部分还提及"Gel"前缀在日本流行文化中已演变为"邪恶"的代名词（如变形金刚反派日文名"Gerushaku"），以及《时之笛》中成年林克酷似莱昂纳多·迪卡普里奥、成年塞尔达神似凯特·温丝莱特等趣谈。
+
+---
+
+## 27. 创意的铅笔盒模型
+
+**原文标题**: The pencil case model of creativity
+
+**原文链接**: [https://dub.uu.nl/en/column/pencil-case-model-creativity](https://dub.uu.nl/en/column/pencil-case-model-creativity)
+
+摘要：本文由伊莎贝拉·萨卡迪提出"铅笔盒模型"，以铅笔盒中存放多样工具的意象为核心隐喻，探讨创造力的本质与生成机制。作者认为，创造力并非从天而降的神秘灵感，而更接近于从一只"铅笔盒"中取出铅笔、橡皮、尺子、剪刀等不同工具，并将它们以意料之外的方式组合起来的过程。模型强调，真正的创意往往产生于异质元素的碰撞与重组——当画家拿起工程师的尺子、当程序员借用诗人的橡皮，新的可能性便由此涌现。铅笔盒本身也象征着一种"有限而开放"的约束：工具并非无限，但排列与搭配却近乎无穷，这恰恰是创造力的核心张力所在——在有限资源中实现非常规组合。文章进一步指出，这一模型反对将创造力浪漫化为纯粹的个人天赋，转而倡导一种实践性的培养路径：广泛积累跨领域"工具"（知识、技能、视角），有意识打破学科与经验之间的壁垒，并练习在看似无关的事物间建立联系。铅笔盒模型因此为教育、团队协作与个人成长提供了一组可操作的思维框架，鼓励人们主动打开自己的"盒子"，重新审视手中已有的"工具"，在旧元素的新拼贴中发现创意。
+
+---
+
+## 28. 量子预言机工程：12周入门课程
+
+**原文标题**: I'm teaching an introductory 12 week course on Quantum Oracle Engineering
+
+**原文链接**: [https://shukla.io/quantum-oracle-engineering/](https://shukla.io/quantum-oracle-engineering/)
+
+本课程由Nishant Shukla主讲，设於IEEE量子周2026（多伦多），面向具备量子比特、控制门与电路图基础的从业者及研究者。课程指出，多数量子加速声明依赖仅存于纸面的预言机，其核心目标是教授从零构建实用量子电路的工程方法。十二周内容依次涵盖：量子处理器与经典设备的任务分野（以查询替代采样）、蒙特卡洛加速与量子幅值估计、以围棋为例的预言机构建（32×32局面、3×3两轮169量子比特）、可逆电路的"前向-后向"回滚设计、Bennett垃圾回收与暂存清除、利用测量擦除暂存比特（Gidney AND†门）、子空间上的Hoare契约与调用约定、Lean形式化证明验证正确性、量子资源在计算步骤间的定位（SHIFTS信道）、量子内存"全有或全无"的标度律、仅靠单量子比特测量的黑箱测试，以及对AI时代量子加速声明的系统审计。课程另设两个90分钟现场教程，分别聚焦问题筛选与回滚预言机构建。
+
+---
+
+## 29. 色彩校验卡：摄影史上最重要的24个色块，迎来五十周年
+
+**原文标题**: The ColorChecker, photography's most important 24 squares, turns 50
+
+**原文链接**: [https://www.dpreview.com/news/the-colorchecker-photographys-most-important-24-squares-turns-50/](https://www.dpreview.com/news/the-colorchecker-photographys-most-important-24-squares-turns-50/)
+
+摘要：本文纪念摄影与色彩管理领域最具标志性的工具——爱色瑞（原X-Rite）ColorChecker色彩校验卡诞生五十周年。ColorChecker于1974年推出，最初由24个标准色块组成，涵盖原色、二次色、灰阶及肤色等关键色样，至今仍是全球摄影、影视、印刷及数字影像行业进行色彩校准与还原的基准参考。在胶片时代，它为暗房冲洗提供色彩控制依据；进入数码时代后，它成为相机厂商标定色彩 profile、摄影师后期校色以及显示器与打印机色彩管理的核心工具。五十年来，ColorChecker 从最初的24色经典版逐步扩展出 ColorChecker SG（140色）、ColorChecker DC 等衍生产品，应用范围也延伸至视频、游戏及虚拟制作等领域。文章回顾了该工具从诞生到普及的历史脉络，强调其以极简的24个色块深刻影响了整个影像产业链的色彩标准，堪称"摄影史上最重要的24个方块"。
+
+---
+
+## 30. 居家激光切割手记
+
+**原文标题**: Household Laser Cuts
+
+**原文链接**: [https://cceckman.com/writing/household-laser-cuts/](https://cceckman.com/writing/household-laser-cuts/)
+
+作者分享了从键盘架到线缆盒、餐巾架等家庭激光切割项目的设计与制作历程。工具选型上，作者从Cuttle转向OpenSCAD，核心原因是Cuttle无法导出参数化设计，一旦服务停运将失去全部设计资产，而OpenSCAD开源免费，赋予创作者完整的所有权。线缆盒项目中，作者用椭圆与三角形拼出猫头剪影作面板装饰；餐巾架则以半搭接"猫须"结构支撑面板直立，并通过三角函数计算胡须落点。材料选用Glowforge Proofgrade系列胶合板，兼顾激光切割的安全性与性价比。文章总结了数条实操心得：切割时保留覆膜胶带可显著减少烧边；胶合板远优于密度板；kerf补偿至今仍是难题。OpenSCAD使用方面，作者推荐用Neovim等外部编辑器编写代码、为每个零件设2D与3D双入口模块——2D用于导出SVG排版，3D用于检查装配契合度，并善用BOSL2库获取圆角、样条曲线、搭接计算等现成功能，避免重复造轮子。
+
+---
+
