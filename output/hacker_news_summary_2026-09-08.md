@@ -1,0 +1,304 @@
+# Hacker News 热门文章摘要 (2026-09-08)
+
+这是今日 [Hacker News](https://news.ycombinator.com/) 上最热门的文章摘要。
+
+## 1. 一幢一幢，看洛杉矶如何建成（1880–2026）
+
+**原文标题**: Watch Los Angeles get built, one building at a time (1880–2026)
+
+**原文链接**: [https://lax-skyline.parcelscope.net/](https://lax-skyline.parcelscope.net/)
+
+本项目是一款交互式三维可视化，呈现洛杉矶全部建筑从1880年至2026年的逐栋建造历程。在名为"Parcelscope"的地图中，每栋建筑以一个箱体表示，按建造年代着色；用户可沿时间轴滑动，直观观看这座城市从一片空白逐步填至密布的完整过程。界面支持按年代与高度筛选、明暗模式切换、拖拽平移及控制键倾斜视角；缩小时建筑高度会被夸张放大以便辨识。数据显示洛杉矶建筑中位高度仅约16英尺（以低层住宅为主），同时标注了城市最高建筑。数据来源于LARIAC 2020年建筑轮廓及洛杉矶县评估所登记记录。底部信息表可逐栋查看建造年代、高度、占地面积与建筑类别。整个项目以时间为轴，将百五十余年的城市变迁浓缩为一次可探索的交互体验。
+
+---
+
+## 2. 发现《Dummit & Foote 抽象代数》中的一个命题错误
+
+**原文标题**: Finding a bug in Dummit and Foote's Abstract Algebra
+
+**原文链接**: [https://kallus.org/blog/dummit_and_foote.html](https://kallus.org/blog/dummit_and_foote.html)
+
+本作者在Recurse Center学习期间，尝试使用Rocq（Coq分支）对Dummit和Foote的经典教材《抽象代数》进行形式化验证。在证明书中第一道练习——"函数为单射当且仅当存在左逆"——时，反复受阻，最终发现该命题本身不成立。反极为：令A为空集、B为单元素集{1}，则从A到B的唯一函数为空函数∅，它既是单射（空真），但B到A不存在任何函数，故f没有左逆。作者指出，若仅用纸笔推演很可能忽略这一边界情况，而形式化证明工具Rocq持续报错促使他质疑命题本身，从而发现了这个漏洞。作者事后查阅发现，该书勘误表已收录此错误。文章借此展示了形式化方法在数学教材审查中的独特价值：它能系统性地暴露人类直觉容易遗漏的退化情形。
+
+---
+
+## 3. 《麦克白》及其问题
+
+**原文标题**: Macbeth and His Problems
+
+**原文链接**: [https://porticoquarterly.com/essay/macbeth-and-his-problems/](https://porticoquarterly.com/essay/macbeth-and-his-problems/)
+
+本文由英国著名莎士比亚学者D. J. Taylor撰写，副标题"挥舞蓝色铅笔"点明文章核心关注文本编辑与修订。文章聚焦于莎士比亚悲剧《麦克白》在历代版本流传中所面临的问题，从文本校勘的角度审视异文、删改及争议，探讨编辑者如何在忠实原稿与提升可读性之间寻求平衡。Taylor凭借深厚的莎士比亚版本学造诣，逐一分析《麦克白》文本中的疑难之处，如疑似误植、舞台指示的阙失以及后世编者对原文的取舍处理等，体现"蓝色铅笔"——即编辑删改权——在经典文学传承中的微妙张力：编者既是文本的保护者，亦可能成为无意的改写者。全文兼具学术严谨性与可读性，展现了作者对莎士比亚文本精确性的执着追求。
+
+---
+
+## 4. 随机渐变生成方法（2024）
+
+**原文标题**: Methods for Random Gradients (2024)
+
+**原文链接**: [https://justinjay.wang/methods-for-random-gradients/](https://justinjay.wang/methods-for-random-gradients/)
+
+本文是作者在OpenAI工作期间的经验分享，介绍了三种生成随机渐变图像的方法。第一种为高度图法：利用改良的Perlin噪声填充网格高度值，再映射到随机生成的色彩比例，产出有机灵动的渐变效果，虽美观但未用于生产环境。第二种为分层径向渐变法：基于SVG原生径向渐变元素，通过调整焦点及缩放、旋转、平移等变换，将多层渐变叠加组合，于2020至2022年应用于OpenAI主页，每次加载动态生成唯一渐变，文件仅约6KB，兼顾性能与视觉表现。第三种为AI生成法：借助DALL·E 2等模型，通过不同提示词控制风格，可生成梦幻、花卉、天空等纹理渐变，结果虽随机，却常令人惊喜。文章还回顾了OpenAI渐变视觉的演进历程：2017年Ben Barry以四角颜色插值塑造早期视觉识别，2019年采用仅85字节的2×3像素静态渐变方案，后逐步升级为动态分层方案。作者指出，随着AI工具日益成熟，创意的可能性将不断拓展。
+
+---
+
+## 5. 天气前瞻 3
+
+**原文标题**: WeatherNext 3
+
+**原文链接**: [https://deepmind.google/science/weathernext/](https://deepmind.google/science/weathernext/)
+
+与以往模型不同，WeatherNext 3 直接从原始卫星图像中提取数据，而非依赖经过预处理的气象信息，由此实现逐小时预报生成。这一突破使用户能够实时追踪降雨、降雪等快速变化的天气状况，显著提升了短时天气预警的时效性与实用性，尤其适合需要密切关注气象动态的用户群体。
+
+---
+
+## 6. Simple Is Not Small
+
+**原文标题**: Simple Is Not Small
+
+**原文链接**: [https://jyn.dev/simple-is-not-the-same-as-small/](https://jyn.dev/simple-is-not-the-same-as-small/)
+
+文章之前已经处理过
+
+---
+
+## 7. NEC V20微代码解码
+
+**原文标题**: Decoding the NEC V20 Microcode
+
+**原文链接**: [https://martypc.blogspot.com/2026/09/decoding-nec-v20-microcode.html](https://martypc.blogspot.com/2026/09/decoding-nec-v20-microcode.html)
+
+摘要：本文记录了作者对NEC V20处理器微代码ROM的完整解码过程。背景是为MartyPC项目实现V20的周期精确模拟。作者委托InfoSecDJ对V20芯片（Sharp代工版本）进行晶圆摄影，获得56亿像素的高分辨率照片。从中定位到258×116、共29928位的微代码ROM阵列。由于Metal层干扰使自动阈值检测失效，作者采用MaskRomTool导出位坐标后，利用PyTorch训练一个二分类卷积神经网络（CNN），以手动标注的约1000张42×42像素图像为训练集，最终将识别精度提升至99%以上，仅4位需人工复核，大幅节省了手动提取工作量。随后解码了微代码ROM上方的可编程逻辑阵列（PLA），该PLA通过13路输入（含反相）构成屏蔽式与门阵列，将8位操作码映射至257条激活线；结合4选1多路复用器，将每列4个微码字按低两位程序计数器选取。最终将29928位重组为1032个29位微码字，参照NEC与Intel诉讼中的法院文件确定字段布局。解码结果显示，约三分之二微码实现80186指令集，其余分别对应NEC的0Fh前缀扩展指令和8080模拟模式。作者还据此推断了操作数字段中寄存器编码的含义，为后续精确仿真奠定基础。
+
+---
+
+## 8. 加州理工学院数学黑客松——全球首届研究级数学黑客松
+
+**原文标题**: Caltech Mathathon – first hackathon ever devoted to research level mathematics
+
+**原文链接**: [https://mathathonchallenge.com/index.html](https://mathathonchallenge.com/index.html)
+
+2026年10月30日至11月1日，加州理工学院将举办全球首届研究级数学黑客松。活动为百支全球顶尖数学团队提供逾200万美元AI算力额度，各队在40小时内使用前沿大模型攻克开放猜想、构建新数学理论，并向资深数学家进行成果答辩。背景是AI近期在纯数学领域的连续突破：5月，Erdős平面单位距离猜想（悬置80年）被推翻；8月，首个非sofic群（悬置27年）被构造；同月，六球面复结构问题（悬置78年）亦获证明。基于此，活动聚焦两大核心问题：AI能在多大程度上加速从学术构想到同行评审发表的周期？当AI可更快解决猜想时，数学家自身的角色将如何转变？评审分两轮进行：当场颁发最佳阐释与最具潜力奖，待学术社区完成验证后再设第二轮奖励，以确保成果严谨可靠。本次活动标志着AI辅助数学研究从个体探索迈向系统性、竞争性的新阶段。
+
+---
+
+## 9. bzip3：bzip2 的高性能精神继承者
+
+**原文标题**: bzip3
+
+**原文链接**: [https://github.com/iczelia/bzip3](https://github.com/iczelia/bzip3)
+
+摘要：bzip3 由 Kamila Szewczyk 开发，采用 LGPLv3 许可证，是 bzip2 的改进版压缩工具，擅长度量文本与代码压缩。其核心技术包括基于后缀数组的快速 Burrows-Wheeler 变换、结合 LZ77 与 PPM 的 RLE 预处理，以及 order-0 上下文混合熵编码器。在 Perl 全版本源码基准测试中，bzip3（-b 511）压缩至 546 MB，远优于 xz（2056 MB）、bzip2（3441 MB）和 zstd（3076 MB）；结合 lrzip 长距离去重后更可压至 60 MB。解压速度与 xz 相当（约 4 分钟），快于 bzip2（9 分钟）。x64 Linux（clang13）下单线程可达 17 MB/s 压缩、23 MB/s 解压，支持 x86、ARM、PPC64LE、MIPS、SPARC、s390x 等多架构，可通过源码编译或 Homebrew 安装。项目致谢 Ilya Grebnov（libsais）、Caleb Maclennan（构建系统）等贡献者。作者同时警示：尽管经过充分测试，仍不排除极小概率 Bug 导致数据不可恢复的风险，用户须谨慎使用。
+
+---
+
+## 10. 冰月即海洋世界
+
+**原文标题**: Icy Moons Are Ocean Worlds
+
+**原文链接**: [https://mceglowski.substack.com/p/icy-moons-are-ocean-worlds](https://mceglowski.substack.com/p/icy-moons-are-ocean-worlds)
+
+文章以恐龙认知的革新为引，指出太阳系外围冰封天体已从"太空荒漠"跃升为最可能孕育生命的海洋世界。依托旅行者号、伽利略号、卡西尼号三次任务及哈勃与韦伯望远镜的观测，目前六颗卫星已被确认拥有地下液态海洋：木卫二、木卫三、木卫四、土卫二、土卫六和土卫八，土卫七、冥王星、海卫一等列入候补。文中逐一介绍各具特色：木卫二靠潮汐加热，辐射环境催生氧化化学；土卫二"虎纹裂谷"喷射海水，卡西尼已直接采样，是最宜居目标；土卫六拥有稠密氮大气、碳氢化合物湖泊及地下盐海；土卫八则是最年轻的"隐身"海洋世界。结构上分两类：木卫三、木卫四、土卫六海底存在高压冰层阻隔水岩交互，而木卫二、土卫二、土卫八水体直接与岩石接触，更利化学循环。未来欧罗巴快船（2031年）与蜻蜓号（2034年）将深化认知。文章最后提出宜居评估标准，核心在于水-岩接触与地质古老性。
+
+---
+
+## 11. 数据流模型再访
+
+**原文标题**: The Dataflow Model Revisited
+
+**原文链接**: [https://www.vldb.org/pvldb/volumes/19/paper/The%20Dataflow%20Model%20Revisited](https://www.vldb.org/pvldb/volumes/19/paper/The%20Dataflow%20Model%20Revisited)
+
+本文是数据流模型论文获VLDB"时间检验"奖后，作者在发表十一年之际的回顾与自省。该文曾提出无界、乱序数据已成常态，不应等待数据完整，并构建了以窗口化、触发器、水位线与撤回为核心的统一模型，在批流之间权衡正确性、延迟与成本。作者认为，事件时间优先、拒绝等待完整性及强一致性等核心原则经受住了时间检验，但分析接口设计存在失误：窗口化与触发器的语义同运维细节纠缠过深，触发器系对用户本不该面对之问题的过度设计，且流中心视角忽略了流与表实为同一对象的不同表征。最终实现分析目标的机制回归数据库传统——SQL、增量视图维护与物化视图。文章还指出，完整性原则分化为水位线（流持续可见）与快照一致刷新（流不可见）两态，后者因对用户要求更低而覆盖更广；批与流之争多为语义分歧；低延迟需求沿OLTP/OLAP分道扬镳；并提出了"保留、排除、深入"的新框架，展望流处理超越分析领域后的终局。
+
+---
+
+## 12. MacBook"斩首"改造记（2025）
+
+**原文标题**: Decapitating a MacBook (2025)
+
+**原文链接**: [https://mm-dev.rocks/series/decapitating-macbook-an-odyssey/](https://mm-dev.rocks/series/decapitating-macbook-an-odyssey/)
+
+摘要：作者长期排斥苹果产品，但为开发iOS/macOS应用不得不购置Mac。尝试过虚拟机和云端CI服务后，最终决定购买实体机。在功耗和成本的双重约束下，选定M1芯片（ARM架构、低功耗），放弃有风扇的Mac Mini，在eBay以300英镑购入一台碎屏的8GB M1 MacBook Air（玫瑰粉色），随即计划拆屏使其变成无头主机。收货后先验证机器可用：因内屏已碎，借助小尺寸USB-C外接显示器，经历线缆兼容折腾后通过CMD+F1切换画面成功登录。拆屏过程耗时但顺利——拧下大量梅花及Torx螺丝，以90度夹角配合外力分离上下壳；保留上壳作防尘保护盖，用胶带辅助铲除碎裂玻璃，最后在内壳贴透明塑料膜防止割伤。作者采用12V电池供电，偏好自接XT-60电源接头，对苹果封闭生态持批评态度，但仍认可Apple Silicon的能效比。8GB统一内存运行Flutter开发绰绰有余，整个改造兼具实用性与个人风格。
+
+---
+
+## 13. 2.16亿台"间谍电视"：LG智能电视的隐私安全隐患
+
+**原文标题**: 216M Spy TVs – The LG Smart TV Problem [video]
+
+**原文链接**: [https://www.youtube.com/watch?v=6IFVTcM28KA](https://www.youtube.com/watch?v=6IFVTcM28KA)
+
+该视频聚焦LG智能电视的隐私安全问题，探讨约2.16亿台LG智能电视可能存在的"间谍"风险，即内置摄像头与麦克风或可被远程激活、存在数据泄露隐患。所提供的正文内容仅为YouTube平台通用页脚信息，包括版权与免责声明、隐私政策、广告与开发者条款、版权联系邮箱及Google LLC公司信息等，未包含视频的实际讲解内容。观众需通过观看视频本身获取关于LG智能电视安全漏洞的具体技术分析与防范措施。
+
+---
+
+## 14. Trusting-Trust Attack against an Entire Linux Distribution
+
+**原文标题**: Trusting-Trust Attack against an Entire Linux Distribution
+
+**原文链接**: [https://arxiv.org/abs/2607.24888](https://arxiv.org/abs/2607.24888)
+
+文章之前已经处理过
+
+---
+
+## 15. 学术界的D指数竞赛
+
+**原文标题**: Academia as a d-index measuring contest
+
+**原文链接**: [https://kevinmunger.substack.com/p/introducing-the-k-index](https://kevinmunger.substack.com/p/introducing-the-k-index)
+
+学术界深陷量化评价困境：影响因子忽略学科间产出差异，Scholar的h指数未区分合著贡献。Research.com推出学科特异性D指数后，作者既讽刺其惩罚跨学科合作之荒谬，也借此揭示指标多样化的意义——指标不再稀缺，迫使人们反思评价标准本身。作者遂提出"K指数"，以理论设计强调产出多样性并防策略性刷分，纳入独立引用、方法贡献、近期活跃、分数化合著、时间衰减、独立比例及跨学科广度七项维度，单项权重上限0.25。数据依托非营利开放数据库OpenAlex，暂限政治学（2000年至今），覆盖超3.6万学者。文中同时抨击营利出版商，以自办开放获取期刊对比Elsevier旗下期刊高额出版费，估算已为学术生态节省约40万美元，呼吁彻底终结营利出版模式，并建议未来K指数纳入编辑服务贡献。最终作者公布排名，以幽默笔调感叹"量化或许也没那么糟"。
+
+---
+
+## 16. 科学家在量子世界中观测到爱因斯坦引力
+
+**原文标题**: Scientists observe Einstein's gravity in the quantum world
+
+**原文链接**: [https://www.ox.ac.uk/news/2026-08-28-scientists-observe-einsteins-gravity-in-the-quantum-world](https://www.ox.ac.uk/news/2026-08-28-scientists-observe-einsteins-gravity-in-the-quantum-world)
+
+无法访问该文章链接
+
+---
+
+## 17. 让服务器持续运转
+
+**原文标题**: Keep Our Servers Running
+
+**原文链接**: [https://blog.archive.org/2026/09/01/keep-our-servers-running-your-recurring-donation-goes-3x-this-september/](https://blog.archive.org/2026/09/01/keep-our-servers-running-your-recurring-donation-goes-3x-this-september/)
+
+互联网档案馆以"让全人类知识人人可及"为使命，向全球免费开放"时光机"网页存档及各类馆藏，涵盖210拍字节的知识资源。为保持独立性，档案馆不收费、不售卖用户数据、不投放广告，亦拒绝将核心技术外包，而是自行建设和维护服务器、存储、电力及冷却等全部基础设施。然而，随着需求快速增长，维持这些基础设施的成本与压力日益增大。今年九月，档案馆发起特别募捐活动：凡在九月发起每月25美元及以上的定期捐赠，初始捐款将获得2:1匹配，即捐25美元可产生75美元的效力，50美元变为150美元，100美元变为300美元，捐款效果相当于提升三倍。定期捐赠是档案馆持续运转的关键支柱，目前其运营平均依赖每位捐赠者每月约25美元的支持。加入"月度捐赠圈"，不仅是在维护服务器，更是在确保书籍可读、网页可访问，为后代保存人类文明的精华。
+
+---
+
+## 18. 可替代却仍受雇：自动化与工作的意义
+
+**原文标题**: Replaceable but Employed: Automation and the Meaning of Work
+
+**原文链接**: [https://www.nber.org/papers/w35559](https://www.nber.org/papers/w35559)
+
+本文探讨核心问题：自动化能否在不取代劳动力的前提下损害工人福利？作者Gans构建模型，其中工人既重视生产有用产出，也重视产出对自身贡献的依赖，即工作的"意义感"。模型表明，即使企业仍保留该工人，一个可信的机器替代方案也会削弱这一意义来源。当工资能完全调整时，意义损失会转化为更高的薪酬补偿；当工资仅部分调整时，工人须自行承担部分损失。此外，这种意义损失还会增加自动化被采用的可能性。文章进一步指出，外部开发者可通过公开展示机器能力再行授权获利，因为公开展示降低了人类替代方案的价值——这一"意义外部性"既创造了机器需求，也可能使原本可盈利的开发行为产生社会损害。技术质量提升与公共可见性增强效果各异：前者改善产出质量，后者单独削弱人类工作的价值。文章最终提出，自动化可在尚未消除岗位之前，先降低工作的内在价值，为理解人工智能时代劳动意义与福利问题提供了新框架。
+
+---
+
+## 19. 我的安全上网实践
+
+**原文标题**: My practical approach to surfing the web safely
+
+**原文链接**: [https://molily.de/safe-websurfing/](https://molily.de/safe-websurfing/)
+
+本文分享了作者在日常工作中兼顾速度与隐私的浏览器配置策略。作者指出，网络威胁不仅包括恶意代码执行，更包括广告追踪器、侵入性弹窗及第三方脚本对性能和电量的消耗。在威胁建模上，作者认为从完全开放的 Chrome 到极端隔离的 Tor+Tails 之间存在大量中间方案，应视需求取舍。主力浏览器为受限版 Firefox：开启增强跟踪保护，配合 uBlock Origin 拦截广告与追踪；默认屏蔽所有 Cookie，仅对需登录或特定站点放行；借助 Multi-Account Containers 将匿名浏览与登录浏览隔离，切断与广告数据平台之间的关联。对于不兼容 Firefox 或需大量 Cookie 的场景，作者使用 Vivaldi（支持 Manifest V2 扩展）和 Ungoogled Chromium（去除谷歌组件的 Chrome 分支）作为备选。Android 端因 Firefox 是唯一支持扩展的浏览器，同样以 Firefox 加 uBlock Origin 为主力，并善用其限制大媒体文件加载的功能节省流量，Vivaldi 则作为备选。整体思路是在隐私保护与日常可用性之间取得务实平衡。
+
+---
+
+## 20. Ladybird 2026年8月动态
+
+**原文标题**: This Month in Ladybird – August 2026
+
+**原文链接**: [https://ladybird.org/newsletter/2026-08-31/](https://ladybird.org/newsletter/2026-08-31/)
+
+Ladybird 浏览器八月更新涵盖多项重要进展。媒体方面，新增 fragmented MP4 及 H.264/HEVC/AV1/AAC 编解码器支持，实现 Twitch 等站点自适应码率视频播放，并修复 YouTube 多项播放问题。平台功能上新增 CSS 滚动吸附、DevTools 中 JavaScript 断点调试、可暂停恢复的下载及含完整历史记录的会话恢复。架构与安全方面，CSS 解析、计算样式和绘制管线迁移至 Rust，新增 JavaScript NaN-boxed 值内存笼隔离，并设立独立 Wasm 编译器服务。性能为本月最大亮点：全新增量式样式引擎（以物化视图思路驱动）配合布局缓存，使 StyleBench 从 3.5 跃升至 83；CSS 动画转入合成器线程独立运行；多项 JS 引擎快速路径优化将关键操作与 Chromium 的性能差距缩小一个数量级。此外修复了 ChatGPT、VS Code、Strava 等站点兼容性问题，引入声明式站点兼容性规则，WPT 得分增长 9,657 项。
+
+---
+
+## 21. 口哨合成器 Mac 应用正式上线
+
+**原文标题**: Whistle Synth Mac App
+
+**原文链接**: [https://www.jefftk.com/p/whistle-synth-mac-app](https://www.jefftk.com/p/whistle-synth-mac-app)
+
+作者将用口哨实时控制合成器的 Mac 应用上架 App Store，免费、开源、无广告，需外接麦克风及有线耳机以降低延迟。借助 Claude 大幅重写代码后，音频往返延迟从 80 毫秒降至 5 毫秒，卡顿问题也通过拆分检测与合成模块得以解决。音色方面，新增无八度低音（随音高改变谐波比例以维持感知音高稳定），并终于找到一个令人满意的高音乐色——Drawbar 风琴；作者坦言高音区人耳极为挑剔，长笛、电钢琴等尝试均告失败，唯有风琴旋转扬振器赋予的生命感使其过关。应用还支持演奏下方五度（D→G），灵感来自 Ugo Conti，可迅速适应。首次上架 App Store 期间，Claude 协助完成图标多尺寸适配、截图及演示视频，作者还因姓氏触发苹果姓名审核而需联系支持。作者总结：AI 是极佳的补力工具，当前阶段既足够强大又能留给人发挥空间，应善加利用。
+
+---
+
+## 22. 在新平台上引导启动Linux内核
+
+**原文标题**: How to bring up the Linux Kernel on a new platform
+
+**原文链接**: [https://werwolv.net/posts/linux_bringup/](https://werwolv.net/posts/linux_bringup/)
+
+摘要：本文以自研的RISC-V 32位模拟器为例，介绍在新硬件平台上从零启动Linux内核的完整流程。Linux内核运行的最低硬件需求仅三项：带MMU的CPU、足以加载内核/设备树/initramfs的RAM、以及周期性系统定时器。作者用约2000行C++实现了支持RV32IMA指令集的模拟器，配套RAM、SBI定时器接口及基于WD8250的UART。随后借助crosstool-ng生成riscv32-unknown-linux-gnu交叉工具链；编译内核时需将架构改为32位RISC-V（RV32IMA/ilp32 ABI），关闭压缩指令与虚拟化等选项，产出内核镜像；静态链接简单的init程序并通过gen_init_cpio生成initramfs；编写描述CPU、内存、UART及启动参数的设备树并经dtc编译为DTB。将三者载入模拟器内存并设置寄存器后即可启动，终端可见Linux引导日志及用户空间"Hello World"输出。文章指出，真机开发流程完全一致，区别仅在于外设地址需查阅SoC数据手册，且需U-Boot等引导程序将镜像从Flash/eMMC加载至内存。最终成果还可交叉编译为WebAssembly，在浏览器中运行整套系统。
+
+---
+
+## 23. 拾取桌畔残屑
+
+**原文标题**: Catching Crumbs from the Table (2000)
+
+**原文链接**: [https://www.nature.com/articles/35014679](https://www.nature.com/articles/35014679)
+
+本文系美国科幻作家特德·姜（Ted Chiang）于2000年6月1日在《自然》杂志（Nature，第405卷，第517页）发表的评论性短文，核心论断为"面对元人类科学（metahuman science），人类已然成为元科学家（metascientists）"。标题"拾取桌畔残屑"以隐喻手法揭示：在更高级、可能超越人类自身的科学范式面前，人类学者只能拾取他人工作后遗落的零散知识，其角色已从一线探索者退居为对科学本身进行审视与反思的"元科学家"。文章以科幻作家的敏锐视角，探讨了21世纪初前沿科学（如人工智能、合成生物学等）可能引发的认识论变革——当科学研究主体发生根本性转移，人类如何重新定位自身在知识生产链条中的位置。该文发表于《自然》周刊，属新闻评论类短文，全文为机构订阅内容。
+
+---
+
+## 24. 比利时公共交通实时地图
+
+**原文标题**: Live map of public transport in Belgium
+
+**原文链接**: [https://openbaarvervoerbelgie.be/](https://openbaarvervoerbelgie.be/)
+
+ovlive 是面向比利时全国的公共交通实时地图平台，提供荷兰语、法语和英语多语言界面，将 De Lijn、STIB-MIVB、TEC 和 NMBS 四大运营商的全部公交、有轨电车、地铁及火车线路汇聚于同一交互地图。用户可实时查看车辆位置、停靠站点、预计发车时间以及线路延误信息，从而精准规划出行、减少候车等待。该平台打破了各运营体系信息分散的壁垒，为比利时本地通勤者及国际游客提供一站式、全境的公共交通动态查询服务。
+
+---
+
+## 25. SLED：DOS平台上的Scheme式Lisp解释器
+
+**原文标题**: Schemy Lisp En DOS
+
+**原文链接**: [https://sled.neocities.org/](https://sled.neocities.org/)
+
+SLED（Schemy Lisp en DOS）是一款受Scheme启发的纯符号Lisp解释器，源自Kilo LISP，运行于MS-DOS、FreeDOS及DOSBox等DOS环境。其核心设计包含两类基本数据类型——对（Pair）与原子（Atom，涵盖符号、闭包及特殊符号），以S表达式统一表达数据与代码。SLED无内置数值类型，借助类冯·诺伊曼序数式的等距线计数模拟自然数。系统提供lambda闭包与define全局绑定，采用急切求值，支持列表解构与可变参数，并通过尾调用优化和蹦床求值器应对深层递归。作为DOS实时模式程序，受限于12288节点堆与2048字符符号表。启动时自动加载标准库sled.scm，提供REPL交互界面，支持脚本加载、批处理及错误忽略等命令行模式。系统内置不可变保护，特殊符号、特殊形式与内置函数不可重定义或遮蔽。标准库提供list、map、append、equal?、assert等常用函数，整体风格简洁，契合Scheme精神。
+
+---
+
+## 26. Show HN：HomeCat——打造你的后院办公室
+
+**原文标题**: Show HN: HomeCat – Design your backyard office
+
+**原文链接**: [https://myhomecat.com](https://myhomecat.com)
+
+摘要：HomeCat 是一款建筑规划工具，旨在帮助用户轻松完成从设计到施工的全流程管理。其核心功能包括：自动生成符合当地建筑规范的施工图纸、详细的材料清单与切割清单，以及针对各类建筑项目的分步施工指南。该工具特别适合规划后院办公室（Backyard Office）等小型建筑项目，帮助用户将创意转化为可落地的方案。通过让 HomeCat 接管建筑计划环节，用户可以更专注于项目整体进度的把控，避免因图纸不合规或材料准备不足而延误工期。目前该项目在 Hacker News 上公开发布，吸引关注独立开发与建筑自动化的社区用户。
+
+---
+
+## 27. Show HN：wg-admin——面向已有 WireGuard 主机的 Web 管理面板
+
+**原文标题**: Show HN: Wg-admin – web UI for an existing WireGuard host
+
+**原文链接**: [https://github.com/logimaxx/wg-admin](https://github.com/logimaxx/wg-admin)
+
+wg-admin 是一款轻量级 Web 管理界面，专为已运行的 WireGuard 主机设计。它直接读取 /etc/wireguard 下的现有配置，支持对端的增删改与密钥轮换，并通过 wg syncconf 热应用变更，避免接口中断。项目不安装 WireGuard、不替换 wg-quick、不改写 PostUp/NAT 规则，完全叠加在用户现有配置之上。核心功能包括：自动继承所有 .conf 文件及其键值；非中断式保存；为新增对端生成可下载的 .conf 与 QR 码；实时展示握手时间、流量及端点状态；写入前自动备份至 /var/lib/wg-admin/backups/；默认仅绑定 127.0.0.1，对外访问需经 Caddy 或 Nginx 等反向代理加 TLS 保护。环境要求为 Linux、Python 3.11+、wireguard-tools 及 root 权限，安装仅需克隆仓库后运行 install.sh。项目由 LogiMaxx Systems 的 Sergiu Voicu 开发维护，采用 MIT 许可，欢迎在 GitHub 提交 Issue 与 Pull Request。
+
+---
+
+## 28. 比尔·盖茨安装Movie Maker的糟糕经历（2003）
+
+**原文标题**: Bill Gates tries to install MovieMaker (2003)
+
+**原文链接**: [https://www.techemails.com/p/bill-gates-tries-to-install-movie-maker](https://www.techemails.com/p/bill-gates-tries-to-install-movie-maker)
+
+摘要：2003年1月，比尔·盖茨向微软高管群发内部邮件，吐槽安装Movie Maker的灾难性体验。他在官网下载页遭遇五次超时，45个选项名称令人困惑，搜索"moviemaker"和"movie maker"均无结果。经同事指引改用首页搜索后，又被引导至Windows Update"走流程"：被迫下载17MB所谓"关键更新"，安装耗时6分钟且需重启，重启后Outlook状态全丢。再回到WU已不知为何事，好不容易在"WindowsXP"文件夹下找到Movie Maker，安装又耗时数分钟，还需额外安装Windows Media Player 9。最终在添加/删除程序中找不到Movie Maker，却出现大量"测试包"条目，整个程序列表一片混乱。转去下载Digital Plus包时，表单反复清空，折腾逾一小时仍一无所获。盖茨怒斥Windows可用性"系统性退化"。随后管理层展开讨论：Dave Fester认领网站问题，Mike Beckerman质疑协调机制，John Martin指出营销团队主导网页发布是根源，Ian Mercer批评Windows Update无法主动推荐新功能、假"关键更新"过多、发布周期僵化等。该邮件来自Comes v. Microsoft（2007）诉讼公开文件。
+
+---
+
+## 29. 改装1995年GPS时间服务器，以免重蹈Telstra覆辙
+
+**原文标题**: Rebuilding a 1995 GPS Time Server so I don't get Telstra'd
+
+**原文链接**: [https://www.jeffgeerling.com/blog/2026/truetime-xl-gps-time-server-restomod/](https://www.jeffgeerling.com/blog/2026/truetime-xl-gps-time-server-restomod/)
+
+作者购入一台1995年TrueTime XL-AK GPS时间服务器，恰逢澳大利亚电信因GPS时间源故障致全国移动服务中断12小时，遂将其改装为实用设备。他以Raspberry Pi 5搭配Jimmy Paputto L1 GNSS模块替代原硬件，用Chrony构建Stratum 1 NTP时间服务器。配置要点包括：通过NMEA和PPS实现高精度授时；将PPS中断隔离至专用CPU核心以降低抖动；强制SoC全速运行并配合恒定风速散热以稳定晶振频率；为原装Densitron LCD和双色LED编写驱动，实时显示时间与GPS状态。此外还启用了Time/Daytime协议，并通过Docker部署netatalk为经典Mac提供AppleTalk时间同步。改装保留原机箱，可随时切回原装硬件。作者计划将该设备用于VCF Midwest展会时间服务，未来拟设计SMT GPIO排针PCB并激活原键盘。文章亦指出，时间校准需6至12小时方能稳定，完整测量往往需要24小时以上。
+
+---
+
+## 30. vLLM在AMD GPU上的推测解码
+
+**原文标题**: Speculative Decoding in vLLM on AMD GPUs
+
+**原文链接**: [https://vllm.ai/blog/2026-08-23-speculative-decoding-amd-gpus](https://vllm.ai/blog/2026-08-23-speculative-decoding-amd-gpus)
+
+摘要：标准自回归解码每步仅产出一个token，是LLM大规模服务的关键瓶颈。推测解码通过"草稿-验证"机制加以缓解：轻量草稿模型预提多个候选token，目标模型在单次前向中完成验证，即可一次性提交多个输出token，在保持原始模型输出分布不变的前提下降解码轮次。本文系统介绍vLLM中五种推测起草方法，按架构归为三类：原生MTP模块（内置于目标模型，顺序生成候选）、独立MTP草稿器（如Gemma 4 MTP，复用目标模型激活与共享KV缓存顺序起草）、专用目标条件草稿网络（EAGLE-3基于多层目标隐状态自回归起草，DFlash并行预测整块候选，DSpark在此基础上引入因果校正与置信度前缀选择）。各方法在信息获取（隐状态、KV缓存、多层特征融合）与生成策略（顺序/并行/混合）上差异显著。实验基于AMD Instinct MI300X与MI355X GPU及ROCm平台，结果显示输出token吞吐受起草方法、提议长度、模型家族、草稿检查点及接受率等多因素共同影响。文中还给出了各方法的启用配置，并探讨了实际调参与可观测性方面的实践建议。
+
+---
+
