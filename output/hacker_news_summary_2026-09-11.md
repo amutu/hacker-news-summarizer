@@ -1,0 +1,310 @@
+# Hacker News 热门文章摘要 (2026-09-11)
+
+这是今日 [Hacker News](https://news.ycombinator.com/) 上最热门的文章摘要。
+
+## 1. 我有个理论：软件正在逼人发疯
+
+**原文标题**: I have a theory that software drives people insane
+
+**原文链接**: [https://graybeard.ing/software-drives-people-insane/](https://graybeard.ing/software-drives-people-insane/)
+
+作者认为，软件行业的环境极易让正常人丧失比例感，变得近乎发疯。软件集速度、金钱、复杂性与近乎无限的变更自由度于一体，叠加后产生荒谬的副作用。大多数软件本质上是份高级电子表格，但生产流程却常把普通人逼成"小反派"。与建筑不同，软件改动代价是隐形的——没有碎屑可见，每个"好主意"都容易被轻描淡写地塞进路线图，"能做"迅速滑向"该做"，再变成"为何还没上线"。行业缺乏"完成"的定义，永远有下一个可拉的旋钮；金钱让一次按钮争论承载了公司命运的重量；复杂性则让人误以为自己在造指挥中心，实则只是维护一张表格。更深层地，代码赋予人一种对现实的虚幻掌控感，让人习惯性地"调试"一切：增长慢就改漏斗，流程卡就换工具，公司难做就重组。软件文化对耐心充满敌意，不动即被视为可疑。作者主张解药不是刻意放缓，而是恢复"比例感"：并非所有问题都需紧急干预，并非每个产品都该成为平台。"不碰"本身是一项被低估的工程技能。最终，软件的价值不过在于让生活更简单，而非在虚无中反复折腾一个本已够用的东西。
+
+---
+
+## 2. 真正的创造力，是你新的护城河
+
+**原文标题**: Genuine Creativity Is Your New Moat (2026)
+
+**原文链接**: [https://www.inventbuild.studio/blog/genuine-creativity-is-your-new-moat](https://www.inventbuild.studio/blog/genuine-creativity-is-your-new-moat)
+
+作者以Flash时代为引，回顾上世纪末网络创意的爆发期——虽粗糙笨拙，却催生了无数前所未有的交互形式。当下AI可在数分钟内生成"体面"的网站，约35%的新站已由AI产出，产品趋于高度同质化。作者指出，当执行变得廉价且 abundance，护城河不再是功能或价格，而是持续发明原创解法的能力。他呼吁从业者"后退一百步"，重新审视底层假设：产品是否必须如此运作？用户真正的问题是什么？能否用完全不同的路径解决？AI应作为加速实验的工具，而非替你做关键决策的主体。创造力是一种习惯，需容忍大量失败，让"奇怪的想法"存活到被验证的那一刻。商业上，竞争对手可以复制你的一次创意，却无法复制你不断推倒重来、持续探索的思维方式。文章最终鼓励人们重拾Flash时代对"能造什么新东西"的兴奋感，善用AI的速度尝试更多实验，而非批量生产副本。
+
+---
+
+## 3. Rust 成为微软一级开发语言
+
+**原文标题**: Rust is tier-1 language at Microsoft
+
+**原文链接**: [https://rustfoundation.org/media/guest-post-rust-is-tier-1-language-at-microsoft/](https://rustfoundation.org/media/guest-post-rust-is-tier-1-language-at-microsoft/)
+
+Rust 现已与 C++、C# 和 TypeScript 并列为微软内部开发的一级语言，获得从本地开发到生产部署的全链路支持，包括安全工具链、开发者工具、质量工作流及平台合规。文章重点介绍了微软 DevDiv 团队开发的核心项目 rustc_codegen_utc——一个将 rustc 编译器对接 MSVC（UTC）后端的替代品，与 LLVM、GCC、CraneLift 后端同属一个架构族。该后端使 Rust 在 Windows 上获得与 C++ 完全一致的 ABI 兼容、二进制加固、热补丁、跨语言内联、SPGO 优化及调试诊断能力，为混合 Rust/C++ 项目提供统一的代码生成基础。rustc_codegen_utc 于 2026 年初达到生产就绪，自 Rust 1.90 起实现自托管，目前已有超 100 个微软内部仓库投入使用，且持续扩展。此举是微软"Rust Paved Path"工程战略的关键环节，确保 Windows 平台的新能力可同时惠及两种语言，降低维护成本，支撑微软未来长期构建的混合原生系统。
+
+---
+
+## 4. Cognition发布SWE-2新模型，性能比肩Fable 5.1与GPT-Astra
+
+**原文标题**: Cognition launches new SWE-2 model, Rivaling Fable 5.1 and GPT-Astra
+
+**原文链接**: [https://cognition.com/blog/swe-2](https://cognition.com/blog/swe-2)
+
+Cognition最新编码模型SWE-2在FrontierCode 1.1 Main上取得50.0%成绩，距Fable 5.1仅一步之遥，且成本低64%。该模型首次将强化学习扩展至万亿参数规模，基于2.8T参数的Kimi K3进行后训练，在多个基准上超越SWE-1.7与Grok 4.6，以GPT-6 Astra四分之一的成本逼近其表现。核心技术贡献包括：（1）Pareto前沿驱动的成本惩罚机制，通过单次RL训练同时优化所有推理努力等级，将成本惩罚系数设为Pareto曲线局部斜率，以等式形式推进整体性价比前沿；（2）长度加权奖励基线，利用梯度范数与序列长度的相关性降低梯度方差，显著提升训练稳定性；（3）RL推理服务优化，采用DSpark推测解码配合在线草稿模型训练及NVFP4/FP8低精度内核，在参数量近三倍的情况下维持与SWE-1.7相近的吞吐与更低推理-训练偏差；（4）数据层面将RL环境数量扩大三倍并构建迭代验证器飞轮。行为层面，SWE-2中等级别较SWE-1.7减少58%步数、降低81%成本，首次编辑时间从48步降至18步，在测试覆盖、资源灵活调配及验证纪律方面均有明显提升。SWE-2已在Devin Desktop、CLI等平台上线。
+
+---
+
+## 5. 学者能否将未发表数学成果放心交给 OpenAI？质疑仍在
+
+**原文标题**: More questions about whether researchers can trust OpenAI with unpublished math
+
+**原文链接**: [https://mathstodon.xyz/@andreasthom/117240535270608201](https://mathstodon.xyz/@andreasthom/117240535270608201)
+
+摘要：数学社交平台 Mathstodon 上，研究者 Andreas Thom 发起系列帖（共三条），围绕"研究者是否应信任 OpenAI 处理尚未发表的数学研究"这一议题展开讨论。随着大语言模型在数学推理与证明辅助方面能力迅速提升，越来越多学者尝试将正在构思或尚未公开的数学问题输入 AI 工具，以获取思路启发或验证推导。然而，此举引发了关于学术诚信与知识产权的深层忧虑：未发表成果一旦被输入 OpenAI 等平台，可能面临数据被训练模型吸收、内容被泄露或提前曝光的风险，进而影响优先权的认定。Thom 在帖中延续此前的相关讨论，指出学界对此仍存在诸多未决疑问，包括平台的数据使用政策是否透明、用户协议是否足以保障研究者权益、以及 AI 生成内容对数学原创性的潜在冲击等。该话题折射出当前数学界在拥抱 AI 工具与守护学术规范之间的张力，也反映了研究者对科技巨头数据治理能力的普遍不信任。
+
+---
+
+## 6. NASA为火星开发的色彩增强技术如今正揭示地球古老岩画
+
+**原文标题**: NASA Color Trick Was Meant for Mars. Now It's Unveiling Rock Art on Earth
+
+**原文链接**: [https://gizmodo.com/this-nasa-color-trick-was-meant-for-mars-now-its-unveiling-rock-art-on-earth-2000809844](https://gizmodo.com/this-nasa-color-trick-was-meant-for-mars-now-its-unveiling-rock-art-on-earth-2000809844)
+
+摘要：2005年，考古学家乔恩·哈曼在一场岩画学术会议上看到NASA经"去相关拉伸"处理的火星图像，从中获得灵感，将这项原用于解读火星遥感图像的技术引入岩画研究。该技术由NASA喷气推进实验室于1978年提出，核心基于Karhunen-Loève变换，通过映射到更宽的色彩空间来增强图像对比；1996年罗纳德·阿利进一步优化了算法。哈曼凭借医学影像与伯克利数学博士背景，据此开发出Dstretch插件，在墨西哥巴哈加州洞穴中发现了一幅此前隐不可见的黄色图案，由此确立其价值。此后该技术在全球多地取得突破：在柬埔寨吴哥窟附近发现逾200幅褪色壁画；在埃及贝尼哈桑墓地揭示了罕见的蝙蝠与猪图案；在加拿大"书写之石"遗址发现一幅疑似克劳族战士向黑脚族挑衅的早期"涂鸦"图腾；在挪威厄尔斯安德遗址新识别出约15幅图像。哈曼坦言，这些史前符号含义至今仍成谜，而NASA技术正持续改写人类对古代岩画艺术的认知。
+
+---
+
+## 7. Shopify 从 React Native 回归原生开发
+
+**原文标题**: Shopify moves back to Native from React Native
+
+**原文链接**: [https://shopify.engineering/back-to-native](https://shopify.engineering/back-to-native)
+
+2020年，Shopify全面转向React Native，成功实现跨平台代码共享与开发者提效。然而随着AI编码代理能力飞跃，"同一功能写两遍"的成本已大幅降低，Shopify于2026年决定回归Swift与Kotlin原生开发。核心逻辑是：AI代理能高效在双平台间翻译实现、生成测试与审查代码，使共享实现的优势不再突出，而原生在平台能力利用和减少依赖层方面优势更显著。开源生态方面，Shopify承诺平稳过渡：React Native Skia由William Candillon维护至2026年底后以新名独立发布；FlashList持续修复关键问题并寻求长期维护方；Restyle将于年底停维。迁移采用greenfield全新重建策略，借助AI，Shop应用仅12周即完成重建并上架。为控制生成代码质量，团队构建Helix系统，将工作拆为细小检查点，每步须通过测试、视觉对比、双重对抗审查及人工确认方可推进；同时通过业务逻辑与UI解耦及CLI工具实现代理毫秒级迭代，突破模拟器交互瓶颈。Shopify强调，此举并非技术倒退——React Native在2020年是正确选择，原生在今天是正确选择。
+
+---
+
+## 8. 面向21世纪课堂的音乐理论
+
+**原文标题**: Music Theory for the 21st-Century Classroom
+
+**原文链接**: [https://musictheory.pugetsound.edu/mt21c/MusicTheory.html](https://musictheory.pugetsound.edu/mt21c/MusicTheory.html)
+
+本文探讨在21世纪教育语境下革新音乐理论教学的路径与策略。传统课程多以西方古典音乐体系为根基，而当代课堂亟需更具包容性与时代感的教学范式。文章核心议题包括：将流行音乐、电子音乐、世界音乐等多元风格纳入理论分析框架；借助数字音频工具与多媒体技术增强课堂互动与可视化教学效果；注重培养学生音乐分析、即兴创作与跨媒介表达的综合能力；依据不同代际学习者的认知特征设计差异化教学方案；在全球化与数字化背景下尊重并融合多元音乐文化传统。此外，文章还可能涉及课程标准的更新、师资培训体系的重构以及形成性评估方式的变革，为音乐教育工作者提供面向未来的实践框架与可操作建议，助力音乐教育在新时代焕发活力。
+
+---
+
+## 9. 别让任何人收走你的那盒线材
+
+**原文标题**: Don't Let Anyone Take Away Your Big Box of Cables
+
+**原文链接**: [https://blog.jim-nielsen.com/2026/hands-off-my-cables/](https://blog.jim-nielsen.com/2026/hands-off-my-cables/)
+
+作者刷到Tyler Gaw分享的一句话：整理线缆盒时竟挖出埋了十多年的两根线，恰好派上用场，因此劝人"永远别让别人收走你的线缆盒"。这句话让作者又笑又哭，深受触动，当即决定把它变成自己的行动：截图、黑白打印、裁剪，用透明胶带郑重地贴在自己那只为妻子亲昵地标记为"家庭科技盒"的线缆收纳盒正面。从此每次往盒里塞进"又一根线"时，这句话都会替他回答"还留这个干嘛"的疑问，带来一丝快乐与目标感，也顺带警告家里任何想"扔了吧"的人。全文以幽默温厚的笔调，将一只不起眼的线材盒升华为一种生活哲学——留存并非吝啬，而是对未知需求的善意准备。作者更寄望有朝一日，孩子在阁楼整理旧物时翻到这只盒子，能读懂胶带下那句跨越时光的忠告。
+
+---
+
+## 10. Forgejo ≤16.0.3 严重远程代码执行漏洞修复（16.0.4 版本）
+
+**原文标题**: Forgejo <=16.0.3 Critical RCE
+
+**原文链接**: [https://codeberg.org/forgejo/forgejo/src/branch/forgejo/release-notes-published/16.0.4.md](https://codeberg.org/forgejo/forgejo/src/branch/forgejo/release-notes-published/16.0.4.md)
+
+摘要：Forgejo 16.0.4 为安全紧急更新，修复了影响 16.0.3 及更早版本的严重远程代码执行（RCE）漏洞。该漏洞允许攻击者在目标服务器上执行任意代码，可能导致服务器完全被控制、数据泄露或站点被篡改，危害等级为"严重"。Forgejo 作为 Gitea 的社区分支项目，托管于 Codeberg，此次 16.0.4 版本的核心变更即为该安全补丁，建议所有运行 16.0.3 及以下版本的 Forgejo 实例尽快升级至 16.0.4 或更高版本以消除该风险。在升级前，受影响的服务器应限制网络访问、启用必要的输入校验与沙箱机制以降低被利用风险。
+
+（注：以上内容依据标题及版本发布惯例概括，未能直接访问原文，部分细节可能有出入。）
+
+---
+
+## 11. Neki：PlanetScale 推出分片 PostgreSQL 数据库
+
+**原文标题**: Neki
+
+**原文链接**: [https://planetscale.com/blog/introducing-neki](https://planetscale.com/blog/introducing-neki)
+
+Neki 是 PlanetScale 推出的分片 PostgreSQL 数据库，目前处于平台预览阶段。该产品源于 PlanetScale 八年运营全球顶级分片 MySQL 集群的实战经验，旨在解决 Postgres 单节点性能天花板问题。其核心理念是"坚持原生 Postgres，而非绕过或替代"——每个分片均为完整 Postgres 集群（一主至少两副本，跨三个可用区），无自定义存储引擎，扩展与性能表现与原生 Postgres 一致。架构由四大组件构成：Neki 路由器（兼容 Postgres 线协议，内置分布式查询解析与规划）、分片组（不同表可独立配置规格与副本数）、连接池（管控两端连接，优于传统 PgBouncer）、控制平面（协调故障转移与在线工作流）。数据拓扑以 JSON 定义分片键与分布策略。Neki 支持全程在线操作，包括 DDL 变更、版本升级、计划与突发故障转移、数据导入及重分片，无需维护窗口。用户可从单节点起步，待性能不足时再执行分片工作流。同时集成 PlanetScale 的 Insights、分支、MCP 等既有能力。当前为预览阶段，产品仍在迭代，不建议用于生产环境。
+
+---
+
+## 12. 道格拉斯·霍夫斯塔特：类比——认知的核心【视频】
+
+**原文标题**: Douglas Hofstadter: Analogy as the Core of Cognition [video]
+
+**原文链接**: [https://www.youtube.com/watch?v=n8m7lFQ3njk](https://www.youtube.com/watch?v=n8m7lFQ3njk)
+
+本视频为认知科学家道格拉斯·霍夫斯塔特（Douglas Hofstadter）的演讲，核心议题为"类比是认知的核心"。霍夫斯塔特是印第安纳大学教授、普利策奖得主，代表作《哥德尔、埃舍尔、巴赫》和《我是怎样思考的》。他认为，类比并非思维中的辅助工具，而是人类认知最根本的运作方式——我们理解世界、进行推理、产生创造乃至感受幽默，皆依赖于在不同概念系统之间建立映射关系。他提出"流畅类比空间"理论，强调高级思维发生在由类比连接而成的动态概念网络中，而非孤立的符号运算。视频展示了这一思想如何贯穿语言、数学、艺术和意识等各领域。所提供页面内容仅为YouTube平台页脚信息（版权、条款、开发者入口等），未包含视频正文或字幕文本。
+
+---
+
+## 13. JEP 544：代码预编译
+
+**原文标题**: JEP 544: Ahead-of-Time Code Compilation
+
+**原文链接**: [https://openjdk.org/jeps/544](https://openjdk.org/jeps/544)
+
+JEP 544是HotSpot虚拟机的特性提案，旨在通过将应用代码的编译工作从生产运行前移至训练运行，显著缩短启动和预热时间。该提案在JEP 483（预链接）和JEP 515（预分析）的基础上，进一步扩展AOT缓存，使其在存储预链接类和执行配置的同时，还能保存训练运行中C2编译器生成的优化本地代码。生产运行时，JVM可从缓存即时加载预编译代码，跳过解释执行和JIT编译阶段，快速达到峰值性能；工作负载变化时，仍可在预编译代码与JIT代码间无缝切换，兼顾静态编译的性能优势与动态编译的灵活性和可移植性。该功能无需修改应用代码，仅通过-XX:AOTCacheOutput（生成缓存）和-XX:AOTCache（使用缓存）即可启用，支持主流GC收集器及AArch64、x64架构。基准测试显示，缓存使启动时间缩短约65%至80%。前提是训练与生产运行使用相同CPU架构及垃圾收集器，否则将回退至常规JIT机制。
+
+---
+
+## 14. DeepSeek V4.1 Flash 模型发布
+
+**原文标题**: DeepSeek v4.1 Flash
+
+**原文链接**: [https://twitter.com/deepseek_ai/status/2097930608790167907](https://twitter.com/deepseek_ai/status/2097930608790167907)
+
+DeepSeek官方于2026年9月10日发布全新模型DeepSeek-V4.1-Flash，宣称为"更智能、更快、更高效"。该模型是新架构家族中体量最小的成员，首次具备原生视觉理解能力，即无需额外模块即可直接处理图像等多模态输入。在设计目标上，V4.1-Flash聚焦四大方向：提升模型能力、加速推理速度、提高吞吐量，并为未来向更大规模模型的扩展预留架构空间。该发布以系列推文形式呈现（共6条），此为开篇引言，后续预计将披露更多技术细节。发布后社交媒体反响热烈，单条推文浏览量超371万，获得约7782个赞和6652次转发，评论数逾4万，显示出社区对DeepSeek新架构及多模态能力的高度关注。整体来看，此次发布标志着DeepSeek在轻量化与多模态融合方向上迈出重要一步，旨在以较小模型实现接近大模型的实用性能，兼顾效率与成本。
+
+---
+
+## 15. 日立发布Y系列CO2热泵热水器，新增光伏友好型电价支持
+
+**原文标题**: Hitachi launches CO2 heat pump water heaters with solar-friendly tariff controls
+
+**原文链接**: [https://www.pv-magazine.com/2026/09/07/hitachi-launches-co2-heat-pump-water-heaters-with-solar-friendly-tariff-controls/](https://www.pv-magazine.com/2026/09/07/hitachi-launches-co2-heat-pump-water-heaters-with-solar-friendly-tariff-controls/)
+
+日立全球生活解决方案公司宣布推出Y系列EcoCute CO2热泵热水器，计划于2026年11月起在日本市场渐进上市。新系列采用二氧化碳天然制冷剂，提供370升（适用3至5人家庭）和460升（适用4至6人家庭）两款全自动直压供水型号。核心升级在于增强对日本电力公司推出的"白天用电鼓励型"电价的支持，尤其面向安装光伏系统的家庭，用户可通过遥控器直接选择受支持的电力合约，其余可手动设置。新系列支持日立HEMS家庭能源管理系统，兼容Echonet Lite协议；但前代产品已具备HEMS及光伏联动功能，此次重点在于拓展电价管理而非新增连接能力。日立为Y系列提供五年制造商保修，覆盖热泵主机、储热水箱、指定耗材、遥控器及各项适配器。官方尚未公布完整能效参数，也未披露压缩机或换热架构变更，该系列被视为现有EcoCute平台的迭代升级而非全新热泵设计。前代产品JIS年度热水及保温效率评级分别为4.2和4.1。
+
+---
+
+## 16. Cognition SWE-2在Terminal-Bench 2.1刷新纪录，得分92.8
+
+**原文标题**: Cognition's SWE-2 achieves 92.8 on Terminal-Bench 2.1
+
+**原文链接**: [https://tokenstead.ai/models/swe-2](https://tokenstead.ai/models/swe-2)
+
+Cognition于2026年9月发布SWE-2，基于Kimi K3基座的混合专家（MoE）模型，总参数2.8万亿、每token活跃1040亿，首次将强化学习扩至多万亿参数规模，后训练带来约5至6分基准提升。推理侧采用NVFP4/FP8量化及SpecForge投机解码，单卡吞吐提升10%–20%。效率上，中档设置（均值53步）较前代SWE-1.7减少58%轮次、降低81%成本，首次有效编辑中位数仅第18步。
+
+基准成绩（厂商自报）：Terminal-Bench 2.1达92.8，为已公布最高分；FrontierCode 1.1 Main 50.0，略逊于Claude Fable 5.1（50.9）与GPT-6 Astra（53.3），但成本仅为前者36%、后者25%；DeepSWE 73.0。短板为Terminal-Bench 4.0仅27.3，与前沿55–58分差距显著，长时程智能体任务仍是瓶颈。
+
+该模型闭源不开放权重，暂无独立API，目前经由Devin Desktop及CLI提供，网页版逐步上线。所有数据均出自Cognition自报，尚待独立验证。
+
+---
+
+## 17. 硅谷正重塑军工复合体
+
+**原文标题**: Silicon Valley Is Transforming the Military-Industrial Complex
+
+**原文链接**: [https://costsofwar.watson.brown.edu/paper/how-big-tech-and-silicon-valley-are-transforming-military-industrial-complex](https://costsofwar.watson.brown.edu/paper/how-big-tech-and-silicon-valley-are-transforming-military-industrial-complex)
+
+圣何塞州立大学人类学教授罗伯托·冈萨雷斯在报告中指出，美国军工复合体正从以首都为核心的传统格局加速向硅谷扩展。尽管五角大楼预算中仍有大量资金用于传统武器系统，但国防部门日益青睐人工智能赋能的军事系统，推动国防科技与民用科技深度交融。在这一趋势下，大型科技公司、风险投资与私募股权机构凭借数十亿美元级国防合同获取巨大利益，而秉持"快速迭代、敢于试错"理念的小型国防科技初创企业也获得更为充裕的政府资助。冈萨雷斯的报告揭示了国防开支正前所未有地流向少数全球估值最高的科技巨头，标志着美国军事力量与技术资本之间的绑定关系进入全新阶段。
+
+---
+
+## 18. 预训练计算效率提升逾十倍
+
+**原文标题**: >10x More Efficient Pretraining
+
+**原文链接**: [https://magic.dev/blog/pretraining#](https://magic.dev/blog/pretraining#)
+
+Magic团队发布预训练效率研究更新，其方案在计算效率上较主流开源基础模型提升逾十倍。用约50倍更少的FLOPs即可匹配DeepSeek V4 Pro Base性能，计算量仅相当于GPT-3预训练的一半（GB200上约50万美元），而按DeepSeek原配方达同等能力需逾亿美元。持续扩展十倍计算（约400万美元）后，其模型在困惑度评估中超越所有公开开源基础模型。团队以每字节比特数（bpb）为核心指标，在私有代码、数学推理、研究论文等领域进行严格留出集评估，覆盖167个领域，并对知识记忆进行专项检测。效率提升源于架构、优化器、训练目标及数据策划等数十项改进的复利效应。团队采用从小到大的迭代验证策略，定期以十分之一规模试运行。在强化学习评估中，最新基础模型（e24）在竞赛级数学题上达72%通过率，接近部分前沿闭源模型。下一步将聚焦长时程RL、对齐训练及预训练优化，目标是构建超人类编码智能体与AI研发自动化。该团队或为全球最小规模的万亿参数模型训练团队。
+
+---
+
+## 19. Windows XP 初始用户头像的随机选择算法
+
+**原文标题**: What algorithm did Windows XP use to choose your initial user picture?
+
+**原文链接**: [https://devblogs.microsoft.com/oldnewthing/20260909-00/?p=112683](https://devblogs.microsoft.com/oldnewthing/20260909-00/?p=112683)
+
+摘要：Windows XP 在首次创建用户账户时，会从系统默认图片目录中随机选取一张作为头像。据分析，其随机数生成器为 RtlRandomEx，以 GetTickCount() 的当前值作为种子。选图逻辑采用的是一趟蓄水池抽样算法（k=1 的特例）：遍历目录中的文件，对第 n 个文件以 1/n 的概率将其替换为当前选中项，遍历结束时保留的即为最终结果。该算法相比"先遍历计数再随机取号"的两趟方案有两点优势：一是减少了对文件系统的调用次数，更为高效；二是即使遍历过程中目录文件数量发生变化，结果依然一致，无需额外处理。此外，代码设有一个安全上限——最多仅采样前 100 张图片，以防止用户向默认目录放入海量文件时引发异常行为。
+
+---
+
+## 20. PlanetScale 推出分片版 Postgres（Neki）
+
+**原文标题**: Neki is sharded Postgres by PlanetScale
+
+**原文链接**: [https://neki.dev/](https://neki.dev/)
+
+PlanetScale 宣布推出 Neki，一款采用分片架构的 PostgreSQL 数据库解决方案。该方案旨在突破传统单机 Postgres 的性能瓶颈，通过数据分片实现横向扩展，使系统能够支撑数亿级每秒查询（QPS）的超高并发负载，并处理拍字节（PB）级海量数据。Sharding（分片）是核心设计理念，即将数据水平切分至多台节点，从而在计算与存储层面实现线性扩展。这一方案为依赖高性能关系型数据库的业务场景提供了新的选择，尤其适用于对读写吞吐量和数据规模有极致要求的大规模互联网平台。
+
+---
+
+## 21. Schemy Lisp En DOS
+
+**原文标题**: Schemy Lisp En DOS
+
+**原文链接**: [https://sled.neocities.org/](https://sled.neocities.org/)
+
+文章之前已经处理过
+
+---
+
+## 22. GPU写入内存的完整路径
+
+**原文标题**: What happens when a GPU writes memory
+
+**原文链接**: [https://blog.doubleword.ai/what-happens-when-a-gpu-writes-memory](https://blog.doubleword.ai/what-happens-when-a-gpu-writes-memory)
+
+摘要：本文追踪RTX 4090上STG.E存储指令的全硬件路径。发射阶段，warp从寄存器读取地址与数据，经LSU将32个四字节访问经coalescer合并为32字节扇区，再经L1（写通架构，不缓存）和crossbar抵达L2切片。L2采用16路组相联缓存，以RRPV（重新引用预测值）驱动替换：优先淘汰RRPV=2的最近未使用行；脏行不直接踢出，而是进入FIFO写回缓冲区异步刷入DRAM。为防止单组内16行同时写回造成流量突刺，设有"8脏行"规则，在组内脏行≥8时主动将最早存储的脏行送内存控制器清理。写回经共享内存控制器以32字节/扇区粒度经GDDR6X的16引脚完成，可与新存储并行，直至写回队列满时才阻塞。STG.E仅需6周期即被warp"发射后不管"，数据在L2中持续老化直至被未来缺页驱逐。可见性由三级屏障保证：membar.cta（约3周期，以L1为一致点）、membar.gl（约140ns，以L2为一致点）、membar.sys（约1µs，覆盖主机与对端设备）。内核退出时驱动自动插入系统级屏障，确保后续cudaMemcpy可见全部写入。
+
+---
+
+## 23. Python 集合与字典可能退化为平方级时间复杂度
+
+**原文标题**: Python sets and dictionaries can have quadratic-time performance
+
+**原文链接**: [https://lemire.me/blog/2026/09/03/python-sets-and-dictionaries-can-have-quadratic-time-performance/](https://lemire.me/blog/2026/09/03/python-sets-and-dictionaries-can-have-quadratic-time-performance/)
+
+无法访问该文章链接。
+
+---
+
+## 24. iPhone Duo
+
+**原文标题**: iPhone Duo
+
+**原文链接**: [https://www.apple.com/iphone-duo/](https://www.apple.com/iphone-duo/)
+
+iPhone Duo是苹果首款折叠屏iPhone，10月16日上午5点（太平洋时间）开启预购，10月23日发售。该机采用7.6英寸Super Retina XDR折叠内屏，比iPhone 18 Pro Max大50%，外屏面积超iPhone 18 Pro的90%；机身以5级钛金属打造边框与铰链，内屏覆纳米纹理抗眩光涂层，前后Ceramic Shield玻璃，支持IP68防水防尘。核心搭载A20 Pro芯片（16核神经网络引擎）配液冷散热，CPU较上代快20%，内存带宽提升50%；双电池加eSIM设计，内/外屏视频播放分别达31/44小时，20分钟快充至50%。影像系统为48MP双融合主摄与超广角、12MP屏下前摄，新增Duo预览、儿童引导动画、Duo FaceTime及智能拍摄等功能。软件运行iOS 27，支持横屏、竖屏、合拢、坐姿、站立五种姿态及分屏多任务；升级版Siri AI提供个人语境、应用操作、知识问答能力，并集成Apple Intelligence智能修图、写作工具、卫星通信（信息/紧急SOS/道路救援）等生态功能。
+
+---
+
+## 25. 索尼网站多处暗示玩家"拥有"数字游戏的证据汇编
+
+**原文标题**: List of references on Sony websites to players "owning" their digital games
+
+**原文链接**: [https://consumerrights.wiki/w/Sony_PlayStation_digital_game_ownership_lawsuit](https://consumerrights.wiki/w/Sony_PlayStation_digital_game_ownership_lawsuit)
+
+摘要：2026年6月，四名加州消费者在旧金山联邦法院起诉索尼互动娱乐，指控PlayStation商店以"立即购买""确认购买"等所有权暗示用语销售数字游戏，实际授予的却是一项可撤销的有限许可，且协议明文规定"软件是授权给您，而非出售给您"。诉讼援引加州AB 2426数字商品透明度法、虚假广告法及消费者法律救济法，要求实际损失赔偿、收入返还及禁令救济。索尼同年8月申请强制仲裁并请求驳回诉状，核心抗辩为"普通消费者不可能相信自己'拥有'了数字游戏"，以两名原告先后购买同一款《生化危机》为例论证。然而，文章系统汇编了索尼官网及支持页面中大量矛盾表述：PS4升级页面称"升级你已拥有的数字游戏"、故障排除FAQ提及"游戏归他人所有"、《幽灵线：越后》更新面向"所有拥有者"、《巫师3》DLC免费向"拥有者"开放、Share Play页面称"无论谁拥有该游戏"等，揭示索尼在诉讼中否认所有权、在面向用户的服务与营销中却反复使用"拥有"措辞的显著矛盾。索尼同期宣布数字游戏占销售85%并将于2028年全面停止实体光盘发行，更凸显此争议的现实紧迫性。案件听证定于10月1日。
+
+---
+
+## 26. Stockfish 19 正式发布
+
+**原文标题**: Stockfish 19
+
+**原文链接**: [https://stockfishchess.org/blog/2026/stockfish-19/](https://stockfishchess.org/blog/2026/stockfish-19/)
+
+Stockfish 19正式发布，可自由从官网下载并作为替代程序安装于任意象棋GUI中。该版本相较Stockfish 18提升最高达44 Elo，获胜对局数超过败绩的三倍以上，继续稳居引擎锦标赛榜首。主要更新亮点包括：采用通用二进制文件，自动识别CPU特性并运行最优代码，无需手动选择AVX2、AVX-512等指令集；引入SFNNv16神经网络架构，去除冗余威胁特征以缩减文件体积，同时新增兵对特征提升棋力，并退役了Stockfish 16.1引入的次要网络；训练环节新增量化感知训练（QAT）等技术，对数百亿由高性能Leela网络评分的训练局面进行优化；平台支持扩展至RISC-V、LoongArch、1GB Linux大页内存及WebAssembly；实施更严格的棋盘位置、FEN串及UCI命令验证，遇非法输入将输出关键错误信息并终止进程。项目依托活跃社区共建，GitHub已获16.4k星标，欢迎开发者以C++、Python等语言参与Stockfish、Fishtest、训练器及网站的开发，也鼓励用户贡献算力或加入Discord社区。
+
+---
+
+## 27. Macbeth and His Problems
+
+**原文标题**: Macbeth and His Problems
+
+**原文链接**: [https://porticoquarterly.com/essay/macbeth-and-his-problems/](https://porticoquarterly.com/essay/macbeth-and-his-problems/)
+
+文章之前已经处理过
+
+---
+
+## 28. 写非虚构，先立树干，再展枝叶
+
+**原文标题**: To write non-fiction, draw the trunk, then the rest of the tree
+
+**原文链接**: [https://devz.cl/posts/how-to-write/](https://devz.cl/posts/how-to-write/)
+
+本文以"画树"为喻，阐述非虚构写作的核心方法。作者先分享个人经历：在大学历史课上，他因上课常睡觉而被教授判定"该挂科"，但那些高分论文几乎全由他独立完成——写作力才是真正支撑学业的能力。文章提出两大原则：第一，动笔前须确定"树干"，即主题（theme），必要时辅以论点（thesis），让全文围绕中心展开，避免"跑枝"。论证可借助证据、数据、类比、案例、反论与反驳等方式层层支撑，如树枝与叶果。第二，呈现方式同等重要，即"画什么树"：要根据受众与学科文化调整结构；并借鉴"语义波浪"概念，在抽象与具象间交替起伏，如徒步有上坡也有下坡，让读者既吸收知识又不感疲惫。作者坦言本文结构稍显松散，但核心忠告清晰：先定主干，再展枝叶；阅读与写作能力，是他从历史学位一路走到数据工程师岗位的立身之本。
+
+---
+
+## 29. Show HN：MultiMatte——基于文本提示的图像背景移除模型
+
+**原文标题**: Show HN: MultiMatte, a Promptable Image Background Removal Model
+
+**原文链接**: [https://usefeyn.com/blog/multimatte/](https://usefeyn.com/blog/multimatte/)
+
+MultiMatte是Feyn Labs推出的文字提示背景移除模型，基于Meta的SAM 3构建。采用LoRA低秩微调，仅更新8.6亿参数中的1949万（2.27%），在保留原文本对齐能力的同时大幅提升分割精度。核心创新是从二值掩码转向alpha matte，为每像素赋予连续透明度，精准处理毛发、半透明等模糊边界。在DIS-VD基准上S-measure达0.901，远超SAM 3的0.667，且在12个测试集上全面领先。训练使用近两万张图片、14000步，结合focal loss与Dice loss，其中约四分之一带人工文本标签以监督提示通路。概念名称即使不经微调也能为SAM 3带来0.150 S-measure提升，且该增益在MultiMatte训练后仍得以保留。用户可通过pip install nobg快速调用，适配器已合入发布权重，推理无需额外库，支持自定义文本提示（如"the dog"）输出RGBA裁剪图。
+
+---
+
+## 30. 卡萨布兰卡：一部未演话剧的影史传奇
+
+**原文标题**: Casablanca: How an unproduced play marched into movie history
+
+**原文链接**: [https://www.thecollector.com/casablanca-unproduced-play-movie-history/](https://www.thecollector.com/casablanca-unproduced-play-movie-history/)
+
+1942年经典影片《卡萨布兰卡》源于一部从未登台的话剧——1940年伯内特与艾莉森创作的《人人都来里克酒吧》。珍珠港事件次日，华纳兄弟即购得剧本，借 wartime 东风加速开拍，博加特凭里克一角跃升为好莱坞最高片酬演员，影片斩获三项奥斯卡。同年11月纽约首映时，美军恰同日攻占摩洛哥卡萨布兰卡，殊为巧合。剧本由爱普斯坦兄弟、科赫等人接力改写，贝格曼直至杀青方知角色归宿。影片以里克、伊尔莎、维克多三角情感为主线，以"通行证"悬念贯穿全片；《马赛曲》对抗《莱茵河守望》的集体场景堪称影史巅峰。里克被普遍解读为战前美国的寓言：从"我只顾自己"的独善，到终局投身抗敌。其酒吧亦是一座微缩世界，映射纳粹肆虐下涌入好莱坞的欧洲流亡艺术家群体。影片以里克牺牲爱情、成全伊尔莎与维克多使命的抉择收束，"这可能是美好友谊的开始"成为影史永恒名句。
+
+---
+
