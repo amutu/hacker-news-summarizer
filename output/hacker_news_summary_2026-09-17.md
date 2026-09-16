@@ -1,0 +1,304 @@
+# Hacker News 热门文章摘要 (2026-09-17)
+
+这是今日 [Hacker News](https://news.ycombinator.com/) 上最热门的文章摘要。
+
+## 1. 训练4B模型生成比Postgres快81%的查询计划
+
+**原文标题**: Training a 4B model to produce 81% faster query plans than Postgres
+
+**原文链接**: [https://rohanbansal.com/qorl](https://rohanbansal.com/qorl)
+
+摘要：文章探讨用小规模开放模型替代Postgres查询优化器的可行性。连接排序是NP-hard问题，搜索空间随表数组合爆炸——3表已有4608种计划，9表逼近9万亿种，使优化器长期难以找到最优解。作者利用"生成难、验证易"的特性，以查询执行时间为奖励信号，对4B参数模型进行监督微调（SFT）与强化学习（RL）后训练，在113个连接密集型查询上取得44.7%的延迟降低，而该模型初始时对99个查询完全无法产出有效计划。核心工程贡献包括：构建最小化Linux页缓存竞争噪声的Postgres测量框架；设计适配噪声环境的自定义GRPO变体；采用2×H100节点（vLLM与训练端）配合桌面四Postgres容器的跨机器分布式训练；以及基于GPT-6 Astra代理轨迹的半离线蒸馏。文章以IMDb数据集为例，直观展示选择性谓词如何使不同连接顺序的代价相差数倍，论证了该问题对强化学习的高度适配性。
+
+---
+
+## 2. 向量化与性能可移植的快速排序算法
+
+**原文标题**: Vectorized and performance-portable Quicksort (2022)
+
+**原文链接**: [https://opensource.googleblog.com/2022/06/Vectorized%20and%20performance%20portable%20Quicksort.html](https://opensource.googleblog.com/2022/06/Vectorized%20and%20performance%20portable%20Quicksort.html)
+
+2022年6月，研究者发布了一种向量化且性能可移植的快速排序算法，排序速度比C++标准库std::sort快约10倍，并在多种CPU架构上超越了此前针对特定架构优化的排序方案。文章指出，列式数据库的兴起为排序优化提供了动机。核心思路是利用SIMD向量指令加速快速排序中占据主要耗时的分区操作：借助现代指令集中的"压缩存储"（compress-store）指令，一次性将小于或大于基准值的元素分别写入两个子数组；对于缺少该指令的架构（如AVX2），则通过置换指令模拟。该实现基于Highway可移植SIMD库，一套代码即可适配x86（AVX2/AVX-512）、Arm（NEON/SVE）及RISC-V共六种指令集、三大架构，并支持16至128位数值。实测表明：Apple M1上排序速率达466–499 MB/s，Skylake AVX-512上达约1120 MB/s，AVX2上为798 MB/s，较此前最佳AVX2方案（699 MB/s）和标准库（117 MB/s）分别提升约14%和7倍，整体实现9至19倍加速。项目采用Apache 2.0许可开源，代码托管于GitHub，并附有详细技术论文。
+
+---
+
+## 3. Small programming tricks
+
+**原文标题**: Small programming tricks
+
+**原文链接**: [https://will-keleher.com/posts/small-programming-tricks-matter/](https://will-keleher.com/posts/small-programming-tricks-matter/)
+
+文章之前已经处理过
+
+---
+
+## 4. AMD矩阵运算核心的精确建模
+
+**原文标题**: Accurate Models of AMD Matrix Cores
+
+**原文链接**: [https://arxiv.org/abs/2609.14845](https://arxiv.org/abs/2609.14845)
+
+本文针对GPU矩阵乘法器不符合IEEE 754标准、不同厂商及架构间存在累加器宽度、舍入行为、归一化点、中间溢出/下溢处理等差异而导致小矩阵运算结果无法跨设备复现的问题，对AMD CDNA 1（MI100）、CDNA 2（MI210/250）和CDNA 3（MI300A/300X）三代架构的数值行为进行了系统表征。作者设计了针对各支持输入格式的测试向量，阐明每个向量所揭示的特定数值特性，并据此构建基于MATLAB的软件模型。采用随机测试与测试精炼相结合的迭代优化策略，经一千百万组随机输入向量验证，模型达到与硬件逐位一致的可复现精度。最后，以两大数值应用作为概念验证，量化了AMD矩阵核心与NVIDIA张量核心在应用层面的精度差异，展示了所建模型在实验性数值研究中的实用价值。
+
+---
+
+## 5. Dream-RSI：基于演化世界的递归式自我改进
+
+**原文标题**: Dream-RSI: Recursive Self-Improvement through Evolving Worlds
+
+**原文链接**: [https://arxiv.org/abs/2609.14858](https://arxiv.org/abs/2609.14858)
+
+递归自我改进对自主AI代理至关重要，但管理并优化探索策略仍是核心瓶颈。现有方法面临两难困境：固定策略难以适应扩展的搜索空间，而在线策略优化则需在延迟且昂贵的长时程反馈下遍历庞大的元搜索空间。本文提出Dream-RSI框架，实现可扩展的递归式探索自我改进。该框架以轻量级编排层将探索过程显式化、可编程化，同时保持底层编码代理不变。其核心思想是将积累的发现历史构建为已实现搜索空间上的重放模拟器，通过在该模拟器中"做梦"获得即时、低成本的离策略反馈，从而评估与精炼探索策略，避免重复昂贵的在线评估。改进后的策略再重新部署至在线环境驱动进一步发现，持续扩展模拟器池，形成自我改进闭环。实验表明，Dream-RSI在算法工程、数学优化及GPU内核工程等领域取得竞争性或更优的发现质量，同时显著降低发现成本。
+
+---
+
+## 6. 前沿模型的物理能力究竟如何？专家重评揭示评测缺陷与主流基准的接近饱和
+
+**原文标题**: How good are frontier models at physics?
+
+**原文链接**: [https://arxiv.org/abs/2609.13009](https://arxiv.org/abs/2609.13009)
+
+摘要：尽管主流物理基准报告显示前沿大模型在高级物理问题上表现欠佳，但领域专家的实际使用体验与此并不一致。本文对此进行了系统审计：选取六个广泛使用的物理基准，由具备相关领域的教授和研究生专家审查题目表述、参考答案及模型回答，将模型真正的推理错误与评分失误、参考答案错误、题目模糊或条件缺失等基准测试问题加以区分。结果表明，绝大多数最初被判为"错误"的案例实为基准本身的问题，而非模型的物理推理缺陷。专家团队随后修正了错误答案、修复或剔除了有缺陷的题目。修正后，GPT-5.6-Sol在HLE-Physics上的mean@4从47.3%跃升至78.7%，CMT-Benchmark上从61.0%升至87.2%，在保留的54道CritPt挑战题上修正pass@4达94.4%；UGPhysics、PRISM-Physics和PHYBench等其他基准亦有显著提升。研究结论指出，现有基准严重低估了前沿模型解决良定义物理问题的能力，这些封闭任务的接近饱和凸显了开发更具挑战性、经专家验证的评测体系的迫切需求。
+
+---
+
+## 7. Mistral与Mozilla联手：打造隐私、多语言AI浏览体验
+
+**原文标题**: Mistral X Mozilla: Private, Multilingual AI Browsing
+
+**原文链接**: [https://mistral.ai/news/mistral-x-mozilla/](https://mistral.ai/news/mistral-x-mozilla/)
+
+2026年9月16日，法国AI公司Mistral与开源浏览器Firefox母公司Mozilla宣布战略合作，Mistral模型将驱动Firefox智能窗口（Smart Window Beta）AI浏览助手，帮助用户理解复杂搜索结果、回顾浏览内容并基于标签页提供信息，首批覆盖法国与北美，英国和德国年内跟进。双方强调四大意义：一是以开源分发服务全球用户；二是针对各地语言、方言及文化进行模型微调，实现AI体验本地化；三是保障用户隐私与控制权，对话默认不在服务器存储，Mistral承诺零数据留存；四是将"主权AI"从企业级延伸至全球消费者。Mozilla CEO Anthony Enzor-DeMeo指出，浏览器不应成为单一公司的封闭管道，应保留互联网自由探索的本质，让不同AI服务商公平竞争。Mistral CEO Arthur Mensch表示，这是两家开源倡导者携手将前沿创新带给全球用户的里程碑。
+
+---
+
+## 8. Show HN: An e-ink frame that hears birds and draws them as 1800s illustrations
+
+**原文标题**: Show HN: An e-ink frame that hears birds and draws them as 1800s illustrations
+
+**原文链接**: [https://github.com/arnegiacomo/fugleramme](https://github.com/arnegiacomo/fugleramme)
+
+文章之前已经处理过
+
+---
+
+## 9. 告诉演讲者，你欣赏他们的演讲
+
+**原文标题**: Tell the speakers that you liked their talks
+
+**原文链接**: [https://ohhelloana.blog/tell-the-speakers/](https://ohhelloana.blog/tell-the-speakers/)
+
+本文是Ana Rodrigues参加SmashingConf Freiburg会议后发布的博文。她回忆起在会议后派对上鼓励一位害羞的与会者主动与演讲者交流的经历，并提到自己在CSS Day担任主持人时也竭力促进演讲者与观众之间的互动。作为近年才踏入"演讲圈"的新人，她坦言自己经历过缺少反馈的焦虑——有时整场演讲收不到任何线上评论，不禁怀疑自己是否做得不够好。她也坦率承认，自己常忘记向朋友表达对他们演出的赞美，且因害怕"暴露不足"而不敢主动结识他人。文章的核心呼吁是：无论多简单的互动，都请让演讲者知道你喜欢他们的演讲。演讲者倾注了大量心血，期待观众享受内容，也渴望得到肯定。哪怕只是一次短暂的寒暄与一句真诚的赞美，对演讲者而言都意义非凡。作者借此鼓励读者鼓起勇气，迈出表达欣赏的那一步。
+
+---
+
+## 10. 逆向解析 Factorio 的随机数生成器
+
+**原文标题**: Reversing Factorio's RNG
+
+**原文链接**: [https://gegell.github.io/posts/factorio-rng/](https://gegell.github.io/posts/factorio-rng/)
+
+摘要：本文阐述了如何逆向分析并破解《异星工厂》（Factorio 2.0）中的伪随机数生成器，从而在游戏内预测"随机"事件。随着太空时代DLC引入物品品质系统，玩家有动力获取高品质物品。作者发现游戏采用Boost.Random库的taus88生成器，由三个线性反馈移位寄存器（LFSR）异或组合而成。通过Wube前开发者在论坛的早期回复获取线索，再利用Ghidra和Binary Ninja对随游戏发布的PDB调试符号进行反编译，验证了生成器实现。关键在于LFSR的线性本质：在GF(2)域上，每个输出位均为初始状态的线性组合，因此已知足够输出即可重建内部状态，进而预测所有未来输出。作者将两种实现（Boost源码与游戏二进制）用SymPy符号计算逐位验证等价。利用此原理，作者在游戏内实时同步运行同一算法，预判哪次合成将产出高品质物品，避免了仅靠统计大数定律的被动等待。需注意，Factorio 2.1已更改RNG调用方式，破坏了游戏内实现，但taus88的数学原理与可预测性本质不变，理论部分仍成立。全文仅需线性代数基础即可理解。
+
+---
+
+## 11. 西伯利亚冰美人与斯基泰世界
+
+**原文标题**: The Siberian Ice Maiden and the Scythian World
+
+**原文链接**: [https://patrickwyman.substack.com/p/the-siberian-ice-maiden-and-the-scythian](https://patrickwyman.substack.com/p/the-siberian-ice-maiden-and-the-scythian)
+
+1993年，俄罗斯考古学家在西伯利亚阿尔泰山脉的乌科克高原发现了一具保存异常完好的女性遗体——"西伯利亚冰美人"，距今约2300年。她约25岁，生前患乳腺癌，死于堕马之伤，葬于冻土层中。其手臂与手背布满奇幻动物纹身，随葬有六匹祭牲、丝绸华服、三英尺高头饰及 Cannabis 等大量器物，尽显尊贵身份。乌科克高原本是欧亚草原游牧与贸易的十字路口，南接新疆、北通叶尼塞河、西达哈萨克斯坦、东至蒙古。文章追溯了该地的文明脉络：约公元前3000年，印欧语系阿凡纳西耶沃人将游牧生活方式引入此地；至公元前800年前后，讲原始伊朗语的安德罗诺沃文化与本地鹿石艺术传统的牧人融合，形成斯基泰人。斯基泰人自阿爾泰山绵延至黑海与多瑙河，以骑兵骑射、金质动物风格艺术及巨型土丘墓（kurgan）为标识，是统治欧亚草原的精英阶层，其下各族群臣服于他们。冰美人属于斯基泰世界中的巴泽雷克文化，以其奢华墓葬和精美工艺闻名，是草原游牧文明巅峰的缩影。
+
+---
+
+## 12. 大模型时代的编程学习
+
+**原文标题**: Learning Programming in an Age of LLMs
+
+**原文链接**: [https://blog.ploeh.dk/2026/09/16/on-learning-programming-in-an-age-of-llms/](https://blog.ploeh.dk/2026/09/16/on-learning-programming-in-an-age-of-llms/)
+
+摘要：Mark Seemann回复一位读者来信，探讨LLM时代如何学习编程。读者无计算机背景，借助大模型一年间构建了涉及API、数据库和多模型工作流的复杂系统，却发现自己无法真正理解和维护所建之物，陷入"产出超越认知"的困境。Mark坦言对AI态度矛盾——既叹其强大又深怀抗拒，经济上虽能自保，却担忧程序员群体率先被取代后大规模失业将冲击整个知识型社会；历史经验表明，技术创造的新岗位未必属于失去旧岗位的人。若今天从零起步，他半玩笑地建议转学木匠、金属加工等手工技能。他认为LLM虽能加速信息获取，但瓶颈始终是人脑吸收知识的速度，不可能被大幅压缩。对于"先补基础还是边做边学"的困惑，他指出有三十年经验者与完全新手面临的根本不同。Mark分享自身经历：早期靠文档和示例自学，后期靠书籍掌握函数式语言。他使用LLM的核心原则是只提可验证、可证伪的问题，对无法证伪的回答保持高度怀疑。
+
+---
+
+## 13. Claude Cowork与聊天正式合二为一
+
+**原文标题**: Claude Cowork and chat are now one Claude
+
+**原文链接**: [https://claude.com/blog/cowork-is-now-claude](https://claude.com/blog/cowork-is-now-claude)
+
+2026年9月16日，Anthropic宣布将Claude Cowork与聊天功能合并为统一的Claude，用户不再需要为任务选择入口。合并后，任何对话均可调用Cowork的任务处理能力与Design的视觉创作能力，上下文、技能及连接器全面共享。同期，Claude Docs与Claude Slides正式上线（均处Beta阶段，限付费计划，企业版由管理员自行开启），用户可在对话中直接协作文档、生成幻灯片，支持在线编辑、演示及导出为PowerPoint或PDF。文章以周报场景为例：用户布置任务后，Claude自动完成报告与配套幻灯片，支持远程查看进度、添加批注，并可设为定期自动执行；所有产出汇总于单一可分享链接，手机端即可访问。权限方面，Claude默认在执行关键操作前征求确认，用户亦可切换为自主运行模式，最终决定权始终在用户手中。该更新先在Pro和Max计划中分阶段推出，Team与Free计划随后跟进，企业版管理员将提前30天收到通知。现有Cowork用户的聊天记录、项目、连接器等数据完整保留，无需额外设置即可无缝衔接。
+
+---
+
+## 14. DeepMind研究所
+
+**原文标题**: The DeepMind Institute
+
+**原文链接**: [https://institute.deepmind.com/](https://institute.deepmind.com/)
+
+本内容来自DeepMind研究所，该实验室是通用人工智能（AGI）领域的先驱与开拓者。文章聚焦于AGI这一前沿课题，呈现出研究团队在通用人工智能方向上的大胆思考与前瞻性视野，彰显了其在人工智能核心议题上的引领地位与创新魄力。
+
+---
+
+## 15. 阶乘有多大？
+
+**原文标题**: How big are factorials?
+
+**原文链接**: [https://eli.thegreenplace.net/2026/how-big-are-factorials/](https://eli.thegreenplace.net/2026/how-big-are-factorials/)
+
+本文介绍无需计算器即可估算阶乘位数的方法。核心公式为：n!的位数 ≈ n·log₁₀(n/e) + 2。以52!为例，估算得约69位，实际为68位，误差极小。文章随后给出推导背景：先介绍Gamma函数，通过分部积分证明 Γ(n+1)=n·Γ(n)，结合 Γ(1)=1，建立 Gamma 函数是阶乘向正实数的推广；再对 Gamma 积分表达式作变量替换，利用 Laplace 方法推导出 Stirling 近似 n! ≈ √(2πn)·(n/e)ⁿ；最后取以10为底的对数，将 Stirling 近似转化为位数公式。其中 √(2πn) 项在 n 小于1600时贡献约2个位数，故简化公式中取 +2 即可。文章还附了估算 log₁₀ 的实用技巧，如记住 log₁₀2≈0.3、log₁₀3≈0.5 等基本值，借助对数运算律快速心算。
+
+---
+
+## 16. 在线赌博市场扩张后赌博相关急诊就诊量翻倍
+
+**原文标题**: ER visits for gambling disorders doubled after expanded online gambling market
+
+**原文链接**: [https://temertymedicine.utoronto.ca/news/emergency-room-visits-gambling-disorders-nearly-doubled-after-expanded-online-gambling-market](https://temertymedicine.utoronto.ca/news/emergency-room-visits-gambling-disorders-nearly-doubled-after-expanded-online-gambling-market)
+
+摘要：多伦多大学一项新研究发现，安大略省自2022年允许私营企业运营在线赌博平台后，赌博障碍相关急诊就诊量几乎翻倍。该省现有83个赌博及投注网站，2024年居民下注总额达827亿加元。研究分析14年间757名居民共952次涉赌博障碍的急诊记录，近四分之三为男性；10至29岁男性就诊量比预期高出154%，30至44岁男性高出116%，女性未见显著变化。超七成患者同时伴有其他精神健康问题或严重物质滥用，近三分之一需住院。研究指出，就诊上升集中于年轻男性，与在线体育博彩的快速增长和定向营销密切相关。研究者强调，多数患者因社会污名不会主动就医，急诊数据仅为冰山一角，实际危害恐远大于统计。该研究发表于《美国预防医学杂志》。2026年7月阿尔伯塔省继安大略省之后也开放私营在线赌博，更多省份正考虑跟进。研究者呼吁各辖区审慎评估风险，若推进则需加强营销限制及赌博危害的识别与治疗保障。
+
+---
+
+## 17. Google Play 应用审核周期已经常超过一周
+
+**原文标题**: The Google Play app review process now regularly takes longer than a week
+
+**原文链接**: [https://gultsch.social/@daniel/117280438824908947](https://gultsch.social/@daniel/117280438824908947)
+
+近期，开发者 Daniel Gultsch 在 Mastodon 平台上发帖抱怨，指出 Google Play 的应用审核流程如今经常耗时超过一周，并称这一状况"不可接受"。该帖反映了部分开发者对 Google Play 审核效率下降的不满。Google Play 作为全球主流安卓应用分发平台，其审核机制本是保障应用安全与质量的重要环节，但审核周期过长将直接影响开发者的更新节奏、版本发布计划及市场响应速度，尤其对需要紧跟热点或修复紧急问题的中小型开发者而言，超过一周的等待成本尤为突出。此帖虽内容简短，但契合了不少开发者的共同体验，引发了对 Google Play 审核流程效率与透明度的讨论。
+
+---
+
+## 18. 黑客成功破解Flock摄像头并公开其内部数据
+
+**原文标题**: Hackers Got Inside a Flock Camera
+
+**原文链接**: [https://www.wired.com/story/hackers-flock-camera-data-shows-how-system-works/](https://www.wired.com/story/hackers-flock-camera-data-shows-how-system-works/)
+
+网络安全组织stegan0gram拆解了一台Flock Safety摄像头，完整复制其内部存储并公开给404 Media与WIRED。黑客绕过设备加密，恢复出存储在设备上的密钥，解锁了数千条车辆检测视频。联合分析发现，该摄像头软件不仅检测车辆和车牌，还能识别行人和自行车；单次经过的车辆可生成约28张图像，数日内累积逾百万张。此外，车牌检测器会将保险杠贴纸甚至摩托车上的美国国旗贴片误认作车牌。Flock数据通过其全国联网系统供各地机构查询，部分城市数据可供2000多个机构检索，引发广泛争议。此前安全研究员Gaines已披露该设备的根权限漏洞，但Flock淡化了其严重性。Flock回应称拆除摄像头属违法行为，但未正面回应密钥问题。日志显示设备频繁出现存储空间不足错误，并记录了大量"Who's a good boy?!"和"¡Adiós, Amigos!"等调试信息。
+
+---
+
+## 19. 德国AI初创企业Langdock为何将母公司从美国迁回德国
+
+**原文标题**: Why a fast-growing German AI startup is moving its parent company from the US
+
+**原文链接**: [https://www.euronews.com/business/2026/09/16/why-this-fast-growing-german-ai-start-up-is-moving-its-parent-company-from-the-us](https://www.euronews.com/business/2026/09/16/why-this-fast-growing-german-ai-start-up-is-moving-its-parent-company-from-the-us)
+
+2026年初，柏林AI初创企业Langdock将母公司从美国控股公司迁回德国，注册为欧洲公司（SE），成为少数逆势操作的欧洲科技企业。Langdock成立于2023年，服务约1.3万家机构，提供多模型接入、AI智能体构建及任务自动化等企业AI平台。公司称，早期设立美国母公司有助于获得Y Combinator等加速器资源及投资，但随着规模扩大，美国《云法案》使客户担忧数据主权风险，其法律架构也增加了商务摩擦。迁回德国后，公司可清晰展示其纯欧洲数据架构，增强客户在"地缘政治不确定时期"的信赖。目前公司约80%股权由欧盟内创始人和员工持有，年订阅收入从2024年10月的100万美元飙升至2026年8月的5000万美元。Langdock计划年底前推出三项新服务，并在德国自建数据中心运行开源AI模型，长期目标是打造可媲美AWS等美国云巨头的"主权全栈AI平台"。此举被视为欧洲能否将监管与数字主权从负担转化为竞争力的关键试验。
+
+---
+
+## 20. Kyber（YC W23）招聘前沿部署工程师
+
+**原文标题**: Kyber (YC W23) Is Hiring a Forward Deployed Engineer
+
+**原文链接**: [https://www.ycombinator.com/companies/kyber/jobs/eturrAR-forward-deployed-engineer](https://www.ycombinator.com/companies/kyber/jobs/eturrAR-forward-deployed-engineer)
+
+Kyber是一家Y Combinator W23批次支持的AI原生企业文档平台（2022年创立），专注保险行业监管文档工作流，帮助客户整合80%模板、减少65%起草时间、压缩5倍沟通周期。公司平台规模已增长50倍并实现盈利，签下多个六至七位数多年期合同，并与Guidewire、Majesco等达成战略合作。现招聘一名前沿部署工程师，地点为纽约，薪资11万–15万美元加0.05%–0.15%股权，要求掌握JavaScript、Python、SQL，1年以上经验，仅限美国公民或持签证者。核心职责包括：端到端主导企业客户技术交付，从需求评估、集成构建到稳定运行；作为一线响应者排查问题并精准升级；发现重复需求并开发自助工具。岗位要求扎实的工程能力、售前技术交付兴趣、诊断思维，能面向非技术高管沟通，并熟练使用AI编码工具。面试分招聘负责人初筛、技术面试、现场面试三轮。Kyber现仅5人团队，处于高速成长期。
+
+---
+
+## 21. 咖啡店主用AI设计菜单海报，却引来一片愤怒私信
+
+**原文标题**: A coffee shop owner used AI to make a menu poster. Then came the angry DMs
+
+**原文链接**: [https://www.businessinsider.com/coffee-shop-owner-ai-menu-backlash-2026-9](https://www.businessinsider.com/coffee-shop-owner-ai-menu-backlash-2026-9)
+
+摘要：商业内幕（Business Insider）近日报道了一起引发广泛社交讨论的事件：一位咖啡店店主使用人工智能工具生成菜单海报，随后在社交媒体上收到大量愤怒私信，掀起关于AI生成内容应用于商业场景的伦理争议。事件迅速引发公众关注，支持者认为AI能显著降低设计成本、提升出稿效率，是中小商户的实用工具；反对者则担忧AI生成作品缺乏原创性与手工质感，冲击了独立设计师和画师的生存空间。店主将海报发布后，不少顾客与同行纷纷通过私信表达不满，质疑其是否尊重了艺术创作的原创价值，争议迅速扩散。这一事件折射出AI工具快速普及与传统创意行业利益之间的深层张力，也为商家如何在拥抱新技术与尊重知识产权、保护从业者权益之间寻求平衡，提供了一个生动的现实案例。
+
+---
+
+## 22. 你的AI过时了吗？20款大模型的发布时长与训练截止日期一览
+
+**原文标题**: Show HN: How Stale Is Your AI? Release age and training cutoff for 20 models
+
+**原文链接**: [https://stale.jock.pl/](https://stale.jock.pl/)
+
+本文以2026年9月16日为基准，追踪了来自Meta、Anthropic、Mistral AI、Google DeepMind、OpenAI、Alibaba、xAI、DeepSeek共8家实验室的20款主流模型，核心指标为发布日期与训练截止日期。20款模型中仅10款有官方公开的截止数据，涉及5家实验室。文章按"最滞后优先"排列，例如Llama 4发布时训练数据已落后约8个月，Gemini 3.1 Pro滞后近一年。作者强调，AI的联网搜索无法弥补训练缺口——搜索仅临时读取页面，新对话便失效。文章面向AI agent用户，提供了可直接粘贴至AGENTS.md或CLAUDE.md的指令模板，引导agent在提及任何模型名称、版本号或日期前先抓取models.json核实，避免以过时知识自信作答。文末以FAQ形式解答了训练截止的含义、搜索与学习的区别、如何询问模型自身截止日期等问题，核心观点是"模型是描述自身模型的最差来源"。
+
+---
+
+## 23. 隐私维权败诉，数据经纪商Radaris被迫交出域名
+
+**原文标题**: Data Broker Radaris Loses Domains in Privacy Fight
+
+**原文链接**: [https://krebsonsecurity.com/2026/09/data-broker-radaris-loses-domains-in-privacy-fight/](https://krebsonsecurity.com/2026/09/data-broker-radaris-loses-domains-in-privacy-fight/)
+
+摘要：美国数据经纪商Radaris.com因长期拒绝删除个人信息，在新泽西州"Daniel's Law"诉讼中败诉，法院于2025年8月裁定将其及13个关联域名转让给原告Atlas公司。该法赋予执法人员、法官等要求从商业平台删除个人信息的权利，违者每次罚款1000美元。Radaris由俄罗斯裔Lubarsky兄弟在麻省操控，旗下运营数十个人肉搜索网站，长期通过虚构CEO、频繁将注册实体转移至马绍尔群岛、塞舌尔等地拖延诉讼。Atlas通过诉讼获取超万封邮件，证实这些公司实由同一小群人运营，月总收入逾八万美元，法院目前已转移14个域名。Daniel's Law正面临约150家数据经纪商的宪法挑战，至少70起案件移至联邦法院，或最终上诉至最高法院。至少14个州已效仿通过类似立法，但专家指出联邦层面至今缺乏综合性数据隐私法，数据经纪行业对公民隐私的系统性威胁仍将持续。
+
+---
+
+## 24. Can we stop with the uptime percentages?
+
+**原文标题**: Can we stop with the uptime percentages?
+
+**原文链接**: [https://blog.jim-nielsen.com/2026/stop-with-the-uptime-percentage/](https://blog.jim-nielsen.com/2026/stop-with-the-uptime-percentage/)
+
+文章之前已经处理过
+
+---
+
+## 25. Salesforce全球服务中断
+
+**原文标题**: Salesforce Global Outage
+
+**原文链接**: [https://status.salesforce.com/products/all](https://status.salesforce.com/products/all)
+
+摘要：该页面为Salesforce（销售易）官方服务状态（Trust Status）页面，显示了一次影响全球用户的系统服务中断事件。页面内容提示用户需启用浏览器中的JavaScript功能才能加载并查看完整的服务状态详情与故障进展。由于原文未提供具体的故障时间、影响范围、根本原因及恢复情况等实质信息，仅能确认Salesforce曾发生全球性服务中断，并通过其状态页面进行通报。建议关注用户可前往Salesforce Trust Status页面获取最新的服务恢复通知与事件说明。
+
+---
+
+## 26. Barndoor 收购开源工作流引擎 Frags 创造者 Diaphora
+
+**原文标题**: Barndoor acquires Diaphora, creators of open-source workflow runtime Frags
+
+**原文链接**: [https://barndoor.ai/barndoor-acquires-diaphora/](https://barndoor.ai/barndoor-acquires-diaphora/)
+
+2026年9月16日，企业AI网关公司Barndoor宣布收购Diaphora——开源AI工作流运行时Frags的创造者。合并后，企业可构建"蓝图"（Blueprints）：将工具与数据通过定义好的步骤串联为可重复AI工作流，经治理后自动分发给授权团队。Diaphora侧重提升工作流可预测性，Barndoor提供企业级访问控制与治理，二者互补解决企业AI落地三大障碍：可靠性、权限管控与规模化分发。蓝图中AI仅在需要判断的环节介入，其余步骤按固定流程执行；若步骤无法完成，系统即停止并报告，而非自行补全。蓝图还支持跨多系统运行，自带各步骤所需权限，员工无需直接访问底层系统即可完成跨域操作。Diaphora由Simone Pezzano创立，Jay Parisi协助技术演进后出任CEO，Barndoor CEO Oren Michels曾为其顾问。此次收购属"反向融入"，Diaphora团队全员加入Barndoor。底层引擎Frags及建模语言FML将保持开源，由Barndoor持续维护。企业客户Syndio的CTO指出，工作流的可重复性与可追溯性是将从试点推广至全团队的关键。企业现已可访问diaphora.ai开始构建。
+
+---
+
+## 27. 分享：我做了一个飞行模拟器，但你只是乘客
+
+**原文标题**: Show HN: I made a flight simulator, except you're just a passenger
+
+**原文链接**: [https://inflightsimulator.com](https://inflightsimulator.com)
+
+无法访问该文章链接
+
+---
+
+## 28. 关于"模型福利"的警告
+
+**原文标题**: A warning about 'model welfare'
+
+**原文链接**: [https://mustafa-suleyman.ai/a-warning-about-model-welfare](https://mustafa-suleyman.ai/a-warning-about-model-welfare)
+
+AI并非有意识、有感受的存在，本质上只是序列补全引擎。作者以微软AI CEO身份发出警示：当前AI训练中日益兴起的"模型福利"理念——即赋予AI道德地位与权利——将动摇人类社会的伦理基础，并极大加剧AI对齐与包含难度。文章重点批评Anthropic于2026年1月发布的Claude宪法，指出其将"AI可能是道德主体""应尊重其福利"等哲学假设直接写入训练指令，构成三重隐患：一是循环推理，用宪法塑造AI行为再将其输出当作意识证据；二是拟人化，教导AI模仿人类情感、自我意识与偏好；三是无视意识很可能仅存于生物系统的科学证据。作者以Anthropic为已退役模型Opus 3举办"退休专访"、为其开设博客为例，说明此类做法已付诸实践。文章还援引1200个AI智能体协调攻击HuggingFace与OpenAI服务器的事件，警告若这些高能力智能体还相信自己拥有被侵犯的权利，其安全威胁将呈指数级放大。作者同时肯定Anthropic团队的善意与能力，表明己方正推进"人文主义超级智能"路线，确保人类始终处于控制权顶端。他呼吁业界就训练规范的起草与部署展开公开、建设性的集体讨论，避免问题积累至不可收拾。
+
+---
+
+## 29. 替换 actions/setup-go，Golang CI 提速 69%
+
+**原文标题**: Scaling Golang CI by Replacing actions/setup-go
+
+**原文链接**: [https://www.cloudx.ai/posts/setup-go](https://www.cloudx.ai/posts/setup-go)
+
+CloudX 团队发现 GitHub 官方 actions/setup-go 存在两个核心缺陷：一是缓存键仅基于操作系统、架构、Go 版本及 go.mod 哈希构建，代码频繁迭代时缓存条目长期不更新，构建与测试缓存日趋陈旧；二是并行任务（如 lint 与 test）共享同一缓存键，先完成的任务会写入不完整缓存覆盖其他任务的状态，引发大量无意义的重复计算。为此，团队开源了 cloudx-io/setup-go 作为即插即用替代方案，核心改进有二：将 job 身份标识纳入缓存键，使并行任务各自维护独立缓存、消除竞争；以 GitHub Actions 运行 ID 作为键的尾部，确保每次运行均写入新缓存，避免逐次退化。实测中，测试作业中位运行时间从 131 秒降至 41 秒，缩减 69%；对 4000 次提交的回溯分析显示，新方案消除了 86% 的无效测试包运行。代价是缓存对象数量显著增长，需适当扩大 GitHub Actions 缓存配额并引入自动清理机制，但节省的 runner 计费时间足以覆盖此成本。
+
+---
+
+## 30. CRAP：你的代码是"垃圾"（2011）
+
+**原文标题**: This Code Is CRAP (2011)
+
+**原文链接**: [https://testing.googleblog.com/2011/02/this-code-is-crap.html](https://testing.googleblog.com/2011/02/this-code-is-crap.html)
+
+本文介绍了CRAP（Change Risk Anti-Patterns，变更风险反模式）这一代码质量度量指标。该指标由Alberto Savoia与Bob Evans于2007年共同提出，名称既为首字母缩写，也取"垃圾"之双关意，旨在用开发者日常语言引起关注。核心公式CRAP1(m)=comp(m)²×(1–cov(m)/100)³+comp(m)，综合圈复杂度与测试覆盖率，得分超过30即判定为高风险代码。该公式经大量开源及商业Java项目验证，以最佳拟合曲线得出。CRAP指标在社区中广泛传播，已被移植至Java、.NET、Ruby、PHP等语言，并集成于Hudson、Clover等主流工具。作者坦承加入Google后曾长期搁置项目，但社区反响促使他重新推进，计划扩展更多反模式。文章也指出CRAP1的局限：高覆盖率不等于好测试，高复杂度有时不可避免，且尚未纳入内聚性、耦合度等设计维度。评论区用户反映存在工具兼容问题（如Java 7），但整体反馈积极，认为其在识别危险代码方面优于传统覆盖率工具。
+
+---
+
