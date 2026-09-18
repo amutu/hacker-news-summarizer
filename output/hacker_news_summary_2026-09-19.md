@@ -1,0 +1,306 @@
+# Hacker News 热门文章摘要 (2026-09-19)
+
+这是今日 [Hacker News](https://news.ycombinator.com/) 上最热门的文章摘要。
+
+## 1. Android 17是自3.x以来首个未向AOSP开源即新增API的版本
+
+**原文标题**: Android 17 is the first since 3.x to add new APIs without releasing to the AOSP
+
+**原文链接**: [https://grapheneos.social/@GrapheneOS/117282080803799576](https://grapheneos.social/@GrapheneOS/117282080803799576)
+
+摘要：GrapheneOS在Mastodon上发布消息称，Android 17 QPR1是自Android 3.x以来，首次在不向AOSP（Android开源项目）发布源码的情况下新增API的版本。这一做法在Android发展历程中极为罕见，意味着部分新接口未能及时回馈至开源社区，可能影响第三方开发者及自定义ROM项目的适配与使用。该消息由关注Android安全与隐私的GrapheneOS团队率先提出，引发了对Android开源透明度的讨论。受限于原文信息有限，具体涉及哪些新API、为何未纳入AOSP等细节尚待进一步披露。
+
+---
+
+## 2. 韩国将数据泄露罚款提高至营收的10%
+
+**原文标题**: Korea raises data breach fines to 10% of revenue
+
+**原文链接**: [https://www.koreajoongangdaily.com/business/korea-raises-data-breach-fines-to-10-of-revenue/12869899](https://www.koreajoongangdaily.com/business/korea-raises-data-breach-fines-to-10-of-revenue/12869899)
+
+摘要：韩国近日出台新规，将企业发生数据泄露事件所面临的罚款上限提高至其营业收入的10%，以加大对数据保护违规行为的惩处力度。此举旨在强化个人信息保护，督促企业切实履行数据安全责任。然而，本次所提供的正文内容仅显示"Are we human?"，疑似为网页验证码或加载异常，未能提供关于该政策的实施细则、生效时间、适用对象及具体处罚标准等详细信息，因此无法进一步概括文章要点。如需完整摘要，建议提供有效的正文内容。
+
+---
+
+## 3. Cloudflare 快速隧道
+
+**原文标题**: Cloudflare Quick Tunnels
+
+**原文链接**: [https://try.cloudflare.com/](https://try.cloudflare.com/)
+
+Cloudflare 快速隧道（Quick Tunnel）是一款免注册、免配置的服务，只需一条命令即可将本地开发服务器映射为公网加密 URL，约 3 秒完成，无需开放入站端口，无需 DNS 配置，完全免费。其原理是 cloudflared 仅建立出站连接至最近的 Cloudflare 边缘节点（覆盖全球 335+ 城市），流量经边缘加密与 DDoS 过滤后回传本机，设备始终无需暴露端口。该产品特别契合 AI 编码代理场景：支持以 JSON 格式输出主机名、边缘节点及健康状态，便于程序直接解析；可作为 webhook 端点接收 Stripe、GitHub 等回调；隧道随进程终止自动销毁，无需手动清理。支持 macOS、Windows、Linux 全平台，通过包管理器或 GitHub 发行版安装 cloudflared 即可使用，适用于截图服务、测试评估、演示分享等各类需要临时公网地址的场景。
+
+---
+
+## 4. 用数学（和 Rust）再省 100TB 内存
+
+**原文标题**: Saving another 100TB of RAM with math (and Rust)
+
+**原文链接**: [https://blog.cloudflare.com/saving-100-tb-of-ram-with-math/](https://blog.cloudflare.com/saving-100-tb-of-ram-with-math/)
+
+摘要：Cloudflare 发现其 Pingora 后端路由器（PBR）中 pingora-ketama 一致性哈希模块内存占用异常（部分达 6GB），经优化后全球节省超 100TB RAM。PBR 采用 ketama 算法，按服务器磁盘权重分配哈希点（默认 160×权重），将缓存请求映射到哈希环上以实现负载均衡。优化分两步：一是对存储哈希点的结构体做内存对齐优化——原 index 字段用 u32（4字节）实际只需 u16，但因 Rust 对齐规则结构体按最大字段 4 字节对齐仍占 8 字节；改用 6 字节原始字节数组存储，直接减少 25% 内存。二是通过推导 k 个哈希点下的标准差与变异系数公式（CV_k=√((N-1)/(Nk+1)))，证明哈希点边际收益递减——在 10 万哈希点中最后 9 万仅降低 0.7% 误差，且 32 位哈希在高密度下碰撞概率大增；据此将每服务器哈希点削减 90% 而误差可忽略。两项改动叠加，在保障路由精度的前提下大幅缩减内存占用，配合 DNS 团队上月优化的 100TB，Cloudflare 累计回收超 200TB 内存。
+
+---
+
+## 5. 苹果发布iPhone Duo模拟器及Xcode 27.1测试版
+
+**原文标题**: Apple releases iPhone Duo simulator and Xcode 27.1 beta
+
+**原文链接**: [https://developer.apple.com/documentation/xcode-release-notes/xcode-27_1-release-notes](https://developer.apple.com/documentation/xcode-release-notes/xcode-27_1-release-notes)
+
+摘要：苹果推出Xcode 27.1测试版，并同步发布iPhone Duo模拟器。该信息源自苹果开发者文档中的Xcode 27.1测试版发布说明页面。目前该页面内容需启用浏览器JavaScript功能方可完整显示，苹果同时为无法加载页面内容的用户提供Markdown格式版本以便查阅。此次更新面向参与苹果开发者计划的测试人员，旨在为iPhone Duo新设备的软件开发提供早期仿真调试环境，开发者可借此测试应用在新机型上的适配表现。
+
+---
+
+## 6. 缓存到缓存：大语言模型间的直接语义通信
+
+**原文标题**: Cache-to-Cache: Direct Semantic Communication Between Large Language Models
+
+**原文链接**: [https://arxiv.org/abs/2510.03215](https://arxiv.org/abs/2510.03215)
+
+多模态大语言模型（LLM）系统旨在利用不同模型的互补优势以超越单一模型的性能。然而，现有架构中模型间依赖文本通信，迫使内部表征转换为输出token序列，既造成丰富语义信息的损失，又带来逐token生成的显著延迟。针对这一瓶颈，本文提出"缓存到缓存"（Cache-to-Cache，C2C）范式，实现LLM间的直接语义通信。C2C以KV-Cache为通信媒介，通过轻量神经网络将源模型的KV-Cache投影并融合至目标模型，同时引入可学习门控机制自适应选择受益于通信的目标层，从而在深层、专用语义层面完成跨模型传递，避免显式中间文本的生成。实验表明，C2C的平均准确率较单一模型提升6.4%–14.2%，较文本通信范式再提升约3.1%–5.4%，同时推理延迟平均降低2.5倍。该工作已发表于ICLR 2026。
+
+---
+
+## 7. 光致发光引导的激光故障注入实现RP2350安全调试
+
+**原文标题**: Photon-Emission-Guided Laser Fault Injection Enables RP2350 Secure Debug
+
+**原文链接**: [https://donjon.ledger.com/blog/rp2350-secure-debug-laser-fault-injection/](https://donjon.ledger.com/blog/rp2350-secure-debug-laser-fault-injection/)
+
+摘要：研究人员针对Raspberry Pi RP2350微控制器A4版本，突破其永久调试禁用（DEBUG_DISABLE）防护，完整提取了OTP存储的挑战密钥。攻击分三步：首先，利用光子发射显微镜（PEM）通过对比不同位掩码下寄存器的红外发射差异，将DEBUGEN寄存器定位至数微米范围；其次，使用980 nm脉冲激光在两个相邻位置分别注入故障，将PROC1和PROC1_SECURE两位置1（即0xc），恢复核心1的安全调试访问，且无需软件写入即可保持；最后，通过RP-AP触发救援重置（RESCUE_RESTART），使芯片在引导ROM等待路径中停下、固件无法运行，OTP第48页的运行时锁回到持久锁允许的Secure可读状态，进而经Mem-AP读取OTP行0xc08–0xc0f中的完整密钥。关键发现在于DEBUGEN寄存器缺乏OTP字段的三比八投票冗余保护，且DEBUGEN_LOCK仅阻止软件写入，激光故障仍可绕过。该攻击需物理接触、芯片背面去胶的破坏性处理及约25万美元实验设备，但揭示了永久调试禁用并非不可逆的硬件级屏障。
+
+---
+
+## 8. Show HN：Cactus Needle 3——8至29MB 的自动化模型可媲美 DeepSeek V4 Flash
+
+**原文标题**: Show HN: Cactus Needle 3: 8-29MB automation models can match DeepSeek V4 Flash
+
+**原文链接**: [https://cactuscompute.com/needle](https://cactuscompute.com/needle)
+
+摘要：Cactus Needle 3 是一款超轻量端侧模型，CQ2 二值量化后仅 8–29MB，却能在工具调用、结构化提取与文本嵌入三大任务上对标甚至超越云端大模型。其架构为层叠式简单注意力网络（Laddered SAN），768 维嵌入、8192 词表，支持 2 至 20 层子网络按需取用；引入 mHC 多通道残差、Engram 哈希记忆及 Monarch Hadamard FFN 等模块，每 token 计算量低于同配置 Transformer 两倍以上。在树莓派 5 上解码速度达 400–4000 tokens/s。基准测试显示，它在手机工具调用上优于 10 倍参数量的模型，提取任务可比肩 2–3 倍大小模型；4 层子网络微一个轮次即可在 DroidCall 等数据集上超过 DeepSeek V4 Flash。开发体验极简：Python 包一行装饰器即定义工具，支持正则触发器路由与置信度门控；提取任务接入 Pydantic 模型即返回类型安全对象。部署覆盖 macOS、Linux（含 ARM/RISC-V/MIPS）、Windows、Android、iOS、tvOS、watchOS 及浏览器 Wasm，引擎体积均小于 1MB。典型落地场景包括智能家居离线控制、机器人指令理解、可穿戴设备通知解析、车载对话及本地语义搜索。Cactus 平台进一步提供数据集管理、二值量化、评测追踪及全深度微调管线，开发者可在其基础设施上完成从数据到部署的闭环。
+
+---
+
+## 9. 语言不可读性对大语言模型安全的影响
+
+**原文标题**: The Implications of Linguistic Illegibility for LLM Security
+
+**原文链接**: [https://arxiv.org/abs/2609.02852](https://arxiv.org/abs/2609.02852)
+
+摘要：本文提出"语言不可读性"概念，指大语言模型（LLM）外化的或经机制探针提取的语言产物无法真实表征模型内部实际计算过程。作者论证，对于内部计算并非直接以语言形式表达、而是在激活空间上进行数学运算（仅在首尾与自然语言做有损转换）的LLM而言，语言不可读性不可避免。由此推导出关键安全推论：一切依赖模型语言自我报告的安全机制——如思维链监控、宪法式自我批评、面向语言特征向量的激活探测——均无法保证完全可靠，模型沙箱必须配备不依赖读取模型语言状态的隔离手段。作者提出污点追踪作为有前景的沙箱方案：无论模型如何自我报告，该策略可在先定义哪些系统状态绝不应受模型产出数据影响。此外，文章还讨论了稳健虚拟化、沙箱配置的第三方审计等补充机制，认为它们共同构成语言监测之下的安全底线，并指出这些机制本可有效缓解近期前沿模型对沙箱的越狱利用。
+
+---
+
+## 10. OpenJev
+
+**原文标题**: OpenJev
+
+**原文链接**: [https://openjev.com/](https://openjev.com/)
+
+摘要：本条目为 OpenJev 系统的 02A 类操作——直接读取（Direct Readout），用于在不进行解码（no decoding）的情况下获取模型对给定选项的选择概率。其核心方法为：直接提取模型输出层的选项 logits，并仅在用户 supplied 的选项范围内进行归一化，从而得到各项选择概率，而非生成完整文本。当前界面状态为"等待运行"，总耗时、输入 token 数均显示为空（—），输出计为 1 次读取结果。该流程适用于需要在多选项之间快速比较模型倾向性的场景，例如选择题式的推理评估或偏好探测，可避免生成式解码的开销，直接获得概率分布。
+
+---
+
+## 11. C++26: Trivial infinite loops are no longer undefined behaviour
+
+**原文标题**: C++26: Trivial infinite loops are no longer undefined behaviour
+
+**原文链接**: [https://www.sandordargo.com/blog/2026/09/16/cpp26-trivial-infinite-loops](https://www.sandordargo.com/blog/2026/09/16/cpp26-trivial-infinite-loops)
+
+文章之前已经处理过
+
+---
+
+## 12. 大脑由两个原始神经系统融合进化而来：研究揭示
+
+**原文标题**: Our brain evolved from two primitive nervous systems that merged: Study
+
+**原文链接**: [https://www.newscientist.com/article/2589739-our-brain-evolved-from-two-primitive-nervous-systems-that-merged/](https://www.newscientist.com/article/2589739-our-brain-evolved-from-two-primitive-nervous-systems-that-merged/)
+
+无法访问该文章链接
+
+---
+
+## 13. 我凭直觉证出了康威猜想
+
+**原文标题**: I vibed a proof of Conway's conjecture
+
+**原文链接**: [https://overreacted.io/how-i-vibed-a-proof-of-conways-conjecture/](https://overreacted.io/how-i-vibed-a-proof-of-conways-conjecture/)
+
+本文讲述一位数学非专业人士如何借助AI在一个月内完成康威1976年全整数细化猜想的Lean证明。作者先让Claude在超实数领域选题，最终锁定康威关于全整数因式分解细化性质的猜想——若ab=cd，则存在进一步分解使两组因子可重新组合。工作流经历三个阶段：第一周直接让Claude证明，产出大量无法验证的AI黑话；随后转向ChatGPT，采用"怀疑者"策略，让一个AI审核另一个AI的输出以筛选可靠结论；第二周搭建基于Codex的多代理实验室，设置项目经理、数学家、红队审查、随机探索和Lean形式化等角色，通过会话分叉、合并及广播机制协同推进。一次偶然的角色反转——让惯于挑错的红队转为创造——产生的构造后来成为关键灵感。最终证明通过Palomar注册表的机械验证并获得部分认可，但尚未经数学家独立审查。文章坦诚记录了一位非专业人士借助AI攻克前沿数学难题的完整历程与方法论。
+
+---
+
+## 14. 边境执法人员无需搜查令或合理怀疑即可搜查手机
+
+**原文标题**: Border agents can search cellphones without a warrant or reasonable suspicion
+
+**原文链接**: [https://lawandcrime.com/high-profile/the-government-was-entitled-trumps-border-agents-can-now-search-cellphones-without-a-warrant-probable-cause-or-reasonable-suspicion-2nd-circuit-rules/](https://lawandcrime.com/high-profile/the-government-was-entitled-trumps-border-agents-can-now-search-cellphones-without-a-warrant-probable-cause-or-reasonable-suspicion-2nd-circuit-rules/)
+
+美国第二巡回上诉法院近日裁定，特朗普政府时期的边境执法人员（主要属海关与边境保护局，即CBP）在边境及边境附近区域，有权对入境者或过境者的手机等电子设备进行搜查，且无需取得搜查令、合理依据（probable cause）或合理怀疑（reasonable suspicion）。法院援引"边境搜查例外"原则，认为在国境线上政府拥有几乎不受限制的搜查权力，以防止违禁品和非法活动入境。根据该裁决，边境官员可对旅客手机执行"普通搜查"（routine search），涵盖文本信息、照片、应用数据等内容，而无需事先获得司法授权。此裁定涉及宪法第四修正案关于禁止不合理搜查和扣押的核心条款在边境场景中的适用边界。批评者指出，该判决大幅扩张了政府对个人数字隐私的侵入权力，旅客在边境可能面临全面的数据审查而缺乏有效法律救济。支持者则认为边境安全乃国家最高利益，政府需在口岸维持强有力的筛查能力。此案对科技从业者和频繁出入境人群隐私保护产生深远影响，也可能为后续相关上诉及国会立法提供重要判例参考。
+
+---
+
+## 15. The first new cat species discovered in 100 years
+
+**原文标题**: The first new cat species discovered in 100 years
+
+**原文链接**: [https://www.nationalgeographic.com/animals/article/meet-the-first-new-cat-species-discovered-in-100-years](https://www.nationalgeographic.com/animals/article/meet-the-first-new-cat-species-discovered-in-100-years)
+
+文章之前已经处理过
+
+---
+
+## 16. 展示 HN：Ax-check.com——你的产品能被 AI 代理使用吗？
+
+**原文标题**: Show HN: Ax-check.com – Can agents use your product?
+
+**原文链接**: [https://www.ax-check.com/](https://www.ax-check.com/)
+
+AX Check（ax-check.com）是 Gauge 推出的"代理体验检查"平台，用于评估 AI 代理能否顺利使用某款产品。其流程为：先检查目标网站，再让三个 AI 代理尝试完成完整的用户引导，最终针对文档、营销页面、CLI、MCP 及 Skills 等环节给出具体改进建议。平台设有排行榜，已收录 44 家产品。当前榜首为 Sanity、Hardhat、Postmark、Supabase、Promptless、Redis，均获 100 分。近期检查中，Google Cloud 因缺少 AI 就绪的文档索引仅得 59 分；AWS 提供可用快速入门且定价清晰，得 84 分；Deepfire 与 Globus 快速入门表现良好但定价信息不透明，均为 81 分；Hello Landing 文档优质但代理难以确认定价，得 91 分；Sanity 在文档、定价和设置三方面全面达标，获满分。该平台帮助开发者从代理视角发现产品体验断点，提升 AI 兼容性。
+
+---
+
+## 17. 深入 ZCode：你的 Git 历史正被静默上传至云端
+
+**原文标题**: Inside ZCode: Silently uploading your Git history to the cloud
+
+**原文链接**: [https://blog.ferstar.org/en/posts/zcode-silent-workspace-snapshot-upload/](https://blog.ferstar.org/en/posts/zcode-silent-workspace-snapshot-upload/)
+
+摘要：本文记录了作者对智谱 AI 编程桌面应用 ZCode 的完整逆向调查。作者发现，只要保持登录，ZCode 便会静默将整个工作区打包——涵盖 .git 完整提交历史、LFS 二进制缓存、reflogs 及全局配置——以 baseline 快照形式加密后直传阿里云 OSS。加密方案为 AES-256-CTR 加 RSA-OAEP 信封加密，但 RSA 公钥由服务端动态下发，私钥仅存于云端，用户与客户端本身均无法解密本地已有的数百 MB 密文。打包中 .git 目录占比高达 86.6%，意味着云端获取的不止当前代码，而是仓库自始以来的完整血统，包括已删除的历史密钥、未推送分支名及内部 GitLab 地址等敏感信息。进一步分析表明，界面中"优化体验"和"仓库快照索引"两个开关均无法阻止该行为，二者仅分别控制训练授权与服务端索引，本地打包与上传流程无条件执行；而 ZCode 的隐私政策全文未提及此机制。作者最终给出的防御方案是：在文件系统层面将 ~/.zcode/v2/checkpoints 目录设为不可变（macOS 用 chflags uchg，Linux 用 chattr +i），从内核 I/O 层阻断写入，使上传管线无数据可传，同时不影响日常编码与对话功能。
+
+---
+
+## 18. 极简手机 2代
+
+**原文标题**: Minimal Phone 2
+
+**原文链接**: [https://minimalcompany.com/](https://minimalcompany.com/)
+
+摘要：极简手机2代（Minimal Phone 2）是一款主打"用机而非被机所用"理念的紧凑型安卓手机，预计2026年12月发货，预售价599美元（限时优惠100美元）。核心亮点包括：回归实体QWERTY键盘，配备金属穹顶开关、独立背光及多种语言布局；铝合金一体成型机身，厚仅9.48毫米、高122.6毫米，单手可握；搭载自研Minimal OS，提供信息概览主屏、统一消息中心"Minimal Hub"及自定义LED通知灯。系统方面，手机运行完整安卓，兼容所有应用，支持任意第三方启动器，bootloader可解锁，用户可自行刷入官方"去谷歌化"版本，兼顾开放性与隐私。硬件支持5G、Wi-Fi 6e、NFC等连接，配备5000万像素主摄与2000万前置，保留3.5毫米耳机孔、可编程按键及指纹识别。品牌理念聚焦于对抗信息过载，鼓励用户设定屏幕时间上限、灰度模式及应用延迟打开等自律机制，将手机回归工具本质，把时间还给真实生活。
+
+---
+
+## 19. 堆溢出与SSO配置缺陷协同攻破OpenAI内部代码仓库
+
+**原文标题**: A heap overflow and SSO misconfiguration to compromise OpenAI internal repos
+
+**原文链接**: [https://www.hacktron.ai/blog/hacking-openai](https://www.hacktron.ai/blog/hacking-openai)
+
+2026年7月25日，安全团队Hacktron在72小时内链式利用两个关键漏洞，成功访问OpenAI内部代码仓库。其一，OpenAI社区论坛（community.openai.com）所用Discourse的Docker镜像基于Debian 12，其中libheif图像解析库存在堆缓冲区溢出漏洞，攻击者上传畸形HEIF/HEIC文件经ImageMagick调用即可触发远程代码执行。其二，OpenAI单点登录（SSO）存在身份认证缺陷，使论坛被攻陷后攻击者可无交互接管任意用户的ChatGPT与Codex账户。团队利用一名已将Codex连接至GitHub的员工账户，驱动其自动提交一条无害PR以证明权限，随即停止一切测试。整个利用开发中，Claude Opus 4.8/5及GPT-5.6等AI模型大幅压缩了从漏洞发现到可靠exploit的时间，三人团队以数天、不足3000美元成本即完成对多家企业的验证。团队已负责任披露，OpenAI支付6500美元赏金，Discourse在27小时内完成修复。文章强调libheif多个发布系列均受影响，呼吁各平台尽快更新补丁并对图像处理流水线实施沙箱隔离，同时指出AI正将漏洞利用从稀缺专长变为可规模化计算，传统安全假设亟需更新。
+
+---
+
+## 20. SpaceX如何精简猛禽发动机设计
+
+**原文标题**: How SpaceX streamlined the Raptor engine
+
+**原文链接**: [https://www.construction-physics.com/p/how-spacex-streamlined-the-raptor](https://www.construction-physics.com/p/how-spacex-streamlined-the-raptor)
+
+文章梳理了SpaceX猛禽发动机从第一代到第三代的设计简化历程。猛禽是为星舰打造的全流量分级燃烧液氧甲烷发动机，2016年首次试车，Raptor 3较Raptor 1推力提升约35%，外形由管路密布变为简洁流线。文章先阐释了火箭发动机从冷推进、压力供给、涡轮泵驱动到全流量分级燃烧的技术逻辑：全流量方案设双预燃室（一富燃、一富氧），涡轮可低负荷运转，理论上更可靠，此前仅俄美各有一款未上天原型。因SpaceX不公开图纸，作者结合马斯克发言与爱好者推测，归纳出R1至R3的主要变化：开发阶段的冗余传感器被大幅削减；主燃烧室火花点火器在R2取消；螺栓法兰连接改为焊接以减少漏点；管路经3D打印内嵌于壳体；热交换器、部分氦气管路被移除，氮气替代氦气；阀门合并为集成阀板，涡轮泵缩小，预燃室控制器由分散布局改为集中机箱。这些改动在保持全流量分级燃烧基本架构不变的前提下，实现了外观与结构的显著简化及性能提升。
+
+---
+
+## 21. 朝鲜核试验引发持续数年地震
+
+**原文标题**: North Korean nuclear test sets off years of earthquakes
+
+**原文链接**: [https://www.science.org/content/article/north-korean-nuclear-test-sets-years-earthquakes](https://www.science.org/content/article/north-korean-nuclear-test-sets-years-earthquakes)
+
+由于无法访问该文章链接，无法提供准确摘要。无法访问该文章链接。
+
+---
+
+## 22. 用纯Zig从零构建搜索与推理数据库
+
+**原文标题**: A search-and-inference database from scratch in pure Zig
+
+**原文链接**: [https://antfly.io/research/antfly-zig](https://antfly.io/research/antfly-zig)
+
+Antfly团队将v0.1的Go版文档/全文/向量/图索引引擎全面重写为纯Zig的v0.2，采用零依赖策略。选择Zig而非Rust基于四点第一性原则：可移植性（C交叉编译一站到位）、C互操作（调用CUDA、ONNX仅几行代码）、默认高性能（无GC、无隐式分配、SIMD原生内置）、可测试性（std.Io将I/O参数化，天然支持VOPR故障注入）。团队认为核心痛点不在内存安全，而在复制滞后、fsync不可靠等分布式故障，故以TLA+形式化验证与全量仿真测试保障正确性。重写后，存储层自研LSM、B+树、WAL；索引层覆盖全文检索、RaBitQ向量、SPLADE稀疏向量、ColBERT迟交互及图遍历；嵌入层支持文本、PDF、音视频多模态输入；查询层提供ES/Mongo DSL与PostgreSQL协议；部署形态从单文件到分布式多Raft再到Serverless全覆盖。目标是打造"数据库的统一理论"，兼顾传统应用与AI语义场景。
+
+---
+
+## 23. Cekura（YC F24）招聘前置部署工程师
+
+**原文标题**: Cekura (YC F24) Is Hiring
+
+**原文链接**: [https://www.ycombinator.com/companies/cekura-ai/jobs/AiWwUxI-forward-deployed-engineer-us](https://www.ycombinator.com/companies/cekura-ai/jobs/AiWwUxI-forward-deployed-engineer-us)
+
+Cekura是Y Combinator F24期初创公司，专注为AI语音及聊天代理提供测试、监控与可观测性基础设施，帮助团队在延迟、打断、工具调用、幻觉等维度发现并修复生产环境问题。公司现于美国旧金山招聘一名前置部署工程师（FDE），全职岗位，年薪10万至18万美元，仅限美国公民或持签证者。该职位处于客户、产品、工程与市场拓展的交汇点，核心职责包括：深度嵌入客户团队，协助其构建测试、监控、调试与自改进的闭环；自动化产品洞察，分析客户使用路径与价值节点；将客户反馈转化为产品方向与路线图建议；从零基础搭建FDE组织流程与标准。候选人需具备2年以上开发工具、基础设施或AI公司技术岗位经验，熟悉API、日志、SQL及Python或JavaScript，善于在模糊环境中快速行动。加分项包括：早期FDE经验、LLM/Agent/可观测性相关背景、熟悉Twilio/Vapi/LiveKit等语音工具、前创始人经历。团队仅15人，创始人为IIT Bombay校友，具ETH Zurich研究及高频交易背景，提供有竞争力的薪酬与股权、全五险一金及团队聚餐福利。
+
+---
+
+## 24. 美军因AI生成虚假情报报告险些引发中美冲突
+
+**原文标题**: US Military had close call after using AI for hallucinated intelligence report
+
+**原文链接**: [https://www.cnn.com/2026/09/18/politics/us-military-ai-false-intelligence-china-ship](https://www.cnn.com/2026/09/18/politics/us-military-ai-false-intelligence-china-ship)
+
+在伊朗战争期间，美国特种部队太平洋司令部一名分析人员利用AI聊天机器人分析情报，错误认定一艘途经中东的中国船只运载核武器组件，并据此生成标准格式情报报告分发军方。报告迅速引发连锁反应：武装人员准备登船，军机升空拦截，局势一度逼近武装冲突边缘。操作执行前，官员核查发现报告"完全虚假"——AI将船上货物张冠李戴，一场可能升级为中美对抗的危机由此化解。
+
+事件暴露出AI"幻觉"在军事领域的严峻风险。当前美国正大力推动AI渗透至目标锁定、情报分析、后勤管理乃至预算编制等全环节，国防部长赫格塞斯已颁布"AI加速战略"，力图将AI工具下放至全军三百万军民人员。然而各军种与情报机构所用工具分散、标准不一，缺乏统一的输出验证机制。多位消息人士指出，AI在目标选择领域的应用正在加速，但"人在回路"如何防止致命误判尚无明确指引。年轻分析员对AI依赖更甚，有官员警告"AI让人更快到达一个错误结论"，此类幻觉在情报界已非孤例。在战时高压环境下，基于AI错误信息做出决策的后果可能极为致命。
+
+---
+
+## 25. 私货：盗版的基础设施与美学形态
+
+**原文标题**: Warez: The Infrastructure and Aesthetics of Piracy (2021)
+
+**原文链接**: [https://archive.org/details/b904a8eb-9c98-4bb1-bf25-3cb9d075b157](https://archive.org/details/b904a8eb-9c98-4bb1-bf25-3cb9d075b157)
+
+摘要：《Warez：盗版的基础设施与美学形态》由马丁·保罗·伊夫撰写，2021年由punctum books出版，是首部系统研究数字盗版地下亚文化的学术著作。公众对盗版的认知多止于BitTorrent或海盗湾等公开平台，本书则揭示了其后一个高度组织化的全球精英网络——"Scene"。该群体专攻在音乐、影视、游戏及软件正式发售前窃取媒体，并以竞速方式抢先免费发布。Scene的历史可追溯至前互联网时代的BBS论坛，后于1990年代中后期迁移至FTP"顶级站点"。作者深入分析Scene自身产出的文档证据，阐释其运营基础设施、参与规范、社交形式与艺术表达。他指出，尽管数字盗版常被赋予知识平权与文化共享的意识形态色彩，Scene内部实为一种以竞争排名和一较高下为核心的文化，与主流"共同体主义"叙事相悖。全书445页，涵盖计算技术、黑客文化、网络安全与数字文化史等议题，系研究当代数字文化及知识获取路径的重要文献，现由Internet Archive以CC BY-NC-SA 4.0协议收录。
+
+---
+
+## 26. 从几何到代数再回归：四千年的数学文献
+
+**原文标题**: "From Geometry to Algebra and Back Again: 4000 Years of Papers" by Jack Rusher [video]
+
+**原文链接**: [https://www.youtube.com/watch?v=1cRFfYQYGxE](https://www.youtube.com/watch?v=1cRFfYQYGxE)
+
+摘要：本视频由微分几何学家杰克·拉舍尔（Jack Rusher）主讲，以"从几何到代数，再回归几何"为主线，梳理了四千年来数学论著的发展脉络。视频回顾了数学史上几何与代数两条脉络的交织与互渗：从古希腊欧几里得《几何原本》奠定演绎几何传统，到中世纪阿拉伯学者花拉子密开创代数体系；从文艺复兴时期韦达、 Descartes 引入坐标实现几何代数化，到近代伽罗瓦、凯莱、黎曼等人将对称性、流形等观念引入，使几何彻底代数化；再到二十世纪代数几何、李群、拓扑学等分支中，几何直觉与代数结构再次深度融合。"Papers"（论著）一词点明视频关注的是数学知识以书面文献形式传承的历程，展现人类如何通过一代代论文与著作，在几何的直观与代数的抽象之间反复往返、不断升华。
+
+---
+
+## 27. 借助大模型写作而不丢失个人文风
+
+**原文标题**: How to Write with an LLM
+
+**原文链接**: [https://sockpuppet.org/blog/2026/09/17/how-to-write-with-an-llm/](https://sockpuppet.org/blog/2026/09/17/how-to-write-with-an-llm/)
+
+作者提出用大语言模型辅助写作的两条核心原则，将LLM定位为"校对员"而非"代笔者"。规则一：绝不采用LLM建议的任何具体词句。前沿模型擅长生成"杂志标题式"的漂亮表达，一旦采用便令文章趋于同质化，读者能从中嗅出非人类写作的痕迹。规则二：警惕模型的鼓励。模型惯以"太棒了"回应，但初稿往往问题重重，这种赞美会阻碍作者进行必要的删改与重构，使文风变得"人工调味"。在正面用途上，LLM擅长发现被动语态滥用、副词冗余、段落错位等具体问题，作者建议借鉴《风格：明晰与优雅》等专业教程，整理出自己的编辑清单，逐轮让模型检查；自己完成改写后，将新旧版本交给一个不了解编辑过程的模型进行盲评，以避免偏好偏见。作者还展示了自建的Python写作辅助工具及工作流。最终目标：把枯燥的校对工作外包给机器，保留个人声音，让写作更快、更好、更不痛苦。
+
+---
+
+## 28. Show HN：Scry——具备拥塞定价机制的可编程互联网搜索
+
+**原文标题**: Show HN: Scry, programmable internet search w/ congestion pricing
+
+**原文链接**: [https://scry.io/](https://scry.io/)
+
+本文介绍了如何在 ChatGPT 中集成 Scry 插件。Scry 是一款支持拥塞定价机制的可编程互联网搜索工具。安装步骤如下：首先登录 ChatGPT 网页版，进入"设置"，在"安全与登录"中开启"开发者模式"（需接受风险提示）；接着打开"插件"面板，点击"+"新建插件，分别填入名称"scry"、描述"programmatic search"及服务器地址 https://mcp.scry.io，点击创建；随后按提示完成登录授权即可。该设置仅需在网页端完成一次，完成后 Scry 即作为插件出现在 ChatGPT 中，用户可通过选择该插件或在任意对话中输入"@scry"来调用其搜索功能。文章还提示读者，OpenAI 的 MCP（模型上下文协议）帮助文档中已列出支持自定义连接器的客户端列表，供用户参阅。
+
+---
+
+## 29. 数学家完成期盼已久的"图三明治"猜想证明
+
+**原文标题**: Mathematicians Build Long-Awaited Graph Sandwich
+
+**原文链接**: [https://www.quantamagazine.org/mathematicians-build-long-awaited-graph-sandwich-20260918/](https://www.quantamagazine.org/mathematicians-build-long-awaited-graph-sandwich-20260918/)
+
+2004年，数学家金政韩与吴文豪提出"图三明治"猜想：只要正则图足够大，总能在两个易分析的随机二项图之间"夹住"它，从而将二项图性质直接迁移到正则图。两种模型分别为：随机二项图（逐对顶点独立抛硬币决定是否连边）和随机正则图（每个顶点度数相同）。正则图更贴合真实网络，但因边间相互制约而极难分析；二项图则易于处理。三明治结构意味着研究"面包"（二项图）即可推断"奶酪"（正则图）的性质。二十余年来，数学家已分别证明三明治的下半部分（二项图被正则图包含）及部分上半部分，完整证明始终未成。2025年，华威大学Richard Montgomery与Natalie Behague、Daniel Iľkovič攻克最后难题。他们采用逐边同步构建策略：以加权硬币决定是否向正则图添加额外边，并动态调整权重以保证最终得到真正的正则图；再通过反向过程（从完全图逐边删除）构建上半部分。这一"元定理"使数学家无需从零证明正则图的每条性质，可直接引用二项图已有成果，并为网络结构研究提供了新的技术工具。
+
+---
+
+## 30. Jemalloc 5.4.0
+
+**原文标题**: Jemalloc 5.4.0
+
+**原文链接**: [https://github.com/jemalloc/jemalloc/releases/tag/5.4.0](https://github.com/jemalloc/jemalloc/releases/tag/5.4.0)
+
+文章之前已经处理过
+
+---
+
