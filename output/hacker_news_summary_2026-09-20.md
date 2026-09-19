@@ -1,0 +1,304 @@
+# Hacker News 热门文章摘要 (2026-09-20)
+
+这是今日 [Hacker News](https://news.ycombinator.com/) 上最热门的文章摘要。
+
+## 1. 我早在一年前就用强化学习构建了非自回归决策模型
+
+**原文标题**: I built non-autoregressive decision models with RL a year ago
+
+**原文链接**: [https://laya.convaiinnovations.com/](https://laya.convaiinnovations.com/)
+
+作者于2025年3月即发表非自回归RL决策模型论文并开源权重，而TypeSafe AI（ChatGPT共同发明者创立）在2026年9月推出概念相同的Jev，却无论文及开源数据。作者随后构建完全开源的系统1决策模型家族Laya，基于双向编码器与RLCD训练，包含choice、score、noul三种决策原语，单次前向传播输出校准概率，从架构上杜绝幻觉。Laya提供三个检查点（英语/多语言/类型化决策），内置亚毫秒级Unicode多脚本路由器，覆盖百种语言，路由开销不超推理时间的2%。性能方面，Laya单问题延迟32.8毫秒，较Jev快7.8倍，批量场景快20倍；校准误差仅为Jev的三分之一；在typed-decisions、AG News、DAIR Emotion等基准上全面领先，且支持自托管、零API费用、Apache 2.0全开源。作者同时坦诚局限：选项超20个时精度下降、零样本表现有限、需温度标定。核心观点：高频分类、路由与 triage 场景无需生成式大模型，35毫秒内基于双向编码器的确定性决策模型才是生产级最优解。
+
+---
+
+## 2. AI生成的海报不必千篇一律
+
+**原文标题**: AI-generated posters don’t have to be horrible
+
+**原文链接**: [https://john.hartnup.uk/2026/06/07/ai-event-posters.html](https://john.hartnup.uk/2026/06/07/ai-event-posters.html)
+
+摘要：如今AI生成的活动海报因风格高度雷同而令人审美疲劳。作者为证明AI能产出更多样化的设计，向ChatGPT提交虚构的村野集市信息，并刻意要求"干净、明快、避免柔和油画风"。第一轮结果仍显平庸，于是作者要求换一种完全不同的美学，ChatGPT给出了包豪斯/几何极简风格，并主动归纳了瑞士国际主义、里索印刷、马蒂斯剪纸、粗野主义、九十年代锐舞传单、孟菲斯设计、日本极简、路标导视系统、九十年代鼓打贝斯传单等十余种风格供选择。作者逐一尝试，又尝试了"设计师Republic专辑封面风""儿童水彩加专业字体""八十年代地下朋克小报""九十年代分形3D"等趣味方向，效果各异且颇具辨识度。文章最后指出，Claude和Gemini还可输出可编辑的HTML、PDF格式，便于后续调整；作者本人据此整理了一份涵盖100种海报风格的提示词图鉴。核心观点是：AI海报的关键不在于"像不像AI画的"，而在于是否摆脱了千篇一律的默认模板——只要主动指定具体的设计语言，同样的AI也能产出风格鲜明、令人眼前一亮的作品。
+
+---
+
+## 3. 母巢之战基准测试
+
+**原文标题**: Brood War Bench
+
+**原文链接**: [https://bw.swerdlow.dev/report](https://bw.swerdlow.dev/report)
+
+本文介绍了一项让AI模型对战《星际争霸：母巢之战》的基准测试，以19种模型及努力等级配置进行全循环对决，评估AI在实时策略游戏中的实际表现。核心结论是：所有参测模型均未超越初学者水平，任何掌握基础光子冲锋的玩家都能击败它们。Codex Astra（xhigh）以100%胜率领跑，策略以骚扰打断见长，常派探机跨图攻击对方农民，但宏观生产薄弱，子代理间缺乏协调，常逐个小规模送死。Claude Fable游戏意愿最强，会持续发展经济、攀升科技树，曾产出异化虫并获胜，但执行力不足难以将经济转化为战斗力。Grok 4.6表现最差，大量时间消耗于推理却极少下达指令，一局43分钟仅发出6条命令，未造出一兵一卒，属于典型的"思考型瘫痪"。测试还发现旧版模型将RTS当作回合制操作，思考期间即被摧毁；部分模型在主力全灭后仍具韧性，如将最后指挥中心运往地图角落存活六分钟。作者认为该基准远未触及天花板，AI在策略游戏领域仍有巨大提升空间。
+
+---
+
+## 4. 两个平行的神经外胚层祖细胞参与大脑发育
+
+**原文标题**: Two parallel neural ectoderm progenitors contribute to the developing brain
+
+**原文链接**: [https://med.stanford.edu/news/all-news/2026/09/two-separate-brains.html](https://med.stanford.edu/news/all-news/2026/09/two-separate-brains.html)
+
+斯坦福医学院Kyle Loh团队在《自然·神经科学》上发表研究，揭示大脑发育的根本性秘密：人类大脑并非由单一祖细胞发育而成，而是由两个互斥的神经外胚层祖细胞种群平行发育构建。表达Otx2基因的前部神经外胚层发育为前脑和中脑，主管语言、意识等高级功能；表达Gbx2基因的后部神经外胚层则发育为后脑（即脑干），控制呼吸、心跳等基本生命活动。两者在胚胎发育最早期即锁定各自命运，如并行轨道上的列车永不交汇。这一发现推翻了数十年来"单一起源"的主流模型，也解释了科学家长期无法在实验室培养脑干神经元的困境——既往研究试图将前脑祖细胞转化为后脑细胞，而两者在染色质构型等表观遗传层面根本无法互转。基于此，团队首次成功将人类多能干细胞诱导为具备电活动特征的后脑运动神经元。进化证据表明，这种双起源模式在5.5亿年前的远古生物中已存在。该成果为脊髓性肌萎缩症（SMA）和肌萎缩侧索硬化（ALS）等脑干相关疾病的基础研究与再生治疗开辟了新路径，也为理解司美格鲁肽等减肥药的饥饿调控机制提供了新视角。
+
+---
+
+## 5. 经典基准测试盲区：Btrfs/ZFS/bcachefs 真实工作负载性能评测
+
+**原文标题**: Btrfs/ZFS/bcachefs under workloads classic benchmarks skip
+
+**原文链接**: [https://bartosz.fenski.pl/modern-fs-benchmark/](https://bartosz.fenski.pl/modern-fs-benchmark/)
+
+无法访问该文章链接
+
+---
+
+## 6. ZK-JPEG：基于零知识证明的图像编辑与压缩
+
+**原文标题**: ZK-JPEG: Zero-Knowledge Image Editing and Compression
+
+**原文链接**: [https://eprint.iacr.org/2026/2039](https://eprint.iacr.org/2026/2039)
+
+随着深度伪造图片工具的泛滥，图像认证技术对验证数字图像能否溯源至真实相机拍摄愈发重要，但此类工具必须能耐受合理的图像变换。相机证明依赖数字签名确认图片来源，然而JPEG等有损压缩、区域模糊或打码等操作均会导致签名失效。此前基于零知识证明（ZK）的方法虽可验证图像编辑历史，却无法在有损编码下保持有效。本文提出ZK-JPEG，一种面向JPEG压缩的密码学工具，可证明公开发布的图像确由某个已提交的秘密输入经正确压缩而来，并能将大量图像变换以极小开销融入JPEG压缩流程加以验证。该系统快速、灵活，可基于现成ZK工具直接实例化；作者利用PicoZK将Python图像编辑代码转换为行点零知识（LPZK）证明系统的ZK电路。论文发表于SCN 2026。
+
+---
+
+## 7. 测量网络审查，共建全球最大开放数据集
+
+**原文标题**: Measure internet censorship. Contribute to the largest open dataset
+
+**原文链接**: [https://ooni.org/install](https://ooni.org/install)
+
+OONI Probe 是开放网络调查（OONI）推出的开源工具，旨在帮助用户检测互联网审查，并为全球最大的网络审查开放数据集贡献力量。该工具覆盖多平台，包括移动端（Android/iOS）、桌面端（Windows/macOS）及命令行（Linux/macOS），并提供相应的用户指南与安装说明。OONI Probe 主要具备以下功能：1）检测封锁网站——运行后可查看所在国家或地区被屏蔽的网站；2）测量网络速度——通过由 M-Lab 联合开发的 NDT 测试评估网络性能；3）检测应用封锁——可测试 WhatsApp、Facebook Messenger、Telegram 等通讯应用是否被屏蔽，并验证网络规避工具是否有效。用户每次运行 OONI Probe，测试结果将自动以近实时方式发布，助力全球网络审查信息的透明化。该项目汇集了来自世界各地的测量数据，任何人都可探索这些数据，了解全球互联网审查现状。
+
+---
+
+## 8. CUA-S1：面向计算机操作的高效决策模型
+
+**原文标题**: Show HN: CUA-S1 – A System One Model for Computer Use
+
+**原文链接**: [https://github.com/trycua/cua](https://github.com/trycua/cua)
+
+Cua 为 AI 代理提供端到端的计算机操作能力，涵盖开源桌面自动化、隔离云桌面、本地 macOS 虚拟机、专用决策模型及评估基准。其核心理念"Computer-Use 2.0"强调代理可在同一任务中灵活切换代码、API 与图形界面。项目包含五大组件：Cua Fleets 提供隔离云 Linux 桌面，通过 Sandbox SDK 执行命令并截图；CUA-S1 是一族小型"系统一"模型，擅长在表单等结构化界面上快速做出有界决策，而非逐 token 生成，模型代码以 MIT 协议开源，权重托管于 Hugging Face；Cua Driver 可操作 macOS、Windows、Linux 上的原生应用与浏览器，支持后台运行而不抢占焦点；Lume 利用 Apple 虚拟化框架在 Apple Silicon 上创建本地 VM；Cua Bench 用于构建与评估计算机操作任务。项目兼容 Claude Code、Cursor 等主流 AI 编码代理，欢迎社区贡献，整体采用 MIT 许可。
+
+---
+
+## 9. 苏珊·奇亚尼的布赫拉食谱
+
+**原文标题**: Suzanne Ciani's Buchla Cookbook
+
+**原文链接**: [https://echo.orpheusinstituut.be/article/suzannes-buchla-cookbook](https://echo.orpheusinstituut.be/article/suzannes-buchla-cookbook)
+
+无法访问该文章链接
+
+---
+
+## 10. TIN：面向 Postgres 的全文检索扩展
+
+**原文标题**: Tin: full-text search for Postgres
+
+**原文链接**: [https://planetscale.com/blog/introducing-tin](https://planetscale.com/blog/introducing-tin)
+
+2026年9月，ParadeDB正式发布TIN（Text INdex）——一款面向Postgres的全文检索扩展GA版本。TIN原生支持布尔表达式、短语与跨度查询、模糊/通配符/正则匹配、大小写及重音折叠、COUNT(*)统计与BM25排序top-k查询，同时兼容连接、复杂WHERE子句、持续更新、复制与备份等生产需求。性能方面，在85GB的Stack Exchange语料上，TIN混合查询QPS达199次/秒，为ParadeDB的25倍、Postgres GIN的541倍，p99延迟分别低26倍和1356倍；并发写入场景下TIN仍保持125 QPS，而竞品大幅衰减；索引完全载入内存时（Wikipedia语料），TIN的COUNT查询可达10260 QPS。架构上，TIN的核心创新是以Postgres ctid（行物理地址，48位）直接作为文档标识，省去竞品维护独立ID映射的开销，并利用每页至多291条元组的特性采用两层级位图编码，将存储压缩至接近1 bit/posting。索引构建仅需8分钟，体积约为语料的50%–61%。
+
+---
+
+## 11. 电路的隐秘世界
+
+**原文标题**: The Secret Life of Circuits
+
+**原文链接**: [https://blog.coredump.cx/p/the-secret-life-of-circuits-is-here](https://blog.coredump.cx/p/the-secret-life-of-circuits-is-here)
+
+作者lcamtuf在博客上宣布新书《电路的隐秘世界》正式出版。该书由No Starch Press出版，为精装全彩版本，含近300幅原创图表。书中定位为电路学入门参考，无需高等数学基础即可阅读，注重培养读者自主设计电路的能力，聚焦现代电子问题而非复古技术。目前已通过出版社官网、亚马逊（含多国站点）及巴诺书店等渠道上架，因物流安排预计10月发货。作者展示了多封来自Travis Goodspeed、Eric Schlaepfer、Colin O'Flynn、Chris Gammell等硬件领域知名作者的推荐语，评价该书兼具物理原理与实践操作，插图精美、概念讲解直观。作者还幽默地引用了一条Hacker News上的负面评价，延续其一贯轻松的行文风格。文末列出了数篇往期博客文章，涵盖二极管应用、负电阻、数模转换等主题，供读者预览书中风格与内容。
+
+---
+
+## 12. Android 17 is the first since 3.x to add new APIs without releasing to the AOSP
+
+**原文标题**: Android 17 is the first since 3.x to add new APIs without releasing to the AOSP
+
+**原文链接**: [https://grapheneos.social/@GrapheneOS/117282080803799576](https://grapheneos.social/@GrapheneOS/117282080803799576)
+
+文章之前已经处理过
+
+---
+
+## 13. Supabase（YC S20）招聘 OrioleDB 开发者
+
+**原文标题**: Supabase (YC S20) Is Hiring for OrioleDB
+
+**原文链接**: [https://supabase.link/orioledbjob](https://supabase.link/orioledbjob)
+
+摘要：Supabase 是一家由 Y Combinator 2020 年夏季批次（S20）支持的开源后端即服务（BaaS）平台，现正面向美洲地区（AMER）招聘 OrioleDB 开发者。OrioleDB 是 Supabase 团队研发的高性能数据库引擎，该职位属于核心技术研发岗位，主要职责预计涵盖数据库架构设计、存储与事务处理机制的开发及性能优化等工作。由于该招聘页面需启用 JavaScript 才能完整加载，原始内容信息有限，具体的学历与技能要求、薪资福利及申请方式等细节未能完整呈现。感兴趣的开发者可前往 Supabase 官方网站查看完整的职位描述并提交申请。
+
+---
+
+## 14. 黑洞还是黑洞星？天文学家为韦布望远镜"小红点"各执一词
+
+**原文标题**: Black Holes or Black Hole Stars? Astronomers Spar over 'Little Red Dots'
+
+**原文链接**: [https://www.quantamagazine.org/black-holes-or-black-hole-stars-astronomers-spar-over-webb-telescopes-little-red-dots-20260914/](https://www.quantamagazine.org/black-holes-or-black-hole-stars-astronomers-spar-over-webb-telescopes-little-red-dots-20260914/)
+
+韦布太空望远镜在极早期宇宙中发现大量神秘的"小红点"——极小却极其明亮的红色光点。最初被误认为遥远星系，后依据光谱中的宽发射线，多数天文学家认为其本质是超大质量黑洞。然而2025年，两个团队同时观测到两个异常偏红的小红点，其光谱呈现典型的巴尔默间断，类似恒星表面，亮度却远超任何已知恒星。他们据此提出"黑洞星"假说：一种外观似恒星、内部由黑洞驱动的巨型氢气质壳结构，可解释小红点不发射X射线、不闪烁等异常。该观点获部分支持，但剑桥大学马约利诺等人反驳称，小红点可能是侧面观测的普通黑洞，气体环遮挡蓝光、电子散射拓宽谱线足以解释现有数据。目前两种理论均能拟合观测，学界争议激烈。2026年，研究者将2006年提出的"准恒星"模型引入，为黑洞星提供了形成路径：气体云核心直接坍缩成黑洞，残余气体形成巨大壳层，这一过程或揭示了宇宙中超大质量黑洞的"诞生时刻"。
+
+---
+
+## 15. 图坦卡蒙墓外发现隐藏密室新证据 或藏有奈费尔蒂蒂
+
+**原文标题**: New evidence for hidden chambers beyond Tutankhamun's tomb
+
+**原文链接**: [https://www.nature.com/articles/d41586-026-02621-2](https://www.nature.com/articles/d41586-026-02621-2)
+
+古埃及女王奈费尔蒂蒂或葬于图坦卡蒙墓（KV62）附近，这一猜测近日获新证据支持。埃及开罗艾因夏姆斯大学考古学家埃尔德马蒂团队联合英国埃及学家里夫斯及国际地球物理顾问巴拉德，综合运用微重力测量、探地雷达及电阻率层析成像等手段对墓区进行系统探测。研究首次引入微重力技术，在35平方米范围内采集逾1200个数据点，结果显示存在低密度人工结构，呈直角形态且轴线与墓室北墙平行，暗示一处"隐藏复合空间"。巴拉德还指出墓旁存在一条约两米宽、淤满碎石的通道及一处可能装满随葬品的方形高密度区域，这些结构疑为原属奈费尔蒂蒂的更大墓室，后被图坦卡蒙临时改葬时封堵。研究已于2026年9月17日在线发表。若获埃及最高古物委员会批准，团队计划于11月启动微型机器人微创钻探验证。然而，其他地球物理学家认为现有数据尚不足以得出定论，要求公开更多细节。这一争议性研究若获证实，或将成为现代考古史上最具变革意义的发现之一。
+
+---
+
+## 16. 《UFO》电视剧（1970）专题主页
+
+**原文标题**: UFO Series Home Page: "UFO" TV Series from 1970
+
+**原文链接**: [https://ufoseries.com/](https://ufoseries.com/)
+
+摘要：本页面为1970年英国经典科幻电视剧《UFO》的专题网站，由格蕾与西尔维娅·安德森夫妇创作，埃德·毕舍普主演指挥官斯特雷克。网站内容丰富，设有动态更新、剧集简介、常见问题、剧集指南等基础板块。资源涵盖照片（含宣传照和3D立体卡片照）、声音资料（对白、配乐、音效及独立音轨）、影视片段、制作与营销资料（含前期制作、剧本、宣传物料）、出版物（书籍及报刊）、周边收藏（视频、模型载具、交易卡等）、粉丝创作（手绘、电脑图形、蓝图）、粉丝社团与活动（SHADO论坛、Fanderson、意大利UFO粉丝群、SHADO-USECC）、演职人员信息、1996年重启企划，以及特别版块（高清修复版、演员今昔对比、巴里·格雷配乐试听等）。网站由马克·马丁创建并维护，版权归属ITV Studios。该页面是《UFO》迷的重要信息枢纽，集中呈现了这部经典科幻剧的各方面资源与社区互动。
+
+---
+
+## 17. GPT-6 Astra破解一战德军无线电密码
+
+**原文标题**: GPT-6 Astra Solves a WWI German Radio Cipher
+
+**原文链接**: [https://www.prinzai.com/p/gpt-6-astra-solves-a-wwi-german-radio](https://www.prinzai.com/p/gpt-6-astra-solves-a-wwi-german-radio)
+
+摘要：德国科学博客Scienceblogs.de收录了50个著名未解密码，其中包含多份一战时期德军以ADFGVX方法加密的电报。该方法借助6×6字母表与关键词生成六符号组，每两个符号对应一个明文字符。尽管数百条相关电报已被破译，仍有十余条长期悬而未决。近日，GPT-6 Astra成功解出了一份1918年11月27日发出的电报。模型以"TRUPPENVERSCHIEBUNG"（部队调动）为密钥，经字母重排、行列置换与查表，译出原文大意："一艘英国巡洋舰于某日抵达塞瓦斯托波尔，一个联军舰队于26日随后到达。"经比对历史日志，英军"坎特伯雷"号确于11月24日抵达塞瓦斯托波尔，26日有联军舰队跟进，验证了破解结果。Astra推测该电报此前未解可能与密钥启用时间存疑有关——文献记载该密钥自12月9日起才使用，而此电报早于该日期约两周发出，原因至今不明。这是该条电报首次被解读，展示了大模型在密码学分析中的潜力。
+
+---
+
+## 18. 切勿用AI撰写任何实质性内容
+
+**原文标题**: Almost Never Use AI to Write Anything Substantive
+
+**原文链接**: [https://erichgrunewald.substack.com/p/why-you-should-almost-never-use-ai](https://erichgrunewald.substack.com/p/why-you-should-almost-never-use-ai)
+
+文章作者Erich Grunewald主张几乎永远不应让AI代写博客、报告、邮件、小说等任何传达思想与论证的文本。他提出三点理由：其一，写作即思考——将观点落实为句段的过程本身能暴露逻辑漏洞与研究不足，AI无法替代这一认知活动；其二，AI写作充满难以察觉的模糊与细微错误，以AI芯片走私段落为例，其输出看似通顺却充斥空洞修辞、误导数据和无信息量的"掌声词"，且错误方式极具欺骗性，读者极易被动接受而不自知；其三，不标注AI参与便发布文本，违背了作者以深度思考回馈读者注意力的隐含契约，既不尊重读者也构成误导。作者同时承认AI在转录、检索、头脑风暴、润色等环节仍有价值，但前提是最终文字须经人类逐字审定。他亦指出，未来若AI足够优秀可承接写作，则意味着它必须同时完成全部思考工作，届时的性质已截然不同。
+
+---
+
+## 19. 微控制器电路调试手记
+
+**原文标题**: Adventures in Microcontroller Circuit Debugging
+
+**原文链接**: [https://www.bigmessowires.com/2026/08/30/adventures-in-microcontroller-circuit-debugging/](https://www.bigmessowires.com/2026/08/30/adventures-in-microcontroller-circuit-debugging/)
+
+Steve 在 Floppy Emu 软盘模拟器新品制造中遭遇批量异常：多数设备无法启动，部分"闹鬼"般跳转至随机代码，另有设备运行明显变慢。他逐一排查电源、芯片本身、程序错误等因素后，发现切换至内部 8 MHz 振荡器即可正常启动，由此将问题锁定在外部 20 MHz 晶振电路。进一步比对发现，新批次将晶振由 NDK 换为 ECS 型号，且外部负载电容为 18 pF，而按 Pierce 振荡器公式 Cext = 2×(Cload − Cstray) 计算，在 8 pF 负载、4 pF 杂散电容条件下应为 8 pF 左右，严重偏离理论值。Steve 推测原设计电容值本就处于驱动裕量边缘，新晶振的参数差异（如 ESR 或寄生电容）使电路彻底失稳。他尝试将振荡器改为全摆幅模式，结果反而将设备变砖；随后移植旧 NDK 晶振，设备立即恢复正常，证实确为晶振问题，但仍无法区分究竟是晶振批次不良还是电容值与新晶振不匹配。评论者建议可通过测量时钟输出频率间接校准电容、利用 12 V 高压并行编程解锁或外部时钟注入来抢救变砖设备。Steve 已订购多规格电容，待到货后进行对比测试，以最终验证并解决这一谜题。
+
+---
+
+## 20. 旧金山洋葱期货公司
+
+**原文标题**: San Francisco Onion Futures Company
+
+**原文链接**: [https://onionfutures.com/](https://onionfutures.com/)
+
+旧金山洋葱期货公司提供私人、可转让的黄洋葱期货合约，支持未来实物交割。合约最长可售出6个月，每个洋葱价格在3至12美元之间，通过Stripe完成支付，具体定价由专有算法每日午夜（旧金山时间）自动更新。关于合法性，公司援引美国《联邦法典》第七编第13-1条，该条款禁止在"交易所"或"交易场所"进行洋葱期货交易，但该公司并非交易所，仅向个人私下出售合约，不经营任何交易或二级市场，因此在其认知范围内合法。交付方面，合约到期月首周，公司将联系注册持有人安排取货，提供多个时间和地点选项；主要交付区域包括旧金山、多伦多、西雅图和芝加哥，偏远地区由第三方配送且不加收费。合约以唯一密钥形式持有，持有人可将密钥转让给他人，受让人凭密钥更新收货信息后旧密钥即失效，确保原持有人无法篡改；到期前可随时转卖，但不提供退款或现金结算，即使配送失败亦不退款。该公司由Sophia Vysparov个人拥有和运营，联系邮箱为onionfutures@protonmail.com。
+
+---
+
+## 21. 铁路终结了中世纪的"献神物"法
+
+**原文标题**: The Railways Killed a Medieval Law [the Deodand]
+
+**原文链接**: [https://daily.jstor.org/how-the-railways-killed-a-medieval-law/](https://daily.jstor.org/how-the-railways-killed-a-medieval-law/)
+
+本文介绍了英国延续逾八百年直至1846年的"献神物"（deodand）法律制度。该词源自拉丁语"deo dandum"，意为"应交予上帝的东西"：当某件动产致死时，该物品即被没收归王，名义上用于慈善，实践中多由法医转交死者家属。该制度判定混乱——教堂钟因属不动产而豁免，醉酒者跌落梯子，梯子仍可被定为献神物，全凭陪审团裁量。1829年诺福克旅馆地板坍塌致死30人后，陪审团仅裁定5先令赔偿，凸显其僵化。铁路时代的到来成为该制度的终结者：若每起事故都须没收整列火车，铁路公司将不堪重负。1846年献神物法被废除，被视为进步，但学者Harry Smith指出，此举实质保护了铁路公司——未投保乘客、违规闯入者及殉职员工家属因此失去最后一点赔偿保障。文章最后提出，献神物虽粗糙，却是为"非人类实体"追责的早期框架，其理念或可为当代AI致人伤亡等议题提供启示。
+
+---
+
+## 22. How to Write with an LLM
+
+**原文标题**: How to Write with an LLM
+
+**原文链接**: [https://sockpuppet.org/blog/2026/09/17/how-to-write-with-an-llm/](https://sockpuppet.org/blog/2026/09/17/how-to-write-with-an-llm/)
+
+文章之前已经处理过
+
+---
+
+## 23. Cloudflare Quick Tunnels
+
+**原文标题**: Cloudflare Quick Tunnels
+
+**原文链接**: [https://try.cloudflare.com/](https://try.cloudflare.com/)
+
+文章之前已经处理过
+
+---
+
+## 24. 数学不止于证明，更应珍视其多元价值
+
+**原文标题**: If math is more than proof, we need to better celebrate the rest of it
+
+**原文链接**: [https://terrytao.wordpress.com/2026/09/18/if-math-is-more-than-proof-we-need-to-better-celebrate-the-rest-of-it/](https://terrytao.wordpress.com/2026/09/18/if-math-is-more-than-proof-we-need-to-better-celebrate-the-rest-of-it/)
+
+摘要：本文由Ben Eastaugh与Chris Sternal-Johnson撰写，发表于WordPress博客平台。文章核心观点为：数学的价值远不止于形式化的逻辑证明，社会应当更加珍视和传播其其余面向。数学不仅包含严密的演绎推理与公理体系，还涵盖直觉探索、创造性猜想、审美体验、跨学科应用以及悠久的文化与历史意义。作者指出，当前公众乃至数学界自身对"数学"的认知常被窄化为证明与计算，而数学家在提出猜想、构建模型、捕捉结构之美等方面的智识活动则被低估。文章呼吁重新审视数学教育与公共传播中的偏颇，让数学的探索性、不确定性与人文内涵获得应有的关注与庆祝，从而激发更广泛群体对数学的兴趣与认同，使数学不再仅被当作冰冷的定理集合，而被视为一种鲜活的、属于全人类的文明创造。
+
+---
+
+## 25. Saving another 100TB of RAM
+
+**原文标题**: Saving another 100TB of RAM
+
+**原文链接**: [https://blog.cloudflare.com/saving-100-tb-of-ram-with-math/](https://blog.cloudflare.com/saving-100-tb-of-ram-with-math/)
+
+文章之前已经处理过
+
+---
+
+## 26. 重制Packfile，让Git跑在对象存储上
+
+**原文标题**: You can run Git on object storage if you re-make packfiles
+
+**原文链接**: [https://www.tigrisdata.com/blog/objgit-packfiles/](https://www.tigrisdata.com/blog/objgit-packfiles/)
+
+作者为对象存储平台Tigris构建开源Git服务器，最初以文件系统为适配层，但在生产规模仓库上性能不达标。瓶颈在于Git的Packfile机制：它将海量对象压缩打包为单文件并依赖mmap实现近乎即时的本地读取，而对象存储的网络往返至少需十毫秒，延迟差距达百万倍。为此，作者设计了一种对象存储原生的Packfile格式，采用列式存储，核心思路类比CD的Cue Sheet：对象数据压缩存入一个大二进制文件，另配一份固定宽度索引，每条记录含对象哈希、类型、压缩方式及在文件中的偏移与长度。读取时仅需一次索引定位加一次HTTP Range请求，即可从数百MB包文件中精确取回几百字节的单个对象，避免全量下载。新方案在Linux内核级仓库（约1180万对象、3.4GB）上表现良好，且无需Git客户端做任何改动。作者也坦言自研格式风险不小，但Git的分布式特性意味着所有克隆者均持有完整历史，万一格式失败仍可回退重建。全文深入剖析了Git对象模型、Packfile索引结构与对象存储访问模式之间的张力，并提出了一套务实的桥接方案。
+
+---
+
+## 27. 从 Rust 转用 Zig 是什么体验？
+
+**原文标题**: What Zig felt like, coming from Rust
+
+**原文链接**: [https://besok.github.io/posts/what-zig-felt-like-coming-from-rust/](https://besok.github.io/posts/what-zig-felt-like-coming-from-rust/)
+
+摘要：本文是一位拥有七年 Rust 经验的开发者，以重新实现 JSONPath 库为实践，分享从 Rust 转向 Zig 的真实体感。主要感受有三：Zig 的 IDE 支持极为薄弱，反而促使作者回归 helix+alacritty+zellij 的纯命令行工作流；Zig 偏好扁平文件结构，不鼓励深层目录，与 Rust 中习惯性的分层组织形成鲜明对比；因手动内存管理，测试编写比 Rust 更繁琐。语言范式上，Zig 缺乏函数式特性（无 monad、无迭代器组合子），迫使开发者以原地 mutation 替代不可变变换，递归与总和类型在两种语言中尚可对应，但整体可读性明显下降。最核心的痛点是分配器无处不在，init/deinit 必须严格手动配对，作者详细对比了内存泄漏、错误路径跳过释放、双重释放及孤儿分配四类典型场景，并指出 Rust 的 Drop 机制与所有权转移从编译层面从源头上杜绝了这些问题。作者坦言，Zig 的设计取舍符合其系统级定位，但主观感受上 Rust 代码仍然更易读。
+
+---
+
+## 28. 基于调制约翰逊噪声的通信
+
+**原文标题**: Communication by means of modulated Johnson noise
+
+**原文链接**: [https://www.pnas.org/doi/10.1073/pnas.2201337119](https://www.pnas.org/doi/10.1073/pnas.2201337119)
+
+摘要：本文探讨了一种利用约翰逊噪声（即电阻中电荷载流子热运动产生的热噪声）进行信息传输的理论框架。约翰逊噪声是经典热力学与统计物理中的基本现象，其功率谱在经典极限下与温度成正比、与电阻成反比（Nyquist公式）。作者指出，虽然噪声本身是随机过程，但通过对外部参数（如温度、电阻等）进行时间调制，可以系统性地改变噪声的统计特征，使接收端通过测量噪声功率或谱形变化来解调信息，从而实现通信。文章从理论上分析了这种调制方案的信息容量与基本物理极限，讨论了量子修正效应对噪声功率谱的影响，并考察了该通信方式与热力学第二定律及信息论基本原理之间的一致性。研究表明，调制约翰逊噪声在原理上可承载可解码的信息，但其信道容量受温度、带宽及量子涨落等因素的严格约束，在常规尺度下远低于传统电磁波通信。该工作为理解噪声中的信息蕴含及探索极端条件下的微弱信号检测提供了新的理论视角。
+
+---
+
+## 29. SDCC – 小型设备C编译器
+
+**原文标题**: SDCC – Small Device C Compiler
+
+**原文链接**: [https://sdcc.sourceforge.net/](https://sdcc.sourceforge.net/)
+
+摘要：SDCC（Small Device C Compiler）是一款开源免费的ANSI C编译器，专为嵌入式微控制器设计，托管于SourceForge平台。该编译器支持多种主流微控制器架构，包括Intel 8051/8052、Motorola 68HC08/68HC11/68HC12、Zilog Z180、Renesas RL78/SX-Byte、Harvard DSP32、PIC、iM48/IA64、Tiny 4/5/7/8、EBusy等数十种8位、16位及32位目标平台。SDCC能够生成目标硬件的机器码，并支持生成C/C++代码，同时兼容C99标准的大部分特性。该项目由社区驱动开发，旨在为资源受限的嵌入式系统开发者提供轻量级、可移植的编译工具链，降低对商业编译器的依赖。SDCC提供完整的编译器、链接器及汇编器支持，可用于开发裸机固件、RTOS应用等嵌入式软件。由于其完全开源（GPL许可证），开发者可自由修改和扩展，适合学术研究、教学及商业项目使用。该项目长期活跃于SourceForge，拥有较完善的文档、示例代码及活跃的邮件列表社区，是嵌入式开发领域常用的替代性C编译工具之一。
+
+---
+
+## 30. 科学即开源软件
+
+**原文标题**: Science Is Open Software
+
+**原文链接**: [https://jepedersen.dk/blog/202505_research/](https://jepedersen.dk/blog/202505_research/)
+
+本文提出一个大胆论断：在现代计算科学中，开源软件即等同于科学本身。作者从科学本质出发——构建可检验假设以改进我们对世界的"内模型"——指出软件是编码与共享预测模型的核心载体。一篇论文若无法被读者复现、修改并融入自身认知体系，其科学价值便极为有限，正如物理论文若隐藏公式便不被接受。文章强调，软件错误已导致大量论文被撤稿，科学结论的可信度直接取决于软件的正确性。开源软件同时满足可复现性（可执行、可修改）与可靠性（结果一致可信赖）两大要求，相当于将科学方法延伸至仿真领域。作者进而描绘未来图景：研究者点击链接即可在浏览器中运行完整分析；气候模型等科学软件由全球社区协同维护，如维基百科般持续进化；知识积累以空前速度复利增长；透明可审计的代码重建公众对科学的信任。最后，作者发出行动号召：从研究第一天起分享代码、采用NixOS等可复现环境、优先基于现有工具而非重复造轮子，并在学术晋升体系中赋予软件贡献与论文同等的分量。
+
+---
+
