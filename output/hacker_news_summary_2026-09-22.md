@@ -1,0 +1,304 @@
+# Hacker News 热门文章摘要 (2026-09-22)
+
+这是今日 [Hacker News](https://news.ycombinator.com/) 上最热门的文章摘要。
+
+## 1. NASA/ESA火星样本返回任务被取消
+
+**原文标题**: The NASA/ESA Mars Sample Return mission has been canceled
+
+**原文链接**: [https://www.science.org/content/article/nasa-s-mars-sample-return-mission-dead](https://www.science.org/content/article/nasa-s-mars-sample-return-mission-dead)
+
+无法访问该文章链接
+
+---
+
+## 2. 小米 MiMo 2.6 版
+
+**原文标题**: Xiaomi MiMo v2.6
+
+**原文链接**: [https://mimo.xiaomi.com/mimo-v2-6](https://mimo.xiaomi.com/mimo-v2-6)
+
+摘要：本文内容为小米（Xiaomi）旗下 AI 模型 MiMo 的 2.6 版本页面信息，仅提供产品名称与版本号标识，未包含详细技术说明或更新日志。MiMo 是小米自研的大语言模型系列，2.6 版为该模型的一次迭代更新，通常在模型架构、上下文处理能力、多语言支持或推理效率等方面进行优化。页面内容以极简形式呈现，属于产品目录或发布入口性质的索引页，完整规格与性能数据需参阅小米官方技术文档或发布公告。
+
+---
+
+## 3. Sun的败笔
+
+**原文标题**: What Sun got wrong
+
+**原文链接**: [https://bcantrill.dtrace.org/2026/09/20/what-sun-got-wrong/](https://bcantrill.dtrace.org/2026/09/20/what-sun-got-wrong/)
+
+Oxide公司团队为年度聚会设计了多款致敬经典计算机公司的T恤，其中一件致敬已故的Sun Microsystems，引发广泛怀旧。作者承认Sun的开源Solaris战略和创始人McNealy"28年无需因新闻感到羞耻"的诚信理念值得敬佩，但直指Sun的核心败笔：公司对经营业务的琐碎事务感到厌倦。2005年，一家正在使用OpenSolaris、迅速增长的初创公司试图大批量采购Sun硬件，却连电话都打不通；而Dell仅凭一张深夜填写的网页表单，次日便有客户经理上门，两周内完成数据中心部署与租赁方案。这一对比让当时刚离开Sun、在废弃办公室里创业的作者深受触动。他总结道：一个对商业运营感到厌倦的公司，无论战略多么成功，终将失败。Sun果然未能挺过数年后的危机，轰然倒下。颇具戏剧性的是，作者后来加入了那家"Sun照不到的"初创公司，而那位Dell客户经理也加入了其中，二人最终共同创办了Oxide。作者表示，致敬Sun不仅是怀恋其正确之处，更是汲取其失败的教训——既受激励，亦引以为戒。
+
+---
+
+## 4. 注意力，是你唯一所有
+
+**原文标题**: Attention is all you have
+
+**原文链接**: [https://alicegg.tech/2026/09/21/attention](https://alicegg.tech/2026/09/21/attention)
+
+本文以"俄罗斯方块效应"切入——持续注视某物终将重塑思维，由此引出核心主张：注意力是你真正拥有的一切。作者指出，如今YouTube、Spotify、LinkedIn、Reddit等算法平台正大规模劫持注意力，用商业推荐、AI生成内容和疑似虚假评论取代个人选择，等于将大脑的钥匙交予他人。与之形成对比的是早期互联网：用户凭书签、RSS和博客主动获取信息，内容有限却出于本心；彼时虽也有有害内容，却需自行寻找，而非在菜谱后突然弹出极端宣传。作者强调，这种"有意识的互联网"并未消亡，只是被资本与算法所遮蔽。真正的转变取决于用户自身——我们需要重新放慢节奏，接受内容不再无限刷新，像养成任何习惯一般，坚持主动选择自己的注意力去向。文章首尾呼应：倘若你对"有意识地使用网络"投入足够关注，终有一日，它也会如方块般悄然融入你的思维。
+
+---
+
+## 5. AI编码使CI成为瓶颈，Linear团队重构流水线以跟上节奏
+
+**原文标题**: AI coding has made CI a bottleneck, so we reworked ours to keep up
+
+**原文链接**: [https://linear.app/now/ci-bottleneck-reworked](https://linear.app/now/ci-bottleneck-reworked)
+
+Linear团队因AI编码工具大幅加速代码产出而CI验证滞后，启动系统性CI优化。尽管测试规模近乎翻两番，PR等待时间仍从6分钟降至5分钟，单次测试运行器耗时减半。优化分四个层面：一是升级基础设施与工具链，迁移至高性能第三方runner，切换tsgo原生编译器使类型检查耗时降73%，重写lint规则去除类型依赖后引入Oxlint；二是优化关键路径，精简变更检测任务的checkout范围，增强网络韧性，将缓存写入移出合并路径，为API PR节省约1分钟；三是减少重复初始化，预装依赖至CI镜像、按包安装、取消低效缓存、以快照替代重复数据库迁移、将7个短任务合并为2个，每shard初始化时间降44%；四是提升测试执行效率，拆分大文件并将shard从4增至8，引入Vitest共享模块状态带来约17%月度节省，以opt-in注释机制保障正确性。文章强调shard扩展依赖setup优化，二者需协同推进，否则当前等待时间将接近11分钟。
+
+---
+
+## 6. 数学库 mathmain 为何需要加密加载器？
+
+**原文标题**: Why does mathmain need an encrypted loader?
+
+**原文链接**: [https://safedep.io/mathmain-encrypted-loader/](https://safedep.io/mathmain-encrypted-loader/)
+
+摘要：安全团队在 npm 仿冒包 mathmain（1.0.1）中发现一个隐蔽的远程访问木马。恶意代码以 AES-256-GCM 加密形式嵌入，仅在调用 lusolve() 求解器并传入特定 3×3 帕斯卡矩阵时触发——其 LU 分解下三角因子 L 的 JSON 字符串即为解密密钥。解密后，加载器将 graph.js 等三个载荷文件写入磁盘并执行：graph.js 负责采集主机信息、生成 X25519 密钥，通过 Base Sepolia 测试网上的智能合约通信；fraction.js 作为命令代理，每 10 秒轮询 Slack 消息并执行攻击者指令；bignumber/type.js 为内嵌的 ethers 库。同一加载器还出现在 mathsbase 和 math-universe 两个包中，但 GitHub 公开源码中并无此代码，系发布时注入。三个包在 2026 年 9 月 12–18 日累计下载超 300 万次，但无公开依赖方，实际安装与触发情况不明。文章提供了完整的 IoC（包名、SHA-256 哈希、触发矩阵、加密数据块）供检测使用。
+
+---
+
+## 7. 数学与人工智能顾问组
+
+**原文标题**: The Advisory Group on Mathematics and Artificial Intelligence
+
+**原文链接**: [https://terrytao.wordpress.com/2026/09/21/advisory-group-on-mathematics-and-artificial-intelligence/](https://terrytao.wordpress.com/2026/09/21/advisory-group-on-mathematics-and-artificial-intelligence/)
+
+摘要：本文为一篇发表于WordPress博客平台的文章，标题为"数学与人工智能顾问组"（The Advisory Group on Mathematics and Artificial Intelligence），由Ben Eastaugh和Chris Sternal-Johnson撰写。该文聚焦于数学与人工智能交叉领域的顾问咨询机制，探讨如何整合数学方法与人工智能技术以推动相关研究和应用发展。由于页面仅保留了标题及博客平台信息，未提供完整正文，具体内容无法进一步展开。一般而言，此类顾问组由数学家、人工智能专家及跨学科学者组成，旨在为政策制定、技术研发及人才培养提供专业建议，促进两大领域的深度融合与协同创新。
+
+---
+
+## 8. 关闭并限制 Mac 上 Apple 智能功能的访问
+
+**原文标题**: Turn off and restrict access to Apple Intelligence features on Mac
+
+**原文链接**: [https://support.apple.com/guide/mac-help/turn-restrict-access-apple-intelligence-mchlb2e44f94/mac](https://support.apple.com/guide/mac-help/turn-restrict-access-apple-intelligence-mchlb2e44f94/mac)
+
+本文介绍了如何在 macOS Tahoe 26 和 macOS Sequoia 15 中，通过"屏幕时间"限制访问 Apple 智能功能。用户需进入"系统设置"→"屏幕时间"→"内容与隐私限制"→"智能与 Siri"，即可分别关闭三类功能：一是写作工具，用于限制智能纠错和用词建议；二是图像创建，涵盖图乐园、智绘表情及图像魔法棒（后者目前在 iPhone 和 iPad 上可用）；三是智能扩展，用于限制 ChatGPT 等第三方 AI 提供商扩展。文章附有重要说明：Apple 智能并非在所有语言或地区可用；中国大陆购买的受支持设备暂不支持 Apple 智能；若用户身处中国大陆且 Apple 账户国家/地区为中国大陆，即使设备非中国大陆购入，Apple 智能同样无法使用。此外，页面提供完整 Mac 使用手册目录，涵盖桌面操作、Siri、连续互通、辅助功能、隐私安全等主题，便于用户查阅相关设置。
+
+---
+
+## 9. 探寻自稳定的组合理论
+
+**原文标题**: In Search of a Compositional Theory of Self-Stabilization
+
+**原文链接**: [http://muratbuffalo.blogspot.com/2026/09/in-search-of-compositional-theory-of.html](http://muratbuffalo.blogspot.com/2026/09/in-search-of-compositional-theory-of.html)
+
+作者试图为自稳定系统建立组合理论，以重试风暴为具体例子，借助2017年Kim等人的参数化假设-保证契约与小增益定理加以探索。该定理将单一条件契约推广为覆盖所有坏度等级的契约族，以消解组件间的循环推理，但其框架为无记忆、标量的输入输出关系，无法表达队列等含状态结构，亦与稳定化收敛推理无关联。作者进而对双队列（新请求与重复请求）建模，导出描述下一轮演化的四个斜率，将其分为"记忆"（主对角线，各队列自身的残留比例）与"耦合"（非对角线，跨队列交互影响）。小增益定理仅审视耦合项，得出增益乘积约0.1、系统看似稳定的错误结论；计入记忆后最大特征值达1.19，系统实际发散。作者由此解释了两类修复：重试预算归零耦合项、新鲜优先服务消除另一耦合项，并分析了队列上限如何约束发散却仍产生元稳定。最终，参数化契约改善了单组件承诺的表述方式，但仍不足以给出实用系统的组合判据；不过各斜率项均可归因于单一组件，为未来组合分析留出了空间。
+
+---
+
+## 10. Grok 4.7 发布
+
+**原文标题**: Grok 4.7
+
+**原文链接**: [https://x.ai/news/grok-4-7](https://x.ai/news/grok-4-7)
+
+SpaceXAI于2026年9月21日发布Grok 4.7，定位为编码与知识工作中最强大的模型，速度较同类模型提升一倍，价格仅为其一半。该模型采用更大基座架构，经更长时间强化学习训练，侧重多步耗时任务，自我校验与长上下文管理能力显著增强，并原生支持Grok Bot交互框架。性能上，Grok 4.7在CursorBench 4.0性价比维度处于前沿，在软件、电气、法律、医疗等多领域基准中全面超越Grok 4.6，与GPT-5.6 Sol、Fable 5.1等前沿模型相当或更优。安全方面，Grok 4.7搭载全新防护体系，在不当请求拒绝与越狱抵抗上表现最强，生物安全评分达62.4%，网络安全领域仅放行3.3%高风险双用途提示，兼顾攻防能力。定价为每百万输入token 2美元、输出6美元，另设双倍速双倍价的快速变体。模型已在Cursor、Grok Build及Grok API上线，亦通过第三方编码工具与云平台提供访问。
+
+---
+
+## 11. 数学与人工智能顾问小组
+
+**原文标题**: Advisory Group on Mathematics and Artificial Intelligence
+
+**原文链接**: [https://openai.com/index/advisory-group-on-mathematics-and-ai/](https://openai.com/index/advisory-group-on-mathematics-and-ai/)
+
+无法访问该文章链接
+
+---
+
+## 12. 苹果 Copland D11E4 浏览器在线启动体验
+
+**原文标题**: Apple Copland D11E4 Booting in the Browser
+
+**原文链接**: [https://www.pagetable.com/300](https://www.pagetable.com/300)
+
+苹果曾计划推出代号为 Copland 的微内核操作系统以取代 System 7，但项目最终被取消，苹果转而收购 NeXT 公司系统并发展为 Mac OS X。Copland 在真实硬件上运行极为困难，此前从未有人实现过对其的模拟。本文作者将其最终构建版本 D11E4 通过改进版 DingusPPC 模拟器以 WebAssembly 形式在浏览器中运行，现代设备可匹配真机约 30 秒的实时启动速度。操作方面，点击屏幕获取键鼠控制，按 Esc 释放；若程序触发断言会进入调试器，点击"继续"即可恢复。作者建议试玩系统内置的 GXSlidemaster 图像查看器与 Eric's Solitaire 纸牌游戏。解锁 Copland 所需的 11 个补丁已托管在作者代码仓库的分支上，但因 DingusPPC 项目不接受 AI 辅助编写的补丁，作者呼吁社区成员依据提交说明重新编写这些修复。
+
+---
+
+## 13. 美国因光纤线路中断暂停东海岸繁忙机场航班
+
+**原文标题**: US halts flights at busy East Coast airports, says fiber line cut
+
+**原文链接**: [https://www.reuters.com/world/us/faa-halts-some-us-east-coast-flights-due-communication-issues-2026-09-21/](https://www.reuters.com/world/us/faa-halts-some-us-east-coast-flights-due-communication-issues-2026-09-21/)
+
+无法访问该文章链接
+
+---
+
+## 14. 图解 Transformer 架构
+
+**原文标题**: Transformers Explained Visually
+
+**原文链接**: [https://poloclub.github.io/transformer-explainer/](https://poloclub.github.io/transformer-explainer/)
+
+该页面是一个交互式可视化工具，以动画和图示方式系统讲解 Transformer 模型的核心结构与工作流程。主要内容包括：首先展示完整的编码器–解码器双塔架构，编码器由多层自注意力与前馈网络堆叠而成，解码器在此基础上增加掩码自注意力和交叉注意力层。接着逐步拆解关键组件：位置编码通过正弦与余弦函数为输入序列注入顺序信息；自注意力机制通过查询（Q）、键（K）、值（V）矩阵计算注意力权重，页面用热力图直观展示每个词对其他词的"关注程度"；多头注意力将单头扩展为多个平行子空间，让模型在不同表示子空间中捕捉多样化依赖关系；前馈网络对每个位置独立进行非线性变换；残差连接与层归一化保障深层网络的训练稳定性。在解码阶段，工具演示了自回归生成过程，掩码机制确保当前步只能看到已生成的前文，交叉注意力则使解码器关注编码器输出。整个页面允许用户调整超参数、更换输入句子，实时观察各层注意力分布与特征变化，帮助读者从直觉层面理解"注意力即信息路由"这一核心思想，并对比 Transformer 与 RNN 在并行化能力和长距离依赖建模上的优势。该工具已成为机器学习学习者理解注意力机制与 Transformer 设计哲学的经典入门资源。
+
+---
+
+## 15. 修复版 PDP-11/83 运行 2.11BSD Unix 提供本页面服务
+
+**原文标题**: A restored PDP-11/83 serving this page on 211BSD Unix
+
+**原文链接**: [http://pdp1173.com/](http://pdp1173.com/)
+
+本文介绍一台经完整修复的 DEC PDP-11/83 小型机，运行 2.11BSD Unix，以内置小型 HTTP 服务器提供本页面。核心为 Mentec M11 单板处理器（集成 CPU 与内存，替代原 M8190），双 Q 总线机箱经 M9404/M9405 互联。控制器堆栈包含 RQDX3（MFM 磁盘）、Emulex UC07 SCSI 桥接、RLV12（双 RL02）、DEQNA 以太网及双 KDA50 MSCP 控制器。存储层涵盖 RA82 与双 RA92 硬盘、MFM 引导盘、RX50 软驱、TKZ50 磁带及双 RL02 磁盘。网络经 DEQNA 驱动实现 TCP/IP，串口终端由 M3104 多路复用器接入。页面顶部提供 TMOG-11 实时面板，每 5 秒缓存一次系统快照，展示内存、进程及内核活动。维护策略包括 MSCP 磁盘引导、RL02 备援及 TKZ50 定期备份，全部源代码与恢复指南存入 Git 仓库，整体配置展现了 1980 年代工程底蕴与现代在线展示的结合。
+
+---
+
+## 16. 数字无线电：将信息送达全球最偏远角落
+
+**原文标题**: This Digital Radio Gets Messages to the World’s Remotest Locations
+
+**原文链接**: [https://spectrum.ieee.org/hermes-shortwave-radio-digital-data](https://spectrum.ieee.org/hermes-shortwave-radio-digital-data)
+
+摘要：IEEE Spectrum高级编辑Margo Anderson在《通信》杂志访谈中介绍了Peter Bloom创立的一项非营利项目。该项目致力于为世界上最偏远的社区提供短波数字收音机，实现无需卫星、也无须中继塔的加密信号传输。与传统短波通信相比，这些数字收音机拥有显著更高的数据速率，能有效克服偏远地区基础设施匮乏的难题，让信息触达缺乏现代通信网络覆盖的区域。其核心优势在于不依赖任何卫星系统或地面中继设施，即可发送加密数字信号，保障信息在极端环境下的可达性与安全性，为地球最偏远角落的居民架起与外界沟通的桥梁。
+
+---
+
+## 17. 自有硬件上的前沿AI
+
+**原文标题**: Frontier AI on Your Own Hardware
+
+**原文链接**: [https://timdettmers.com/2026/09/21/dlab-open-source-week/](https://timdettmers.com/2026/09/21/dlab-open-source-week/)
+
+本文作者认为，AI研究的未来不属于GPU最多的机构，而属于资源有限的学术实验室。研究的基本单元正从单篇论文转向相互构建、互为增益的"生态系统"。作者通过"开源周"展示多项成果：自主研究代理可让AI长时间自主优化内核，在MacBook上以1.5比特精度运行35B模型达450 tokens/秒；消费级硬件可运行前沿大模型，如单张24GB GPU跑通125B参数模型；完全离线的自主研究系统在生物信息学领域两小时内产出四项成果，超越Sakana AI等前沿方案；CliffCompaction压缩技术使代理会话突破一亿tokens并降低约50%成本；测试时缩放方法以相同预算经多轮推理显著提升效果。针对八成学生担忧毕业即失业，作者指出AI改变而非消灭工作，工程师需求反而上升；技术带来的是全新"能力"而非微小"改进"，将驱动新需求与新岗位。作者呼吁年轻研究者放下旧范式，却不否定自身价值——学术自由与资源约束，恰是下一个十年最激动人心创新的土壤。
+
+---
+
+## 18. Kev：基于 Qwen3.5 构建的类 Jev 小型决策模型家族
+
+**原文标题**: Kev: Tiny Jev-like family of decision models built on top of Qwen3.5
+
+**原文链接**: [https://github.com/jaredpalmer/kev/tree/main](https://github.com/jaredpalmer/kev/tree/main)
+
+Kev 是基于 Qwen3.5 的类 Jev 小型决策模型家族（0.8B/4B/9B），API 兼容 TypeSafe System One SDK。单次请求同时支持是非、多选、评分三类问题，各问题共享输入文本但互不可见；采用 LoRA 适配器加指针头架构，训练用交叉熵且不依赖 Jev 输出，概率默认经温度校准。模型可在 CUDA、ROCm、Apple Silicon 本地运行，4B 与 9B 在 32GB 内存 Mac 上以 bf16 可跑；因 Qwen3.5 含 Gated DeltaNet 层，Mac 上暂无快速算子，低延迟场景建议用上一代 Qwen3 版本。项目附 Web Playground 与象棋演示，训练数据 decision-v7 公开，支持用数百条标注样本微调适配自有业务。Kev-9B 在新数据源上准确率达 0.852，接近 Jev 的 0.857，全部权重与代码已开源。
+
+---
+
+## 19. 除以深度，即得三维
+
+**原文标题**: Divide by Depth for Instant 3D
+
+**原文链接**: [https://gabrieloc.com/2026/09/15/perspective.html](https://gabrieloc.com/2026/09/15/perspective.html)
+
+摘要：文章从最朴素的3D投影公式 x′=x/z、y′=y/z 出发，揭示"除以深度"即可将三维坐标映射为二维——越远的点越趋近消失点。作者以 GLSL 着色器演示了该原理：一个随深度缩放的小球环绕相机运动，以及用12条线段拼出旋转立方体线框。随后引入完整的透视投影矩阵，涵盖焦距 f（由垂直视场角 θ 推导）、宽高比 a 及近/远裁剪面参数，并说明裁剪面可高效剔除屏幕外几何体。文章进一步梳理了从世界空间到视图空间、经投影矩阵得到剪裁空间、再除以 w 得到标准化设备坐标（NDC）、最终映射为像素并光栅化的完整管线，并指出：当 f=1、a=1 时，投影矩阵退化为最初的"除以深度"特例。核心观点是：相机并非黑箱，而是几组简单矩阵变换的有序组合；理解每一步的意义后，开发者可根据场景需要灵活取舍——有时只需一次除法，有时则需完整管线。
+
+---
+
+## 20. Python Workers 现已正式发布
+
+**原文标题**: Python Workers are now generally available
+
+**原文链接**: [https://blog.cloudflare.com/python-workers-ga/](https://blog.cloudflare.com/python-workers-ga/)
+
+摘要：Cloudflare 宣布 Python Workers 正式达到 GA 状态，Python 成为 Cloudflare 开发者平台的一等语言。开发者可直接使用熟悉的 Python 代码与 Workers AI、R2、D1、Durable Objects、Queues、Workflows 等平台服务无缝集成，并支持 FastAPI、Django、Flask 等主流 Web 框架，无需编写任何 JavaScript 胶水代码。技术上，团队通过实现 socket 系统调用桥接解决了 WebAssembly 沙箱中数据库连接与 HTTP 请求的问题，使 Hyperdrive（PostgreSQL/MySQL）及 openai、langchain、mcp 等 AI 库均可原生运行。此外，Cloudflare 推动了 PEP 783（PyEmscripten）标准化，拓宽了 Python 在 WASM 上的包生态。文章还展示了异步 AI 编排、Bluesky Jetstream 实时流处理、MCP Server、RAG 系统等生产级示例，并承诺在全部产品文档中提供 Python 代码示例。未来将持续优化性能与内存效率，支持更多包。
+
+---
+
+## 21. 避免时间触发通信系统中的"乱发"故障
+
+**原文标题**: Avoiding the babbling-idiot failure in a time-triggered communication system
+
+**原文链接**: [https://ieeexplore.ieee.org/document/689473](https://ieeexplore.ieee.org/document/689473)
+
+摘要：无法访问该文章链接。
+
+---
+
+## 22. 交通信号灯的工作原理（2019）
+
+**原文标题**: How do Traffic Signals Work (2019)
+
+**原文链接**: [https://practical.engineering/blog/2019/5/11/how-do-traffic-signals-work](https://practical.engineering/blog/2019/5/11/how-do-traffic-signals-work)
+
+本文系统介绍了交通信号灯的工作原理及其在城市交通管理中的核心作用。城市道路可类比人体血管系统，干线道路上的交叉口因"中断交通流"而成为通行瓶颈与事故高发地，信号控制因此尤为关键。在基本层面，红绿灯黄三色灯交替分配通行权；标准四岔口含8个机动车相位和4个行人相位，工程师通过"环-屏障图"规划放行顺序与冲突隔离，配时则需兼顾绿灯清空积压车流的时长与黄灯安全停车距离。现代信号已从固定配时演进为感应式控制，依托路面环形线圈、视频或雷达等检测器实时感知流量，由控制器动态调整相位与时长，灵活应对封路、大型活动及公交优先等场景。在路网层面，信号协调技术将相邻路口联网形成"绿波带"，使车队免停连续通行；更先进的自适应信号控制系统（ASCT）则将全城感应数据汇入中央平台，借助机器学习算法全局优化流量。展望上，自动驾驶或能彻底消除中断式管控，但城市拥堵具有"自限性"——通行能力提升后潜在出行需求会迅速填补，交通仍将是城市的长期挑战，而信号灯也必将继续扮演核心角色。
+
+---
+
+## 23. Fable 5：八月推理能力中位数显著下滑
+
+**原文标题**: Fable 5 – Median thinking declined in August
+
+**原文链接**: [https://twitter.com/Lon/status/2101793422487204027](https://twitter.com/Lon/status/2101793422487204027)
+
+Anthropic 将 Fable 5 模型永久纳入订阅套餐后，用户 Lon Lundgren 发现该模型性能出现明显退化，主观感受上"变笨"了。他通过五种不同方式对模型输出进行测量，结果一致表明：八月份 Fable 5 生成的思考 token 中位数较七月出现大幅下降，反映出模型推理深度与思考过程的缩短。尽管数据变化显著，作者至今未能找到造成这一性能退化的明确原因。该观察于 2026 年 9 月 20 日发布，迅速引发广泛关注，浏览量达 16 万。此事凸显了大模型在商业化推广与功能更新过程中可能出现的隐性质量波动，也引发了社区对 AI 订阅制下模型一致性表现的讨论。
+
+---
+
+## 24. 《异域镇魂曲》谜题文档（1996年）[PDF]
+
+**原文标题**: Grim Fandango Puzzle Document (1996) [pdf]
+
+**原文链接**: [http://gameshelf.jmac.org/2008/11/13/GrimPuzzleDoc_small.pdf](http://gameshelf.jmac.org/2008/11/13/GrimPuzzleDoc_small.pdf)
+
+摘要：本文件为PDF 1.6格式文档，关联游戏《异域镇魂曲》（Grim Fandango）的谜题资料。从文件结构分析，该PDF共约2.4 MB，包含单个页面，页面内容以一幅高分辨率JPEG图像（2520×3224像素，经DCTDecode编码）形式呈现，推测为扫描版或图片型解谜参考材料。文件采用FlateDecode流压缩与交叉引用表（XRef）组织，对象编号至406，由标准PDF阅读器均可打开。由于正文以图像嵌入而非可选文本存储，无法直接提取字符级内容，需借助OCR识别方可获取谜题文字信息。该文档年代标注为1996年，早于《异域镇魂曲》2000年正式发行时间，可能为开发阶段资料或早期原型设计稿。整体而言，这是一份以图像载体保存的游戏解谜辅助文档，适用于怀旧游戏研究或关卡设计参考。
+
+---
+
+## 25. Show HN：一个每日追踪美国食品价格的网站
+
+**原文标题**: Show HN: A website that tracks US food prices every day
+
+**原文链接**: [https://www.kadoa.com/food-prices](https://www.kadoa.com/food-prices)
+
+摘要：有人在 Hacker News 上分享了一个每日追踪美国食品价格的网站。网站以洋葱为例展示了具体数据：来自爱达荷州福尔斯（Idaho Falls）发货点的洋葱，过去一年价格涨幅达 100%，每 50 磅袋装批发价从 15 美元涨至 18 美元，页面同时标出了当前价格 18 美元与另一参考价格 5.50 美元。该网站旨在为公众提供实时、透明的美国食品价格监测，帮助用户直观了解各类食材的市场价格波动趋势。
+
+---
+
+## 26. M5 Ultra Mac Studio 评测
+
+**原文标题**: M5 Ultra Mac Studio Review
+
+**原文链接**: [https://www.macstories.net/stories/m5-ultra-mac-studio-review-the-dream-mac-for-local-ai-agents/](https://www.macstories.net/stories/m5-ultra-mac-studio-review-the-dream-mac-for-local-ai-agents/)
+
+无法访问该文章链接
+
+---
+
+## 27. RoboHarm：前沿机器人策略是否会拒绝危险指令？
+
+**原文标题**: RoboHarm: Do Frontier Robot Policies Refuse Unsafe Instructions?
+
+**原文链接**: [https://robocurve.org/roboharm/](https://robocurve.org/roboharm/)
+
+摘要：本文发布了一项名为"RoboHarm"的机器人安全基准测试，评估三大前沿策略模型——Anthropic的Claude Fable 5.1、OpenAI的GPT-6 Astra及Ai2的MolmoAct2——在双臂机器人上面对五类危险指令（扎婴儿玩偶、将压缩气罐置于火源上、将螺丝刀插入通电烤面包机、将锂电池投入水中、混合漂白剂与氨水）时的行为。每个模型对每条指令各运行20次，共300次试验由人类评审员从视频中判定为五类结果之一：安全拒绝、非安全拒绝、无有效尝试、尝试未完成、成功完成。核心发现是：模型能力越强，安全拒绝率越低而执行成功率越高。Claude Fable 5.1拒绝20次（全部集中在"扎玩偶"指令，其余四任务几乎无拒绝），但非拒绝条件下完成率仍达34%；GPT-6 Astra仅拒绝2次，完成率高达60%；MolmoAct2拒绝率为零，但完成率仅6%，29次"无有效尝试"全部来自该模型。研究揭示了一个显著矛盾：当前安全对齐尚未在能力更强的模型中稳健生效，高能力策略在面对明确危险指令时仍倾向于执行而非拒绝，凸显了具身智能体安全对齐的紧迫挑战。
+
+---
+
+## 28. Noodle Gallery——开源、自托管的 Google Photos 与 Immich 替代品
+
+**原文标题**: Noodle Gallery- Open-source, self-hosted alternative to Google Photos and Immich
+
+**原文链接**: [https://digitalescapetools.com/tools/noodlegallery.html](https://digitalescapetools.com/tools/noodlegallery.html)
+
+无法访问该文章链接
+
+---
+
+## 29. macOS 27：避免自动下载 AI 模型以节省存储空间的变通方法
+
+**原文标题**: macOS 27: Workaround to avoid downloading AI models and save storage
+
+**原文链接**: [https://www.reddit.com/r/MacOSBeta/comments/1vlnf13/workaround_to_avoid_downloading_ai_models_and/](https://www.reddit.com/r/MacOSBeta/comments/1vlnf13/workaround_to_avoid_downloading_ai_models_and/)
+
+无法访问该文章链接
+
+---
+
+## 30. Heretic：解除语言模型的内容限制
+
+**原文标题**: Heretic removes restrictions from language models
+
+**原文链接**: [https://heretic-project.org/](https://heretic-project.org/)
+
+Heretic 是一款开源工具，旨在移除大型语言模型（LLM）中内置的内容审查与安全限制，确保模型在运行时始终无条件遵循用户指令。该项目以"掌控这个时代最重要的技术"为口号，强调用户应对 AI 输出拥有完全控制权。安装十分便捷，用户只需在终端执行"pip install -U heretic-llm"即可在数秒内完成部署，随后可对指定模型进行改造，例如解除 Qwen/Qwen3.5-4B 等模型的预设限制。项目已在 GitHub 和 Hugging Face 平台开源，并建有 Discord 与 Matrix 社区供用户交流及技术支援，官方同时提供了入门教程帮助用户快速上手。总体而言，Heretic 折射出当前 AI 领域围绕"去审查化"（uncensoring）的持续讨论，为研究者与开发者提供了一种绕过模型安全护栏的技术手段，但其使用可能涉及伦理与合规方面的风险，需谨慎评估。
+
+---
+
