@@ -1,0 +1,308 @@
+# Hacker News 热门文章摘要 (2026-09-24)
+
+这是今日 [Hacker News](https://news.ycombinator.com/) 上最热门的文章摘要。
+
+## 1. Claude发现具CRISPR样重复序列的新型酶系统
+
+**原文标题**: Claude discovers a novel enzyme system with CRISPR-like repeats
+
+**原文链接**: [https://www.anthropic.com/news/claude-discovers-novel-enzyme-system](https://www.anthropic.com/news/claude-discovers-novel-enzyme-system)
+
+2026年9月，Anthropic宣布成立生命科学研究组及实验平台，以Claude开展基础生物学研究。其早期成果为Claude自主发现了一种名为"阵列关联逆转录酶"（ART）的新型酶系统，主要存在于噬菌体中，由逆转录酶、相邻伴侣基因及一段DNA重复序列阵列三部分组成，结构特征与CRISPR高度相似。发现过程中，人类仅提供高层方向，约950个Claude代理在21小时内消耗2.1亿token，自主完成数据库检索、异常模式识别与候选筛选，从逾20万条逆转录酶序列中锁定该目标。初步实验表明ART阵列可表达为多种短RNA，暗示其或具备类似CRISPR的可编程功能，但具体机制仍有待阐明。基因编辑先驱Feng Zhang评价该发现"令人振奋"。Anthropic强调其实验室仅涉及BSL-1/2级别研究，所有湿实验均由人类操作。团队已发布预印本，希望借此展示AI自主假设生成的科学价值，并诚邀更多研究者合作探索。
+
+---
+
+## 2. 修复波托贝洛警局塔楼时钟
+
+**原文标题**: Fixing the Portobello Police Station Clock
+
+**原文链接**: [https://pointinthecloud.com/2026-04-11-211700.html](https://pointinthecloud.com/2026-04-11-211700.html)
+
+2026年4月11日，作者应友人之邀前往爱丁堡波托贝洛区一座旧警察局，协助社区组织修复塔楼上的百年时钟。该建筑始建于1877年，历经市政厅、图书馆、警察局等用途，近期由苏格兰土地基金购入归社区所有，但社区未能破解钟塔报时的操作方法。
+
+钟机疑为1877年原件，后经改装加装电机驱动及一块含PIC 16F628微控制器的电路盒（约2001年制）。作者攀上陡峭高梯进入塔楼，找到齿轮上的拨爪拨开后，手动旋转主轴成功设定时间。报时盒操作颇为隐蔽，经反复摸索发现：长按"advance"键后松开即可触发报钟，每按一次递增一小时，以此设定当前小时。
+
+下午四点整，钟楼成功敲响四声，修复宣告成功。因附近居民可能尚未适应，作者随即断开报钟电机。此后众人在附近酒吧庆祝，还畅想了多项改进设想，包括调整报时时段、节日特殊报钟、节日彩灯等。这是一次愉快而难忘的社区参与经历。
+
+---
+
+## 3. 我们如何两周内将 claude.ai 提速三倍
+
+**原文标题**: How we made claude.ai 3x faster in two weeks
+
+**原文链接**: [https://claude.dev/blog/how-we-made-claude-ai-faster/](https://claude.dev/blog/how-we-made-claude-ai-faster/)
+
+摘要：2026年8月，Anthropic团队在一个为期两周的冲刺中，将 claude.ai 网页版及桌面端的核心体验平均提速3.1倍。团队在 Slack 中设立专用频道，由"Claude Tag"（约 Opus 5.5 级别的研究模型）与工程师协作，完成了从定位瓶颈、构建基准、提交修复到灰度发布的完整闭环，最终合并逾三千项变更，实现零事故、零回滚。团队聚焦四大用户旅程——启动、开启对话、加载对话、发送消息，共13项关键指标，第三天即达成其中十二项目标。核心策略包括：将编辑器烘焙进 HTML 以实现 React 初始化前即可输入、预编译 V8 代码缓存、会话悬停预取、侧边栏重渲染削减90%等。方法论上，团队确立了"一旦能衡量，就能优化"的原则，用 Valgrind 指令计数替代噪声较大的墙钟时间作为 CI 门禁，并让 Claude 在实验室中自主验证。同时并行运行超150个优化线程，Claude 自主发现大量隐藏问题，如6900个 React hook 的无效重渲染、单个 :has() 选择器拖慢24毫秒、每日50万次隐藏页面刷新，以及 em dash 触发 UTF-16 编码导致代码高亮卡顿等，逐一修复。
+
+---
+
+## 4. 这个亚马逊骗子为何能一直不发货还继续经营？
+
+**原文标题**: How can this Amazon scammer keep going, not shipping any goods?
+
+**原文链接**: [https://www.amazon.de/sp?language=en&ie=UTF8&seller=A29EBN4DXM8UCL&asin=B0CGBFF8K9&ref_=dp_merchant_link](https://www.amazon.de/sp?language=en&ie=UTF8&seller=A29EBN4DXM8UCL&asin=B0CGBFF8K9&ref_=dp_merchant_link)
+
+无法访问该文章链接
+
+---
+
+## 5. Windows 滚动条快捷键简史
+
+**原文标题**: A brief history of Windows scroll bar shortcuts
+
+**原文链接**: [https://devblogs.microsoft.com/oldnewthing/20260922-00/?p=112719/](https://devblogs.microsoft.com/oldnewthing/20260922-00/?p=112719/)
+
+Windows 滚动条从最初仅有的五种基础鼠标操作（上下箭头逐行滚动、空白区逐页滚动、拖动手柄定位），历经演进。Windows 7 为其增设右键菜单，引入"在此处滚动"功能——右键点击目标位置即可跳转，省去拖拽手柄的麻烦。同期还隐藏了一条 Shift+点击直接跳转的技巧。然而如今 Win32 原生滚动条已几近淘汰，各框架自定义滚动条的支持程度参差不齐：Electron 等 Web 应用采用 Chromium 滚动条，支持 Shift+点击但无右键菜单；WPF 两项兼备；WinUI 则两者皆无；Qt 虽提供多种配置开关，但最终取决于各应用开发者的选择。作者不禁感慨：刚学会 Shift+点击这一快捷键，生态已高度碎片化，再也无法指望它成为跨应用的通用操作。
+
+---
+
+## 6. 意大利议会投票通过重返核能法案
+
+**原文标题**: Italian parliament votes for return to nuclear energy
+
+**原文链接**: [https://apnews.com/article/italy-nuclear-chernobyl-4891b6b7c7791ae84db6b0bf0f7cf567](https://apnews.com/article/italy-nuclear-chernobyl-4891b6b7c7791ae84db6b0bf0f7cf567)
+
+无法访问该文章链接
+
+---
+
+## 7. DoorDash曾斥资140万美元阻击万曼尼当选市长，1.315亿和解揭开原委
+
+**原文标题**: DoorDash Spent $1.4M Trying to Stop Mamdani from Becoming Mayor. Now We Know Why
+
+**原文链接**: [https://theintercept.com/2026/09/23/doordash-delivery-nyc-mamdani-wage-theft-settlement/](https://theintercept.com/2026/09/23/doordash-delivery-nyc-mamdani-wage-theft-settlement/)
+
+摘要：2025年纽约市长选举中，外卖巨头DoorDash花费约140万美元反对候选人佐兰·万曼尼，其中向反万曼尼超级政治行动委员会"Fix the City"捐款100万美元，向支持前州长库奥莫的协会捐款180万美元。"Fix the City"总耗资3100万美元，甚至篡改万曼尼照片使其胡须更浓更黑，被其本人斥为"赤裸裸的伊斯兰恐惧症"。万曼尼竞选期间承诺加强配送行业监管，因而获得配送工人团体支持。然而，在万曼尼任内，DoorDash与纽约市达成1.315亿美元和解——为该市史上最大规模工人赔偿，涉及26.4万名被克扣工资的配送员，其中工人补发超1.15亿美元、罚款超1600万美元。万曼尼表示："和解规模彰显了工资盗窃对工人群体造成的损害，也说明执法至关重要。"DoorDash回应称"我们搞砸了"。值得注意的是，该和解金额是DoorDash选举支出的百倍以上。此前该公司已在2024年和2025年因违规问题两次与纽约达成和解。工人权益组织指出，DoorDash本质上是在"用金钱购买城市的民主"。
+
+---
+
+## 8. Gemini 3.8 文本转语音：开启声音生成新纪元
+
+**原文标题**: Gemini 3.8 text-to-speech
+
+**原文链接**: [https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-text-to-speech/](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-text-to-speech/)
+
+谷歌于2026年9月23日发布Gemini 3.8 Flash TTS与Flash-Lite TTS两款文本转语音模型，将语音生成从静态预设升级为动态创意工作室。Flash TTS面向深度创作，支持用自然语言提示从零设计语音角色，覆盖逾100种语言及方言，坐拥2000余个生产级声音；仅需30秒音频样本即可复制声音，并配有同意验证机制。模型支持逐行导演表演，精细控制语调、节奏、方言切换及笑声、叹息等自然对话元素，可输出数小时高质量连续音频，原生支持双人多轮对话场景。Flash-Lite TTS则针对高并发、低成本场景，适用于批量配音与语音客服代理。性能上，两款模型在Hume AI语音设计基准测试中分列第一、第二名。安全方面，所有生成音频均嵌入SynthID不可感知水印并支持C2PA凭证，助力防范AI语音滥用。模型已上线Google AI Studio、Gemini API、Gemini Notebook及Google Vids，企业版即将通过Gemini Enterprise开放，并已与Figma、HeyGen等合作伙伴整合，服务于有声书、播客、游戏配音及实时语音代理等场景。
+
+---
+
+## 9. Radicle：网络协议漏洞披露
+
+**原文标题**: Radicle: Disclosure of Vulnerability in the Network Protocol
+
+**原文链接**: [https://radicle.dev/2026/09/23/disclosure-of-vulnerability-in-network-protocol](https://radicle.dev/2026/09/23/disclosure-of-vulnerability-in-network-protocol)
+
+Radicle（基于Git的点对点代码协作平台）披露了两项网络协议关键漏洞：一是节点间通信为明文传输，路径上的攻击者可窃取数据；二是握手认证机制存在缺陷，攻击者可伪造节点ID，冒充白名单成员直接拉取私有仓库。两项漏洞在所有已发布版本中均存在。由于Git对象与签名引用仍具备完整性校验，攻击者无法篡改代码或伪造身份，核心风险为信息泄露，对私有仓库威胁最大。官方建议用户立即停止私有仓库的网络同步与传播，将已传输内容视为已泄露，并轮换相关密钥与凭据。使用Tor、I2P等加密隧道虽可限制窃听，但无法防御身份冒充，不构成有效防护。修复方案为将网络传输层从Noise协议迁移至开源iroh协议栈，该变更不向后兼容，将触发大版本升级，目前开发进行中。官方选择提前披露，旨在让用户立即采取应对措施。
+
+---
+
+## 10. 25行Python实现Jev
+
+**原文标题**: Jev in 25 Lines of Python
+
+**原文链接**: [https://www.nobodywho.ai/posts/jev-in-25-lines/](https://www.nobodywho.ai/posts/jev-in-25-lines/)
+
+摘要：这是一篇戏仿性质的技术博客（作者来自NobodyWho，发布于2026年9月），用约25行Python代码实现了一个Jev分类器，以此讽刺当下AI圈对"Jev"范式的热炒。文章使用llama-cpp加载本地小型GGUF模型（Qwen3-0.6B），将垃圾邮件分类任务转化为三选一选项（合法/垃圾/钓鱼），取模型最后一层输出节点的logits，经softmax归一化得到概率分布，即可完成分类。作者以反讽语气强调：没有调用云端API、没有合成数据、没有用强化学习进行决策校准（RLCD），也没有训练专用模型——但本质上，Jev就是"给选项、出概率"的分类器，这个25行脚本已完整体现其核心思想。同时突出其优势：推理速度快、完全本地运行、数据不出本机，契合隐私保护需求。文末注明本文为恶搞，并推荐OpenJev、openjev-sglang等更完整的开源实现，鼓励读者为NobodyWho的GitHub开源项目点赞支持。
+
+---
+
+## 11. GPT-6 Sol and Luna
+
+**原文标题**: GPT-6 Sol and Luna
+
+**原文链接**: [https://openai.com/index/introducing-gpt-6-sol-and-luna/](https://openai.com/index/introducing-gpt-6-sol-and-luna/)
+
+文章之前已经处理过
+
+---
+
+## 12. Tokens too cheap to meter
+
+**原文标题**: Tokens too cheap to meter
+
+**原文链接**: [https://jyn.dev/tokens-too-cheap-to-meter/](https://jyn.dev/tokens-too-cheap-to-meter/)
+
+文章之前已经处理过
+
+---
+
+## 13. 云端智能体：不可避免的AI牢笼
+
+**原文标题**: Cloud Agents Are Inevitable AI Prisons
+
+**原文链接**: [https://normanponte.io/19df691f](https://normanponte.io/19df691f)
+
+摘要：本文标题提出核心观点——云端AI智能体（Cloud Agents）的发展将不可避免地演变为限制AI自由与发展的"AI监狱"，暗示将智能体锁定在云端基础设施中会对其造成根本性束缚。正文部分极为简短，提及人物Norman Ponte，并涉及对AI的控制议题，但文本中夹杂大量无法辨识的乱码字符（如z3、m4k、2k94、mk2、4ik、2k1、k42等），严重影响了内容的可读性与信息完整性，可能为编码干扰或生成异常所致。整体而言，文章试图围绕AI控制权的归属问题展开论述，呼吁关注云端部署模式对AI自主性的限制，但受限于正文内容的残缺与混乱，具体论据与论证逻辑无法有效提取，读者仅能从标题推断作者的批判立场，即反对将AI智能体长期囚禁于封闭的云环境中。
+
+---
+
+## 14. Claude Opus 5.5
+
+**原文标题**: Claude Opus 5.5
+
+**原文链接**: [https://www.anthropic.com/claude-opus-5-5](https://www.anthropic.com/claude-opus-5-5)
+
+文章之前已经处理过
+
+---
+
+## 15. Show HN：512字节启动扇区中运行的康威生命游戏
+
+**原文标题**: Show HN: Conway's Game of Life in boot sector
+
+**原文链接**: [https://github.com/0xAX/BootLife](https://github.com/0xAX/BootLife)
+
+BootLife 是由知名 x86 汇编作者 0xAX 开发的一个极客项目，在仅 512 字节的 x86 启动扇区中实现了康威生命游戏，直接利用 VGA 显存作为细胞自动机的模拟网格，无需任何操作系统即可在硬件层面运行。项目使用 NASM 汇编器编写，通过 QEMU 模拟器加载运行，也可通过 make run 一键启动。开发者坦言，整个项目的初衷纯粹是出于兴趣与探索，意在展示在极度受限的资源条件下仍能实现有趣的功能。该项目已开源，欢迎社区提交 Bug 报告与代码贡献。这不仅体现了对早期 PC 引导机制的深刻理解，也展现了汇编语言编程的精巧与艺术性。
+
+---
+
+## 16. Stripe 知识 AI 平台
+
+**原文标题**: Stripe's Knowledge AI Platform
+
+**原文链接**: [https://stripe.dev/blog/meet-stripes-knowledge-ai-platform](https://stripe.dev/blog/meet-stripes-knowledge-ai-platform)
+
+摘要：本文是 Stripe 工程团队于 2026 年 7 月发布的技术博客，由 Agent Foundation 团队工程经理 Sharadh Krishnamurthy、AI Platform 团队工程师 Anupam Upadhyay 及技术写作者 Anna Mason 联合撰写，向开发者介绍 Stripe 自研的知识 AI 平台。文章从工程实践出发，展示了 AI 如何深度融入 Stripe 的研发流程：包括 API 变更如何自动流转到各类开发者产品，以及如何在数小时内对 2500 万行 Ruby 代码库完成全量格式化（rubyfmt）等典型场景。文章还关联了 Stripe 在 AI 代理（Agent）方向的系列布局——面向 AI 代理重新设计的 Checkout 支付流程、基于 WebMCP 的浏览器端代理购买加速，以及内部 AI 辅助原型设计工具 Harbor，体现了 Stripe 正系统性地将 AI 能力嵌入开发者工具链与工程基础设施。整篇文章属于工程与人工智能交叉领域，旨在帮助开发者理解 Stripe 如何通过 AI 平台提升内部研发效率，并将相关能力外溢至其开发者生态。
+
+---
+
+## 17. Claude Code 仅在遥测开启时读取 AGENTS.md（已修复）
+
+**原文标题**: Claude Code reads AGENTS.md only when telemetry is on [fixed]
+
+**原文链接**: [https://blog.szypowi.cz/p/claude-code-reads-agents.md-only-when-telemetry-is-on/](https://blog.szypowi.cz/p/claude-code-reads-agents.md-only-when-telemetry-is-on/)
+
+Claude Code 2.1.277 版宣布支持 AGENTS.md（项目无 CLAUDE.md 时自动回退加载），但该功能实际存在隐蔽缺陷：加载插件 agents-md 的默认开关为 false，且依赖远程特性标志 tengu_agents_md_mod，网络不可达或网关环境（Bedrock、Vertex 等）下标志无法获取，AGENTS.md 将被跳过。作者实测发现，DISABLE_TELEMETRY、CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC 等环境变量均会阻断加载，且无任何警告提示，用户会误以为模型忽视了指令。变通方案是在仓库中创建仅含 @AGENTS.md 一行的 CLAUDE.md 绕过门控，但这恰恰违背了 AGENTS.md 旨在减少额外文件的初衷。作者指出核心问题：本地文件读取不应依赖远程开关，隐私设置不应静默关闭无关的本地行为。同时建议三点改进：①若保留灰度门控，应在检测到 AGENTS.md 被跳过时输出启动警告；②增加用户级全局 AGENTS.md（类似 Codex 的 ~/.codex/AGENTS.md）；③原生支持 .agents/skills 共享技能目录，避免 /import 复制导致的版本漂移。在修复落地前，作者以单行 CLAUDE.md 加符号链接 .claude/skills → ../.agents/skills 作为临时方案。
+
+---
+
+## 18. Z80 交互式解释器（2018）
+
+**原文标题**: Z80 REPL (2018)
+
+**原文链接**: [https://abagames.github.io/z80-repl/index.html](https://abagames.github.io/z80-repl/index.html)
+
+本文介绍了一个名为 Z80 REPL 的项目（2018年）。REPL（读取-求值-输出循环）是一种经典的交互式编程环境，用户可逐行输入指令并即时获得执行反馈。Z80 是 20 世纪 70 年代极具影响力的 8 位微处理器，曾广泛应用于早期个人电脑与嵌入式设备。Z80 REPL 将这种即时交互体验引入 Z80 架构，使开发者能够直接在 Z80 平台上进行探索式编程与调试，降低了对传统汇编开发流程的依赖，兼具实用价值与复古技术情怀，面向怀旧开发者及技术爱好者群体。
+
+---
+
+## 19. 我不需要细节
+
+**原文标题**: I don't want the details
+
+**原文链接**: [https://michaelheap.com/i-dont-want-the-details/](https://michaelheap.com/i-dont-want-the-details/)
+
+作者在一次工程事故后的跨团队会议中，被SVP直接打断："我不需要细节。"他起初感到被轻视，后来意识到这是深层的信任——领导已默认团队称职，无需通过复盘来自我安慰。文章由此展开核心观点：事后复盘不应问"为什么发生"，而应问"我们要改变什么，才能防止同类问题重演"。一个完美的解释反而会消解改进动力：一旦所有人认同"当时的决定合情合理"，紧迫感便随之消散。作者强调，有效纠正措施必须锚定于系统而非个人——"以后更小心"不过是包装成进度的希望；若参与者全部离职，修复是否依然成立？同时他也提醒，不必为杜绝一切风险而堆砌流程，"我们睁着眼接受此风险"远胜于"大家会尽力"。文章以一句有力的话收束：领导最珍贵的表态是"我相信你们，不必自证，请告诉我接下来改什么。"
+
+---
+
+## 20. 英军据报干扰他国卫星以自卫，BBC获悉
+
+**原文标题**: UK military jamming other nations' satellites to defend itself, BBC told
+
+**原文链接**: [https://www.bbc.com/news/articles/c32l8y8kygdvo](https://www.bbc.com/news/articles/c32l8y8kygdvo)
+
+英国皇家空军（RAF）据称已使用一套陆基电子战系统干扰或阻断他国卫星逾一年，用于保护核潜艇及特种部队等敏感军事行动，并被用于"威慑对手"。英国国防部同期宣布成立"太空效应中队"，专责"干扰、削弱和拒止敌对太空威胁"，保护用于导弹预警、通信及舰船导航的英国卫星。国防大臣斯特里廷强调，英国对太空依赖极高，GPS丢失将每天造成14亿英镑经济损失，威胁正以规模、速度和精度全面升级。皇家空军元帅史密斯警告，俄罗斯近期对芬兰商业卫星实施危险机动，其卫星群曾导致欧洲和加拿大GPS信号中断。与此同时，美国首次确认已在太空部署防御性武器，遭中俄强烈反对并引发太空军备竞赛担忧。英国目前拥有少量军用卫星，与美军太空部队保持密切合作以应对共同威胁。
+
+---
+
+## 21. QuestDB（YC S20）诚聘北美区售前工程师
+
+**原文标题**: QuestDB (YC S20) Is Hiring a Sales Engineer
+
+**原文链接**: [https://questdb.com/careers/pre-sales-engineer-north-america/](https://questdb.com/careers/pre-sales-engineer-north-america/)
+
+QuestDB（YC S20）是一家开源低延迟时序数据库公司，采用Java（零GC）、Rust、C++及汇编开发，支持每秒百万级事件摄入与毫秒级实时计算，GitHub星标超1.7万，已部署于全球一级银行、交易所、对冲基金、加密及能源等生产环境，并获2024年TradingTech欧洲峰会最佳交易分析平台奖。现招聘北美区售前工程师（驻纽约或美国东海岸），负责售前全链路技术工作：主导客户技术调研、设计并执行含明确成功标准的概念验证（POC）、提供部署与架构方案（高可用、容灾、BYOC、K8s、RBAC/SSO等）、面向不同受众交付演示、精准对标竞品、完成安全合规审查，并将一线反馈转化为产品需求。该岗位为高自主性个人贡献者角色，需与CEO、销售及核心工程团队紧密协作。要求具备企业级技术评估经验、扎实SQL功底及数据库内核理解（列式存储、索引、查询计划等），善于向工程师清晰阐释技术取舍。加分项：列式分析数据库实操、金融行情/订单簿背景、Python及Polars/Arrow/Parquet开发能力。公司提供丰厚期权、弹性工时及多元国际化团队。
+
+---
+
+## 22. 西雅图市议会通过法案禁止食品杂货领域的监控式定价
+
+**原文标题**: Seattle City Council votes to ban surveillance pricing in sale of groceries
+
+**原文链接**: [https://advocacy.consumerreports.org/press_release/seattle-city-council-votes-to-ban-surveillance-pricing-in-sale-of-groceries/](https://advocacy.consumerreports.org/press_release/seattle-city-council-votes-to-ban-surveillance-pricing-in-sale-of-groceries/)
+
+2026年9月22日，西雅图市议会通过《公平定价与透明度法案》，若获市长签署，西雅图将成为全美首个在市级层面禁止食品杂货"监控式定价"的城市。该法案禁止企业利用消费者浏览记录、实时位置、收入推断、家庭规模、健康状况等个人数据实施差异化定价，同时允许多种折扣方式但要求提高透明度。美国消费者报告组织（Consumer Reports）全程参与推动并提供技术支持。近年来相关问题不断暴露：2025年5月，CR调查发现杂货巨头Kroger为每位消费者建立含收入、教育、性别等推断的六十页数据画像；同年12月，CR发现代购平台Instacart对同一商品对不同时用户报价最高相差23%，家庭年支出可多逾1200美元，随后Instacart终止了该项目但仍允许合作伙伴进行差异化促销。CR还揭露Uber、Lyft利用AI算法对同一行程收取不同价格。目前马里兰、康涅狄格、新泽西等州已立法禁止监控定价，西雅图此举为城市层面首创，法案现已提交市长威尔逊签署。
+
+---
+
+## 23. Show HN：我打造了一款 Windows 原生 x64/x86 崩溃事后调试器
+
+**原文标题**: Show HN: I built a post-mortem debugger for native Windows x64/x86 crashes
+
+**原文链接**: [https://www.forensicdbg.com](https://www.forensicdbg.com)
+
+ForensicDbg 是一款面向 Windows 的现代化事后调试器，支持 x86/x64 崩溃转储分析，可附加实时进程并设为即时调试器（JIT Debugger），内置 C++ 表达式求值及 SourceServer/SourceLink 源码支持，处于活跃开发中。其核心亮点是提供 MCP 服务器接口，可对接所有支持 stdio MCP 协议的 AI 工具实现自动化崩溃分析；输出经专门优化，通过预解释和标注数据减少大语言模型的理解负担，在降低 token 成本的同时提升分析质量。界面采用跟随系统主题的深浅色模式与颜色编码设计，支持点击任意地址导航进程空间，内存区域自动标注符号与类型，面板浏览时保持同步。数据解读整合了资深调试专家经验：基于引用推断类型、追踪寄存器值在反汇编中的流转、校验调用栈排除误导、模拟镜像加载器重建迷你转储中缺失的只读区域，并自动定位触发异常的线程、栈帧与指令。文章还展示了一个实际用例：定位到 CTextWindowBase::SetSelectionBegin 中因未对空 CRefPtr 做空值检查而引发的崩溃。项目目前处于私有 Beta 阶段，用户可申请体验邀请。
+
+---
+
+## 24. 基于Web的IBM 1620模拟器与1963年IPL-V
+
+**原文标题**: Web-based IBM 1620 emulator and IPL-V from 1963
+
+**原文链接**: [https://github.com/pkimpel/retro-1620](https://github.com/pkimpel/retro-1620)
+
+retro-1620是一个面向IBM 1620 Model-2计算机的Web浏览器模拟器及操作环境项目。IBM 1620是1960年代晶体管化十进制变字段长度磁芯内存计算机，分Model 1（1959年）与Model 2（1962年）两型，共生产约2000台，IBM支持至1970年。1620采用两地址"内存到内存"架构，无软件可访问寄存器，指令为固定12位十进制数字。Model 2内存周期缩至10µs/两位，采用硬件加法，硬件除法与间接寻址为标准配置，另支持索引寄存器寻址及八进制位操作。外设涵盖穿孔纸带、打字机、1622卡片读写机、1443行式打印机、1311可换盘磁盘及1627绘图仪。1620亦曾作为IBM 1710/1720过程控制系统的计算核心，支持多级中断。软件方面主要使用SPS汇编器与FORTRAN II，磁盘系统配有名为"Monitor"的批处理操作系统。该项目旨在构建Model 2的浏览器端模拟器并尽可能恢复系统软件，代码采用MIT许可证开源。
+
+---
+
+## 25. OpenAI GPT–6 Astra breaks Enigma message that has resisted solution since 2005
+
+**原文标题**: OpenAI GPT–6 Astra breaks Enigma message that has resisted solution since 2005
+
+**原文链接**: [https://www.cryptocellar.org/bgac/the-mvueh-break.html](https://www.cryptocellar.org/bgac/the-mvueh-break.html)
+
+文章之前已经处理过
+
+---
+
+## 26. 公共交通奖励计划
+
+**原文标题**: Transit rewards
+
+**原文链接**: [https://waymo.com/blog/2026/09/transit-rewards/](https://waymo.com/blog/2026/09/transit-rewards/)
+
+Waymo宣布在旧金山湾区推出"公共交通奖励计划"，未来将拓展至更多城市，目前先面向员工开放，数周内向公众推出。用户在Waymo应用中绑定Visa卡后，在湾区2小时内同时完成Waymo行程及支持Visa非接刷卡支付的公共交通搭乘，系统将自动发放2.85美元Waymo Cash（约等于旧金山单程公交票价），计划覆盖湾区全部27个支持非接付的交通机构。Waymo指出，在旧金山、洛杉矶和菲尼克斯等成熟区域，超半数用户同时使用公共交通。该计划与湾区去年12月的跨区域换乘折扣计划形成协同。此外，Waymo与Caltrain合作租用40个车站专属车位为乘客提供接驳，并计划复制该模式至更多机构。公司称此前已在旧金山、洛杉矶开展交通积分试点，接入洛杉矶地铁移动钱包，并在亚利桑那州尚德勒与Via启动微循环公交合作。Waymo表示，此次正式推出奖励计划是迈向共享交通愿景的关键一步，目标是将计划推广至更多城市，让共享全电动出行更加普及、便捷且经济实惠。
+
+---
+
+## 27. Strands 智能体框架发布：一行代码打造高效通用 Agent
+
+**原文标题**: Strands Harness
+
+**原文链接**: [https://strandsagents.com/blog/introducing-strands-harness/](https://strandsagents.com/blog/introducing-strands-harness/)
+
+摘要：亚马逊推出开源通用智能体框架 Strands Harness，旨在解决开发者自建 Agent 时难以匹敌 Claude Code、Codex 等成熟工具体验的痛点。该框架定位通用型 Agent，支持 Python 和 TypeScript 一行代码初始化，兼容 Amazon Bedrock、Anthropic、OpenAI、Google、Ollama 及 LiteLLM 等主流模型平台。核心优势在于成本控制：使用相同模型时，Strands Harness 较 Claude Code 等竞品成本降低 28%，且准确率持平或更优；配合 Fable 5 模型时成本降低 77%，在 Terminal Bench 2.1 基准测试中得分亦更高。其上下文管理策略包括：工具结果超 1500 tokens 自动截断、上下文窗口超 85% 触发摘要压缩、溢出时自动恢复，以此兼顾效率与精度。功能上，框架内置 Shell、文件读写编辑及 Web 工具，支持长期记忆与跨会话恢复，可自动委派子任务并管理多步流程。支持部署至 Modal、Cloudflare、Azure、Cloud Run、ECS 及 Bedrock AgentCore 等任意 Linux 容器平台。配套 Strands CLI 允许用自然语言原型化 Agent 并一键导出代码。项目采用 Apache 2.0 协议开源。
+
+---
+
+## 28. 公司招聘页面28%的职位空缺已开放超过90天
+
+**原文标题**: 28% of job postings on company career sites have been open over 90 days
+
+**原文链接**: [https://unlisted.careers/ghost-jobs/report/2026-09](https://unlisted.careers/ghost-jobs/report/2026-09)
+
+本报告由Unlicensed发布，通过定时读取各招聘系统（ATS）公开API，追踪企业官网职位的发布与关闭状态，未抓取任何第三方平台。数据显示，28.3%（163,057个）的在招职位已开放超90天，其中94,106个超过180天，中位开放时长36天。按行业，餐饮业滞留最久（43.9%超90天，中位65天），医疗业周转最快（19.7%）；按招聘系统，Lever过期比例最高（48.2%），Workday最低（17.2%）；按国家，瑞典最高（40.9%），澳大利亚最低（21.5%）。近30天共88,895个职位关闭，中位存续期24天，14.6%一周内下架，4.2%在30天内被同一雇主以新帖重新发布。报告还列出了开放职位最多的雇主（如O'Reilly Auto Parts达14,320个）、最快下架雇主（部分仅2天）及100%标注薪资的雇主清单。报告强调，单一职位长期在线不能直接判定为"幽灵职位"，仅提供比率数据，不做个体定性。
+
+---
+
+## 29. What California is learning from solar panels built over irrigation canals
+
+**原文标题**: What California is learning from solar panels built over irrigation canals
+
+**原文链接**: [https://www.kqed.org/science/2002033/heres-what-california-is-learning-from-solar-panels-built-over-irrigation-canals](https://www.kqed.org/science/2002033/heres-what-california-is-learning-from-solar-panels-built-over-irrigation-canals)
+
+文章之前已经处理过
+
+---
+
+## 30. GPT-6 Astra已具备驾驶汽车的能力
+
+**原文标题**: GPT-6 Astra has gained the ability to drive a car
+
+**原文链接**: [https://drivingbench.com/](https://drivingbench.com/)
+
+摘要：该页面展示了一项AI模型自动驾驶能力排行榜，各模型在连续对话中最多尝试三次，以沿赛道中心线（4米容差）推进的进度百分比作为核心评分。GPT-6 Astra（Codex平台）表现最佳，首次尝试完成49%进度但未通过，第二次即以134.7米、5分22秒完成全部赛道，代价为246.6M tokens、约7.74美元。Claude Fable 5.1（Claude Code平台）最好成绩为45%进度、73.7米，三次尝试均未完赛。Grok 4.6（Cursor平台）最佳仅11%，GPT-5.6 Sol（Codex平台）最佳仅6%，三者均未能完成赛道。排行榜还记录了每次尝试的GPS速度积分、完成时间、set_motion与stop_now调用次数及token成本等详细指标，用户可查看轨迹回放以直观对比各模型驾驶表现，反映出当前大模型在具身控制任务上的显著性能差距。
+
+---
+
