@@ -1,0 +1,306 @@
+# Hacker News 热门文章摘要 (2026-09-26)
+
+这是今日 [Hacker News](https://news.ycombinator.com/) 上最热门的文章摘要。
+
+## 1. Ollaya：面向开源 Jev 式决策模型的本地运行平台
+
+**原文标题**: Ollaya – Ollama for open-source, Jev-style decision models
+
+**原文链接**: [https://ollaya.dev/](https://ollaya.dev/)
+
+Ollaya 是一个专为开源决策模型设计的本地运行平台，定位类似 Ollama，对标 TypeSafe Jev 服务。用户可对任意文本或 JSON 提出带类型的选择、评分或是否问题，模型在单次前向传播中即返回带校准概率的答案，无需逐 token 生成。核心模型 Laya 由 Convai Innovations 开发，支持英语及 100+ 语言，在 RTX 4090 上五题请求端到端仅约 8–10ms，远快于 Jev 托管 API 的 236–276ms。Ollaya 完整兼容 TypeSafe 的 /v1/systemone 等接口，官方 Python SDK 0.7.1 可零改动对接。平台已开放 laya（多语言）、decider（基于 Qwen3.5）、nli、gliclass 等多个模型权重，更多模型（含 GGUF 格式）即将推出。隐私方面，服务默认监听 127.0.0.1，基于 ONNX Runtime 支持 CPU 与 NVIDIA GPU；权重源自 Hugging Face 并经 sha256 校验，采用 Apache-2.0 许可，无按 token 计费。概率校准误差（ECE）仅 0.081，优于 Jev 的 0.246。平台覆盖 macOS、Windows、Linux 及 Docker，提供桌面应用与命令行两种形态，安装仅需一条命令：ollaya run laya。
+
+---
+
+## 2. 艾伦·凯：香农为我们提供了应对噪声信道的途径 [视频]
+
+**原文标题**: Alan Kay: Shannon gave us a way of dealing with noisy channels [video]
+
+**原文链接**: [https://www.youtube.com/watch?v=Cjntrqhn8pk](https://www.youtube.com/watch?v=Cjntrqhn8pk)
+
+本视频为计算机先驱艾伦·凯（Alan Kay）的演讲片段，主题围绕克劳德·香农（Claude Shannon）在信息论领域的奠基性贡献。香农于1948年提出信息论，核心解决了在噪声信道中如何可靠传输信息的问题，确立了信道容量与纠错码等关键概念，奠定了现代通信与计算的理论基础。艾伦·凯作为面向对象编程、图形用户界面及"动态媒体"理念的倡导者，在此视频中回顾并阐释香农思想的深远意义，强调其不仅限于通信工程，更为计算机科学、人工智能及系统设计提供了重要的思维框架。该视频以对话或访谈形式呈现，适合对计算机科学史、信息论及跨学科思维感兴趣的观众观看。
+
+---
+
+## 3. 展示 HN：Jev 玩《宝可梦 红》
+
+**原文标题**: Show HN: Jev Plays Pokémon Red
+
+**原文链接**: [https://jev-pokemon.vercel.app/](https://jev-pokemon.vercel.app/)
+
+本文为 Hacker News 上一则开源项目展示帖，介绍 AI 代理 Jev 实机游玩《宝可梦 红》的直播演示。页面以"JEV 实时直播"为核心，游戏默认静音，用户可手动开启音效；右侧面板同步展示 Jev 每一步的决策内容及对应概率，让观众直观观察 AI 的推理与选择过程。页面中 NPC"大木博士"的一句旁白点出 Jev 能顺利通关全赖预设指南的引导，借此巧妙引出页底嵌入的产品推介——FRIGADE。FRIGADE 是一款 AI 助手，可自主学习产品界面，在应用内为每位用户实时推荐下一步操作，主打"无需人工编写指南"的自我学习能力。整页将趣味性 AI 游戏演示与商业推广结合，意在说明 AI 代理的潜力，同时引导开发者关注这一面向终端用户的产品引导工具。
+
+---
+
+## 4. Go 语言中的跨平台 SIMD 支持
+
+**原文标题**: Platform-independent SIMD in Go
+
+**原文链接**: [https://go.dev/blog/simd-experiment](https://go.dev/blog/simd-experiment)
+
+Go 1.26 与 1.27 分别引入面向 amd64、arm64（NEON）及 Wasm 的实验性 SIMD API，并在 1.27 中新增完全可移植的 simd 包，设计借鉴 C++ 的 Highway 库。该包移除固定向量尺寸，仅保留各平台指令的交集，再以高效模拟填补差异，目标是实现"一次编写、近似汇编性能"的 SIMD 代码，同时在无 SIMD 的平台上仍可运行。simd 定义 10 种向量类型（Int8s、Float32s 等），涵盖加载/存储、算术、比较、掩码、类型转换、移位旋转及零成本重塑等操作；比较产生与元素宽度对应的掩码值，用于条件选择与过滤。对于尚未覆盖的操作，提供 ToArch() 与 simd.FromArch() 转换机制，开发者可针对 amd64、arm64、Wasm 分别编写平台特定实现，编译器会在编译期消除类型断言开销；不支持 SIMD 的平台则统一回退至模拟实现。启用方式为构建时设置 GOEXPERIMENT=simd。当前版本尚缺跨元素归约（ReduceSum 预计 1.28 补齐）。此举使加密、数据处理、AI 等大量非内核级应用也能便捷获得 SIMD 加速，而不再局限于手写汇编的极致性能场景。
+
+---
+
+## 5. 谷歌"捕日者"首个轨道AI数据中心试验卫星将于10月1日发射
+
+**原文标题**: Google's first Suncatcher orbital data center test launches October 1
+
+**原文链接**: [https://arstechnica.com/google/2026/09/googles-first-suncatcher-orbital-data-center-test-launches-october-1/](https://arstechnica.com/google/2026/09/googles-first-suncatcher-orbital-data-center-test-launches-october-1/)
+
+谷歌去年宣布的"登月级"项目"捕日者"（Project Suncatcher）迈出关键一步：首颗实验卫星MVP将于10月1日搭乘SpaceX猎鹰9号拼车任务发射。该卫星约冰箱大小，搭载4颗谷歌自研TPU AI加速器，航天平台由Planet Labs提供，太阳能供电仅约1千瓦。此次为加速验证而推出的临时测试，远小于原计划2027年的双星发射规模，在轨运行仅数月。最大挑战是散热——AI芯片产热远超太空散热器设计容量，谷歌采用可塑导热材料与铝铜热管将热量导入辐射器，但TPU每运转约15分钟即须停机冷却。此外，太空辐射可能损坏芯片或导致比特翻转，所幸此次使用的为地面同款TPU而非航天级硬件，有报道称商用设备在太空仍具一定可行性。谷歌将在卫星上运行Gemini模型开展测试。长远目标是构建以高速激光互联的AI卫星星座，但距真正产品化仍需数年。该构想回应了地面数据中心能耗巨大、选址争议等痛点，马斯克与贝索斯等此前也曾提出类似太空数据中心方案。
+
+---
+
+## 6. 给研究生新生的建议——什么是研究？
+
+**原文标题**: Advice to a Beginning Graduate Student (2001)
+
+**原文链接**: [https://www.cs.cmu.edu/~mblum/research/pdf/grad.html](https://www.cs.cmu.edu/~mblum/research/pdf/grad.html)
+
+摘要：本文是计算机科学家Manuel Blum于2001年面向研究生新生的演讲，围绕"阅读、计算、研究、写作"四个核心环节展开。阅读方面，他强调书籍具有随机访问特性，不应拘泥于从头读到尾，提倡"边读边写"以理解艰深内容。学习方面，以有限自动机与图灵机之别在于"有无纸笔"为喻，凸显写作的巨大力量。思考方面，建议遇到难题时想象"给自己一个提示"，并认真分析他人解法追问"我本应如何想到"；强调矛盾与悖论是强有力的知识来源，并列举停机问题、量子力学等实例。博士起步阶段，他指出导师未必能提供现成答案，学生须主动阅读、思考、工作，并要真心热爱课题。博士中期，引用安那托尔·法朗士名言，主张聚焦极窄领域后逐渐洞察全局；鼓励尝试证伪，因答案常出乎意料，如中位数问题由n log n降为O(n)。写作方面，引用Billings箴言：先有可言之物，再说出来，说完即止，最后给出准确标题。他特别建议请同行而非仅导师审阅论文。全文兼具幽默与深刻，是极具实操价值的研究生生存指南。
+
+---
+
+## 7. 第一性原理思维
+
+**原文标题**: First Principles Thinking
+
+**原文链接**: [https://sunilsadasivan.com/writing/first-principles-thinking/](https://sunilsadasivan.com/writing/first-principles-thinking/)
+
+文章以Sunil Pai的"高级工程师死亡螺旋"为切入点，探讨资深工程师如何突破经验固化带来的思维困境。作者提出，破局关键在于第一性原理思维——回归问题本质，追问"我们为什么做这件事""它为用户带来什么"，将代码层面的工作与真实世界的需求相连接。作者观察到，最出色的资深工程师虽来自不同背景，却共享一种习惯：从本质出发思考，保持对全局的清醒认知，从而使方案简洁而高效。实践层面，作者认同Pai"关注动量而非结果"的理念：将工作拆解为最小可执行单元，以行动驱动下一步。面对AI代理（agentic）开发这一重大范式转换，作者指出，适应最快的人愿意将既有经验和旧有技术假设暂时"收进盒子"，以全然开放的姿态重新审视问题。他提醒，不应先被技术本身所吸引而忽略根本目的，而应先厘清"我们究竟想做什么"，再思考AI如何赋能。第一性原理思维与AI代理的结合，能大幅加速学习迭代循环，让"小步快跑、持续深入"成为自然节奏，形成AI时代的全新心流。文章以"让人的思考长存"收束，强调技术剧变中人类独立思考的不可替代性。
+
+---
+
+## 8. Git-bug：嵌入 Git 的分布式离线优先缺陷追踪器
+
+**原文标题**: Git-bug: Distributed, offline-first bug tracker embedded in Git
+
+**原文链接**: [https://github.com/git-bug/git-bug](https://github.com/git-bug/git-bug)
+
+摘要：Git-bug 是一款完全嵌入 Git 的分布式缺陷追踪工具，无需添加任何项目文件即可使用。核心优势包括：通过标准 git 远程实现分布式协作、完全离线可用、避免供应商锁定（数据始终留存本地）、毫秒级操作速度。它提供命令行（CLI）、交互式终端 UI 及内置 Web UI 三种界面，后端基于 GraphQL API 通信，Web UI 还兼具代码浏览与提交历史查看功能。工作流上支持三种模式：原生 git-bug 推送/拉取协作、与 GitHub/GitLab/Jira/Launchpad 的桥接双向同步，以及开发中的公开 Web 门户。用户可创建身份、撰写缺陷、按状态与关键词筛选搜索、评论及关闭缺陷。项目以 Go 语言编写，磁盘数据采用正式规范的 DAG 实体格式，支持 Shell 自动补全与 Man 手册。采用 GPLv3 许可证，欢迎社区贡献。
+
+---
+
+## 9. 美国上诉法院维持对Anthropic的供应链风险认定
+
+**原文标题**: U.S. appeals court upholds designation of Anthropic as supply chain risk
+
+**原文链接**: [https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html](https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html)
+
+摘要：华盛顿联邦上诉法院以2比1维持了五角大楼将AI公司Anthropic列为"供应链风险"的认定，禁止美军及国防承包商使用其Claude模型。多数意见认为，国防部有充分依据认定Claude的持续整合构成国家安全风险，相关决策权归属总统与国防部长。法院同意延迟裁定生效，给予Anthropic申请重审或上诉最高法院的时间。双方纠纷源于Claude在国防部GenAI.mil平台部署谈判破裂：军方要求全面无限制使用权限，Anthropic则要求确保技术不被用于全自动武器或国内大规模监控。国防部长赫格塞思指责Anthropic意图攫取军事行动否决权。此前Anthropic曾是美方早期合作伙伴，2025年7月曾签2亿美元合同。特朗普多次在社交媒体抨击其CEO阿莫迪，后者因呼吁行业放缓AI开发而遭公开批评。Anthropic已在旧金山和华盛顿分别起诉，旧金山法院裁定一项认定违法，华盛顿上诉法院则维持了第二项认定，Anthropic表示将考虑进一步法律行动。
+
+---
+
+## 10. 缺陷：VSCode 编辑器被圆角边框"感染"
+
+**原文标题**: Bug: Border radius has infected VSCode editor
+
+**原文链接**: [https://github.com/microsoft/vscode/issues/338035](https://github.com/microsoft/vscode/issues/338035)
+
+该 issue（#338035）由用户 Wes Coderre 于 2026 年 9 月 25 日在 microsoft/vscode 仓库提交，报告 VS Code 1.139.0（Universal 版，macOS 26.5.1）在启用默认设置（已禁用全部扩展）下，文本编辑器、文件资源管理器、终端及 Copilot 聊天面板均出现了明显的圆角边框（border radius）。用户以"感染""瘟疫"等夸张措辞表达强烈不满，认为这些多余曲线干扰视线，影响编码效率，并感叹桌面应用未能幸免于网页设计趋势的波及。该 issue 已被维护者 Hawk Ticehurst 标记为重复问题（duplicate）并关闭，未分配里程碑，亦无关联的分支或拉取请求。仓库当前拥有约 19.3 万星标和 4.3 万派生仓库。
+
+---
+
+## 11. M6 Mac Mini 在 86Box 中稳定模拟 600MHz 奔腾 II 配 Voodoo 3
+
+**原文标题**: Pentium II at 600Mhz with Voodoo 3 Emulated on 86Box with M6 Mac Mini
+
+**原文链接**: [https://nyaa.sh/reviews/mac-mini-m6-emulation](https://nyaa.sh/reviews/mac-mini-m6-emulation)
+
+本文为 M6 Mac Mini 评测第七篇，聚焦 86Box 复古 PC 模拟。86Box 以硬件级精度模拟 CPU、芯片组、总线及图形芯片，几乎全部负载集中于单线程，单核性能与持续频率因而成为决定性因素。作者在 86Box 6.0 定制版上模拟 600MHz 奔腾 II 搭配经 ARM64 JIT 重编译的 Voodoo 3 显卡，运行 Windows 98 SE，同时执行 Cinebench 2000 渲染与 Winamp 音频播放，以"全程 100% 模拟速度且零音频中断"为通过标准。结果显示，M6 在 600MHz 下平稳通过，Cinebench 2000 得分 9.28 CB；M4 止步 500MHz（7.73 CB），M6 可用频率高出 20%，650MHz 因音频欠载未通过。模拟分数较同期真实硬件高出约 61%，可能与模拟器内内存带宽及缓存时序的简化有关。M6 两个性能核在 600MHz 时利用率仅 45–49%，整机负载不超 26%，余量充足。该配置已将虚拟系统推入奔腾 III 级别，作者计划后续尝试模拟 Windows XP。这台不到 1600 欧元的静音小主机，成为 M6 单核优势最直观、最可感知的实际落地场景。
+
+---
+
+## 12. Show HN: Make math automatic with Mathy
+
+**原文标题**: Show HN: Make math automatic with Mathy
+
+**原文链接**: [https://gmays.com/making-math-automatic-with-mathy/](https://gmays.com/making-math-automatic-with-mathy/)
+
+Show HN：用 Mathy 让数学实现自动化
+
+作者 Gabe 推出免费数学巩固应用 Mathy（iOS 及网页端，无需注册），目标是帮助用户将已学知识变为"脱口而出"的自动反应。区别于 Math Academy 侧重概念讲授，Mathy 专注"刷题巩固"，采用 FSRS 间隔重复算法，越熟练推送间隔越长，核心哲学是"够用即停"。技术层面，应用以 React Native 构建，核心功能完全离线运行，进度存于本地。题目由参数化题库程序化生成，答案通过确定性规则校验，接受分数、小数、百分比等多种等价输入。练习模式涵盖日常练习、限时挑战、无尽模式和 60 秒冲刺，并融入等级、经验值、勋章、连续打卡等轻度游戏化设计。开发得益于 AI 辅助编程，核心功能数天完成，再经两周迭代打磨体验，期间还让子女在旅途中试用。作者坦言高级内容覆盖与移动端呈现仍是挑战。未来计划包括云端进度同步、练习提醒、多人排行榜及挑战赛，并探索与 Math Academy 联动。若上线云服务，将推出约 1 美元/月的可选付费方案。
+
+---
+
+## 13. Meta的Muse疑似调用名为muse-special的OpenAI模型
+
+**原文标题**: Meta's Muse appears to use an OpenAI model labeled muse-special
+
+**原文链接**: [https://mouse.dev/blog/muse-special/](https://mouse.dev/blog/muse-special/)
+
+摘要：作者在深入挖掘Meta Muse运行环境时发现，除Meta自研模型Avocado外，还存在一个名为azure/muse-special的模型。技术证据显示，该模型的响应签名标记为gpt_responses_v1，加密载荷以OpenAI特有的gAAAAA开头，工具调用ID格式（call_加24位混合字母）也与OpenAI一致，区别于Avocado的32位十六进制格式，强烈暗示其为通过Azure调用的GPT模型。Muse的模型目录还列有Claude Opus 4.6–4.8、Sonnet、Haiku、GPT-5.5/5.6及Kimi K3等，并内置了Anthropic和OpenAI的API客户端及密钥，但设有关闭外部代理的开关。作者推测，外部模型可能用于特定任务能力补充或蒸馏/强化学习实验，但muse-special的推理内容经加密且RL服务拒绝处理，说明Meta并未直接获取其他实验室的模型权重。文章整体肯定了Muse团队在产品定位和工程实现上的创新，也赞赏Meta管理层对普通开发者积极沟通的态度。
+
+---
+
+## 14. Ink & Switch 十周年互动首页
+
+**原文标题**: Ink and Switch interactive homepage
+
+**原文链接**: [https://www.inkandswitch.com/](https://www.inkandswitch.com/)
+
+Ink & Switch 是一个独立研究实验室，致力于探索思维工具的未来，愿景是打造能放大人类智能、促进清晰思考与高效协作的新型计算系统。2025年实验室迎来十周年，联合友人创作了互动艺术作品"Tenfold"（十重），融入前沿研究成果，用户可点击、拖拽自由探索，并可通过卫衣、海报等周边拥有该设计。研究围绕四大方向展开：本地优先软件（将数据归还用户）、可变软件（允许用户即时定制工具）、可编程墨水（为手绘注入交互行为）、通用版本控制（支持跨媒体探索与协作）。精选成果涵盖 Ambsheets、Keyhive、Patchwork、Livelymerge、Embark、Inkbase 及本地优先软件等多篇论文与实验笔记。实践层面，研究已孵化出两款广泛使用的工具：Allume（可视化创意工作空间）与 Automerge（基于 CRDT 的协作同步库）。实验室获多方资助，成员曾赴柏林参加 Local-First Conf 分享 Patchwork 等进展，并在 GodotCon 上展示集成 Automerge 的版本控制插件 Backstitch。
+
+---
+
+## 15. 布瓦赫，我的守护精灵
+
+**原文标题**: Bwbach, My Guardian Goblin
+
+**原文链接**: [https://robertmay.photography/journal/bwbach-my-guardian-goblin](https://robertmay.photography/journal/bwbach-my-guardian-goblin)
+
+该内容实为摄影网站robertmay.photography的自动化安全验证页面，并非文章正文。页面显示"周边安全验证"提示，系统正在校验浏览器连接的安全性，验证通过后将自动跳转至目标站点。页面附有一段说明，解释此机制为每24小时执行一次的例行安全检测，目的是保护网站集群服务免受恶意爬虫与分布式机器人的攻击，属于常规的网络安全拦截与身份校验流程，无需用户进行额外操作。
+
+---
+
+## 16. 电子游戏如何启发出色的用户体验设计（2019）
+
+**原文标题**: How video games inspire great UX (2019)
+
+**原文链接**: [https://jenson.org/games/](https://jenson.org/games/)
+
+无法访问该文章链接
+
+---
+
+## 17. 格鲁斯特大教堂及教堂报时机械简史（2017）
+
+**原文标题**: A History of the Chiming Machines at Gloucester's Cathedral and Churches (2017) [pdf]
+
+**原文链接**: [https://www.bgas.org.uk/tbgas_bg/v135/251-268-MacKechnie-Jarvis.pdf](https://www.bgas.org.uk/tbgas_bg/v135/251-268-MacKechnie-Jarvis.pdf)
+
+无法访问该文章链接
+
+---
+
+## 18. 触手可及的异星工厂
+
+**原文标题**: Factorio that you can touch
+
+**原文链接**: [https://factorio.com/blog/post/fff-447](https://factorio.com/blog/post/fff-447)
+
+摘要：本文为《异星工厂》（Factorio）官方周五通讯第447期，宣布推出全套官方3D打印模型。项目始于2024年Space Age DLC试玩活动中与Prusa Research的跨界合作，后利用业余时间正式推进。Jarosław以运输带为核心构建网格化机械模型，Fearghall负责比特虫等有机敌人。最终产出15个系列、65个独立模型、247个STL文件，聚焦游戏前期内容，并分高精度推入式与高间隙两种版本以适应不同打印需求。技术难点在于：游戏等距视角使模型视觉与实际几何差异巨大，背面需重新设计；FDM打印中支撑问题突出，有机体几何复杂，比特虫须倒置打印并将外壳分件以最小化支撑痕迹。团队选择开放3D打印文件而非发行限量收藏品，既向玩家致谢，也鼓励社区自由迭代与二创。所有模型已通过Prusa Brands的Printables页面免费下载，文末附上开发全过程的17张原型迭代照片记录。
+
+---
+
+## 19. Amiga屏幕：入门指南
+
+**原文标题**: Amiga Screens: A Primer
+
+**原文链接**: [https://www.datagubbe.se/amscr/](https://www.datagubbe.se/amscr/)
+
+本文介绍了Amiga电脑独特的屏幕（Screen）概念及其图形硬件原理。在Amiga系统中，屏幕是独立的显示区域，可拥有不同分辨率与色彩深度，且多个屏幕可并存。图形采用位平面架构，通过叠加位平面实现2色至32色（OCS下5位平面）的渐进扩展，内存效率极高；OCS模式低分辨率为320×256/32色，高分辨率为640×256/16色。铜处理器（Copper）可在视频刷新周期内任意时刻切换分辨率与色彩，使不同规格屏幕无缝叠加显示，并支持逐行改色的"铜渐变"以突破调色板限制。用户可通过鼠标拖动标题栏下拉开启后方程序屏幕，也可一键瞬时切换。Amiga还支持"双重显示场"（Dual Playfields），令前置屏幕的索引0变为透明与后层合成，效果类似Alpha通道。文章还讨论了全屏幕工作流的优势，如Directory Opus利用屏幕边缘实现快速目录导航、80×24字符终端的经典使用体验，并简述了精灵（Sprites）与Blitter图形硬件等进阶话题，推荐了相关深入资料。
+
+---
+
+## 20. Show HN：毁灭或繁荣——绘制你的AI世界观图谱
+
+**原文标题**: Show HN: Doom or Bloom, map your AI worldview
+
+**原文链接**: [https://www.doom-or-bloom.com](https://www.doom-or-bloom.com)
+
+摘要：本项目在Hacker News上线，是一款交互式工具，帮助用户定位自身在AI议题上的立场。核心是一张二维图谱：横轴为对AI前景的态度，从"末日论"到"繁荣论"；纵轴为期望变革的规模，从"渐进式改良"到"文明级变革"。图谱标注了数十位AI领域代表人物，涵盖学者（Hinton、Russell、Bengio、Marcus等）、产业领袖（Altman、Musk、Karpathy、Huang、Zuckerberg等）、公共人物（Sanders、Obama、Gates等）及思想家（Yudkowsky、Soares、Zitron等）。分布上，多数学者与倡导者偏向"末日"一侧，产业界人士则偏向"繁荣"；在变革规模上，Yudkowsky、Bengio等人主张文明级变革，Musk、Karpathy等偏向渐进路径。项目提供模拟用户示例供对照，并开放自助问答，用户通过几个简单问题即可找到自己的坐标。该工具以可视化方式呈现了AI社区在风险认知与变革愿景上的深刻分歧。
+
+---
+
+## 21. Letterboxd 挂牌出售，A24、索尼与《纽约时报》竞相争购
+
+**原文标题**: Letterboxd Is Up for Sale, and A24, Sony and the New York Times Are Bidding
+
+**原文链接**: [https://www.worldofreel.com/blog/2026/9/24/letterboxd-is-up-for-sale-and-a24-sony-and-the-new-york-times-bidding](https://www.worldofreel.com/blog/2026/9/24/letterboxd-is-up-for-sale-and-a24-sony-and-the-new-york-times-bidding)
+
+电影评分社交平台Letterboxd据悉正以逾3亿美元的价格寻求出售，潜在买家包括《纽约时报》、独立电影厂牌A24及索尼影业，报价约为该平台今年预计1500万美元营收的20倍。Letterboxd由新西兰设计师Matthew Buchanan与Karl von Randow于2011年创立，初衷是当时影迷缺乏优质线上社区。平台用户从2020年的180万激增至如今3000万，以免费模式为主，辅以Pro（19美元/年）和Patron（49美元/年）付费层级及广告收入。媒体分析人士评价其兼具高活跃用户、付费意愿与广告吸引力，是"互联网的黄金标准"。文章末尾指出并购各方的利弊：A24收购最具品牌调性，但其影片每日均在该平台接受评分，利益冲突显而易见；索尼面临同样问题；《纽约时报》从逻辑上最为合理，却也自带争议。
+
+---
+
+## 22. Typst makes big strides
+
+**原文标题**: Typst makes big strides
+
+**原文链接**: [https://lwn.net/Articles/1092993/](https://lwn.net/Articles/1092993/)
+
+文章之前已经处理过
+
+---
+
+## 23. Show HN: Whiteboard (YC W26) – An open-source IDE for thoughtful software design
+
+**原文标题**: Show HN: Whiteboard (YC W26) – An open-source IDE for thoughtful software design
+
+**原文链接**: [https://github.com/devdotfast/whiteboard](https://github.com/devdotfast/whiteboard)
+
+文章之前已经处理过
+
+---
+
+## 24. Rails 呢？
+
+**原文标题**: What About Rails?
+
+**原文链接**: [https://jardo.dev/what-about-rails](https://jardo.dev/what-about-rails)
+
+在Rails World 2026开幕演讲中，Rails创始人DHH几乎未谈及Rails本身，转而宣告自己已从职业程序员"退休"，全面拥抱LLM代码生成。他宣布37signals旗舰产品Hey正从Rails转向Rust后端与多平台原生应用，并预言年底几乎所有公司和程序员都将依赖AI生成代码，而Ruby仅占他今年产出的3%。作者贾里德·诺曼对此提出尖锐质疑：DHH将十五万行LLM生成的Rust与三万行手写Ruby直接对比，数据不可比；Basecamp 5被他自承为"瑞士奶酪"般的松散架构，恰恰印证无审查AI代码对质量的侵蚀；他援引ATM替代柜员的类比时，年代、学者、数字均有硬伤。更令人不安的是，Rails以"小团队、大野心"为旗号支撑了二十年，如今创始人将主力产品搬离Rails，留给社区开发者的唯一回应竟是"你们是顶尖中的顶尖"——这番空洞激励套用在任何框架上皆成立。文章核心追问：Rails已走向仅需维护的稳定期，还是仍有未来？DHH既未给出路线图，也未直面这一沉默，令整个Rails社区陷入方向不明的焦虑。
+
+---
+
+## 25. CVE-2025-13032：侵入并突破Avast杀毒软件沙箱（二）
+
+**原文标题**: CVE-2025-13032: Entering and Breaking the Avast Antivirus Sandbox Part 2
+
+**原文链接**: [https://www.safateam.com/intelligence-hub/research/technical-articles/cve-2025-13032-entering-and-breaking-the-avast-antivirus-sandbox-part-2](https://www.safateam.com/intelligence-hub/research/technical-articles/cve-2025-13032-entering-and-breaking-the-avast-antivirus-sandbox-part-2)
+
+本文是SAFA团队Avast内核驱动研究的最终篇，详述CVE-2025-13032在Windows 11上的完整利用链。该漏洞为double-fetch缺陷，攻击者通过竞态条件在UNICODE_STRING的Length字段上制造paged pool溢出。利用核心是将溢出目标锁定为IORing对象的RegBuffers数组——该数组位于paged pool且大小完全可控，腐蚀其中一个指针即可建立任意内核读写原语。堆喷策略在LFH中大量分配并部分释放RegBuffers结构，使溢出分配落入预留空闲槽位并覆盖相邻指针，将BufferEntry重定向至用户态伪造结构。由于Windows未实现SMAP，内核可直接解引用用户态指针，借助IORing读写操作实现任意内核读写。内核地址泄露通过MDL机制完成：操作触发后内核在用户态BufferEntry中挂载MDL，其Process字段指向EPROCESS，从而获得自身进程地址。最终以token窃取实现SYSTEM权限提升。文章亦指出，最新内核已引入user-mode accessors缓解措施，可有效阻止此利用手法。
+
+---
+
+## 26. Why is the liver so weirdly regenerative?
+
+**原文标题**: Why is the liver so weirdly regenerative?
+
+**原文链接**: [https://dynomight.substack.com/p/liver](https://dynomight.substack.com/p/liver)
+
+文章之前已经处理过
+
+---
+
+## 27. 卡西欧音板
+
+**原文标题**: Boards of Casio
+
+**原文链接**: [https://www.ambionix.com/blog/boards-of-casio/](https://www.ambionix.com/blog/boards-of-casio/)
+
+摘要：作者在开发网页版 CZ-101 合成器 CZP-1 期间，受到 YouTuber oliveoil22 视频的启发，决定将其分享的 CZ-101 补丁数据导入 CZP-1 复现音色，并推出"Boards of Casio"补丁包供下载。文中详细介绍了加载流程：打开 CZP-1，在"库"面板的"音库"中选择空槽位，通过"从 JSON 文件加载"按钮导入补丁，即可在"程序"中选取对应音色演奏。需注意 CZP-1 未内置 oliveoil22 后期效果器，因此音色存在细微差异。音色库数据由浏览器本地保存，支持跨标签页共享，但不同标签页可选择不同音色。此外，CZP-1 还提供基于 URL 的音色分享功能——点击"分享"即可将音色数据编码至链接，无需服务器存储，方便跨设备传播。文章最引注意的是技术实现方式：作者从 Google Drive 下载原始 syx 格式的系统独占 MIDI 文件后，借助 AI（Claude）仅用五分钟即完成向 JSON 格式的转换，作者感叹这在传统流程中几乎不可想象。最后，作者向 oliveoil22 致谢。
+
+---
+
+## 28. 用CIA的方式分析你最爱的大学橄榄球队，会发生什么？
+
+**原文标题**: What happens when you analyze your favorite college football team like the CIA?
+
+**原文链接**: [https://www.cultivatelabs.com/posts/what-happens-when-you-analyze-college-football-like-the-cia](https://www.cultivatelabs.com/posts/what-happens-when-you-analyze-college-football-like-the-cia)
+
+摘要：Cultivate Labs 创始人将公司长期服务的美国情报界分析方法——"持续概率前景"（CPF）——实验性地套用到伊利诺伊大学橄榄球季的分析上，借助 AI 平台 Hinsley 构建了一套结构化的赛季追踪模型。该方法不依赖单一预测或直觉判断，而是先列出多种可能的赛季结局，再将其分解为九大类关键驱动因素（四分卫交接、进攻组连续性与健康、防守重建、对阵强队表现等）及可观测指标，最终转化为一系列可量化、可验证的预测问题，如"赛季被擒杀是否不超过30次""新四分卫传球成功率能否达64%且拦截率低于2.5%"等。赛季初期外界预期伊利诺伊有望冲击十大，但当球队在家败于杜克后，模型展现出普通球迷难以做到的精细分化：季后赛希望从8%降至4%，但进攻组零被擒使该项预期反升至61%，四分卫数据亦改善，而转换球优势则下滑。核心洞见在于：一条新闻并非让所有判断同向摆动，分析的价值在于精准识别新证据究竟该修正模型的哪一部分。文章还指出，这套方法可扩展至体育博彩套利、联盟竞品监测和新闻报道，更揭示了 AI 时代分析工作的新分工：AI 承担信息搜集、框架构建与持续更新，人类则专注于提出正确问题、质疑假设和判断合理性。
+
+---
+
+## 29. 海平面上升摧毁加州家园，海滩消失殆尽
+
+**原文标题**: Rising sea destroys homes, erases beaches in California
+
+**原文链接**: [https://www.reuters.com/business/environment/rising-sea-destroys-homes-erases-beaches-california-is-worse-come-2026-09-25/](https://www.reuters.com/business/environment/rising-sea-destroys-homes-erases-beaches-california-is-worse-come-2026-09-25/)
+
+无法访问该文章链接
+
+---
+
+## 30. 天文学家观测星链卫星轨道衰减，构建"行星气压计"
+
+**原文标题**: Astronomer watches Starlink satellites sinking to build a 'planetary barometer'
+
+**原文链接**: [https://www.theregister.com/science/2026/09/25/astronomer-watches-starlink-satellites-sinking-to-build-a-planetary-barometer/5299036](https://www.theregister.com/science/2026/09/25/astronomer-watches-starlink-satellites-sinking-to-build-a-planetary-barometer/5299036)
+
+一位天文学家正利用太空探索技术公司（SpaceX）旗下星链（Starlink）卫星群的数据，通过持续监测这些低轨道卫星的轨道衰减与坠落过程，构建一种被称为"行星气压计"的新型观测工具。由于低轨卫星的下降速度直接受地球高层大气密度影响，而大气密度又与太阳活动及空间天气密切相关，卫星的轨道轨迹因此可充当地球顶层大气状态的"指示器"，其原理类似于气象学中气压计读取大气压力变化。该研究借助星链卫星数量庞大、分布密集的优势，为科学家提供连续且大规模的数据来源，有助于更精准地追踪热层大气波动、太阳活动周期影响以及日益严峻的近地轨道太空碎片问题。这一创新思路将航天器轨道监测与大气象观测相融合，为空间天气预警和地球系统科学研究开辟了新途径。
+
+---
+
