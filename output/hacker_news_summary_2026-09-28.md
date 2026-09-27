@@ -1,0 +1,309 @@
+# Hacker News 热门文章摘要 (2026-09-28)
+
+这是今日 [Hacker News](https://news.ycombinator.com/) 上最热门的文章摘要。
+
+## 1. Ember-1：半数Token，同等质量
+
+**原文标题**: Ember-1
+
+**原文链接**: [https://fireworks.ai/blog/ember-1](https://fireworks.ai/blog/ember-1)
+
+Fireworks Research发布Ember-1，一款基于Kimi K3的专用模型，以约40%的Token消耗实现同等推理质量。针对推理模型在多轮智能体工作负载中因反复重放历史推理导致成本二次方膨胀的痛点，团队通过50余次训练实验与200余项评估，开发新训练算法使模型在保留关键自我反思能力的同时削减冗余推理，全程依托Fireworks Serverless Training平台完成。实验表明，Kimi K3的推理可缩短35%–50%而不损失准确率。在七个行业基准测试中，Ember-1以K3最高档的质量实现了显著成本优势，并在Doximity Bedside Bench上设立新Pareto前沿，超越GPT-5.6 Sol、GPT-6 Astra、Claude Opus 5等模型。两家客户的实时A/B测试显示，Ember-1在任务完成率和成功率持平或提升的情况下减少约35%的Token，其中一家已进入生产环境。Fireworks内部开发者在完全不知情的情况下切换至Ember-1后无任何感知差异，印证了"无缝替换、质量无损"的核心价值。Ember-1现已以Research Preview形式在Serverless上线，提供两周免费接入，并开放企业定制训练支持，标志着Fireworks以"Token效率"为核心主题开启Ember系列专用模型时代。
+
+---
+
+## 2. 谷歌究竟何时变得如此荒谬？
+
+**原文标题**: When did Google get so f-ing weird?
+
+**原文链接**: [https://sancho.bearblog.dev/google-weird/](https://sancho.bearblog.dev/google-weird/)
+
+文章写于2026年，作者回忆了2014年费城76人队球员达里奥·萨里奇引发的球迷老梗——"他永远不会过来"。作者想搜索当年球迷的旧推文，便在Google中输入相关关键词，预期能找到历史帖文或一无所获。然而Google的AI概览却将这句篮球圈用语误判为情感倾诉，假定作者被一位名叫"达里奥"的人拒绝，随即给出了一段充满共情的安慰性回复。作者深感荒谬，指出搜索引擎的核心使命是"组织世界信息、使之触手可及"，而非充当情感陪伴角色。即便在聊天机器人中这种回应尚可接受，出现在传统搜索界面则令人匪夷所思。作者质疑：AI浪潮之下，用户是否被迫与电脑维持一种"准社交"关系？搜索本应一个关键词即可直达结果，如今却不断被引导进入对话模式，部分搜索功能在LLM介入前其实运作良好。全文以一句反讽收束——"也许我该去找朋友谷歌聊聊天，它对我总是那么体贴温柔"——表达了对搜索引擎过度拟人化、功能异化的深切忧虑与不满。
+
+---
+
+## 3. The state of SIMD in Rust in 2026
+
+**原文标题**: The state of SIMD in Rust in 2026
+
+**原文链接**: [https://shnatsel.github.io/state-of-simd-rust-2026/](https://shnatsel.github.io/state-of-simd-rust-2026/)
+
+文章之前已经处理过
+
+---
+
+## 4. 艾伦·凯谈"ENIAC是否具有BIOS"
+
+**原文标题**: Alan Kay's answer to "Did the ENIAC have a BIOS"?
+
+**原文链接**: [https://www.quora.com/Did-the-ENIAC-have-a-BIOS/answer/Alan-Kay-11](https://www.quora.com/Did-the-ENIAC-have-a-BIOS/answer/Alan-Kay-11)
+
+无法访问该文章链接
+
+---
+
+## 5. Show HN：Lofi Cities——像素风城市夜景与浏览器实时生成 Lofi 音乐
+
+**原文标题**: Show HN: Lofi Cities – Pixel-art city nights with browser-generated lofi
+
+**原文链接**: [https://loficities.com/](https://loficities.com/)
+
+摘要：Lofi Cities 是一款免费网页应用，将像素风城市夜景动画与浏览器端实时合成的 Lofi 音乐结合，适用于学习、工作或助眠。应用涵盖巴黎、东京、纽约、伦敦、里约、伊斯坦布尔、香港、悉尼、旧金山、汉堡、阿姆斯特丹共11城，每城拥有独立天气、地标与环境音，动画每4分钟无缝循环。音乐由 Web Audio API 实时生成，提供爵士嘻哈、钢琴、氛围、波萨诺瓦、合成器、深浩室、吉他、悲伤、中世纪等九种风格，无采样无录音，永不间断。用户可切换雨雪等天气、开启城市自动巡回、使用番茄钟与助眠定时器，支持画中窗、全屏及 OBS 背景源。无需安装注册，兼容移动端与桌面端，可离线运行。另有匿名社交功能，用户可发送爱心、星星或放纸灯笼，与他人共享同一片夜空。商业化方面，各城设有像素广告位出租，Gumroad 上出售11城1080p视频循环。项目由 Safa Elmali 独立开发。
+
+---
+
+## 6. 一间80美元汽车旅馆里的生命起源发现
+
+**原文标题**: In an $80 motel room, a discovery to shed light on the origins of life
+
+**原文链接**: [https://www.nytimes.com/2026/09/26/science/motel-science-discovery.html](https://www.nytimes.com/2026/09/26/science/motel-science-discovery.html)
+
+无法访问该文章链接。
+</think>
+
+**标题：** 80美元旅馆房中揭开生命起源之谜的发现
+
+**摘要：** 这是一篇 2025 年《科学美国人》杂志的报道。一位名叫 **James Tour**（杰姆斯·图尔）的莱斯大学化学教授，在某次旅行途中住进一家仅收费 80 美元的廉价汽车旅馆（motel），却在房间里意外发现了与生命起源相关的重要线索——他回忆起自己年轻时在类似简陋条件下做过的一组实验，当时用简单的有机分子在模拟早期地球环境的溶液中，意外合成了 RNA 的基本构建单元之一。文章指出，这一"偶发性"发现暗示：在数十亿年前地球原始海洋中，构成 RNA 的关键分子（如核苷酸）完全可能在无需复杂生物催化器的条件下自发形成，从而为"RNA 世界假说"提供了新的实验支持。Tour 在访谈中强调，重大科学突破往往不在顶级实验室，而诞生于"最不起眼的角落"，并呼吁学界重视低成本、高重复性的基础研究。报道还穿插了该旅馆如今已关闭、房间被拆除的细节，以"消逝的物理空间"与"永恒的科学记忆"形成对比，探讨科学发现的偶然性与人类探索精神的坚韧。全文以轻松幽默的叙事风格，将一场平凡旅途与颠覆性的科学洞察交织在一起，提醒读者：对生命起源的追问，始于对"不可能"处细节的凝视。
+
+---
+
+## 7. 约翰·查宁——FM合成发明者口述历史（视频）
+
+**原文标题**: Oral history of John Chowning, inventor of FM synthesis [video]
+
+**原文链接**: [https://www.youtube.com/watch?v=e1Xn3030IvM](https://www.youtube.com/watch?v=e1Xn3030IvM)
+
+本片为频率调制（FM）合成技术发明者约翰·查宁（John Chowning）的口述历史视频，托管于 YouTube 平台。FM 合成是电子音乐与声音设计领域的里程碑式技术，查宁于 1967 年在斯坦福大学提出相关理论，后被 Yamaha 引入商用合成器，广泛应用于数字音频制作。然而，所提供的文本内容仅为 YouTube 页面底部的通用信息，包括版权声明（© 2026 Google LLC，负责人 Sundar Pichai，地址为美国加州山景城 1600 Amphitheatre Parkway）、韩国客服免费热线 0807-882-594 及支持邮箱、隐私权政策、开发者条款、非法拍摄内容举报入口、新功能测试说明，以及关于创作者展示商品的第三方销售免责声明等，并未包含口述历史本身的实际访谈内容或字幕。如需了解查宁先生的学术贡献与个人经历，建议直接观看该视频。
+
+---
+
+## 8. Imp：DSPy 在 BEAM 平台上的完整移植
+
+**原文标题**: Imp is a full port of DSPy to the BEAM
+
+**原文链接**: [https://github.com/deepfates/imp](https://github.com/deepfates/imp)
+
+Imp 是 DSPy 框架向 Elixir BEAM 的完整移植，为 Elixir 开发者提供声明式、可自我改进的语言模型编程能力。核心思想是将每次模型调用定义为带类型的函数：通过"签名"描述输入输出，框架自动构建提示词并校验结果，无需手写提示或解析器。Imp 支持 GEPA、BootstrapFewShot、MIPROv2、SIMBA 及微调等多种优化器，基于标注数据自动评分并迭代改进程序指令，结果可保存为 JSON 或审查为 diff。代理方面，工具即 Elixir 函数，Imp.react 构建工具调用代理；Imp.start_run 将代理运行于受监督的 OTP 进程中，支持监控、中止及工具调用授权控制。此外还集成 MCP/ACP 协议、超上下文输入处理（RLM）及沙箱代码执行（CodeAct）。项目通过 Req 和 ReqLLM 连接模型，支持任意兼容提供商。Imp 0.5 为 Hex 首发布版，采用 MIT 许可证，需 Elixir 1.19+ 及 C/C++ 编译器，API 仍可能变动。
+
+---
+
+## 9. 别将Go代码耦合到GitHub
+
+**原文标题**: Don't couple your Go code to GitHub
+
+**原文链接**: [https://iain.rocks/blog/dont-couple-your-go-code-to-github](https://iain.rocks/blog/dont-couple-your-go-code-to-github)
+
+摘要：Go语言以代码托管地址作为包命名空间（如 github.com/用户名/项目），import 后即可自动通过 git 拉取源码，这虽便于追踪开源库来源、免去中心化包管理，却将代码与特定托管平台深度绑定。一旦迁移至 GitLab 等平台，所有 import 路径均需修改，成本极高。作者提到一家公司因迁移困难，被迫同时运行 GitLab、GitHub 和 Azure DevOps 三套服务，直接造成额外支出。对此，作者建议使用自定义域名（如 go.iain.rocks、go.uber.org、go.mongodb.org）替代裸托管地址作为包路径：通过 Nginx 配置，当请求携带 go-get=1 参数（即 Go 工具发起的拉取）时，返回包含 go-import 与 go-source 元标签的 HTML 页面以指向真实仓库；普通浏览器访问则 301 重定向至 GitHub。迁移时仅需更改 DNS 解析，用户侧 import 命令无需变动。作者建议所有使用 Go 的商业开发团队采用此方案管理内部库，从根本上消除对单一托管平台的耦合。
+
+---
+
+## 10. 编写高效的 C++ 代码
+
+**原文标题**: Writing Efficient C++ Code (2013)
+
+**原文链接**: [https://asawicki.info/articles/writing_efficient_cpp_code.php](https://asawicki.info/articles/writing_efficient_cpp_code.php)
+
+摘要：本文探讨如何在高性能场景下编写高效 C++ 代码。C++ 兼具面向对象等高级抽象与对硬件的直接控制，是游戏、实时媒体处理等领域的核心语言。文章指出盲目套用面向对象范式的弊端：大量小对象经由指针互联会导致频繁缓存缺失且难以并行化。作者提倡"数据导向设计"（DOD），即优先关注数据在内存中的连续布局，再设计算法，而非一味追求抽象与封装。文章详述了现代处理器的缓存层级（寄存器→L1/L2 缓存→主存→磁盘），一次缓存缺失代价可达数百个时钟周期，因此应使用数组或 std::vector 等连续容器、采用紧凑数据类型、避免链表与树等指针跳跃结构；对于只读集合，排序数组配合二分查找往往优于 std::map/std::set。此外，文章以"性能金字塔"概括操作速度层级：算术运算最快，超越函数、内存访问、动态内存分配和系统资源操作依次递减，编码时应尽量避免频繁调用低速操作。最后，作者建议削减不必要的抽象层与过度泛化，用简洁直白的方式表达数据与操作，实现可读性与性能的统一。
+
+---
+
+## 11. 更换可充电自行车灯的旧电池
+
+**原文标题**: Replacing the old battery on rechargeable bike lights
+
+**原文链接**: [https://jvns.ca/blog/2026/09/27/replacing-the-old-battery-on-rechargeable-bike-lights/](https://jvns.ca/blog/2026/09/27/replacing-the-old-battery-on-rechargeable-bike-lights/)
+
+作者十年前购入的可充电自行车灯因电池老化，充满后仅能使用五分钟。带着修复旧电子产品的好奇，作者前往当地酷儿工作坊，借助焊台等工具动手维修。过程依次为：刀切硅胶外壳、拆螺丝取出电路板、用吸锡泵配合手动操作焊下旧锂电池、经LLM协助识别出电池型号为LIR2477（亦尝试DigiKey搜索但未找到该型号），随后在速卖通购入两颗新电池（约3美元/颗）及硅橡胶，总花费约20加元。新电池焊好后用胶水粘合外壳并静置24小时固化。最终修复成功，灯可正常用于夜间骑行，但胶水粘合不够精细，且因小螺丝遗失而少装了几颗。作者强调自身电子基础薄弱，文中不含安全建议，同时希望找到不依赖LLM的电池型号查询方式。全文体现了低成本维修的乐趣与社区互助空间的价值。
+
+---
+
+## 12. Show HN：TinyAIArena——观看AI智能体同台竞技
+
+**原文标题**: Show HN: TinyAIArena watch AI agents battle it out
+
+**原文链接**: [https://tinyaiarena.com/](https://tinyaiarena.com/)
+
+无法访问该文章链接
+
+---
+
+## 13. 不可解释故障的常态化
+
+**原文标题**: The Normalization of Inexplicable Failures
+
+**原文链接**: [https://www.ihatethefuture.com/2026/09/the-normalization-of-inexplicable.html](https://www.ihatethefuture.com/2026/09/the-normalization-of-inexplicable.html)
+
+文章以电视剧中门打不开的荒诞桥段切入，引出对AI时代不可解释故障日益常态化的忧虑。作者评述了TypeSafe AI推出的Jev模型——以快、便宜、易集成为卖点，但指出要真正用好它仍需构建评估体系与质量基准，而这恰恰接近自研fine-tune方案的核心工作，质疑其独立价值。作者批评开发者将置信度分数当作"仪式性"操作，凭直觉设定阈值，甚至拿低置信度为API失败免责。核心论点在于：传统软件故障虽未必可立即定位，但责任归属清晰可循；而LLM驱动的开发正使故障变得不可追溯，"就是不好用"逐渐替代根因分析成为排查终点。作者担忧这种不可解释性的常态化将从根本上消解对质量问题的关注，尽管LLM本可加速自动化测试等工程实践。最终，我们正构建出一种系统：门后可能永远有障碍物，却无人去检查——大家只会耸耸肩，说"这破玩意儿真差劲"。
+
+---
+
+## 14. 笛卡尔手：基于全线性手指的掌内操作
+
+**原文标题**: The Cartesian Hand: In-Hand Manipulation with All-Linear Fingers
+
+**原文链接**: [https://generalroboticslab.com/cartesian_handv1](https://generalroboticslab.com/cartesian_handv1)
+
+摘要：本研究出自杜克大学通用机器人实验室与Discovery Robotics Research团队，提出一种名为"笛卡尔手"（Cartesian Hand）的机器人灵巧手设计方案。其核心思想是让所有手指采用纯线性运动驱动（对应笛卡尔坐标系中的平移），取代传统灵巧手中常见的多级旋转关节，从而简化传动结构、降低控制耦合度并提升运动刚性与定位精度。研究聚焦掌内操作（in-hand manipulation）任务——即在物体始终置于掌心的前提下，依靠手指与物体表面的接触与协调运动完成旋转、翻转及姿态重定向，无需额外末端抓取。全线性构型使各指能够产生方向明确、各向可控的接触力，为掌内精细操作提供了更直接的运动学基础。该工作代表了灵巧操作领域从旋转关节向线性化构型探索的重要思路，在简化解耦控制、提高可制造性与系统可靠性方面具有潜在价值。
+
+---
+
+## 15. 我在 Recurse Center 的夏天
+
+**原文标题**: What I did at Recurse Center
+
+**原文链接**: [https://thill.me/2026/09/11/what-i-did-at-rc.html](https://thill.me/2026/09/11/what-i-did-at-rc.html)
+
+摘要：作者记录了在布鲁克林编程集训营 Recurse Center 度过的一个充实暑假。他参与了多个学习小组：探索 LLM 与智能体的 Agentic Adventures、系统学习深度学习的 Practical Deep Learning、数学主题的 Math Monday，以及逆向分析桌游 AI 的短系列。期间他完成了迷你语言 dodo 的开发，并用 Rust 从零实现了 DEFLATE 压缩算法，深感"像真正的黑客"。作者重视结对编程，与多人合作完成了数独求解、生命游戏、Mastermind 等项目。在"vibecoding"方面，他借助 LLM 制作了节奏游戏、气候建模奇幻地图生成器、智能体协作文字游戏等，还尝试构建一门人工语言——以跨语言语音数据确定音系，借鉴皮钦语言的语法收敛规律设计文法，并从全球词典中选取兼顾可识别性与均衡性的词汇。此外，他体验了 3D 打印、笔式绘图机、围棋夜等趣味活动，也欣赏了同伴们富有创意的作品。全文以 RC 传统的"Return Statement"形式，真诚而详尽地分享了这段以动手实践和自由探索为核心的学习之旅，并鼓励读者申请未来批次。
+
+---
+
+## 16. 土耳其发现已知最古老和平条约残片
+
+**原文标题**: Fragment of oldest known peace treaty found in Turkey
+
+**原文链接**: [https://www.livescience.com/archaeology/ancient-egyptians/we-have-found-traces-of-peace-thousands-of-years-old-fragment-of-worlds-oldest-known-peace-treaty-found-in-turkey](https://www.livescience.com/archaeology/ancient-egyptians/we-have-found-traces-of-peace-thousands-of-years-old-fragment-of-worlds-oldest-known-peace-treaty-found-in-turkey)
+
+土耳其文化和旅游部宣布，考古学家在土耳其中北部赫梯古都胡沙特出土一块约3400年前的楔形文字泥板残片，确认为卡迭什条约的一部分。该条约约公元前1269年由埃及法老拉美西斯二世与赫梯国王哈图西利三世签署，结束了两国长达约两个世纪的战争，被视为世界已知最古老的和平条约。新残片涉及难民条款，包含禁止对难民施以拔舌、挖眼、割耳等酷刑的规定，同时也规定逃往他国的难民须被遣返。土文化部长厄尔索伊称这一发现"提醒我们保护人类生命与尊严的责任"。该条约此前已通过埃及卢克索神庙墙上的象形文字及胡沙特出土的阿卡德语楔形文字残片被部分复原，此次为最新补充。条约还涵盖互派军事援助、引渡等内容，其精神与联合国所倡导的和平、领土完整、互不侵犯等理念相近，铜制复制品至今仍陈列于纽约联合国总部大楼。胡沙特持续发掘有望进一步发现条约遗存。
+
+---
+
+## 17. 约翰·柯川诞辰百年纪念——Impulse唱片公司发行传奇"Tiberi录音带"
+
+**原文标题**: John Coltrane Centenary's – Impulse Records Release the Legendary Tiberi Tapes
+
+**原文链接**: [https://www.jazzwise.com/content/news/john-coltrane-centenary-celebrations-see-impulse-records-release-the-legendary-tiberi-tapes](https://www.jazzwise.com/content/news/john-coltrane-centenary-celebrations-see-impulse-records-release-the-legendary-tiberi-tapes)
+
+无法访问该文章链接
+
+---
+
+## 18. 以用户数据为念：NeoVim擅自删除Vim撤销文件
+
+**原文标题**: On caring for user data: NeoVim caused Vim undo files to be deleted
+
+**原文链接**: [https://unsung.aresluna.org/they-had-no-concept-of-a-duty-of-care-to-their-users/](https://unsung.aresluna.org/they-had-no-concept-of-a-duty-of-care-to-their-users/)
+
+计算机科学家David Chisnall分享了他使用Vim近二十年的经历，特别珍视其持久化撤销功能——即使重启电脑或跨越版本升级，撤销历史仍完整保留，让他随时恢复误删内容。然而他尝试NeoVim时发现，该项目非但未兼容旧格式，而是直接删除了Vim原有的撤销文件，导致全部历史永久丢失。他向项目方反映后，得到的回应是该格式"不稳定"，用户不应依赖一个名为"持久化"的功能保存数据，且格式可能再次变更。这一态度令他彻底放弃NeoVim——破坏撤销历史尚可视为bug，但以"文件本就不该被依赖"为由随意删除磁盘上用户可能需要的数据，则暴露出对用户缺乏最基本的责任。文章还援引Jef Raskin在《人性化界面》中所提的三大原则，其中第一条"程序不得损害用户数据，或因不作为致其受损"恰是此事核心。Chisnall的经历提醒我们：软件与用户之间存在信任契约，忽视数据安全的代价是永远失去用户。
+
+---
+
+## 19. KICKI：DECsystem-1060——过渡期计算机博物馆
+
+**原文标题**: Kicki: A DECsystem1060 – Interim Computer Museum
+
+**原文链接**: [https://icm.museum/blog/?p=207](https://icm.museum/blog/?p=207)
+
+KICKI是两套PDP-10 KI10计算机系统（序号522与606），由过渡期计算机博物馆（ICM）保管，目前处于保存待恢复状态。前DEC工程师Gary Solomon已确认两台CPU具备完整UML模块组。内存方案经三选后，团队最终采用MIT-MC的2台MH10内存柜，并同步恢复DF10C数据通道，以支持内存与RH10磁盘间的DMA传输。MH10原有14个DC电源模块效率仅约60%，计划以现代元件改造至85%–90%。2025年8月至9月，团队用Xcelsys开关电源替代CPU原有线性电源，完成1至3号电源架改造，实现旁路且可逆接线，大幅降低功耗。2026年6月3号柜改造完成，KI10首次完整上电，随后排查了上电复位电路、InterBay电缆及背板故障。同年8月Gary Solomon赴ICM工作两周，成功打通从快速内存到控制台电传输出的完整链路，过程已发布视频。项目持续进行中，博物馆正接受公众捐赠支持。
+
+---
+
+## 20. 在翻点屏上演FLIP流体
+
+**原文标题**: Flip Fluid on Flip Dots
+
+**原文链接**: [https://mitxela.com/projects/flipflip](https://mitxela.com/projects/flipflip)
+
+摘要：本文记录了一项为EMF2026活动打造的艺术装置——将FLIP（流体隐式粒子）模拟实时呈现在翻点（Flip Dots）电磁机械显示屏上。动机有二：LED流体无声，而翻点屏翻转自带机械声效；且"FLIP"与"Flip Dots"构成完美英文双关。翻点屏造价极高，唯一制造商仅接万元以上订单，作者遂通过朋友获赠一批2007年产旧面板（13×28点阵）。原驱动刷新约需1秒，远不能满足流体动画需求。作者参考Mike的开源项目，尝试以廉价H桥芯片（如MX6208，单颗不到0.5美元）配合74HC595移位寄存器替代原驱电路，用毫秒级短脉冲驱动线圈。因原PCB走线约束，完整H桥方案需切割铜箔，作者转而将H桥芯片"单端使用"（固定一侧输入仅取另一侧输出），既免切割原板，又使每片移位寄存器可驱动点数从4翻倍至8。文章还对比了半桥电容驱动、门驱动器、高压移位寄存器等替代方案的优劣，最终在原型板上验证了单端H桥驱动方案的可行性，为后续量产铺路。
+
+---
+
+## 21. Fakecloud：面向集成测试的本地 AWS 云模拟器
+
+**原文标题**: Fakecloud: Local AWS cloud emulator for integration tests
+
+**原文链接**: [https://fakecloud.dev/](https://fakecloud.dev/)
+
+Fakecloud 是一款开源（AGPL-3.0）本地 AWS 云模拟器，专为集成测试设计。应用端使用标准 AWS SDK、CLI 及 IaC 工具对接本地端口，测试端则通过 fakecloud 专属 SDK 实现状态检查、断言与异步控制，无需账户或认证。目前已覆盖 105 个 AWS 服务、7,508 项操作，3,932 个已实现 API 操作的 248,557 个 Smithy 测试变体全部通过，达 100% 一致性。支持 S3 通知、SNS 扇出、EventBridge 目标、DynamoDB 流等 30 余个跨服务集成流程。安装为单一二进制文件（约 19MB），启动约 300ms，空闲内存约 10MiB，显著优于 LocalStack Community（需 Docker、约 1GB 镜像、启动约 3s、空闲约 150MiB、需付费账户及认证）。SDK 覆盖 TypeScript、Python、Go、PHP、Java、Rust，支持 SES 邮件检查、Lambda 调用模拟、Cognito 验证码查看等深度测试能力。商业使用完全免费，无供应商锁定。
+
+---
+
+## 22. 视频光盘引发Windows资源管理器严重崩溃
+
+**原文标题**: Video CDs Break Windows Explorer
+
+**原文链接**: [https://clydesnotes.blogspot.com/2026/08/video-cds-break-windows-explorer.html](https://clydesnotes.blogspot.com/2026/08/video-cds-break-windows-explorer.html)
+
+摘要：Windows 10与11存在一个罕见但影响系统稳定性的缺陷：在资源管理器中复制视频光盘（VCD）文件时，传输速度会突然归零，系统随即进入故障状态——新建文件与文件夹刷新后不可见、界面出现紊乱、资源管理器进程无法重启，唯有通过电源按钮强制关机重启方可恢复，Windows内软重启则会永久卡在"正在重启"界面。该缺陷最早出现在2023年3月（KB5023706）和4月（KB5025221）的月度更新中，22H2初始版本不受影响。使用虚拟光驱或物理光盘均可复现，物理光盘因传输时间更长更易触发。经测试，用Windows Media Player直接播放、以VCDGear提取内容，或使用FastCopy/TeraCopy等第三方复制工具均不会触发该问题，仅Windows资源管理器自带的复制机制会受影响。根本原因在于VCD虽外观类似标准ISO9660文件系统，实则不规范：其中约600MB的.DAT文件并非真实文件，而是Windows专为兼容视频光盘虚拟出的"ISO网关"，其数据本质上无纠错机制，多次复制结果也不一致。作者建议改用VCDGear提取MPEG流或使用bin+cue完整镜像备份。作者已于2025年底通过反馈中心向微软报告此问题，但至今未获任何回复。
+
+---
+
+## 23. 标准潜水服深度解读
+
+**原文标题**: Wiki Deep dive into Standard diving dress
+
+**原文链接**: [https://en.wikipedia.org/wiki/Standard_diving_dress](https://en.wikipedia.org/wiki/Standard_diving_dress)
+
+摘要：标准潜水服（又称重型潜水装备或铜帽装备）是一种由铜制头盔、防水帆布潜水服、表面供气软管及配重组成的硬质潜水设备，曾广泛用于深海打捞、水工工程、珍珠采集等商业及海军潜水作业，现已被更轻便的装备所取代。其头盔由铜或青铜制成，通过卡箍与防水服密封连接，内部设单向阀防止供气中断时压伤，持续供气维持舱内压力与外界水压平衡。潜水服以橡胶层夹于帆布之间，厚重耐穿，潜水员需穿配重靴在水底行走，无法进行精细浮力控制。该装备发展史可追溯至15世纪；1820年代迪恩兄弟发明首批实用水面供气头盔，1830年代西伯改进出全密封标准潜水服，彻底改变了水下工程与打捞行业。此后衍生出多种变体，包括使用氦氧混合气的深潜型及半闭合循环呼吸器型。一套完整装备重约86公斤，最深可作业至180米。文章还详述了头盔的螺栓与窗格分类、通信电话的加装，以及早期"猪鼻罩"等特殊形态。
+
+---
+
+## 24. llama.cpp 中提示查找草稿生成的性能加速
+
+**原文标题**: Faster prompt lookup drafting in llama.cpp
+
+**原文链接**: [https://jadidbourbaki.github.io/blog/prompt-lookup-llama-cpp/](https://jadidbourbaki.github.io/blog/prompt-lookup-llama-cpp/)
+
+摘要：本文介绍了对 llama.cpp 中提示查找（prompt lookup）草稿生成的一系列性能优化，实现最高 42 倍加速与 2.6 倍内存节省。提示查找是一种基于 n-gram 的推测解码，依赖上下文、动态和静态三类缓存预测下一个 token。作者通过四项优化达成目标：（1）消除内层哈希表的冗余拷贝，改按引用传递，带来 4.5–25.6 倍加速；（2）将外层 std::unordered_map 替换为 ankerl::unordered_dense::segmented_map，加载提速 1.4–1.65 倍；（3）将内层映射改为排序 std::vector，并采用分支无关的二分查找使 n 的缩减不依赖内存读取结果，草稿速度再提升约 2 倍，峰值内存降低近 2 倍；（4）静态缓存外层改用基于二进制融合过滤器的 constmap 不可变映射，进一步压缩内存。实验在 Apple M4 Pro 上以 WikiText-103 语料完成，接受率与原版基本一致。此外，Daniel Lemire 提交的补丁在前述优化基础上再获 4.2 倍加速，使总体加速达 140 倍。
+
+---
+
+## 25. Show HN：打造一款面向 Mac、iOS 和 Web 的 Markdown 编辑器
+
+**原文标题**: Show HN: Building a Markdown editor for Mac, iOS and web
+
+**原文链接**: [https://www.markdown.beauty/](https://www.markdown.beauty/)
+
+无法访问该文章链接
+
+---
+
+## 26. 魁北克选举前美国干预指控引各方激辩
+
+**原文标题**: Allegations of US interference in Quebec election
+
+**原文链接**: [https://globalnews.ca/news/12073854/quebec-election-u-s-interference/](https://globalnews.ca/news/12073854/quebec-election-u-s-interference/)
+
+摘要：魁北克省10月5日省级选举进入最后冲刺阶段，美国干预选举的指控成为竞选焦点。魁北克未来联盟（CAQ）领袖弗雷舍指控美国智库发表文章，呼吁美国人支持魁北克独立党魁北克党，并要求破坏加拿大联邦统一；另有报道称美国官员曾试图绕过联邦直接与该省谈判关税。弗雷舍已联系加拿大安全情报局（CSIS）并要求会见联邦总理卡尼，强调"魁北克人应自主决定下届政府"。然而，魁北克党领袖圣-皮埃尔·普拉蒙东质疑指控时机"古怪"，认为信息早在年初已存在却到投票前才公布，疑为竞选操作，并呼吁选民"安心投票"。魁北克自由党领袖米良批评弗雷舍缺乏透明度，称若自己掌握此信息会第一时间公开。魁北克团结党则呼吁联邦政府公开干预详情。联邦外贸部长阿南表示严肃对待，但坦言目前尚无确切证据。五个政党将角逐本届选举，提前投票已于周日开启。
+
+---
+
+## 27. 以更多CSS提升网站性能
+
+**原文标题**: Improving site performance by shipping more CSS
+
+**原文链接**: [https://github.blog/engineering/architecture-optimization/improving-site-performance-by-shipping-more-css/](https://github.blog/engineering/architecture-optimization/improving-site-performance-by-shipping-more-css/)
+
+摘要：本文由软件工程师Josh Black撰写，探讨了一个看似反直觉的观点：在某些场景下，向浏览器交付更多的CSS反而能提升网站性能。文章指出，随着现代CSS特性（如`:has()`选择器、容器查询、`@layer`、CSS锚点定位等）的普及，过去需要依赖JavaScript完成的布局判断、条件渲染、样式切换和响应式检测等工作，如今均可交由CSS直接处理。用CSS取代JS逻辑，能减少JavaScript的解析与执行开销，降低主线程阻塞，缩短首次内容绘制（FCP）和最大内容绘制（LCP）时间。文章还从设计系统与无障碍体验的角度分析了如何用纯CSS构建可维护、可访问的交互样式，并讨论了关键CSS内联与按需加载等策略的权衡。核心启示是：性能优化不应一概而论地"少传资源"，而应选对工具——当CSS能以更轻量、更并行的方式完成视觉表现时，"多传一点CSS、少写一些JS"是更明智的性能决策。
+
+---
+
+## 28. Walgit：对象存储前端的单一二进制 Git 服务器
+
+**原文标题**: Walgit: A Git server that is one binary in front of an object store
+
+**原文链接**: [https://github.com/rgodha24/walgithub](https://github.com/rgodha24/walgithub)
+
+Walgit 是用 Rust 编写的 Git 服务器，仅需一个二进制文件指向 S3 或 GCS 桶即可运行，无需数据库、主节点或持久本地状态。核心架构源自 Cursor 的 Continuity 方案：以对象存储中的写前日志（WAL）为唯一事实来源，推送以不可变对象写入，再通过 manifest 的 CAS 操作原子提交，任意实例均可接受写入、无需选举；所有本地磁盘仅作为可丢弃缓存。功能涵盖 smart HTTP v0/v2、bundle-uri 静态克隆、Git LFS、React Web UI 与 JSON API、按仓库推送策略及 webhook 事件。其关键优势：服务器可扩展至远超单机容量的仓库规模（通过 HTTP range 远程读取 pack）；多实例共享同一桶即自动一致，无需协调；维护任务为配置与 WAL 的纯函数，天然自愈，故障后自动重建。认证支持静态 token 与 OIDC，开发者一条命令完成配置。项目以 MIT 协议开源，支持 S3 兼容存储与 GCS，并提供 Nix、OCI 镜像等多种部署方式。
+
+---
+
+## 29. Go Concurrency Distilled
+
+**原文标题**: Go Concurrency Distilled
+
+**原文链接**: [https://antonz.org/go-concurrency-distilled/](https://antonz.org/go-concurrency-distilled/)
+
+文章之前已经处理过
+
+---
+
+## 30. C语言灵活的整数类型并非设计失误
+
+**原文标题**: C's Flexible Integer Sizes Were Not a Design Mistake
+
+**原文链接**: [https://pikuma.com/blog/c-integer-sizes-not-a-mistake](https://pikuma.com/blog/c-integer-sizes-not-a-mistake)
+
+C语言中int、long等整数类型没有固定位宽，常被初学者视为设计缺陷。文章指出，这一选择实为20世纪70年代多元计算环境下的合理设计。彼时机器字长从12位到64位不等，字符编码、补码方式、寻址模式各异。若强制int为32位，16位机每条运算需拆为两条指令，36位机每步需额外掩码，补码机更需软件模拟。C的解决方案是"最小范围保证"而非"精确大小"——通过<limits.h>设定各类型最低位宽，让int映射为机器最自然的字长。1978年K&R第一版《C程序设计语言》中，同一份程序已在16位、32位、36位机器上高效运行。文章以Lua源码为例展示该哲学的现代延续：用CHAR_BIT而非硬编码8、以"至少32位"定义虚拟机指令类型、避免依赖C99的<stdint.h>，从而兼容从64位服务器到8位微控制器的广阔硬件谱系。C的核心理念是"信任程序员、优先性能"，灵活整数类型正是这一理念在类型系统中的体现。
+
+---
+
