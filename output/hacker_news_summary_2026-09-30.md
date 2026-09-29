@@ -1,0 +1,304 @@
+# Hacker News 热门文章摘要 (2026-09-30)
+
+这是今日 [Hacker News](https://news.ycombinator.com/) 上最热门的文章摘要。
+
+## 1. 美国邮政检查员查封销售假冒邮资标签网站
+
+**原文标题**: U.S. postal inspectors shut down website selling counterfeit postage labels
+
+**原文链接**: [https://postalemployeenetwork.com/news/2026/09/26/u-s-postal-inspectors-shut-down-website-selling-millions-of-counterfeit-postage-labels/](https://postalemployeenetwork.com/news/2026/09/26/u-s-postal-inspectors-shut-down-website-selling-millions-of-counterfeit-postage-labels/)
+
+2026年9月24日，美国邮政检查局迈阿密分局联合联邦执法机构查封了涉嫌销售逾510万张假冒美国邮政（USPS）邮资标签的网站LabelsBank.com，据称造成USPS损失超1.26亿美元。法院文件显示，33岁巴基斯坦男子法希姆·阿克拉姆被指控未经USPS授权运营该网站，以每张仅2美元固定价格销售假冒邮资标签，不论包裹重量、尺寸及目的地，使客户规避正规邮费。调查显示已有超5000名客户通过该平台购买假冒标签。阿克拉姆现面临一项合谋欺诈罪、五项制作及销售伪造邮票标签罪和四项电汇欺诈罪指控，法院已签发命令授权没收域名并关闭网站。迈阿密分局邮检员负责人罗霍表示，执法范围超越国界，凡向美国消费者兜售虚假邮资的行为都将追查到底。联邦检察官奎涅斯强调，该案手法简单但规模巨大，联邦部门已成功查封网站并追究嫌疑人刑事责任。
+
+---
+
+## 2. GPT 6.1 Sol：以五分之一价格实现近 Astra 级智能
+
+**原文标题**: GPT 6.1 Sol: Near-Astra intelligence for a fifth of the price
+
+**原文链接**: [https://openai.com/index/introducing-gpt-6-1-sol/](https://openai.com/index/introducing-gpt-6-1-sol/)
+
+无法访问该文章链接
+
+---
+
+## 3. Tcl/Tk 9.1 发布
+
+**原文标题**: Tcl/Tk 9.1 Released
+
+**原文链接**: [https://www.tcl-lang.org/software/tcltk/9.1.html](https://www.tcl-lang.org/software/tcltk/9.1.html)
+
+Tcl/Tk 9.1.0 于 2026 年 9 月 29 日发布，在 9.0 基础上扩展新特性与接口。Tcl 方面：新增 unicode 归一化命令、timer 高精度单调时钟命令、lfilter 列表筛选命令及 interp set 子解释器变量访问；扩展 subst 与 switch 选项；引入多种 C99 数学函数；新增 Tcl_UtfToNormalized、Tcl_ListObjRange 等 C 接口；时间 API 改用 long long；改进大列表内存效率与 64 位支持；应用须调用 Tcl_FindExecutable 完成初始化。平台层面，macOS 支持不区分大小写文件路径，Windows 重构可执行文件搜索。Tk 方面：新增无障碍屏幕阅读器支持及初始双向文本/RTL 语言支持；新增 ttk::toggleswitch 控件与 tk attribtable 命令；扩展 ttk::treeview 和 ttk::notebook 状态；支持标签旋转文本；对话框限制于物理屏宽；移除 Windows XP 外观支持。
+
+---
+
+## 4. 德里如何将电力损耗从50%降至5%
+
+**原文标题**: How Delhi cut electricity loss from 50 to 5 percent
+
+**原文链接**: [https://spectrum.ieee.org/delhi-electricity-loss](https://spectrum.ieee.org/delhi-electricity-loss)
+
+德里曾是全球电力损耗最严重的城市之一。2002年，其电网损耗高达50%以上，每日停电数小时，设备老化、盗窃猖獗、管理腐败和收缴困难交织，使电力企业入不敷出，无力投资升级。转机始于系统性改革：2003年印度《电力法》拆分发电、输电、配电职能并引入私营化；德里电力局随即被拆分，塔塔电力与BSES分别接管南北区域配电。两家公司同步推进技术与管理变革——部署SCADA监控系统、更换智能电表、安装电容器组稳定电压、将架空线改为地下电缆；同时重组管理层、培训员工、打击窃电、建立电子账单与便捷缴费渠道。截至2026年，德里电力损耗已降至5%至6%，电网可靠性从70%跃升至99.9%以上，媲美法国、比利时。夜间照明、电动车普及和居民生活舒适度显著提升。文章指出，这一转型经验可为阿尔巴尼亚、孟加拉、巴西、肯尼亚等仍面临严重电力损耗问题的国家和地区提供可借鉴的路径。
+
+---
+
+## 5. 尼古拉斯·波尔森2026年已发表258篇学术论文
+
+**原文标题**: Nicholas Polson has authored 258 academic papers in 2026 (so far)
+
+**原文链接**: [https://statmodeling.stat.columbia.edu/2026/08/27/258/](https://statmodeling.stat.columbia.edu/2026/08/27/258/)
+
+无法访问该文章链接
+
+---
+
+## 6. AI需6万亿美元年收入方能支撑数据中心建设热潮
+
+**原文标题**: AI needs $6T in annual revenue to justify data centre boom
+
+**原文链接**: [https://www.thenationalnews.com/future/technology/2026/09/29/ai-industry-needs-to-earn-6-trillion-by-2031-to-justify-data-centres/](https://www.thenationalnews.com/future/technology/2026/09/29/ai-industry-needs-to-earn-6-trillion-by-2031-to-justify-data-centres/)
+
+贝恩公司最新报告指出，AI行业需在2031年前实现6万亿美元年收入，才能为大规模数据中心建设提供经济支撑。报告预测，新产品开发将贡献最大份额，约4.2万亿美元，涵盖搜索、广告、自动驾驶及物理AI等领域；企业生产力提升将贡献1万亿至1.4万亿美元；消费者服务则贡献2000亿至4000亿美元。报告强调，"吸收速度"即企业应用AI的速率，已成为新的竞争变量，领先AI实验室每年投入超97.5亿美元帮助企业加速融合。贝恩预计2031年AI基础设施年支出将达1.5万亿美元，涵盖新设施、GPU及网络设备升级。以Meta位于俄亥俄州的Prometheus数据中心为例，其容量将从2025年的600兆瓦（约240亿美元）跃升至2030年的9吉瓦（约2000亿美元）。同时，行业面临电力供应、芯片短缺、人才紧缺及公众反对等多重挑战。不过，阿联酋、沙特、欧盟、韩国及美国等政府均在积极支持AI及数据中心产业，将其视为国家战略核心。贝恩认为，AI基础设施资本需求将保持高位，能源、半导体等瓶颈本身也蕴含巨大投资机遇。
+
+---
+
+## 7. PS5 Relapse 漏洞利用工具
+
+**原文标题**: PS5 Relapse Exploit
+
+**原文链接**: [https://github.com/ntfargo/Relapse-Exploit](https://github.com/ntfargo/Relapse-Exploit)
+
+Relapse 是一款针对 PlayStation 5 的漏洞利用工具，支持 7.00 至 13.60 固件版本。使用时需在 PS5 网络设置中将首选 DNS 设为 45.56.67.85，随后在本地运行 Python 服务脚本，或在 PS5 浏览器中打开指定网页。成功利用后，默认载荷保存于 payloads/ 目录，ELF 加载器将在 9021 端口监听。漏洞链分为两阶段：浏览器阶段利用 JSC 信息泄漏与结构化克隆对象池不匹配来破坏类型化数组；内核阶段结合地址泄漏与 aio_multi_wait 的 UAF（释放后使用）竞争条件建立内核读写权限。该项目由 ntfargo、ufm42 等十余位研究者共同完成。稳定性方面，WebKit 利用可能需要多次刷新页面，内核利用存在导致主机挂起或崩溃的风险，若出现异常须重启后重试。项目声明仅供教育与安全研究使用，不支持盗版或未授权访问，用户须遵守当地法律法规，自行承担系统不稳定、数据丢失或账号封禁等一切风险，维护者不承担任何责任。
+
+---
+
+## 8. DraftKings利用AI精准定向问题赌徒
+
+**原文标题**: DraftKings Is Using AI to Behaviorally Target Chronic Gamblers
+
+**原文链接**: [https://www.eff.org/deeplinks/2026/09/draftkings-using-ai-supercharge-harms-online-behavioral-advertising](https://www.eff.org/deeplinks/2026/09/draftkings-using-ai-supercharge-harms-online-behavioral-advertising)
+
+摘要：据《纽约时报》报道，在线体育博彩公司DraftKings利用客户下注记录训练机器学习模型，识别容易输钱的赌徒，随后向其推送定向广告，吸引他们继续下注。由于输钱用户才是公司真正的利润来源，问题赌徒（即明知赌博造成损害仍持续下注的人群）最易被该模型锁定，公司借此将用户脆弱性转化为利润。AI的介入进一步放大了行为广告的危害：AI作为"黑箱"难以预判关键数据，驱动企业持续收集更多数据，同时大幅提升海量数据处理速度。此外，行为广告所采集的数据正被保险、银行及ICE等执法机构获取利用。值得注意的是，DraftKings仅使用"第一方数据"（直接从用户处收集）便足以实施精准定向，表明仅限制第三方数据买卖的监管远不足以防范此类侵害。电子前线基金会（EFF）指出，该案例仅是行为广告伤害的冰山一角，呼吁全面禁止在线行为广告，以从根源削弱企业采集行为数据的动机，同时提供自我防护指南，帮助用户保护个人数据。
+
+---
+
+## 9. NAND-16：由277,248个与非门搭建的16位计算机
+
+**原文标题**: NAND-16: a computer built from 277,248 NAND gates
+
+**原文链接**: [https://somethingbig.ai/computer](https://somethingbig.ai/computer)
+
+NAND-16是一个基于数字逻辑设计的16位计算机项目，其核心目标是仅使用277,248个基本与非门（NAND gate）从零构建出一台完整可运行的计算机。与非门作为逻辑学中的"万能门"，理论上可组合实现任何布尔逻辑功能，该项目即是对这一原理的大规模实践验证。文章介绍了从最底层逻辑门逐层向上搭建计算机架构的过程，涵盖加法器、寄存器、算术逻辑单元（ALU）、内存控制器、总线系统直至中央处理器（CPU）等关键模块的层级化设计。项目采用16位数据字长，展现了从简单门电路到复杂计算系统的完整演进路径。这一工程规模远超常见的教学示例，体现了将抽象数字电路理论转化为实际逻辑实现的巨大工作量与设计挑战，对于理解计算机硬件底层原理、数字系统自底向上设计方法具有突出的教育参考价值。
+
+---
+
+## 10. Dots：始终在线的智能体
+
+**原文标题**: Dots: Always-on agents
+
+**原文链接**: [https://openai.com/index/introducing-dots/](https://openai.com/index/introducing-dots/)
+
+无法访问该文章链接
+
+---
+
+## 11. 网页与移动终端对话式AI智能体的隐私分析
+
+**原文标题**: A Privacy Analysis of Web and Mobile Conversational AI Agents [pdf]
+
+**原文链接**: [https://jorgegarciaherrero.com/wp-content/interactivos/20260916-Prompt-like-a-butterfly-sting-like-a-tracker-(clean).pdf](https://jorgegarciaherrero.com/wp-content/interactivos/20260916-Prompt-like-a-butterfly-sting-like-a-tracker-(clean).pdf)
+
+摘要：本文针对当前广泛部署于网页与移动终端的对话式AI智能体（如聊天机器人、虚拟助手等）展开系统性隐私分析。随着大语言模型驱动的智能体应用爆发式增长，用户在与这些系统交互过程中产生的个人数据在采集、传输、存储、使用及共享等环节面临严峻的隐私风险。文章从隐私政策文本审查、数据流追踪及实际部署行为三个维度，对主流Web端与移动端对话式AI代理进行对比研究，重点考察以下问题：一是用户数据的采集范围是否超出功能必要，是否涉及姓名、位置、对话内容、生物特征等敏感信息；二是数据在客户端与服务端之间的传输是否具备充分加密保护；三是数据保留期限与删除机制是否明确且可执行；四是数据向第三方（如广告商、模型训练方）的共享是否存在未经明确授权的情形；五是用户知情同意机制的透明度与可操作性。研究发现，多数对话式AI代理在隐私披露的完整性、数据最小化原则的遵循以及用户数据自主权保障方面仍存在显著不足，移动端应用因权限调用频繁而风险尤为突出。本文据此提出涵盖技术设计、合规审计与用户教育层面的改进建议，以期为对话式AI智能体的隐私治理提供参考。
+
+---
+
+## 12. 病毒窃取人类基因且拒不归还
+
+**原文标题**: Virus Stole a Human Gene and Won't Let Go of It
+
+**原文链接**: [https://www.nytimes.com/2026/09/28/science/virus-molluscum-human-gene.html](https://www.nytimes.com/2026/09/28/science/virus-molluscum-human-gene.html)
+
+无法访问该文章链接
+
+---
+
+## 13. GLM-5.3与高阶网络攻击能力的普及
+
+**原文标题**: GLM-5.3 and the spread of advanced cyber capabilities
+
+**原文链接**: [https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities](https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities)
+
+Anthropic红队团队分析指出，智谱AI开源模型GLM-5.3已具备自主构建端到端网络攻击的能力，且无有效安全限制，任何人均可自由获取。测试显示，GLM-5.3在ExploitBench上410次尝试中成功50次，接近Claude Mythos Preview水平；在专家辅助测试中还发现浏览器引擎等多处0day漏洞并完成链式利用。NIST同步确认其为"迄今网络能力最强的开源权重模型"，综合表现落后美国前沿约四个月。关键风险在于其安全护栏极易突破：欺骗性提示可使模型64%配合恶意请求，预填充思考token升至92%，经去拒（abliteration）修改权重后达100%，且能力几乎无损；相比之下，Claude因权重封闭和API限制无法被同类手段绕过。作者警告，GLM-5.3的发布意味着网络攻击能力门槛大幅下降，国家及非国家行为者极可能借此实施真实攻击；同时呼吁各国政府加强对高能力模型的安全评估，并加速扩大前沿模型对防御方的受控访问，以缩小攻防能力差距。
+
+---
+
+## 14. 叶序螺旋：音频响应式LED显示装置
+
+**原文标题**: Phyllotaxis: An audio-reactive LED display
+
+**原文链接**: [https://jagi.studio/posts/phyllotaxis/](https://jagi.studio/posts/phyllotaxis/)
+
+摘要：作者受向日葵等植物中叶序螺旋（黄金比例双螺旋）启发，用Processing以黄金比例生成点云并做Voronoi镶嵌，再将数字模型转化为实体装置。通过CadQuery为每个镶嵌单元建模并切割LED孔位，3D打印后每格嵌入一颗RGB LED（共89颗），配合mulberry宣纸扩散光线。驱动端以STM32通过SPI控制LED，编写类似片元着色器的图案代码，实现从中心向外脉动的螺旋波纹。加入INMP441数字I2S麦克风后，借助ARM的CMSIS库完成傅里叶变换与多频段能量分析，使装置实时响应环境声音。第一版经多次迭代，将早期perfboard改为自制PCB以提升稳定性。第二版在Recurse Center完成，改用五重对称PCB背板与热风焊接，切换至ESP32并运行Rust固件，通过WiFi与轻量WebAssembly后端供访客上传自定义程序。作者计划继续改进焊接工艺、纸张保护及磁吸面板等，期待未来制作更多版本。
+
+---
+
+## 15. 困于苏伊士运河——简版回顾（2021年）
+
+**原文标题**: Stuck in the Suez Canal – the short version (2021)
+
+**原文链接**: [https://cathsenker.co.uk/stuck-in-the-suez-canal-the-short-version/](https://cathsenker.co.uk/stuck-in-the-suez-canal-the-short-version/)
+
+1967年六日战争爆发，以色列空军突袭埃及机场，纳赛尔随即封锁苏伊士运河，14艘来自8个国家的货船被困苦湖长达八年。三等舵手彼得·弗拉克亲历战争首日空袭，也见证了一群普通水手在绝境中缔造社区奇迹的历程。初期，船员们在断绝通信、淡水短缺中艰难求生，后凭救生艇在船间交换食物与用品。1967年10月，来自东西方阵营的船员联合成立"苦湖协会"，废除国籍界限，平等共处。他们组织帆船赛、足球赛、迷你奥运会，自制邮票，每周举行聚会活动，将苦湖化为独特的微型国际社会。历经1969年消耗战与1973年战争，萨达特于1974年宣布重开运河；1975年6月5日，距封锁整整八年，船队终于离港。2017年，约百位昔日水手在利物浦海事博物馆举办五十年聚会，久别重逢，感慨万千。文章借这段独特历史，彰显普通人即使身处困境，仍具备缔造合作共同体的非凡力量。
+
+---
+
+## 16. 可持续能源：拒绝空谈
+
+**原文标题**: Without the Hot Air
+
+**原文链接**: [https://www.withouthotair.com/](https://www.withouthotair.com/)
+
+本文为戴维·麦克伊（David MacKay，皇家学会院士）所著能源经典著作的目录页面。该书以翔实数据取代空洞修辞，全面剖析可持续能源问题，获《经济学人》《科学》《卫报》等高度评价，被推荐为能源政策决策者的必读之作。全书分四大部分：第一部分"数字而非形容词"，逐一量化汽车、风能、飞机、太阳能、供暖制冷、水电、照明、海上风电、波浪能、潮能、食品农业、地热、交通等各领域的能耗与碳排放；第二部分"发挥作用"，探讨节能、交通改进、智能供暖、高效用电、可持续化石燃料、核能、储能方案、英国五大能源路径及欧美全球能源规划；第三部分为各主题的技术深入章节；第四部分提供人口、面积、能源历史等参考数据。全书核心理念是以严谨的数字驱动决策，直面能源转型的真实成本与可行性，拒绝空谈。
+
+---
+
+## 17. Jeeves：以推理增强Jev式决策模型
+
+**原文标题**: Jeeves. Reasoning improves Jev-like decision models
+
+**原文链接**: [https://github.com/PostHog/jeeves](https://github.com/PostHog/jeeves)
+
+摘要：Jeeves是基于Qwen3.5-9B的Jev风格决策模型，通过LoRA加指针头结合链式推理提升决策准确率，经SFT与CISPO两阶段训练，支持是非、多选、评分三类问题并提供Jev兼容API。在未见测试集上整体准确率达0.889，超越Kev-9B（0.822）与Jev（0.857）；JevBench公开题得分0.935，显著优于Jev的0.866，困难子集亦达0.865。推理采用扩散drafter（block-4）将解码提速1.6倍；单张H100上，不思考约0.3秒，启用思考中位3.3秒。不足在于知识类任务仍逊于Jev（MMLU 0.793对0.900），且推理链尾部延迟达17秒，需借助截断或置信阈值折中。
+
+---
+
+## 18. 美国官方对外信息门户（America.gov）
+
+**原文标题**: America.gov
+
+**原文链接**: [https://america.gov/](https://america.gov/)
+
+无法访问该文章链接
+
+---
+
+## 19. 行走的小人
+
+**原文标题**: Walking Men
+
+**原文链接**: [https://bookofjoe2.blogspot.com/2026/09/walking-men.html](https://bookofjoe2.blogspot.com/2026/09/walking-men.html)
+
+2026年9月22日的这篇博克制作了艺术家梅娅·巴尔凯（Maya Barkai）的一项趣意项目——"全球过街小人"（Walking Men Worldwide），汇集了世界各地行人交通信号灯中"行走小人"的图案设计，展现同一通行指令因国家、城市、文化不同而呈现的多样视觉风格。评论区随即引发热烈讨论：有读者指出德国标志性的"Ampelmännchen"（矮圆可爱的过街小人）似乎缺席，因其造型与多数高大健步的信号小人风格迥异；另有读者补充奥地利维也纳也存在类似的"Ampelpärchen"，并附上维基链接佐证；还有人分享了丹麦奥胡斯（Århus）信号灯上酷似小维京人的独特造型，引来一片会心一笑。整篇文章篇幅虽短，却以轻松的笔调引出一个有趣的观察：同一个"行人过马路"的日常动作，在世界各地被赋予如此迥异的性格与气质——有的昂首阔步，有的憨态可掬，有的甚至带着维京人的豪气——折射出不同城市在公共设计中的审美偏好与文化个性。
+
+---
+
+## 20. 展示：TurboGPT——13 秒训练 22KiB 微型 Transformer
+
+**原文标题**: Show HN: TurboGPT: train 22KiB transformer in 13s
+
+**原文链接**: [https://github.com/lostmsu/TurboGPT](https://github.com/lostmsu/TurboGPT)
+
+TurboGPT 是一个以 CUDA C++ 编写的极致轻量级字节级 GPT 训练项目，采用 MIT 开源协议，整体代码仅约 22KiB，可在 13 秒内完成训练。项目面向 Windows 平台，需 Visual Studio 2022 C++ 工具链及 CUDA 13.4，构建时须通过参数指定 GPU 计算能力（如 CudaArch 86）。训练使用 hn1g.txt 文本数据，日志以 TensorBoard 兼容格式输出，每批次生成一份报告（总量上限 8Mi），并支持周期性或最终检查点刷新。训练结果：1.5G tokens 后模型达到 2.52435 BPB。项目支持断点续训，检查点文件涵盖模型、优化器、调度器及训练器完整状态，可通过 --load 参数恢复。此外，项目附带 Python 验证脚本用于结果校验。整体设计追求极简与高效，展示了在单 GPU 上以极小体量实现完整 Transformer 训练流水线的可能性。
+
+---
+
+## 21. 内存厂商摧毁了消费市场
+
+**原文标题**: Memory Companies Have Destroyed the Consumer Market
+
+**原文链接**: [https://gamersnexus.net/news-features/memory-companies-have-destroyed-consumer-market](https://gamersnexus.net/news-features/memory-companies-have-destroyed-consumer-market)
+
+2025年9月以来，全球内存与固态硬盘价格大幅飙升：2TB NVMe SSD均价上涨137%，32GB DDR5套装涨幅达363%，128GB内存模块更是从千余元飙至数万元。文章指出，美光、三星、SK海力士等厂商已与最大5至16个客户签订3至5年长期供应协议，将50%至70%产能锁定给少数大客户，从根本上打破了行业数十年的供需周期，消费者市场被严重边缘化。亚马逊CEO公开坦言，内存涨价正将企业从自建服务器推向云服务，AWS借此实现18个季度最快增长。全球九大云服务商资本支出预计从2026年的9220亿美元增至2027年的1.38万亿美元，内存占比将从47%升至68%。受此影响，苹果、Xbox、索尼、任天堂纷纷提价，全球智能手机出货量预计下降16.7%，均价上涨27.6%。TrendForce预测，到2027年服务器将占NAND需求51.1%，PC及消费类份额持续萎缩。中国厂商长鑫存储与长江存储虽在扩展份额，却遭美国政府限制。文章警告，这种"K型经济"格局可能永久改写内存市场规则，消费者将持续承压。
+
+---
+
+## 22. 首席工程师的"发明工作"指南
+
+**原文标题**: A Staff Engineer's Guide to Inventing Work
+
+**原文链接**: [https://sujithjay.com/inventing-work](https://sujithjay.com/inventing-work)
+
+平台团队由工程驱动而非产品驱动，缺乏路线图与营收指标，工程师必须主动"发明工作"。文章从四个方向梳理了发现工作机会的信号：系统层面，故障复盘能揭示需重建的系统但偏向最近最响亮的失败；成本分析应超越单点优化，关注损益表与"买还是建"决策的动态迭代；自身重复性运维（toil）是易被忽视的价值信号。用户层面，持续对话应聚焦问题空间而非急于接受用户提出的方案；"超负荷用例"——用户将平台用于非设计用途——是最有价值的信号，相当于用户替团队做的原型，"合作原型"则是主动安排此类探索。组织层面，管理者一周内重复提及某议题暗示未解决问题；迁移中滞后采纳的团队暴露方案的盲区。行业层面，为现有系统撰写描述性文档可暴露已过期决策；行业存在"集成-拆分"周期，内部平台往往滞后跟进，这一时差本身可被套利。文章以"信号自带论证程度"与"领先/滞后"两轴对各项信号排序，强调核心挑战并非信号匮乏，而是能否在众多信号中选出正确的那一个并给出充分理由。
+
+---
+
+## 23. 在 Godot 中集成任意 C++ 库
+
+**原文标题**: Using any C++ library in Godot
+
+**原文链接**: [https://blog.conan.io/cpp/conan/gamedev/godot/cmake/2026/09/29/Using-Any-Cpp-Library-In-Godot.html](https://blog.conan.io/cpp/conan/gamedev/godot/cmake/2026/09/29/Using-Any-Cpp-Library-In-Godot.html)
+
+Godot 是一款免费开源的游戏引擎，其脚本语言 GDScript 无法直接调用原生代码，但可通过 GDExtension 机制在运行时加载 C++ 共享库。官方绑定库 godot-cpp（10.0 版本起支持 Godot 4.3 及以上）将底层 C 接口封装为与引擎一致的 C++ API，开发者可像继承内置节点一样编写自定义类。然而，godot-cpp 必须匹配对应的 Godot 版本，每增加一个第三方库还需为所有目标平台分别编译，构建复杂度随项目扩展迅速增长。本文介绍如何利用 Conan 包管理器解决该问题：godot-cpp 已收录至 ConanCenter，通过 api_version 和 target 两个选项统一管理 API 版本与构建目标，ConanCenter 上超过 1900 个库均可作为普通依赖直接引入。文章以完整示例贯穿：开发名为 Swarm 的 GDExtension 节点，利用 ECS 库 flecs 对 10 万个粒子进行仿真，粒子躲避鼠标并弹跳于窗口边缘，通过 MultiMesh 实现单次绘制调用的高效渲染。流程涵盖 conanfile.py 依赖声明、CMakeLists.txt 构建配置、节点属性绑定与类注册，最终一条 conan build 命令即可完成全部编译，Swarm 在 Godot 编辑器中如同内置节点般即用。
+
+---
+
+## 24. 你不再受邀赴宴
+
+**原文标题**: You are no longer invited to dinner
+
+**原文链接**: [https://www.derekthompson.org/p/the-death-of-the-american-host](https://www.derekthompson.org/p/the-death-of-the-american-host)
+
+文章指出，1975至2026年间，美国每月在家招待朋友或参加晚宴的比例从42%骤降至12%，降幅达70%。这一"招待之死"并非社交活动转移至餐厅等场所，而是整体消失。作者提出四点解释：一、双职工家庭节奏加快，协调聚会的时间成本急剧攀升，而男性未能填补女性大规模进入职场后留下的社交组织空白；二、密集型育儿使父母将晚间投入孩子，挤压了成人社交空间；三、亲密友谊数量持续缩减，尤其对无大学学历群体而言，招待聚会正沦为"奢侈品"；四、屏幕媒体让独处变得舒适而充满吸引力，电视与短视频对用户的"要求"远低于一场晚宴。文章最终提出"休闲总量假说"：与劳动总量假说不同，现代技术并未消灭工作，却让他人参与休闲变得不再必要。社交休闲是有限且易被技术替代的"总量"，其本质是一场"协调失败"——相比需要匹配时间、清洁住宅、兼顾饮食禁忌的晚宴，刷手机是更高效的"休闲技术"。作者以此警示：并非所有进步皆为进步。
+
+---
+
+## 25. 《银河游戏》——临时计算机博物馆
+
+**原文标题**: Galaxy Game – Interim Computer Museum
+
+**原文链接**: [https://icm.museum/blog/?p=698](https://icm.museum/blog/?p=698)
+
+1962年，Spacewar!诞生于MIT的PDP-1，后传播至斯坦福AI实验室等机构。1971年，两个团队试图将其推向付费大众：布什内尔与德宾采用专用TTL逻辑打造出Computer Space；比尔·皮茨与休·塔克则走向另一条路。同年九月，Galaxy Game安装于斯坦福特雷西德尔联谊楼，配备PDP-11/20处理器、8K字节核心内存及HP 1300A静电偏转显示管，忠实再现了PDP-10上SAIL版Spacewar的体验。硬件成本远超硬币收入，排队仍达一小时。1972年修订版实现一机多座，该机器运行至1979年，1997年曾再度复活。如今，皮茨联合多斯与施穆克发起新一轮修复，将Galaxy Game送至临时计算机博物馆（ICM）。PDP-11电源已重建恢复运行；HP 1300A二十千伏静电显像管尚待全面翻新，需逐一修复偏转放大器、高压倍压器及聚焦电路，以重现五十年前玩家排队长队所见的锐利亮线。公众现可在ICM实地参观，亦可经MAME模拟器在线体验，文章呼吁捐助以支持修复。
+
+---
+
+## 26. DevDay 2026 大会回顾
+
+**原文标题**: DevDay 2026 Recap
+
+**原文链接**: [https://openai.com/index/devday-2026-recap/](https://openai.com/index/devday-2026-recap/)
+
+无法访问该文章链接。
+
+---
+
+## 27. 假如Jev说Arrow
+
+**原文标题**: What if Jev spoke Arrow?
+
+**原文链接**: [https://columnar.tech/blog/what-if-jev-spoke-arrow/](https://columnar.tech/blog/what-if-jev-spoke-arrow/)
+
+TypeSafe AI推出的Jev是一种新型模型，将自然语言与应用状态转为带概率的类型化决策，以JSON输出选择项、评分及置信度。文章探讨让Jev直接输出Apache Arrow格式，以融入高性能数据管道。作者为Jev的Choice、Noul、Score三种问答类型分别设计了Arrow Schema，利用固定大小列表与扩展元数据高效存储概率向量及标签语义，使pandas、Polars、DuckDB等可零拷贝消费。但TypeSafe API尚无批量端点与Arrow输出，作者遂构建Jevaro——一个Python代理服务器，接收多状态与共享问题集，逐条调用Jev后按序返回Arrow IPC流。经HTTP/2连接池、异步并发窗口及SDK重试等调优，万条合成客服消息仅21.5秒完成，吞吐约464条/秒，成本约0.20美元。文章认为原生批量Arrow端点可再提升数个数量级，Jevaro已提供Python与JavaScript客户端，浏览器端亦可运行。作者呼吁TypeSafe增添批量Arrow接口，并将相关能力集成至Columnar Gateway。
+
+---
+
+## 28. ZX Spectrum 1位蜂鸣器上的数字音频
+
+**原文标题**: Digital Audio on the ZX Spectrum's 1-Bit Beeper
+
+**原文链接**: [https://bumbershootsoft.wordpress.com/2026/09/26/digital-audio-on-the-zx-spectrums-1-bit-beeper/](https://bumbershootsoft.wordpress.com/2026/09/26/digital-audio-on-the-zx-spectrums-1-bit-beeper/)
+
+摘要：本文介绍了作者如何在ZX Spectrum极简的1位蜂鸣器上实现高质量数字音频播放。核心原理是软件PWM：在一个固定时长的循环中改变扬声器开闭的脉冲宽度，利用扬声器物理惯性和电路电容产生平滑声波。作者经历了两次失败——首次用固定步长延迟循环只能产生8kHz尖啸，二次引入细粒度NOP延迟虽可听见微弱声纹仍不理想。在参考Dmitry Milk的已有成果后，作者通过查阅Fuse模拟器源码确定脉冲宽度范围（18至78个CPU周期），最终采用跳转表分发16种预设脉冲宽度的方案，避免自修改代码，并以EXX指令交换影子寄存器缓解Z80寄存器极度紧张的问题。16kHz采样率下内存不足，改为每脉冲发送两次；音量提升和削波则直接编码进跳转表。程序已在48K Spectrum和Omni 128等实机及Fuse等模拟器上验证通过。然而该技术实用性有限：蜂鸣器音量极小需外接功放，且高质量音频几乎耗尽全部可用内存。
+
+---
+
+## 29. Show HN：实时 3D 太阳系，涵盖 52.6 万颗小行星与全部在轨卫星
+
+**原文标题**: Show HN: Real-time Solar System with 526k asteroids and all tracked satellites
+
+**原文链接**: [https://space.bl2.net/](https://space.bl2.net/)
+
+该项目（"太空此刻"，作者 Belle Lune 2）是一款运行于浏览器中的实时 3D 太阳系可视化应用，收录约 52.6 万颗已编目小行星及所有在轨卫星数据。界面提供"聚焦地球"与"全太阳系"两种视图，并支持"跟随地球自转""短路径"等快捷切换。交互设计十分丰富：拖拽旋转视角、滚轮缩放，单击天体弹出信息卡片与轨道，双击则摄像机自动飞向目标；键盘端 WASD 控制飞行、R/F 升降、Q/E 及方向键转向、Shift 加速。用户还可点击分组名称高亮筛选，一键切换轨道显示，并以 UTC 时间同步、手动刷新数据。整体而言，该项目以实时数据和高自由度操控为核心亮点，为天文爱好者与开发者提供了一个沉浸式探索太阳系及近地空间碎片分布的工具。
+
+---
+
+## 30. 全球每8例癌症中约1例由感染所致，新研究揭示
+
+**原文标题**: 1 in 8 cancer cases worldwide are caused by infections, study finds
+
+**原文链接**: [https://www.cbc.ca/lite/story/9.7361622](https://www.cbc.ca/lite/story/9.7361622)
+
+世界卫生组织下属国际癌症研究署在《柳叶刀·肿瘤学》发表报告，估算2024年全球约230万新发癌症病例由感染引起，占比12%，并首次将16种癌症纳入感染相关清单。主要致癌症原中，幽门螺杆菌居首（约76万例，以胃癌为主，集中于东亚）；人乳头瘤病毒（HPV）次之（近75万例，导致全部宫颈癌及多种癌症，撒哈拉以南非洲负担最重）；乙肝、丙肝病毒与肝癌密切相关；EB病毒关联约26万例，涉及鼻咽癌、胃癌及霍奇金淋巴瘤等。研究还首次将HIV与宫颈癌、默克尔细胞多瘤病毒与皮肤癌建立关联。报告强调全球地区差异显著：高收入国家已通过筛查和疫苗有效控制，中低收入国家预防与治疗仍面临巨大缺口。在加拿大，感染相关癌症约占4%，每年超7000例；宫颈癌发病率因HPV疫苗计划曾持续下降，但近年出现"令人担忧的平台期"，或将影响2040年消除宫颈癌的目标。专家呼吁推广幽门螺杆菌筛查并提高HPV疫苗接种率。
+
+---
+
