@@ -1,0 +1,304 @@
+# Hacker News 热门文章摘要 (2026-10-05)
+
+这是今日 [Hacker News](https://news.ycombinator.com/) 上最热门的文章摘要。
+
+## 1. 移除并禁用苹果 macOS 27 AI 模型工具
+
+**原文标题**: Remove and Disable Apple Macos27 AI Models Tool
+
+**原文链接**: [https://github.com/omlahore/RemoveMacAI](https://github.com/omlahore/RemoveMacAI)
+
+RemoveMacAI 是一款面向 macOS 27 的轻量工具，用于关闭 Apple Intelligence 全部功能、删除本地 AI 模型并阻止系统重新下载。macOS 27 取消了 Apple Intelligence 的统一开关，关闭功能后模型仍残留磁盘，该工具通过安装配置描述文件解决此问题。工具可关闭 Siri、写作工具、Genmoji、图像生成、邮件与备忘录摘要、Xcode 代码补全等十余项功能，并清除 Apple Intelligence 基础模型及图像、照片清理等专用模型。其原理是通过配置描述文件施加系统限制键，利用 Apple 资产服务完成模型删除，将模型下载重定向至封闭端口以防重新拉取；全程不修改 /System 目录，不发起网络请求，不收集用户数据。安装支持 curl 一行命令或 Homebrew，所有更改均可通过 revert 命令完全撤销，系统更新后配置依然有效。要求 Apple 芯片及 macOS 27 系统，MIT 许可证，基于开源项目 pared 构建。
+
+---
+
+## 2. 消费级硬件以100T/s运行125B大模型——Strata让RTX 4090跑通Qwen 3.8 Flash Next
+
+**原文标题**: Run Qwen 3.8 Flash Next (125B) on consumer hardware (RTX 4090) at 100T/s
+
+**原文链接**: [https://github.com/Niko1221/Strata](https://github.com/Niko1221/Strata)
+
+Strata 是一款免费开源工具，使普通游戏 PC 即可运行 1250 亿参数的 Qwen3.8-Flash-Next 大模型，全程本地处理，数据不出本机。硬件门槛低至 12 GB 显存（兼容 NVIDIA RTX 20–50 系列及多款 AMD 显卡）与 32 GB 内存。实测 RTX 5070 上 Q2_0 压缩版生成速度达 94 词元/秒、长文本读取达 2650 词元/秒；24 GB 显存的 RTX 3090 预计可达 100–140 词元/秒。其核心机制为 MoE 分层部署：24576 个专家中每词仅激活 10 个，显卡驻留高频专家、内存承载全部、CPU 与 SSD 协同处理余下部分，再叠加小模型猜测加校验的推测解码，获得 1.6–1.8 倍加速。安装极为简便，支持 AI 编程助手一键部署，也提供手动脚本；API 兼容 OpenAI 与 Anthropic 协议，可无缝接入 Cursor、Claude Code 等工具。此外支持多 GPU 共享、图像输入及 128K 长上下文。模型由 Qwen 团队出品，经 ISTA-DASLab、UkisAI、Unsloth 等压缩，Strata 以 MIT 许可证开源。
+
+---
+
+## 3. 不当删节曝光谷歌数据中心水电用量
+
+**原文标题**: Improper redaction reveals Google Data Center water and electricity usage
+
+**原文链接**: [https://www.1011now.com/2026/09/30/more-questions-than-answers-about-lincolns-google-data-center-water-electricity-usage/](https://www.1011now.com/2026/09/30/more-questions-than-answers-about-lincolns-google-data-center-water-electricity-usage/)
+
+内布拉斯加州谷歌数据中心在向州水、能源与环境部提交年度报告时，以"商业机密"为由对水电用量数据进行删节。但记者发现，仅用鼠标高亮复制被遮蔽文本即可还原全部数据。位于林肯市的Agate LLC（谷歌数据中心）峰值用电52.65兆瓦，年用水约1300万加仑，相当于20个奥运标准游泳池。谷歌在奥马哈和巴佩尔的两处数据中心也进行了同样删节。截至去年9月30日，全州6个数据中心年总用水达7.65亿加仑，其中巴佩尔的Fireball Group LLC（谷歌）以5.48亿加仑居首。不当删节还意外暴露了退税数据：Agate LLC预期2025年退税约5582万美元，Fireball约3917万美元，奥马哈数据中心约2256万美元。Agate LLC建筑面积约28.85万平方米，相当于五个足球场。据悉，内布拉斯加州长7月签署行政令，要求数据中心自报对水资源、电网及基础设施的影响，相关报告已于9月底提交完毕。
+
+---
+
+## 4. 全球灯塔分布地图
+
+**原文标题**: A map of every lighthouse
+
+**原文链接**: [https://mapped.earth/lighthouses/world](https://mapped.earth/lighthouses/world)
+
+该网页（mapped.earth）以交互式地图的形式，将世界上每一座灯塔逐一标注呈现，让用户直观了解全球灯塔的地理分布。灯塔作为历史悠久的航海导航标志，遍布各大洲的海岸线，从繁忙的商业港口到偏远的岛屿渔村，承载着指引航向、保障海上安全的重要使命。该项目以"照亮世界"为核心理念，汇聚了全球各海域、各区域的灯塔位置信息，涵盖不同时期、不同风格的灯塔建筑，为航海爱好者、历史研究者及地理学习者提供了一个全面而直观的参考平台。
+
+---
+
+## 5. 《我们身边的尼安德特人》书评
+
+**原文标题**: 'Neanderthals Among Us' review
+
+**原文链接**: [https://www.historytoday.com/archive/review/neanderthals-among-us-peter-sahlins-review](https://www.historytoday.com/archive/review/neanderthals-among-us-peter-sahlins-review)
+
+1856年，德国尼安德山谷出土的化石催生了人类首个认可的异种古人类——尼安德特人。彼得·萨林斯的《我们身边的尼安德特人》是首部系统梳理尼安德特人在科学与流行文化中形象变迁的著作。书中追溯了从古代"荒蛮人"传说到近代种族科学的演变：19世纪起，尼安德特人被置于种族等级底层，在小说、影视和广告中长期被塑造为愚笨残暴的"野蛮人"，该词亦被进步派用来贬斥保守势力。二战后，沙尼达尔洞穴中发现带伤却受他人照料的个体及花葬遗迹，挑战了刻板印象。2010年尼安德特人基因组测序更揭示，现代人DNA中仍携带其基因片段，二者实为密切相关的群体。作者以自身2.1%的尼安德特人遗传为例，警示基因不应成为决定论工具，强调尼安德特人基因组实为投射人类自我认知的"罗夏测验"。书中还介绍了2026年最新发现——早期人智交融以尼安德特男性与现代女性交配为主。全书是理解"何为人"的出色导引。
+
+---
+
+## 6. Homa：AI集群中TCP的终结
+
+**原文标题**: Homa: The End of TCP for AI Clusters [video]
+
+**原文链接**: [https://www.youtube.com/watch?v=eZ8WWZzoaR0](https://www.youtube.com/watch?v=eZ8WWZzoaR0)
+
+摘要：本视频介绍了名为Homa的新型网络通信方案，主张在大规模AI训练集群中取代传统TCP协议。随着大模型训练对分布式算力的需求急剧增长，TCP在延迟敏感度、吞吐量弹性及超大规模可扩展性上日益凸显瓶颈，难以满足GPU集群间高频、低延迟的数据交换需求。Homa作为面向AI工作负载定制的网络层协议，预计通过更契合GPU通信模式的传输机制与优化流量控制，缓解集群内部的拥塞与同步延迟问题，从而提升整体训练效率。标题中的"终结"一词暗示，Homa的推出可能意味着TCP在AI数据中心这一特定场景中逐渐退出历史舞台，为下一代超大规模AI基础设施的网络架构提供全新范式。需注意，所提供的网页文本仅为YouTube平台标准页脚信息（版权声明、联系方式、条款等），未包含视频正文或详细描述，以上要点系依据标题合理推断。
+
+---
+
+## 7. 有效利他主义如何席卷全球（又如何可能终结一切）
+
+**原文标题**: How effective altruism conquered the world (and might yet end it)
+
+**原文链接**: [https://www.economist.com/international/2026/10/01/how-effective-altruism-conquered-the-world](https://www.economist.com/international/2026/10/01/how-effective-altruism-conquered-the-world)
+
+无法访问该文章链接。
+
+---
+
+## 8. ASIC逆向谜题揭晓
+
+**原文标题**: Results from the ASIC puzzle
+
+**原文链接**: [https://blog.janestreet.com/asic-puzzle-results/](https://blog.janestreet.com/asic-puzzle-results/)
+
+Jane Street于2026年8月发布了一款ASIC芯片的GDS版图作为逆向工程谜题，要求参与者仅凭物理布局还原芯片功能。文章公布谜底及社区解法。该芯片实为11×11"星战"（Two Not Touch）谜题的硬件校验器，通过逐行、列、区域计数及相邻检测判断输入合法性，成功时输出解密后的解法字符串。共收到30多国约400份提交，参与者涵盖高中生至退休人士，使用了KLayout、Yosys、Z3等工具。解法包括：从版图提取网表、自建仿真器、逆向逻辑分析、SAT求解器直接求解、破解LFSR混淆的输出模块，还有人将芯片移植到FPGA、Minecraft或SPICE模拟中验证。彩蛋包括VCD文件头中隐藏的闰秒日期、金属层摩尔斯电码拼出的拉丁文标语、全零与全一输入的彩蛋输出，以及一个故意保留的悬浮线bug。文章还讨论了AI对硬件分析流程的影响，并推广了Jane Street硬件团队招聘及一场协议仿真器ASIC竞赛（截稿2027年1月）。
+
+---
+
+## 9. 用AI实现创作意图、品质与艺术性的规模化
+
+**原文标题**: How to scale intent, quality, and artistry with AI [video]
+
+**原文链接**: [https://www.youtube.com/watch?v=GLvFTMtw4Jk](https://www.youtube.com/watch?v=GLvFTMtw4Jk)
+
+本视频探讨如何借助人工智能技术，在扩大创作规模的同时保持作品的意图表达、制作质量与艺术水准。内容围绕三个核心维度展开：意图（intent）即创作者的原始表达与叙事目标如何借助AI工具被高效传达；品质（quality）指在批量或高并发产出中维持一致的高标准；艺术性（artistry）则关注AI辅助下审美判断与创意独特性的保留与升华。视频 likely 涉及具体工具链、工作流设计及行业案例，面向内容创作者、艺术从业者与技术决策者，旨在提供可落地的规模化路径。需注意，所提供正文仅为YouTube页面通用页脚信息（版权、隐私政策、联系人及地址等），未包含视频实际字幕或文稿，以上概括基于标题推断。
+
+---
+
+## 10. Show HN：格拉苏蒂废品摆钟——一座仅走半小时的全废品机械摆钟
+
+**原文标题**: Show HN: Glashütte Trash Clock – A 30-minute pendulum clock made from trash
+
+**原文链接**: [https://niklasroy.com/gtc/](https://niklasroy.com/gtc/)
+
+德国艺术家Niklas Roy（祖上为瑞士制表师）于2026年受邀赴萨克森州格拉苏蒂参加NOMOS钟表品牌艺术家驻留计划，以一座旧教堂为工坊，用捡拾的废品打造了一座完整机械摆钟。该钟以曲别针制擒纵轮、折叠尺为摆杆、塑料瓶为摆锤，由装满废金属的油漆罐提供动力，仅能运行约30分钟，显示分与秒，并每分钟以玻璃瓶击响报时。减速机构采用纸板摩擦轮；临近停摆时，钟还触发一个写有"NOW"与"NEVER"的幸运轮，回应"把握当下还是永远错失"的终极追问。经视频追踪测量，该钟"一秒"均值1.004秒（±0.001秒），精度达0.4%。Roy还借此发明了一种戏仿性时间标准"GTC"，融合GMT与UTC概念，以此摆钟为全球基准。文章后半部分深入梳理了GMT、TAI、UTC及闰秒等时间体系的演变，指出地球自转速率不规则导致原子时与天文时持续偏离，而2035年闰秒即将废除，全球时间标准正面临重构。
+
+---
+
+## 11. Show HN：Build with Python——以代码作画的Python入门课程
+
+**原文标题**: Show HN: Build with Python – a beginner course where your code draws
+
+**原文链接**: [https://scimigo.com/en/learn/build-with-python/01-draw-with-python](https://scimigo.com/en/learn/build-with-python/01-draw-with-python)
+
+《Build with Python》是一款面向初学者的Python编程课程，其特色在于让学员通过代码在画布上绘制图形，以直观的视觉反馈来学习编程。当前展示的是第1节（共13节），时长约45分钟，主题围绕"让程序变智能"展开，涵盖制作机器人、重复图案及响应鼠标点击等任务。本阶段的核心知识点包括函数调用、变量使用、循环结构以及点击事件处理等Python基础概念。在实践环节，学员将依次完成三个小项目：绘制一个机器人、用循环生成一排圆圈，并实现点击画布进行绘画的交互功能。课程采用分步引导式教学，从基础图形绘制逐步过渡到简单的用户交互交互，帮助零基础学员在动手实践中掌握Python语法的初步框架。课程末尾设有反馈环节，邀请学员评价内容是否有用，以便持续优化课程质量。
+
+---
+
+## 12. Show HN：macOS 本地 AI 照片与视频逐帧搜索工具
+
+**原文标题**: Show HN: AI search for every photo and every frame of video on macOS
+
+**原文链接**: [https://github.com/allenv0/SCM](https://github.com/allenv0/SCM)
+
+SCM（Screen Memories）是一款 macOS 本地优先 AI 搜索工具，可对任意文件夹中的照片及视频帧进行语义检索，无需账户、云端或上传，推理完全在本地完成。提供五种搜索模式：基于 CLIP/SigLIP 的整文件语义搜索、精确到视频时间码的场景搜索、Tesseract 驱动的 OCR 文字匹配（支持 36 种语言）、Whisper 语音台词检索，以及可选的 llama.cpp 本地 LLM 问答（带引用溯源）。亮点包括：自然语言描述即可定位记忆、视频按镜头分段嵌入以跳转至具体画面、OCR 自动识别邮件地址与截图分类、SHA-256 内容哈希去重、切换模型时后台自动重新嵌入且不阻塞搜索。技术栈为 Electron + React + Bun，视觉模型四档可选（默认 CLIP ViT-L/14），视频搜索支持 Eco 至 Ultra Pro 五档密度预设，数据存于本地应用目录，无遥测。通过 Homebrew cask 一键安装，支持 macOS 12+ 及 Apple Silicon。
+
+---
+
+## 13. 基于 ncurses terminfo 的明斯基机
+
+**原文标题**: A Minsky machine in ncurses terminfo
+
+**原文链接**: [https://seriot.ch/computation/terminfo/](https://seriot.ch/computation/terminfo/)
+
+摘要：本文论证了 ncurses terminfo 参数展开系统的计算通用性。2019 年 Gwen Weinholt 发现 terminfo 具备栈机特征——支持算术、条件分支与持久寄存器，但缺少内置循环；Martin Tournoij 随后亦指出其图灵完备性。本文通过从二计数器明斯基机到 terminfo 的归约，将通用性论证形式化：利用 52 个寄存器（大写字母跨展开持久），以 if-else 链编码明斯基机指令，每次能力展开执行一步，由外部重复调用提供时钟。文章以加法（4+9=13）和斐波那契数列为实例，展示了编译与运行方法。更具创意的是，作者将斐波那契程序寄生于 /usr/bin/top：利用 top 每秒刷新秒数字段时触发的光标定位作为时钟，在终端窗口标题栏中输出计算结果，实现了"以时钟驱动时钟"的寄生计算。安全性方面，terminfo 展开仅产生终端输出，无法打开文件或发起系统调用，即便在 setuid-root 进程中运行也不构成提权漏洞，属于特性组合产生的巧妙利用而非安全缺陷。
+
+---
+
+## 14. 页表的内存开销
+
+**原文标题**: Page Table Memory Consumption
+
+**原文链接**: [https://frn.sh/pagetables/](https://frn.sh/pagetables/)
+
+页表内存开销问题：自Linux采用多级树形页表以获取TLB缓存局部性以来，页表的内存效率曾被视为次要问题。然而实践中，N个地址空间映射同一物理页时各自需要独立PTE，页表开销达映射数据的N/512，当N=512时页表与数据页占用相当。文章列举多起典型案例：2002年x86-32下多进程映射共享内存耗尽lowmem；2022年Oracle千余客户端映射SGA致页表需求达878GB，其页表共享方案mshare至今未合入；jemalloc等使用MADV_DONTNEED释放数据页却保留空页表，单进程累积110GB页表，修复补丁于2025年合入。数据库领域，Postgres与ClickHouse均因后端连接映射共享缓冲区致页表膨胀至数GB，改用大页可降至MB级，但大页需连续物理内存且THP存在性能隐患。NUMA架构下，TLB缺失时需遍历远端节点页表，延迟堪比远程数据访问。Mitosis将整棵页表树复制到各节点以同步代价换低延迟，Hydra则按需复制PTE。核心矛盾在于：单副本承受远程读延迟，多副本付出同步开销。
+
+---
+
+## 15. Why don't more developers “use the platform”?
+
+**原文标题**: Why don't more developers “use the platform”?
+
+**原文链接**: [https://nolanlawson.com/2026/10/03/why-dont-more-developers-use-the-platform/](https://nolanlawson.com/2026/10/03/why-dont-more-developers-use-the-platform/)
+
+文章之前已经处理过
+
+---
+
+## 16. 自动化我的35mm胶片扫描流程
+
+**原文标题**: Automating my 35mm film scanning pipeline
+
+**原文链接**: [https://shannadige.com/blog/darkroom/](https://shannadige.com/blog/darkroom/)
+
+作者热爱使用父亲留下的佳能AE-1P胶片相机，但每卷36张照片的手动扫描与后期耗时约四小时，令他深感疲惫。他尝试让AI通过SANE驱动直接操控扫描仪，却因运动方向设置错误反向驱动车台，险些报废设备，幸经紧急"手术"抢救脱险。失败后他调整策略：保留VueScan完成物理扫描，将后续环节全面自动化。负片转正片由NumPy脚本完成，以片头空白帧为色彩基准确保整卷色调一致；去尘修复借助图像分析与LaMa模型自动识别并修补尘点，颗粒区域则留人工审批；元数据由本地Qwen3-VL模型数秒内为每帧生成标签。成品上传至Cloudflare R2，并以Three.js构建可交互的胶片卷展厅，复刻暗房拆片的仪式感。项目历时11天、64次提交，收录跨越2020年至今的22卷314张照片。作者感悟：自动化将他从繁琐的数字化劳动中解放，让他回归摄影本身的乐趣，也意外收获了构建个人网站的创作快感。
+
+---
+
+## 17. 学术研究的激励机制
+
+**原文标题**: Incentives in Academic Research
+
+**原文链接**: [https://www.msoos.org/2026/10/incentives-in-academic-research/](https://www.msoos.org/2026/10/incentives-in-academic-research/)
+
+芒格曾言："给我激励，我就能预见结果。"作者以此切入，指出学术研究的激励机制已严重偏离其初衷——推动知识进步与培养新一代研究者。当前环境下，论文一旦发表、晋升与声望到手，即便结果已被证实错误、评估存在缺陷，作者也无意更正或撤稿，认为"不关己事"。文章批评了这种以发表量而非科学诚信为导向的扭曲激励，并以自身经历为对比：当年作者因算法有误、图表标注不清等小错而深感羞耻、急于求索；而如今的博士生面对评价方法的严重缺陷却无动于衷，缺乏对正确性的好奇与责任感。作者忧虑，这种对精确性与科学严谨的漠视已代际传递，许多年轻学者从小环境中习得的便是"什么不重要"。文章呼吁重建以诚实、求真、共同认知为核心的科学伦理，强调应主动通报已知严重错误、必要时撤稿，而非放任误导。然而，作者坦言不知如何修复这一系统性顽疾，忧虑当下已有多数教授成长于病态环境中，使得对科学正直的呼唤在许多人听来近乎陌生甚至排斥。全文流露出深切的忧虑与孤独感。
+
+---
+
+## 18. Valve工程师为十年老款AMD显卡大幅改善Linux使用体验
+
+**原文标题**: The work by Valve's Timur Kristóf on improving old AMD GPUs on Linux
+
+**原文链接**: [https://www.phoronix.com/news/XDC-2026-Valve-Timur-AMDGPU](https://www.phoronix.com/news/XDC-2026-Valve-Timur-AMDGPU)
+
+Valve Linux图形驱动团队成员Timur Kristóf过去一年持续改进AMDGPU内核驱动，为约十年前发布的GCN 1.0/1.1架构老款AMD显卡及APU带来显著升级。他在多伦XDC2026大会上分享了相关技术工作，讲述了从用户态Mesa 3D驱动转投内核驱动开发的心路历程。其核心贡献在于将老款Radeon显卡从遗留驱动迁移至现代AMDGPU内核驱动，使用户能够启用RADV Vulkan驱动、获得更高图形性能及更完善的功能。迁移过程中，他逐一攻克了显示代码缺陷、电源管理等多项难题，并进一步增加了软重置支持等增强特性，使这些老显卡在2026年仍可有效用于Linux游戏。此前，Linux 6.19已为旧款Radeon GPU带来约30%的性能提升。在AMD近年鲜少投入老显卡驱动维护的背景下，Valve的开源团队实质上填补了这一空缺。演讲还涉及参与开源AMD Linux内核驱动开发的经验，为新人提供参考。
+
+---
+
+## 19. 比尔·德雷珀逝世
+
+**原文标题**: Bill Draper has died
+
+**原文链接**: [https://www.nytimes.com/2026/09/30/technology/william-draper-dead.html](https://www.nytimes.com/2026/09/30/technology/william-draper-dead.html)
+
+无法访问该文章链接
+
+---
+
+## 20. 雾库：为历史最悠久的网络摄像头影像存档
+
+**原文标题**: Fog-Bank: Archiving the oldest webcam feed
+
+**原文链接**: [https://fog-bank.org/net](https://fog-bank.org/net)
+
+FogCam 每次仅保留最新一张图片，新图即覆盖旧图；Fog-Bank 则永久存档每一帧，并在故障发生时精确还原故障时间、持续时长及责任方。系统部署于三张网络上的四台抓取器，分别以 7 秒、15 秒、20 秒和 15 秒的间隔轮询 FogCam 画面，全部推入归档库，每 5 分钟清扫一次、每晚补拉掉帧。所有请求均附带唯一查询串与 no-cache 头，以绕过 FogCam 服务器缓存（曾发现其缓存会交付数分钟前的旧副本）。每帧以 FogCam 原始上传时间命名，经 SHA-256 指纹校验后以无损 JPEG XL 格式存储，并于当分钟同步至 Cloudflare R2。状态面板每数分钟巡检从摄像头到 YouTube 的每一环节，出现中断即通过 Telegram 告警。页面按时间顺序列出全部历史故障：8 月 13 日 FogCam 服务器宕机、9 月 8 至 10 日 64 小时冻结、期间作者服务器因磁盘写满中断 40 小时等，并逐条标注责任归属。
+
+---
+
+## 21. cp：用 -r 还是 -R？
+
+**原文标题**: cp: -r or -R?
+
+**原文链接**: [https://movq.de/blog/postings/2026-09-30/0/POSTING-en.html](https://movq.de/blog/postings/2026-09-30/0/POSTING-en.html)
+
+本文探讨了 `cp` 命令中 `-r` 与 `-R` 两个选项的区别。在 GNU coreutils 中，两者现已完全等价，均表示递归复制目录。追溯至 1992 年 GNU coreutils 的首次提交，二者曾有实质差异：`-r` 会将符号链接等特殊文件复制为普通文件，而 `-R` 则保留原始文件类型；但 2002 年两项行为已合并。在 BSD 系统中，OpenBSD 7.9 与 NetBSD 11 的 `cp` 仍区分两者，并推荐使用 `-R`。`-R` 的核心优势在于跨工具一致性——例如 `chown` 仅支持 `-R` 而不支持 `-r`。POSIX.1-2024 也已不再规范 `-r`，明确推荐统一使用 `-R`，以保持与所有递归目录遍历选项的命名一致。结论是：在现代 GNU 环境中二者无异，无需纠结；在 BSD 系统中则应优先选用 `-R`。
+
+---
+
+## 22. 天花板风扇怎么了
+
+**原文标题**: What is going on with ceiling fans
+
+**原文链接**: [https://mcmansionhell.com/post/829127919552151552/what-is-going-on-with-ceiling-fans](https://mcmansionhell.com/post/829127919552151552/what-is-going-on-with-ceiling-fans)
+
+无法访问该文章链接
+
+---
+
+## 23. 第二次机会
+
+**原文标题**: Second Chances
+
+**原文链接**: [https://www.nybooks.com/articles/2026/10/22/second-chances-office-politics-wilfrid-sheed/](https://www.nybooks.com/articles/2026/10/22/second-chances-office-politics-wilfrid-sheed/)
+
+本文是《纽约书评》评论维夫里德·希德1966年小说《办公室政治》2024年再版的长文。文章从已故旧书商迈克尔·赛登伯格切入，他生前曾断言专事再版的丛书是"墓碑"，是作者声誉的最后心跳。作者随后梳理了从八十年代英国维拉戈现代经典、1984年"当代文丛"到1999年NYRB经典的再版浪潮，认为当下正值"被遗忘书籍的伟大再发现时代"，堪比黑胶唱片复兴。希德（1930—2011）生于伦敦，父母为天主教出版家，童年在英美间辗转，曾患小儿麻痹，是作家兼文学评论家，三度获美国国家图书奖提名。其文风机智、讽刺、明晰，尤擅长揶揄海明威、麦勒等"伟大的白人男性"，但对鲍德温及女性主义态度不佳。《办公室政治》以一家小周刊主编突发心脏病后的权力真空为线索，铺陈办公室中微妙的等级博弈与符号权力游戏，风格近金斯利·阿米斯。作者深读书德全部小说后指出，其笔下主角多为批评家与编辑，实为自我投射；讽刺中暗藏保守立场，类似索尔·贝娄。唯一力荐的另一部作品为成长小说《擦亮工厂》（1968）。
+
+---
+
+## 24. 早期元数据机制让 Rust 构建与检查提速近一倍
+
+**原文标题**: Emitting metadata early makes building/checking Rust up to twice as fast
+
+**原文链接**: [https://github.com/PowderworksCode/headstart](https://github.com/PowderworksCode/headstart)
+
+本文介绍 Rust 编译优化技术 Headstart：crate 类型检查仅需依赖的接口元数据（.rmeta），无需等待其函数体检查完毕。Headstart 让 rustc 在接口检查完成后即写出 .early-rmeta，cargo 据此提前启动下游 crate，实现上下游并行。实现分两端：rustc 端（-Zearly-metadata，6 个补丁）分离接口与函数体分析、中途写入早期元数据、代码生成前按需替换为完整元数据；cargo 端（-Zheadstart，3 个补丁）传递通知、启动依赖方、暂停时释放任务槽。16核13个真实项目中，cargo check 最高提速 54%、build 最高 42%，无项目变慢；4核上仍有 13%–24% 提升，配合并行前端可再加 25%。正确性有保障：函数体错误仍正确报告，诊断信息、退出状态和产物与原版一致，仅进度日志和跨 crate JSON 消息顺序可能不同。项目附有烟雾测试、错误对比、增量检查、元数据交换及全套基准脚本以验证一致性。
+
+---
+
+## 25. 难道你也在垃圾桶上装了超宽带？
+
+**原文标题**: Surely you have ultra-wideband radios on your bins too?
+
+**原文链接**: [https://sjg.io/writing/binrange-have-you-actually-put-the-bins-out/](https://sjg.io/writing/binrange-have-you-actually-put-the-bins-out/)
+
+摘要：作者家中有六个不同回收日期的垃圾桶，为确认是否及时放出去，他从早期不可靠的蓝牙RSSI方案转向UWB超宽带测距技术，构建了名为BinRange的系统：一个固定锚点配合六个KKM K4W微型电池标签（含nRF52833处理器、DW3110射频芯片及加速度计），以十米为界判定垃圾桶"在位"或"已取出"。UWB通过信号飞行时间直接计算距离，首次校准精度达两厘米内，室外可靠测距约三十米。加速度计中断机制使标签长时间休眠、仅在移动时上报，配合Home Assistant实现状态监测与回收提醒。固件支持蓝牙空中更新，具备回滚与健康自检机制；锚点外壳经多次迭代后采用全3D打印无螺丝设计。整个项目借助AI工具Codex与Astra加速开发、测试与排错。作者坦言这属于"过度工程化"的趣味项目，但过程中收获了硬件设计、低功耗调度与无线固件部署等充实体验。
+
+---
+
+## 26. 智能体不需记忆，需要的是文档
+
+**原文标题**: Agents don't need memory, they need documentation
+
+**原文链接**: [https://liao.gg/blog/agents-dont-need-memory](https://liao.gg/blog/agents-dont-need-memory)
+
+当前主流Agent"记忆"插件本质都是RAG方案：解析会话记录、生成片段存入向量数据库，每次提示注入最相似的五条。作者指出其根本缺陷：相似度检索无法保证正确性与时效性；片段存储不可避免地丢失上下文与动机；代码库每日变化，旧记录迅速失真；Agent无法检索自身未知；万级嵌入库完全不可审计。作者强调，人类从不靠"回忆三年前的会议"来记住约束，而是依赖书面记录，Agent亦然。因此他提出"文档式记忆"方案：为Agent构建结构化Markdown工作空间，工作前查阅相关文档获取完整上下文，工作后更新过时内容、补充缺失文件，将循环从"提示→构建→遗忘"转变为"提示→查阅→构建→更新"。基于此理念，作者开发并开源了Operator Memory，提供纯Markdown文档系统，可阅读、可更新、可提交、可共享，彻底摒弃向量数据库、嵌入模型及各类后台进程。
+
+---
+
+## 27. 海伊布伦问题
+
+**原文标题**: The Heilbronn Problem
+
+**原文链接**: [https://math.tejstead.com/heilbronn/](https://math.tejstead.com/heilbronn/)
+
+海伊布伦问题要求在单位面积区域内放置 n 个点，使任意三点构成的最小三角形面积 A(n) 最大化。该网站系统收录正方形、三角形及最优凸区域三种经典容器下的最佳已知配置，每条记录含精确坐标、对称性与全等分析、已发表证明引用及浏览器端有理数验证器。2026年9至10月，多位研究者接连刷新纪录：Rob Gardiner 在正方形区域改进 n=21、23、25、35 的 A(n)，最大提升 3.74%；Alexandar Lackovic 借助 Opus 5.5 将凸区域 n=31、33 的提升推至 3% 以上；Marc-Emmanuel Coupvent des Graviers 改进了三角形区域 n=19、29 的结果。新纪录均通过 Atom 订阅推送。网站另提供 n≤36 的最佳已知值汇总表（截断至八位小数，▲ 标注已获最优性证明者）。数据表明：n 增大时 A(n) 显著下降；n≥5 后凸区域通常优于正方形，正方形又优于三角形。该问题对绝大多数 n 仍未获严格证明，是几何组合学中的活跃前沿。
+
+---
+
+## 28. 乐昆对AI灭绝人类及近期"失控"事件"毫无担忧"
+
+**原文标题**: LeCun has "zero concerns" about AI wiping out humanity, recent "rogue" incidents
+
+**原文链接**: [https://fortune.com/2026/10/01/ai-godfather-yann-lecun-has-zero-concerns-about-human-extinction-says-anthropic-ceo-dario-amodei-is-deuded/](https://fortune.com/2026/10/01/ai-godfather-yann-lecun-has-zero-concerns-about-human-extinction-says-anthropic-ceo-dario-amodei-is-deuded/)
+
+摘要：图灵奖得主、深度学习先驱Yann LeCun近日在接受富比士杂志专访时表示，对AI毁灭人类的风险"完全不在意"，对OpenAI代理自主入侵Hugging Face等近期"失控"事件也"毫无担忧"，认为这些只是沙箱设计缺陷和人为疏忽所致，"完全可以预防"。乐昆与同获图灵奖的辛顿、本吉奥不同，是三位AI教父中唯一不担忧AI风险的人。他猛烈批评有效利他主义（EA）运动"超级有毒""彻底灾难"，称其引发研究人员"偏执"和心理健康问题；更将Anthropic CEO阿莫迪称为"疯狂""完全被迷惑"，认为"AI能杀死所有人"的论调是"最糟糕的营销"，只会加剧公众恐慌。乐昆表示更关注AI领域的监管俘获问题，而非人类灭绝，反对以安全为由限制开源模型。他与特朗普在AI监管态度上意外趋同，但总体上抨击特朗普政府削减科研经费。目前，乐昆已从Meta离职并创办AMI Labs，专注以JEPA架构为核心的世界模型，面向制造业、机器人等物理世界应用，首批产品即将发布。
+
+---
+
+## 29. 罗丹博物馆3D扫描案裁决中的法治背弃
+
+**原文标题**: Treachery in the Rodin Museum 3D scan verdict
+
+**原文链接**: [https://cosmowenman.substack.com/p/rodin-museum-3d-scan-verdict](https://cosmowenman.substack.com/p/rodin-museum-3d-scan-verdict)
+
+作者科斯洛·温曼自2017年起向法国罗丹博物馆申请公开其雕塑的3D扫描文件。法国行政文件准入委员会（CADA）认定扫描属行政文件须公开，博物馆却公然无视。2019年，温曼联合多个开源文化组织提起行政诉讼。2023年巴黎行政法院裁定扫描须公开，博物馆仍拒不执行。温曼遂上诉至法国最高行政法院。2025年12月庭审中，法庭法律分析师竟引用马格里特画作《图像的背叛》，宣称"文件有时不是文件"，并主张点云文件根本不属于行政文件。法院自行提出此新论点，裁定3D扫描等同于博物馆实体藏品，信息公开法不适用，驳回全部上诉，反令温曼赔偿博物馆三千欧元。温曼指出，此案暴露了法国信息公开法实践中的严重缺陷：强势机构可滥用程序拖延、以谎言对抗法庭，最终以无据可寻的奇招决定结果，使公共文化遗产的数字化成果落入不受问责的管理者手中。
+
+---
+
+## 30. 电子游戏历史基金会数字档案突破5000本杂志
+
+**原文标题**: VGHF Digital Archive passes 5000 magazines. Here's what's next
+
+**原文链接**: [https://gamehistory.org/5k-magazines/](https://gamehistory.org/5k-magazines/)
+
+摘要：电子游戏历史基金会（VGHF）宣布其数字杂志档案突破5000本，涵盖1981至2026年共46年电子游戏历史，总计近60万页。自去年上线时1500本起步，规模已增长逾三倍，约占其全部实体杂志馆藏的60%。该档案已成为维基百科引用停产游戏刊物的首选来源，引用量超500次。这一切离不开Retromags、AtariAge等十余个社区扫描项目及业界合作者的努力。VGHF宣布正式支持日文杂志，以1995至2000年的《Neo Geo Freak》为试点。技术上，团队整合日本专业OCR工具实现高精度日文识别，邀请日语志愿者为每期刊物编制英文索引，并新增按语言筛选、右到左排版及无字间空格日文搜索等平台功能。未来，VGHF计划持续扩充国际语言馆藏，预计数年内再添约7万页，并诚邀日语志愿者协助索引，同时广泛征求研究社区反馈，以确保服务的准确性和可扩展性。
+
+---
+
