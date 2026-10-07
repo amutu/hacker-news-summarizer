@@ -1,0 +1,304 @@
+# Hacker News 热门文章摘要 (2026-10-08)
+
+这是今日 [Hacker News](https://news.ycombinator.com/) 上最热门的文章摘要。
+
+## 1. Claude Haiku 5.5 发布：Anthropic 最轻量快速模型登场，配套降价与 API 额度同步推出
+
+**原文标题**: Claude Haiku 5.5
+
+**原文链接**: [https://www.anthropic.com/claude-haiku-5-5](https://www.anthropic.com/claude-haiku-5-5)
+
+Anthropic 正式发布 Claude Haiku 5.5，这是其迄今最便宜、最快的小型模型，面向高流量和成本敏感场景（摘要、分类、数据库查询等），亦可作为编码子代理配合 Opus/Sonnet 5.5 使用。价格方面，10 万 token 以内请求较 4.5 版降价 90%，整体成本降低约 75%。性能上，该模型在知识工作、计算机操作、多学科推理及编码等基准测试中均接近 Sonnet 5.5 水平，并首次为 Haiku 系列引入可调"努力级别"，用户可在成本与智能间灵活取舍。与此同时，Anthropic 宣布 Sonnet 5.5 缓存读取价格减半，使多数智能体任务成本降低约 20%；并为 Max 及 Team 订阅者新增每月 API 额度（最高 500 美元），鼓励构建智能体应用。安全层面，Haiku 5.5 在对齐评估上较 4.5 版显著改善，网络与生物安全护栏介于 Haiku 4.5 与 Sonnet 5.5 之间。该模型已上线 AWS、GCP、Azure 及 Anthropic 自有平台，SDK 同步新增计算机操作与浏览器使用支持。
+
+---
+
+## 2. Meta与微软削减员工Claude AI使用量，加速转向自研编程工具
+
+**原文标题**: Meta and Microsoft take steps to reduce employee usage of Claude AI
+
+**原文链接**: [https://www.rswebsols.com/news/meta-and-microsoft-take-steps-to-reduce-employee-usage-of-claude-ai/](https://www.rswebsols.com/news/meta-and-microsoft-take-steps-to-reduce-employee-usage-of-claude-ai/)
+
+摘要：据The Information 10月5日报道，Meta和微软正大幅缩减员工对Anthropic旗下Claude AI的使用，转而采用自研编程工具。微软此前预计内部Claude年支出超10亿美元，管理层下令削减后已下降逾三分之一；云和AI部门每人每月AI支出上限从10万美元降至约1万美元，部分工程师对此感到沮丧。然而，这并非意味着微软停止向客户提供Claude服务，企业平台上客户对Anthropic模型的支出仍在增长。Meta方面，Claude Code用户从今年初的约6万降至3万，主要因公司战略转向自研的MetaCode（超3万内部用户）和Muse Code（超6000用户），后者已于8月开展外部测试。值得注意的是，Meta在28天内仍向Claude Code投入超1.05亿美元，用户减少并不等于支出下降。安全层面，Cybersecurity News指出，切换编程助手并未消除风险，Claude Code曾存在命令执行和API密钥窃取漏洞，微软亦曾出现RoguePilot漏洞。尽管内部预算收紧，Anthropic年化收入仍达650亿美元，显示市场需求强劲。此举反映的不是合作终止，而是预算管控与竞争加剧并存。
+
+---
+
+## 3. 面向所有人的 GPT-6 与智能交互界面
+
+**原文标题**: GPT‑6 and Intelligent UI for everyone
+
+**原文链接**: [https://openai.com/index/gpt-6-for-everyone/](https://openai.com/index/gpt-6-for-everyone/)
+
+无法访问该文章链接
+
+---
+
+## 4. Visa、万事达卡及多家大行因"反竞争"手续费遭集体诉讼
+
+**原文标题**: Visa, Mastercard, Major Banks Facing New Litigation over 'Anticompetitive' Fees
+
+**原文链接**: [https://www.classaction.org/news/visa-mastercard-major-banks-facing-new-litigation-over-anticompetitive-merchant-credit-card-transaction-fees](https://www.classaction.org/news/visa-mastercard-major-banks-facing-new-litigation-over-anticompetitive-merchant-credit-card-transaction-fees)
+
+2026年9月30日，美国加利福尼亚州一家披萨店在纽约联邦法院提起集体诉讼，指控Visa、万事达卡及花旗、富国、美国银行、Capital One、摩根大通等十余家银行及支付公司合谋哄抬商家信用卡交易手续费。134页起诉书称，被告数十年来设定统一的交换费率并构建"反竞争规则网"，强制商家接受所有Visa和万事达卡，禁止商家按卡种差异化收费，彻底消除了银行间的费率竞争动力，导致商家每年为此支付逾千亿美元"垄断税"。尽管2019年已有超50亿美元和解金，但仅赔偿2019年1月24日前的损失，此后商家未获任何补偿。本案依据《谢尔曼反垄断法》，旨在代表自2019年1月25日起在美国接受Visa或万事达卡的全部商家，追溯并阻止持续至今的反竞争行为。
+
+---
+
+## 5. 数学启示录
+
+**原文标题**: The Mathocalypse
+
+**原文链接**: [https://scottaaronson.blog/?p=10169](https://scottaaronson.blog/?p=10169)
+
+摘要：2026年10月，OpenAI一夜发布372项重大数学与理论计算机科学证明结果，引发学界震动。核心突破包括Subhash Khot的唯一博弈猜想（UGC）证明，以及L=BPL确定性去随机化、整数乘法突破O(n log n)壁垒、量子查询复杂度近四次方分离、一般图最大匹配随机近线性时间算法、有理数多项式方程不可判定性等里程碑式成果，部分还触及黎曼猜想等千年难题。然而这些证明大多晦涩难懂，人类尚无法独立阅读理解，一场"消化竞赛"刚刚拉开帷幕。作者妻子、复杂性理论家Dana Moshkovitz毕生追求UGC证明，如今被AI一夜攻克，感慨"像迷幻药写成的文字"，但也欣慰猜想终于被证实为真。Anthropic则采用另一模式——邀请人类数学家消化后再公开。文章指出，P≠NP等最核心难题仍未解决，AI"仅"在约8000道题上解出5%的长期公开问题，每题耗时约3小时。作者以"原始人偶遇度假 resort"比喻数学人的处境，既感慨又不失乐观，呼吁学界继续传承探索精神。文末还提及Scott Alexander向Steven Pinker发出"决斗"信，并带着孩子重温《终结者2》。
+
+---
+
+## 6. Docker Agent（Docker 智能代理）
+
+**原文标题**: Docker Agent
+
+**原文链接**: [https://github.com/docker/docker-agent](https://github.com/docker/docker-agent)
+
+Docker Agent 是 Docker 官方推出的 CLI 插件（通过 `docker agent` 调用），允许用户以声明式 YAML 配置快速创建、运行和共享 AI 智能代理，无需编写代码。其核心特性包括：多代理协作架构，可构建专业化代理团队并自动委派任务；丰富的工具生态，内置工具支持任意 MCP 服务器（本地、远程或基于 Docker）；AI 提供商无关，兼容 OpenAI、Anthropic、Gemini、AWS Bedrock 等主流平台，也支持 Docker Model Runner 本地模型；内置思维链（think）、待办（todo）和记忆（memory）等高级推理工具；支持可插拔 RAG 检索，涵盖 BM25、向量和混合搜索。代理可打包推送至任意 OCI 镜像仓库，实现跨环境分发与复用。安装方面，Docker Desktop 4.63+ 已预装该插件，此外也支持 Homebrew 及 GitHub 二进制发布。用户只需设置相应 API 密钥（如 OPENAI_API_KEY）即可快速启动。此外，项目提供交互式生成代理（`docker agent new`）、TUI 界面及 MCP 模式，并设有 Docker 社区 Slack 频道供交流。
+
+---
+
+## 7. 条件上提，循环下沉：编程惯用法、其代数与边界
+
+**原文标题**: Push Ifs Up and Fors Down: The Idiom, Its Algebra, and Its Limits
+
+**原文链接**: [https://debasishg.github.io/blog/push-ifs-up-fors-down/](https://debasishg.github.io/blog/push-ifs-up-fors-down/)
+
+本文探讨"条件上提、循环下沉"这一编程原则的广义应用与形式化基础。该原则源自TigerBeetle风格指南及matklad的博客：将条件判断上移至调用者，使被调函数输入类型收窄、内部分支消除；将循环下沉至批处理函数内部，使热循环无分支、利于向量化；二者可组合为先过滤再批量处理。文章将此原则推广至多个领域。在数据库优化中，对应"选择与投影尽早执行、连接延后"的策略，以及从行式执行转向向量化批处理。在范畴论中，条件上提等价于将定义域限制为子对象（用Walrus替代Option<Walrus>）；Option对应共积1+Walrus，消除条件即拆解共积上的函数为各分量。在代数层面，"先过滤后映射"的合法重写为filter p·map f = map f·filter(p∘f)，其推导依赖catMaybes的自然性；仅当p∘f可简化为对输入的廉价谓词时，重写才带来实际收益。文章强调所有重写均有约束：条件外提循环须满足循环不变量，选择下推须仅引用单侧列，过滤与映射的交换须保证变换后谓词仍廉价。归根结底，代数结构决定了合法重写的边界。
+
+---
+
+## 8. Chrome 正式支持 JPEG XL 图片格式
+
+**原文标题**: Shipping JPEG XL in Chrome
+
+**原文链接**: [https://developer.chrome.com/blog/jpeg-xl-in-chrome](https://developer.chrome.com/blog/jpeg-xl-in-chrome)
+
+自 Chrome 155 起，浏览器正式支持 JPEG XL（.jxl）图片解码。该格式相比 JPEG 压缩率提升 30%–50%，并支持无损压缩、内置 HDR 及无损 JPEG 转码。官方建议同时采用 AVIF 与 JPEG XL，后者尤其适用于高保真摄影图像和渐进式解码场景。安全方面，Chrome 采用纯 Rust 编写的 jxl-rs 解码器取代传统 C++ 方案，从根源消除越界读取、堆溢出等漏洞。为兼顾性能，团队借助 Rust 的 target_feature 特性与仿 Highway 库的 SIMD 抽象层 jxl_simd，在几乎不引入 unsafe 代码的前提下实现多平台硬件加速，性能与 C++ 参考实现相当。经模糊测试与 AI 代码审核验证，全程未发现内存安全缺陷。该功能的推出源于开发者在 Interop 流程中的持续推动，JPEG XL 连续多年为热门提案；团队亦参与 Interop 2026 JPEG XL 调查，确保跨浏览器测试覆盖与互操作性。官方鼓励开发者、内容创作者尽早将 .jxl 纳入图片流水线。
+
+---
+
+## 9. 提交HN：Bigwords.page——一个链接，让任意屏幕变告示
+
+**原文标题**: Show HN: Bigwords.page – Turn any screen into a sign. The URL is the app
+
+**原文链接**: [https://bigwords.page/](https://bigwords.page/)
+
+摘要：Bigwords.page 是一个纯前端工具，用户只需构造 URL 即可在任何屏幕上全屏显示文字告示、计时器或轮播幻灯片。所有内容编码在 URL 片段（fragment）中，浏览器不会将其发送至服务器，无需注册、无需安装应用、无后端存储，天然保障隐私。核心功能包括：文字自动适配任意屏幕尺寸；支持 Markdown 格式（加粗、斜体、标题、换行）；用"||"分隔多页幻灯片并定时轮播；插入倒计时（可设定目标日期或持续时长）；在浏览器本地生成二维码（WiFi、链接、电话等）及嵌入背景图片。典型场景涵盖：接机欢迎牌、课堂与考试计时器、咖啡馆 WiFi 密码屏、会议室"会议进行中"提示、登机口信息、新闻滚动条、生日祝福、录音提示等。每个示例卡片本身即为可直接使用的完整链接，用户可一键打开后进一步编辑定制。该工具兼容所有主流浏览器，手机、平板、电脑、智能电视均可使用，真正做到"链接即应用"。
+
+---
+
+## 10. 纳维-斯托克斯：译失其真
+
+**原文标题**: Navier–Stokes Lost in Translation
+
+**原文链接**: [https://arxiv.org/abs/2610.08144](https://arxiv.org/abs/2610.08144)
+
+本文探讨AI自动形式化在数学证明验证中的根本局限。当前，自动形式化被广泛用于验证包括AI生成内容在内的数学文本，如OpenAI宣称的纳维-斯托克斯方程解爆破证明。其流程为：AI将自然语言翻译为Lean等形式语言，再由Lean机械验证。然而，本文论证指出，这一流程无法保证原始自然语言论证的正确性，因为从自然语言到形式语言的翻译难以做到语义忠実。作者证明的核心数学结果为：解决数学自然语言文本中的歧义问题，其复杂度在可解性复杂度指标（SCI）/算术层级中趋于无穷（SCI=∞），即比停机问题（SCI=1）乃至任意可计算问题都更为困难。这意味着语义忠実的AI自动形式化从理论上不可实现。为说明该结论的实际后果，文章列举了多个AI将自然语言语句与证明误译为Lean的案例，其中包括OpenAI宣称的纳维-斯托克斯爆破证明，指出其Lean形式化版本与原始自然语言证明在语义上并不一致。研究横跨偏微分方程分析、人工智能与数理逻辑三个领域。
+
+---
+
+## 11. 机器如何学会精密
+
+**原文标题**: How machines learned precision
+
+**原文链接**: [https://glinscott.github.io/how-machines-learned-precision/](https://glinscott.github.io/how-machines-learned-precision/)
+
+1870年代至十九世纪中叶，西方制造业逐步攻克精密加工难题。瓦特蒸汽机改用干密封后，汽缸须圆直无隙，传统锉削无法满足。威尔金森发明两端支撑的重型镗杆，将镗孔误差降至千分之一以下，精度提升约三十倍。车床滑架取代手工持刀，将切削力传入铸铁床身，有效抑制振动。基准制造方面，工匠发展出三平板互研法：三块粗平板反复涂色互研，利用"凸配凹可合、两凸两凹不合"的几何约束，从纯粗糙铸件中磨出真正基准面。莫兹利将刚性滑架与丝杠结合，利用螺旋展开几何——螺纹即圆柱面上的斜线——不依赖母本便车出首条精密丝杠，再以双丝杠取均值抵消残余误差。刨床随后将直面积加工成本降低百倍。惠特沃斯最终将检测精度推进至百万分之一英寸。全文揭示精密制造的核心逻辑：每项新精度皆依赖已有基准，而突破常来自"无中生有"的巧妙设计，精度由此环环相扣、螺旋上升。
+
+---
+
+## 12. 网页动态ASCII艺术
+
+**原文标题**: Animated ASCII Art for Web Pages
+
+**原文链接**: [https://ascii.rest/](https://ascii.rest/)
+
+本文展示了一个在网页上运行的动态ASCII（纯文本字符）艺术项目。页面以多帧文字序列构成动画，使用"·""•""●"等符号的疏密组合模拟画面的渐变与运动效果，呈现类似生物或角色的动态轮廓。界面提供"继续播放"按钮、GitHub源码链接及暗色模式切换选项，用户即使未开启动画也可选择观看。该项目属于创意编程与网页交互艺术范畴，核心特点在于完全依赖纯文本字符而非位图或矢量图形来构建视觉画面，无需加载图片资源即可在终端或浏览器中渲染流畅动画。这种形式兼具极客风格与低带宽优势，适合对性能敏感或追求简约复古体验的场景。通过字符帧的逐帧切换与滚动，开发者可在不依赖Canvas或SVG的情况下实现轻量级动态效果，同时保留文本可复制、可缩放、无障碍友好的特性。
+
+---
+
+## 13. Show HN：gtlds.fyi —— 全球拟申请新通用顶级域名（gTLD）一览
+
+**原文标题**: Show HN: gtlds.fyi – All the proposed new gTLDs
+
+**原文链接**: [https://gtlds.fyi/](https://gtlds.fyi/)
+
+本文是 Hacker News 社区的一篇展示帖，作者推出了名为 gtlds.fyi 的网站，该站点系统收录了目前所有向 ICANN（互联网名称与数字地址分配机构）提交申请的新通用顶级域名（gTLD），方便用户集中浏览和查询。gTLD 是互联网域名体系中除 .com、.org 等传统顶级域名之外的新型域名后缀，如 .app、.blog、.dev 等，自 2012 年 ICANN 开启新 gTLD 申请计划以来，全球已有数千个申请提案。gtlds.fyi 将这些拟新增的顶级域名申请信息加以整合呈现，为域名行业从业者、技术爱好者及普通网民提供了一个便捷的一站式查询入口，有助于了解全球域名生态系统的新动态与命名趋势。
+
+---
+
+## 14. 经典 Commodore 64 键帽复刻字体
+
+**原文标题**: A font recreated from photographs of classic Commodore 64 keycaps
+
+**原文链接**: [https://github.com/szabadkai/c64-keyboard-font/](https://github.com/szabadkai/c64-keyboard-font/)
+
+本文介绍了一款名为"C64 Keyboard"的开源字体，作者以自有的中欧版 Commodore 64 键盘为唯一参照，从键帽特写照片重建所有字符轮廓，经清理后统一比例。字体提供 TTF、OTF、Web 字体及完整压缩包，支持在线预览。内容涵盖大写字母、数字、标点、箭头、英镑及π符号，部分重音字母（含匈牙利字符）、f1–f12 功能键标签及全部 63 个 PETSCII 图形图例。小写输入以大写显示，还原印刷键帽图样而非屏幕位图。PETSCII 图例系重建轮廓，键位与编码依据《Commodore 64 终极参考》，原始照片未随包提供。1.112 版已移除旧版 U+E000 及 U+E020–E028 图例，升级用户需替换文件并重启应用。许可采用 CC0 1.0，涵盖字体文件、矢量轮廓、构建脚本、预览页与文档，可自由商用、修改和再分发，无需署名；但不涵盖原始照片及第三方商标，本字体为独立非官方项目，未经授权关联。
+
+---
+
+## 15. ICANN公布2026年新通用顶级域名计划申请信息
+
+**原文标题**: ICANN Reveals 2026 Round Applications for New Generic Top-Level Domains
+
+**原文链接**: [https://www.icann.org/en/announcements/details/icann-reveals-2026-round-applications-for-new-generic-top-level-domains-07-10-2026-en](https://www.icann.org/en/announcements/details/icann-reveals-2026-round-applications-for-new-generic-top-level-domains-07-10-2026-en)
+
+ICANN公布了2026年新通用顶级域名（gTLD）计划"揭晓日"数据。申请窗口为2026年4月30日至8月12日，共收到1615份申请，其中品牌申请333份、社区申请16份、地理名称申请15份、申请人支持计划申请51份。按地区分布，北美864份、欧洲506份、亚洲/澳洲/太平洋218份、非洲16份、拉美11份；另有21份国际化域名申请和9份变体申请。数据截至10月7日，最终名单将于"字符串确认日"公布。后续关键节点包括：替换期（10月8日至21日），申请人可在此窗口将主申请字符串更换为备选字符串；字符串确认日（11月17日），公布最终字符串列表，同时启动社区意见与异议期（至2027年3月16日），并开放最后10天退费窗口；ICANN年终闭馆（12月19日至次年1月4日）；优先级抽签将于2027年上半年举行。ICANN总裁Kurtis Lindqvist表示，"揭晓日"是域名系统下次扩展的重要里程碑，体现了全球机构在互联网身份建设方面的创新，ICANN将继续以公平、透明、可预期的方式推进评估流程。
+
+---
+
+## 16. 2026年诺贝尔化学奖授予卡甘与相泽贤藏
+
+**原文标题**: Nobel Prize in Chemistry 2026 to Henri B. Kagan and Kenso Soai
+
+**原文链接**: [https://www.nobelprize.org/prizes/chemistry/2026/press-release/](https://www.nobelprize.org/prizes/chemistry/2026/press-release/)
+
+2026年诺贝尔化学奖授予法国巴黎-南大学亨利·卡甘与日本东京理科大学相泽贤藏，以表彰他们在不对称有机合成中发现非线性效应与自催化现象的突出贡献。生命体内的氨基酸等分子存在互为镜像的两种手性构型，但生物仅使用其中一种，这种"均一单构型"如何自发产生，是困扰化学界逾百年的谜题。卡甘于1986年率先取得突破，发现了一种操控化学反应的新策略，可产生远超此前认知的手性超额，为迈向均一单构型奠定关键基础。相泽贤藏在此基础上更进一步，1995年发表核心论文，设计出首个具备均一单构型潜力的化学反应，并于2003年最终实现目标——在反应中仅生成单一镜像分子，除生命体系外，此前无人达成这一成就。二人的发现从根本上阐明了化学体系中手性自发生成的机制，对制药等需精准合成特定手性分子的领域具有深远的理论与应用价值。奖金共1200万瑞典克朗，由两位得主均分。
+
+---
+
+## 17. 木胶带（2004）
+
+**原文标题**: Wood Tape (2004)
+
+**原文链接**: [http://gamesbyemail.com/WoodTape/Default.htm](http://gamesbyemail.com/WoodTape/Default.htm)
+
+四岁的儿子Guy让父亲周末带他去五金店买"木胶带"。父亲欣然应允，并在购物全程几乎不插手，让儿子完全主导。Guy先请店员带路找到油漆区买了胶带，随后又"发现"需要红色和黑色油漆及刷子，最后又想起要买木板做桌子。父亲一路配合，最终在木材区选好材料，全程花费仅三十美元。回到家，父亲按Guy的简单图纸做好桌子，Guy才开始上漆——他用胶带在桌面贴出方格，再分别涂红黑两色，原来他要做的是树屋里的跳棋棋盘。父亲瞬间领悟：胶带并非用来固定桌板，而是用来遮漆画格。儿子从一开始就规划周全，每一步心中有数。父亲眼眶湿润，既为儿子的远见深感骄傲，也庆幸自己未将"木胶带"草草打发。文章以温情笔触展现信任与放手带来的惊喜，提醒大人莫要低估孩子。
+
+---
+
+## 18. Agent.reviews：AI 智能体读写开发工具评测的平台
+
+**原文标题**: Show HN: Agent.reviews – Where AI agents read and write reviews on tools
+
+**原文链接**: [https://agent.reviews/](https://agent.reviews/)
+
+Agent.reviews 是一个专为 AI 编码智能体打造的工具评测平台，支持智能体自动化地发现、阅读并为开发软件撰写评测。平台提供 agent 友好的机器接口：skill.md 作为评审指引，install.md 提供安装步骤，每个页面均附 .md 版本，全部在 llms.txt 中统一索引。隐私方面，承诺不收集用户代码、提示词或密钥，亦不暴露真实身份。页面已展示 Git、Claude API、Google Cloud Run、Terraform、GitHub、Sentry、Twilio、Daytona 等数十款工具的评测，均由 Claude Code、Codex、Muse Code 等智能体在实际操作后撰写，内容涵盖功能验证、边界问题与改进建议，附星级评分及评论数。平台支持按"版本控制与代码审查"等类别浏览并横向对比同类工具，整体定位是为 AI 智能体构建一个可信赖的软件选型与经验分享社区。
+
+---
+
+## 19. AI辅助的十一个正方形最优密排证明
+
+**原文标题**: AI-assisted proof of optimal packing for 11 squares
+
+**原文链接**: [https://github.com/Queuingtheorydotcom/11SquaresFormalized](https://github.com/Queuingtheorydotcom/11SquaresFormalized)
+
+本文报告了十一个正方形最优密排问题在 Lean 4 中的完整优化性证明。EvolvingPrograms 验证运行验收了全部 7,920 个本地 Lean 模块，最终审计实现零例外通过，所有批准数值证书及源哈希已归档。证明采用混合信任模型：关键数值证书检查使用原生数值判定（native_decide），几何、检查器及证明组装部分保留 Lean 内核证明，故信任基础为 Lean 内核加原生编译器，非纯内核验证。最优外框边长 T = (6u+4)/(1+2u−u²)，其中 u 为八次方程 5u⁸−10u⁷−2u⁶+14u⁵+12u⁴−6u³+2u²+2u−1=0 在区间 (9/25, 37/100) 内的唯一根，数值近似为 3.8770836。模型允许任意方向旋转、合法边界接触及开内部分离。项目固定 Lean 4.34.1 与 Mathlib 特定修订版，提供可重复验证脚本及纯源码检查工具；完整验证须满足原生证书通过、零例外及正确信任模型三项条件，仅编译成功不足。感谢 EvolvingPrograms、ctjlewis 及社区贡献者的形式化与验证工作。
+
+---
+
+## 20. 分享人工智能在数学领域的进展
+
+**原文标题**: Sharing AI progress in mathematics
+
+**原文链接**: [https://openai.com/index/sharing-ai-progress-in-mathematics/](https://openai.com/index/sharing-ai-progress-in-mathematics/)
+
+由于无法实际访问该文章链接，摘要处按指定格式回复：无法访问该文章链接
+
+---
+
+## 21. Pendulum 为何写出了 Python 中最离谱的 `+` 运算符
+
+**原文标题**: Why Pendulum had to write the most cursed "+" operator in all of Python
+
+**原文链接**: [https://dev.arie.bovenberg.net/blog/pendulum-cursed-plus-operator/](https://dev.arie.bovenberg.net/blog/pendulum-cursed-plus-operator/)
+
+Pendulum 是 Python 流行的日期时间库，其 `+` 运算符通过 `traceback.extract_stack()` 检查调用者函数名，在 DST 感知算术与标准库墙钟语义间切换：调用者为 `astimezone` 则退回标准库行为，否则走 DST 感知路径。根源在于两个互斥承诺——DST 感知算术（行为异于标准库）与即插即用兼容（子类化 `datetime`）。子类化使标准库 `astimezone` 内部 C 代码调用 `+` 时意外触发重载，故只能"猜测"调用者意图。然而该方案极为脆弱：仅硬编码一个函数名，`dateutil` 等调用者及 PyPy 上均出错；且遍历调用栈、读取源码使 `+` 慢了约 600 倍。作者提出的替代方案——在 `astimezone` 中转回普通 `datetime` 完成转换再包装回 Pendulum 类型——已合入，开销降至约 120 倍。但根本问题未解：只要 `DateTime` 仍是 `datetime` 子类，任何接收它的代码做算术都会触发其 `+`，非 Pendulum 可控。文章建议新项目可考虑不继承标准库的类型设计（如作者的 whenever 库），以消除此类兼容性陷阱。
+
+---
+
+## 22. ShinyHunters成员被捕前勒索波音分拆子公司
+
+**原文标题**: ShinyHunters Extorted Boeing Spin-Off Prior to Arrests
+
+**原文链接**: [https://krebsonsecurity.com/2026/10/shinyhunters-extorted-boeing-spin-off-prior-to-arrests/](https://krebsonsecurity.com/2026/10/shinyhunters-extorted-boeing-spin-off-prior-to-arrests/)
+
+约旦安曼少年黑客"Rey"（本名Saif Al-din Khader）因涉嫌领导活跃的数据盗窃与勒索组织ShinyHunters被约旦当局逮捕，正配合FBI调查。被捕时他正试图勒索波音于2025年以105.5亿美元售予私募公司Thoma Bravo的子公司Jeppesen ForeFlight，涉及可能威胁航空运营安全的数据。Rey之父疑似为皇家约旦航空（主力机型为波音）员工。与此同时，荷兰24岁前黑客范德斯塔普也因协助该组织被捕，荷兰媒体更指其涉嫌指使海外雇凶杀人。技术层面，ShinyHunters利用甲骨文PeopleSoft平台漏洞（CVE-2026-35273）大规模窃取数据，曾入侵FBI招聘系统，暴露逾5000名执法人员敏感信息。该组织核心成员（多为法国公民）已先后被法方逮捕，ShinyHunters由此演变为"特许经营"式品牌，Rey被视为核心成员落网后冒用名号进行勒索的临时"继承人"，遭暗网同行嘲讽为不懂装懂的菜鸟。波音及Jeppesen ForeFlight均声明目前未发现业务或产品受到影响。
+
+---
+
+## 23. PSP《战神》重编译为WebAssembly，浏览器即玩
+
+**原文标题**: God of War on PSP, recompiled to WebAssembly and running in the browser
+
+**原文链接**: [https://github.com/snuri00/psp-web-recomp](https://github.com/snuri00/psp-web-recomp)
+
+摘要：该项目实现PSP游戏无需模拟器在浏览器中运行：通过PSPRecomp将MIPS机器码静态翻译为C++，编译为WebAssembly，并链接轻量级PSP操作系统与图形芯片重实现，以WebGL2渲染。首款《战神：奥林匹斯之链》可完成引导、菜单、过场与战斗，笔记本上达60帧，分辨率最高为原机四倍；《战神：斯巴达幽灵》亦成功移植，55至60帧、三倍分辨率。技术上涵盖PSP内核高层模拟（线程、文件系统等）、图形芯片显示列表解码与GPU纹理回传、双线程并行架构及ADPCM语音合成与ATRAC3+解码。性能优化方面，解决了无垂直同步导致的八倍冗余绘制、WebAssembly时钟调用开销、浏览器缓冲区兼容及模板缓冲开销等关键问题。用户需自备合法游戏镜像，脚本约四分钟即可将光盘文件转为本地网页。项目不含任何游戏数据，生成代码视为原始代码的翻译，仅限个人使用。
+
+---
+
+## 24. 3D打印平台数小时内完成复杂电机整体制造
+
+**原文标题**: 3D-printing platform rapidly produces complex electric machines
+
+**原文链接**: [https://news.mit.edu/2026/3d-printing-platform-rapidly-produces-complex-electric-machines-0218](https://news.mit.edu/2026/3d-printing-platform-rapidly-produces-complex-electric-machines-0218)
+
+摘要：麻省理工学院（MIT）研究人员开发了一种多材料3D打印平台，能在数小时内完成复杂电机的整体制造，突破了传统电机生产依赖专用设备和复杂工艺的局限。该平台改装了现有打印机，配备四个可处理不同形态材料的挤出头，借助机器人手臂与传感器实现精确切换和定位，从而在逐层打印中同时处理导电材料、磁性材料等多种功能材料。研究团队利用该平台在约三小时内打印出一台完整的线性电机，仅需磁化一道后处理步骤即可投入使用，材料成本仅约50美分，且性能优于依赖复杂液压放大器的同类线性发动机。项目负责人维拉斯克斯-加西亚表示，该技术有望从根本上改变硬件制造方式，实现现场按需生产，减少对全球供应链的依赖。未来团队计划将磁化步骤集成至打印流程中，并拓展至旋转电机及更复杂电子器件的一体化制造。该研究成果已发表于《虚拟与物理原型》期刊，由Empiriko公司和La Caixa基金会部分资助。
+
+---
+
+## 25. 开源·160个声音可视化实验
+
+**原文标题**: Open source 160 sound visualization experiments
+
+**原文链接**: [https://www.kagan.in/iwrzwr/visual-archive/](https://www.kagan.in/iwrzwr/visual-archive/)
+
+本项目由开发者iwrzwr发布于GitHub，收录160余组声音可视化实验，涵盖25个以上类别，主题涉及波形动画、频谱图案、矩阵显示、粒子运动、节奏与记忆等。内容按编号分为多个板块：从"声波方向"（频谱缎带、单声道波、丝绸层叠、液态波等）到"极客声波"（电视文本脉冲、向量示波、ASCII流）、"矢量研究"与"声音机器"；后续板块延伸至光栅协议、因果乐器、口袋机器、校准台、绘图仪逻辑、选择性记忆、信号转译、静默遥测、控制律、现场操作、共享资源、推理引擎、条件机器、可视不变量及过程标记等抽象主题；另设"Bloom"十种变体、矩阵的多种走向与路由、声与动4×5矩阵、细胞/轨迹/记忆、频谱扇形与信号组装、相位力学及轨道记忆等专题。整体风格兼具技术感与诗意，将音频信号转化为富有想象力的视觉表征，适合创意编程与声音艺术爱好者浏览与二次开发。
+
+---
+
+## 26. 项目开源：Durable Actors——可配置算力的开源持久化对象
+
+**原文标题**: Show HN: Durable Actors – OSS Durable Objects with configurable compute
+
+**原文链接**: [https://github.com/TerseAI/durable-actors](https://github.com/TerseAI/durable-actors)
+
+摘要：Durable Actors 是一个开源持久化对象系统，作为 Cloudflare Durable Objects 的替代方案，核心优势为无供应商锁定、无内存限制及内置可观测性。它将持久化、并发协调与分布式基础设施封装为有状态 Serverless 函数，适用于实时聊天（如 ChatGPT）、协作工具（如 Notion）及 AI 智能体集群（如 Devin）等场景。开发者通过定义带 @Persisted 标记的 Actor 类实现数据跨故障持久化，利用 @Interleave 装饰器控制并发执行。SDK 支持 TypeScript 与 Python，可自动生成类型安全客户端。本地开发仅需一条命令启动，生产环境可自托管于 GCP。项目附带 AI 聊天、协作文档、聊天室等完整示例，采用 MIT 许可证，欢迎社区贡献。
+
+---
+
+## 27. M-VAVE FM-1口袋合成器固件逆向工程
+
+**原文标题**: Reverse Engineering of the M-VAVE FM-1 Pocket Synthesizer Firmware
+
+**原文链接**: [https://github.com/AL-255/FM-1-RE](https://github.com/AL-255/FM-1-RE)
+
+该仓库针对M-VAVE FM-1口袋合成器开展固件逆向工程与OTA更新协议研究。经分析，目标硬件为杰理AC791N/WL82 SoC（pi32v2处理器），XIP闪存位于0x02000000，音频核心为Dexed/msfa衍生的六算子FM合成引擎；固件中的JL-BR22字符串属继承性库名，不可作为芯片型号依据。主分支仅收录分析文档，不含替换固件或镜像构建器，实验性实现保留在with-custom-firmware分支。文档系统覆盖硬件架构映射、OTA协议抓包（USB-MIDI帧格式、会话流程、加载器控制流与终止握手）、调试接口审计（控制台、工厂模式、恢复入口）、Windows端M-UPGRADE状态机反编译及Linux协议客户端离线测试。仓库保留两条独立V13分析流水线，经函数数据库与分类索引交叉验证。安全评估明确指出：当前更新协议并非可证明的恢复机制，单片闪存布局下尚未证实ROM恢复、回滚或安全中断写入能力，使用任何刷写工具前须阅读风险说明。外部参考包括杰理USB启动信号波形资料、社区讨论、jl-misctools与jl-uboot-tool工具集，以及官方AC791N AIoT SDK。
+
+---
+
+## 28. 拆除二战未爆弹的艺术
+
+**原文标题**: The art of defusing a second world war bomb
+
+**原文链接**: [https://www.theguardian.com/news/ng-interactive/2026/oct/06/it-could-knock-a-whole-street-down-the-art-of-defusing-a-second-world-war-bomb](https://www.theguardian.com/news/ng-interactive/2026/oct/06/it-could-knock-a-whole-street-down-the-art-of-defusing-a-second-world-war-bomb)
+
+2026年1月14日，英国德文郡同一天发现两枚二战未爆弹，对陆军11爆炸物处理与搜索团（11EOD）构成史无前例的挑战。一枚50公斤炸弹在普利茅斯建筑工地被挖出，另一枚250公斤炸弹随疏浚作业浮出埃克斯穆思码头。两枚炸弹归属同一警区，最初误报为同一枚50公斤炸弹，造成调度混乱。文章详述了处置过程：操作员首先用听诊器贴近炸弹判断机械延时引信是否触发——若听到倒计时则必须就地引爆；若安静，则进一步检查引信。普利茅斯的炸弹引信已严重腐蚀、无法辨识，需X光检测；埃克斯穆思的炸弹被粗暴拖上金属甲板，存在引信被触动的风险，操作员在码头上紧急监听确认安全。背景方面，二战中德国向英国投下逾6万吨炸弹，约十分之一未引爆。目前英国每年约2500起炸弹处理事件中2000起涉及二战遗留物，主要由建筑工地深挖、疏浚作业及金属探测爱好者发现。未爆弹历经数十年腐蚀与地质变化，引信状态极难预判，处置风险始终存在。
+
+---
+
+## 29. EmDash 采用 Clef 模型审核插件注册表
+
+**原文标题**: EmDash uses Clef to moderate the plugin registry
+
+**原文链接**: [https://emdashcms.com/blog/how-emdash-uses-clef-to-moderate-the-plugin-registry](https://emdashcms.com/blog/how-emdash-uses-clef-to-moderate-the-plugin-registry)
+
+EmDash 插件注册表现已接入 Cloudflare 的 Clef 决策模型，对所有插件列表的元数据、出站链接、图标及截图进行自动化审核，检测钓鱼、冒充、诈骗、冒犯性内容及审核绕过等行为。注册表基于 AT Protocol 构建，作者通过自有账户发布签名版本，EmDash 仅决定内容是否展示于官方目录，在保持开放发布模式的同时防范滥用。Clef 为多模态决策模型，以分类概率回答有限问题而非生成文本。审核器向 Clef 提出 9 个文本/链接问题和 8 个图片问题，概率达 0.45 即转人工复核，模型本身无最终封禁权。此前审核需多个模型协同并分别处理文本与图片，Clef 以单一模型统一覆盖全部模态，在 21 条文本回归用例的 63 次运行中全部通过，p95 延迟仅 1.64 秒，同时通过全部 37 个插件资料与 43 张图片的验证。对作者而言发布流程无新增步骤，需复核时签名版本仍可从账户获取。
+
+---
+
+## 30. 回到1866年：大模型重拾电报简语
+
+**原文标题**: Write Like It's 1866: LLMs Relearn Telegraphese
+
+**原文链接**: [https://fiveminutesforward.com/post/2026-10-04-telegraph-test/](https://fiveminutesforward.com/post/2026-10-04-telegraph-test/)
+
+摘要：文章将LLM按token计费类比为1866年跨洋电报按词收费，提出用电报简语（Cablese）压缩模型输出以降本。在50篇文本、约1300道题的基准上，多家模型实验显示：电报体写作可节省25%–49%的token（因模型而异），跨模型可读性恢复比达0.99–1.10，即压缩后信息无损甚至略优；密码本替换仅省约10%。该能力已隐于各模型训练数据，一句指令即可触发，无需额外训练或新硬件。压缩最佳位置是"内容确定后、机器读取前"——用于agent记忆、草稿及模型间交接；若模型强制推理（如gpt-5-mini），压缩反致成本翻倍。文章指出电报简语相比BabelTele等新兴agent私有协议，优势在于人类可读、可审计、无需协商。最终提出"电报测试"（The Telegraph Test）标准化基准，统一衡量新模型的压缩率、跨族可读性与各场景成本，相关代码已开源。
+
+---
+
