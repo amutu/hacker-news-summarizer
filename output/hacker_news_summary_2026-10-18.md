@@ -1,0 +1,304 @@
+# Hacker News 热门文章摘要 (2026-10-18)
+
+这是今日 [Hacker News](https://news.ycombinator.com/) 上最热门的文章摘要。
+
+## 1. 白化珊瑚触碰健康邻居数日即可恢复生机
+
+**原文标题**: Bleached corals thrive within days when touching healthy neighbour
+
+**原文链接**: [https://www.nature.com/articles/d41586-026-03266-x](https://www.nature.com/articles/d41586-026-03266-x)
+
+海水升温致珊瑚白化问题日益严峻，失去共生藻的珊瑚面临饥饿死亡。2026年10月14日发表于《科学进展》的一项研究带来希望：斯坦福大学Danny Collins团队发现，将白化珊瑚碎片与健康碎片直接接触，可在数天内完成共生藻再转移，使白化珊瑚快速复苏。该发现源于科学家Palumbi在实验室的偶然观察——两片意外接触的珊瑚碎片在交界处出现颜色蔓延。Collins随后用同一基因个体的鹿角珊瑚制备十对（五对接触、五对间隔数毫米）进行实验。结果显示，接触组白化碎片接触健康碎片仅一周即可脱离后自行完全恢复，第八周全数康复，共生藻每四天翻倍，远快于野外自然恢复；而间隔组二十周后全部死亡。高分辨率显微镜揭示，同基因珊瑚通过形成组织桥实现融合并传递共生藻，不同物种或同物种不同个体均无法融合。研究者认为，这一快速、完全的恢复机制有望为大规模珊瑚修复提供可行方案，为应对全球珊瑚衰退注入新希望。
+
+---
+
+## 2. 爱沙尼亚在线投票系统源代码
+
+**原文标题**: Source code of the Estonian online voting system
+
+**原文链接**: [https://github.com/valimised/ivxv](https://github.com/valimised/ivxv)
+
+本仓库旨在将爱沙尼亚在线投票系统（IVXV）的源代码向公众公开，供社会审查与验证。该仓库不用于日常活跃开发，但会持续保持更新，以确保所公布的代码与实际选举中使用的版本完全一致。由于该投票系统承载的是具有法律约束力的正式选举，其开发与运行必须严格遵循相关选举法律法规。因此，爱沙尼亚i-voting系统及配套的i-vote验证应用的实际开发工作，均在爱沙尼亚国家选举办公室的严格监督之下进行，以确保系统的合法性、安全性和可靠性。如需了解更多选举相关信息，公众可访问爱沙尼亚国家选举委员会官方网站 www.valimised.ee 获取详细内容。
+
+---
+
+## 3. Commodore 64 硬件模拟器：拔除引脚与芯片，观察电路后果
+
+**原文标题**: The Commodore 64 hardware simulator: break chips and pins, see the results
+
+**原文链接**: [https://github.com/antirez/c64-hw-simulator](https://github.com/antirez/c64-hw-simulator)
+
+c64-hw-sim 是一款针对 Commodore 64（250407 版）主板的引脚级硬件模拟器。用户可模拟抬起引脚、对地或正电压短路、拔出芯片、断开电阻等故障，并实时观察屏幕画面、键盘响应及全部信号线变化；故障现象均由电路模型计算得出，而非人为预设。项目有两大用途：一是无需承担损坏实机的风险即可深入理解 C64 内部原理；二是辅助维修，将模拟症状与真实故障比对以缩小排查范围、减少不必要的拆焊。性能上，即便在 Apple M5 Max 上也仅达实时速度的 48%，不适合运行游戏，但足以满足学习与维修需要。技术上基于 floooh 的 6510、VIC-II、CIA、SID 等周期精确核心，结合 KiCad 设计文件自动生成 216 个元器件与 249 条网络线的 C 代码，采用引脚驱动强度与浮空电容漂移模型。支持图形界面与无头命令行模式，可加载 .prg 文件、动态注入或修复故障、批量录制帧序列，并附带 31 项常见故障测试脚本。当前局限在于浮空与供电模型参数为估算值，视频输出、SID 滤波器、电源及 PLL 尚未仿真，芯片内部故障（如坏内存单元）仍在规划中。
+
+---
+
+## 4. 拆坝通河：鱼群重返美国东北部
+
+**原文标题**: Dam removals are bringing fish back across the northeastern United States
+
+**原文链接**: [https://www.smithsonianmag.com/science-nature/dam-removals-are-bringing-fish-back-across-the-northeastern-united-states-striking-down-one-tiny-barrier-at-a-time-180989679/](https://www.smithsonianmag.com/science-nature/dam-removals-are-bringing-fish-back-across-the-northeastern-united-states-striking-down-one-tiny-barrier-at-a-time-180989679/)
+
+摘要：文章以1859年梭罗因反对大坝而勘测康科德河的往事开篇，引出东北部延续数百年的大坝阻断鱼类洄游问题。自1912年起，全美已拆除逾2300座大坝，2024年达到峰值，恢复连通超2500英里水系。西部克拉马斯河和埃尔沃河的拆坝令鲑鱼大规模回归，但东北部虽单体规模小、关注度低，却是拆除总量最多的区域。新罕布什尔州鱼类学家菲里用微型芯片追踪河鲱鱼等洄游鱼类，揭示即便主河道畅通，支流中仍有大量小型坝体与涵管阻隔鱼类进入关键产卵地。历史上，新英格兰水坝曾导致近200亿磅河鲱鱼消失，造成"生态-社会失范"，居民对鱼类洄游的文化记忆几近断裂。如今拆坝正催生"集体记忆"复苏，缅因州佩诺布斯科特河12年间回归河鲱鱼激增至六百万尾。然而部分居民仍以怀旧情感反对拆坝，支流疏通仍任重道远。从梭罗吟叹"自然终将推平大坝"到今日拆坝文艺复兴，河流正逐步重获自由。
+
+---
+
+## 5. Furifont, a Japanese font that shows furigana
+
+**原文标题**: Furifont, a Japanese font that shows furigana
+
+**原文链接**: [https://furifont.antfu.me/](https://furifont.antfu.me/)
+
+文章之前已经处理过
+
+---
+
+## 6. 用多力多滋薯片粉让鸡胸肉变透明
+
+**原文标题**: Making chicken transparent using Dorito dust
+
+**原文链接**: [https://chillphysicsenjoyer.substack.com/p/making-chicken-transparent-using](https://chillphysicsenjoyer.substack.com/p/making-chicken-transparent-using)
+
+本文记录了一项趣味物理实验：用多力多滋薯片上的食用色素柠檬黄（tartrazine）浸泡鸡胸肉，尝试使其变透明。灵感源于一篇利用柠檬黄实现活体动物组织光学透明的论文。作者将鸡胸肉切片，分别浸泡于水（对照组）和约0.19M柠檬黄溶液中，室温下放置6至12小时。结果显示，经处理的鸡胸肉出现部分透光，呈现类似软糖的胶状质感，但透明度远不及原论文（原实验使用0.62M浓度、40°C及机械摇床）。文章从光学原理解释透明机制：不透明源于光的吸收及不同折射率介质间的光散射。生物组织中蛋白质、脂质与水的折射率不同，导致光线在内部散射。柠檬黄溶入水后可提高水的折射率（从约1.33向蛋白质和脂质的约1.45靠近），减少散射从而实现透明。作者还借助麦克斯韦方程和洛伦兹振荡器模型，推导了极化率与复折射率的关系，强调需提升折射率实部的同时控制其虚部（吸收）。该技术的潜在应用包括简化活体荧光成像、降低独立科研成本，体现了作者"低成本有效观测"的研究理念。
+
+---
+
+## 7. DeepSeek-v4.1-Flash-1017
+
+**原文标题**: DeepSeek-v4.1-Flash-1017
+
+**原文链接**: [https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017](https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017)
+
+摘要：该页面为 DeepSeek-v4.1-Flash-1017 的发布或更新信息，内容包含 11 个条目（可能为版本说明、文件清单或发布日志），页面于约 15 小时前进行更新，累计获得 932 次浏览或互动。DeepSeek-v4.1-Flash 为深度求索公司推出的轻量级快速推理模型系列，"Flash"版本主打低延迟与高吞吐，"1017"为版本迭代标识。由于页面正文未提供，目前可见信息仅限于上述元数据，尚无法获取具体技术参数、性能指标或功能变更详情。如需了解该版本的具体更新内容、模型架构或基准测试结果，建议前往 DeepSeek 官方网站或其开源社区查阅完整发布说明。
+
+---
+
+## 8. 微软与卡内基梅隆大学联手培养AI时代初级软件工程师
+
+**原文标题**: Microsoft and CMU Team Up to Train Early Career Software Engineers
+
+**原文链接**: [https://www.cs.cmu.edu/news/2026/microsoft-cmu-praise](https://www.cs.cmu.edu/news/2026/microsoft-cmu-praise)
+
+2026年10月，微软与卡内基梅隆大学（CMU）格里芬计算机学院联合推出"AI加速软件工程实习计划"（PRAISE），面向微软早期职业工程师，提供在线学术课程与在职导师制指导，帮助其掌握机器学习工程与AI增强软件开发技能。项目源于CMU校友、微软首席技术官拉辛诺维奇2025年访校时的提议，他指出AI虽赋能资深工程师，但初级员工难以同等受益，AI改变工作流但不会取代人类判断。双方据此将CMU学术资源与微软工程实践深度融合。本学期学员修读"生产环境机器学习"及"AI增强软件工程实习"等课程，春季将开设"DevOps安全开发与部署"等课程，学分可计入CMU软件工程硕士学位。CMU计划逐步扩大招生并引入更多行业伙伴，项目主任奥德里奇教授表示，该模式有望成为全行业加速新人成长的范本。
+
+---
+
+## 9. Pele – 将 Mermaid 图表渲染为可主题化 SVG
+
+**原文标题**: Pele – Mermaid diagrams as themeable SVG
+
+**原文链接**: [https://pele.run/](https://pele.run/)
+
+Pele 是一款轻量级开源库，可将 Mermaid 图表语法渲染为支持 CSS 变量主题化的 SVG。其核心优势在于性能与体积：渲染耗时仅 0.05–0.3 毫秒（Mermaid.js 为 6–82 毫秒），gzip 后包大小仅 230 kB（Mermaid.js 为 1.6 MB），且零直接依赖（Mermaid.js 需 23 个）。主题化方面，Pele 通过 --pele-bg、--pele-fg、--pele-line 等 CSS 变量控制背景、前景与边框颜色，修改变量即可实时切换配色，无需重新渲染图表，并内置浅色/深色主题与小屏幕自适应布局。集成方式简单，支持 npm、pnpm、yarn、bun 安装，核心 API 为 render() 函数，传入 Mermaid 语法字符串即返回 SVG 字符串，开发者将其写入页面 DOM 即可完成渲染，适合对依赖体积和渲染速度有严格要求的项目。
+
+---
+
+## 10. Chrome 与 Edge 移除 XSLT 支持：哪些功能会失效，哪些不受影响
+
+**原文标题**: Chrome and Edge are removing XSLT: what breaks and what does not
+
+**原文链接**: [https://doctor-seo.net/en/blog/news/chrome-edge-removing-xslt/](https://doctor-seo.net/en/blog/news/chrome-edge-removing-xslt/)
+
+Chrome 和 Edge 已弃用并移除对 XSLT（可扩展样式表语言转换）的原生支持，即浏览器不再能将 .xml 文件通过 .xsl 样式表自动渲染为格式化页面。受影响的场景包括：直接在浏览器中打开 XML 文件并依赖 XSLT 进行客户端转换、通过链接引用外部 XSL 样式表的老式应用、部分依赖浏览器 XSLT 引擎的 SEO 落地页或数据展示页面。不受影响的情形包括：服务器端（如 PHP、ASP.NET、Java）执行的 XSLT 转换、Firefox 和 Safari 等仍保留 XSLT 支持的浏览器、以及通过 JavaScript 或后端 API 完成转换的现代 Web 应用。文章建议开发者尽快将客户端 XSLT 迁移至服务器端处理或改用 JavaScript 方案（如 XSLT.js、Saxon-JS 等库），以确保在 Chrome/Edge 用户群体中页面正常显示，并避免 SEO 收录和用户体验问题。
+
+---
+
+## 11. 黄金已成美国第一大出口商品
+
+**原文标题**: Gold is now the top U.S. export
+
+**原文链接**: [https://www.numismaticnews.net/gold-now-top-u-s-export](https://www.numismaticnews.net/gold-now-top-u-s-export)
+
+摘要：自2025年10月起，美国黄金出口价值几乎monthly超越石油、制药及航空等传统品类，跃居出口首位，2026年2月出口吨数或创历史新高。美国黄金储备数据未变，出口主要源于矿产及回收。流向依次为瑞士（精炼）、香港（中转至中国）和英国（伦敦金交所）。作者帕特里克斯坦勒推测，背后动因是各国央行担忧美元购买力下滑，全球央行黄金储备总值已超其美债持有量。中国尤为突出，其央行美债持仓从2021年4月约1.1万亿降至2026年2月仅693亿美元，差额大量转为黄金；同时中国借BRICS框架推广替代支付体系，加速去美元化。作者认为大量黄金最终流向中国，部分需经瑞士精炼为合格公斤条，美国政府或默许以黄金结算换取政治利益。文章还附有钱币收藏趣题。
+
+---
+
+## 12. 低成本激光故障注入：RP2350版
+
+**原文标题**: Laser Fault Injection on a Budget: RP2350 Edition
+
+**原文链接**: [https://courk.cc/rp2350-challenge-laser](https://courk.cc/rp2350-challenge-laser)
+
+摘要：2024年8月树莓派发布RP2350微控制器，集成Secure Boot及冗余协处理器（RCP）等硬件安全特性，DEF CON 2024随即发起破解挑战，要求绕过防护取出OTP秘密数据。本文介绍作者自制的低成本激光故障注入（LFI）平台，成功绕过RP2350的Secure Boot。因芯片内置的故障检测器可有效抵御常规电压注入，作者选择激光方案，通过精准聚焦避开检测器电路。样品制备采用机械研磨从芯片背面暴露硅片，并以导电环氧树脂修复接地。平台由精密定位台与光学子系统构成，使用红外激光，整板BOM成本仅约十至十五欧元。攻击核心在于双QSPI闪存配合FPGA控制：FPGA在RP2350每次访问外部存储器时切换活动闪存，结合纳秒级激光脉冲同步，在Boot ROM执行关键验证指令时注入单点故障。文章详细讨论了三种注入策略——单指令跳过、寄存器值损坏与指令变异——以及FPGA逻辑、激光驱动与定位台控制的软件架构。作者公布了全部制造文件，供爱好者复现。
+
+---
+
+## 13. Artie（YC S23）诚聘企业销售与资深工程师
+
+**原文标题**: Artie (YC S23) Is Hiring Enterprise AES and Senior Engineers
+
+**原文链接**: [https://www.artie.com/careers](https://www.artie.com/careers)
+
+摘要：Artie（YC 2023春季毕业企业）正围绕实时数据流平台展开招聘，面向追求技术匠心、高效执行力与业务影响力的候选人。公司目前在旧金山全职、现场办公模式下开放5个岗位，涵盖工程与销售两大方向：工程侧设有产品工程师和高级软件工程师岗位；销售侧设有企业客户经理（Enterprise AE）、高级商务拓展代表（SDR）及解决方案工程师岗位。所有职位均位于旧金山，要求全职坐班。公司以Ashby作为招聘工具，聚焦于打造下一代实时数据流基础设施，欢迎热爱技术、注重品质并渴望产生实际影响的优秀人才加入。
+
+---
+
+## 14. Tsc-ts：用 TypeScript 编写的 TypeScript 编译器
+
+**原文标题**: Tsc-ts: TypeScript written in TypeScript
+
+**原文链接**: [https://github.com/vercel-labs/tsc-ts](https://github.com/vercel-labs/tsc-ts)
+
+tsc-ts 是 TypeScript 7.0.2 编译器（tsgo）的实验性 TypeScript 移植项目，借助 scriptc 编译为原生可执行文件。用户可通过 `npm install -D tsc-ts` 安装，以 `npx tsc-ts -p tsconfig.json` 编译；各平台经可选依赖（如 @tsc-ts/darwin-arm64）调用对应原生二进制。编译器涵盖扫描器、解析器与 AST、绑定器、模块解析、tsconfig 处理、命令行解析、诊断目录、JS 与声明文件生成、增量构建及类型检查等全部阶段，在约 12,500 个测试文件上与 tsgo 逐一比对，均已完全匹配。项目支持 `--api` 服务器模式，通过 stdin/stdout 复现 `tsc --api` 协议，可供 scriptc 等工具驱动，并实现了补全、JSDoc、引用查找、签名使用等语言服务方法。构建需 Node.js 24+、Go 1.26 及锁定版本的 scriptc 0.3.5，支持 macOS、Linux、Windows。测试体系包含与 tsgo 对比验证、性能基准及 oxlint/oxfmt 工具。项目采用 Apache-2.0 许可证，文档站点位于 apps/web。
+
+---
+
+## 15. 模式识别胜于叙事推理
+
+**原文标题**: Pattern Matching Beats Narrative Reasoning
+
+**原文链接**: [https://blog.scottstevenson.net/p/pattern-matching-beats-narrative](https://blog.scottstevenson.net/p/pattern-matching-beats-narrative)
+
+本文作者Scott Stevenson指出，他在商业与投资中的多数失败决策源于"叙事推理"——用简短有力的故事解释世界并驱动行动。然而现实世界高度多因，简单故事无法捕捉其复杂性，恰如顶级象棋AI依赖概率矩阵而非语言推理。作者提出"可读性偏差"概念：人们天然偏好简洁有序的系统，但混乱、不可读的系统往往更具生命力；过于清晰的叙事易被市场充分定价，真正的机会藏在"不可读"的盲区中。作者主张以模式匹配替代叙事推理——人脑八十六亿神经元天生擅长处理高维信息，形成超越语言的直觉判断；团队层面可通过回顾过往成败、提取关键属性构建评估框架。其公司Spellbook用十六个属性评估产品方向，显著提升了决策命中率；投资上，作者转向模式匹配后，主动组合九年内表现超被动组合约二十倍。最后，作者强调独立思考的价值：模式匹配本身不难，难的是在充斥共识叙事的社交环境中，敢于相信自己的判断。
+
+---
+
+## 16. 7.2内核开发统计
+
+**原文标题**: Development statistics for the 7.2 kernel
+
+**原文链接**: [https://lwn.net/Articles/1088776/](https://lwn.net/Articles/1088776/)
+
+2026年8月17日，Linus Torvalds发布Linux 7.2内核，新增近60万行代码，为内核历史上第二繁忙的发布周期。本次共纳入16,418个非合并提交，来自2,652位开发者，均刷新历史纪录，其中613位为首发贡献者，再创新高。LLM的影响尤为突出：带Assisted-by标签的补丁由上版301个激增至1,111个，Sashiko等AI审查系统参与发现并标记了数百个缺陷；带Fixes标签的提交达4,830个，近期呈陡峭上升趋势，显示LLM驱动的代码审查正大量发掘既有缺陷。文章同时表达隐忧：大量新开发者借助LLM提交跨子系统补丁，可能并不真正理解代码含义，长期可维护性存疑；且实际使用LLM的比例远高于标签所示，准确追踪几乎不可能。在雇主方面，未知归属的开发者占比显著上升，与新人涌入相符。目前7.3已有近1.4万个提交待合并，其中逾1,100个携带Assisted-by标签，高活跃度短期内不会消退。
+
+---
+
+## 17. 全球光伏发电量首超核能
+
+**原文标题**: Solar surpasses nuclear power globally for first time
+
+**原文链接**: [https://www.pv-magazine.com/2026/09/29/solar-surpasses-nuclear-power-globally-for-first-time/](https://www.pv-magazine.com/2026/09/29/solar-surpasses-nuclear-power-globally-for-first-time/)
+
+摘要：据世界核能产业状况报告（WNISR 2026），2025年3月全球风电月发电量首次超越核能，4月光伏紧随其后，此后每月至少一种可再生能源单独发电量超过核电。2025年全球光伏新增装机510吉瓦（IEA数据约690吉瓦），增长27%；风电新增159吉瓦，增长14%；核电仅净增1.5吉瓦，运行容量反降0.5吉瓦。核电占全球发电量比重降至8.8%，为45年来最低，远低于1996年17.5%的峰值。核电扩张高度集中于中国，中国以外核发电量微降0.2%。全球在建反应堆73台，为1987年以来最多，但近三年并网机组无一按期完工，平均工期达10.9年。小型模块化反应堆商业化进展远不及预期，多国项目仍依赖公共资金，欧盟2030年代初部署目标面临质疑。与此同时，2025年全球储能并网104吉瓦/257吉瓦时，78%累计储能容量于2023至2025年间安装，电池成本下降为光伏持续扩张提供支撑。核能行业融资信心不足，多家企业股价大幅下跌或IPO搁浅，增长困境凸显。
+
+---
+
+## 18. OpenCode遭受入侵：用户凭据泄露
+
+**原文标题**: OpenCode Hacked: User credentials leaked
+
+**原文链接**: [https://twitter.com/opencode/status/2111516673953935833](https://twitter.com/opencode/status/2111516673953935833)
+
+OpenCode运营方于2026年10月17日发布公告称，其平台昨晚遭遇大规模"蒸馏攻击"导致安全漏洞，影响了约1.4%的OpenCode Console用户。公司已于当晨通过邮件通知所有受影响用户。由于事件仍在处置中，官方暂未透露更多技术细节，目前正联合Anthropic、OpenAI及Google三大AI公司协同开展补救修复工作。该公告帖浏览量已超两万，且后续有更新版本发布。
+
+---
+
+## 19. Show HN：高质量鸭子叫声音频合成器
+
+**原文标题**: Show HN: High-quality duck audio synthesizer
+
+**原文链接**: [https://celphase.github.io/duck-pond/](https://celphase.github.io/duck-pond/)
+
+无法访问该文章链接。
+
+---
+
+## 20. 复古卡带收藏：1963-2010
+
+**原文标题**: Vintage Cassettes: 1963-2010
+
+**原文链接**: [http://vintagecassettes.com/](http://vintagecassettes.com/)
+
+本网站专注于收藏展示1963至2010年间密封紧凑型磁带，尤以1970至1990年代为主。卡带按品牌及生产年份分类，覆盖美国、欧洲、日本三大市场，数据库收录2669种卡带。其中TDK（372种）、索尼（365种）、Maxell（268种）、富士/AXIA（219种）收录最为丰富，另有BASF、Denon、Hitachi、Philips、Scotch、SKC/SMAT等品牌，并设OEM及开盘磁带专区。网站详细梳理了Maxell、索尼、TDK在铁磁（I型）、铬磁（II型）、金属磁（IV型）各阶段的型号演变脉络。网站不售卖磁带，建议收藏者通过eBay购入。页面附有2012至2016年的更新日志，记录了大量新增卡带资料及贡献者信息，体现了由爱好者共同维护的专业收藏社区特色。
+
+---
+
+## 21. 我归化为日本公民
+
+**原文标题**: I Became a Citizen of Japan
+
+**原文链接**: [https://www.derekwessman.com/blog-1/natural](https://www.derekwessman.com/blog-1/natural)
+
+摘要：美国公民Derek Wessman长期居住日本，历经三次尝试终获归化入籍。2012年首次咨询时，法务局官僚列出了极为庞大的文件清单：父母及六名兄弟姐妹的出生证明、婚姻证明、全部税务与社保记录、企业经营文件、所有护照及出入境记录、房产证明、日语能力证书等，英文文件须附全日语翻译且不得含拉丁字母。因准备难度极高，2012年与2018年的尝试均告搁浅。2024年10月他第三次走进法务局，2025年2月凌晨通宵整理后，正式提交逾两英尺高的申请材料。审批期间，因多次国际商务出差被逐日暂停，历时逾一年；期间案件审核员更迭，新冠致公司业绩下滑更遭质疑，但作者坚持不裁员、如期偿还贷款，展现了经营担当。他凭借流利日语、消防与社区志愿活动及政治参与等贡献，最终于2026年取得日本国籍。文章坦诚记录了日本归化制度刻意设置的不透明性与高门槛，也映照出个人坚持与家庭支持的分量。
+
+---
+
+## 22. You could have invented transformers from memory
+
+**原文标题**: You could have invented transformers from memory
+
+**原文链接**: [https://alexwang.ai/posts/associative-memory/](https://alexwang.ai/posts/associative-memory/)
+
+文章之前已经处理过
+
+---
+
+## 23. 《环游世界》中的天空渲染
+
+**原文标题**: Rendering pretty sky in Around The World game
+
+**原文链接**: [https://frozenfractal.com/blog/2026/10/12/around-the-world-34-a-pretty-sky/](https://frozenfractal.com/blog/2026/10/12/around-the-world-34-a-pretty-sky/)
+
+本文是"环游世界"游戏开发系列第34篇，讲述作者如何逐步打磨游戏中的天空与云层视觉效果。作者编写了自定义蒙特卡罗光线追踪器，证实POV-Ray不支持多重散射，据此生成新的云层光照查找表，消除了云层的"金属感"。接着，作者发现一个巧妙技巧：将云层底部法线方向改为朝上，使其接收天空的间接散射光，让云层染上蓝色调，与天空自然融合，日落时则呈现粉红渐变。在大气散射方面，作者将光线步进中"吸收衰减"与"入射散射"的计算顺序对调，修正了地平线附近天空偏黄的问题。由于游戏星球仅为地球1/75大小，天空地平线高于真实地平线，作者通过偏转视图向量的垂直分量消除了中间暗带。色调映射方面，经对比Reinhard、ACES和AgX后，最终选用Filmic映射并将白色点设为2.0，云层过渡更加柔和。最后，为模拟昼夜与季节变化，作者放弃复杂的轨道计算，改在引擎中搭建小型天文仪模型，由引擎反算天体位置，既简化了实现，也提供了实用的调试工具。
+
+---
+
+## 24. Parin——用 D 语言打造、介于 raylib 与 Godot 之间的 2D 游戏引擎
+
+**原文标题**: Show HN: Parin – A 2D game engine between raylib and Godot, written in Dlang
+
+**原文链接**: [https://github.com/Kapendev/parin](https://github.com/Kapendev/parin)
+
+摘要：Parin 是一款基于 D 语言的 2D 游戏引擎，定位在轻量库（raylib）与完整引擎（Godot）之间，兼顾易用性与灵活性。其核心理念包括：不强制代码架构的设计自由、支持 GC 或手动管理的内存抽象、基于可扩展工具库 Joka 的模块化结构，以及内置动画、定时器等常用功能。引擎提供像素级物理系统、对话系统、图集动画库、瓦片地图及 UI 组件，集成 Box2D、Steamworks、ENet 等第三方库，支持 Windows、Linux、macOS 和 Web 多平台。安装方面支持 DUB 包管理器和独立脚本两种方式，Web 构建基于 LDC 与 Emscripten，可直接部署至 itch.io。引擎不内置场景或实体系统，但提供基于 Union 类型的实现示例，并推荐 Wren、Lua 等脚本方案。同时支持 Steam 发行与联机游戏开发。项目已在 GitHub 开源，已有数款游戏基于 Parin 构建。
+
+---
+
+## 25. Show HN：本地活动查询 API
+
+**原文标题**: Show HN: Things to Do API
+
+**原文链接**: [https://thingstodoapi.com/](https://thingstodoapi.com/)
+
+Things to Do API 是一款面向 AI 代理应用的本地化活动事件查询接口，覆盖演出、演讲、快闪、市集、节日等丰富信息。用户可用自然语言提问，例如"旧金山这周末有什么喜剧活动"，API 即返回事件名称、类别、时间、场地及购票链接等结构化数据。接口同时支持 REST 与 MCP 协议，可通过一条命令接入 Claude 等主流 AI 工具，实现即插即用。目前旧金山湾区已上线，纽约和洛杉矶即将推出。定价方面，提供免费层（每月 1,000 次调用、60 次/分钟）；按量付费每千次 5 美元起，超 10 万次降至 3 美元，超百万次降至 2 美元；另有企业定制方案，提供全城市数据与 SLA 保障。无需密钥即可试用，每天 50 次查询额度，零门槛上手。
+
+---
+
+## 26. 一个怀疑论者初次接触 Kubernetes（2024）
+
+**原文标题**: A skeptic's first contact with Kubernetes (2024)
+
+**原文链接**: [https://blog.davidv.dev/posts/first-contact-with-k8s/](https://blog.davidv.dev/posts/first-contact-with-k8s/)
+
+文章以一位长期回避 Kubernetes 的资深基础设施工程师视角，记录其以事实取代偏见、系统学习核心概念后的心得。作者认为 Kubernetes 的价值主要源于两大支柱：控制循环（Controller 模式）与 Service 网络模型。控制循环通过"观测—控制"闭环持续将集群推向期望状态；Service 通过虚拟 IP 配合每节点 kube-proxy 动态更新 netfilter 规则，实现无单点故障的服务发现与负载均衡。工作负载方面，从 Pod 到 ReplicaSet 再到 Deployment，体现了从单次调度、自我修复到滚动升级的递进设计；存储方面则通过临时卷、持久卷和 StatefulSet 满足不同的数据持久化需求。作者总体上认可 Controller 引擎与 Service 设计的优雅，但也留下若干疑问与吐槽：集群"永不稳定"的设计哲学是否合理、为何缺乏基于队列深度等自定义指标的云原生弹性伸缩、存储与网络为何采用 CNI/CSI 的"树外"扩展机制，以及对 Helm 等工具过度依赖字符串模板生成 YAML 的强烈批评。
+
+---
+
+## 27. Show HN：ESP32Sim——在浏览器中运行 ESP32 固件
+
+**原文标题**: Show HN: Esp32sim – Run ESP32 firmware in the browser
+
+**原文链接**: [https://github.com/mikroverk/esp32sim](https://github.com/mikroverk/esp32sim)
+
+ESP32Sim 是用 Rust 编写的 ESP32 系列 SoC 指令级模拟器，覆盖 Espressif 两大架构——Xtensa（ESP32/S3）与 RISC-V（C3/C6），可完整启动未修改的真实 mask ROM、二级引导程序及应用程序固件，无需任何打补丁或桩替。项目模拟了丰富外设：GPIO、UART、SPI 闪存、摄像头（OV5640）、多种 LCD 面板（ST7735/ST7701S/CO5300/ST7789）及 WS2812 灯带，并内置虚拟 WiFi 接入点，支持 WPA2 四次握手、DHCP、DNS 与 NAT 至宿主机真实网络。S3 版本配备 AArch64 JIT，性能达 150–240 百万指令/秒，约 30 倍于实时；C3/C6 目前为纯解释器。项目通过 JTAG 硬件追踪比对和控制台逐行校验验证正确性，解码器经数十万条指令测试零偏差。编译为 WebAssembly 后可直接在浏览器中运行，无需安装或注册，已在 Chrome 中实现 Linux 内核启动、LVGL 触控面板、SID 音乐播放器等实时演示。此外提供完善的调试工具链：指令追踪、断点、数据观察、寄存器查看与 PIE 反汇编。项目采用 MIT 许可证，模块分层清晰，外设模型在四款芯片间高度复用。
+
+---
+
+## 28. 瘟疫时代的都铎王朝
+
+**原文标题**: A Tudor life in the time of plague (2020)
+
+**原文链接**: [https://www.historytoday.com/archive/history-matters/tudor-life-time-plague](https://www.historytoday.com/archive/history-matters/tudor-life-time-plague)
+
+1537年10月12日，亨利八世在汉普顿宫迎来苦求近三十年的合法男性继承人爱德华（即后来的爱德华六世），其母简·西摩随即向首相克伦威尔报喜。三天后，约四百人出席皇家小教堂的洗礼仪式，玛丽公主及三位贵族分任教父教母，场面极为盛大。然而，当年春瘟疫重临英格兰并蔓延至南部，伦敦疫情尤为严重，为庆典蒙上阴影。亨利深忧疫情，颁布敕令严格限制出席规模——公爵仅可携六名仆从，骑士减半为两名，部分贵族亦建议留在克罗伊敦宫以免传播感染。洗礼后，爱德华被立即隔离于独立住所，仅其父母与奶妈等经批准者方可接近，以守护这枚"王国最珍贵的珠宝"。文章通过这一盛事，展现了瘟疫阴云下王室的深切焦虑与谨慎应对，以及即便在危机中仍竭力维持皇室威仪与庆典规格的历史张力。
+
+---
+
+## 29. 编程的未来
+
+**原文标题**: The future of programming (1982)
+
+**原文链接**: [https://dl.acm.org/doi/10.1145/358453.358459](https://dl.acm.org/doi/10.1145/358453.358459)
+
+无法访问该文章链接
+
+---
+
+## 30. Llmspeed：购买前预演本地大模型运行体验
+
+**原文标题**: Show HN: Llmspeed – feel how fast a local LLM runs before you buy the hardware
+
+**原文链接**: [https://llmspeed.dev/](https://llmspeed.dev/)
+
+Llmspeed 是一款开源在线工具，帮助用户在购买硬件前直观感受本地运行大语言模型的响应速度。用户可按硬件或模型两个维度浏览预估性能：硬件涵盖 NVIDIA（RTX 3060 至 5090、DGX Spark、V100、H100/H200 云端）、AMD（Strix Halo、R9700、Instinct MI50 等）、Apple Silicon（M3/M4/M5 系列 Mac Studio 与 MacBook）、Intel Arc 及纯 CPU 方案，共计三十余种配置；模型包括 Qwen 3.x 系列、Gemma 4、GLM-5.3、DeepSeek V4、GPT-OSS、Llama 3.1、Nemotron 3.5 等主流及新兴架构。性能数据主要来自 r/LocalLLaMA、localscore.ai 等社区实测基准，部分为根据相似配置或硬件规格推算的估算值，适用于短提示词单设备场景。项目基于 JavaScript 构建，完整代码与数据已开源托管于 GitHub，供社区查阅与贡献。
+
+---
+
