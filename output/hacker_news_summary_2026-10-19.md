@@ -1,0 +1,306 @@
+# Hacker News 热门文章摘要 (2026-10-19)
+
+这是今日 [Hacker News](https://news.ycombinator.com/) 上最热门的文章摘要。
+
+## 1. 软件背后的人
+
+**原文标题**: Someone behind the software
+
+**原文链接**: [https://karrisaarinen.com/posts/someone-behind-the-software/](https://karrisaarinen.com/posts/someone-behind-the-software/)
+
+文章指出，优秀的软件产品承载着创作者的经验、热情与思维方式。作者批评行业将开发视为工厂流水线，如今更试图用AI agent自动化整条流程，却忽略了真正的差异在于理解力与风格。作者在Linear推崇"直觉"——并非主观偏好，而是经由实践和试错积累的判断力。产品通过创作者关注什么、拒绝什么、在"可用"之后仍坚持打磨，形成灵魂；单个功能再完善，若与整体冲突仍会损害体验，需要有人取舍并持续验证。作者担忧当下许多产品趋于杂乱：人们更关注技术"能加什么"而非产品"应当是什么"，变更以叠加为主，缺乏统一视角。AI更让个体借助agent各自为战，如无数小工厂并行生产，改动单独看合理，合在一起却似弗兰肯斯坦拼凑，产品丧失个性，沦为所有输出的平均值。他寄望于开发变易后，人们拥有更多空间深耕问题、打磨答案，让作品各部分彼此归属，感受到软件背后那个"人"而非冰冷的工厂。
+
+---
+
+## 2. Free Pascal 编译器现支持动态包
+
+**原文标题**: Free Pascal compiler now supports dynamic packages
+
+**原文链接**: [https://www.getlazarus.org/dynamic/](https://www.getlazarus.org/dynamic/)
+
+Free Pascal 编译器与 Lazarus IDE 首次完整支持动态包，用户可在数秒内安装组件、控件和扩展，无需重新编译整个 IDE。动态包以各平台标准共享库形式实现，内含编译器生成的元数据，支持运行时检查与查询，并提供跨包安全管理动态类型和线程变量的机制。主要限制包括：包内单元名不可与包名同名（系统自动追加"Package"后缀），不同包单元名必须唯一，且动态包因含完整映射而体积较大。RTL 方面新增 DynPkgTypes.pas 单元，提供 TPackageType 记录及加载、枚举、搜索、卸载包等函数。Lazarus IDE 方面进行了多项改进：修改包内代码后自动重建并以独立进度窗口提示；新增常驻包窗口便于浏览管理；包菜单支持即装即卸无需重建 IDE；支持按平台和控件集限制包可用性；新增表单/框架一键转换为可安装控件的功能，自动添加至组件面板。完整代码已提交至 GitLab 的 dynamic packages 分支，欢迎下载体验并反馈问题。
+
+---
+
+## 3. 微米级RepRap
+
+**原文标题**: RepRapMicron
+
+**原文链接**: [https://github.com/VikOlliver/RepRapMicron/wiki](https://github.com/VikOlliver/RepRapMicron/wiki)
+
+微米级RepRap（μRepRap）是一个旨在利用常见易得材料实现微米及亚微米级3D制造的项目，理念延续自RepRap开源3D打印运动。项目借助OpenFlexure项目的3D打印显微镜平台起步，目标是打造可在家庭工坊中实现优于3μm重复定位精度的微型制造系统。当前推荐的PIKA V0.02版本在约8mm立方空间内达到约1μm定位精度，可沉积4μm紫外光敏树脂液滴，并以光纤探针固化9μm树脂线条；已弃用的MAUS版本曾作为弹性机构测试平台。项目愿景是让微米级制造如RepRap普及桌面3D打印般走向大众，推动微电子领域突破对硅基工艺的依赖，并为生物医学领域提供廉价、可快速迭代的设备。核心技术要素包括基于400步NEMA17步进电机的三轴控制、探针式打印头（可用电蚀刻尖端或医用针头）及UV树脂毛细沉积系统，配合USB显微镜完成观测与校准。未来仍需攻克悬臂结构、折叠铰链等复杂三维形状的制造难题，并逐步构建更小尺度的生态工具链，最终实现微米级系统的自我复制。
+
+---
+
+## 4. PalmOS 版 Lemmings 游戏（源码及截图）
+
+**原文标题**: PalmOS Lemmings
+
+**原文链接**: [https://github.com/ardiri/palmos-lemmings](https://github.com/ardiri/palmos-lemmings)
+
+该页面介绍了一款运行于 PalmOS 平台的 Lemmings（经典益智引导类游戏）移植项目。项目源码以"按原样"的方式免费公开，仅供学习研究等教育用途，使用者需自行承担相关责任。页面同时提供了游戏运行的截图，供下载者预览实际效果。整体内容简练，属于典型的早期开源/教育类小型软件发布页，面向对 PalmOS 开发或 Lemmings 游戏机制感兴趣的开发者与爱好者。
+
+---
+
+## 5. DeepSeek search and fetch – $0.75 per 1000 successful requests
+
+**原文标题**: DeepSeek search and fetch – $0.75 per 1000 successful requests
+
+**原文链接**: [https://api-docs.deepseek.com/guides/search/](https://api-docs.deepseek.com/guides/search/)
+
+DeepSeek 搜索与抓取 API——每千次成功请求 0.75 美元
+
+DeepSeek 推出 Search（搜索）和 Fetch（抓取）两项 API，为智能体及 RAG 应用提供实时网页访问能力。Search API 由自研搜索引擎驱动，返回结构化搜索结果，支持 site、lang、after/before 等查询操作符，结果包含标题、摘要、正文、来源权威等级等字段；Fetch API 传入 URL 即可获取页面标题与 Markdown 正文。两者共享 Bearer 认证，接口地址为 api.deepseek.com/v1/tools/ 下对应端点。计费方面，每项 API 按成功请求收取，每千次 0.75 美元，仅 HTTP 200 且返回有效结果时计费，空结果、失败请求及超时均免费；`count` 参数不影响单价。速率限制上，Search 与 Fetch 各自独立，账户级 QPS 上限均为 5 次/秒，Fetch 另设单域名 QPS 限制，超限返回 HTTP 429。错误格式兼容 OpenAI 标准。此外，通过 DeepSeek Harness、Claude Code 或 Codex 触发的工具调用当前免费，自 2026 年 11 月 1 日（北京时间）起正式计费。
+
+---
+
+## 6. 英特尔8087芯片：浮点加法与减法的实现
+
+**原文标题**: The Intel 8087 chip: floating-point addition and subtraction
+
+**原文链接**: [https://www.righto.com/2026/10/8087-addition-subtraction-microcode.html](https://www.righto.com/2026/10/8087-addition-subtraction-microcode.html)
+
+摘要：本文深入剖析了1980年英特尔推出的8087浮点协处理器，重点讲解浮点加法与减法的硬件电路及微代码实现。作者通过物理拆解芯片并以显微镜拍摄，展示了含1648条微指令的ROM及数据通路。数据通路核心组件包括69位整数加法器、任意位宽移位器和指数转换器，其中移位器用于对齐操作数的二进制小数点。8087内部采用80位"临时实数"格式（1位符号、15位带偏置指数、64位尾数），通过八寄存器栈和临时寄存器tmpA、tmpB、tmpC完成运算。微代码加/减法流程为：比较两操作数指数，必要时交换顺序；将较小尾数右移以对齐小数点；执行整数加或减；对结果进行规范化左移。文章还详述了零、无穷大、NaN等特殊值处理及溢出、下溢的指数调整机制。8087使加法速度较8086提升近100倍，复杂运算提升更为显著。
+
+---
+
+## 7. SIGSALY：丘吉尔致总统的绝密热线
+
+**原文标题**: SIGSALY: Churchill's top secret hotline to the president
+
+**原文链接**: [https://www.iwm.org.uk/history/iwm/cwr/telephone](https://www.iwm.org.uk/history/iwm/cwr/telephone)
+
+二战期间，为在英美"特别关系"中实现绝对安全的跨大西洋通信，美国贝尔电话实验室于1940年秘密启动了代号"X计划"的项目，即SIGSALY系统。该系统将人声数字化后与随机噪声混合，经无线电传输至对端再还原为声音，德军截获后只能听到无法辨识的噪声。系统使用12分钟音乐唱片作为随机噪声源，两端须精确同步播放同一片唱片，用后即销毁，因此通话必须事先预约。每套终端造价100万美元、重达50吨，共部署12台，分布于五角大楼、白宫、伦敦、阿尔及尔、澳大利亚等地。伦敦终端设于塞尔福里奇百货公司地下三层，并延伸至美国使馆、唐宁街十号及丘吉尔的战时指挥部。在指挥部的地下设施中，该设备被藏于一个伪装为厕所的壁橱内，连工作人员也不知其存在。1944年4月，丘吉尔与罗斯福首次通过该系统通话，此后双方及盟军高层累计进行了至少3000次通话。1945年罗斯福去世后，丘吉尔通过SIGSALY致电继任者杜鲁致哀。该系统是英美战时同盟的标志性象征，体现了双方对这一"特殊关系"的高度重视与深厚信任。
+
+---
+
+## 8. Show HN：《塞尔达传说》完整时间线——《时之笛》重制前的补课指南
+
+**原文标题**: Show HN: The Zelda timeline to catch up before the Ocarina of Time remake
+
+**原文链接**: [https://legendofhyrule.com/](https://legendofhyrule.com/)
+
+本文为任天堂塞尔达系列官方时间线，梳理了从创世神话到最新作品的完整故事脉络。时间线始于三位黄金女神创世并留下三角力量，经女神希利亚与魔王德米斯的战争、天空岛悬浮时代（《天空之剑》），至希卡族建立海拉鲁王国。核心枢纽为1998年《时之笛》，该作使时间线分裂为"童年时代""成年时代"与"英雄陨落"三条平行线，各自延伸至《风之杖》《幻影沙漏》《四之冒险》及大洪水等不同未来。文中还涵盖《黄昏公主》《旷野之息》《王国之泪》《三角英雄》《智慧的回忆》（2024）等作品，最新条目为即将登场的《时之笛》Switch 2重制版。全文按发售年份与主机平台（FC至Switch 2）标注各作位置，并简述林克、塞尔达、加农多夫等核心角色在时间线中的关联，帮助玩家在接触重制版前快速补齐全系列叙事脉络。
+
+---
+
+## 9. Developing for Debugging (2025)
+
+**原文标题**: Developing for Debugging (2025)
+
+**原文链接**: [https://www.davepacheco.net/blog/2025/developing-for-debugging-dns-propagation/](https://www.davepacheco.net/blog/2025/developing-for-debugging-dns-propagation/)
+
+文章之前已经处理过
+
+---
+
+## 10. Namecheap 刚刚查封并禁用了我的所有域名
+
+**原文标题**: Namecheap just seized and disabled all my domains
+
+**原文链接**: [https://www.reddit.com/r/sysadmin/comments/1x8cycd/namecheap_just_seized_and_disabled_all_my_domains/](https://www.reddit.com/r/sysadmin/comments/1x8cycd/namecheap_just_seized_and_disabled_all_my_domains/)
+
+无法访问该文章链接
+
+---
+
+## 11. 开源微型运动操控器——亚微米级三维运动控制平台
+
+**原文标题**: Open MicroManipulator – A sub-micrometer 3D motion control plattform
+
+**原文链接**: [https://github.com/0x23/MicroManipulatorStepper](https://github.com/0x23/MicroManipulatorStepper)
+
+摘要：本项目为一款开源、低成本、易于搭建的XYZ轴运动操控平台，实现亚微米级运动精度，适用于光学校准、电子元件探测及显微观测等场景。平台采用并联运动学结构与微型球关节设计，兼具高机械刚性与大行程。驱动端使用通用步进电机，配合30kHz闭环PWM控制器；通过磁耦合方案将廉价磁编码器分辨率提升30倍，步进精度可达50纳米。设备经USB串口以G代码指令控制，便于集成。固件为C++编写，内置带前瞻的路径规划器，支持六自由度姿态插值。项目提供Python API（含移动、校准、查询等函数）及带实时相机画面的图形界面。硬件最新为v4.0版本，修复了归位自碰撞、球关节约束不足等问题；固件v1.0.4新增GPIO工具PWM输出（可驱动激光等）并优化校准。机械模型基于FreeCAD设计，支持CNC加工或3D打印；电路用KiCAD设计，无需SMD焊接。项目社区活跃，欢迎贡献与反馈。
+
+---
+
+## 12. 用电钻将滑板车改装成电动车
+
+**原文标题**: I electrified my push scooter with a power drill
+
+**原文链接**: [https://eddieabbondanz.io/post/shop/drill-powered-scooter/](https://eddieabbondanz.io/post/shop/drill-powered-scooter/)
+
+作者将一辆Razor A5 Lux滑板车改装为电动款，动力源为一台Hercules 20V无线电钻。起因是在autocross赛事中见他人骑电动车便捷，又不愿多留一辆闲置。改装采用前轮驱动，通过花键轴与单向轴承将动力传至前轮，断电后轮子仍可免费转动。电钻运行于低速挡，扭矩充裕，载人极速约16公里/时，上坡稍降但表现稳定。油门由电钻原装扳机开关迁移至车把，但过于灵敏，起步时车轮易打滑，作者习惯先蹬两脚再切电动。5安时电池全速续航约3.2公里。前轮与轮胎经3D打印分三件成型，轮体为ASA、轮胎为TPU，两半轮以10颗M6螺栓和5根键条锁合，轮胎内壁做过盈配合并加齿纹防滑。零件来自Harbor Freight、Amazon和McMaster，结合焊接与3D打印完成组装。搬迁油门时才发现电钻内部线束远比预期复杂，每根线均需截断焊接延长。作者坦言此改装并未省钱，但整个过程充满乐趣。
+
+---
+
+## 13. Java 密封类与穷举模式匹配
+
+**原文标题**: Java sealed classes and exhaustive pattern matching
+
+**原文链接**: [https://neilmadden.blog/2026/04/24/java-sealed-classes-and-exhaustive-pattern-matching/](https://neilmadden.blog/2026/04/24/java-sealed-classes-and-exhaustive-pattern-matching/)
+
+摘要：Java 17 引入的密封类（sealed classes）允许开发者显式限定接口或基类的子类型集合，配合记录类与 switch 表达式使用，效果类似于 Haskell 等函数式语言中的代数数据类型声明。其核心优势在于穷举性检查：编译器能识别所有可能子类型，当 switch 已覆盖全部情况时无需 default 分支；若遗漏则报编译错误，从而提升类型安全。然而文章指出一个关键隐患：当密封类型新增子类型且消费方未同步重新编译时，穷举性检查失效，程序将在运行时抛出 MatchException 而非在编译期捕获。这意味着将密封类暴露于公共 API 会引入新的破坏性变更风险，且该风险往往只能在运行时暴露。作者最终建议：密封类最适合在组件内部实现中使用（此时通常全量重编译，能充分发挥编译期安全优势），而不宜作为跨模块的公共 API 契约——在库级别暴露密封接口反而可能比传统抽象类带来更多难以察觉的兼容性断裂。
+
+---
+
+## 14. 俄罗斯方块之外：帕吉特诺夫的其他游戏
+
+**原文标题**: Beyond Tetris: The other games of Alexey Pajitnov [video]
+
+**原文链接**: [https://www.youtube.com/watch?v=QH_LPimUJMs](https://www.youtube.com/watch?v=QH_LPimUJMs)
+
+摘要：该内容为YouTube上一个视频的页面信息。视频标题"Beyond Tetris: The other games of Alexey Pajitnov"聚焦于俄罗斯及苏联著名游戏设计师阿列克谢·帕吉特诺夫——《俄罗斯方块》的发明者——在其职业生涯中创作的其他电子游戏作品。页面正文部分未包含视频的具体内容描述或摘要，仅显示YouTube平台的标准页脚信息，包括版权声明、隐私政策、服务条款及Google公司联系方式（地址为美国加利福尼亚州山景城，邮编94043，标注年份为2026年）。页面还包含关于创作者在视频中展示或推荐的产品由第三方商家销售、YouTube不承担相关责任等免责声明，以及非法拍摄内容举报入口。总体来看，该页面为视频平台的元数据页面，实际视频内容无法从现有文本中得知，仅能从标题推断主题涉及帕吉特诺夫在《俄罗斯方块》之外的游戏创作与贡献。
+
+---
+
+## 15. 狗亦"bouba"为圆、"kiki"为尖？研究发现狗与人类共享跨感官联想
+
+**原文标题**: Dogs seem to agree with humans that 'bouba' is round and 'kiki' is spiky
+
+**原文链接**: [https://www.sciencealert.com/dogs-seem-to-agree-with-humans-that-bouba-is-round-and-kiki-is-spiky](https://www.sciencealert.com/dogs-seem-to-agree-with-humans-that-bouba-is-round-and-kiki-is-spiky)
+
+1920年代的经典心理实验发现，不同语言和文化背景下的人们普遍将声音"bouba"与圆形关联、"kiki"与尖角关联，暗示视觉与听觉间存在跨感官联结。近日，意大利帕尔马大学动物行为学家Biffi团队在《皇家学会B辑：生物科学》发表研究，发现狗可能共享这一规律。研究招募70只家犬分两组进行：实验一（51只狗及主人）中，房间左右各设屏幕与扬声器，交替播放"bouba"或"kiki"及圆形、尖形图案，AI追踪狗头部朝向；实验二（19只狗）设计相同，但主人佩戴耳机听摇滚乐以排除无意暗示。结果显示，狗在听到"bouba"时显著更多注视圆形，听到"kiki"时注视尖形。两组差异在于实验一中狗对尖形存在普遍偏好，实验二中该偏好消失，但作者认为不太可能源于人类对圆形的天然偏好，另一假说是狗自身面部特征偏尖角，与人类婴儿的圆润面相形成对比。尽管尚需更多研究确认，该发现为理解狗为何能快速习得人类语言及如何成为人类亲密伙伴提供了新线索。
+
+---
+
+## 16. Show HN：Ranet3——高性能策略路由 IPsec 网格 SD-WAN
+
+**原文标题**: Show HN: Ranet3 – High performance policy routed IPsec mesh SD-WAN
+
+**原文链接**: [https://ranet3.com/](https://ranet3.com/)
+
+Ranet3 是一款用户空间 IPsec 网格 SD-WAN 方案。核心架构：传输层采用 ESP/UDP 隧道（RFC 4303/3948），握手使用 IKEv2 混合 ML-KEM 后量子密钥交换（RFC 9370）；路由层内嵌 Babel 协议（RFC 8966），支持 RTT 延迟感知选路与源特定路由（SSSR），并实现 SRv6 段路由按源/目的前缀进行策略转发，因在用户空间实现故兼容 macOS。项目强调全栈标准化，仅依赖 IKEv2、ESP、Babel、SRv6 标准协议，可与 strongSwan、BIRD、Linux 内核 seg6local 互通，亦可与 Tailscale、NetBird、ZeroTier、Nebula 等组网工具同机共存。基准测试（双节点 Xeon Gold 6130＋10GbE）表明：单流吞吐 8.39 Gbit/s，达线速上限 95%，为内核 WireGuard 的 1.6–2.1 倍、wireguard-go 的 1.2–1.5 倍；CPU 开销低于 wireguard-go；但饱和延迟 p99 为 1.9–4.96 ms，逊于内核方案的 0.85–2.51 ms。项目采用 FSL-1.1-ALv2/Apache-2.0 双许可，支撑 AS10779/AS18932 自治系统运营。
+
+---
+
+## 17. 纪录片《你可以看到一切》如何欺骗了观众
+
+**原文标题**: How the Elizabeth Holmes documentary “You Can See Everything” is deceiving
+
+**原文链接**: [https://www.readtheprofile.com/p/elizabeth-holmes-documentary-you-can-see-everything](https://www.readtheprofile.com/p/elizabeth-holmes-documentary-you-can-see-everything)
+
+摘要：Polina Pompliano在评述Elizabeth Holmes纪录片《你可以看到一切》时指出，该片表面上讲述一段欺骗故事，实则通过镜头语言、剪辑节奏和叙事结构在"欺骗"观众本身。导演Oppenheim和Fielder利用特写、远景、演员反应镜头等手法，将Holmes反复塑造为"反派""母亲""操纵者"等不同形象，令全剧观众情绪剧烈摇摆。文章援引Canon 2015年摄影实验——同一人被赋予"富翁、罪犯、渔夫"等不同身份标签后，照片呈现截然不同——说明影像叙事对认知的塑造力。作者强调，人类并非先收集证据再得出结论，而是先形成情感印象，再寻找事实佐证，这正是社会难以达成共识的深层原因。此外，文章补充了一个常被忽略的法律细节：Holmes因误导获得逾7亿美元投资的投资者入狱，而非因欺诈患者——后者四项指控均被无罪判决。影片最终让每位观众亲身体验"被操控"的全过程，使一部关于他人欺骗的纪录片，同时成为一场关于人类心理脆弱性的生动实验。
+
+---
+
+## 18. 解析器组合子
+
+**原文标题**: Parser Combinators
+
+**原文链接**: [https://t3.at/blog/2026-10-17-parser-combinators/](https://t3.at/blog/2026-10-17-parser-combinators/)
+
+解析是指将文本等非结构化输入转换为对象等结构化数据的过程。正则表达式常用于文本解析，但面对复杂任务时容易变得混乱难维护；而 tree-sitter 等重量级解析库（如驱动代码编辑器语法高亮的引擎）功能强大，对简单场景却显得过于笨重。解析器组合子正是为填补这一中间地带而生的方案：它以简洁、灵活的方式，将小型解析单元组合起来处理中等复杂度的解析任务，兼具正则的易用性与专业解析器的表达能力。这一概念虽在开发者中知名度不高，却是一种值得掌握的实用技术。本文将从入门角度介绍解析器组合子的核心思想与应用场景，帮助读者理解何时以及如何选择这一恰到好处的解析方案。
+
+---
+
+## 19. 地理趣谈：各国轮廓幽默图（1868年）
+
+**原文标题**: Geographical Fun: Being Humourous Outlines of Various Countries (1868)
+
+**原文链接**: [https://publicdomainreview.org/collection/geographical-fun-being-humourous-outlines-of-various-countries-1868/](https://publicdomainreview.org/collection/geographical-fun-being-humourous-outlines-of-various-countries-1868/)
+
+摘要：本书为1868年出版的英文幽默地理读物，现藏于美国国会图书馆。全书以诙谐笔触描绘世界各国的地图轮廓，将各国边界线条转化为滑稽生动的形象，兼具趣味性与知识性。19世纪中后期，欧洲尤其是英国兴起了一股以漫画和速写形式表现地理知识的潮流，本书即为其代表之作。作者将各国版图的外形特征加以夸张提炼，以幽默语言进行评述，使读者在会心一笑中辨认并记住各国轮廓。此类读物面向普通大众，尤其适合青少年及非专业读者，旨在打破传统地理教材的枯燥印象，以轻松方式传播地理常识。本书反映了维多利亚时代中产阶级对休闲读物的需求，也体现了当时地理大发现热潮退去后，公众对世界各国的认知已由探索转向欣赏与调侃。从文献价值看，该书是研究19世纪大众地理文化、幽默出版史及早期地图传播的重要资料。
+
+---
+
+## 20. 一解析器，两漏洞，万路由：跨eCos与Linux平台的博通WiFi漏洞利用
+
+**原文标题**: One parser, two bugs, many routers: Exploiting Broadcom WiFi across eCos, Linux
+
+**原文链接**: [https://quentinkaiser.be/security/2026/10/16/one-parser-two-bugs/](https://quentinkaiser.be/security/2026/10/16/one-parser-two-bugs/)
+
+摘要：2026年10月，一名安全研究员在巴黎Hexacon大会上披露了一个影响博通（Broadcom）WiFi芯片的严重漏洞。该漏洞根植于博通SDK，可追溯至2010年，涉及WPS EAP帧重组缓冲区溢出；2018年曾发布不完整补丁却未能真正修复。攻击者仅通过802.11帧即可远程触发，无需网络密钥或完成WPS认证，即可获得未授权任意代码执行及受控信息泄露（如提取PSK密钥）。漏洞横跨eCos平台（BCM3380/3383/33834）与Linux平台（BCM3390/65xx/68xx），波及数十家厂商、数百万台路由器。在比利时，研究证实Proximus、VOO、Orange三家ISP的CPE设备均可被跨街远程攻陷，Telenet疑似受影响，截至2026年10月15日全部未修复。博通拒绝分配CVE编号，致使OEM普遍未实施修补，且研究者90天披露期内各响应方沟通极为迟缓。文章总结三点教训：AI前沿模型已将深度安全研究从数月压缩至一周；一个存活16年的漏洞凸显供应链技术债务被"追讨"的必然性；此类高隐蔽性、近距无线漏洞对威胁极为诱人，适用于酒店网络接管或近邻渗透。研究者公开了固件指纹脚本与YARA规则，呼吁社区协助排查完整影响面。
+
+---
+
+## 21. CKKS：密文加法与乘法
+
+**原文标题**: CKKS – Addition and Multiplication
+
+**原文链接**: [https://www.jeremykun.com/2026/10/11/ckks-addition-and-multiplication/](https://www.jeremykun.com/2026/10/11/ckks-addition-and-multiplication/)
+
+本文是CKKS同态加密教程系列第二部分，在密钥生成与模多项式运算基础上，讲解密文加法与乘法。密文为环(ℤ/Qℤ)[x]/(xᴺ+1)上的二元组(c₀,c₁)，解密即与(1,s)做点积。密文加法定义为分量逐位相加，结构简洁，噪声呈亚高斯分布且方差线性叠加。密文乘法的核心难点在于(c₀+c₁s)(d₀+d₁s)展开后含s²项，无法保持二元组形式，故将乘积定义为三元组(c₀d₀, c₀d₁+c₁d₀, c₁d₁)，解密改为与(1,s,s²)做点积。乘法引发三重问题：其一，误差含e_c·e_d乘积项，噪声至少二次增长；其二，缩放因子由Δ变为Δ²，须通过"重缩放"(rescaling)恢复；其三，三元组须经"重新线性化"(relinearization)降回二元组，否则连续乘法将致密文长度不断膨胀。文章给出Python实现，含加法、乘法及三元组解密函数，并通过单元测试验证乘积解码需注意Δ²尺度与噪声上界。此外讨论了噪声增长依赖明文值范围这一限制对通用计算的影响，以及缩小Δ与重缩放之间的权衡。后续系列将详述重缩放、重新线性化及自举(bootstrapping)等关键技术。
+
+---
+
+## 22. Show HN: Sphinx——上线前拷问 AI 代码理解的 Git 钩子
+
+**原文标题**: Show HN: Sphinx – A hook that quizzes you on your AI's code before shipping
+
+**原文链接**: [https://sphinx-six-theta.vercel.app/](https://sphinx-six-theta.vercel.app/)
+
+Sphinx 是一款免费开源的 Git 钩子，专为 AI 辅助开发场景设计，核心理念是"你可以外包思考，但不能外包理解"。当你或 AI 代理执行 git push 时，Sphinx 会暂停推送，读取代码差异（diff），生成针对异常与边界场景的情境题要求开发者作答。例如：Stripe webhook 超时重试时，若 charge() 失败，已保存的事件 ID 将导致什么后果？答错会给出解释并提供新场景重试，答对则继续推送。该工具兼容 Codex、Claude Code、Cursor、OpenCode 等主流编程代理，也支持纯 Git 工作流，可从 OpenRouter 或任意 OpenAI 兼容端点获取审查模型。设计注重最小 token 消耗，开发者回答不会回传至 AI 代理，.env 与密钥也绝不读取。安装仅需 npm install -g sphinx-understand（需 Node 22.19+，支持 macOS、Linux 及 WSL），运行 sphinx install 完成配置即可。紧急时可用 sphinx yolo 跳过检查，但每次跳过均会被记录。
+
+---
+
+## 23. 《微型粗野主义》：多亏Hacker News，现已登陆Steam
+
+**原文标题**: Tiny Brutalism – Thanks to HN it's on Steam
+
+**原文链接**: [https://store.steampowered.com/app/5426130/Tiny_Brutalism/](https://store.steampowered.com/app/5426130/Tiny_Brutalism/)
+
+这篇来自 Hacker News 的帖子分享了一款名为"Tiny Brutalism"（微型粗野主义）的小型独立游戏，该作品因受到 HN 社区的推荐与关注而获得广泛曝光，最终成功上架 Steam 平台。正文内容为 Steam 商店页面的标准界面元素，包括顶部导航菜单（商店、主页、探索、愿望单、新闻、排行榜、社区等）以及 Steam 支持的全部语言列表，涵盖繁体中文、日语、韩语、英语、法语、德语、俄语、葡萄牙语等三十余种语言选项。该帖子反映了独立游戏开发者的典型成长路径：通过 Hacker News 等科技社区获得口碑传播与初始关注，再借助 Steam 这一主流游戏分发平台触达更广泛的玩家群体，是社区力量推动小众作品走向大众市场的典型案例。
+
+---
+
+## 24. 法律专家警告：Meta新条款仍授予广泛网页抓取权限
+
+**原文标题**: Legal experts warn Meta's new terms still grant broad scraping permissions
+
+**原文链接**: [https://www.niemanlab.org/2026/10/legal-experts-warn-metas-new-terms-still-grant-broad-scraping-permissions-despite-language-changes/](https://www.niemanlab.org/2026/10/legal-experts-warn-metas-new-terms-still-grant-broad-scraping-permissions-despite-language-changes/)
+
+摘要：Meta在Nieman Lab报道后修改商业账户服务条款，删除了"训练"一词，将内容用途从所有Meta产品收窄至"广告和商务产品"。但法律专家警告，修订条款仍允许Meta通过爬虫抓取与商业账户"相关"的网站全部内容，且可能凌驾于robots.txt之上。条款10月30日生效，商业账户无法退出。康奈尔大学Grimmelmann教授认为"开发商务产品"措辞仍极宽泛；威斯康星大学Sobel教授指出robots.txt仅为偏好声明，不具法律强制力。Meta发言人称此举仅为条款整合，并非赋予新权利，但修订文本中未加入任何尊重robots.txt的明确条款。欧洲新闻社理事会已正式向欧盟监管机构申诉，英国新闻媒体协会称其为"无耻的土地掠夺"，美国新闻/媒体联盟总裁则称该条款"可能违法"，呼吁阻止10月30日的实施。
+
+---
+
+## 25. 佛罗里达州业主协会与公寓协会正加剧住房危机
+
+**原文标题**: Florida's HOAs and condo associations are making the housing crisis worse
+
+**原文链接**: [https://hoaspy.com/hoa/fl/florida-hoa-housing-crisis.html](https://hoaspy.com/hoa/fl/florida-hoa-housing-crisis.html)
+
+HOA Spy平台索引了佛州104,659个业主及公寓协会，覆盖151万套住宅。文章指出这些协会从五个方面加剧住房危机：第一，依法对欠缴会费成员发起止赎诉讼，累计10,296起，涉及2,695个社区，佛州占全国此类诉讼的73%；第二，留置权记录达46万条、止赎预告27万份，致使房屋无法出售或再融资；第三，冲浪边公寓倒塌后新规强制结构检查与储备金，推动会费大幅上涨，坦帕、奥兰多等地铁月费涨幅达16%至17%；第四，诉讼成本由全体业主分摊，48,999条法院记录中协会多为原告，92个社区各涉50宗以上案件；第五，6,661个协会公司状态失效，影响保险与交易。佛州法院记录量居全美之首，2026年已超2010年纪录。文章建议购房者交易前查询协会记录并索取预算与储备报告；收到留置通知时及时核实费用、善用异议窗口；立法层面应设定止赎最低欠款门槛、提供诉讼前分期计划，并公开协会收费标准。
+
+---
+
+## 26. Teal——Lua 的静态类型方言
+
+**原文标题**: Teal – A statically-typed dialect of Lua
+
+**原文链接**: [https://teal-language.org/](https://teal-language.org/)
+
+Teal 是一种 Lua 静态类型方言，通过引入类型注解（支持数组、映射、记录、接口、联合类型与泛型）扩展 Lua，定位类似于 TypeScript 之于 JavaScript，同时保持 Lua 极简、可移植与可嵌入的特性。Teal 以编译器 tl 实现，将 .tl 源文件编译为 .lua 文件。用户可通过 LuaRocks（luarocks install tl）安装，也可下载 Linux 和 Windows 预编译二进制；大型项目推荐使用专用构建工具 Cyan。社区已提供 VS Code 插件及适用于 NeoVim 等编辑器的语言服务器。项目由 Hisham Muhammad 发起，由众多贡献者共同开发，且 Teal 自身即使用 Teal 语言编写。社区活动涵盖 GitHub 上的代码开发与论坛讨论，以及 Matrix 聊天室交流。项目采用与 Lua 相同的 MIT 开源许可证。官网还提供免费在线文档、浏览器内编译演示（Teal Playground）及多篇关于项目历史与设计理念的演讲录像。
+
+---
+
+## 27. 数学与科学的黄金时代还是黑暗时代？
+
+**原文标题**: Will it be a golden age or a dark age for mathematics (and science)?
+
+**原文链接**: [https://terrytao.wordpress.com/2026/10/18/will-it-be-a-golden-age-or-a-dark-age-for-mathematics-and-science/](https://terrytao.wordpress.com/2026/10/18/will-it-be-a-golden-age-or-a-dark-age-for-mathematics-and-science/)
+
+摘要：这是一篇由Ben Eastaugh与Chris Sternal-Johnson在WordPress平台发布的博文，标题以设问形式探讨数学乃至整个科学领域未来的发展方向——是迎来繁荣创新的黄金时代，还是陷入停滞衰退的黑暗时代。文章围绕这一核心命题展开思考，试图审视当前数学与科学研究所面临的机遇与挑战，可能涉及经费、人才培养、学术生态、技术变革等因素对学科前景的影响。由于原文仅提供标题与作者信息，具体内容未见完整呈现，无法进一步概括其论证细节与结论。
+
+---
+
+## 28. 纸舟万里行：1874—1875年从魁北克至墨西哥湾的2500英里水上旅程
+
+**原文标题**: Voyage of the Paper Canoe: 2500 Miles from Quebec to the Gulf of Mexico, 1874-5
+
+**原文链接**: [http://www.ibiblio.org/eldritch/nhb/paperc/intro.html](http://www.ibiblio.org/eldritch/nhb/paperc/intro.html)
+
+摘要：本书为美国探险家纳撒尼尔·H·毕晓普所著，1878年于波士顿出版，记录其1874至1875年乘一具仅重58磅的纸制独木舟"玛丽亚·特蕾莎"号，从加拿大魁北克出发，沿圣劳伦斯河、尚普兰湖、哈德逊河、特拉华河及东海岸诸海湾，途经纽约、弗吉尼亚、北卡、南卡、乔治亚，最终抵达佛罗里达锡德拉基，完成2500英里南下墨西哥湾的连续水道航行。途中经历特拉华湾翻船等险境，深受南方各州渔民、种植园主、灯塔看守人等民众款待。1875年冬，作者又独乘雪松小舟从匹兹堡沿俄亥俄河、密西西比河至新奥尔良，再沿墨西哥湾北上，两段旅程合计逾五千英里，仅此一遇事故。全书以精确地理测绘为核心，全部地图由美国海岸测量局绘制，比例尺为1:1,500,000，被视为当时最完整的美国海岸地图集。毕晓普曾于十七岁徒步穿越南美安第斯山区，著有《草原与安第斯》。本书献给海岸测量局全体工作人员，两艘舟艇亦曾入藏史密森尼机构，参展1876年费城百年博览会。
+
+---
+
+## 29. 大脑三明治：与AI协作的三重思维法
+
+**原文标题**: The Brain Sandwich
+
+**原文链接**: [https://terriblesoftware.org/2026/10/02/the-brain-sandwich/](https://terriblesoftware.org/2026/10/02/the-brain-sandwich/)
+
+本文分享了一位资深工程师Emily提出的"大脑三明治"工作框架，旨在帮助开发者在充分利用AI的同时保持自身工程判断力，避免技能退化。该框架将工作分为三个阶段：第一阶段，在让AI动手之前，先自己阅读代码、理解问题，形成对方向的大致判断，防止AI将开发者引向错误路径，甚至凭空制造出本不存在的需求；第二阶段，带着充分上下文将工作交给AI，可以毫无顾虑地完全委托，但凭借前期的理解，能够准确判断AI产出的方案是否正确、是否过度或是否解决错了问题；第三阶段，在提交代码评审前，开发者须重新介入，阅读代码差异、评估复杂度是否合理、完善PR描述，确保任何改动都能向他人清晰解释"改了什么"和"为什么改"。文章还顺带提及了当前工程界的一些焦虑：AI引发的代码审查量激增、工作方式剧变，以及部分工程师完全"外包"思考给AI导致能力退化的现象（有人戏称自己为"肉块代理"），以及"大脑三明治"正是对这一趋势的务实回应。
+
+---
+
+## 30. 电子干扰剧场与电子公民不服从
+
+**原文标题**: The Electronic Disturbance Theater and Electronic Civil Disobedience (1998)
+
+**原文链接**: [https://www.thing.net/~rdom/ecd/EDTECD.html](https://www.thing.net/~rdom/ecd/EDTECD.html)
+
+1998年，由网络行动主义者与艺术家组成的"电子干扰剧场"（EDT）提出并实践了"电子公民不服从"（ECD）理念，将传统非暴力直接行动中的封锁与静坐策略移植至互联网，实现"虚拟封锁"与"虚拟静坐"。参与者无需聚集，可从任意接入点远程参与，同时对抗远端目标。EDT开发了核心工具"洪水网络"（Flood Net），一种通过自动反复发送刷新请求来淹没并封锁目标网站的Java小程序。年内实施三次行动：4月10日针对墨西哥总统泽迪洛网站，逾8000人参与，成功造成间歇性阻断；5月10日针对克林顿白宫网站，因对方服务器规模大而未果；6月10日针对墨西哥内政部网站，该部负责移民与公共安全事务，此次墨西哥政府部署Java脚本反击，可触发多个弹窗导致攻击者浏览器崩溃。EDT的行动根植于1994年墨西哥萨帕塔运动，该运动借助互联网将冲突信息传遍全球，推动网络从纯粹通信渠道向直接行动场域转变。EDT表示将持续开发更多电子抗争工具，如"蜂群"（SWARN）计划，并期望自身融入更广泛的自主行动网络，推动全球电子抵抗运动发展。
+
+---
+
