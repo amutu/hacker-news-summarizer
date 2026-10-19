@@ -1,0 +1,304 @@
+# Hacker News 热门文章摘要 (2026-10-20)
+
+这是今日 [Hacker News](https://news.ycombinator.com/) 上最热门的文章摘要。
+
+## 1. MiniMax M3.1 Flash 正式发布
+
+**原文标题**: MiniMax M3.1 Flash
+
+**原文链接**: [https://www.minimax.io/blog/minimax-m31f](https://www.minimax.io/blog/minimax-m31f)
+
+摘要：MiniMax正式发布下一代Flash模型M3.1，其前身"Space Bunny"曾以匿名方式运行并处理超200万亿tokens。M3.1 Flash在智能体任务、编程、计算机操作及网络安全四大领域实现全面跃升，推理速度提升近三倍，使用成本降低70%。性能上，该模型在AutomationBench-AA名列前茅，可端到端完成多行业企业工作流；BankerToolBench得76.2分；DeepSWE v1.1达73.7%；OSWorld V2得61.7分、ALE得29.6分，均居中国模型首位；CyberGym得分82%，在漏洞发现与渗透测试中表现突出。日常推理速度可达200+TPS。定价方面，每百万token输入0.15美元、输出0.60美元、缓存输入0.015美元，以顶流性能实现极高性价比。M3.1 Flash现已通过MiniMax API、M Plan及MiniMax Code开放使用，模型权重稍后发布。MiniMax表示，Flash系列聚焦效率与能力的平衡，而追求极限智能的Pro系列也将随后面世。
+
+---
+
+## 2. 我用单个电机造了一架无人机 [视频]
+
+**原文标题**: I built a drone with only one motor [video]
+
+**原文链接**: [https://www.youtube.com/watch?v=Ndftcft6XhU](https://www.youtube.com/watch?v=Ndftcft6XhU)
+
+摘要：该视频标题为"I built a drone with only one motor"，展示了一位创作者仅使用单个电机便成功制造出一架可飞行无人机的过程，标题中的"[video]"表明这是一则视频作品。然而，所提供的正文内容并非视频的实际描述或文章正文，而是YouTube平台页面的底部信息，包括版权说明、服务条款、隐私政策、安全与运作方式、新功能测试、公司归属（© 2026 Google LLC）、地址（美国加州山景城）、联系电话及邮箱等常规页脚内容，未包含任何关于该无人机设计原理、电机选型、飞行控制方案或测试结果等实质性技术信息。因此，根据现有材料可概括的要点为：这是一则发布在YouTube上的DIY无人机制作视频，核心亮点在于以单电机实现飞行，突破了常规多旋翼无人机需要多个电机的常规设计思路，体现了作者在机械结构与动力控制方面的创新尝试；但具体技术细节尚无法从所给文本中获取，需观看视频本身才能了解完整的制作过程与飞行效果。
+
+---
+
+## 3. Wine成功移植至OpenBSD
+
+**原文标题**: Wine ported to OpenBSD
+
+**原文链接**: [https://marc.info/?l=openbsd-ports&m=179236125692175](https://marc.info/?l=openbsd-ports&m=179236125692175)
+
+摘要：Thomas Frohwein在OpenBSD-ports邮件列表中宣布，Wine已成功移植到OpenBSD平台。该移植的核心难点在于%gs寄存器问题，由Andrii以软件方式模拟%gs前缀指令解决，主要工作由Andrii和Fabien完成。该移植支持64位Windows程序，已测试数十款软件基本成功，包括《巫师3》重制版（需搭配vkd3d-proton）。主要限制是WoW64不可用，32位Windows程序仍无法运行。内置测试因依赖X服务器且部分用例挂起而暂时禁用，但实际游戏测试未见异常。作者建议用户以Notepad++（64位便携版）作为初步测试对象，并提醒Wine属于"风险自担"软件，建议创建独立非特权用户运行，未来或可借助unveil(2)实现沙箱隔离。该移植引发广泛关注，与数年前相比，大量Windows软件已转向64位，需求显著增长。邮件同时感谢brynet、bentley、pertho、vl_ms等贡献者的测试工作，并附提交补丁供社群审阅。
+
+---
+
+## 4. The reverts will continue until morale improves
+
+**原文标题**: The reverts will continue until morale improves
+
+**原文链接**: [http://peter.eisentraut.org/blog/2026/10/09/the-reverts-will-continue-until-morale-improves](http://peter.eisentraut.org/blog/2026/10/09/the-reverts-will-continue-until-morale-improves)
+
+文章之前已经处理过
+
+---
+
+## 5. 在 macOS 上原生运行 Android 应用
+
+**原文标题**: Android apps running native on macOS
+
+**原文链接**: [https://github.com/kksimp/Mac.apk](https://github.com/kksimp/Mac.apk)
+
+Mac.apk 是一款面向 Apple Silicon Mac 的 Android 应用运行器，无需模拟器、虚拟机或 Linux 内核，直接在 macOS 之上实现 Android 应用环境。应用以普通 macOS 进程运行，通过 GPU 渲染，支持窗口化、Dock 集成、深浅色模式跟随及自由缩放，体验接近原生。项目目前处于 Alpha 阶段，部分应用可完整运行，部分兼容有限。系统要求为 macOS 26.4（Tahoe）及以上、任意 Apple Silicon 芯片设备，磁盘占用约 280 MB。安装方式为下载 .dmg 镜像拖入 Applications，首次启动需安装 Runtime 并设为默认文件关联，之后双击 APK 即可运行。Mac.apk 采用 GNU AGPL v3.0 开源协议，另有商业授权可供企业使用，项目由 Voltare 开发，不携带广告也不支持应用内购。需注意，Android 应用以当前 macOS 用户权限运行，无手机式沙箱隔离，用户应仅安装可信来源的 APK。项目源码完整公开，包含 Android 框架重实现、原生运行时、Bionic 适配层及 ARM32 重编译器等组件，欢迎社区贡献。
+
+---
+
+## 6. 喜欢编程，依然值得
+
+**原文标题**: It's still ok to enjoy programming
+
+**原文链接**: [https://chriskiehl.com/article/it-is-still-ok-to-enjoy-programming](https://chriskiehl.com/article/it-is-still-ok-to-enjoy-programming)
+
+在AI能秒级生成代码的时代，网上弥漫着"手写编程已无意义"的悲观论调，作者对此写下回应。他指出，工作中追求效率无可厚非，但工作不等于生活——在个人时间里，享受编程本身无需任何经济或功利理由。作者分享了自己的周末日常：手写一个碰撞检测糟糕的打砖块游戏，尝试将依赖类型语言Agda的思想引入Java以提升类型安全，死磕递归方案（recursion schemes）至精疲力竭。这些探索没有直接实用价值，却带来纯粹的快乐与成长。作者坦言感受到一种微妙的社会压力——仿佛这个时代"不该"再为编程本身感到喜悦。他观察到，对AI末日叙事的持续消费具有传染性，会让人陷入"一切没有意义"的虚无感，但断开信息流后这种感觉便会消退。最后他补充，借助AI进行"氛围编程"（vibe-coding）同样乐趣十足，只是体验方式不同。核心信息：热爱一件事，无需向外界证明其价值。
+
+---
+
+## 7. 《RuneScape》基准评测：面向智能体的MMO游戏（视频）
+
+**原文标题**: RuneScape Bench: MMOs for Agents [video]
+
+**原文链接**: [https://www.youtube.com/watch?v=cNm4zyUtWj0](https://www.youtube.com/watch?v=cNm4zyUtWj0)
+
+摘要：本文对应一条YouTube视频，标题涉及经典MMO游戏《RuneScape》的基准测试，探讨面向智能体（Agent）的MMO游戏设计方向。然而，所提供的正文内容仅为YouTube页面底部的标准页脚信息，包括版权与隐私声明、Google LLC公司地址（位于美国加州山景城）、韩国客户服务热线、内容举报入口及商品免责声明等，并未包含视频的实际简介、章节或任何实质性讨论内容。因此，无法从中提取关于RuneScape评测方法、MMO智能体机制或游戏设计要点等核心信息。总体而言，该页面仅反映了YouTube平台的法律与运营 boilerplate 文本，有效内容缺失。
+
+---
+
+## 8. 海鲜供应链中的阻燃剂
+
+**原文标题**: The fire retardant in the seafood chain
+
+**原文链接**: [https://insideclimatenews.org/news/14102026/ethoxyquin-fire-retardant-in-seafood-chain/](https://insideclimatenews.org/news/14102026/ethoxyquin-fire-retardant-in-seafood-chain/)
+
+上世纪五六十年代，鱼粉因氧化自燃引发90余起船只火灾。1967年，嘉吉公司推出抗氧化剂乙氧基喹作为鱼粉阻燃方案，效果显著，美国及联合国随后强制推广。然而该物质在动物实验中表现出致癌性，2017年欧盟暂停其在饲料中使用，英国、挪威等国已全面禁用，但美国、日本、韩国、澳大利亚仍允许限量使用。近年来，多起美国集体诉讼指控Aldi、Gorton's等企业将含乙氧基喹的海产品虚假标注为"可持续"，均庭外和解。加拿大虽有标签要求，但2024年欧盟审计显示其仅完成40%的抽检计划，监管严重不足。嘉吉称已在全球三文鱼饲料中停用该物质，秘鲁对欧、美、加、澳的鱼粉出口也已实现零添加。然而，当前最主流的替代品丁基羟基茴香醚（BHA）同样被美国国家毒理学项目认定为"可能致癌物"。全球超半数海鲜来自养殖，行业正陷入从致命火灾到致癌阻燃剂、再到另一潜在致癌替代品的困境循环。
+
+---
+
+## 9. Timestral：Mistral时间序列基础模型
+
+**原文标题**: Timestral: Mistral's time-series foundation models
+
+**原文链接**: [https://mistral.ai/news/timestral/](https://mistral.ai/news/timestral/)
+
+Mistral于2026年10月发布Timestral，其首个时间序列基础模型家族。最大模型仅209M参数，便在GIFT-Eval、TIME、fev-bench三大公开基准上均列第一，以更少参数超越此前最优模型。模型输出21分位数的概率性多变量预测，支持过去及已知未来协变量，上下文长度达32,768时间步。家族含5M、28M、123M、209M四档规格，均处于准确率与规模的帕累托前沿，且无需GPU，CPU即可推理。关键技术包括：解耦时程预测（DHF）保全完整历史上下文；协变量感知注意力区分变量角色、防止未来信息泄露；合成数据优先的两阶段训练策略。Timestral可嵌入现有监控流水线，亦可与Mistral语言模型协同，构建从异常检测到根因分析的多模态代理工作流，适用于工业传感、金融等场景。企业可通过Mistral Forge进行领域微调与持续再训练，支持本地部署、VPC及气隙环境，采用修改版MIT许可证，代码已开源。
+
+---
+
+## 10. 动物实验的替代技术终于加速落地
+
+**原文标题**: Alternatives to animal testing are finally taking off
+
+**原文链接**: [https://spectrum.ieee.org/alternatives-to-animal-testing](https://spectrum.ieee.org/alternatives-to-animal-testing)
+
+哈佛大学生物学家Donald Ingber于2009年开发出首个"肺芯片"，以微流控装置模拟人肺呼吸与免疫反应，被视为替代动物实验的重要里程碑，但当时《Science》期刊仍要求补充小鼠数据方可发表，折射出动物模型在生物医学研究中的根深蒂固地位。如今这一格局正在逆转：美国FDA在2025至2026年间先后宣布将动物实验降为例外，并以"非临床测试"取代法规中"动物测试"的表述，明确要求采用器官芯片、细胞模型等替代方案；欧盟、英国及OECD也相继推进相关改革。这些替代方法（统称NAMs）涵盖器官类器官、多器官芯片、计算模拟及AI工具，已在肝毒性预测和心脏心律失常筛查中展现出优于动物实验的准确率。然而挑战依然严峻：NAMs的验证需要全球标准化流程、统一指标及高昂的头对头对比研究，中小企业难以承受；学术与产业间的数据壁垒也阻碍了有效比较。专家普遍认为，技术本身只是转型的一环，监管政策更新、跨学科协作、数据开放共享及科研文化的深层转变，才是推动动物实验全面退出的关键所在。
+
+---
+
+## 11. 星际争霸：灰烬
+
+**原文标题**: Starcraft: Ashfall
+
+**原文链接**: [https://starcraft-shooter-2026.pages.dev/](https://starcraft-shooter-2026.pages.dev/)
+
+《星际争霸：灰烬》是一款早期原型的网页竖屏游戏，以星际争霸人虫战争为背景，玩家指挥十人规模的人族突击队抵御虫群突入。核心玩法涵盖桥面防线坚守与无限层数的"无尽模式"，设有增援信标、歼敌计数与排行榜等机制。部队阵容涵盖机枪兵、火蝠、攻城坦克、雷神、高阶圣堂、不朽者及巨像等经典单位，采用C-14电磁步枪自动索敌与密集点射的战斗系统。指挥官技能包括雷诺"战地鼓舞"、女妖空袭、空投支援及休伯利安号呼叫等，配合战地升级体系提升战力。界面显示该版本为"Very early prototype"，主要内容尚未完成，并附有开发者通讯频道、补丁日志、录像分享及战报截图等功能模块。此外，作者提示因使用集成显卡可能导致战场启动异常，建议在Windows图形设置中将浏览器切换为高性能模式后重启。整体来看，这是一款融合星际争霸IP、竖屏操作与roguelike无尽刷层玩法的轻量化网页射击/策略原型。
+
+---
+
+## 12. Evidence（YC S21）招聘软件工程师
+
+**原文标题**: Evidence (YC S21) Is Hiring Software Engineers
+
+**原文链接**: [https://evidence.dev/jobs](https://evidence.dev/jobs)
+
+摘要：Evidence是一家由Y Combinator S21批次投资的商业智能公司，致力于构建人与AI代理协作的新型分析平台，正逐步替代Tableau、Power BI等传统工具。公司已服务数千个团队，用户覆盖初创企业、世界500强及政府部门，开源项目获7000个GitHub星标，并获得SV Angel、A Capital及dbt、PagerDuty创始人等投资，营收持续增长。Evidence现于加拿大多伦多全职招聘软件工程师，岗位横跨核心查询引擎与Evidence Studio，将与创始人紧密协作。公司坚持小而精的团队路线，正在重塑开发流程，让AI代理承担大部分开发生命周期，工程师则聚焦于判断力、创造力与产品决策等核心环节。其工作文化强调：极致响应客户、追求产品细节与体验、快速迭代交付、减少会议（每周仅一次团队会）、数据驱动决策，以及持续抬高技术标准。团队虽小但成长迅速，新成员将对产品未来产生深远影响。
+
+---
+
+## 13. 笼罩Anthropic上市进程的隐秘信托
+
+**原文标题**: The obscure trust looming over Anthropic's IPO
+
+**原文链接**: [https://www.wsj.com/tech/ai/anthropic-ipo-private-trust-188f41f7?st=RtdGHg&reflink=desktopwebshare_permalink](https://www.wsj.com/tech/ai/anthropic-ipo-private-trust-188f41f7?st=RtdGHg&reflink=desktopwebshare_permalink)
+
+无法访问该文章链接
+
+---
+
+## 14. Mercury 3：扩散模型的规模化突破
+
+**原文标题**: Mercury 3: Diffusion at scale
+
+**原文链接**: [https://www.inceptionlabs.ai/blog/introducing-mercury-3](https://www.inceptionlabs.ai/blog/introducing-mercury-3)
+
+Inception团队于2026年10月发布Mercury 3，定位为迄今最强扩散式大语言模型。该模型在多项基准测试中超越GPT-6 Luna与Claude Haiku 5.5，生成速度达每秒1068个token，较前代提升4至8倍，上下文窗口扩展至100万token。其参数规模较Mercury 1扩大逾40倍，智能水平提升约3倍，验证了扩散架构同样遵循规模法则。Mercury 3主打低延迟场景，已落地浏览器智能体、互动教育、实时搜索与客服等生产环境，在网页导航等任务中表现优于前沿模型且成本更低。定价为每百万输入token 0.20美元、输出0.70美元，首发享五折优惠。此外，产品矩阵还包括面向语音低延迟的Mercury Voice与高吞吐分类模型Mercury Decide。Mercury 3兼容OpenAI API，已在Inception平台及OpenRouter、Baseten、Vercel上线，支持企业级专属部署与合规配置。
+
+---
+
+## 15. 论功行赏
+
+**原文标题**: Credit where credit is due
+
+**原文链接**: [https://thefloatingcontinent.com/blog/credit-is-due/](https://thefloatingcontinent.com/blog/credit-is-due/)
+
+达特茅斯学院教务长施内尔在《华盛顿邮报》发表的文章被AI检测工具标记为LLM生成。他承认大量使用AI辅助写作，却坚持自己是唯一作者，并声称AI仅为"辅助工具"。本文以编程领域类比展开论证：正如C语言程序员不会声称自己"创作"了编译器生成的汇编代码，LLM作者也不应抹除机器的贡献。作者支持用结构化文档区分人类意图与AI生成内容，并批评施内尔将AI同时比作"辅助工具"和"专业编辑"的矛盾说辞。文章指出，学术界对非母语学者使用代笔者的既有规范本应要求致谢署名，LLM辅助写作更应如此——AI比人类编辑更倾向于颠覆性改写。此外，作者评论施内尔的文章本身空洞无物，论据单薄，存在事实错误与拼凑痕迹，与其宣称的"深度洞见"相去甚远。核心主张是：无论人类还是机器，凡有贡献者皆应获得署名，透明标注才能维护创作诚信与知识溯源。
+
+---
+
+## 16. 伽罗瓦有限域与高级加密标准（AES）
+
+**原文标题**: Galois Finite Fields and the Advanced Encryption Standard (AES)
+
+**原文链接**: [https://www.cs.uaf.edu/2015/spring/cs463/lecture/03_23_AES.html](https://www.cs.uaf.edu/2015/spring/cs463/lecture/03_23_AES.html)
+
+本文介绍了伽罗瓦有限域GF(2⁸)的数学结构及其在AES加密标准中的核心作用。GF(2⁸)含256个元素，每个元素唯一对应一个系数取模2的至多八次多项式，二进制位与多项式项形成直接映射。有限域加法本质上是逐位XOR（丢弃进位），每个元素即自身加法逆元；乘法遵循多项式乘法规则，结果次数超过8时需模不可约约化多项式x⁸+x⁴+x³+x+1（即0x11B）归约，确保结果仍在一个字节内。AES每轮对4×4字节状态矩阵依次执行：S盒（先求乘性逆元再经仿射变换）、行移位（第i行循环左移i字节）、混合列（对每列施加可逆矩阵变换，使单字节变化传播至全部输出）和轮密钥加（XOR）。采用有限域的关键优势在于：运算结果始终有界；非零元逆元普遍存在，保障解密可行；理论成熟（源于19世纪伽罗瓦的工作），不易被未知方法攻破；且除法、转置与矩阵乘法彼此不交换，组合产生的非线性远超纯加法或线性系统所能达到的安全水平。
+
+---
+
+## 17. Let's Encrypt 新增两个域名验证远程视角
+
+**原文标题**: Let's Encrypt is adding two additional remote perspectives for domain validation
+
+**原文链接**: [https://community.letsencrypt.org/t/lets-encrypt-is-adding-two-additional-remote-perspectives-for-domain-validation/252166](https://community.letsencrypt.org/t/lets-encrypt-is-adding-two-additional-remote-perspectives-for-domain-validation/252166)
+
+Let's Encrypt 宣布在域名验证中新增两个远程视角。此变更旨在提升验证安全性、防范 BGP 劫持攻击，并满足基线要求 BR 3.2.2.9 的规定——自 2026 年 12 月 15 日起，证书颁发机构须部署至少五个远程网络视角，且须覆盖至少两个不同区域互联网注册机构（RIR）的服务区域。调整后，域名验证共发出七次请求：一次来自主数据中心，六次来自远程视角（原为四次）；主服务器及远程视角多数须收到正确挑战响应，验证方能通过，从而大幅提高攻击者劫持验证的难度。Let's Encrypt 预计此变更对用户影响极小，计划于 2026 年 10 月 27 日在测试环境启用新区域，若运行顺利，将于 11 月 10 日在正式环境全面上线，后续进展将持续在该公告帖更新。
+
+---
+
+## 18. Plex漏洞遭在野利用投放挖矿木马及代理工具
+
+**原文标题**: Plex vulnerabilities being exploited in the wild to drop a cryptominer
+
+**原文链接**: [http://www.boredhackerblog.info/2026/10/plex-vulnerabilities-being-exploited-in.html](http://www.boredhackerblog.info/2026/10/plex-vulnerabilities-being-exploited-in.html)
+
+2026年9月1日，Plex为Media Server 1.43.2及更早版本发布紧急安全更新。9月26日，四个相关CVE（CVE-2026-96652/96654/96655/96656）正式公布，研究员code-zm将多个漏洞链式组合实现远程代码执行，工具命名为"Plex2Shell"。安全博主BoredHackerBlog提前部署受感染版本作为蜜罐监控，10月17日首次捕获在野利用。攻击源IP包括45.194.92.222、91.92.40.202和176.65.139.228，载荷从217.60.194.116下载，初始为XMRig挖矿程序。后续发现攻击者还部署了"myawesomeproxy"代理工具，借助沦陷的Plex家用设备IP构建住宅代理网络，可渗透企业VPN与邮件系统，威胁远超单纯挖矿。文章附有PCAP抓包、文件SHA-256哈希及沙箱报告等检测资源，漏洞发现者亦已开源检测规则。建议用户立即升级Plex Media Server至修复版本。
+
+---
+
+## 19. VT100固件注释解析（2022）
+
+**原文标题**: The Annotated VT100 Firmware (2022)
+
+**原文链接**: [https://vt100.net/dec/vt100/rom/](https://vt100.net/dec/vt100/rom/)
+
+1978年，DEC推出VT100终端，这是其首款ANSI兼容终端，也是首款采用Intel 8080微处理器取代离散逻辑设计的终端。后续成本优化型号VT101与VT102对支持的转义序列做了微调，这些变更被写入DEC内部《视频系统参考手册》，成为此后15年间"VT100兼容"事实标准的定义。本文对VT100原始8 KiB固件进行了全面注释与反汇编，结合《技术手册》及印刷文档提供逐行解读。文章涵盖反汇编的动机与方法、完整注释反汇编代码（附相关文档链接）、已知缺陷与异常行为分析，并介绍了辅助工具Awnty——一款用于检测8080反汇编覆盖率的小工具，同时列出其他相关资源。该文档对理解早期终端模拟器设计及转义序列处理机制具有重要参考价值。
+
+---
+
+## 20. 迈向公司世界模型
+
+**原文标题**: Towards Company World Models
+
+**原文链接**: [https://www.beaconholdings.com/research/towards-company-world-models](https://www.beaconholdings.com/research/towards-company-world-models)
+
+本文提出"公司世界模型"（CWM）概念：一种能在公司层面进行战略决策的AI，区别于执行具体任务的"数字员工"。CWM可观察业务现状、主动提出改进假设、调度数字员工实施并协调人工验证、评估成效与诊断问题，充当企业家的AI联合创始人。作者指出，当前AI经营业务表现堪忧（如Gemini经营咖啡馆两月内支出远超收入），弥合差距需两类关键数据：业务的完整数字化内部状态与真实干预反馈。文章结合"银发浪潮"指出，CWM可帮助即将退休的企业主将数十年隐性经验传承给后继者。在安全对齐层面，CWM被定位为"对齐中宇宙"——操作者始终掌握主导权，其纠正行为将"盈利"等不完整目标中的隐含约束显性化，形成人类有动力纠错、AI行为有边界的小型对齐场域。Beacon通过长期持股深入业务内部，实现技术与制度双重创新，让实体经济从业者参与塑造服务自身经济的AI系统。
+
+---
+
+## 21. Cairn：透视AI驱动网络攻防的敞开窗口
+
+**原文标题**: Cairn: Open windows into AI-driven cyber operations
+
+**原文链接**: [https://norforge.com/blog/inside_cairn](https://norforge.com/blog/inside_cairn)
+
+NorForge团队调查发现，Cairn等AI渗透测试控制面板被攻击者大量暴露于公网，为外界提供了窥探恶意网络行动的罕见窗口。Cairn是一套状态驱动的AI代理协作框架，接受目标与任务后自动搜索漏洞、实施入侵并建立持久访问。研究识别出20余个疑似恶意面板，归为三个活动集群：AIA0001（中文语言，针对美日澳电商与支付基础设施，使用DeepSeek 4.1 Flash模型，单任务成本仅约5美元，已确认成功注入Webshell）；AIA0002（英语，面向金融盗窃，直接窃取信用卡与加密货币，甚至暴露后端SSH凭据）；AIA0003（低置信度，处于探索阶段）。攻击者普遍采用Playwright浏览器自动化验证、PHP反序列化利用、Magento漏洞验证等工具链，任务高度自动化。值得注意的是，众多合法红队演练同样暴露于公网，客户面临严重安全隐患。因涉及极度敏感信息，报告对面板地址及目标数据进行了严格删节。
+
+---
+
+## 22. 我已归档所有仓库，不再维护任何 Ruby 库
+
+**原文标题**: I no longer care to work on any Ruby gems so I've archived all my repositories
+
+**原文链接**: [https://po-ru.com/2026/10/18/why-im-no-longer-updating-this-repository](https://po-ru.com/2026/10/18/why-im-no-longer-updating-this-repository)
+
+作者宣布将全部 Ruby 库仓库归档，彻底停止维护。文章援引 Ruby 之父 Matz 的早期理念——Ruby 为人类而设计，旨在让程序员专注于创造并获得乐趣，但作者认为这一时代已终结。如今，Rails 的拥有者 DHH 的立场令作者深恶痛绝，且其本人已对 Ruby 和编程失去兴趣，转而用大语言模型（LLM）生成 Rust 代码。与此同时，Matz 将 Ruby 重新定位为"AI 时代的编程语言"，语言演进亦大量依赖 LLM。作者的核心愤怒在于：开源共同遗产正被大型企业"开采"以训练 AI 模型，而模型生产的低质量代码又反向污染代码库，形成恶性循环。面对"手写代码已不再可持续"之论，作者以辛辣比喻回应——如床铺已被糟蹋，便再无法安睡。他最终选择彻底退出，不再为这一被异化的生态贡献任何代码。
+
+---
+
+## 23. CERN与Mistral签署战略伙伴关系意向声明
+
+**原文标题**: CERN and Mistral sign a statement of intent to establish a strategic partnership
+
+**原文链接**: [https://home.cern/cern-and-mistral-join-forces-to-accelerate-ai-for-science/](https://home.cern/cern-and-mistral-join-forces-to-accelerate-ai-for-science/)
+
+2026年10月15日，欧洲核子研究组织（CERN）与法国AI企业Mistral签署意向声明，建立长期战略合作，共同开发面向科学发现的基础模型。合作初期聚焦高能物理，核心目标是打造全球首个面向对撞机物理的预训练"大物理模型"，基于大型强子对撞机（LHC）数十亿次模拟质子-质子碰撞数据训练，支持粒子碰撞重建、粒子识别、异常信号标记及探测器设计评估等多任务。传统LHC数据重建依赖多步专用算法链，而该基础模型有望在单一架构中整合整条重建流程，实现多任务统一处理。CERN现存约1EB实验数据，2030年前后运行的高亮度LHC将使碰撞量增十倍，为AI训练提供了优越的数据规模与科学精度。CERN首席信息官Porcari指出，高能物理为AI研发提供了独特而严格的验证环境，成果将向整个物理界开放共享；Mistral副总裁Brandstetter表示，双方将携手探索大规模AI模型应对粒子物理复杂性的潜力，有望催生新科学突破。此次合作整合了欧洲在AI与基础科学领域的优势，旨在打造能适应现代科学规模与复杂度的新一代AI工具。
+
+---
+
+## 24. 整数转字符串转换（2014）
+
+**原文标题**: Integer to String Conversion (2014)
+
+**原文链接**: [https://tia.mat.br/posts/2014/06/23/integer_to_string_conversion.html](https://tia.mat.br/posts/2014/06/23/integer_to_string_conversion.html)
+
+无法访问该文章链接。
+
+---
+
+## 25. 奥黑尔机场挖出50吨巨石 面向公众征集命名
+
+**原文标题**: Chicago O'Hare digs up 50-ton boulder under airfield, asks public for name ideas
+
+**原文链接**: [https://simpleflying.com/chicago-ohare-digs-up-50-ton-boulder-public-names/](https://simpleflying.com/chicago-ohare-digs-up-50-ton-boulder-public-names/)
+
+2026年10月，芝加哥奥黑尔国际机场在"ORDNext"扩建项目施工期间，于南蓄洪池开挖现场地下约9米处发现一块重约50吨、宽约3.5米的白云岩巨石。机场顺势发起公众命名活动，收到近3000条建议后于10月16日选出六个候选名：Sweet Stone Chicago、No ORDinary Rock、Chicago Rocks、O'Rock、Orchard Rock、Da Rock，公众投票截至11月2日。胜出名字将随巨石在机场新设展览中展示，不会刻于石上。此前官方内部曾戏称其为"奥黑尔豆子"，向芝加哥地标"云门"雕塑致敬。此次发现正值奥黑尔推进史上最大规模航站楼扩建，涉及大量地下基础设施与排水设施建设。巨石虽未影响航班运行，却为严肃的基建工程增添了城市趣味，也成为机场在转型期加强公众互动、塑造社区记忆的契机。
+
+---
+
+## 26. Show HN：开源拼读辅助早期阅读应用
+
+**原文标题**: Show HN: Open-source early-reading reader with phonics help
+
+**原文链接**: [https://github.com/finereli/yarareads](https://github.com/finereli/yarareads)
+
+Yara Reads 是一款面向刚掌握自然拼读、亟需真实阅读材料的孩子设计的免费开源应用，无需注册即可使用。作者为六岁女儿 Yara 开发，哥哥 Tom 创作了首个故事。核心亮点有三：其一，拼读辅助内嵌于单词——点击任意词即显示单字母、字母组合（如 sh、ee）及分拆元音（如 a_e）的标记，并逐音播放，绝不替孩子朗读整页。其二，严格的逐词校验器按发音而非仅拼写检查每个词是否在孩子已掌握的拼读范围内，超出部分以紫色虚线下划线提示。其三，支持通过 MCP 协议接入 Claude、ChatGPT 等 AI 代理，自动生成符合孩子拼读水平的故事或将自有图书改写为可读版本。技术上基于 Cloudflare Worker + D1 + R2，无构建步骤，克隆仓库后数条命令即可完成本地开发与部署；应用可脱离账号在浏览器端独立运行，登录模块可轻松替换。代码采用 MIT 许可，故事与插图采用 CC BY 4.0，欢迎 remix。作者特别邀请有孩子正在学阅读的技术父母取去此项目，据为己有、自由定制。
+
+---
+
+## 27. Show HN：我做了一个包办琐事的任务系统，让专注回归做事本身
+
+**原文标题**: Show HN: I built a task system to handle the drudgery so I could focus on tasks
+
+**原文链接**: [https://3anddoneapp.com/try](https://3anddoneapp.com/try)
+
+这是一款以"减少决策疲劳"为核心理念的任务管理工具。用户将所有待办事项逐条倾倒式输入，无需整洁，系统便会自动从中精选三项并附上选择理由。提醒节奏可自由设定——"只推一件""推两件""全推三件"，也支持从四个乃至更多候选项中自动筛选三项，且始终为新增事项预留空间。选定事项通过邮件按时送达，将"今天该做什么"的决定交给系统而非自己。工具提供了一个"示例一日"演示，方便新用户快速理解完整工作流。隐私方面，未注册用户的所有数据完全保留在本地浏览器，仅在需要排序时短暂离开；注册后数据仅用于排序，用户的原始输入始终不会离开浏览器。整体设计哲学清晰：把挑选、排序、提醒等繁琐机械环节全部自动化，让人把有限的注意力留给真正值得投入的工作本身。
+
+---
+
+## 28. 幼犬直播（Pentulive）[视频]
+
+**原文标题**: Pentulive (Puppy Live) [video]
+
+**原文链接**: [https://yle.fi/t/18-332106/fi](https://yle.fi/t/18-332106/fi)
+
+芬兰国家广播公司Yle的"幼犬直播"（Pentulive）是一档记录小狗成长日常的直播节目。2026新季于10月10日开启，拉戈托罗马格诺洛母犬Hilkka顺利诞下6只幼犬，公犬为擅长敏捷运动的Zorro。节目通过每日直播、短视频集锦和播客等形式，展现幼犬出生、初照、首游等温馨瞬间。观众可参与为幼犬起名、在聊天区送上祝福、在"Pentutietäjä"预测游戏中赢取奖励等互动。节目还安排幼犬探访养老院、幼儿园及空军学校，帮助小狗在敏感期适应不同环境与人群。该节目海外反响热烈，瑞典观众已超25万，节目模式已出口至荷兰。上一季记录了边境牧羊犬Loimun及其11只幼犬从出生到各归新家的完整旅程，广受好评。官网每周二18点设有聊天互动环节，每日推送多条趣味短片，为观众带来轻松治愈的日常陪伴。
+
+---
+
+## 29. NIST椭圆曲线嫌疑云散
+
+**原文标题**: Cloud of suspicion lifted from NIST curves
+
+**原文链接**: [https://www.johndcook.com/blog/2026/10/17/nist-curves-exonorated/](https://www.johndcook.com/blog/2026/10/17/nist-curves-exonorated/)
+
+2000年，美国国家标准与技术研究院（NIST）发布了一组加密用椭圆曲线，种子由美国国安局（NSA）提供，学界长期怀疑其间暗藏后门——此担忧并非空穴来风，NSA确曾在Dual_EC_DRBG随机数生成器中植入过后门。NIST曲线形式为 y² = x³ − 3x + b (mod p)，安全性取决于参数b的选取，理论上存在被刻意构造为弱参数的可能。种子来源成谜：NSA的Jerry Solinas曾称种子由一段英文的ASCII码哈希生成，但已记不清原文及流程。2023年10月，密码学者Valsorda设立悬赏征集种子生成过程的逆向工程。近日，Anthropic研究员完成挑战，证实种子确由善意生成——Solinas使用的是日期而非短语参与构造，仅因时间久远记忆模糊。此举彻底解除了笼罩NIST曲线二十余年的疑云。这些曲线在基域算术上具备诸多运算优势，如今正式"平反"。不过正如Valsorda所言，NIST椭圆曲线的"复出"恰逢其时，因为后量子密码算法即将全面取代它。
+
+---
+
+## 30. GitHub Actions、GitHub Pages 及 Webhooks 服务降级
+
+**原文标题**: Degraded availability for GitHub Actions, GitHub Pages and Webhooks
+
+**原文链接**: [https://www.githubstatus.com/incidents/8tzbpcnl75jp](https://www.githubstatus.com/incidents/8tzbpcnl75jp)
+
+2026年10月19日15:49 UTC，GitHub 发现 Actions、Pages 和 Webhooks 服务出现性能下降，随即启动调查。用户反映工作流处理、Pages 站点构建及 Webhook 交付出现延迟。15:50 UTC 确认 Webhooks 性能受损，15:56 UTC 扩展确认 Actions 和 Pages 亦受影响。16:30 UTC，团队确认已采取措施缓解问题，服务开始恢复，但仍可能短暂出现状态更新和部署延迟。16:56 UTC，GitHub 宣布故障完全解决，各项服务恢复正常，并提示后续将发布详细根因分析报告。本次事件历时约一小时零七分钟，影响范围为 Webhooks、Actions 和 Pages 三项服务，目前状态为"已解决"。
+
+---
+
