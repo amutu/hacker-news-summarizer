@@ -1,0 +1,306 @@
+# Hacker News 热门文章摘要 (2026-10-25)
+
+这是今日 [Hacker News](https://news.ycombinator.com/) 上最热门的文章摘要。
+
+## 1. 科技业之外，AI回报尚付阙如
+
+**原文标题**: No Signs of AI Payoff Outside the Tech Sector
+
+**原文链接**: [https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector](https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector)
+
+2026年10月，Apollo首席经济学家斯洛克指出，尽管AI投资巨大、热度极高，科技行业之外却未见任何财务回报。"Magnificent 7"七大科技巨头的人均收入与利润率持续走高，而标准普尔493家成分公司的相应指标基本持平；AI亦尚未推动全要素生产率增长。主流企业开始将AI支出视为侵蚀利润的成本中心而非增长引擎，逐步缩减投入；风投支持的公司仍大量采购AI模型"代币"，但传统企业既无需求也无意买单。只要AI应用局限于经济的一小部分，其宏观拉动效应将十分有限。
+
+斯洛克提出前瞻性问题：即便模型日益商品化、智能成本不断下降，主流企业能否将廉价AI转化为更高营收与利润率？他认为AI是强大的"计算器"，但商业竞争需要的是"判断力"，而AI无法理解问责、信任、企业文化、潜规则及道德权衡，这些恰恰驱动声誉风险与最终利润。斯洛克强调，AI的经济故事最终将在标普493家公司中决定，而非七大科技巨头，目前科技行业外尚无收入增长或利润率改善的任何证据。
+
+---
+
+## 2. Goose 编程语言
+
+**原文标题**: The Goose Programming Language
+
+**原文链接**: [https://aardappel.github.io/goose/](https://aardappel.github.io/goose/)
+
+Goose 是一种内存安全的系统编程语言，无堆分配、无垃圾回收、无生命周期注解，基准测试中速度达 C++ 的 3.3 倍、安全 Rust 的 1.12 倍，内存占用更低。其核心为数据栈模型：所有动态值内联存放于编译器管理的多段 bump-pointer 栈上，扩容仅移动指针，作用域结束即释放，无分配器与解构器。关键特性包括：引用在数组扩容后保持有效；编译器自动推断引用根，无需任何生命周期标注；嵌套结构与变体 ADT 完全内联存储，消除指针开销；相对引用替代机器指针，使数据结构本身即为可校验的文件格式；值在最终目标位置就地构建，返回值零拷贝；支持跨调用帧的错误返回，无需 Result 类型或栈展开；线程间不共享内存，仅通过类型化队列传递扁平值，无锁无数据竞争；泛型与高阶函数在编译期单态化，零运行时开销；最终编译为单一 C 文件，可直接调用 C 接口，内置 TinyCC 后端支持进程内编译运行。
+
+---
+
+## 3. Roku 开发者代码仓库已从 GitHub 迁移至 GitLab
+
+**原文标题**: Roku developer repositories moved from GitHub to GitLab
+
+**原文链接**: [https://blog.roku.com/developer/gitlab-move](https://blog.roku.com/developer/gitlab-move)
+
+Roku 官方宣布将其开发者代码仓库从 GitHub 平台整体迁移至 GitLab 平台。此次迁移意味着所有 Roku SDK、示例项目及开发工具的源代码托管地址将发生变更，开发者需将原有的 GitHub 仓库链接更新为 GitLab 对应地址，并调整 CI/CD 配置、依赖拉取脚本及自动化部署流程。同时，Issue 追踪、Pull Request（合并请求）及代码审查等工作流也将转移至 GitLab 体系，开发者应及时关注官方公告以获取新的仓库链接及迁移指南，确保开发工作不受影响。
+
+---
+
+## 4. 美国核力量紧急行动消息（EAM）在线监听与解读（11175 kHz）
+
+**原文标题**: Listen and read USA nuclear forces Emergency Action Messages, heard on 11175 kHz
+
+**原文链接**: [https://missileer.watch](https://missileer.watch)
+
+摘要：「导弹兵观察站」（Missileer.Watch）是一个在线平台，致力于监听并解读经由11175 kHz短波频率（上边带/USB）播发的美国核力量紧急行动消息（EAM）。该站点由美国俄勒冈州丹尼尔·弗伦克尔（Daniel Frenkel）及其Valar Systems公司运营，界面时间统一采用UTC（Zulu）制。当前页面展示为开发测试数据而非实时信号，最新EAM及网络节点状态均显示"等待接收中"。技术层面，页面需启用JavaScript方可读取数据流，后台通过获取archive.json和status.json两个公开文件实现信息展示。隐私政策方面，站点不部署追踪cookie；登录为可选操作，仅写入一个会话cookie；访问统计交由Cloudflare Web Analytics匿名完成。网站全部录音与解码成果以CC0 1.0（公共领域）协议发布，允许任何人自由使用，仅建议注明来源为missileer.watch；数据保留与删除细则详见其隐私页面。
+
+---
+
+## 5. 约翰·卡马克谈Goose语言：多数据栈与相对引用
+
+**原文标题**: John Carmack on the Goose Language: multiple data stacks and relative references
+
+**原文链接**: [https://twitter.com/ID_AA_Carmack/status/2113704269274636568](https://twitter.com/ID_AA_Carmack/status/2113704269274636568)
+
+id Software创始人、著名系统程序员约翰·卡马克在社交媒体上对Goose编程语言给予高度评价。他指出该语言具备两大核心亮点：一是能够自动分析并灵活运用多个数据栈及可调整大小的字段，这一机制将语言的能力从"能完成大量工作"直接跃升至"几乎无所不能"；二是其相对引用机制配合内置的二进制结构验证，使数据结构可直接映射至内存，网络数据亦可即时使用，无需传统意义上的解析步骤。卡马克特别强调，现实中文件和网络数据的"解析"操作通常比必要开销高出约一百倍，而Goose语言通过上述设计有效规避了这一性能瓶颈，在数据处理效率上展现出显著优势。
+
+---
+
+## 6. Dream-1：首个通用零样本机器人操控世界动作模型
+
+**原文标题**: Dream-1
+
+**原文链接**: [https://dreamlabs.ai/research/dream-1/](https://dreamlabs.ai/research/dream-1/)
+
+2026年，Dream Labs完成9000万美元种子轮融资，正式推出Dream-1——首个通过公开API提供的世界动作模型，可零样本操控未见机器人完成未见任务。Dream-1以末端执行器位姿为通用动作接口，借助WAM将视频预测与动作生成统一，以"像素"为跨本体通用表征，已在27个仿真机器人和4个真实机器人上验证泛化能力。文章指出，机器人行业长期受制于"先有鸡还是先有蛋"的冷启动困境，而硬件大幅降本（双臂套装仅2000美元）与模型零样本泛化的结合，正打破数据闭环，推动机器人采用飞轮启动。独立机构Robocurve评测显示，Dream-1在RoboDojo基准上性能超越Opus 5.5与Gemini 4 Argon，任务成本仅为后者1/16，速度亦更快。定价为每小时3美元，轻量版flash为2美元。此外，Dream Labs提供FaaS服务，用户可用少量自有数据快速微调，补齐特定短板。
+
+---
+
+## 7. 圣赫勒拿5便士硬币：主角是约190岁的象龟乔纳森
+
+**原文标题**: The St. Helena 5 pence coin shows Jonathan, a roughly 190 year old tortoise
+
+**原文链接**: [https://de.numista.com/9866](https://de.numista.com/9866)
+
+无法访问该文章链接
+
+---
+
+## 8. FreeDNS — 免费DNS与动态/静态DNS托管服务
+
+**原文标题**: FreeDNS
+
+**原文链接**: [https://freedns.afraid.org/](https://freedns.afraid.org/)
+
+摘要：FreeDNS 是一个提供免费 DNS 托管的平台，涵盖动态 DNS、静态 DNS、子域名及域名托管服务，已拥有超过 716 万会员、约 1380 万条 DNS 记录。会员可使用域名管理、子域名管理、网页转发、动态 DNS 更新、IPv6 反向 DNS 及备份 DNS 等功能；公众可浏览主页、FAQ、新闻及路由器配置指南等。用户可通过 curl 命令快速完成 IP 动态更新，IPv6 更新只需访问 v6.sync.afraid.org 对应接口即可。平台适用于将家庭、办公、学校或云服务器的固定域名指向实时变化的 IP 地址，支持公网、局域网及 IPv6 环境。共享注册表收录 23,234 个域名供用户直接挂载。此外，平台提供每月 5 美元的高级计划，增加 50 个子域名、3 个隐私选项及通配符 DNS 解析，并接受比特币支付。当前系统每秒处理约 2,372 条 DNS 查询。
+
+---
+
+## 9. 神经芯片解码脑区间交互作用
+
+**原文标题**: Neural chip decodes interactions between brain regions
+
+**原文链接**: [https://actu.epfl.ch/news/neural-chip-decodes-interactions-between-brain-r-2/](https://actu.epfl.ch/news/neural-chip-decodes-interactions-between-brain-r-2/)
+
+摘要：瑞士洛桑联邦理工学院（EPFL）研究团队开发了一款名为LogSync的可植入神经芯片，能够实时追踪大脑不同区域间的信号通信，识别认知与情绪状态。该芯片仅4×2毫米，功耗低于200微瓦，采用对数计算简化网络级信号处理，在单芯片上完成脑区同步性提取与状态解码。当前深部脑刺激（DBS）治疗多为"开环"模式，无法根据患者脑活动实时调整；LogSync通过机器学习算法提取脑波强度及脑区间同步性等网络级生物标志物，实现闭环自适应刺激，为抑郁症、创伤后应激障碍、强迫症等精神疾病治疗开辟新路径。研究团队利用人类脑记录数据集验证了算法对认知与情绪状态的区分能力，并在大鼠实验中成功按脑电波预设相位生成刺激触发信号。项目获美国国立精神卫生研究所660万瑞士法郎资助，成果发表于《IEEE固态电路期刊》。该芯片的脑网络标志物提取能力还可拓展至帕金森等运动障碍的自适应DBS、无创闭环刺激及聚焦超声等下一代神经技术领域。
+
+---
+
+## 10. 丹麦政府悄然放弃弃用微软Office的计划
+
+**原文标题**: Danish Government silently drops plan to dump MS Office
+
+**原文链接**: [https://www.computerworld.dk/art/297226/digitaliseringsministeriet-har-i-al-stilhed-droppet-stort-anlagt-forsoeg-med-open-source-alternativ-til-microsoft](https://www.computerworld.dk/art/297226/digitaliseringsministeriet-har-i-al-stilhed-droppet-stort-anlagt-forsoeg-med-open-source-alternativ-til-microsoft)
+
+摘要：丹麦政府此前曾提出逐步淘汰微软Office办公软件，以降低对单一商业软件的依赖、推进办公系统数字化转型。然而，该计划并未通过公开声明终止，而是被悄然搁置，引发外界关注。这一决策背后反映出公共部门在软件替代过程中的现实困境：在开源或国产替代方案尚未完全成熟、系统迁移成本高、员工适应周期长的多重压力下，维持现有微软Office生态仍是务实选择。此事也折射出欧洲多国政府在推动技术自主与软件本地化进程中面临的共性难题，即在理想主义政策目标与行政效率、财政预算等现实约束之间寻求平衡。
+
+---
+
+## 11. 《我看不懂量子物理》（2018）
+
+**原文标题**: I don't understand quantum physics (2018)
+
+**原文链接**: [https://www.southampton.ac.uk/~doug/quantum_physics/index.html](https://www.southampton.ac.uk/~doug/quantum_physics/index.html)
+
+本文为道格拉斯·罗斯撰写的量子物理科普长文，作者以坦诚"看不懂"的姿态，引导非专业读者逐步走近量子世界。文章从经典物理出发，回顾双缝实验等撼动物理学界的关键实验，依次阐释波粒二象性、物质波、粒子与量子场、海森堡不确定性原理、波函数与量子隧穿等核心概念；进而探讨量子态叠加与二态系统，分析波函数坍缩问题，梳理哥本哈根诠释、多世界诠释等主要量子力学诠释。文章还介绍了薛定谔的猫与EPR悖论两大思想实验，讨论隐变量理论，追问量子效应为何局限于微观尺度，探讨概率与决定论的深层关系，并最终反思量子力学的正确性与完备性。文末附有术语表、数学公式及参考文献，兼顾通俗性与学术严谨。全书语言平实，以"承认不懂"为切入点，力求让普通读者把握量子物理的基本图景与未解之谜。
+
+---
+
+## 12. OBS Studio 33.0.0 版本发布说明
+
+**原文标题**: OBS Studio 33
+
+**原文链接**: [https://github.com/obsproject/obs-studio/releases/tag/33.0.0](https://github.com/obsproject/obs-studio/releases/tag/33.0.0)
+
+OBS Studio 33.0.0 于10月23日发布。核心更新：浏览器源底层CEF框架从127升级至150；插件加载体系全面重构，第一方插件迁入core文件夹，第三方插件路径调整（34.0前兼容旧路径）；预览中源吸附体验优化，新增视觉指示器、支持整轴吸附且不再吸附隐藏源；数字输入框交互改进，支持Shift加减多步调节；Arm64平台启用NVENC。其他改进包括NVIDIA Broadcast SDK更新支持、音频监听快捷键、Studio模式分组修复、全屏游戏检测优化等。Bug修复涵盖macOS 27.2启动崩溃、Linux USB麦克风移除崩溃、Hybrid MP4/MOV分段、AMF B帧计算致断流等。开发层面，移除对Ubuntu 24.04、FFmpeg 6/7及Qt 6.4–6.9的支持，Windows构建迁移至VS 2026/SDK 26100，新增回放缓冲区事件、文件扩展名过滤等API，并废弃部分旧接口。
+
+---
+
+## 13. Node2Shell演变为HTTP2Shell：Brotli解码器漏洞波及众多HTTP库与应用
+
+**原文标题**: Node2Shell evolves to HTTP2Shell, blast radius affects many HTTP libs and apps
+
+**原文链接**: [https://www.aikido.dev/blog/python-packages-vulnerable-node2shell-brotli-cve-2026-111497](https://www.aikido.dev/blog/python-packages-vulnerable-node2shell-brotli-cve-2026-111497)
+
+CVE-2026-111497是Google Brotli压缩库解码器中的越界写入漏洞（CWE-787），影响1.0.3至1.2.0版本，CVSS 4.0评分9.2（严重）。未经身份验证的远程攻击者可构造恶意Brotli数据流，导致内存损坏、信息泄露或任意代码执行。该漏洞于2026年10月21日以"Node2Shell"之名在Node.js中披露，随后迅速波及Python（Brotli、brotlicffi包）、C++（libbrotli）、Bun、Envoy、Istio等广泛使用的HTTP组件，故被称为"HTTP2Shell"。OpenAI早在2月即修复了Brotli源码中的根本原因，但未识别其安全风险，致各下游项目均须独立发布补丁。攻击路径涵盖入站（恶意请求体）与出站（恶意服务器响应）两个方向。修复方面，各组件已发布补丁：Node.js升至22.23.4/24.22.1/26.12.1，Brotli升至1.2.1，Python包升至Brotli 1.2.1及brotlicffi 1.2.1.0，Bun升至1.4.4，Envoy升至1.40.0等。临时缓解措施包括卸载相关Brotli包、在反向代理层拒绝Content-Encoding含br的请求、移除Accept-Encoding中的br。目前主流安全审计工具尚未将该CVE映射至PyPI包，需手动排查依赖。
+
+---
+
+## 14. Python与Julia中的符号回归
+
+**原文标题**: Symbolic Learning in Python and Julia
+
+**原文链接**: [https://github.com/astroautomata/PySR](https://github.com/astroautomata/PySR)
+
+PySR是一款开源符号回归工具，旨在从数据中自动发现简洁、可解释的数学表达式。其核心搜索引擎由Julia库SymbolicRegression.jl驱动，API采用scikit-learn风格，支持pip、conda、Docker及Apptainer等多种部署方式。用户可灵活配置运算算子、自定义损失函数、复杂度约束与嵌套限制，依托多核并行机制在数十万次迭代中筛优方程。模型具备特征选择、去噪、热启动等特性，训练结果可导出为SymPy、JAX、PyTorch等可微分格式以支持后续计算。面对高维数据，PySR可通过"符号蒸馏"将神经网络转化为解析方程，兼具解释性与表达力。此外，PySR兼容SLURM集群调度，支持早停条件与超时控制，结果以CSV和Pickle文件持久化保存。项目还提供AI Agent技能插件以嵌入自动化编码工作流，社区活跃、贡献者众多。
+
+---
+
+## 15. 物理学家首次将单个反物质粒子囚禁一个月
+
+**原文标题**: Physicists trap a single antimatter particle for a month
+
+**原文链接**: [https://www.scientificamerican.com/article/physicists-trap-a-single-antimatter-particle-for-a-month/](https://www.scientificamerican.com/article/physicists-trap-a-single-antimatter-particle-for-a-month/)
+
+摘要：西北大学Gerald Gabrielse团队在《物理学评论快报》上报告了一项突破：首次将单个正电子（电子的反物质对应粒子）在"无壁容器"中囚禁长达一个月，使其可进行量子状态测量。团队利用放射性同位体钠-22衰变释放正电子，先令其穿过冷钨晶格减速，再通过电磁场引导至仅高绝对零度零点三摄氏度的真空中，由上下电场与侧向磁场共同捕获。囚禁成功后，团队计划精确测定正电子磁矩，方法是测量翻转自旋方向及激发态跃迁所需能量。此前该团队已将电子磁矩精度推至万亿分之一。若正电子磁矩与电子不完全相反，将挑战粒子物理标准模型的对称性预测，为宇宙中物质为何压倒性多于反物质这一根本难题提供关键线索。费米实验室理论物理学家Roni Harnik评价称，该成果使科学家得以检验最基本的物理对称性，意义重大。
+
+---
+
+## 16. GPU-unlock：Nvidia 30系列显卡 FP/BF16 指令发射速率解锁
+
+**原文标题**: GPU-unlock: FP/BF16 instruction issue rate on Nvidia 3000's cards
+
+**原文链接**: [https://github.com/Zagitta/gpu-unlock](https://github.com/Zagitta/gpu-unlock)
+
+GPU-unlock 1.0.0 是一个 Linux 内核模块，结合 CMP 解锁器的 V67/PLM 技术与 UEFI 方案的驱动前时序，在 NVIDIA 驱动绑定前写入速度选择器并完成 FLR 复位，将 30 系列消费级显卡（GA102/GA103/GA104/GA106）的 FP/BF16 FMA 发射速率提升至专业卡水平，指令吞吐量翻倍。实测 RTX 3090 Ti 的 BF16 GEMM 从 87.5 TFLOPS 升至 157.4 TFLOPS，FP16 与 TF32 亦显著增益。该模块无需随驱动更新手动打补丁，支持多卡并发解锁、显示卡及 vfio-pci 虚拟机透传。安装需将模块加入 initramfs 并通过内核命令行参数 gpu_unlock.targets=all 启用，兼容 GRUB、dracut、initramfs-tools 等主流启动框架。增益集中于矩阵密集负载：LLM 预填充提速 14%–36%，扩散模型与 FlashAttention 受益明显；受显存带宽限制的 LLM 解码及 INT8 运算基本不变。多份用户报告确认解锁前后输出位级一致。模块与打包脚本采用 GPL-2.0-only 许可，生成固件载荷版权归属 NVIDIA。
+
+---
+
+## 17. TornadoVM 7.3发布：Java应用实现GPU原生工作负载加速
+
+**原文标题**: TornadoVM 7 Enables GPU-Native Workloads from Java Applications
+
+**原文链接**: [https://www.infoq.com/news/2026/10/tornadovm-7-gpu/](https://www.infoq.com/news/2026/10/tornadovm-7-gpu/)
+
+TornadoVM 7.3正式发布，这是一款面向Java的开源异构GPU编程框架，可在不替换JVM的前提下自动将Java程序加速至多核CPU和GPU，兼容OpenJDK、GraalVM、Temurin等主流JDK。架构层面，7.x用FFM API取代JNI，移除JVMCI依赖，通过反射+ASM+Unsafe统一编译路径，支持JDK 21至27。Nvidia生态方面，新增优化CUDA后端、cuTile编程模型（TileContext）及cuBLAS/CUTLASS库直接调用，同时支持Apple MXL库与多GPU执行。该框架适合数据并行工作负载，提供并行注解、核函数上下文、TileContext等多种GPU编程方式，已与Quarkus、Flink、Spring AI等集成，可通过SDKMan安装。团队同步推出jitLLM v2.0，一款基于TornadoVM的Java AI推理引擎，以单JAR文件发布，性能对标llama.cpp和Ollama。其核心理念为"一次编写、随处运行"，开发者可在本地笔记本开发后部署至Nvidia GPU服务器获得显著加速。项目现通过Beestream.ai进行商业化运营。
+
+---
+
+## 18. Zac-OS-9：经典铂金桌面在现代PC上的重生
+
+**原文标题**: Zac-OS-9: The classic Platinum desktop, reborn for modern PCs
+
+**原文链接**: [https://sourceforge.net/projects/zac-os-9/](https://sourceforge.net/projects/zac-os-9/)
+
+无法访问该文章链接
+
+---
+
+## 19. 为什么AI生成的语言如此难以理解？
+
+**原文标题**: Why is AI generated language so hard to understand?
+
+**原文链接**: [https://arxiv.org/abs/2610.29162](https://arxiv.org/abs/2610.29162)
+
+针对"AI生成文本日益难以理解"这一普遍感受，Clark等人从心理语言学视角展开实证研究。他们考察了与人类加工难度相关的语言特征（如宾语关系从句、长句法依赖、低频n-gram等），并利用跨领域AI生成文本语料进行分析。研究发现，与人类写作相比，所有九个前沿及准前沿模型均更多使用无生命主语搭配生命动词及低频n-gram；多数模型还表现出更长的句法依赖、更多堆叠名词和缩减宾语关系从句，且不同模型家族间差异显著。作者进一步提出核心假设：人类语言以成功交际为优化目标，而AI文本日益服务于数学、代码和推理等任务，追求信息密度而非可理解性。通过引入长度惩罚的微调实验，证实了信息密度导向会导致语言行为偏离人类自然表达。该研究揭示了人类语言加工需求与大语言模型之间的错位维度，并为可能的修正方案提供了理论依据。
+
+---
+
+## 20. PHP基金会资金严重不足，仅有一名全职员工，主任坦言
+
+**原文标题**: PHP Foundation 'under-funded' with one full-time staff member, director says
+
+**原文链接**: [https://www.reuters.com/technology/php-foundation-under-funded-with-one-full-time-staff-member-director-says-2026-10-23/](https://www.reuters.com/technology/php-foundation-under-funded-with-one-full-time-staff-member-director-says-2026-10-23/)
+
+无法访问该文章链接
+
+---
+
+## 21. Local Wikipedia: Wikipedia, but only for things a half hour walk from you
+
+**原文标题**: Local Wikipedia: Wikipedia, but only for things a half hour walk from you
+
+**原文链接**: [https://edjefferson.com/localwiki/](https://edjefferson.com/localwiki/)
+
+文章之前已经处理过
+
+---
+
+## 22. 分布式SQLite的十二年
+
+**原文标题**: Twelve years of distributed SQLite
+
+**原文链接**: [https://philipotoole.com/twelve-years-of-distributed-sqlite/](https://philipotoole.com/twelve-years-of-distributed-sqlite/)
+
+2014年作者发布rqlite，将Raft共识协议置于SQLite前端实现写入复制与容错，成为首个开源分布式SQLite系统。此后十二年，该理念催生完整品类：2017年Canonical推出嵌入式C库dqlite；2021年Litestream以WAL流式备份替代共识，解决单机灾备，推动"SQLite够用"思潮；2022年cr-sqlite引入CRDT实现无主多写合并（AP方向），libSQL/Turso分叉SQLite引擎构建边缘服务后获风投并被Supabase收购，Cloudflare D1等亦将SQLite全面服务化。文章归纳设计空间三角落：共识（CP）、流式备份（DR）、无主合并（AP），各解不同问题。核心思路——SQLite为引擎、外部附加复制——被至少八个团队以不同协议反复验证，无人能证其伪。资本最终流向平台化服务，但开源形态已先行八年。rqlite至今仍在线，保持"可自运行、完全可控、零费用"的定位，作者对此感到坦然。
+
+---
+
+## 23. Oai-math-revised：修订OpenAI数学写作的社区平台
+
+**原文标题**: Oai-math-revised: a community hub for revising OpenAI's math write-ups
+
+**原文链接**: [https://terrytao.wordpress.com/2026/10/24/oai-math-revised-a-community-hub-for-revising-openais-math-write-ups/](https://terrytao.wordpress.com/2026/10/24/oai-math-revised-a-community-hub-for-revising-openais-math-write-ups/)
+
+摘要：Oai-math-revised是一个基于WordPress搭建的社区项目，由Ben Eastaugh和Chris Sternal-Johnson共同创建和维护。该平台旨在汇聚社区力量，对OpenAI发布的数学相关内容（包括讲解、推导与写作表达）进行修订、勘误与优化，帮助读者获得更准确清晰的数学知识。从当前页面内容来看，该博客尚处于初期阶段，正文信息极为有限，仅展示了WordPress标准页脚及作者署名，尚未展开具体的修订案例或社区讨论。总体而言，该项目体现了开源社区对AI生成数学内容的质量关注，试图通过协作方式弥补AI在数学表述上的不足。
+
+---
+
+## 24. Apple Music 404 Not Found
+
+**原文标题**: Apple Music 404 Not Found
+
+**原文链接**: [https://music.apple.com/this-url-doesnt-exist](https://music.apple.com/this-url-doesnt-exist)
+
+文章之前已经处理过
+
+---
+
+## 25. 塞西莉亚·别尔迪切夫斯基——克莱门蒂娜计算机专家（1961年）
+
+**原文标题**: Cecilia Berdichevsky, Clementina expert (1961)
+
+**原文链接**: [https://en.wikipedia.org/wiki/Cecilia_Berdichevsky](https://en.wikipedia.org/wiki/Cecilia_Berdichevsky)
+
+塞西莉亚·别尔迪切夫斯基（1925–2010），原名米尔雅姆·图瓦什，出生于波兰维德齐（今白俄罗斯），是阿根廷首批计算机科学家之一。她四岁随家人移民阿根廷并改名。从业会计师十年后，受友人启发，于31岁入读布宜诺斯艾利斯大学数学系。1961年，阿根廷首台大型计算机费兰蒂·墨丘利号（昵称"克莱门蒂娜"）从英国运抵，造价30万美元，为全国性能最强之机器。她在萨多斯基门下学习，受英国工程师西塞莉·波普韦尔指导，编写并运行了该机的首批程序。1962年获伦敦大学奖学金深造，翌年以克莱门蒂娜专家身份回国，并担任数值计算课程实务负责人。1966年阿根廷军事政变引发"长棍之夜"，学界被迫流亡，她转任会计，后参与创办科技顾问公司。1984年出任阿根廷储蓄银行计算机中心副总经理，并代表该国参与国际信息处理联合会。退休后继续从事计算机咨询及联合国开发计划署项目。2010年2月28日逝世于阿维利亚内达。
+
+---
+
+## 26. 平铺噪声——基于GPU的程序化图案
+
+**原文标题**: Tiling Noise – Procedural GPU Patterns
+
+**原文链接**: [https://catlikecoding.com/godot/procedural-gpu-patterns/09-tiling-noise/](https://catlikecoding.com/godot/procedural-gpu-patterns/09-tiling-noise/)
+
+本教程为 Godot 引擎 GPU 着色器程序化图案系列第九篇，在值噪声（Value Noise）基础上引入平铺机制，实现图案在环形面（Torus）上的无缝衔接。首先将粗糙度与频率参数升级为 vec2，分别控制 U、V 方向，环形面基础频率设为 (6,4)。通过扩展 UV 范围至 3×3 区域验证平铺效果。核心实现为 lattice01() 函数：将格点坐标在频率范围内回绕——负坐标加频率，超出频率的坐标减频率，使跨越边界的格点对仍能正确插值，从而消除接缝。平铺存在三项限制：UV 有效范围仅限 −1 至 2、频率须为整数、动画须使用偶数频率。教程添加了默认关闭的平铺开关，并支持滑移动画；开启平铺时，对滑动偏移取小数部分（fract），确保 UV 始终处于有效区间。最终实现光滑环形面上无缝、可动态滑动的多八度值噪声图案。
+
+---
+
+## 27. uv 与 ty 集成预览：迈向统一的 Python 工具链
+
+**原文标题**: Bringing uv and ty together
+
+**原文链接**: [https://astral.sh/blog/uv-ty-integration](https://astral.sh/blog/uv-ty-integration)
+
+Astral 宣布其包管理器 uv 与类型检查器/语言服务器 ty 的实验性集成现已预览可用，目标是打造共享项目上下文的统一工具链。两大核心特性：一是 PEP 723 脚本一等支持——ty 可解析脚本内联元数据，借助 uv 在后台为每个脚本自动构建独立运行环境，在 CLI 和编辑器中提供类型检查、代码补全、悬停提示及跳转定义，各脚本可拥有互不相同的依赖与 Python 版本；二是统一的 uv check 命令——一条命令即可完成依赖同步与类型检查，支持工作区、单包（--package）及脚本（--script）检查，并自动采用锁文件中锁定的 ty 版本，开发者与 CI 无需单独维护版本。集成采用 opt-in 机制：VS Code 用户需在设置中启用 "ty.experimental.useUv"，命令行可设 TY_UV=scripts，运行 uv check 则自动开启，无需额外配置。前置要求为 uv ≥ 0.12.3、ty ≥ 0.0.76。未来计划涵盖基于依赖与代码联合分析检测未使用依赖等跨工具能力，并行推进 ty 稳定版发布。
+
+---
+
+## 28. How close can pure functional programming get to C?
+
+**原文标题**: How close can pure functional programming get to C?
+
+**原文链接**: [https://rtfeldman.com/fp-vs-c](https://rtfeldman.com/fp-vs-c)
+
+文章之前已经处理过
+
+---
+
+## 29. AI图像生成实战指南：从扩散模型到智能体
+
+**原文标题**: A practical guide to AI image generation, from diffusion to agents
+
+**原文链接**: [https://danielball.com/notes/ai_image_generation.html](https://danielball.com/notes/ai_image_generation.html)
+
+摘要：本文是一份基于作者实际实验的AI图像生成综合指南。文章首先梳理了从2014年GAN到2026年多模模型的时代脉络，指出当前主流模型从纯噪声中逐步去噪生成图像，文本提示引导去噪方向，新一代多模态模型还能像语言模型一样"规划"画面布局。在成本方面，核心认知是"按画布而非内容付费"，简单图片与复杂图片价格相同；计费模式分为每张固定价、按尺寸质量分档、按算力计费和本地运行四种，价格跨度可达百倍。作者推荐使用API而非ChatGPT聊天界面进行可重复的批量生产。提示词方面，关键技巧是描述"如何拍摄"（相机、胶片、印刷工艺）而非"长什么样"；当前AI生成图像的破绽已从手指和拼字转向"品味问题"——过度发光、过度戏剧化。在工程集成上，建议为每个服务商封装统一接口、记录全部参数与返回、将生成视为可能失败的异步任务，精确的尺寸、透明通道、配色等工作交由代码完成。智能体（如Claude）虽不能直接生成图像，但可编写提示、调用API、查看结果并迭代，形成闭环。最终结论：最佳管线是混合模式——让AI负责创意，让代码负责精确。
+
+---
+
+## 30. Dessa: Conversation Model trained only on speech
+
+**原文标题**: Dessa: Conversation Model trained only on speech
+
+**原文链接**: [https://block.xyz/dessa](https://block.xyz/dessa)
+
+文章之前已经处理过
+
+---
+
