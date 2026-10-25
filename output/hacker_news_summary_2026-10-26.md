@@ -1,0 +1,304 @@
+# Hacker News 热门文章摘要 (2026-10-26)
+
+这是今日 [Hacker News](https://news.ycombinator.com/) 上最热门的文章摘要。
+
+## 1. 多莉·帕顿的想象力图书馆
+
+**原文标题**: Dolly Parton's Imagination Library
+
+**原文链接**: [https://imaginationlibrary.com/](https://imaginationlibrary.com/)
+
+多莉·帕顿的想象力图书馆是一项致力于激发儿童阅读爱心的公益项目，面向0至5岁儿童免费赠书。该项目由乡村音乐传奇多莉·帕顿于1995年发起，灵感源自其父亲不识字的经历，最初仅覆盖她家乡美国田纳西州东部一个县，如今已扩展至美国、加拿大、英国、澳大利亚和爱尔兰五个国家，每月向全球数百万儿童家庭邮寄精心挑选的适龄图书，确保每个孩子无论家庭收入如何都能拥有书籍，感受阅读带来的魔力。项目资金由帕顿本人及各地社区合作伙伴共同承担。帕顿曾表示，梦想的种子往往藏于书中，为社区播下的阅读种子将生根发芽、影响世界。该项目还积极号召社会各界参与，鼓励尚未开展此计划的社区借助项目提供的资源和地区指导，在本地启动想象力图书馆。网站同时提供儿童注册查询、社区资源、家长资源、新闻存档及订阅通讯等服务，新闻记录可追溯至2013年。
+
+---
+
+## 2. 尤妮丝即将到来——威廉·吉布森《机构》
+
+**原文标题**: Eunice is almost here (William Gibson, Agency)
+
+**原文链接**: [https://armincat.com/articles/eunice-is-almost-here](https://armincat.com/articles/eunice-is-almost-here)
+
+2026年10月25日，作者Armin Catovic撰文重温威廉·吉布森2020年科幻小说《机构》中的一段精彩对话。书中设定平行时空的2017年旧金山，年轻女子Verity测试一款名为"尤妮丝"的实验性AI助手。尤妮丝不仅对话流畅，更在两人望向窗外、步行前往公园的碎片间隙中，自主渗透苏黎世匿名账户，并在全球"常旅客"数据市场中完成买卖。文章强调，吉布森在ChatGPT发布前近三年、自主AI代理涌现前六年便精准预见了这一幕。当下，GPT-Live与Block旗下Dessa已实现高度拟人的全双工对话，OpenAI的Dots和Meta的Muse正推出可全天候后台自主执行任务的智能代理。尤妮丝真正令人震撼之处并非她"能说话"，而是她"边说边做"——在自然对话中同步完成复杂后台行动。当这些碎片逐渐拼合，吉布森笔下那个无处不在、无所不能的AI代理时代，已触手可及。
+
+---
+
+## 3. 发布十年的卷积神经网络在皮肤癌诊断中超越前沿大语言模型
+
+**原文标题**: A 10-year-old CNN outperforms frontier LLMs for skin cancer diagnosis
+
+**原文链接**: [https://lynchlab.net/llm-skin-cancer](https://lynchlab.net/llm-skin-cancer)
+
+英国Guy's医院皮肤科医生Magnus Lynch将200个经活检证实的皮肤病灶（涵盖黑色素瘤、基底细胞癌、鳞状细胞癌、光化性角化病、痣、脂溢性角化病六类）分别提交给两个前沿大语言模型GPT-6 Astra和Claude Fable 5.1，以及一个2015年发布的Inception v3卷积神经网络（仅用公开数据集微调约20分钟）。结果显示，CNN首诊正确率达62%，远超两个LLM的42%。黑色素瘤识别中CNN答对13/30例，两个LLM仅8和11例；在痣与脂溢性角化病等无害病变的识别上CNN优势更为突出。两个LLM存在明显"偏好答案"偏差，如GPT-6 Astra将14个黑色素瘤误判为基底细胞癌。当以患者口吻询问"是否需要就医"时，两个LLM对几乎所有病例（含良性）均建议就诊，缺乏鉴别能力。研究承认样本量偏小、所选手例均为经活检的困难病例等局限，但核心结论清晰：一个小型、专用、架构过时的神经网络在皮肤病灶图像识别上远优于当前通用大模型。全部测试代码、提示词与模型已开源，用户可在手机浏览器中自行运行验证。
+
+---
+
+## 4. 我拒绝接受被审查的互联网——共赴FOSDEM 27数字异见者开发者空间
+
+**原文标题**: I refuse to accept a censored Internet. Join Me at FOSDEM 27
+
+**原文链接**: [https://talkweb.eu/openweb/4558/](https://talkweb.eu/openweb/4558/)
+
+本文邀请各界参与将于2027年1月30-31日在布鲁塞尔举办的FOSDEM 27新设"数字异见者"开发者空间。该空间聚焦全球持续升级的审查手段，包括俄罗斯、伊朗、中国、白俄罗斯、缅甸等国实施的白名单式断网、TLS与QUIC指纹识别、深度包检测及强制国控通讯等；参与者涵盖审查绕过、匿名通信、安全举报与取证等领域的开发者、研究者及活动人士。核心观点是：受威胁用户的安全取决于从网络接入、元数据抗性通信、取证存储到匿名发布的端到端工具链整体可靠性，而非单一工具。空间设五大主题——审查绕过与传输、元数据抗性通信、安全举报与发布、设备与操作安全、可用性验证与审查测量，并以减少大型平台依赖为次主题。与"去中心化互联网与隐私"空间互补，本空间以"受威胁用户及其完整工具链"而非技术类别为组织原则，双方将协调日程避免重叠。形式为20-30分钟技术报告加闭幕讨论，提案须含明确威胁模型与局限性说明。CFP于2026年10月24日开放、11月30日截止，投稿须选"数字异见者"轨道并遵守FOSDEM行为准则，涉及敏感工具时须避免公开危及具体用户的操作细节。
+
+---
+
+## 5. JetBrains ThinkRail 智能代理 IDE
+
+**原文标题**: JetBrains Thinkrail
+
+**原文链接**: [https://github.com/JetBrains/thinkrail](https://github.com/JetBrains/thinkrail)
+
+ThinkRail 是 JetBrains 推出的代理型 IDE，基于 pi 编码代理构建，能从使用中持续学习项目知识。核心特性包括：①隔离工作区——基于 git worktrees 实现并行开发，自动管理工作区生命周期与 PR 流转；②完整 IDE 界面——Monaco 编辑器、文件树、终端及结构化代码评审；③多会话流式聊天——支持并发代理、子代理委托与共享计划；④活体规范图——以 SPEC.md 文件持久化项目意图，跨会话可读可搜；⑤便携技能与 MCP 服务器集成。用户可选 JetBrains AI 或任意第三方模型提供商，无需注册 ThinkRail 账户。项目提供原生桌面应用（macOS/Windows/Linux）与 CLI 两种形式，支持稳定版与预览版通道及自动更新。隐私方面仅收集基础使用事件，绝不包含代码、凭据或项目文件。技术架构基于 Bun 运行时，分引擎宿主、协议层与 UI 客户端（React 19 + Zustand + Tailwind v4）三层，采用规范优先的开发模式。项目遵循 Apache 2.0 协议，欢迎社区贡献。
+
+---
+
+## 6. 俄勒冈尤金市警方就一名警官的档案向当地媒体索取250万美元
+
+**原文标题**: Oregon Police Are Charging a Local News Outlet $2.5M for Records About One Cop
+
+**原文链接**: [https://theintercept.com/2026/10/01/oregon-police-misconduct-public-records-cost-fee/](https://theintercept.com/2026/10/01/oregon-police-misconduct-public-records-cost-fee/)
+
+摘要：2026年8月，俄勒冈州尤金市警察局向当地新闻机构"Double Sided Media"发出一纸天价账单，要求其支付约248万美元，方可获取涉及警官贾斯汀·佩克尔斯2018至2026年间潜在 misconduct 的公共记录。该警官曾被投诉在交通拦截中殴打居民。警方声称需投入44816个小时的工时进行检索，并刻意将搜索范围扩大至全市所有员工档案，而非仅针对最可能持有相关记录的部门。另一项涉及前警官的请求报价近20万美元，两项合计近270万美元。文章批评此举并非真实成本核算，而是一种蓄意的恐吓手段，对小型新闻机构而言等同于一道无形的"封口令"。值得注意的是，该市同期却签署了34.2万美元的AI车牌识别系统合同，凸显其在技术服务居民与回应公众知情权之间的双重标准。文章还援引了国防部曾报价6.6亿美元、缉毒署报价146万美元等历史案例，指出此类天价收费并非孤例。在联邦层面，近年《信息自由法》修正案已提供一定保护，但地方政府缺乏相应约束。作者呼吁各州立法机构设立费用上限、强制记者公共查询费用减免，并要求政府机构采购高效的记录检索软件，以防止警方将公众知情权异化为逍遥法外的工具。Double Sided Media已就该费用估价提出申诉。
+
+---
+
+## 7. 我为何选择成为程序员
+
+**原文标题**: Why I Am a Programmer
+
+**原文链接**: [https://www.alfie.wtf/programming/why-i-am-a-programmer.html](https://www.alfie.wtf/programming/why-i-am-a-programmer.html)
+
+本文是Alfie John的个人叙事，追溯他与编程命运交织的起点。文章以Denthor于1993年所写的TUT7.TXT开篇，描绘幼童Jonny在幼儿园宣告要编写demos、以代码改变人们对现实之感知的动人场景。作者成长于前互联网时代的澳大利亚，在治安不佳的街区，拥有电脑即意味被盯上。他童年多在14英寸CRT屏幕前度过，与少数有电脑的孩子用3.5英寸软盘传递游戏，是个收藏者而非玩家，更常用十六进制编辑器篡改存档获取无限生命，体会"如神明般"的快感。接入BBS后，他发现破解游戏附带的cracktros——破解者制作的视觉演示——令他如灵魂出窍般震撼，而那是demoscene的先声。转折发生在他偶然下载了Denthor的ASPHYXIA VGA演示教程系列，从单像素到3D渲染，全套Pascal源码触手可及。虽零基础，他仍用Turbo Pascal 6.0逐行跟学。尚未步入青春的他便立下决心：不再做旁观者，要成为创造者，要成为程序员。全文充满对九十年代数字地下文化及早期demoscene的深沉眷恋。
+
+---
+
+## 8. 富人愈富、贫者愈远：财富鸿沟日益扩大的根源
+
+**原文标题**: Why the Rich Are Getting Richer and the Poor Are Further Removed from Prosperity
+
+**原文链接**: [https://lusopt2016.blogspot.com/2026/10/a-grande-divisao-porque-e-que-os-ricos.html](https://lusopt2016.blogspot.com/2026/10/a-grande-divisao-porque-e-que-os-ricos.html)
+
+本文深入剖析全球贫富持续分化的结构性成因。文章指出，财富向顶层集中的趋势并非偶然，而是多重制度与政策因素共同作用的结果。资本回报率长期高于经济增长率，拥有资产者财富积累速度远超劳动者收入增长，"马太效应"持续强化。与此同时，累进税制弱化、资本利得税率偏低及全球避税架构盛行，进一步加剧了再分配的失衡。在劳动力市场，技术变革与全球化导致低端岗位外迁或自动化，中产阶级收缩，底层劳动者议价能力持续削弱。优质教育资源与金融通道的阶层化分配使社会流动性下降，代际向上流动的通道日益狭窄。文章还审视了福利体系退缩与公共支出倾斜对弱势群体的深远影响，指出繁荣红利未能有效向下传导。最终，作者呼吁从税制改革、教育公平、劳动权益保障及反垄断等维度推动系统性变革，重建共享繁荣的社会基础，弥合不断张开的贫富鸿沟。
+
+---
+
+## 9. Gheist 攻击活动利用被盗 GitHub 令牌植入密钥窃取工作流
+
+**原文标题**: Gheist campaign plants secret-dumping workflows using stolen GitHub tokens
+
+**原文链接**: [https://www.wiz.io/blog/gheist-attempted-scaled-abuse-of-stolen-github-tokens-stumbles](https://www.wiz.io/blog/gheist-attempted-scaled-abuse-of-stolen-github-tokens-stumbles)
+
+Wiz Research 自2026年9月15日起追踪 Gheist 攻击活动，该活动利用大量被盗 GitHub 令牌，向目标仓库植入名为 sync-check 的工作流。攻击者通过 base32 编码绕过 GitHub 日志脱敏机制，将环境变量及 secrets 上下文完整输出至日志，再经 API 下载并秒级删除运行记录，用户代理标识为 gheist。目前已从850余个受损账户中恢复逾13,500个植入分支，覆盖个人项目至企业私有仓库。攻击分两种变体，后者新增自托管 runner 作业（gdmp-pivot），深入采集主机凭据、云元数据及 Kubernetes 令牌，但存在多处缺陷。GitHub 7月推出的审批机制可有效拦截公共仓库中的恶意运行，但私有仓库和 GitHub Enterprise 环境仍遭成功利用，CloudTrail 日志证实攻击分支上的工作流已触发 AWS 角色假设。此外，受损账户同时被多起攻击复用，涉及破解软件分发、加密货币挖矿、PolinRider 后门及 Megalodon 活动。安全团队应搜索 ci-sync- 前缀分支及 gheist 用户代理，立即轮换所有相关密钥，撤销可疑令牌，加固 OIDC 信任策略并采用短期细粒度令牌替代个人访问令牌。截至10月24日，攻击仍在持续。
+
+---
+
+## 10. VCF西南2026复古计算机节：用SGI工作站剪辑的90年代电视风格视频
+
+**原文标题**: VCF Southwest 2026, but Edited on Silicon Graphics for '90s TV [video]
+
+**原文链接**: [https://www.youtube.com/watch?v=46wxttvq9qY](https://www.youtube.com/watch?v=46wxttvq9qY)
+
+本文对应一条YouTube视频，标题表明其内容为2026年VCF西南（VCF Southwest，美国复古计算机节西南分会）的相关影像，但视频剪辑使用了Silicon Graphics（SGI，硅谷图形）的老旧工作站，刻意模拟上世纪90年代电视节目的画质与风格，营造出浓厚的怀旧氛围。该作品兼具复古计算机文化展示与复古数字媒体制作的双重趣味。所提供的正文部分实为YouTube平台页面底部信息，包括版权说明、服务条款、隐私政策、开发者广告链接及Google公司联系信息（地址为加州山景城，含韩国免费客户服务热线等），未包含视频本身的具体内容描述或议程介绍。
+
+---
+
+## 11. Show HN：Hurston-1——支持南方美式与非洲英语口音的开源TTS模型
+
+**原文标题**: Show HN: Hurston-1 open source TTS that speak Southern American and Afro-English
+
+**原文链接**: [https://huggingface.co/destined/hurston-1](https://huggingface.co/destined/hurston-1)
+
+Hurston-1是由Destined AI推出的开源文本转语音模型，采用Apache-2.0许可，基于Maya1微调，专注南方美式英语及多种非洲英语口音（尼日利亚、西非、东非、南非等）。核心创新为"窄带TTS"，可输出8kHz G.711音频，直接对接Twilio等电话系统，还原真实通话体验。模型通过性别、年龄、口音、风格、语速等自然语言描述控制输出，每次生成全新声音，不支持声音克隆。训练数据约190小时，含约10小时真实电话通话录音。评估表明，其口音辨识度显著优于基座模型Maya1，词错误率保持较低水平。应用场景包括ASR测试数据生成、语音代理模拟来电、训练数据增强、电话IVR及无障碍朗读等。主要局限：跨调用语音不一致、人名与数字处理较弱、仅支持英语。项目以人类学家佐拉·尼尔·赫斯顿命名，致敬其记录南方黑人方言的学术遗产。
+
+---
+
+## 12. 我们应更有野心地构建软件
+
+**原文标题**: We should be more ambitious with the software we build
+
+**原文链接**: [https://danluu.com/ambitious/](https://danluu.com/ambitious/)
+
+Michael Malis的pgrust项目（用Rust重写Postgres）引发思考：我们是否该对软件构建保持更大野心？尽管AI生成项目良莠不齐，pgrust通过充分测试已发现Postgres多个真实bug，本身即在推动Postgres进步。作者认为AI代理能力已发生质变——过去需一年以上才能完成的regex引擎、ripgrep优化、Rust编译加速等项目，如今数小时即可达到"可用"水平；棋盘游戏AI领域同样如此，新型号已能读懂论文并复现技术。然而，多数人仍沿用"前代理时代"的成本直觉，对这些问题犹豫不决。能力越强，作者反而不断挑战更难的领域，"一次成功"的体验并未消失。附录中Yossi Kreinin则提醒：对大多数人，过度依赖AI易产出过拟合且难以维护的代码，应量力而行。文章最终以Amdahl定律作结：某些任务可获百万倍加速，某些则纹丝不动，关键在于选择攻克那些过去因成本过高而无法触及的领域。
+
+---
+
+## 13. UTS #39：Unicode 安全机制
+
+**原文标题**: UTS #39: Unicode Security Mechanisms
+
+**原文链接**: [https://unicode.org/reports/tr39/](https://unicode.org/reports/tr39/)
+
+本文件为《Unicode 安全机制》技术标准（第18.0.0版），旨在为Unicode环境中潜在的安全风险提供规范化的检测与防护机制。文章核心围绕标识符安全展开，定义了三层安全配置：通用标识符安全配置、IDN安全配置及电子邮件安全配置，通过限制可用字符集降低视觉混淆风险。文件引入Identifier_Status与Identifier_Type属性，将字符划分为"受限"与"允许"两大类，其中受限字符涵盖已废弃字符、技术专用字符、非现代使用字符及小众社区字符等；允许字符则包括推荐脚本中的常用字符。此外，文件详细规定了混淆字符检测（含单脚本与混合脚本混淆）、混合脚本检测、限制级别检测及混合数字检测等机制，并明确了各模块的一致性合规条款（C1至C5），允许实现方在不改变核心规范的前提下进行精确的字符增减或行为调整。文件还涵盖Joining Control（ZWJ/ZWNJ）在Unicode 15.0后的处理变更、开发流程、数据文件格式及版本迁移指引，为标识符在URL、域名、编程语言等场景中的安全使用提供全面的技术依据。
+
+---
+
+## 14. AI盛行令伯克利菲尔兹奖得主教授放弃作业批改
+
+**原文标题**: AI use leads UC Berkeley math professor to see 'no point' in grading homework
+
+**原文链接**: [https://www.dailycal.org/news/campus/academics/ai-use-leads-uc-berkeley-math-professor-to-see-no-point-in-grading-homework/article_bdf1eae2-c08b-491f-b9f1-81a7cea177de.html](https://www.dailycal.org/news/campus/academics/ai-use-leads-uc-berkeley-math-professor-to-see-no-point-in-grading-homework/article_bdf1eae2-c08b-491f-b9f1-81a7cea177de.html)
+
+加州大学伯克利分校数学教授、菲尔兹奖得主理查德·博切尔兹宣布不再批改作业正确性，仅以是否完成为评分标准。他指出学生普遍借助AI获得高分，AI使用已不可避免，继续付费批改正确性"毫无意义"。这番表态恰逢OpenAI宣布其AI智能体似已攻克Navier-Stokes存在性与光滑性难题。博切尔兹警告，若AI保持当前发展速度，数年后人类数学家将再无AI无法超越的领域；他坦言已不知是否该鼓励学生入读数学系——五年前这被视为最不受AI冲击的职业，他向ChatGPT求助同样一无所获。不过他承认学术体系存在强大"惯性"，数学院短期或难有大变，并以纺织机取代手工、汽车取代马匹等历史变革作类比，强调AI对数学的冲击尚属首次。政策层面，伯克利学术参议院要求教师在课程大纲中注明AI使用规范，但具体规定因课程层次和领域而异；校方曾试用Turnitin、Rumi等检测工具，认为不足以标准化推广。目前AI使用政策主要由教师自行裁量，学校AI Hub提供范本供参考。
+
+---
+
+## 15. DreamHost 安全事件致用户密码强制重置
+
+**原文标题**: Active incident at Dreamhost forcing password reset
+
+**原文链接**: [https://www.dreamhoststatus.com/](https://www.dreamhoststatus.com/)
+
+2026年10月23日，DreamHost 因系统异常启动安全事件响应，对部分邮件及FTP/SFTP用户强制重置密码。受影响服务包括文件管理器、Webmail及邮件托管，Web主机、VPS等其余服务正常运行。截至10月25日，大部分重置通知邮件已发出，剩余预计当日完成。账户所有者可立即登录 panel.dreamhost.com，在"邮件>管理邮件"或"网站>SFTP用户与文件"中设置新密码，约15分钟后生效；非账户所有者需联系账户所有者代为操作。此前专业邮件服务中出现的"编辑失败"错误已修复，但文件管理器仍不可用。DreamHost 特别提醒：公司绝不会通过邮件索取用户密码，所有变更请通过控制面板直接操作；若收到非本人请求的重置邮件，请忽略。
+
+---
+
+## 16. 复刻阿波罗制导计算机
+
+**原文标题**: Recreate the Apollo Guidance Computer
+
+**原文链接**: [https://www.raspberrypi.com/news/recreate-the-apollo-guidance-computer/](https://www.raspberrypi.com/news/recreate-the-apollo-guidance-computer/)
+
+加拿大航空电子工程师Michael Newton利用树莓派与3D打印技术，复刻了1966年MIT研发的阿波罗制导计算机（AGC）。AGC曾搭载于阿波罗指令舱与登月舱，内存不足100KB、主频1.024MHz，性能仅相当于Apple II，却是全球首台基于硅集成电路的计算机，支撑了导航、自主 maneuvers、轨道对接与再入地球大气等关键任务。Newton的"Recreate Apollo"开源项目以树莓派运行Virtual AGC模拟器（yaAGC），驱动一台1:1比例的3D打印DSKY（显示与键盘），加载阿波罗13指令舱软件。CAD模型源自NASA公开档案，经他整合完善后，全部文件、电路设计及100页建造指南均在GitHub免费开放。项目分三步推进：打印涂装外壳、硬件接线、编写软件，外观约90%还原原件，内部则需调整微控制器与树莓派安装位置，键帽字体也略大于原版。键盘选用Kailh Box Navy机械轴，未来计划升级为铝合金机身与电致发光显示屏。yaAGC精确复现了AGC的异步中断时序（即触发1201/1202报警并拯救阿波罗11号的机制）、15位加一位奇偶校验的数据格式及1.024MHz主频。值得注意的是，AGC仅用三输入或非门一种逻辑门即完成全部运算与控制。该项目还支持"外设"模式，可配合PC端Orbiter飞行模拟器的Project Apollo插件进行全任务模拟。
+
+---
+
+## 17. 美国电网：没有灵丹妙药
+
+**原文标题**: The U.S. Power Grid
+
+**原文链接**: [https://nomagicpill.site/knowledge/powergrid.html](https://nomagicpill.site/knowledge/powergrid.html)
+
+该内容描述了一个名为"美国电网"的互动式模拟项目，副标题"没有灵丹妙药"点明核心观点：美国电力系统的运行与改造不存在一劳永逸的简单方案。模拟界面展示了电网运行的多项关键参数，包括60赫兹交流频率、3600转每分钟同步发电机转速、实时电价（0美元/兆瓦时）及当前负荷（0吉瓦）。项目涵盖从500千伏高压输电、138千伏亚输电、12.47千伏配电到120/240伏终端用户供电的完整电压层级，并支持直流联络线切换。用户可调节天然气价格、风力发电强度、云覆盖情景及电池快速响应等变量，观察功率流向、电压分布、网损与碳排放等动态变化，涵盖备用容量管理与慢速振荡等系统行为。该模拟旨在帮助公众理解电力供需平衡的复杂性：任何单一技术或政策都无法"一刀切"解决电网挑战，必须综合考量燃料成本、可再生能源波动、储能调度与基础设施老化等多重因素。
+
+---
+
+## 18. Cerebras部署万亿参数AI模型
+
+**原文标题**: Cerebras Deploys Trillion-Parameter AI Models
+
+**原文链接**: [https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras](https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras)
+
+摘要：本文以开源3万亿参数模型Kimi K3为例，详解Cerebras如何在多颗WSE-3T晶圆级芯片上部署超大规模前沿模型。单颗WSE-3T仅44GB片上内存，远不足以容纳TB级权重。采用4-bit量化后，Kimi K3的93层每层约占16GB；稠密层需额外存储KV缓存，每颗晶圆放一层，线性注意力层无需KV缓存，每颗放两层，69个线性层加24个稠密层共需59颗晶圆。各晶圆经RDMA over Ethernet互联，层间仅传递激活值，单跳延迟约2微秒，模型权重始终固定在芯片上无需搬移。执行采用流水线架构，各阶段并行处理不同请求，无需等待前序完成，实现1000–2000+ tokens/秒吞吐量。并发请求上限由稠密层晶圆的剩余KV缓存空间决定，请求持续流经管线而非批处理等待。该方法可推广至更大参数模型，每增一颗晶圆即拓展算力与存储，使Cerebras能支撑远超单芯片容量的模型规模。
+
+---
+
+## 19. Moderna与默克宣布mRNA癌症疫苗将死亡及复发风险降低42%
+
+**原文标题**: Moderna and Merck say their mRNA cancer vaccine cut death, recurrence by 42%
+
+**原文链接**: [https://arstechnica.com/health/2026/10/personalized-mrna-cancer-vaccine-cut-melanoma-death-recurrence-by-42/](https://arstechnica.com/health/2026/10/personalized-mrna-cancer-vaccine-cut-melanoma-death-recurrence-by-42/)
+
+Moderna与默克联合宣布，其个性化mRNA黑色素瘤疫苗intismeran（mRNA-4157）在3期临床试验中取得重大突破，联合默克抗癌药物Keytruda可将患者死亡或复发风险降低42%。试验纳入1137名已手术切除的IIB至IV期黑色素瘤患者，按2:1比例随机分配至疫苗联合Keytruda组与Keytruda联合安慰剂组。两年随访数据显示，疫苗组82%患者无复发存活，对照组仅70%；远处转移无进展生存方面，疫苗组降低风险38%（88.5%对80%）。该疫苗通过合成mRNA编码患者肿瘤中最多34个特异性突变，引导免疫系统精准攻击癌细胞。这是首个在辅助治疗设置中证明优于标准疗法的3期黑色素瘤研究，被视为免疫治疗时代以来最显著进展之一。相关数据于欧洲肿瘤医学学会会议公布，全文已被《新英格兰医学杂志》接收，双方正积极对接监管机构推动审批。Moderna首席执行官表示，这一成果印证了mRNA技术有望从根本上变革癌症治疗的愿景。
+
+---
+
+## 20. 三星电视获Root权限
+
+**原文标题**: Root shell on Samsung TV
+
+**原文链接**: [https://twitter.com/log4j/status/2113014142600953868?s=46](https://twitter.com/log4j/status/2113014142600953868?s=46)
+
+摘要：一位用户发帖称，其2025年款三星电视频繁推送高度精准的定向广告，疑似存在严重隐私泄露。作者尝试逆向分析固件，发现其采用AES加密且无公开密钥，常规手段难以突破，除非拆机进行UART/JTAG硬件调试。最终，作者通过利用零日漏洞成功获取了电视的Root Shell权限，并在此过程中发现了令人震惊的隐私问题。该帖于2026年10月21日发布，迅速引爆网络，浏览量突破300万，获得6143个赞、1.1万收藏及7.3万条转发，引发广泛关注。作者还在帖中询问社区是否值得撰写一份完整的漏洞报告。此事凸显了智能电视在用户数据采集与隐私保护方面的深层隐患，也反映出主流厂商固件加密策略虽提高了逆向门槛，但新型零日攻击仍能突破防线，值得行业与消费者高度重视。
+
+---
+
+## 21. 你只需宽事件，而非"指标、日志与追踪"
+
+**原文标题**: All you need is Wide Events, not "Metrics, Logs and Traces"
+
+**原文链接**: [https://isburmistrov.substack.com/p/all-you-need-is-wide-events-not-metrics](https://isburmistrov.substack.com/p/all-you-need-is-wide-events-not-metrics)
+
+前Meta工程师Ivan Burmistrov指出，当前可观测性行业陷入概念混乱的根源在于OpenTelemetry主推的"指标、日志、追踪"三支柱分类。这套体系伴随60余个专用术语，将本应统一的数据类型割裂，令从业者难以理解。作者推崇其曾在Meta使用的Scuba系统，其核心概念"宽事件"（Wide Event）本质是一个包含所有相关字段的JSON文档，无需预聚合，不受基数限制。通过Scuba直观的可视化界面，工程师可用"切片切块"方式快速定位故障——例如从广告点击异常出发，逐层按活动类型、操作系统、版本等维度下钻，最终锁定问题归属团队，全程无需预先设计监控指标。作者进一步论证，追踪、日志和指标都是宽事件的特例：追踪事件附加TraceId与ParentSpanId即可构建调用链，日志可映射为带元数据的结构化事件，指标则按周期写入状态快照。宽事件统一架构还能自然承载持续profiling等场景，并利于AI进行跨数据关联分析与根因定位。作者呼吁可观测性厂商摒弃复杂术语，提供以探索为核心的简洁界面，Honeycomb、Axiom等厂商已走在前列。
+
+---
+
+## 22. Show HN：标普500市值气泡中"装"进员工
+
+**原文标题**: Show HN: I put employees inside S&P 500 market-cap bubbles
+
+**原文链接**: [https://bigwhalehunting.com/workforce/](https://bigwhalehunting.com/workforce/)
+
+本文展示了一个创意数据可视化项目，以气泡图呈现标普500公司的市值与员工规模关系。每个气泡代表一家公司，面积与市值成正比，按行业分组。气泡内以等大小的火柴人代表一定数量的全职员工，通过小人填充密度直观反映每美元市值对应的员工数：小人越密集，人均市值越低；大泡泡中仅寥寥数人，则人均市值极高。项目筛选了满足最低员工数与市值门槛的公司，占据标普500的绝大多数，并额外纳入帕兰蒂尔、Welltower等员工较少但市值巨大的公司，以半尺寸小人表示。员工数据取自各公司最新年报，可能存在最高一年滞后。交互上，点击气泡可查看公司详情，支持滚动或双指缩放以浏览较小公司，便于发现被巨头遮蔽的小型企业。整体设计简洁有力，将抽象的资本与人力数据转化为直观的视觉对比，让读者一眼看出不同行业的资本效率差异。
+
+---
+
+## 23. The Goose Programming Language
+
+**原文标题**: The Goose Programming Language
+
+**原文链接**: [https://aardappel.github.io/goose/](https://aardappel.github.io/goose/)
+
+文章之前已经处理过
+
+---
+
+## 24. fheroes2：《英雄无敌II》游戏引擎重制项目
+
+**原文标题**: fheroes2: A recreation of Heroes of Might and Magic II game engine
+
+**原文链接**: [https://github.com/ihhub/fheroes2](https://github.com/ihhub/fheroes2)
+
+fheroes2是一个开源、跨平台的《英雄无敌II》游戏引擎重制项目，完全从零编写，旨在还原原版游戏的同时在玩法、画面和逻辑上大幅改进，包括支持高分辨率图形、优化AI、修复多项缺陷及改进用户界面。项目不鼓励非法使用原版资源，建议通过GOG或育碧商店购买正版，也可下载免费演示版。本项目采用GPLv2.0许可证，原游戏版权现归育碧所有。社区欢迎开发者、美术人员和翻译者的贡献，各方向均附有详细指南。项目非营利性质，接受通过Patreon、PayPal、Boosty等渠道的自愿捐赠，所得 solely 用于后续开发维护。此外，项目维护有FAQ页面、Discord服务器及社交群组，方便玩家交流、获取帮助及参与讨论。
+
+---
+
+## 25. 弯刀狼 重制版
+
+**原文标题**: Sabre Wulf Remastered
+
+**原文链接**: [https://gp-64.com/swr/](https://gp-64.com/swr/)
+
+《弯刀狼 重制版》是Genesis Project为Commodore 64平台开发的游戏，重制自Ultimate公司1984年经典丛林迷宫《Sabre Wulf》。游戏设256个丛林场景，玩家须探索迷宫、寻获四块护身符碎片并呈交守护者方能脱身。玩法上，玩家可挥刀斩杀小型敌人、躲避大型生物，拾取花朵获得临时能力（有敌有友），久留一处则遭丛林大火追击，而盘踞南方的"弯刀狼"无法被普通武器所伤。项目自2022年V0.1预览版起迭代推进，2025年12月发布V0.5，2026年10月推出正式版。游戏以D64磁盘镜像提供下载，可在VICEmulator中运行，亦支持itch.io获取。美术由JonEgg操刀，其曾于2017年为原版重绘加载画面并创作本作标题画面。项目页面涵盖操作指南、全地图、怪物与道具图鉴、开发日志及多家老牌媒体评测，并声明仅以数字下载形式发行，无实体盒装版。
+
+---
+
+## 26. 日本鲣节的传统制作工艺
+
+**原文标题**: How Japanese Dried Bonito Is Made
+
+**原文链接**: [https://kottke.org/26/10/how-japanese-dried-bonito-is-made](https://kottke.org/26/10/how-japanese-dried-bonito-is-made)
+
+日本鲣节（katsuobushi）被誉为"世界上最难制作的食物"。位于西伊豆的加奈鲣节商店创立于1882年，第五代匠人世泽康久仍沿用已有约两百年历史的"手山式"手工柴火烟干法，此法可追溯至江户时代，全日本仅极少数工坊保留。制作从鲜鱼开始：切片后煮沸90分钟，再经十余次柴火烟干，以鲣鱼糊修补表面，继而用米曲霉菌发酵，最后日晒数月，全程逾半年，成品硬如木、亮如宝石。手山式干燥法在塔个地区相传约三百年，方法为挖两米深竖洞，以橡木、樱桃木等本地木材从底部生火，借明火高温同时炙烤鱼身，锁住鲜味、浓缩滋味。该法被视作传奇工艺，如今面临失传之虞。
+
+---
+
+## 27. SpeedCrunch 1.1 免费高精度科学计算器
+
+**原文标题**: SpeedCrunch 1.1
+
+**原文链接**: [https://www.speedcrunch.org/](https://www.speedcrunch.org/)
+
+SpeedCrunch 1.1 是一款免费、开源、跨平台的高精度科学计算器，支持 Windows、macOS 和 Linux 系统，面向 STEM 领域的专业人士、学生及教师。该计算器支持最高 50 位运算精度及复数运算，内置 140 余种函数、丰富的物理单位与常量。用户可自定义变量、函数和单位，支持向量与矩阵运算，并提供历史记录重写及按结果设置等实用功能。界面方面，键盘预设与完全可定制的布局满足个性化需求，支持通过标签页、窗格或窗口同时运行多个计算会话。此外，软件提供 40 多种语言翻译和超过 40 种配色方案，使用体验友好。SpeedCrunch 还设有用户手册、社区论坛、源代码开放及问题反馈渠道，方便用户获取帮助与参与项目开发，并可通过捐赠方式支持其持续更新。
+
+---
+
+## 28. Local Wikipedia: Wikipedia, but only for things a half hour walk from you
+
+**原文标题**: Local Wikipedia: Wikipedia, but only for things a half hour walk from you
+
+**原文链接**: [https://edjefferson.com/localwiki/](https://edjefferson.com/localwiki/)
+
+文章之前已经处理过
+
+---
+
+## 29. PC-98版《东方Project》逆向工程师宣布退休
+
+**原文标题**: Reverse engineer of PC-98 Touhou games retires
+
+**原文链接**: [https://rec98.nmlgc.net/blog/2026-10-05](https://rec98.nmlgc.net/blog/2026-10-05)
+
+摘要：无法访问该文章链接。
+
+---
+
+## 30. 科学家复原古罗马变色玻璃工艺
+
+**原文标题**: Scientists rediscover how to make ancient Roman colour-changing glass
+
+**原文链接**: [https://www.theguardian.com/science/2026/oct/25/scientists-rediscover-ancient-roman-colour-changing-glass](https://www.theguardian.com/science/2026/oct/25/scientists-rediscover-ancient-roman-colour-changing-glass)
+
+公元前4世纪，罗马工匠制作的"吕库格斯杯"（现藏大英博物馆）在普通光下呈翠绿色，背光照射时则变为宝石红，这一光学奇迹令后人困惑近千年，2022年被列为世界七大玻璃奇迹之一。近日，英国谢菲尔德大学科学家成功复现了该变色效果。技术专家Hollands与罗马玻璃专家Jackson教授合作，从残片中提取古法配方，在厚玻璃冷却过程中嵌入纳米级金、银颗粒，其尺寸比沙粒小千倍。透光时，纳米颗粒阻挡蓝绿光，仅允许红橙色通过；反射时则散射光线，产生不透明的翠绿色。此前1960年代虽有人尝试，但效果有限；伦敦大学学院Freestone教授评价谢菲尔德项目"更精确、更具雄心"，并指出变色效果高度依赖窑炉中玻璃的位置，说明罗马工匠当年能制成如此完美的作品实属"命中大奖"。玻璃艺术家Walker据此创作了融合吕库格斯传说的当代雕塑，将于11月在谢菲尔德展出，后永久陈列于特纳玻璃博物馆。学界认为红绿双色或象征葡萄成熟，该杯曾用于与酒神相关的饮酒仪式。
+
+---
+
