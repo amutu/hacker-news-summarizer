@@ -1,0 +1,310 @@
+# Hacker News 热门文章摘要 (2026-10-30)
+
+这是今日 [Hacker News](https://news.ycombinator.com/) 上最热门的文章摘要。
+
+## 1. 帕特里克·斯图尔特去世
+
+**原文标题**: Patrick Stewart has died
+
+**原文链接**: [https://www.nytimes.com/2026/10/29/arts/television/patrick-stewart-dead.html](https://www.nytimes.com/2026/10/29/arts/television/patrick-stewart-dead.html)
+
+无法访问该文章链接。
+
+---
+
+## 2. Mistral Large 4（Le Chonk）权重正式发布
+
+**原文标题**: We're releasing the weights of Mistral Large 4
+
+**原文链接**: [https://mistral.ai/news/mistral-large-4-oss/](https://mistral.ai/news/mistral-large-4-oss/)
+
+摘要：Mistral正式发布1万亿参数原生多模态模型Mistral Large 4（代号Le Chonk）的完整开放权重。经三周强化学习迭代，该模型在编码与防御性安全领域实现大幅跃升。编码方面，FrontierCode 2.0得分19.7%位列开源第一，Terminal-Bench 4.0达41%，Coding Agent Index以48%与GLM-5.3持平且token消耗减少47%；新增低/中/高三档推理模式以平衡性能与成本。安全方面，Cyber Index得分51%，对恶意请求拒绝率达96.6%，获Booz Allen、Cloudflare、CrowdStrike、ENISA、Fortinet等机构背书。企业场景中，FinWorkBench达73.3%，BrowseComp达84.5%，智能体安全防护率达97.1%。模型完全开放权重，在欧洲基础设施上从头训练，支持自托管与定制部署，契合主权AI需求。Mistral同时向Orange Cyberdefense等企业伙伴提供面向渗透测试的专项变体，并持续迭代安全护栏。
+
+---
+
+## 3. 软件社区的重要性
+
+**原文标题**: The importance of communities around software
+
+**原文链接**: [https://lumi.codeberg.page/blog/software-community.html](https://lumi.codeberg.page/blog/software-community.html)
+
+作者回顾自己多年来在软件自由领域的行动经历，指出关注重心已从强著作权（copyleft）许可证转向软件项目周边的社区，认为社区才是决定项目价值观的核心。著作权制度本身维护权贵利益，copyleft 虽可反制，但属权宜之计；而自由软件许可证无法保证项目在包容性、社区自主治理、是否支持生成式模型等方面的伦理立场。作者以同时附带商业许可和贡献者协议的 AGPL 项目为例，说明"自由"标签可能名不副实。她提出评估项目时应综合考量：行为准则是否包容、是否禁止生成式模型、是否受公司控制、有无贡献者协议、是否绑定专有平台、核心开发者的伦理观。作者呼吁读者积极参与社区——不仅限于编程，还包括文档、美术、社区管理等——为无力发声者代言；也鼓励加入或创建跨项目的软件合作社，如星光网络与合声，以协作方式共同推动自由、合乎伦理的软件生态。
+
+---
+
+## 4. 疑似中国间谍与英伟达CEO黄仁勋"关系密切"引美方警觉
+
+**原文标题**: Alleged Chinese spy had 'close relationship' with Nvidia boss Jensen Huang
+
+**原文链接**: [https://nypost.com/2026/10/29/business/alleged-chinese-spy-had-close-relationship-with-nvidia-boss-jensen-huang-report/](https://nypost.com/2026/10/29/business/alleged-chinese-spy-had-close-relationship-with-nvidia-boss-jensen-huang-report/)
+
+据《纽约时报》报道，一名化名Alice Huang（黄磊）的中国公民、新加坡Megaspeed公司高管，被指充当中国间谍向北京传递情报。该公司是英伟达客户，为阿里巴巴等中国公司提供AI算力，并被怀疑通过东南亚数据中心帮助中国企业规避美国芯片出口限制。
+
+美国情报机构在监视其通信时发现，她与英伟达CEO黄仁勋关系密切，两人曾于2024年在台北酒吧同饮威士忌。然而报告未提供证据证明黄仁勋知晓其情报活动，但部分特朗普政府高官质疑他"不可能不知情"。
+
+特朗普一年多前已获通报，但因担忧影响英伟达芯片销售及中美贸易关系而未采取行动。黄仁勋与特朗普交往密切，英伟达曾向白宫活动捐款至少2000万美元，并承诺5000亿美元美国制造业投资，同时成功游说放宽对华AI芯片出口限制。
+
+英伟达回应称与客户会面属正常业务往来，仅涉及普通商业信息，无涉国家安全，驳斥芯片被转移的说法。中国使馆则斥责美方散布"中国间谍"叙事，呼吁停止技术封锁。
+
+---
+
+## 5. Show HN：自动忽略 macOS「允许 <应用> 发现本地网络设备」弹窗
+
+**原文标题**: Show HN: Auto Dismiss Mac OS "Allow <app> to find devices on local networks?"
+
+**原文链接**: [https://github.com/johncassil/dontallow](https://github.com/johncassil/dontallow)
+
+摘要：macOS Sequoia 起，本地网络权限弹窗频繁复现且系统不记住决策，根源在于 Chromium 浏览器每次启动将自身复制至随机临时路径、部分应用使用版本化安装路径，以及系统错误归因弹窗归属等，且无官方清理或 MDM 预置拒绝方案。dontallow 是一个纯 Swift 单文件、零依赖的 macOS 工具，通过 Accessibility API 监听 UserNotificationCenter 窗口创建事件，识别弹窗后自动点击"不允许"，延迟仅 0.25 秒，空闲零 CPU 开销，开机自启。安装支持 Homebrew 或 make，自动注册 launchd 代理并引导授予辅助功能权限。提供 status、pause、resume、rules、uninstall 等子命令，支持白名单、宽限期及暂停时长配置，每次消除弹窗会发送通知告知应用名。对确需本地网络访问的场景，可临时暂停、加入白名单或在系统设置中手动覆盖。托管 Mac 可通过 PPPC 配置文件批量部署。工具不修改系统文件、不降低安全等级、绝不点击"允许"。支持 Apple Silicon 与 Intel，MIT 协议。
+
+---
+
+## 6. H.264：何以如此神奇
+
+**原文标题**: H.264 Is Magic (2016)
+
+**原文链接**: [https://sidbala.com/h-264-is-magic/](https://sidbala.com/h-264-is-magic/)
+
+摘要：H.264是当今 ubiquitous 的视频压缩标准，广泛应用于网络视频、蓝光、手机等领域。文章以Apple主页为例，展示5秒60帧H.264视频仅175KB，而单帧PNG截图达1015KB，效率高出约1500倍。其核心原理分四步：一是量化，通过频域变换将图像细节分离，丢弃高频细粒度信息以大幅削减空间冗余；二是色度抽样，利用人眼对色彩细节不敏感的生理特性，将YCbCr中的色度分量降至1/4分辨率，带宽再减半；三是运动补偿，将帧划分为16×16宏块，关键帧（I帧）存储完整图像，预测帧（P/B帧）仅记录运动矢量，从而将数百帧压缩为极少数关键帧加位移信息；四是熵编码，对剩余统计冗余进行无损压缩。四项技术叠加，使1.2GB原始数据（1232×1154@60fps×5秒）最终压缩至175KB，相当于将3000磅汽车减重至6.5盎司。文章还解释了YouTube回退播放时短暂卡顿的原因——解码器需从最近I帧重新累加运动矢量。尽管有所简化，文章清晰呈现了H.264"化繁为简"的压缩精髓。
+
+---
+
+## 7. 环球步行28年，他已近归途
+
+**原文标题**: After 28 years walking across the globe, he's almost home
+
+**原文链接**: [https://www.nytimes.com/2026/10/29/world/europe/karl-bushby-walking-globe-uk.html](https://www.nytimes.com/2026/10/29/world/europe/karl-bushby-walking-globe-uk.html)
+
+无法访问该文章链接
+
+---
+
+## 8. Duet：聊天机器人交互的未来
+
+**原文标题**: Duet is the future of chatbot interaction
+
+**原文链接**: [https://fig.blue/posts/duet-is-the-future/](https://fig.blue/posts/duet-is-the-future/)
+
+本文作者是一位不愿为Anthropic"站台"的开发者，却坦言Duet是目前体验最出色的AI助手，已替代其大部分AI工作流。文章从四个方面肯定Duet的优势：一是响应极快，Opus 5.5经专项调优，避免了以往助手应用因后台任务阻塞前台交互的问题；二是"频道"机制，自动创建、管理和组织对话会话，形成自然的工作层级，有效解决了多任务切换与会话混乱的长期痛点；三是访问策略克制，按频道隔离代码仓库权限，不索取用户凭证，不存储凭据，主动保持能力边界；四是回复简洁，拒绝冗长输出，表情回应也恰到好处。作者同时指出不足：产品仍处于测试期，存在线程不可见、权限绑定竞态失败等缺陷；语音交互远逊于竞品Dot。文章最核心的判断是Duet的层级化权限架构——顶层总览全局但无底层权限，频道拥有权限但受上下文约束，子线程进一步沙箱化——使权限与上下文管理成为产品原生能力而非外部拼凑，作者认为这一设计将预示聊天机器人交互界面的未来默认形态。
+
+---
+
+## 9. DoorDash拟以约170亿美元收购Instacart
+
+**原文标题**: DoorDash to acquire Instacart
+
+**原文链接**: [https://about.doordash.com/en-us/news/doordash-to-acquire-instacart](https://about.doordash.com/en-us/news/doordash-to-acquire-instacart)
+
+DoorDash宣布以每股65美元（较10月22日收盘价溢价26%）、股权价值约170亿美元收购Instacart，对价至少75%为现金，股东可选全现金、DASH股票或组合（股票上限25%）。Instacart董事会已一致批准。合并后，双方将整合DoorDash配送网络与Instacart杂货履约及AI技术，赋能各规模本地商家与大型电商竞争。消费者可享超15万家门店选择，DashPass与Instacart+会员合并为一项，年省约1亿美元；骑手与采购员获更多灵活收入机会。DoorDash承诺保持开放平台、不设杂货排他条款，并保留Instacart品牌及企业级技术产品。交易预计2027年底至2028年上半年完成，须经股东批准及美国、加拿大、以色列等地反垄断审查。DoorDash以自有资金和债务融资支付现金部分，已与摩根大通签署桥贷融资函，约19%的Instacart股东已承诺投赞成票。
+
+---
+
+## 10. 每层一审查：按代码阅读方式拆分审查流程
+
+**原文标题**: One reviewer per layer: splitting code review by the way code is read
+
+**原文链接**: [https://djordjepuzic.com/blog/posts/2026-10-27-one-reviewer-per-layer/](https://djordjepuzic.com/blog/posts/2026-10-27-one-reviewer-per-layer/)
+
+Claude Code团队面临日均合并量从2500次飙升至3万以上，逐行审查已不可行。文章提出：代码审查不应由单一审查者承担全部层级，而应按阅读代码的方式分层，每层由独立审查者负责。作者将审查分为六层：意图、形式（交给编译器与linter）、局部含义（函数是否兑现契约）、接线（模块间连接）、运行时（并发与性能）、使用（用户工作流与文档）。关键洞察是：层不是代码在文件中的位置，而是判断它所需的不同理解程度。架构上，作者主张用树而非线性流水线，各层只读本层信息，以契约形式向上传递，借鉴Parnas 1972年信息隐藏原则，双向传递能捕获"每层都对但整体对用户错误"的变更。进一步，安全、历史、可逆性等横切关注点作为"镜头"叠加于层上形成矩阵；实践上5个上下文检索器乘4个镜头即可覆盖20个视角，按需激活。文章也指出风险：层间接缝是bug高发区，多审查者带来噪音需协调去重，成本应按变更风险裁剪。测试方法是收集历史事故PR，标注bug所在层与镜头，以指导建设优先级。
+
+---
+
+## 11. 大模型腔调
+
+**原文标题**: LLM Voice
+
+**原文链接**: [https://martinfowler.com/bliki/LLM-Voice.html](https://martinfowler.com/bliki/LLM-Voice.html)
+
+马丁·福克勒提出"LLM腔调"概念——读者阅读时能逐渐感知文字出自大语言模型而非人类，产生类似"恐怖谷"的不适感，阅读意愿随之消退。他坦言难以精确定义这种腔调，甚至不确定自身判断是否可靠，因为语言风格本就随时代演变。福克勒强烈建议作者不要让LLM撰写初稿，即便经人工编辑，LLM腔调依然难以根除；借助LLM构思大纲或结构或可接受，但正文必须亲笔完成。他强调写作即思考，将写作外包给AI等于同时让渡思维与理解力。他也承认例外：帕金森病患者借助AI写作理应得到包容；翻译中人类笨拙的原文胜过AI的流畅空洞；公文、报告等面向流程而非人类读者的场景亦可交由AI。福克勒个人仅将AI用作搜索工具，写作完全独立完成，并呼吁作者公开披露AI参与程度，以维护透明度与人的主体性。
+
+---
+
+## 12. Claude辅助抗体设计用于食物过敏IgE干扰剂研发
+
+**原文标题**: IgE disruptor for food allergy with Claude-enabled antibody design [pdf]
+
+**原文链接**: [https://divergencelabs.com/publications/ige-preprint.pdf](https://divergencelabs.com/publications/ige-preprint.pdf)
+
+摘要：食物过敏作为由IgE介导的I型超敏反应，严重影响全球数亿患者的生活质量与食品安全。当前治疗手段有限，亟需新型干预策略。本文介绍了一种基于Claude人工智能平台辅助抗体设计的IgE干扰剂研发方案。研究针对食物过敏中IgE与肥大细胞/嗜碱性粒细胞表面受体（FcεRI）结合这一核心致病环节，利用Claude大语言模型在抗体序列筛选、亲和力预测、结构优化及免疫原性评估等环节提供智能辅助，加速候选抗体的设计与迭代。该方法将传统抗体工程（如噬菌体展示、酵母展示）与AI驱动的理性设计相结合，旨在获得高亲和力、高特异性且低免疫原性的IgE阻断抗体或多价干扰分子。研究预期成果可为食物过敏患者提供一种潜在的靶向治疗或脱敏辅助工具，同时展示了生成式AI在生物制药抗体开发中的应用价值，为过敏领域精准医疗提供新思路。
+
+---
+
+## 13. 在浏览器中编辑 SQLite 数据库
+
+**原文标题**: Edit an SQLite database in your browser
+
+**原文链接**: [https://editsqlite.com/](https://editsqlite.com/)
+
+本文为一款纯浏览器端 SQLite 数据库编辑工具的介绍。用户可在浏览器中直接打开 .sqlite、.db、.sql（兼容 MySQL/Postgres/SQLite）及 CSV 文件，通过表格界面或 SQL 控制台对数据进行增删改查，完成后导出新文件。所有操作均在本地完成，文件只读、不上传、不写入，保障隐私安全。主要功能包括：文件支持拖拽导入，也可从空白创建、使用示例数据或恢复上次会话；CSV 导入向导在建表前自动推断各列数据类型；表格视图支持添加行、表重命名与删除，并具备撤销/重做操作；SQL 控制台支持 SELECT、UPDATE、DELETE、INSERT 等语句，常用查询可保存至本地设备，一键重跑。导出方面，工具提供带数据完整性校验的 .sqlite 文件、.sql 转储脚本（支持 SQLite/MySQL/PostgreSQL 三种方言）、单表 CSV 导出及表重建脚本生成，所有导出文件均由专用写入器构建，确保数据正确性。
+
+---
+
+## 14. Show HN：美国联邦税表的形式化编码（概念验证）
+
+**原文标题**: Show HN: A proof-of-concept formalization of the IRS federal tax forms
+
+**原文链接**: [https://github.com/emmilco/us-tax-model](https://github.com/emmilco/us-tax-model)
+
+摘要：本项目将美国联邦个人所得税表编码为公开、可引用、可机器验证的数据，以引导式自报税访谈为首个应用；软件不代提交、不签名，数据不离开本机，编码对象为IRS公布的表格程序而非税法本身。设计核心理念是"可验证而非可信任"：每行计算附带IRS文档引用及页面哈希；仅使用约二十个封闭原子操作（求和、取小、税率乘等），无循环或递归；全程整数运算；由Lean 4对原子性质及求值器确定性做形式化证明。验证体系包括构建时类型与引用检查、独立模型转录对比、三套外部税务引擎（PolicyEngine-US、Tax-Calculator、OpenTaxSolver）逐行比对、变异测试（杀死率94.4%）、仅追加缺陷清单及提交守卫。当前覆盖2,313个引用锚点，引擎对比1,700份报税表，外部证据行占比13.1%，整体覆盖约68.6%的个人报税情形。代码采用Apache 2.0，数据为CC0公共领域。项目明确声明不保证与IRS原文一致，不构成税务或法律建议，未获IRS认可。
+
+---
+
+## 15. Grace Blackwell 亟需新调度器：同等机架释放 27% 更多可用 GPU
+
+**原文标题**: Grace Blackwell needs a new scheduler: 27% more usable GPUs from the same racks
+
+**原文链接**: [https://skypilot.ai/blog/grace-blackwell-needs-a-new-scheduler](https://skypilot.ai/blog/grace-blackwell-needs-a-new-scheduler)
+
+大规模 AI 训练中，张量并行与专家并行的通信模式位于关键路径，一旦将通信从 NVLink 降至 InfiniBand，吞吐量可损失 43%。NVIDIA NVL72 以 NVLink fabric 将整柜 72 块 GPU 互联，提供 130 TB/s 机架内非阻塞带宽，使"机架"取代单机成为计算原子单元。然而实际部署面临两大挑战：GPU 故障率高（Meta 实测单节点 MTBI 仅约 490 天），整柜分配将故障爆炸半径放大 18 倍；共享集群中异构任务不同时完成导致碎片化，大任务有容量却无连续空间。NVIDIA 建模表明，每柜采用 16 节点切片并预留 2 台备用节点，在 2% 不可用率下较 18 节点整柜分配可多获得 27% 可用容量。SkyPilot 平台以三项机制落地上述思路：拓扑感知调度器将多节点任务约束于单柜以保持 NVLink 通信；Frontier Trainer 在检测到 GPU 故障时原地热替换备用节点；自动碎片整理在任务因拓扑而非容量阻塞时，抢占可安全重启的工作负载以腾出整柜。实测中，机架感知调度使 GR00T 多模态模型预训练吞吐量提升 14.4%，万卡集群每日可节省约 40 万美元。
+
+---
+
+## 16. PHP2Shell链式漏洞利用攻陷25台服务器，含美国政府设备
+
+**原文标题**: Chained PHP2Shell exploit roots 25 servers, including US Government servers
+
+**原文链接**: [https://dreamgroup.com/blog/chained-php2shell-exploit-roots-25-servers](https://dreamgroup.com/blog/chained-php2shell-exploit-roots-25-servers)
+
+摘要：2026年10月，Dream研究团队发现一场疑似中国AI辅助的网络攻击活动。攻击者将PHP2Shell远程代码执行漏洞（CVE-2026-109618/19）与Fragnesia内核提权漏洞（CVE-2026-46300）在单条HTTP请求中链式组合，实现对Palo Alto Networks PAN-OS防火墙的无凭据root提权。攻击者从全球约19,000台暴露防火墙中，经版本指纹识别与地理筛选，锁定美、日、台、韩四地240台目标，成功提权24台，并重点突破某美国政府关联组织的两台边界防火墙及内部防火墙管理服务器，共计25台。攻陷后，攻击者建立持久化反向SSH隧道接入内网，利用管理服务器对Active Directory发起域攻击，解密LDAP凭证、枚举全部用户与组、执行无锁定密码喷洒，并尝试创建后门账号。攻击中使用了Claude Code、DeepSeek等AI工具辅助开发约40个后利用脚本。Palo Alto Networks Unit 42已独立验证并推送修复版本。目前22台被占服务器仍处"停放"状态，攻击者可随时重新激活。
+
+---
+
+## 17. 僵尸数据：AI引用的数字从何而来
+
+**原文标题**: Zombie stats: Where the numbers AI quotes come from
+
+**原文链接**: [https://trakkr.ai/trakkr-research/zombie-stats](https://trakkr.ai/trakkr-research/zombie-stats)
+
+2026年10月，Trakkr Research向ChatGPT、Perplexity、Gemini、Claude和Google AI概览五个AI助手提出200个需要数字回答的问题，追踪了1,285条引用统计的溯源路径（每层最多回溯5页）。结果令人担忧：仅40%可追溯到原始研究且数字一致，8%找到研究但数据或语境已偏移，40%因来源受限或消失而无法验证，11%完全无源头——即所谓"僵尸数据"：不断被重复却已无研究支撑。各助手表现不一：ChatGPT溯源率最高（57%），每回答仅引用1.3个数字；Claude引用最多（6.8个/回答），溯源率仅38%。引用页面中54%为公司博客，来自研究机构或政府源的仅约20%。数字传播中失真同样突出：即便到达原始研究，仍有17%在转述中改变了数字、测量对象、年份或样本——一篇2004年15名女性评价健康网站的研究，20年后被AI断言为"94%的网站第一印象与设计相关"。此外，同一问题五个AI常给出不同答案，71个百分比问题中31个的最高与最低差距超过20个百分点。
+
+---
+
+## 18. 16colo.rs——ANSI/ASCII 艺术档案库
+
+**原文标题**: 16colo.rs – ANSI/ASCII art archive
+
+**原文链接**: [https://16colo.rs/](https://16colo.rs/)
+
+摘要：16colo.rs（又名 Sixteen Colors）是一个致力于收藏 ANSI 与 ASCII 艺术作品的在线公共档案库。网站收录了大量来自独立艺术家和艺术组（如 ACiD、iCE、Department 38 等）的 artpack 合集，涵盖从 1997 年至今的多位创作者作品。ANSI/ASCII 艺术诞生于 20 世纪 80 年代的计算机文本模式，90 年代随拨号 BBS 文化爆发而兴盛，艺术家按月发布合集并展开激烈竞争；90 年代末互联网普及后 BBS 式微，但艺术创作至今仍有延续。该网站提供标签分类、高级文本搜索、自助上传、PabloDraw 与 Moebius 图形协作工具、临时图片分享以及 SAUCE 元数据编辑器等功能，并设有 IRC、Discord 等社区频道供爱好者交流。论坛板块中活跃的话题包括 Linux 版 ANSI 查看器 ReelANSI、Rust 终端渲染库 Bbcat、BBS 菜单复原、Blender 年度艺术创作活动及文模式知识问答等。网站推荐纪录片《The Art of Warez》作为了解 ANSI 艺术起源与历史背景的入门资料，旨在以公共利益为导向永久保存这一独特的数字艺术遗产。
+
+---
+
+## 19. Show HN：Overtone – 适配任意屏幕比例的字幕转写、校正与裁切工具
+
+**原文标题**: Show HN: Overtone – Transcribe, correct and cut captions for any screen shape
+
+**原文链接**: [https://github.com/lonthq/overtone-captions](https://github.com/lonthq/overtone-captions)
+
+摘要：Overtone 是一款开源字幕工具，核心思路是将每个词的时间与说话者仅存储一次，再为不同屏幕比例（16:9、9:16等）分别裁切，统一输出 .overtone.json，并可导出为 WebVTT 或 SRT。转写流水线采用"多引擎听觉＋文本投票＋LLM 编辑"：gpt-transcribe 提供文本，Azure AI Speech 提供词级时间戳与说话者分离，可选接入 ElevenLabs Scribe；引擎分歧时由 LLM 重听择优，再结合上下文与术语表纠正误听、标注说话者，不确定处列入复核。行切分由版本化规则集驱动：避免在"the""of"等弱词后断行，保持人名、数字完整，不同说话者独立成条，停顿映射为断行。使用方面，CLI 支持从现有 SRT/WebVTT 重新裁切（无需 API 密钥）或从音视频直接转写，配套 video.js 插件含 clean、social 等五种风格包。基准测试显示，Overtone 断行落在弱词的概率仅 0.3%（对比纯长度填充的 28.8%），多引擎融合词错率 5.3%，优于任一单引擎；每分钟音频成本约 0.023–0.029 美元。完整行切规则目前覆盖英语和荷兰语，中日泰等非空格语言以短语为最小单位。MIT 许可证，由 Lont 开发。
+
+---
+
+## 20. 布尔诺理工大学两名毕业生荣获捷克总统功绩勋章
+
+**原文标题**: Tomáš Mikolov awarded the Medal of Merit by the President of the Czech Republic
+
+**原文链接**: [https://www.vut.cz/en/but/news-f19528/two-but-graduates-received-state-honors-from-the-president-of-the-republic-d378468](https://www.vut.cz/en/but/news-f19528/two-but-graduates-received-state-honors-from-the-president-of-the-republic-d378468)
+
+10月28日捷克国庆日，总统在布拉格城堡为51位杰出人士颁发国家荣誉，其中布尔诺理工大学两名毕业生——人工智能学家Tomáš Mikolov与急救应用开发者Filip Maleňák——获颁总统功绩勋章。Mikolov是Word2Vec方法的共同创造者，为现代自然语言处理与AI语言模型奠定了重要基础，获颁科学领域功绩勋章；Maleňák所创Záchranka急救App可帮助用户快速联系急救服务并定位最近的自动体外除颤器，已成为公共急救体系的重要工具，获颁技术领域功绩勋章。两人虽职业路径不同，但均将专业知识转化为具有实际社会影响力的技术成果，体现了技术教育与实践应用结合的价值。
+
+---
+
+## 21. 若IPv4即国土
+
+**原文标题**: If IPv4 were land
+
+**原文链接**: [https://iptrust.co/blog/if-ipv4-were-land](https://iptrust.co/blog/if-ipv4-were-land)
+
+本文是一项创意数据可视化项目，将全球IPv4地址分配换算为国土面积。全球陆地面积（不含南极洲）约1.35亿平方公里，可定位IPv4地址约36亿个。项目按各国IPv4地址占全球比例重新分配面积，而非实际国土大小，生成一张"IPv4世界地图"。地图支持按大洲（美洲、亚洲、欧洲、非洲、大洋洲）切换，并以颜色标示各国面积增减幅度（如扩大四倍以上、基本持平、缩小四分之一等），同时列出"最大扩张"与"最大缩减"国家排行榜。计算方式为：某国IPv4面积＝（该国IPv4地址数÷全球总数）×全球陆地面积。陆地数据采用1:1100万Natural Earth地图轮廓，非官方统计；排除南极洲，约70个面积过小的地区（含香港、新加坡、毛里求斯等，合计约5200万地址）因分辨率不足未纳入。IPv4数据源自IP Trust地理定位数据库（2026年10月）。
+
+---
+
+## 22. NetBSD 新增文本编辑器 atto
+
+**原文标题**: NetBSD adds a new text editor called atto
+
+**原文链接**: [https://mastodon.sdf.org/@netbsd/117518160563539748](https://mastodon.sdf.org/@netbsd/117518160563539748)
+
+NetBSD 基金会通过其在 SDF 平台上的 Mastodon 账号宣布，NetBSD 已内置一款名为 atto 的轻量级终端文本编辑器。此举旨在降低新用户的上手门槛，帮助刚接触 NetBSD 系统的用户更顺畅地进行文本编辑等日常操作。atto 是一款功能精简、启动迅速的纯文本编辑器，常被用作 Vim 或 Emacs 的轻量替代方案。NetBSD 将其纳入系统工具（#NetBSD-cu），体现了该项目在提升用户体验方面的持续改进。由于原文仅有简短引文，具体集成细节及版本信息未在摘要中体现。
+
+---
+
+## 23. 西班牙列车追尾事故：目前已知信息
+
+**原文标题**: What we know so far about Spain train crash
+
+**原文链接**: [https://www.bbc.com/news/articles/cm8xz7pkd0jjo](https://www.bbc.com/news/articles/cm8xz7pkd0jjo)
+
+摘要：周三上午，西班牙马德里以南约140公里处，一列瑞飞列车高速追尾撞上前方停驶的Iryo列车，至少69人遇难。事故起因是当日早晨约08:30发生计算机故障，导致六列列车停车。控制中心在"不可理解的情况下"允许列车以正常速度（最高200公里/小时）恢复行驶，而非按规定以40公里/小时限速缓行。音频记录显示，调度员在前方列车仍未启动的情况下仍批准后方列车通过。两车共载540余名乘客，逾百人受伤，50人仍在住院，其中15人危重。首相桑切斯宣布全国哀悼三天，誓言彻查事故并追究责任；各医院紧急收治伤员，马德里血库呼吁紧急献血；西班牙国家警卫队在多地设立失踪人员登记处。值得注意的是，这是西班牙今年第二起高铁重大事故——1月曾发生脱轨事故致46人死亡，引发公众对铁路基础设施安全的严重担忧。
+
+---
+
+## 24. noalloc：强制 Go 语言零堆分配的工具体系与库
+
+**原文标题**: noalloc: Tooling and libraries to enforce zero heap allocations in Golang
+
+**原文链接**: [https://github.com/theconsensuslabs/noalloc](https://github.com/theconsensuslabs/noalloc)
+
+noalloc 是一套面向 Go 语言的零堆分配工具集与库，由 AI 编写、人类指导，已在 The Consensus 生产环境中使用。核心包含两部分：一是 noalloc CLI，通过 //noalloc:root 等指令标记函数，自动检查整个调用树中的堆分配，逐行报告违规并提供豁免机制；二是 bounded 库，提供 Buf、Vec、Slice、Map 四种固定容量容器及 Pool/Region 内存池机制，支持在请求生命周期内借用和归还内存以避免动态分配。此外还提供无分配的 JSON 编解码（经 jsongen 代码生成）、HTML 模板及 URL 转义的 append 版本。性能测试表明，其 JSON 编解码在零分配前提下速度优于 jx、easyjson、sonic、encoding/json/v2 等主流方案，与最快的 goccy/go-json 相当。文档还详列了 Region 释放后误用内存、跨写操作保留旧引用、预留死锁、逐条目借用、协程共享 Region、上下文取消及池内存未清零等常见陷阱。
+
+---
+
+## 25. 我赴墨西哥试驾美国买不到的车型
+
+**原文标题**: I went to Mexico to test-drive the cars Americans can’t buy
+
+**原文链接**: [https://www.washingtonpost.com/climate-environment/2026/10/27/i-saw-future-driving-mexico-its-off-limits-americans/](https://www.washingtonpost.com/climate-environment/2026/10/27/i-saw-future-driving-mexico-its-off-limits-americans/)
+
+无法访问该文章链接
+
+---
+
+## 26. Keplearn：数秒内从数据中提取方程
+
+**原文标题**: Keplearn: Extract Equations from Data in Seconds
+
+**原文链接**: [https://github.com/owls-on-wires/keplearn](https://github.com/owls-on-wires/keplearn)
+
+Keplearn 是一款用 Rust 编写的确定性符号回归引擎，以开普勒命名，旨在从表格观测数据中自动恢复紧凑的闭式方程。程序读取 TSV/CSV 文件，输出 JSON 格式候选方程，具备单文件、零依赖、完全确定性、秒级响应的特点。其核心方法是对目标列执行链式可逆归约（如除法、对数、平方根等变换），在终端节点以仿射单项式、稀疏 k 项或复合形式进行拟合，并用 MDL 复杂度惩罚在内部 25% 留出集上排序候选。拟合常数自动对齐至有理数及 π、e、√2 的倍数，每次对齐均经独立验证。在 SRBench 标准符号回归基准上，Keplearn 于 Feynman 套件（零噪声）取得 64.7% 的符号解率，显著超越 AIFeynman 的 55.8%，且计算开销远低；半数题目一秒内完成。该工具提供 macOS、Windows、Linux 三平台预编译二进制，采用 MIT 许可证，由 Chandler Freeman 开发。
+
+---
+
+## 27. 谷歌搜索首次占母公司收入比例跌破五成
+
+**原文标题**: Google Search is now less than half of Alphabet’s revenue
+
+**原文链接**: [https://www.kadoa.com/companies/insights/google-search-below-half](https://www.kadoa.com/companies/insights/google-search-below-half)
+
+2026年第三季度，Alphabet总营收达1280亿美元，其中谷歌搜索及关联业务（含Gmail、地图、应用商店等）贡献634亿美元，占比降至49.7%，为Alphabet单独披露搜索收入31个季度以来首次跌破50%，此前该比例始终在52.8%至62.0%之间。搜索收入本身仍保持12%同比增长，占比下降源于其他业务更快扩张。"搜索以外"业务合计642亿美元，同比增长40%；其中Google Cloud最为亮眼，收入达307亿美元，同比激增103%，占收入比重从2018年底的4.4%攀升至24.1%。此外，订阅与设备收入143亿美元，YouTube广告112亿美元，广告网络75亿美元。整体而言，Alphabet营收结构正显著多元化，云计算已成为第二增长极，公司在稳固搜索基本盘的同时，有效降低了对单一业务的依赖。
+
+---
+
+## 28. 失去维基百科词条的悲剧
+
+**原文标题**: The tragedy of losing your Wikipedia page
+
+**原文链接**: [https://www.wired.com/story/the-tragedy-of-losing-your-wikipedia-page/](https://www.wired.com/story/the-tragedy-of-losing-your-wikipedia-page/)
+
+本文揭示了维基百科"关注性"标准下的生存困境。维基编辑遵循"不求真实，但求可验证"的原则，每天大量人物因缺乏可靠外部来源而被淘汰，从加拿大总理之子的R&B歌手Xav，到退役大使、职业出场不足十分钟的足球运动员。NASA类比宇航员马蒂娜·迪莫斯卡的词条发布次日即遭删除提名，编辑西梅昂诺夫斯基指控其来源薄弱、有自我宣传之嫌；一名匿名用户据理力争，双方就来源质量争论数周，过程中甚至出现冒充编辑家人的侮辱性账号。骨科医生、高校教授、威尔士歌手、跨性别躲避球运动员亦面临类似命运。文章指出，维基百科并非没有容量，而是志愿者人力有限——核查一条无关信息远不如纠正一位内战将领曾"战中食用芥末"的荒谬记载（该条曾留存17年）。失去词条意味着丧失社会公信力，影响职业声望；但当事人既不能自行编辑，也往往对删除流程毫不知情，回复率仅约1%。部分资深编辑语气傲慢——"此人是无名小卒，删掉"——暴露出这一全球最大百科中潜藏的话语权力与排他逻辑。词条被删可以仅因无人辩护，而能有人挺身相救，在粗粝的规范中已算一种善意。
+
+---
+
+## 29. if-then-else 必须被发明
+
+**原文标题**: If-then-else had to be invented (2020)
+
+**原文链接**: [https://github.com/e-n-f/if-then-else/blob/master/if-then-else.md](https://github.com/e-n-f/if-then-else/blob/master/if-then-else.md)
+
+视频演讲追溯了条件语句 if-then-else 的发明历程。"else"在自然语言中并无连词用法，这一概念完全是编程的产物。早期计算机如 ENIAC 以物理连线实现条件判断，称为"判别"；Fortran 引入"if"关键字，采用基于正负零的三路跳转。1958 年，美国与德国组织联合开发 ALGOL：德国提案首次出现"else"一词（疑为德语翻译所致），美国提案则以箭头表示条件控制。合并后的 ALGOL 58 仍无独立的"else"。同年，John McCarthy 为 LISP 提出条件表达式，以"otherwise"作为兜底分支。1959 年末，Klaus Samelson 受此启发，统一 ALGOL 的条件模型，正式创设"else"子句，支持"else if"链及独立"else"分支。1960 年 ALGOL 60 报告确立了 if-then-else 这一单一条件形式，几乎所有后续语言沿用至今。尽管 CPL 和 MAD 等曾尝试以"or""otherwise"替代"else"，却仅更换词汇而未改变结构。作者认为，条件语句的形式之争在 1959 年已基本终结。
+
+---
+
+## 30. 暗行星与奇异世界
+
+**原文标题**: Blanets and Weird Worlds
+
+**原文链接**: [https://www.antipope.org/charlie/blog-static/2026/10/bizarre-blanets-and-other-weir.html](https://www.antipope.org/charlie/blog-static/2026/10/bizarre-blanets-and-other-weir.html)
+
+无法访问该文章链接
+
+---
+
