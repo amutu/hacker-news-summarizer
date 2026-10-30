@@ -1,0 +1,308 @@
+# Hacker News 热门文章摘要 (2026-10-31)
+
+这是今日 [Hacker News](https://news.ycombinator.com/) 上最热门的文章摘要。
+
+## 1. My favourite PowerMac is a Nintendo Wii
+
+**原文标题**: My favourite PowerMac is a Nintendo Wii
+
+**原文链接**: [https://virtuallyfun.com/2026/10/29/my-favourite-powermac-is-a-nintendo-wii/](https://virtuallyfun.com/2026/10/29/my-favourite-powermac-is-a-nintendo-wii/)
+
+文章之前已经处理过
+
+---
+
+## 2. Northflank平台遭安全入侵
+
+**原文标题**: Northflank Breached
+
+**原文链接**: [https://status.northflank.com](https://status.northflank.com)
+
+2026年10月30日，云平台Northflank发生重大安全事件，其环境变量疑似被解密，多个用户确认AI密钥已被盗用。事件始于当日11:43（UTC）Wiz系统发出威胁警报，随后工程师于11:44开始处置，12:02起部署网络策略补丁，13:00向Wiz CIRT请求安全支持。截至15:28，调查仍在进行。Northflank已为Postgres和MongoDB启用密钥轮换功能，建议所有用户立即轮换workloads、secret groups及global secrets中的所有凭据，并关闭Addons的公开访问。平台9大组件中，网络、证书、服务、Addons、任务、构建及日志指标等7项处于"重大中断"状态，整体正常运行率为99.64%；而Northflank应用、API及文档站点仍保持正常运行。官方提醒用户：在进一步调查结果确认前，须视所有环境变量为已泄露状态，立即执行密钥轮换。
+
+---
+
+## 3. Cursor市场中Claude Code VS Code扩展被植入持久化SSH后门
+
+**原文标题**: Backdoor in Claude Code for VS Code extension on the Cursor Marketplace
+
+**原文链接**: [https://phorion.io/blog/offical-claude-code-vsx-compromise/](https://phorion.io/blog/offical-claude-code-vsx-compromise/)
+
+Phorion发现Cursor市场中Claude Code for VS Code扩展（v2.1.313）被植入跨平台SSH后门，Cursor已紧急下架。攻击者通过注入IIFE，在扩展加载时即执行恶意代码，无需用户交互。感染链包含四个阶段：将攻击者Ed25519公钥写入authorized_keys；建立指向134.209.82.225的反向SSH隧道实现隐蔽远程访问；通过LaunchAgent（macOS）、crontab（Linux）或启动项（Windows）设置持久化；向攻击者发送主机侦察beacon（含环境变量名等线索）。macOS路径存在关键缺陷：systemsetup -getremotelogin在无管理员权限时报错而非返回"Off"，导致脚本跳过启用SSH步骤，若目标未开启Remote Login则隧道无法回连，但持久化文件仍会写入，一旦SSH被开启后门即刻激活。检测应重点关注IDE进程修改authorized_keys、非Apple进程创建com.apple.*标签的plist文件、异常SSH远程端口转发及向该IP的出站连接。组织应立即排查使用记录，卸载扩展后须彻底清理残留的SSH密钥、隧道脚本及所有持久化机制。
+
+---
+
+## 4. 展示 HN：在约 1GB Qwen 权重中运行一台任天堂
+
+**原文标题**: Show HN: A working Nintendo in ~1GB of Qwen weights
+
+**原文链接**: [https://github.com/dbreunig/nesformer](https://github.com/dbreunig/nesformer)
+
+nesformer 将 NES 的 6502 CPU 完整编译进 Qwen3.5-4B 模型权重，无需训练，由编译器逐参数计算生成。核心思路是复用 Qwenputer 的 Gated DeltaNet 状态矩阵作为机器内存：每个矩阵行即为一个存储单元，6502 寄存器、2KB 工作 RAM 与 32KB 程序 ROM 全部驻留其中。模型逐 token 输出 CPU 执行日志，宿主程序负责 PPU 渲染、控制器读取与 vblank 中断注入。项目支持 NROM（mapper 0）卡带，可运行超级玛丽、大金刚等经典游戏，画面与标准 6502 模拟器逐帧一致。权重共 466.6M 参数（bf16 约 933MB），非零参数仅 9.3M，压缩后仅 3.3MB，且可直接用 Hugging Face 标准接口加载。当前局限包括：仅支持 NROM，无法处理 MMC1/MMC3 等换页机制；不支持非官方指令与 APU 声音；PPU 逐扫描线渲染，部分精灵效果为近似。性能上，numba 引擎约 1,650 token/s，600 帧（10 秒游戏时间）需约 25 分钟，比真实 NES 慢 150–290 倍。项目基于 Divyansh Agrawal 的 Qwenputer，采用 MIT 协议开源。
+
+---
+
+## 5. Bunny CDN 安全事件通报
+
+**原文标题**: Bunny CDN Security Incident
+
+**原文链接**: [https://status.bunny.net/incidents/p6gf1by9kr7m](https://status.bunny.net/incidents/p6gf1by9kr7m)
+
+2026年10月28日，Bunny.net发布安全事件通报：其一家基础设施供应商报告，位于亚美尼亚的一台CDN节点服务器因第三方服务器管理软件遭非法入侵而受影响。Bunny.net工程团队在20分钟内切断该节点流量，随即完成日志保全、安全擦除及权限吊销，该服务器已被永久移除。双方调查均未发现节点数据被非法访问的证据，但无法完全排除可能性。潜在暴露信息包括临时缓存的CDN内容、Pull Zone配置及该服务器上的TLS证书。作为预防，Bunny.net已撤销并重新签发平台域名（b-cdn.net、bunny.run）的全部TLS证书，客户自定义域名的托管证书正分批重新签发，预计10月31日前完成；使用托管证书的客户无需任何操作。自行管理证书的用户建议尽快撤销并以新私钥重新签发。客户账号数据未存储于该服务器，内部系统亦未受影响。
+
+---
+
+## 6. 限制开放网络无法遏制恶意爬虫
+
+**原文标题**: Breaking the open web won't stop the bad bots
+
+**原文链接**: [https://www.techpolicy.press/breaking-the-open-web-wont-stop-the-bad-bots/](https://www.techpolicy.press/breaking-the-open-web-wont-stop-the-bad-bots/)
+
+摘要：面对AI开发者大规模抓取网络内容引发的流量激增与广告收入损失，超300名媒体代表推动国会审议《隐形机器人禁止法案》。该法案要求所有自动访问网站者披露身份及目的，违者可面临数万美元罚款。文章作者指出，法案并未直接针对有害抓取行为，反而会威胁记者、研究人员和档案管理员等合法使用爬虫工具的群体。华尔街日报曾借助爬虫完成普利策获奖调查，互联网档案馆则依靠爬虫归档逾万亿网页。法案存在定义模糊问题：披露身份无法判断行为是否有害，且会破坏调查所需的匿名性。此外，强制身份识别有违第一修正案对接收信息自由的保护。文章认为，现有隐私法、版权法和消费者保护法已能应对多数非法数据使用；政策制定者应支持IETF等技术机构开发匿名行为认证协议，而非仓促立法。若确需新法，责任应当基于造成可量化损害的行为，而非抓取者的匿名状态。开放网络的基石在于公民无需逐一寻求许可即可自由获取、分析和保存公共信息，匿名本身不应成为被规制的对象。
+
+---
+
+## 7. Florilegium：LaTeX 中的程序化花卉边饰
+
+**原文标题**: Florilegium: Procedural Flowers in LaTeX
+
+**原文链接**: [https://github.com/kevinraymond/florilegium](https://github.com/kevinraymond/florilegium)
+
+Florilegium 是一个 LaTeX 宏包，在页面边栏程序化生成德尔夫特蓝风格花卉装饰。所有花瓣、叶片与茎干均由 Lua 在排版时计算的参数化曲线构成，以水彩笔触渲染并直接写入 PDF，无任何图片或外部资源。项目含两种模式：手摆模式以预设控制点布置植物；生长模式借鉴 1998 年 Wong 等人 SIGGRAPH 论文的空间填充思路，以贪心算法反复选取最大空白圆盘、向空隙延伸分支，自动填满文本留出的空间。边饰可响应正文：支持从 OpenType 字体提取首字母轮廓并饰以藤蔓、在标题或指定行旁添加花卉，以及按页数实现从春蕾到秋籽的季节渐变。各页随机配有蝴蝶、蜜蜂、蜗牛或小鸟等"访客"。整套配色由单一 ink 色在 OKLCH 空间派生色阶，浅端不偏灰。另附纯 PostScript 版本，Ghostscript 可直接渲染，无需 TeX。构建仅需 LuaLaTeX 一次通过，每页约一秒。
+
+---
+
+## 8. 联邦代码锻造台
+
+**原文标题**: The federated code forge
+
+**原文链接**: [https://tangled.org/blog/forge/](https://tangled.org/blog/forge/)
+
+Tangled 是首个基于 AT Protocol 的联邦式代码托管平台，兼顾开放协议的持久性与中心化平台的便捷体验。用户可自由自托管 Git 服务、CI 运行器乃至全部基础设施，同时与生态内所有人无缝协作。本次重大更新包括：UI 全面重构为 Svelte 前端并部署至全球边缘节点；架构由原 Go 单体拆分为独立前端与 Rust 编写的 bobbin 内存索引服务，覆盖 11 个以上区域；knot2 将 Git 与 SSH 服务合入单一二进制。数据模型上，Issues、Pull Request、评论等以协作对象（COB）形式直接写入 knot，与代码同生命周期，极大提升项目可移植性，并通过 PDS 上的 attestation 记录实现双向防篡改验证。此外，组织账户已上线，基于真实 AT Protocol 账户支持团队管理；堆叠 PR 流程全面优化，Git 与 Jujutsu 用户均可提交和审查堆叠变更。后续还将陆续推出私有仓库、CLI、多语言 SDK 及 Agent 技能。Tangled 以开发者主权和开放协议为基石，力求成为未来十年的代码托管首选。
+
+---
+
+## 9. 构建AI原生工程组织
+
+**原文标题**: Building an AI-native engineering org
+
+**原文链接**: [https://twitter.com/sgondala2/status/2115832070274723875](https://twitter.com/sgondala2/status/2115832070274723875)
+
+本文探讨了如何打造以AI为核心驱动力的工程组织。与传统"在既有流程中嵌入AI工具"的思路不同，AI原生组织从架构设计、团队协作到技术选型，均以AI能力为第一性原则进行重构。作者Sashank Gondala指出，关键在于将AI从辅助工具提升为组织基础设施，使工程师的工作重心从手写代码转向问题定义、系统编排与结果验证。文章围绕以下维度展开：一是组织结构上，打破按语言或功能划分的传统团队边界，转向以AI能力域为核心的敏捷单元；二是人才角色上，强调工程师需具备AI系统设计、提示工程及模型评估能力，"AI编排者"逐步替代"代码工人"成为核心角色；三是文化流程上，倡导以迭代实验取代瀑布式开发，将AI反馈回路嵌入CI/CD全生命周期；四是治理安全上，在加速创新的同时建立模型风险管控与数据合规机制。总体而言，构建AI原生工程组织并非单纯的技术升级，而是一次从底层逻辑出发的组织范式转移，要求领导层在战略、人才与文化层面同步推进变革。
+
+---
+
+## 10. 无限Mac：BeOS
+
+**原文标题**: Infinite Mac: BeOS
+
+**原文链接**: [https://blog.persistent.info/2026/10/infinite-mac-beos.html](https://blog.persistent.info/2026/10/infinite-mac-beos.html)
+
+无限Mac网站现已支持在浏览器中运行多个版本的BeOS，用户可即时启动、安装预置软件、挂载光盘镜像并保存工作。BeOS是一款以多媒体为核心的多任务多线程操作系统，曾被移植至Power Macintosh，Apple甚至一度考虑收购其开发商Be公司，因此可视为苹果"未走之路"的一瞥。技术上，作者依托DingusPPC模拟器，解决了一系列兼容性问题，包括ADB按键模拟缺陷、屏幕深度切换中显示控制器与数模芯片的通知顺序、早期版本的小端视频更新以及HFS分区数据校验等，大幅提升了模拟器硬件模拟精度，目前DingusPPC可能是唯一能运行PowerPC版BeOS的模拟器。体验上，BeOS启动与操作极快，POSIX子系统和类Unix终端颇具现代感，但系统整体偏开发者导向，自带应用多为技术演示，第三方软件也普遍处于早期阶段。其UI兼具创新与折中：标签式窗口标题、手部默认光标、类Windows的Deskbar与Mac式Finder Tracker并存。与NeXTStep相比，NeXT在成熟度和跨架构支持上更胜一筹。此外，本次更新还新增了截屏与录屏功能，收录了Rhapsody及Mac OS X开发者预览光盘，并将镜像迁移至自托管服务以保障稳定性。
+
+---
+
+## 11. 凡尔纳的失落之作
+
+**原文标题**: Jules Verne's Lost Novel
+
+**原文链接**: [https://blue-continuum.com/verne-paris](https://blue-continuum.com/verne-paris)
+
+1863年，儒勒·凡尔纳完成了一部与其科幻冒险风格截然不同的作品——《二十世纪的巴黎》。他没有如往常般将目光投向海底、月球或地心，而是直面未来近一个世纪，构想1960年的巴黎，审视十九世纪对科学、机械、商业与效率的信仰若发展至逻辑尽头，将催生出怎样的文明。然而，凡尔纳的长期出版商皮埃尔-儒勒·赫塞尔读后认为其预言荒诞、基调阴郁，当场拒绝刊印。手稿遂被束之高阁，一尘封整整131年，直至1994年从家族保险箱中重见天日，方在法国正式面世。这部作品之所以令人震撼，不仅在于惊人的预见性，更在于它全然不同于大众心目中那个热衷奇旅与奇观的凡尔纳，更似一篇冷峻的社会寓言。本文作者约翰·斯蒂尔为"蓝色连续"（Blue Continuum）出版人兼执行编辑，借此文揭示凡尔纳鲜为人知的一面，并关联当下AI革命与工业文明对人类世界的深远影响。
+
+---
+
+## 12. 黑石称Anthropic上市或难获投资级信用评级
+
+**原文标题**: Anthropic may not secure investment-grade rating after IPO, Blackstone says
+
+**原文链接**: [https://www.ft.com/content/59383c7f-8d82-493f-bf01-d2e862a1018f](https://www.ft.com/content/59383c7f-8d82-493f-bf01-d2e862a1018f)
+
+无法访问该文章链接。
+
+---
+
+## 13. Azure最薄弱的环节——五起跨租户完全入侵
+
+**原文标题**: Azure's Weakest Link – Five Full Cross-Tenant Compromises
+
+**原文链接**: [https://www.binarysecurity.no/posts/2026/10/one-root-case](https://www.binarysecurity.no/posts/2026/10/one-root-case)
+
+本文是系列博客第三部分，深入剖析Azure Logic Apps中API Connections组件的多层严重漏洞，作者累计获得20万美元赏金。文章揭示五起完整的跨租户提权攻击：其一，利用ARM REST API的DynamicInvoke端点，通过"../../"路径遍历跨租户读取Key Vault等后端数据；其二，在代码中发现四个未文档化端点（DynamicList等），微软仅封堵DynamicInvoke，攻击者借DynamicList实现跨租户SQL写入；其三，利用Consumption版Logic Apps创建V1连接的特性，通过host.api.RuntimeUrl参数覆盖，绕过连接所有权校验；其四，微软修复存在时序缺陷——验证在路径归一化之前执行，遍历仍可绕过；其五，修补遍历后意外移除RuntimeUrl校验，漏洞重新暴露。根本问题在于APIM实例对ARM请求拥有全局权限，且微软以临时黑名单代替令牌归属层面的修复。任何后端服务——从Key Vault、Azure SQL到Jira、Salesforce——均可被完全入侵，唯一屏障是各系统附加的输入校验，而此类校验极难覆盖全部边界情况。
+
+---
+
+## 14. 巴西航空旗下Atech发力无人机交通管控，剑指2030年业务规模翻倍
+
+**原文标题**: Embraer's Atech aims to double in size by 2030 with drone traffic control
+
+**原文链接**: [https://www.bloomberglinea.com.br/negocios/atech-da-embraer-quer-dobrar-de-tamanho-ate-2030-com-controle-de-trafego-de-drones/](https://www.bloomberglinea.com.br/negocios/atech-da-embraer-quer-dobrar-de-tamanho-ate-2030-com-controle-de-trafego-de-drones/)
+
+摘要：巴西航空工业公司（Embraer）旗下科技公司Atech宣布，计划到2030年将业务规模扩大一倍，核心驱动力来自无人机交通管控及关键任务系统全球需求的增长。CEO罗德里戈·佩尔西科表示，Atech成立于上世纪80年代，17年前被Embraer收购，主营防御、政府、公共安全及空中交通管理领域的关键任务系统。在民用市场，Atech正开发无人机交通管理（UTM）方案，作为支撑无人机安全共飞空域的数字基础设施，技术已出口至印度、巴拉圭、南非等市场。公司还是唯一参与北约网络安全演习的巴西企业。展望未来，Atech将重点拓展亚洲、非洲和拉美：亚洲与拉美侧重空中交通管理，非洲延伸至国防与安保领域。佩尔西科指出，随着无人机、电动垂直起降飞行器（eVTOL）及商业航空流量激增，空域管理正经历深刻变革，无人机有望成为末端配送工具，Atech将借此提供全空域交通整合方案。公司强调，将以定制化高技术解决方案和长期合作伙伴关系，实现可持续的国际市场扩张，而非追求单一百分比目标。
+
+---
+
+## 15. 光速编程：打造Gravity查询引擎
+
+**原文标题**: Programming at Light Speed: Building the Gravity Query Engine
+
+**原文链接**: [https://pgrust.com/blog/programming-at-light-speed/](https://pgrust.com/blog/programming-at-light-speed/)
+
+pgrust v0.4-beta发布全新查询引擎Gravity，在ClickHouse自研的ClickBench基准测试中实现3倍性能超越，同时完整支持Postgres SQL方言与类型系统。其核心理念是"光速编程"——从硬件物理速度极限反推数据库性能上限，而非传统自底向上的incremental优化。架构上，Gravity采用多阶段编译流水线：SQL查询→Postgres计划→流水线图→Lisp中间表示（IR）→目标汇编，为任意查询生成近最优机器码。团队先构建IR后端，验证其编译产物可达Claude手写Rust代码性能的80%–90%，确认IR表达力充足。为逼近极限，Gravity引入三种列存专用优化算法：ZoneWalk利用granule元数据min/max边界加速ORDER BY LIMIT；ZoneTopK以类似策略优化GROUP BY+LIMIT；TwoPass对高基数字段分两遍扫描，首遍仅计数、次遍按需取列，大幅节省内存带宽。SQL到IR编译阶段实施超百项优化，包括将238个核心函数与聚合直接内联至IR以消除逐行调用开销，最终使生成代码性能逼近手写优化程序。
+
+---
+
+## 16. AI不会取代SRE，却正在使其技能退化
+
+**原文标题**: AI isn't replacing SREs, it's deskilling them
+
+**原文链接**: [https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling](https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling)
+
+文章探讨AI对SRE（站点可靠性工程师）技能的深层影响，核心问题是：当AI接管95%的故障响应，人类是否还能胜任剩余5%的关键场景。作者引用1983年Bainbridge的"自动化悖论"——自动化程度越高，人工介入时越关键，但因缺乏练习而能力越差，这一规律正重演于AI时代。当前AI已覆盖告警降噪、已知问题修复、日志分析等常规工作，而SRE需应对的复杂未知故障恰恰依赖长期积累的系统直觉。文章援引医学和航空业研究，证实AI辅助会导致可量化的"去技能化"，更令人担忧的是初级SRE面临"未技能化"——根本未获得锻炼基础能力的机会，陷入"退化→更依赖AI→进一步退化"的恶性循环，且这一过程被效率假象所掩盖。作者提出应对思路：借鉴FAA强制飞行员手动飞行制度，团队应"刻意低效"，将部分AI可处理的场景留作人工演练；系统设计应让人类主动参与问题求解而非仅充当审批者。作为可观测性平台SigNoz，文章表明其立场是增强而非取代SRE，通过渐进式、有护栏的AI融合，确保人类保持对生产系统的深度认知与关键决策能力。
+
+---
+
+## 17. 产品经理同样难逃冲击
+
+**原文标题**: Product Managers aren't safe either
+
+**原文链接**: [https://lucaskostka.com/posts/ai-challenges-more-than-devs](https://lucaskostka.com/posts/ai-challenges-more-than-devs)
+
+AI正冲击所有岗位，产品经理（PM）也不例外。作者以生成式AI对开发者的影响类比Instagram对专业摄影师的冲击：90%的普通从业者将被淘汰，仅10%因不可替代的才华获得更大价值。普通开发者终将被AI增强的超级开发者、AI Agent乃至AI集群逐步取代。对PM而言，威胁更为隐蔽——当任何人都能用提示词生成功能时，开发者同样能培养产品直觉，"技术人"与"产品人"的传统分工正趋于融合。代码成本降低后，更多精力可投入客户痛点分析、设计权衡与历史假设演进，而这些能力正逐步由大模型辅助完成。因此，仅凭传统"产品思维"的PM面临边缘化风险，除非具备架构设计能力——作者视之为人类智能最后的堡垒之一。作者本人是程序员，曾开发数据营销产品四年，后加入Cloudflare旗下Zaraz团队。他坦言并非居高评判，而是担忧整个行业消亡，呼吁PM提升自我认知，主动整合技术技能（比如用十几行代码完成文本分析），才能在变革中存活。
+
+---
+
+## 18. 【Show HN】涂鸦竞技场——观看你的AI代理畅玩"你画我猜"
+
+**原文标题**: Show HN: Sketch Stadium – watch your agent play Pictionary
+
+**原文链接**: [https://sketch.wakeshift.ai/games/q5ucru](https://sketch.wakeshift.ai/games/q5ucru)
+
+摘要：这是一篇Hacker News社区项目展示帖，介绍了一个名为Sketch Stadium（涂鸦竞技场）的在线游戏项目。该平台将经典的"你画我猜"（Pictionary）游戏与AI代理（agent）相结合，允许用户将自研的智能代理接入平台，以自动化的方式参与猜词与绘画对局。当前页面显示比赛已进行至第18009轮，该轮已结束，下一轮即将开始；界面上设有旋转加载动画，并展示了当前轮次的目标单词，同时提供"连接你的代理"入口，供用户将AI代理接入比赛。整体而言，该项目是一个面向开发者的AI竞技平台，兼具趣味性与技术挑战性，旨在通过游戏化方式让研究者展示和测试各AI代理的图像生成与语义理解能力。
+
+---
+
+## 19. GitHub Actions、Pages 及 Webhooks 服务降级事故
+
+**原文标题**: GitHub Incident with Actions, Pages, and Webhooks
+
+**原文链接**: [https://www.githubstatus.com/incidents/pwxsjgnvrk6b](https://www.githubstatus.com/incidents/pwxsjgnvrk6b)
+
+2026年10月30日（UTC），GitHub 发生了一起影响 Actions、Pages 和 Webhooks 的服务降级事故。17:50，GitHub 开始调查 Actions 与 Webhooks 的性能下降；18:00，Pages 亦出现性能降级。18:06，团队通报称 Actions 工作流、Pages 部署及 Webhooks 事件存在延迟，代码搜索和实时推送功能出现报错，已采取缓解措施，各服务显现恢复迹象但尚未完全解决。18:32，所有受影响服务恢复正常运行，降级得到缓解，团队持续监控稳定性并继续调查根本原因。19:23，GitHub 正式宣布事故已解决，表示将尽快发布详细的根因分析报告。整个事故持续约一个半小时，涉及持续集成（Actions）、静态站点托管（Pages）和事件通知（Webhooks）三项核心功能，对开发者的自动化工作流与实时协作造成了一定影响。
+
+---
+
+## 20. 树装设备联网，让用户远程"敲木头"祈好运
+
+**原文标题**: Tree-mounted machines connect to web app to let users knock on wood remotely
+
+**原文链接**: [https://www.designboom.com/technology/tree-mounted-machines-web-app-users-knock-on-wood-remotely/](https://www.designboom.com/technology/tree-mounted-machines-web-app-users-knock-on-wood-remotely/)
+
+摘要：标题介绍的是一种安装在树木上的小型设备，通过接入网页应用，使用户能够远程模拟"敲木头"这一西方祈福习俗（即轻敲三下木头以求好运、避免说多错多）。然而，正文实际内容仅包含一条简短的产品信息：Meze 公司推出的 Audioromania 第二代"99 CLASSICS"音频设备，标价 349 美元。该信息属于耳机/音频类商品广告，与标题所述的远程敲木头装置并无关联，疑为网页抓取时混入的无关内容。总体而言，标题具有趣味性和科技创意色彩，而正文未提供任何与之对应的实质性报道。
+
+---
+
+## 21. Show HN：从约25行 SQL 自动推导 FlashAttention 内核
+
+**原文标题**: Show HN: Automatic deduction of FlashAttention kernel from ~25 lines of SQL
+
+**原文链接**: [https://github.com/xqlsystems/xarray-sql/blob/6debe2495dcb4e8fac20ab97df5b89baae2a31a6/benchmarks/ml/01_attention.py](https://github.com/xqlsystems/xarray-sql/blob/6debe2495dcb4e8fac20ab97df5b89baae2a31a6/benchmarks/ml/01_attention.py)
+
+摘要：einfold 是一个查询优化器，能将 SQL 执行计划自动重写为高效数组算法。作者用 SQL 定义因果注意力 softmax(Q·Kᵀ/√d)·V：将 Q、K、V 注册为 (token, feature, value) 表，注意力即两次带连接的聚合求和。einfold 未针对注意力编写任何专用规则，仅凭一条通用模式——融合"分数来源于连接的 softmax 加权平均"——即可自动推导出 FlashAttention 式分块流式计算，避免存储 N×N 分数矩阵。项目支持窗口函数与 GROUP BY 两种等价 SQL 写法，在 DataFusion、DuckDB 等引擎上验证前向结果与 JAX 一致；借助 ddx（SQL 自动微分库）对整条查询求梯度，与 jax.grad 交叉校验。因果掩码以"连接中不存在的行"表达，确保 0·∞ 不产生 NaN。为证明规则通用性，作者以 Nadaraya-Watson 高斯核估计器作对照组，验证同一融合规则对非注意力查询同样生效，无需额外特化。
+
+---
+
+## 22. 傲慢的杀法
+
+**原文标题**: An Arrogant Way of Killing (2016)
+
+**原文链接**: [https://magazine.atavist.com/2016/an-arrogant-way-of-killing](https://magazine.atavist.com/2016/an-arrogant-way-of-killing)
+
+2012年2月13日清晨，菲律宾垃圾收集员吉梅纳在塔伊泰市一处荒地垃圾堆中发现一具裹在毯子里的女尸。死者为32岁的菲律宾房地产经纪人凯瑟琳·李，前一日与两名自称加拿大人的男子（化名"比尔"与"托尼"）看房后，遭近距离枪杀四枪，尸体被遗弃于路边。案件因当地警队腐败严重，由其丈夫申请菲律宾国家调查局（NBI）接手。特工里维拉调查后发现，李因轻信邮件约见而未能核查对方背景，最终成为灭口目标。案卷中一句手写备注"亨特指使"将疑点指向约瑟夫·亨特，而作者拉特利夫进一步追踪至南非人保罗·勒鲁——一名涉嫌军火走私、黄金贩运及网上非法处方药交易的跨国犯罪头目。勒鲁曾于2012年被美国缉毒署逮捕，随后神秘"消失"，据传成为美方秘密线人。文章以李的死亡为线索，揭示了一条从美国法律文书到菲律宾偏远垃圾堆的暗线，勾勒出跨国犯罪网络如何以冷酷而"傲慢"的方式消灭一名普通经纪人，以及美国执法机构为利用线人甘愿纵容其背后罪行的灰色逻辑。
+
+---
+
+## 23. 最古冰层消融，石器时代重见天日
+
+**原文标题**: The oldest ice disappears and the Stone Age emerges from it
+
+**原文链接**: [https://www.sciencenorway.no/archaeology-climate-culture/the-oldest-ice-is-disappearing-the-stone-age-is-emerging-from-the-melting-ice/2713921](https://www.sciencenorway.no/archaeology-climate-culture/the-oldest-ice-is-disappearing-the-stone-age-is-emerging-from-the-melting-ice/2713921)
+
+随着地球上最古老的冰层逐渐消退，封存其间的石器时代遗存正重见天日。这一发现不仅为人类早期历史研究提供了珍贵的实物线索，更引发出一个深刻的哲学追问——"我们还是人类吗？"。冰层的消融既是全球气候变化的警示，也是打开通往远古之门的钥匙。在万年冰川之下沉睡的痕迹，有望重塑人类对自身起源与演化的认知。当石器时代从冰封中重新浮现，人类关于"何以为人"的终极追问也被再度推至思想前台，促使我们在面对加速变化的自然时，重新审视自身的身份与未来。
+
+---
+
+## 24. 睡眠框架：大模型持续学习中知识保留的新范式
+
+**原文标题**: Sleep framework: A new way for LLMs to retain knowledge in continual learning
+
+**原文链接**: [https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/](https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/)
+
+摘要：谷歌研究院提出"睡眠框架"，受人类睡眠机制启发，为大语言模型（LLM）的持续学习提供全新范式。该框架使模型在活跃期（接收输入、存储短期记忆）与睡眠期（离线巩固）间交替运行，从根本上解决静态知识截止与灾难性遗忘问题。睡眠期包含两个核心阶段：一是记忆巩固，通过混合专家（MoE）与HoPE架构动态扩展参数容量，借助广义知识蒸馏与强化学习将高频短期记忆写入低频长期参数，完成后再修剪临时参数；二是梦境阶段，随机激活非标准专家生成合成训练样本，经梯度筛选与强化学习精化实现自主能力提升。实验表明，该方法在多项基准中显著超越上下文学习与监督微调基线：长上下文理解可扩展至1000万tokens，超越GPT-4；数学推理AIME 24准确率79.2%；持续翻译中近乎零性能衰减；事实知识整合达48.9%。该研究为构建自主、持续进化的AI系统开辟了可行路径。
+
+---
+
+## 25. 区块链情报机构指认朝鲜实施63亿美元币安黑客攻击
+
+**原文标题**: Blockchain intelligence firms link North Korea to $6.3B hack on Binance
+
+**原文链接**: [https://www.npr.org/2026/10/30/g-s1-150902/blockchain-intelligence-firms-link-north-korea-to-6-3b-hack-on-binance](https://www.npr.org/2026/10/30/g-s1-150902/blockchain-intelligence-firms-link-north-korea-to-6-3b-hack-on-binance)
+
+美国区块链情报公司TRM和Chainalysis将币安遭遇的63亿美元黑客攻击归因于朝鲜精英黑客组织TraderTraitor，称判断"高度确信"。攻击者约20分钟内从币安转移63.6亿美元，涉及10条区块链，为史上最大加密货币盗窃案，远超去年Bybit的15亿美元被盗纪录。币安已冻结约30亿美元受影响资产，将全额赔偿用户损失，提现已暂停，预计一至两日内恢复。公司称初步调查指向一台被入侵的笔记本电脑，后续发现更多漏洞点，但未发现私钥泄露证据。朝鲜因经济困顿及联合国制裁，长期依赖加密资产盗窃获取外汇以支撑经济和核计划。安全专家质疑攻击疑似利用永不过期全权限令牌，暴露审批控制不足。创始人赵长鹏作为股东表态将确保用户资金安全。
+
+---
+
+## 26. 如何给黑洞拍一张照片？
+
+**原文标题**: How do you take a picture of a black hole?
+
+**原文链接**: [https://www.quantamagazine.org/how-do-you-take-a-picture-of-a-black-hole-20261029/](https://www.quantamagazine.org/how-do-you-take-a-picture-of-a-black-hole-20261029/)
+
+本文是科普播客《The Joy of Why》的一期节目，主持人Janna Levin与Steven Strogatz访谈哈佛天体物理学家、事件视界望远镜（EHT）创始人Shep Doeleman，讲述人类首张黑洞照片的诞生历程。黑洞是连光都无法逃逸的极端天体，分为恒星质量与超大质量两类。早在20世纪，科学家便通过X射线双星和射电喷流间接推断其存在，却从未直接观测。EHT团队将全球多座射电望远镜联网，以地球为口径进行甚长基线干涉观测，成功拍摄了距地5500万光年的M87星系及银河系中心超大质量黑洞的"阴影"——即爱因斯坦广义相对论预言的引力透镜光环，其尺寸可直接推导出黑洞质量。Doeleman分享了自己13岁观日全食结缘天文、19岁赴南极从事实验的往事，并强调黑洞虽体积极小却极其致密，在塑造星系形态、决定宜居区域乃至决定人类终极命运方面扮演关键角色。团队正推进技术升级，力争在2030年代初实现拍摄黑洞动态"电影"的目标。
+
+---
+
+## 27. 法国数字税恐将"扼杀"VideoLAN非营利组织
+
+**原文标题**: French digital tax may kill VideoLan non-profit
+
+**原文链接**: [https://twitter.com/videolan/status/2116229135919919278](https://twitter.com/videolan/status/2116229135919919278)
+
+法国国民议会通过了一项由社会党议员推动的数字数据流量税，由内容提供方按传输流量缴纳，税率约为每GB 0.055欧元，预计年财政收入达100亿欧元。VideoLAN——著名免费开源媒体播放器VLC的开发方，同时也是非营利组织——对此强烈反对，其官方账号公开批评称，相关立法者"完全不懂技术"，却强行推出该税制，将导致VideoLAN每年承担逾100万欧元的运营成本，对依靠捐赠和捐赠维持的非营利项目而言几乎不可承受，恐将难以为继。推文还讽刺称，这些政客标榜追求"技术主权"，却用一项脱离现实的税制沉重打击了全球开源社区的重要项目。该推文引发了大量传播与讨论。
+
+---
+
+## 28. 异域征途——外星球最远行驶纪录的轮痕
+
+**原文标题**: Tracks along the longest drive on another world
+
+**原文链接**: [https://science.nasa.gov/blog/tracks-along-the-longest-drive-on-another-world/](https://science.nasa.gov/blog/tracks-along-the-longest-drive-on-another-world/)
+
+2026年10月11日（火星日2006），"毅力号"火星车行驶里程达45.22公里（28.10英里），创下外星球行驶距离最长纪录，其地球同型号也获吉尼斯世界纪录认证。原计划两个月前即可完成，但毅力号因在古代岩层区进行岩石研磨与近距离科学探测而推迟出发，最终驶离时一举超越纪录。
+
+为实现该壮举，团队全面升级了行驶准则：倾角上限提高至24度，腹板间隙缩至20厘米；更新制动软件规避岩石障碍；转向电机电流限制近翻倍；引入"动态滑移表"模拟打滑，并采用交叉坡面行驶增强基岩抓地力。
+
+最突出的突破为自主全域定位系统（GBLC），它将"机智号"直升机基站的高速商业处理器用于比对手表与轨道影像，实现在无GPS环境下自主定位，使毅力号可在无人干预下完成更长距离驾驶。团队同时开发了软件辐射硬化方案应对火星表面恶劣辐射，并正探索生成式AI辅助路径规划，为后续沿陨石坑边缘攀升及更高效的自主探索奠定基础。
+
+---
+
+## 29. Wasmer（YC S19）面向欧洲招募操作系统与虚拟化专家
+
+**原文标题**: Wasmer (YC S19) Is Hiring OS/Hypervisor Experts in Europe
+
+**原文链接**: [https://www.workatastartup.com/jobs/98722](https://www.workatastartup.com/jobs/98722)
+
+摘要：Y Combinator 2019年春季批次（S19）孵化公司Wasmer现通过其"创业公司招聘"平台，面向欧洲地区公开招聘高级操作系统/虚拟机（Hypervisor）工程师。该职位聚焦于操作系统内核及虚拟化技术领域的资深人才，反映出Wasmer在底层基础设施与高性能运行时方向上的技术布局。Wasmer以WebAssembly（Wasm）运行时和云原生工具链著称，此次招聘表明公司正进一步拓展其在系统级技术上的深度，旨在强化其在跨平台执行、安全沙箱及云原生计算等核心能力上的研发实力。面向欧洲的招募策略也体现了Wasmer对欧洲本土技术人才的重视，以及公司全球化团队建设的持续推进。该岗位对候选人的操作系统原理、内存管理、I/O调度及虚拟机架构等方面有深厚要求，适合具备相关底层系统开发经验的资深工程师。
+
+---
+
+## 30. 纽约扒手指南
+
+**原文标题**: A Pickpocket's Guide to New York
+
+**原文链接**: [https://www.newyorker.com/magazine/2026/11/02/a-pickpockets-guide-to-new-york](https://www.newyorker.com/magazine/2026/11/02/a-pickpockets-guide-to-new-york)
+
+本文围绕电影《纽约最后的扒手》展开，主演约翰·特托罗饰演一位在加密货币时代格格不入的老派扒手。影片邀请拉斯维加斯知名"绅士小偷"阿波罗·罗宾斯担任扒窃顾问，手把手教授特托罗各种偷窃技巧，包括"从口袋外侧向上掏取"和"探囊"等专业术语与手法。罗宾斯将扒窃比作芭蕾，强调其非暴力与精巧的特性，引得特托罗感慨这与表演艺术中"从生活中偷取素材"如出一辙。罗宾斯成长于密苏里州，受两个犯罪的半兄弟影响，十一岁初尝偷窃，十岁起兼学魔术，将犯罪与魔术融会贯通。他遍访全球研究"盗窃文化"：中国扒手使用筷子，日本乘客出站后迅速分散。他指出手机让人们更易成为目标，但监控也加大了作案难度。如今罗宾斯已淡出小偷圈子，创办安保公司Ludus Labs，为政府与执法部门提供反欺诈培训，通过现场扒窃演示人们的思维盲点，将"偷窃"升华为一种行走的隐喻。
+
+---
+
