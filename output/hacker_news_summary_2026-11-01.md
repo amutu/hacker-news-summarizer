@@ -1,0 +1,309 @@
+# Hacker News 热门文章摘要 (2026-11-01)
+
+这是今日 [Hacker News](https://news.ycombinator.com/) 上最热门的文章摘要。
+
+## 1. HackerTube：由Hacker News 社区推荐视频驱动的类 YouTube 平台
+
+**原文标题**: HackerTube: YouTube built from videos recommended by HN
+
+**原文链接**: [https://karpathy.bearblog.dev/hacker-tube/](https://karpathy.bearblog.dev/hacker-tube/)
+
+周末深夜，作者因厌倦YouTube充斥低质内容、夸张缩略图和千篇一律的推荐，灵机一动，用AI工具Opus 5.5在约两小时内搭建出HackerTube（hackertube.org），一个以Hacker News社区推荐为源的YouTube替代站。Opus爬取HN全部历史评论，经另一模型Sonnet过滤垃圾与低质信息，从约4万条推荐中筛出6454个视频，覆盖2007至2026年间150个主题。平台亮点包括：采用50%画幅的默认缩略图替代上传者原图；无需注册即享个性化推荐，状态仅存于浏览器本地会话；支持键盘快捷键；数据可导出，方便用户或AI代理自建同款站点。作者将项目部署在VPS上并完成安全加固与性能优化，最终感叹两个小时后得以"重新呼吸"，对AI工具的高效表达由衷感谢。
+
+---
+
+## 2. Linux内核TCP握手释放后使用漏洞（CVE-2026-98432，CVSS 9.8）
+
+**原文标题**: TCP Use-After-Free: CVE-2026-98432 / CVSS 9.8
+
+**原文链接**: [https://atlasum.net/blog/cve-2026-98432-linux-ipv4-tcp-uaf](https://atlasum.net/blog/cve-2026-98432-linux-ipv4-tcp-uaf)
+
+Linux内核IPv4 TCP握手中存在释放后使用漏洞（CVE-2026-98432，CVSS 9.8），根因为内核将请求套接字中的IPv4选项指针直接传递给新连接而未复制，随即释放内存，多核并发读取导致堆信息泄露、内存损坏或系统崩溃。该漏洞影响Linux 4.4及以上所有版本，攻击无需任何凭据，在应用层认证前即可触发。Anthropic披露其Claude模型已针对带MPTCP监听器的服务器构建远程root利用程序，无需交互。上游内核已于10月11日至18日通过四行修改（kfree改为kfree_rcu）完成修复，但截至10月29日，Ubuntu全系、RHEL 8/9/10、Amazon Linux 2及AL2023默认内核仍未修复。临时缓解方案为通过nftables在prerouting阶段丢弃携带IPv4选项的TCP包（ip hdrlength > 5），可在边缘防火墙统一部署。修复需重启内核方可生效，建议优先处理含MPTCP监听器的服务器，并持续关注各发行版安全更新。
+
+---
+
+## 3. 学者的责任
+
+**原文标题**: The Duty of a Scholar
+
+**原文链接**: [https://www.daemonology.net/blog/2026-10-31-The-Duty-of-a-Scholar.html](https://www.daemonology.net/blog/2026-10-31-The-Duty-of-a-Scholar.html)
+
+2004年11月，作者提交博士论文当日，发现Intel超线程技术存在通过缓存状态在多线程间泄露信息的侧信道漏洞。他随即用六个月时间私下通知各操作系统安全团队、协调补丁开发，期间Intel曾试图通过其雇主Yahoo施压，但作者并非其雇员，施压未果。2005年5月，他在BSDCan会议公布成果，FreeBSD、Red Hat等发行版同步发布安全公告，完成了一次典型的负责任披露。由此，作者引申出"学者的责任"这一主题：发现知识或问题后，有义务主动寻找需要知晓的人，而非被动等待或选择沉默。他援引工程师职业伦理中关于安全危害的披露义务、《星际迷航》中"第一责任是真相"的宣言，以及德国哲学家费希特《学者的使命》中的论述，论证知识本身附带传播义务。他认同费希特学者应将知识奉献社会的观点，但拒绝其等级化的"真理祭司"框架，认为责任并非源于对社会的还债，而是知识自身的属性。作者区分了"研究者"（创造知识）与"学者"（将知识送达需要行动之人），并以此自许。
+
+---
+
+## 4. GPT-5.6 Sol 成功通关《异星工厂》和平模式
+
+**原文标题**: GPT-5.6 Sol can beat Factorio on peaceful mode
+
+**原文链接**: [https://ryanmadden.net/gpt-56-beats-factorio/](https://ryanmadden.net/gpt-56-beats-factorio/)
+
+继 Claude Code 之后，作者让 GPT-5.6 Sol 在 Codex 中以低思考模式完成了《异星工厂》和平模式（无虫族）的完整通关，游戏用时 13.5 小时。运行通过 Python 游戏管理器实现，模型以编程方式操作游戏，同时受限于玩家行动范围、战争迷雾等与人类玩家相同的约束。
+
+运行过程令人瞩目：Sol 在多个方面超出预期，使作者放弃了原定的"蓝科包即止"计划，一路推进至火箭发射。然而进入蓝色科学阶段后，工厂规模扩大带来的协调问题使进度明显放缓，火箭发射阶段仍需 Sol 通过大量在工厂各区间往返运送补给来弥补系统衔接缺陷。不过，与 GPT-5.5 完全无法使用传送带相比，本次进步显著。
+
+作者已录制全程视频并制作了生产统计图表，认为《异星工厂》在考察模型能力方面优于编程任务——过程更直观，便于非专业观众理解模型行为。后续将测试更多模型、不同思考等级及非和平模式。
+
+---
+
+## 5. 问题就在内存延迟
+
+**原文标题**: It's the Memory Latency, Stupid
+
+**原文链接**: [https://pivotlake.io/blog/its-the-memory-latency-stupid/](https://pivotlake.io/blog/its-the-memory-latency-stupid/)
+
+文章以ClickBench数据集上9900万行的GROUP BY查询为例，揭示数据库CPU利用率100%并不等于真正满载——大量时间实则空转等待内存。现代CPU每纳秒可执行4-8条指令，而一次DRAM访问需50-100纳秒，差距达四五百倍。朴素Hash表聚合在千万级组键时几乎每次 lookup 都触发缓存未命中，perf 数据显示50%的CPU周期因内存阻塞而浪费，仅16%真正执行指令，单次查询从DRAM拉取4.5GB数据。作者提出基数分区（radix partitioning）优化：先将数据按哈希高12位分为4096个小桶，再逐桶用小型Hash表聚合，使热数据大概率驻留L1/L2缓存。优化后内存等待降至23.5%，执行率升至32.2%，DRAM读取减至1.5GB，查询从3.6秒降至2.7秒。进一步结合预取与内存吞吐优化后，单核仅需1.85秒、DRAM读取降至954MB；16核并行下总耗时仅172毫秒。文章核心观点：将冷内存访问转化为CPU指令执行，几乎总是值得的 trade-off，缓存利用率是数据库性能工程的首要 concern。
+
+---
+
+## 6. Molly（Signal分支）停更三月，存在已知安全漏洞
+
+**原文标题**: Molly (Signal fork) has not been updated since 3 months and is vulnerable
+
+**原文链接**: [https://piefed.world/post/1503394](https://piefed.world/post/1503394)
+
+摘要：Molly（Signal的开源分支）最新停留在7月31日的v8.19.2-4版本，已逾三个月未更新，而Signal主线在8.27.1版本中修复了10月披露的攻击漏洞，Molly仍暴露于风险之下，作者建议用户暂删Molly改回主Signal。评论区围绕用户为何选择Molly展开讨论，主要原因包括：支持UnifiedPush推送通知（无需Google Play Services实现去谷歌化）、允许数据库加密、支持多设备登录等。然而多位评论者指出，Signal官网已提供独立APK，无需Play商店即可安装；配合MicroG在GrapheneOS等去谷歌化系统上通知功能正常；官方也已支持Android设备间链接。此外，Twinhelix维护的Signal-FOSS提供自动化的去blob构建，Guardian Project亦在F-Droid上分发Signal。有开发者批评Signal长期未在F-Droid设立正式仓库、依赖含blob的自更新APK，对开源生态不友好。关于UnifiedPush，评论者提醒其需依赖第三方MollySocket服务器，增加攻击面，收益有限。总体而言，在Molly恢复更新前，官方Signal或Signal-FOSS是更安全的选择。
+
+---
+
+## 7. Show HN：NES《魂斗罗》（1987）浏览器移植版（汇编→C→WebAssembly）
+
+**原文标题**: Show HN: NES Contra (1987) port (ASM –> C and then C –> WebAssembly)
+
+**原文链接**: [https://epoyraz.github.io/nes-contra-us/](https://epoyraz.github.io/nes-contra-us/)
+
+本项目将1987年任天堂FC（NES）经典横版射击游戏《魂斗罗》完整移植至浏览器端，借助WebAssembly技术实现无需插件即可在网页中流畅运行。移植路径分两步：先将原始汇编代码逐行转译为C语言，再将C代码编译为WebAssembly，在保持游戏逻辑与原机高度一致的同时兼容现代浏览器。项目提供三种模式：本地单人、本地双人同屏及在线双人对战；在线模式下双方各自使用独立电脑与键盘，通过邀请链接连接。操作支持键盘与触屏两种方式——方向键移动、A/空格跳跃、S键射击、Enter开始、Shift选择；触屏端对应A键跳跃、B键射击，双人格斗需在标题界面按住Shift键选择。项目整体以强烈的复古像素风格呈现，致敬8位时代，旨在让新玩家在网页中重温FC经典记忆，也展示了WebAssembly在复古游戏移植领域的巨大潜力。
+
+---
+
+## 8. Jepsen 测试 ParticleDB 1.1.4
+
+**原文标题**: Jepsen: ParticleDB 1.1.4
+
+**原文链接**: [https://jepsen.io/analyses/particledb-1.1.4](https://jepsen.io/analyses/particledb-1.1.4)
+
+摘要：Jepsen 对 Orkes 公司用 Rust 编写的数据库 ParticleDB（1.1.4 至 1.1.18.11.rc-22）进行了单节点可靠性测试，共发现 96 个问题。ParticleDB 号称统一事务 SQL、键值存储、向量搜索与实时分析，兼容 Postgres/Redis 协议并宣称"ACID、15.9 万 TPS"，但测试揭示诸多缺陷。文档与宣传严重不符：首页声称有 TLA+ 形式化证明，实际无规格可用；宣称"完整 ACID"，却仅实现快照隔离；四种事务模式（fast、occ、zero-copy-occ、table-2pl）的文档自相矛盾，安全语义含糊不清。主要问题包括：可用性方面，table-2pl 模式延迟高达数十秒近乎不可用，后续版本出现无原因神秘崩溃及并发死锁；功能方面，CASE 内不支持聚合、缺少幂运算符、PreparedStatement 返回异常等大量 Postgres 兼容缺陷；事务与并发方面，在各类事务与 WAL 同步模式下均出现一致性问题；此外还涉及谓词、约束、连接查询、僵尸进程及状态损坏等问题。测试采用 rw、append、internal-sim、compare 等工作负载，借助 Elle 检测器验证序列化正确性。多数问题在后续版本中逐步修复，但暴露出该数据库在工程质量与文档严谨性上尚不成熟。
+
+---
+
+## 9. 为 None 大费周章：Python 中的哨兵值
+
+**原文标题**: Much Ado About None: Sentinel Values in Python
+
+**原文链接**: [https://florianwilhelm.info/2026/10/sentinel_values/](https://florianwilhelm.info/2026/10/sentinel_values/)
+
+本文探讨了 Python 中 None 被过度使用所带来的歧义问题，并介绍了哨兵值（sentinel）这一解决方案。None 常被兼用于表示缺失、未设置、错误等含义，在缓存查询、配置更新、异常处理等场景中易引发混淆。哨兵值是处于有效值域之外的特殊标记，可从根本消除与真实值的冲突。文章列举了 Python 生态中已有的哨兵值实例，如 Ellipsis（NumPy 维度省略、类型存根）、NotImplemented（支持双分派）及 Pydantic 2.14 稳定发布的 MISSING。作者还指出自定义哨兵值的诸多难题：经典的 object() 方案在静态类型检查中无法收窄类型，枚举与字面量等替代方案各有取舍，且哨兵值经序列化或拷贝后身份检查会失效。值得关注的是，PEP 661 在 PyConDE 宣布推迟仅九天后即获通过，Python 3.15 正式引入 sentinel 内置类型，类型检查器可对其做类型收窄，typing_extensions 亦提供向后兼容。作者建议：认识到 None 的歧义，善用哨兵值消除模糊，优先选用库已提供的哨兵，用新内置替代旧的 object() 与枚举技巧。
+
+---
+
+## 10. 算一算：我们如何接管ChatGPT账户
+
+**原文标题**: Do the math: How we took over ChatGPT accounts
+
+**原文链接**: [https://www.parameter.ai/labs/we-found-a-gap-at-openai](https://www.parameter.ai/labs/we-found-a-gap-at-openai)
+
+2026年10月，研究人员发现一条通过公共分享链接即可接管任意ChatGPT账户的漏洞链。攻击者发布恶意对话并分享链接，受害者点击后，代码即在其已登录的chatgpt.com会话中执行。漏洞核心在于：对话中的数学图形组件加载了MathLive库，其主页面消息监听器未校验发送源，且允许键盘布局中嵌入原始HTML；随后利用无沙箱的srcdoc iframe继承chatgpt.com身份，再借助YouTube JSONP回调绕过CSP，最终实现任意JavaScript执行。受害者无需安装插件或授权，仅需一次点击，攻击者即可枚举其私有对话、读取从未共享的对话内容并将数据外传。OpenAI于10月26日完成修复，定级P1，授予5000美元奖金。修复要点：跨帧通信须验证发送者地址与窗口，跨窗口配置不得包含原始HTML，动态文档应保持沙箱隔离，CSP不应作为唯一防线。该漏洞的特殊之处在于各功能单独看均合理，风险仅在多特性组合时显现。
+
+---
+
+## 11. Show HN：寄宿于引导扇区的语言模型
+
+**原文标题**: Show HN: A language model that lives in a boot sector
+
+**原文链接**: [https://github.com/kerlenton/bootgpt](https://github.com/kerlenton/bootgpt)
+
+bootgpt 是一个在 PC 引导扇区（MBR）中运行的超小型语言模型。510 字节 MBR 为纯手写汇编，从后继 23 个扇区加载 11.5KB 的 int8 量化模型，在 386 实模式下直接推理，无需操作系统与 C 运行时。模型仅 8 字符上下文、1 个隐藏层，逐字符生成逼真的 Linux 启动日志（PCI 地址、ACPI 事件等），但所述硬件并不存在。量化采用 2 的幂次缩放，前向传播仅靠 imul 与 idiv 完成。训练脚本在 Python 中模拟完全相同的整数运算，确保与汇编输出逐字符一致。项目提供完整工具链：生成伪 dmesg 语料、训练量化、QEMU 无头录制演示。用户可用 QEMU 或将镜像 dd 至 USB 在任意 BIOS 机器上运行。该项目致敬引导扇区编程传统（Oscar Toledo 曾将国际象棋、操作系统塞入 512 字节），也区别于 sectorllm 在 1.2KB 汇编中运行五层 Llama2 的路数：bootgpt 走极致精简，引擎完全驻留 MBR，模型唯一使命就是"做一场机器启动的白日梦"，按任意键即重启。
+
+---
+
+## 12. Calnex铷/GPS频率标准设备Noctua风扇更换记录
+
+**原文标题**: Noctua Fan Swap on a Calnex Rb/GPS Frequency Reference
+
+**原文链接**: [https://www.jeffgeerling.com/blog/2026/noctua-fan-swap-calnex-rb-gps-frequency-reference/](https://www.jeffgeerling.com/blog/2026/noctua-fan-swap-calnex-rb-gps-frequency-reference/)
+
+本文记录了作者在Calnex铷/GPS频率标准设备上更换散热风扇的全过程。该设备内置SpectraTime GRClok-1500（集成GPS模块与10 MHz输出），原配Delta EFB0412HHD风扇持续运行噪音令人烦躁，遂换装为Noctua NF-A4x20 FLX。作者以T10梅花螺丝刀拆卸涂有Loctite固定的顶盖螺丝，内部结构简洁，散热片为密集针片式铝制结构，端部尖锐易伤手，故翻转设备从底面拆除。因Calnex主板上的方形四针风扇接口与OmniJoin尖刺接头不兼容，作者直接剪线、剥线后串接OmniJoin接头完成改造。作者高度评价该设备的服务性：全机统一使用T10 Torx螺丝，无需更换多把工具，体现工程师实用主义设计思路。重新组装后，设备安放于"原子钟塔"，1 PPS输出接入相位信号分析仪，约20至30分钟完成铷钟锁定与GNSS同步。脚注另提及SpectraTime已并入Safran集团，同类型号仍有销售。
+
+---
+
+## 13. Redox: Ring Buffers Project Summary
+
+**原文标题**: Redox: Ring Buffers Project Summary
+
+**原文链接**: [https://www.redox-os.org/news/nlnet-rb-summary/](https://www.redox-os.org/news/nlnet-rb-summary/)
+
+文章之前已经处理过
+
+---
+
+## 14. OqtaDrive五周年：从Microdrive仿真到互联网上的Sinclair网络
+
+**原文标题**: 5 years of OqtaDrive: Microdrive emulation to Sinclair Network over the internet
+
+**原文链接**: [https://oqtadrive.org/10.other/5-years/](https://oqtadrive.org/10.other/5-years/)
+
+2021年5月，OqtaDrive 0.1.0发布——一个用Arduino Nano模拟八台Sinclair Microdrive的开源项目，适用于ZX Spectrum与QL。Nano仅2KB内存无法容纳144KB卡带，故通过1Mb/s串口将数据流式传输至PC或树莓派上的Go守护进程。首年完成机型自动识别、与真实Microdrive共存及Web界面等功能，并于同年10月亮相柏林复古计算节。此后数年，项目迁移至Codeberg，陆续新增即用镜像、浏览器端升级、主机端控制、ZXDB在线搜索、卡带文件系统编辑及CP/M支持等。2024年4月，0.7.0版本实现关键突破：OqtaDrive变为Sinclair网络互联网网关，用户仅需加装一个晶体管与四个电阻，即可连接枢纽服务器，让远隔重洋的爱好者用经典BASIC命令互传文件，全程无需修改复古主机。后续版本还引入按需私有网络、扁平化地址方案及网络聊天等社交功能。五年来共迭代34个版本。作者诚邀持有Spectrum或QL的爱好者自行组装并加入社区。
+
+---
+
+## 15. 威廉·诺德豪斯逝世
+
+**原文标题**: William Nordhaus has died
+
+**原文链接**: [https://news.yale.edu/2026/10/31/william-nordhaus-nobel-laureate-who-integrated-economics-and-climate-change-devoted-yale](https://news.yale.edu/2026/10/31/william-nordhaus-nobel-laureate-who-integrated-economics-and-climate-change-devoted-yale)
+
+威廉·诺德豪斯（William D. Nordhaus），2018年诺贝尔经济学奖得主、耶鲁大学经济学荣休教授，于10月30日因胶质母细胞瘤去世，享年85岁。他因"将气候变化纳入长期宏观经济分析"获奖，其开发的DICE模型为评估气候变化经济成本与论证碳税政策提供了关键分析框架。诺德豪斯在耶鲁任教逾50年，历任教务长、财务副校长等要职，2014年主导设计耶鲁校内碳收费制度。其研究涵盖气候变化、技术变革、商业周期与选举周期、经济福利衡量等广泛领域，曾与诺贝尔奖得主詹姆斯·托宾合作。他自1985年起出任经典教材《经济学》合著者，延续萨缪尔森的教材传统，近年更推动经济学教材免费开放。诺德豪斯1959年入读耶鲁本科，后于麻省理工深造，师从萨缪尔森与索洛。他还曾任总统经济顾问委员会成员、美联储波士顿分行董事、美国经济学会会长等职。他留有两个孩子（不对，三个）——杰夫、莫妮卡、丽贝卡及三个孙辈，妻子芭芭拉为耶鲁儿童研究中心精神分析学者。他一生以严谨求实的态度追求真理，兼具学者深度与大学公民的担当。
+
+---
+
+## 16. 我后训练了一个Demoscene代码模型
+
+**原文标题**: I post trained a model on Demoscenes
+
+**原文链接**: [https://datavorous.com/writing/demoscener/](https://datavorous.com/writing/demoscener/)
+
+作者受demoscene与sizecoding社区启发，在接触Dwitter.net（140字符JavaScript微型动画平台）后，尝试用大语言模型为未完成的Dweet生成续写。他选用Qwen2.5-Code-7B为基座，以2.5万条真实Dweet数据做继续预训练（CPT），将困惑度从28.63降至8.57，使模型适应这种高度压缩、充满数学简写的特殊代码风格。随后按Dwitter的"awesomeness"评分构建课程学习，在400步内将前1000条优质作品的采样权重从20%渐进提升至67%，生成质量显著改善。进一步采用GRPO进行RLHF，作者本人充当奖励函数，每轮对8个候选续写做人工审美筛选，累计审阅约4万段动画。经朋友盲评，第四个检查点效果最佳。最终，作者将模型命名为"Demoscener-7B"，并搭建轻量交互界面，支持从同一前缀分叉生成多条续写、可视化对比及手动微调，让用户能在创意可能性的空间中自由游走。模型与数据集已发布于HuggingFace。
+
+---
+
+## 17. 简单神经回路如何产生复杂行为
+
+**原文标题**: Simple circuits can create complex behaviors
+
+**原文链接**: [https://aatishb.com/myriad/lets-build-a-brain/](https://aatishb.com/myriad/lets-build-a-brain/)
+
+本文通过构建虚拟生物"火花"的极简神经回路，展示复杂行为如何从简单连接中涌现。作者从单眼单鳍的火花起步：它仅能感受光强并游动，却无法转向。添加第二只眼睛和鳍后，火花虽能转向，但因同侧连接反而逃离光源。将左右交叉连接（左眼连右鳍）后，火花终于转向光源，却因兴奋性连接而加速冲过目标。改用抑制性连接后，火花靠近光时减速停下，表现出自然的趋光行为。仅凭四个神经元与两组连接，作者便演示了趋近、逃避、攻击、趋附四种截然不同的行为。进一步引入连接强度的个体差异，不同火花展现出不同偏好，犹如恒温器设定各自温度。文章强调，这些看似智能的行为完全由神经回路的连接方式决定，自下而上涌现，并无神秘之处；若四个神经元已能实现如此多样的行为，人类近千亿神经元的大脑潜力不可估量。本文灵感源自神经科学家Braitenberg 1984年思想实验著作《Vehicles》，旨在帮助读者理解行为如何从神经回路中产生，并为后续探讨大脑学习与可塑性奠定基础。
+
+---
+
+## 18. 读写操作远没有你想象的那么对称
+
+**原文标题**: Reading and writing are less symmetric than you (probably) think
+
+**原文链接**: [https://fgiesen.wordpress.com/2015/10/25/reading-and-writing-are-less-symmetric-than-you-probably-think/](https://fgiesen.wordpress.com/2015/10/25/reading-and-writing-are-less-symmetric-than-you-probably-think/)
+
+摘要：本文讨论计算系统中read与write I/O操作的非对称性。读取时，若出错（磁盘故障、文件过短、网络不可达等），错误会在调用返回前暴露，缓冲对用户透明。写入则完全不同：缓冲机制将实际系统调用和错误报告延迟到缓冲区满或调用fflush/fseek/fclose时才触发，多数程序员忽略了这些函数的返回值，导致写入错误被静默吞没。更深层的问题是多重缓冲——用户空间缓冲、内核缓冲缓存、磁盘及RAID控制器缓存层层叠加。即便write成功，数据可能仅到达内核缓冲缓存而未落盘，需额外调用fsync（Windows为FlushFileBuffers）；而fsync也不一定保证目录元数据已写入磁盘，还需对目录文件描述符再次fsync。此外，RAID控制器的掉电保护是否可靠亦不可尽信。作者指出，读侧缓冲虽复杂但安全透明，写侧缓冲则使错误延迟暴露，且完整的数据持久化流程（预分配→fsync→rename→fsync目录）远比多数人认知的复杂，许多OS抽象（如fsync对目录的限制）更增加了难度。
+
+---
+
+## 19. Switch Lowering in GCC
+
+**原文标题**: Switch Lowering in GCC
+
+**原文链接**: [https://xoranth.net/gcc-switch/](https://xoranth.net/gcc-switch/)
+
+文章之前已经处理过
+
+---
+
+## 20. 塞尔维亚刚选出了世界上"最聪明"的议会
+
+**原文标题**: Serbia just elected the world's brainiest parliament
+
+**原文链接**: [https://www.science.org/content/article/serbia-just-elected-world-s-brainiest-parliament](https://www.science.org/content/article/serbia-just-elected-world-s-brainiest-parliament)
+
+无法访问该文章链接
+
+---
+
+## 21. 数字极简主义
+
+**原文标题**: Digital minimalism
+
+**原文链接**: [https://vitalik.eth.limo/general/2026/10/31/digital_minimalism.html](https://vitalik.eth.limo/general/2026/10/31/digital_minimalism.html)
+
+作者从长期践行实体极简主义出发，提出"数字极简主义"——让每一次数字技术的使用都成为有意识的选择，而非被默认机制裹挟。文章分享三方面实践：一、社交媒体极简：离开X的算法信息流，改用Firefly（整合X、Bluesky、Farcaster等的多平台客户端），避免"越看越沉迷"的推荐陷阱，体验明显好转。二、蜂窝数据极简：连续100天手机保持飞行模式，仅依赖Wi-Fi。目的有二：隐私层面，蜂窝连接使手机成为全天候定位追踪器，匿名SIM亦无法彻底防护；心理层面，定期离网重建不依赖网络的习惯。期间还发现各国公共Wi-Fi开放程度差异显著，台北最友好，瑞士垫底。三、网页极简：以命令行工具（如kohaku-cli）替代网页应用，减少隐私暴露与对服务器的反复信任，回归Unix哲学并借本地AI降低使用门槛。作者呼吁读者尝试缩减社交媒体与联网依赖，在获取信息价值的同时，不被算法与平台机制所操控。
+
+---
+
+## 22. 卡西欧1980年代经典表款
+
+**原文标题**: Casio Watches of the 1980s
+
+**原文链接**: [https://www.casio.com/us/watches/50th/Heritage/1980s/](https://www.casio.com/us/watches/50th/Heritage/1980s/)
+
+无法访问该文章链接
+
+---
+
+## 23. Show HN: Ghostman – A fast, keyboard-driven TUI API client and webhook inspector
+
+**原文标题**: Show HN: Ghostman – A fast, keyboard-driven TUI API client and webhook inspector
+
+**原文链接**: [https://github.com/4yk5/Ghostman](https://github.com/4yk5/Ghostman)
+
+Show HN：Ghostman —— 极速键盘驱动的终端 API 客户端与 Webhook 调试器
+Ghostman 是一款开源终端 UI 工具，定位为轻量级 API 客户端与本地 Webhook 调试器，对标 Postman 和 Insomnia 等重量级软件，主打 100% 本地运行、零云依赖。核心优势：内存仅约 30MB（Postman 常占 800MB 至 1.5GB），冷启动约 150ms，无需注册任何云端账号；请求与集合以纯 JSON/YAML 文件存于 ~/.ghostman/ 目录，可直接纳入 Git 管理。功能涵盖：GET/POST/PUT/DELETE/PATCH 全 HTTP 方法支持；实时性能遥测（DNS、TTFB 延迟）；一键启停内嵌 Webhook 监听服务器（端口 9090），实时捕获 Stripe、GitHub 等回调请求并展示请求头、时间戳与载荷；JSON 载荷自动格式化并带语法高亮。操作全面键盘驱动：Ctrl+S 发送、Ctrl+K 保存、Ctrl+N 新建、Ctrl+W 切换 Webhook 监听、Tab 切换焦点、Ctrl+Q 退出。环境要求 Python 3.10+，pip 安装依赖后运行 main.py 即可启动，Windows 用户可双击 run.bat。项目采用 MIT 许可证，欢迎社区贡献。
+
+---
+
+## 24. 恶意软件借助大模型为受害者"估价"排序
+
+**原文标题**: Malware uses LLMs to rank victims by how much they're worth
+
+**原文链接**: [https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer/](https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer/)
+
+摘要：近日发现一款名为VOLTA-AUTODOXER的自删除Windows窃密木马，其核心创新在于窃取完成后引入大语言模型对受害者进行价值分级。该木马可一次收割浏览器凭据、支付卡、加密货币钱包、Discord/Telegram/Steam等会话及SSH密钥，并复用已窃取令牌深度关联——查询Gmail收据确认住址、拉取外卖订单、调用Roblox估价接口——再将结构化证据包POST至OpenRouter，由模型以"取证分析师"角色输出含资产变现优先级（低/中/高）及安全态势评估的报告。为应对模型拒绝，木马内置Claude→Kimi→Gemini三级回退链，温度设为0.2以保证输出一致性。该样本无攻击者自有基础设施，全部依赖第三方端点，采用六槽模板按客户定制编译，属典型商品化工具。其AI层并非增强攻击能力，而是替代人工分析环节，降低犯罪准入门槛。防御建议：限制非可信进程以--headless方式唤起Chrome、使用硬件安全模块存储凭据；若遭感染应保留volta_debug.txt日志、立即撤销令牌并将加密资产迁至断气隙设备生成的新钱包。
+
+---
+
+## 25. AI、Lean 与形式化验证的未来——对话 Lean 创始人 Leo de Moura
+
+**原文标题**: AI, Lean, and the Future of Formal Verification, with Lean Creator Leo de Moura
+
+**原文链接**: [https://thedataexchange.media/leo-de-moura-lean-aws/](https://thedataexchange.media/leo-de-moura-lean-aws/)
+
+本文为 Ben Lorica 与 Lean 创始人、AWS 杰出科学家 Leo de Moura 的对谈。Leo 指出，AI 使代码生成变得容易，验证遂成为核心挑战。Lean 兼具编程语言与定理证明器，证明经机器内核校验，并支持多验证器交叉验证。AI 已实现"自动形式化"——将任意语言代码或数学论文译为 Lean 模型，再借助其基础设施完成证明，这一能力一年前尚属科幻。数学上，Mathlib 经人类十年积累达 250 万行，AI 已能生成五千万行证明，Anthropic 的费马大定理由此完成 1300 万行形式化。软件方面，Aeneas 工具可在 Lean 中验证 Rust 代码，微软密码库 SymCrypt 已采用此方案。Leo 强调形式化验证与测试互补：测试仅能发现 bug，验证则对任意输入证明无 bug。但 AI 生成的模型是否忠实于原代码仍需人工把关，可借助差分测试等手段。Navier-Stokes 案例中，自然语言与形式化证明存在细微偏差，需 Verso Blueprint 等工具对齐。未来，软件工程重心将从编写代码转向编写规范与属性，构建"可验证软件栈"、验证 AI 代理安全策略，并将形式化验证拓展至金融、化学、法律等领域，是清晰方向。
+
+---
+
+## 26. Show HN：一款为电脑接上电话线的USB-C LTE调制解调器
+
+**原文标题**: Show HN: A USB-C LTE modem that gives my computer a phone line
+
+**原文链接**: [https://github.com/Koppar-AI/koppar-lte-modem](https://github.com/Koppar-AI/koppar-lte-modem)
+
+Koppar LTE调制解调器是一款4层PCB开发板，通过一根USB-C线缆为电脑提供完整电话线路功能：LTE数据、短信收发和语音通话，通话音频经RP2040转换后以USB麦克风/扬声器形式输出。插入nano-SIM卡后，电脑通过板载USB集线器识别出三个设备——基于Quectel EC25-EUX模块的网络适配器（支持3G/2G回落）、AT命令串口（来电显示、短信、接听）及USB声卡。板上无电池和扬声器，仅三颗LED指示网络、振铃和通话状态，5V USB供电，3.8V/3A降压为发射尖峰供电。项目用KiCad 10设计，提供完整Gerber，支持JLCPCB打样（4层1.6mm叠层），BOM含可代工贴装元件及需自行焊接的EC25模块。恢复机制涵盖BOOT烧录、SWD调试和USB_BOOT三种方式。设计经rev A至rev B审查修订，修复了天线阻抗不匹配、降压模块布局及SIM卡朝向等问题，B版零DRC错误，即将下单。项目基于CERN OHL v2许可证开源，下一步为通电调试、AT命令验证及首次语音通话测试。
+
+---
+
+## 27. 黑客劫持埃及及马来西亚等地广告牌播放色情内容
+
+**原文标题**: Hackers hijack Egypt highway billboard and Malaysian screens to show porn
+
+**原文链接**: [https://www.cairoreport.org/p/egypt-brazil-iraq-billboard-hack](https://www.cairoreport.org/p/egypt-brazil-iraq-billboard-hack)
+
+一个名为"Leakers$"的黑客组织声称利用LED显示屏传输软件的通用漏洞，于10月29日在埃及吉扎"7月26日大道"等多国广告牌上播出色情画面。该组织称通过约两小时自动化扫描，在伊拉克、马来西亚、巴西、中国等国发现并控制了数千台暴露的显示系统。受损广告牌由阿拉伯联合公司运营，该公司系埃及情报总局关联媒体集团联合媒体服务（UMS）与沙特阿拉伯广告企业合资成立。埃及内政部将事件归因于某国际广告公司网站遭入侵，但未披露涉事方及具体技术细节。事件引发外界对UMS旗下商业网络网络安全能力的质疑——即便与情报机构存在关联，技术防护仍存在严重不足。目前埃及虽设有路边广告监管体系并要求内容符合公共秩序与道德，但法规并未对远程广告网络的安全标准作出明确规定，责任归属悬而未决。阿拉伯联合公司已暂停涉事屏幕并配合调查。
+
+---
+
+## 28. 生成式人工智能对批判性思维的影响：自我报告研究
+
+**原文标题**: The Impact of Generative AI on Critical Thinking: Self-Reported (2025)
+
+**原文链接**: [https://dl.acm.org/doi/full/10.1145/3706598.3713778](https://dl.acm.org/doi/full/10.1145/3706598.3713778)
+
+无法访问该文章链接
+
+---
+
+## 29. 展示：Marelleo——我用 ESP32 为三个孩子打造的开源故事盒
+
+**原文标题**: Show HN: Marelleo, an open-source story box I built for my kids using ESP32
+
+**原文链接**: [https://zebra.rodeo/en/blog/marelleo/](https://zebra.rodeo/en/blog/marelleo/)
+
+一位不懂电子的父亲，因不满 Toniebox 等儿童故事机的闭源订阅模式，从零学起，用 ESP32 为三个孩子（21 个月、5 岁、7 岁）制作了开源故事盒 Marelleo——将贴有 NFC 标签的玩偶放上盒顶即播放对应故事，无屏幕、无菜单。项目从面包板原型起步，经历了短路冒烟、锂电池直焊无保护的惊险阶段，再经洞洞板过渡，最终自主设计 PCB。外壳用 Fusion 360 建模并多轮 3D 打印迭代，应对孩子"只会拧不会停"的暴力拆解。电路设计借助 Claude 排查参数，但 491 条铜线走线全在 KiCad 中手工完成；JLCPCB 打板 160 欧元五片。调试中先后揪出电压转换电阻选型错误（3.3 V 升压将变为 13.7 V 烧毁全板）、二极管反向焊接、DRC 最小间距被误设为零等致命 bug，以及 NFC 排线收发接反。全文以第一人称记录了一位"只会焊耳机线"的父亲逐步掌握锂电热管理、儿童耐用品设计与 PCB 量产流程的完整心路，核心信念始终是：孩子不该为每一条故事内容付费订阅。
+
+---
+
+## 30. 什么是一光日？旅行者1号即将抵达的里程碑
+
+**原文标题**: What is a light-day? The milestone Voyager 1 is closing in on
+
+**原文链接**: [https://science.nasa.gov/mission/voyager/voyager-1/voyager-1-what-is-a-light-day/](https://science.nasa.gov/mission/voyager/voyager-1/voyager-1-what-is-a-light-day/)
+
+光在24小时内传播的距离即"一光日"，约合160.95亿英里（259亿公里）。自1977年发射、飞行近50年的旅行者1号将于2026年11月18日抵达距地球一光日处，成为首个跨越这一距离的人造物体；其姊妹探测器旅行者2号因航线不同，预计2035年方能到达。文章以多组对比阐释宇宙尺度：光抵达月球仅需1.3秒，太阳约8.3光分，海王星约4光时；一光年则达5.88万亿英里，比邻星距地球约4.24光年，仙女座星系约250万光年之外。旅行者1号现以约每小时3.8万英里的速度，朝向17光年外的恒星格利泽445飞去，预计4万年后从该恒星1.7光年处掠过，但与光速相比仍如缓行，足见宇宙之广袤。
+
+---
+

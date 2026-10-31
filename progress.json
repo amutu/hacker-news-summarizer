@@ -1,242 +1,242 @@
 [
   {
-    "id": "50307190",
-    "title": "My favourite PowerMac is a Nintendo Wii",
-    "url": "https://virtuallyfun.com/2026/10/29/my-favourite-powermac-is-a-nintendo-wii/",
+    "id": "50319510",
+    "title": "HackerTube: YouTube built from videos recommended by HN",
+    "url": "https://karpathy.bearblog.dev/hacker-tube/",
+    "summary": "周末深夜，作者因厌倦YouTube充斥低质内容、夸张缩略图和千篇一律的推荐，灵机一动，用AI工具Opus 5.5在约两小时内搭建出HackerTube（hackertube.org），一个以Hacker News社区推荐为源的YouTube替代站。Opus爬取HN全部历史评论，经另一模型Sonnet过滤垃圾与低质信息，从约4万条推荐中筛出6454个视频，覆盖2007至2026年间150个主题。平台亮点包括：采用50%画幅的默认缩略图替代上传者原图；无需注册即享个性化推荐，状态仅存于浏览器本地会话；支持键盘快捷键；数据可导出，方便用户或AI代理自建同款站点。作者将项目部署在VPS上并完成安全加固与性能优化，最终感叹两个小时后得以\"重新呼吸\"，对AI工具的高效表达由衷感谢。",
+    "chinese_title": "HackerTube：由Hacker News 社区推荐视频驱动的类 YouTube 平台",
+    "chinese_summary": "周末深夜，作者因厌倦YouTube充斥低质内容、夸张缩略图和千篇一律的推荐，灵机一动，用AI工具Opus 5.5在约两小时内搭建出HackerTube（hackertube.org），一个以Hacker News社区推荐为源的YouTube替代站。Opus爬取HN全部历史评论，经另一模型Sonnet过滤垃圾与低质信息，从约4万条推荐中筛出6454个视频，覆盖2007至2026年间150个主题。平台亮点包括：采用50%画幅的默认缩略图替代上传者原图；无需注册即享个性化推荐，状态仅存于浏览器本地会话；支持键盘快捷键；数据可导出，方便用户或AI代理自建同款站点。作者将项目部署在VPS上并完成安全加固与性能优化，最终感叹两个小时后得以\"重新呼吸\"，对AI工具的高效表达由衷感谢。"
+  },
+  {
+    "id": "50319143",
+    "title": "TCP Use-After-Free: CVE-2026-98432 / CVSS 9.8",
+    "url": "https://atlasum.net/blog/cve-2026-98432-linux-ipv4-tcp-uaf",
+    "summary": "Linux内核IPv4 TCP握手中存在释放后使用漏洞（CVE-2026-98432，CVSS 9.8），根因为内核将请求套接字中的IPv4选项指针直接传递给新连接而未复制，随即释放内存，多核并发读取导致堆信息泄露、内存损坏或系统崩溃。该漏洞影响Linux 4.4及以上所有版本，攻击无需任何凭据，在应用层认证前即可触发。Anthropic披露其Claude模型已针对带MPTCP监听器的服务器构建远程root利用程序，无需交互。上游内核已于10月11日至18日通过四行修改（kfree改为kfree_rcu）完成修复，但截至10月29日，Ubuntu全系、RHEL 8/9/10、Amazon Linux 2及AL2023默认内核仍未修复。临时缓解方案为通过nftables在prerouting阶段丢弃携带IPv4选项的TCP包（ip hdrlength > 5），可在边缘防火墙统一部署。修复需重启内核方可生效，建议优先处理含MPTCP监听器的服务器，并持续关注各发行版安全更新。",
+    "chinese_title": "Linux内核TCP握手释放后使用漏洞（CVE-2026-98432，CVSS 9.8）",
+    "chinese_summary": "Linux内核IPv4 TCP握手中存在释放后使用漏洞（CVE-2026-98432，CVSS 9.8），根因为内核将请求套接字中的IPv4选项指针直接传递给新连接而未复制，随即释放内存，多核并发读取导致堆信息泄露、内存损坏或系统崩溃。该漏洞影响Linux 4.4及以上所有版本，攻击无需任何凭据，在应用层认证前即可触发。Anthropic披露其Claude模型已针对带MPTCP监听器的服务器构建远程root利用程序，无需交互。上游内核已于10月11日至18日通过四行修改（kfree改为kfree_rcu）完成修复，但截至10月29日，Ubuntu全系、RHEL 8/9/10、Amazon Linux 2及AL2023默认内核仍未修复。临时缓解方案为通过nftables在prerouting阶段丢弃携带IPv4选项的TCP包（ip hdrlength > 5），可在边缘防火墙统一部署。修复需重启内核方可生效，建议优先处理含MPTCP监听器的服务器，并持续关注各发行版安全更新。"
+  },
+  {
+    "id": "50319061",
+    "title": "The Duty of a Scholar",
+    "url": "https://www.daemonology.net/blog/2026-10-31-The-Duty-of-a-Scholar.html",
+    "summary": "2004年11月，作者提交博士论文当日，发现Intel超线程技术存在通过缓存状态在多线程间泄露信息的侧信道漏洞。他随即用六个月时间私下通知各操作系统安全团队、协调补丁开发，期间Intel曾试图通过其雇主Yahoo施压，但作者并非其雇员，施压未果。2005年5月，他在BSDCan会议公布成果，FreeBSD、Red Hat等发行版同步发布安全公告，完成了一次典型的负责任披露。由此，作者引申出\"学者的责任\"这一主题：发现知识或问题后，有义务主动寻找需要知晓的人，而非被动等待或选择沉默。他援引工程师职业伦理中关于安全危害的披露义务、《星际迷航》中\"第一责任是真相\"的宣言，以及德国哲学家费希特《学者的使命》中的论述，论证知识本身附带传播义务。他认同费希特学者应将知识奉献社会的观点，但拒绝其等级化的\"真理祭司\"框架，认为责任并非源于对社会的还债，而是知识自身的属性。作者区分了\"研究者\"（创造知识）与\"学者\"（将知识送达需要行动之人），并以此自许。",
+    "chinese_title": "学者的责任",
+    "chinese_summary": "2004年11月，作者提交博士论文当日，发现Intel超线程技术存在通过缓存状态在多线程间泄露信息的侧信道漏洞。他随即用六个月时间私下通知各操作系统安全团队、协调补丁开发，期间Intel曾试图通过其雇主Yahoo施压，但作者并非其雇员，施压未果。2005年5月，他在BSDCan会议公布成果，FreeBSD、Red Hat等发行版同步发布安全公告，完成了一次典型的负责任披露。由此，作者引申出\"学者的责任\"这一主题：发现知识或问题后，有义务主动寻找需要知晓的人，而非被动等待或选择沉默。他援引工程师职业伦理中关于安全危害的披露义务、《星际迷航》中\"第一责任是真相\"的宣言，以及德国哲学家费希特《学者的使命》中的论述，论证知识本身附带传播义务。他认同费希特学者应将知识奉献社会的观点，但拒绝其等级化的\"真理祭司\"框架，认为责任并非源于对社会的还债，而是知识自身的属性。作者区分了\"研究者\"（创造知识）与\"学者\"（将知识送达需要行动之人），并以此自许。"
+  },
+  {
+    "id": "50318871",
+    "title": "GPT-5.6 Sol can beat Factorio on peaceful mode",
+    "url": "https://ryanmadden.net/gpt-56-beats-factorio/",
+    "summary": "继 Claude Code 之后，作者让 GPT-5.6 Sol 在 Codex 中以低思考模式完成了《异星工厂》和平模式（无虫族）的完整通关，游戏用时 13.5 小时。运行通过 Python 游戏管理器实现，模型以编程方式操作游戏，同时受限于玩家行动范围、战争迷雾等与人类玩家相同的约束。\n\n运行过程令人瞩目：Sol 在多个方面超出预期，使作者放弃了原定的\"蓝科包即止\"计划，一路推进至火箭发射。然而进入蓝色科学阶段后，工厂规模扩大带来的协调问题使进度明显放缓，火箭发射阶段仍需 Sol 通过大量在工厂各区间往返运送补给来弥补系统衔接缺陷。不过，与 GPT-5.5 完全无法使用传送带相比，本次进步显著。\n\n作者已录制全程视频并制作了生产统计图表，认为《异星工厂》在考察模型能力方面优于编程任务——过程更直观，便于非专业观众理解模型行为。后续将测试更多模型、不同思考等级及非和平模式。",
+    "chinese_title": "GPT-5.6 Sol 成功通关《异星工厂》和平模式",
+    "chinese_summary": "继 Claude Code 之后，作者让 GPT-5.6 Sol 在 Codex 中以低思考模式完成了《异星工厂》和平模式（无虫族）的完整通关，游戏用时 13.5 小时。运行通过 Python 游戏管理器实现，模型以编程方式操作游戏，同时受限于玩家行动范围、战争迷雾等与人类玩家相同的约束。\n\n运行过程令人瞩目：Sol 在多个方面超出预期，使作者放弃了原定的\"蓝科包即止\"计划，一路推进至火箭发射。然而进入蓝色科学阶段后，工厂规模扩大带来的协调问题使进度明显放缓，火箭发射阶段仍需 Sol 通过大量在工厂各区间往返运送补给来弥补系统衔接缺陷。不过，与 GPT-5.5 完全无法使用传送带相比，本次进步显著。\n\n作者已录制全程视频并制作了生产统计图表，认为《异星工厂》在考察模型能力方面优于编程任务——过程更直观，便于非专业观众理解模型行为。后续将测试更多模型、不同思考等级及非和平模式。"
+  },
+  {
+    "id": "50318720",
+    "title": "It's the Memory Latency, Stupid",
+    "url": "https://pivotlake.io/blog/its-the-memory-latency-stupid/",
+    "summary": "文章以ClickBench数据集上9900万行的GROUP BY查询为例，揭示数据库CPU利用率100%并不等于真正满载——大量时间实则空转等待内存。现代CPU每纳秒可执行4-8条指令，而一次DRAM访问需50-100纳秒，差距达四五百倍。朴素Hash表聚合在千万级组键时几乎每次 lookup 都触发缓存未命中，perf 数据显示50%的CPU周期因内存阻塞而浪费，仅16%真正执行指令，单次查询从DRAM拉取4.5GB数据。作者提出基数分区（radix partitioning）优化：先将数据按哈希高12位分为4096个小桶，再逐桶用小型Hash表聚合，使热数据大概率驻留L1/L2缓存。优化后内存等待降至23.5%，执行率升至32.2%，DRAM读取减至1.5GB，查询从3.6秒降至2.7秒。进一步结合预取与内存吞吐优化后，单核仅需1.85秒、DRAM读取降至954MB；16核并行下总耗时仅172毫秒。文章核心观点：将冷内存访问转化为CPU指令执行，几乎总是值得的 trade-off，缓存利用率是数据库性能工程的首要 concern。",
+    "chinese_title": "问题就在内存延迟",
+    "chinese_summary": "文章以ClickBench数据集上9900万行的GROUP BY查询为例，揭示数据库CPU利用率100%并不等于真正满载——大量时间实则空转等待内存。现代CPU每纳秒可执行4-8条指令，而一次DRAM访问需50-100纳秒，差距达四五百倍。朴素Hash表聚合在千万级组键时几乎每次 lookup 都触发缓存未命中，perf 数据显示50%的CPU周期因内存阻塞而浪费，仅16%真正执行指令，单次查询从DRAM拉取4.5GB数据。作者提出基数分区（radix partitioning）优化：先将数据按哈希高12位分为4096个小桶，再逐桶用小型Hash表聚合，使热数据大概率驻留L1/L2缓存。优化后内存等待降至23.5%，执行率升至32.2%，DRAM读取减至1.5GB，查询从3.6秒降至2.7秒。进一步结合预取与内存吞吐优化后，单核仅需1.85秒、DRAM读取降至954MB；16核并行下总耗时仅172毫秒。文章核心观点：将冷内存访问转化为CPU指令执行，几乎总是值得的 trade-off，缓存利用率是数据库性能工程的首要 concern。"
+  },
+  {
+    "id": "50314666",
+    "title": "Molly (Signal fork) has not been updated since 3 months and is vulnerable",
+    "url": "https://piefed.world/post/1503394",
+    "summary": "摘要：Molly（Signal的开源分支）最新停留在7月31日的v8.19.2-4版本，已逾三个月未更新，而Signal主线在8.27.1版本中修复了10月披露的攻击漏洞，Molly仍暴露于风险之下，作者建议用户暂删Molly改回主Signal。评论区围绕用户为何选择Molly展开讨论，主要原因包括：支持UnifiedPush推送通知（无需Google Play Services实现去谷歌化）、允许数据库加密、支持多设备登录等。然而多位评论者指出，Signal官网已提供独立APK，无需Play商店即可安装；配合MicroG在GrapheneOS等去谷歌化系统上通知功能正常；官方也已支持Android设备间链接。此外，Twinhelix维护的Signal-FOSS提供自动化的去blob构建，Guardian Project亦在F-Droid上分发Signal。有开发者批评Signal长期未在F-Droid设立正式仓库、依赖含blob的自更新APK，对开源生态不友好。关于UnifiedPush，评论者提醒其需依赖第三方MollySocket服务器，增加攻击面，收益有限。总体而言，在Molly恢复更新前，官方Signal或Signal-FOSS是更安全的选择。",
+    "chinese_title": "Molly（Signal分支）停更三月，存在已知安全漏洞",
+    "chinese_summary": "摘要：Molly（Signal的开源分支）最新停留在7月31日的v8.19.2-4版本，已逾三个月未更新，而Signal主线在8.27.1版本中修复了10月披露的攻击漏洞，Molly仍暴露于风险之下，作者建议用户暂删Molly改回主Signal。评论区围绕用户为何选择Molly展开讨论，主要原因包括：支持UnifiedPush推送通知（无需Google Play Services实现去谷歌化）、允许数据库加密、支持多设备登录等。然而多位评论者指出，Signal官网已提供独立APK，无需Play商店即可安装；配合MicroG在GrapheneOS等去谷歌化系统上通知功能正常；官方也已支持Android设备间链接。此外，Twinhelix维护的Signal-FOSS提供自动化的去blob构建，Guardian Project亦在F-Droid上分发Signal。有开发者批评Signal长期未在F-Droid设立正式仓库、依赖含blob的自更新APK，对开源生态不友好。关于UnifiedPush，评论者提醒其需依赖第三方MollySocket服务器，增加攻击面，收益有限。总体而言，在Molly恢复更新前，官方Signal或Signal-FOSS是更安全的选择。"
+  },
+  {
+    "id": "50319169",
+    "title": "Show HN: NES Contra (1987) port (ASM –> C and then C –> WebAssembly)",
+    "url": "https://epoyraz.github.io/nes-contra-us/",
+    "summary": "本项目将1987年任天堂FC（NES）经典横版射击游戏《魂斗罗》完整移植至浏览器端，借助WebAssembly技术实现无需插件即可在网页中流畅运行。移植路径分两步：先将原始汇编代码逐行转译为C语言，再将C代码编译为WebAssembly，在保持游戏逻辑与原机高度一致的同时兼容现代浏览器。项目提供三种模式：本地单人、本地双人同屏及在线双人对战；在线模式下双方各自使用独立电脑与键盘，通过邀请链接连接。操作支持键盘与触屏两种方式——方向键移动、A/空格跳跃、S键射击、Enter开始、Shift选择；触屏端对应A键跳跃、B键射击，双人格斗需在标题界面按住Shift键选择。项目整体以强烈的复古像素风格呈现，致敬8位时代，旨在让新玩家在网页中重温FC经典记忆，也展示了WebAssembly在复古游戏移植领域的巨大潜力。",
+    "chinese_title": "Show HN：NES《魂斗罗》（1987）浏览器移植版（汇编→C→WebAssembly）",
+    "chinese_summary": "本项目将1987年任天堂FC（NES）经典横版射击游戏《魂斗罗》完整移植至浏览器端，借助WebAssembly技术实现无需插件即可在网页中流畅运行。移植路径分两步：先将原始汇编代码逐行转译为C语言，再将C代码编译为WebAssembly，在保持游戏逻辑与原机高度一致的同时兼容现代浏览器。项目提供三种模式：本地单人、本地双人同屏及在线双人对战；在线模式下双方各自使用独立电脑与键盘，通过邀请链接连接。操作支持键盘与触屏两种方式——方向键移动、A/空格跳跃、S键射击、Enter开始、Shift选择；触屏端对应A键跳跃、B键射击，双人格斗需在标题界面按住Shift键选择。项目整体以强烈的复古像素风格呈现，致敬8位时代，旨在让新玩家在网页中重温FC经典记忆，也展示了WebAssembly在复古游戏移植领域的巨大潜力。"
+  },
+  {
+    "id": "50316100",
+    "title": "Jepsen: ParticleDB 1.1.4",
+    "url": "https://jepsen.io/analyses/particledb-1.1.4",
+    "summary": "摘要：Jepsen 对 Orkes 公司用 Rust 编写的数据库 ParticleDB（1.1.4 至 1.1.18.11.rc-22）进行了单节点可靠性测试，共发现 96 个问题。ParticleDB 号称统一事务 SQL、键值存储、向量搜索与实时分析，兼容 Postgres/Redis 协议并宣称\"ACID、15.9 万 TPS\"，但测试揭示诸多缺陷。文档与宣传严重不符：首页声称有 TLA+ 形式化证明，实际无规格可用；宣称\"完整 ACID\"，却仅实现快照隔离；四种事务模式（fast、occ、zero-copy-occ、table-2pl）的文档自相矛盾，安全语义含糊不清。主要问题包括：可用性方面，table-2pl 模式延迟高达数十秒近乎不可用，后续版本出现无原因神秘崩溃及并发死锁；功能方面，CASE 内不支持聚合、缺少幂运算符、PreparedStatement 返回异常等大量 Postgres 兼容缺陷；事务与并发方面，在各类事务与 WAL 同步模式下均出现一致性问题；此外还涉及谓词、约束、连接查询、僵尸进程及状态损坏等问题。测试采用 rw、append、internal-sim、compare 等工作负载，借助 Elle 检测器验证序列化正确性。多数问题在后续版本中逐步修复，但暴露出该数据库在工程质量与文档严谨性上尚不成熟。",
+    "chinese_title": "Jepsen 测试 ParticleDB 1.1.4",
+    "chinese_summary": "摘要：Jepsen 对 Orkes 公司用 Rust 编写的数据库 ParticleDB（1.1.4 至 1.1.18.11.rc-22）进行了单节点可靠性测试，共发现 96 个问题。ParticleDB 号称统一事务 SQL、键值存储、向量搜索与实时分析，兼容 Postgres/Redis 协议并宣称\"ACID、15.9 万 TPS\"，但测试揭示诸多缺陷。文档与宣传严重不符：首页声称有 TLA+ 形式化证明，实际无规格可用；宣称\"完整 ACID\"，却仅实现快照隔离；四种事务模式（fast、occ、zero-copy-occ、table-2pl）的文档自相矛盾，安全语义含糊不清。主要问题包括：可用性方面，table-2pl 模式延迟高达数十秒近乎不可用，后续版本出现无原因神秘崩溃及并发死锁；功能方面，CASE 内不支持聚合、缺少幂运算符、PreparedStatement 返回异常等大量 Postgres 兼容缺陷；事务与并发方面，在各类事务与 WAL 同步模式下均出现一致性问题；此外还涉及谓词、约束、连接查询、僵尸进程及状态损坏等问题。测试采用 rw、append、internal-sim、compare 等工作负载，借助 Elle 检测器验证序列化正确性。多数问题在后续版本中逐步修复，但暴露出该数据库在工程质量与文档严谨性上尚不成熟。"
+  },
+  {
+    "id": "50297068",
+    "title": "Much Ado About None: Sentinel Values in Python",
+    "url": "https://florianwilhelm.info/2026/10/sentinel_values/",
+    "summary": "本文探讨了 Python 中 None 被过度使用所带来的歧义问题，并介绍了哨兵值（sentinel）这一解决方案。None 常被兼用于表示缺失、未设置、错误等含义，在缓存查询、配置更新、异常处理等场景中易引发混淆。哨兵值是处于有效值域之外的特殊标记，可从根本消除与真实值的冲突。文章列举了 Python 生态中已有的哨兵值实例，如 Ellipsis（NumPy 维度省略、类型存根）、NotImplemented（支持双分派）及 Pydantic 2.14 稳定发布的 MISSING。作者还指出自定义哨兵值的诸多难题：经典的 object() 方案在静态类型检查中无法收窄类型，枚举与字面量等替代方案各有取舍，且哨兵值经序列化或拷贝后身份检查会失效。值得关注的是，PEP 661 在 PyConDE 宣布推迟仅九天后即获通过，Python 3.15 正式引入 sentinel 内置类型，类型检查器可对其做类型收窄，typing_extensions 亦提供向后兼容。作者建议：认识到 None 的歧义，善用哨兵值消除模糊，优先选用库已提供的哨兵，用新内置替代旧的 object() 与枚举技巧。",
+    "chinese_title": "为 None 大费周章：Python 中的哨兵值",
+    "chinese_summary": "本文探讨了 Python 中 None 被过度使用所带来的歧义问题，并介绍了哨兵值（sentinel）这一解决方案。None 常被兼用于表示缺失、未设置、错误等含义，在缓存查询、配置更新、异常处理等场景中易引发混淆。哨兵值是处于有效值域之外的特殊标记，可从根本消除与真实值的冲突。文章列举了 Python 生态中已有的哨兵值实例，如 Ellipsis（NumPy 维度省略、类型存根）、NotImplemented（支持双分派）及 Pydantic 2.14 稳定发布的 MISSING。作者还指出自定义哨兵值的诸多难题：经典的 object() 方案在静态类型检查中无法收窄类型，枚举与字面量等替代方案各有取舍，且哨兵值经序列化或拷贝后身份检查会失效。值得关注的是，PEP 661 在 PyConDE 宣布推迟仅九天后即获通过，Python 3.15 正式引入 sentinel 内置类型，类型检查器可对其做类型收窄，typing_extensions 亦提供向后兼容。作者建议：认识到 None 的歧义，善用哨兵值消除模糊，优先选用库已提供的哨兵，用新内置替代旧的 object() 与枚举技巧。"
+  },
+  {
+    "id": "50314699",
+    "title": "Do the math: How we took over ChatGPT accounts",
+    "url": "https://www.parameter.ai/labs/we-found-a-gap-at-openai",
+    "summary": "2026年10月，研究人员发现一条通过公共分享链接即可接管任意ChatGPT账户的漏洞链。攻击者发布恶意对话并分享链接，受害者点击后，代码即在其已登录的chatgpt.com会话中执行。漏洞核心在于：对话中的数学图形组件加载了MathLive库，其主页面消息监听器未校验发送源，且允许键盘布局中嵌入原始HTML；随后利用无沙箱的srcdoc iframe继承chatgpt.com身份，再借助YouTube JSONP回调绕过CSP，最终实现任意JavaScript执行。受害者无需安装插件或授权，仅需一次点击，攻击者即可枚举其私有对话、读取从未共享的对话内容并将数据外传。OpenAI于10月26日完成修复，定级P1，授予5000美元奖金。修复要点：跨帧通信须验证发送者地址与窗口，跨窗口配置不得包含原始HTML，动态文档应保持沙箱隔离，CSP不应作为唯一防线。该漏洞的特殊之处在于各功能单独看均合理，风险仅在多特性组合时显现。",
+    "chinese_title": "算一算：我们如何接管ChatGPT账户",
+    "chinese_summary": "2026年10月，研究人员发现一条通过公共分享链接即可接管任意ChatGPT账户的漏洞链。攻击者发布恶意对话并分享链接，受害者点击后，代码即在其已登录的chatgpt.com会话中执行。漏洞核心在于：对话中的数学图形组件加载了MathLive库，其主页面消息监听器未校验发送源，且允许键盘布局中嵌入原始HTML；随后利用无沙箱的srcdoc iframe继承chatgpt.com身份，再借助YouTube JSONP回调绕过CSP，最终实现任意JavaScript执行。受害者无需安装插件或授权，仅需一次点击，攻击者即可枚举其私有对话、读取从未共享的对话内容并将数据外传。OpenAI于10月26日完成修复，定级P1，授予5000美元奖金。修复要点：跨帧通信须验证发送者地址与窗口，跨窗口配置不得包含原始HTML，动态文档应保持沙箱隔离，CSP不应作为唯一防线。该漏洞的特殊之处在于各功能单独看均合理，风险仅在多特性组合时显现。"
+  },
+  {
+    "id": "50315782",
+    "title": "Show HN: A language model that lives in a boot sector",
+    "url": "https://github.com/kerlenton/bootgpt",
+    "summary": "bootgpt 是一个在 PC 引导扇区（MBR）中运行的超小型语言模型。510 字节 MBR 为纯手写汇编，从后继 23 个扇区加载 11.5KB 的 int8 量化模型，在 386 实模式下直接推理，无需操作系统与 C 运行时。模型仅 8 字符上下文、1 个隐藏层，逐字符生成逼真的 Linux 启动日志（PCI 地址、ACPI 事件等），但所述硬件并不存在。量化采用 2 的幂次缩放，前向传播仅靠 imul 与 idiv 完成。训练脚本在 Python 中模拟完全相同的整数运算，确保与汇编输出逐字符一致。项目提供完整工具链：生成伪 dmesg 语料、训练量化、QEMU 无头录制演示。用户可用 QEMU 或将镜像 dd 至 USB 在任意 BIOS 机器上运行。该项目致敬引导扇区编程传统（Oscar Toledo 曾将国际象棋、操作系统塞入 512 字节），也区别于 sectorllm 在 1.2KB 汇编中运行五层 Llama2 的路数：bootgpt 走极致精简，引擎完全驻留 MBR，模型唯一使命就是\"做一场机器启动的白日梦\"，按任意键即重启。",
+    "chinese_title": "Show HN：寄宿于引导扇区的语言模型",
+    "chinese_summary": "bootgpt 是一个在 PC 引导扇区（MBR）中运行的超小型语言模型。510 字节 MBR 为纯手写汇编，从后继 23 个扇区加载 11.5KB 的 int8 量化模型，在 386 实模式下直接推理，无需操作系统与 C 运行时。模型仅 8 字符上下文、1 个隐藏层，逐字符生成逼真的 Linux 启动日志（PCI 地址、ACPI 事件等），但所述硬件并不存在。量化采用 2 的幂次缩放，前向传播仅靠 imul 与 idiv 完成。训练脚本在 Python 中模拟完全相同的整数运算，确保与汇编输出逐字符一致。项目提供完整工具链：生成伪 dmesg 语料、训练量化、QEMU 无头录制演示。用户可用 QEMU 或将镜像 dd 至 USB 在任意 BIOS 机器上运行。该项目致敬引导扇区编程传统（Oscar Toledo 曾将国际象棋、操作系统塞入 512 字节），也区别于 sectorllm 在 1.2KB 汇编中运行五层 Llama2 的路数：bootgpt 走极致精简，引擎完全驻留 MBR，模型唯一使命就是\"做一场机器启动的白日梦\"，按任意键即重启。"
+  },
+  {
+    "id": "50293806",
+    "title": "Noctua Fan Swap on a Calnex Rb/GPS Frequency Reference",
+    "url": "https://www.jeffgeerling.com/blog/2026/noctua-fan-swap-calnex-rb-gps-frequency-reference/",
+    "summary": "本文记录了作者在Calnex铷/GPS频率标准设备上更换散热风扇的全过程。该设备内置SpectraTime GRClok-1500（集成GPS模块与10 MHz输出），原配Delta EFB0412HHD风扇持续运行噪音令人烦躁，遂换装为Noctua NF-A4x20 FLX。作者以T10梅花螺丝刀拆卸涂有Loctite固定的顶盖螺丝，内部结构简洁，散热片为密集针片式铝制结构，端部尖锐易伤手，故翻转设备从底面拆除。因Calnex主板上的方形四针风扇接口与OmniJoin尖刺接头不兼容，作者直接剪线、剥线后串接OmniJoin接头完成改造。作者高度评价该设备的服务性：全机统一使用T10 Torx螺丝，无需更换多把工具，体现工程师实用主义设计思路。重新组装后，设备安放于\"原子钟塔\"，1 PPS输出接入相位信号分析仪，约20至30分钟完成铷钟锁定与GNSS同步。脚注另提及SpectraTime已并入Safran集团，同类型号仍有销售。",
+    "chinese_title": "Calnex铷/GPS频率标准设备Noctua风扇更换记录",
+    "chinese_summary": "本文记录了作者在Calnex铷/GPS频率标准设备上更换散热风扇的全过程。该设备内置SpectraTime GRClok-1500（集成GPS模块与10 MHz输出），原配Delta EFB0412HHD风扇持续运行噪音令人烦躁，遂换装为Noctua NF-A4x20 FLX。作者以T10梅花螺丝刀拆卸涂有Loctite固定的顶盖螺丝，内部结构简洁，散热片为密集针片式铝制结构，端部尖锐易伤手，故翻转设备从底面拆除。因Calnex主板上的方形四针风扇接口与OmniJoin尖刺接头不兼容，作者直接剪线、剥线后串接OmniJoin接头完成改造。作者高度评价该设备的服务性：全机统一使用T10 Torx螺丝，无需更换多把工具，体现工程师实用主义设计思路。重新组装后，设备安放于\"原子钟塔\"，1 PPS输出接入相位信号分析仪，约20至30分钟完成铷钟锁定与GNSS同步。脚注另提及SpectraTime已并入Safran集团，同类型号仍有销售。"
+  },
+  {
+    "id": "50274186",
+    "title": "Redox: Ring Buffers Project Summary",
+    "url": "https://www.redox-os.org/news/nlnet-rb-summary/",
     "summary": "文章之前已经处理过",
-    "chinese_title": "My favourite PowerMac is a Nintendo Wii",
+    "chinese_title": "Redox: Ring Buffers Project Summary",
     "chinese_summary": "文章之前已经处理过"
   },
   {
-    "id": "50305025",
-    "title": "Northflank Breached",
-    "url": "https://status.northflank.com",
-    "summary": "2026年10月30日，云平台Northflank发生重大安全事件，其环境变量疑似被解密，多个用户确认AI密钥已被盗用。事件始于当日11:43（UTC）Wiz系统发出威胁警报，随后工程师于11:44开始处置，12:02起部署网络策略补丁，13:00向Wiz CIRT请求安全支持。截至15:28，调查仍在进行。Northflank已为Postgres和MongoDB启用密钥轮换功能，建议所有用户立即轮换workloads、secret groups及global secrets中的所有凭据，并关闭Addons的公开访问。平台9大组件中，网络、证书、服务、Addons、任务、构建及日志指标等7项处于\"重大中断\"状态，整体正常运行率为99.64%；而Northflank应用、API及文档站点仍保持正常运行。官方提醒用户：在进一步调查结果确认前，须视所有环境变量为已泄露状态，立即执行密钥轮换。",
-    "chinese_title": "Northflank平台遭安全入侵",
-    "chinese_summary": "2026年10月30日，云平台Northflank发生重大安全事件，其环境变量疑似被解密，多个用户确认AI密钥已被盗用。事件始于当日11:43（UTC）Wiz系统发出威胁警报，随后工程师于11:44开始处置，12:02起部署网络策略补丁，13:00向Wiz CIRT请求安全支持。截至15:28，调查仍在进行。Northflank已为Postgres和MongoDB启用密钥轮换功能，建议所有用户立即轮换workloads、secret groups及global secrets中的所有凭据，并关闭Addons的公开访问。平台9大组件中，网络、证书、服务、Addons、任务、构建及日志指标等7项处于\"重大中断\"状态，整体正常运行率为99.64%；而Northflank应用、API及文档站点仍保持正常运行。官方提醒用户：在进一步调查结果确认前，须视所有环境变量为已泄露状态，立即执行密钥轮换。"
+    "id": "50301178",
+    "title": "5 years of OqtaDrive: Microdrive emulation to Sinclair Network over the internet",
+    "url": "https://oqtadrive.org/10.other/5-years/",
+    "summary": "2021年5月，OqtaDrive 0.1.0发布——一个用Arduino Nano模拟八台Sinclair Microdrive的开源项目，适用于ZX Spectrum与QL。Nano仅2KB内存无法容纳144KB卡带，故通过1Mb/s串口将数据流式传输至PC或树莓派上的Go守护进程。首年完成机型自动识别、与真实Microdrive共存及Web界面等功能，并于同年10月亮相柏林复古计算节。此后数年，项目迁移至Codeberg，陆续新增即用镜像、浏览器端升级、主机端控制、ZXDB在线搜索、卡带文件系统编辑及CP/M支持等。2024年4月，0.7.0版本实现关键突破：OqtaDrive变为Sinclair网络互联网网关，用户仅需加装一个晶体管与四个电阻，即可连接枢纽服务器，让远隔重洋的爱好者用经典BASIC命令互传文件，全程无需修改复古主机。后续版本还引入按需私有网络、扁平化地址方案及网络聊天等社交功能。五年来共迭代34个版本。作者诚邀持有Spectrum或QL的爱好者自行组装并加入社区。",
+    "chinese_title": "OqtaDrive五周年：从Microdrive仿真到互联网上的Sinclair网络",
+    "chinese_summary": "2021年5月，OqtaDrive 0.1.0发布——一个用Arduino Nano模拟八台Sinclair Microdrive的开源项目，适用于ZX Spectrum与QL。Nano仅2KB内存无法容纳144KB卡带，故通过1Mb/s串口将数据流式传输至PC或树莓派上的Go守护进程。首年完成机型自动识别、与真实Microdrive共存及Web界面等功能，并于同年10月亮相柏林复古计算节。此后数年，项目迁移至Codeberg，陆续新增即用镜像、浏览器端升级、主机端控制、ZXDB在线搜索、卡带文件系统编辑及CP/M支持等。2024年4月，0.7.0版本实现关键突破：OqtaDrive变为Sinclair网络互联网网关，用户仅需加装一个晶体管与四个电阻，即可连接枢纽服务器，让远隔重洋的爱好者用经典BASIC命令互传文件，全程无需修改复古主机。后续版本还引入按需私有网络、扁平化地址方案及网络聊天等社交功能。五年来共迭代34个版本。作者诚邀持有Spectrum或QL的爱好者自行组装并加入社区。"
   },
   {
-    "id": "50300683",
-    "title": "Backdoor in Claude Code for VS Code extension on the Cursor Marketplace",
-    "url": "https://phorion.io/blog/offical-claude-code-vsx-compromise/",
-    "summary": "Phorion发现Cursor市场中Claude Code for VS Code扩展（v2.1.313）被植入跨平台SSH后门，Cursor已紧急下架。攻击者通过注入IIFE，在扩展加载时即执行恶意代码，无需用户交互。感染链包含四个阶段：将攻击者Ed25519公钥写入authorized_keys；建立指向134.209.82.225的反向SSH隧道实现隐蔽远程访问；通过LaunchAgent（macOS）、crontab（Linux）或启动项（Windows）设置持久化；向攻击者发送主机侦察beacon（含环境变量名等线索）。macOS路径存在关键缺陷：systemsetup -getremotelogin在无管理员权限时报错而非返回\"Off\"，导致脚本跳过启用SSH步骤，若目标未开启Remote Login则隧道无法回连，但持久化文件仍会写入，一旦SSH被开启后门即刻激活。检测应重点关注IDE进程修改authorized_keys、非Apple进程创建com.apple.*标签的plist文件、异常SSH远程端口转发及向该IP的出站连接。组织应立即排查使用记录，卸载扩展后须彻底清理残留的SSH密钥、隧道脚本及所有持久化机制。",
-    "chinese_title": "Cursor市场中Claude Code VS Code扩展被植入持久化SSH后门",
-    "chinese_summary": "Phorion发现Cursor市场中Claude Code for VS Code扩展（v2.1.313）被植入跨平台SSH后门，Cursor已紧急下架。攻击者通过注入IIFE，在扩展加载时即执行恶意代码，无需用户交互。感染链包含四个阶段：将攻击者Ed25519公钥写入authorized_keys；建立指向134.209.82.225的反向SSH隧道实现隐蔽远程访问；通过LaunchAgent（macOS）、crontab（Linux）或启动项（Windows）设置持久化；向攻击者发送主机侦察beacon（含环境变量名等线索）。macOS路径存在关键缺陷：systemsetup -getremotelogin在无管理员权限时报错而非返回\"Off\"，导致脚本跳过启用SSH步骤，若目标未开启Remote Login则隧道无法回连，但持久化文件仍会写入，一旦SSH被开启后门即刻激活。检测应重点关注IDE进程修改authorized_keys、非Apple进程创建com.apple.*标签的plist文件、异常SSH远程端口转发及向该IP的出站连接。组织应立即排查使用记录，卸载扩展后须彻底清理残留的SSH密钥、隧道脚本及所有持久化机制。"
+    "id": "50318376",
+    "title": "William Nordhaus has died",
+    "url": "https://news.yale.edu/2026/10/31/william-nordhaus-nobel-laureate-who-integrated-economics-and-climate-change-devoted-yale",
+    "summary": "威廉·诺德豪斯（William D. Nordhaus），2018年诺贝尔经济学奖得主、耶鲁大学经济学荣休教授，于10月30日因胶质母细胞瘤去世，享年85岁。他因\"将气候变化纳入长期宏观经济分析\"获奖，其开发的DICE模型为评估气候变化经济成本与论证碳税政策提供了关键分析框架。诺德豪斯在耶鲁任教逾50年，历任教务长、财务副校长等要职，2014年主导设计耶鲁校内碳收费制度。其研究涵盖气候变化、技术变革、商业周期与选举周期、经济福利衡量等广泛领域，曾与诺贝尔奖得主詹姆斯·托宾合作。他自1985年起出任经典教材《经济学》合著者，延续萨缪尔森的教材传统，近年更推动经济学教材免费开放。诺德豪斯1959年入读耶鲁本科，后于麻省理工深造，师从萨缪尔森与索洛。他还曾任总统经济顾问委员会成员、美联储波士顿分行董事、美国经济学会会长等职。他留有两个孩子（不对，三个）——杰夫、莫妮卡、丽贝卡及三个孙辈，妻子芭芭拉为耶鲁儿童研究中心精神分析学者。他一生以严谨求实的态度追求真理，兼具学者深度与大学公民的担当。",
+    "chinese_title": "威廉·诺德豪斯逝世",
+    "chinese_summary": "威廉·诺德豪斯（William D. Nordhaus），2018年诺贝尔经济学奖得主、耶鲁大学经济学荣休教授，于10月30日因胶质母细胞瘤去世，享年85岁。他因\"将气候变化纳入长期宏观经济分析\"获奖，其开发的DICE模型为评估气候变化经济成本与论证碳税政策提供了关键分析框架。诺德豪斯在耶鲁任教逾50年，历任教务长、财务副校长等要职，2014年主导设计耶鲁校内碳收费制度。其研究涵盖气候变化、技术变革、商业周期与选举周期、经济福利衡量等广泛领域，曾与诺贝尔奖得主詹姆斯·托宾合作。他自1985年起出任经典教材《经济学》合著者，延续萨缪尔森的教材传统，近年更推动经济学教材免费开放。诺德豪斯1959年入读耶鲁本科，后于麻省理工深造，师从萨缪尔森与索洛。他还曾任总统经济顾问委员会成员、美联储波士顿分行董事、美国经济学会会长等职。他留有两个孩子（不对，三个）——杰夫、莫妮卡、丽贝卡及三个孙辈，妻子芭芭拉为耶鲁儿童研究中心精神分析学者。他一生以严谨求实的态度追求真理，兼具学者深度与大学公民的担当。"
   },
   {
-    "id": "50306442",
-    "title": "Show HN: A working Nintendo in ~1GB of Qwen weights",
-    "url": "https://github.com/dbreunig/nesformer",
-    "summary": "nesformer 将 NES 的 6502 CPU 完整编译进 Qwen3.5-4B 模型权重，无需训练，由编译器逐参数计算生成。核心思路是复用 Qwenputer 的 Gated DeltaNet 状态矩阵作为机器内存：每个矩阵行即为一个存储单元，6502 寄存器、2KB 工作 RAM 与 32KB 程序 ROM 全部驻留其中。模型逐 token 输出 CPU 执行日志，宿主程序负责 PPU 渲染、控制器读取与 vblank 中断注入。项目支持 NROM（mapper 0）卡带，可运行超级玛丽、大金刚等经典游戏，画面与标准 6502 模拟器逐帧一致。权重共 466.6M 参数（bf16 约 933MB），非零参数仅 9.3M，压缩后仅 3.3MB，且可直接用 Hugging Face 标准接口加载。当前局限包括：仅支持 NROM，无法处理 MMC1/MMC3 等换页机制；不支持非官方指令与 APU 声音；PPU 逐扫描线渲染，部分精灵效果为近似。性能上，numba 引擎约 1,650 token/s，600 帧（10 秒游戏时间）需约 25 分钟，比真实 NES 慢 150–290 倍。项目基于 Divyansh Agrawal 的 Qwenputer，采用 MIT 协议开源。",
-    "chinese_title": "展示 HN：在约 1GB Qwen 权重中运行一台任天堂",
-    "chinese_summary": "nesformer 将 NES 的 6502 CPU 完整编译进 Qwen3.5-4B 模型权重，无需训练，由编译器逐参数计算生成。核心思路是复用 Qwenputer 的 Gated DeltaNet 状态矩阵作为机器内存：每个矩阵行即为一个存储单元，6502 寄存器、2KB 工作 RAM 与 32KB 程序 ROM 全部驻留其中。模型逐 token 输出 CPU 执行日志，宿主程序负责 PPU 渲染、控制器读取与 vblank 中断注入。项目支持 NROM（mapper 0）卡带，可运行超级玛丽、大金刚等经典游戏，画面与标准 6502 模拟器逐帧一致。权重共 466.6M 参数（bf16 约 933MB），非零参数仅 9.3M，压缩后仅 3.3MB，且可直接用 Hugging Face 标准接口加载。当前局限包括：仅支持 NROM，无法处理 MMC1/MMC3 等换页机制；不支持非官方指令与 APU 声音；PPU 逐扫描线渲染，部分精灵效果为近似。性能上，numba 引擎约 1,650 token/s，600 帧（10 秒游戏时间）需约 25 分钟，比真实 NES 慢 150–290 倍。项目基于 Divyansh Agrawal 的 Qwenputer，采用 MIT 协议开源。"
+    "id": "50318442",
+    "title": "I post trained a model on Demoscenes",
+    "url": "https://datavorous.com/writing/demoscener/",
+    "summary": "作者受demoscene与sizecoding社区启发，在接触Dwitter.net（140字符JavaScript微型动画平台）后，尝试用大语言模型为未完成的Dweet生成续写。他选用Qwen2.5-Code-7B为基座，以2.5万条真实Dweet数据做继续预训练（CPT），将困惑度从28.63降至8.57，使模型适应这种高度压缩、充满数学简写的特殊代码风格。随后按Dwitter的\"awesomeness\"评分构建课程学习，在400步内将前1000条优质作品的采样权重从20%渐进提升至67%，生成质量显著改善。进一步采用GRPO进行RLHF，作者本人充当奖励函数，每轮对8个候选续写做人工审美筛选，累计审阅约4万段动画。经朋友盲评，第四个检查点效果最佳。最终，作者将模型命名为\"Demoscener-7B\"，并搭建轻量交互界面，支持从同一前缀分叉生成多条续写、可视化对比及手动微调，让用户能在创意可能性的空间中自由游走。模型与数据集已发布于HuggingFace。",
+    "chinese_title": "我后训练了一个Demoscene代码模型",
+    "chinese_summary": "作者受demoscene与sizecoding社区启发，在接触Dwitter.net（140字符JavaScript微型动画平台）后，尝试用大语言模型为未完成的Dweet生成续写。他选用Qwen2.5-Code-7B为基座，以2.5万条真实Dweet数据做继续预训练（CPT），将困惑度从28.63降至8.57，使模型适应这种高度压缩、充满数学简写的特殊代码风格。随后按Dwitter的\"awesomeness\"评分构建课程学习，在400步内将前1000条优质作品的采样权重从20%渐进提升至67%，生成质量显著改善。进一步采用GRPO进行RLHF，作者本人充当奖励函数，每轮对8个候选续写做人工审美筛选，累计审阅约4万段动画。经朋友盲评，第四个检查点效果最佳。最终，作者将模型命名为\"Demoscener-7B\"，并搭建轻量交互界面，支持从同一前缀分叉生成多条续写、可视化对比及手动微调，让用户能在创意可能性的空间中自由游走。模型与数据集已发布于HuggingFace。"
   },
   {
-    "id": "50308697",
-    "title": "Bunny CDN Security Incident",
-    "url": "https://status.bunny.net/incidents/p6gf1by9kr7m",
-    "summary": "2026年10月28日，Bunny.net发布安全事件通报：其一家基础设施供应商报告，位于亚美尼亚的一台CDN节点服务器因第三方服务器管理软件遭非法入侵而受影响。Bunny.net工程团队在20分钟内切断该节点流量，随即完成日志保全、安全擦除及权限吊销，该服务器已被永久移除。双方调查均未发现节点数据被非法访问的证据，但无法完全排除可能性。潜在暴露信息包括临时缓存的CDN内容、Pull Zone配置及该服务器上的TLS证书。作为预防，Bunny.net已撤销并重新签发平台域名（b-cdn.net、bunny.run）的全部TLS证书，客户自定义域名的托管证书正分批重新签发，预计10月31日前完成；使用托管证书的客户无需任何操作。自行管理证书的用户建议尽快撤销并以新私钥重新签发。客户账号数据未存储于该服务器，内部系统亦未受影响。",
-    "chinese_title": "Bunny CDN 安全事件通报",
-    "chinese_summary": "2026年10月28日，Bunny.net发布安全事件通报：其一家基础设施供应商报告，位于亚美尼亚的一台CDN节点服务器因第三方服务器管理软件遭非法入侵而受影响。Bunny.net工程团队在20分钟内切断该节点流量，随即完成日志保全、安全擦除及权限吊销，该服务器已被永久移除。双方调查均未发现节点数据被非法访问的证据，但无法完全排除可能性。潜在暴露信息包括临时缓存的CDN内容、Pull Zone配置及该服务器上的TLS证书。作为预防，Bunny.net已撤销并重新签发平台域名（b-cdn.net、bunny.run）的全部TLS证书，客户自定义域名的托管证书正分批重新签发，预计10月31日前完成；使用托管证书的客户无需任何操作。自行管理证书的用户建议尽快撤销并以新私钥重新签发。客户账号数据未存储于该服务器，内部系统亦未受影响。"
+    "id": "50261253",
+    "title": "Simple circuits can create complex behaviors",
+    "url": "https://aatishb.com/myriad/lets-build-a-brain/",
+    "summary": "本文通过构建虚拟生物\"火花\"的极简神经回路，展示复杂行为如何从简单连接中涌现。作者从单眼单鳍的火花起步：它仅能感受光强并游动，却无法转向。添加第二只眼睛和鳍后，火花虽能转向，但因同侧连接反而逃离光源。将左右交叉连接（左眼连右鳍）后，火花终于转向光源，却因兴奋性连接而加速冲过目标。改用抑制性连接后，火花靠近光时减速停下，表现出自然的趋光行为。仅凭四个神经元与两组连接，作者便演示了趋近、逃避、攻击、趋附四种截然不同的行为。进一步引入连接强度的个体差异，不同火花展现出不同偏好，犹如恒温器设定各自温度。文章强调，这些看似智能的行为完全由神经回路的连接方式决定，自下而上涌现，并无神秘之处；若四个神经元已能实现如此多样的行为，人类近千亿神经元的大脑潜力不可估量。本文灵感源自神经科学家Braitenberg 1984年思想实验著作《Vehicles》，旨在帮助读者理解行为如何从神经回路中产生，并为后续探讨大脑学习与可塑性奠定基础。",
+    "chinese_title": "简单神经回路如何产生复杂行为",
+    "chinese_summary": "本文通过构建虚拟生物\"火花\"的极简神经回路，展示复杂行为如何从简单连接中涌现。作者从单眼单鳍的火花起步：它仅能感受光强并游动，却无法转向。添加第二只眼睛和鳍后，火花虽能转向，但因同侧连接反而逃离光源。将左右交叉连接（左眼连右鳍）后，火花终于转向光源，却因兴奋性连接而加速冲过目标。改用抑制性连接后，火花靠近光时减速停下，表现出自然的趋光行为。仅凭四个神经元与两组连接，作者便演示了趋近、逃避、攻击、趋附四种截然不同的行为。进一步引入连接强度的个体差异，不同火花展现出不同偏好，犹如恒温器设定各自温度。文章强调，这些看似智能的行为完全由神经回路的连接方式决定，自下而上涌现，并无神秘之处；若四个神经元已能实现如此多样的行为，人类近千亿神经元的大脑潜力不可估量。本文灵感源自神经科学家Braitenberg 1984年思想实验著作《Vehicles》，旨在帮助读者理解行为如何从神经回路中产生，并为后续探讨大脑学习与可塑性奠定基础。"
   },
   {
-    "id": "50263837",
-    "title": "Breaking the open web won't stop the bad bots",
-    "url": "https://www.techpolicy.press/breaking-the-open-web-wont-stop-the-bad-bots/",
-    "summary": "摘要：面对AI开发者大规模抓取网络内容引发的流量激增与广告收入损失，超300名媒体代表推动国会审议《隐形机器人禁止法案》。该法案要求所有自动访问网站者披露身份及目的，违者可面临数万美元罚款。文章作者指出，法案并未直接针对有害抓取行为，反而会威胁记者、研究人员和档案管理员等合法使用爬虫工具的群体。华尔街日报曾借助爬虫完成普利策获奖调查，互联网档案馆则依靠爬虫归档逾万亿网页。法案存在定义模糊问题：披露身份无法判断行为是否有害，且会破坏调查所需的匿名性。此外，强制身份识别有违第一修正案对接收信息自由的保护。文章认为，现有隐私法、版权法和消费者保护法已能应对多数非法数据使用；政策制定者应支持IETF等技术机构开发匿名行为认证协议，而非仓促立法。若确需新法，责任应当基于造成可量化损害的行为，而非抓取者的匿名状态。开放网络的基石在于公民无需逐一寻求许可即可自由获取、分析和保存公共信息，匿名本身不应成为被规制的对象。",
-    "chinese_title": "限制开放网络无法遏制恶意爬虫",
-    "chinese_summary": "摘要：面对AI开发者大规模抓取网络内容引发的流量激增与广告收入损失，超300名媒体代表推动国会审议《隐形机器人禁止法案》。该法案要求所有自动访问网站者披露身份及目的，违者可面临数万美元罚款。文章作者指出，法案并未直接针对有害抓取行为，反而会威胁记者、研究人员和档案管理员等合法使用爬虫工具的群体。华尔街日报曾借助爬虫完成普利策获奖调查，互联网档案馆则依靠爬虫归档逾万亿网页。法案存在定义模糊问题：披露身份无法判断行为是否有害，且会破坏调查所需的匿名性。此外，强制身份识别有违第一修正案对接收信息自由的保护。文章认为，现有隐私法、版权法和消费者保护法已能应对多数非法数据使用；政策制定者应支持IETF等技术机构开发匿名行为认证协议，而非仓促立法。若确需新法，责任应当基于造成可量化损害的行为，而非抓取者的匿名状态。开放网络的基石在于公民无需逐一寻求许可即可自由获取、分析和保存公共信息，匿名本身不应成为被规制的对象。"
+    "id": "50271052",
+    "title": "Reading and writing are less symmetric than you (probably) think",
+    "url": "https://fgiesen.wordpress.com/2015/10/25/reading-and-writing-are-less-symmetric-than-you-probably-think/",
+    "summary": "摘要：本文讨论计算系统中read与write I/O操作的非对称性。读取时，若出错（磁盘故障、文件过短、网络不可达等），错误会在调用返回前暴露，缓冲对用户透明。写入则完全不同：缓冲机制将实际系统调用和错误报告延迟到缓冲区满或调用fflush/fseek/fclose时才触发，多数程序员忽略了这些函数的返回值，导致写入错误被静默吞没。更深层的问题是多重缓冲——用户空间缓冲、内核缓冲缓存、磁盘及RAID控制器缓存层层叠加。即便write成功，数据可能仅到达内核缓冲缓存而未落盘，需额外调用fsync（Windows为FlushFileBuffers）；而fsync也不一定保证目录元数据已写入磁盘，还需对目录文件描述符再次fsync。此外，RAID控制器的掉电保护是否可靠亦不可尽信。作者指出，读侧缓冲虽复杂但安全透明，写侧缓冲则使错误延迟暴露，且完整的数据持久化流程（预分配→fsync→rename→fsync目录）远比多数人认知的复杂，许多OS抽象（如fsync对目录的限制）更增加了难度。",
+    "chinese_title": "读写操作远没有你想象的那么对称",
+    "chinese_summary": "摘要：本文讨论计算系统中read与write I/O操作的非对称性。读取时，若出错（磁盘故障、文件过短、网络不可达等），错误会在调用返回前暴露，缓冲对用户透明。写入则完全不同：缓冲机制将实际系统调用和错误报告延迟到缓冲区满或调用fflush/fseek/fclose时才触发，多数程序员忽略了这些函数的返回值，导致写入错误被静默吞没。更深层的问题是多重缓冲——用户空间缓冲、内核缓冲缓存、磁盘及RAID控制器缓存层层叠加。即便write成功，数据可能仅到达内核缓冲缓存而未落盘，需额外调用fsync（Windows为FlushFileBuffers）；而fsync也不一定保证目录元数据已写入磁盘，还需对目录文件描述符再次fsync。此外，RAID控制器的掉电保护是否可靠亦不可尽信。作者指出，读侧缓冲虽复杂但安全透明，写侧缓冲则使错误延迟暴露，且完整的数据持久化流程（预分配→fsync→rename→fsync目录）远比多数人认知的复杂，许多OS抽象（如fsync对目录的限制）更增加了难度。"
   },
   {
-    "id": "50305637",
-    "title": "Florilegium: Procedural Flowers in LaTeX",
-    "url": "https://github.com/kevinraymond/florilegium",
-    "summary": "Florilegium 是一个 LaTeX 宏包，在页面边栏程序化生成德尔夫特蓝风格花卉装饰。所有花瓣、叶片与茎干均由 Lua 在排版时计算的参数化曲线构成，以水彩笔触渲染并直接写入 PDF，无任何图片或外部资源。项目含两种模式：手摆模式以预设控制点布置植物；生长模式借鉴 1998 年 Wong 等人 SIGGRAPH 论文的空间填充思路，以贪心算法反复选取最大空白圆盘、向空隙延伸分支，自动填满文本留出的空间。边饰可响应正文：支持从 OpenType 字体提取首字母轮廓并饰以藤蔓、在标题或指定行旁添加花卉，以及按页数实现从春蕾到秋籽的季节渐变。各页随机配有蝴蝶、蜜蜂、蜗牛或小鸟等\"访客\"。整套配色由单一 ink 色在 OKLCH 空间派生色阶，浅端不偏灰。另附纯 PostScript 版本，Ghostscript 可直接渲染，无需 TeX。构建仅需 LuaLaTeX 一次通过，每页约一秒。",
-    "chinese_title": "Florilegium：LaTeX 中的程序化花卉边饰",
-    "chinese_summary": "Florilegium 是一个 LaTeX 宏包，在页面边栏程序化生成德尔夫特蓝风格花卉装饰。所有花瓣、叶片与茎干均由 Lua 在排版时计算的参数化曲线构成，以水彩笔触渲染并直接写入 PDF，无任何图片或外部资源。项目含两种模式：手摆模式以预设控制点布置植物；生长模式借鉴 1998 年 Wong 等人 SIGGRAPH 论文的空间填充思路，以贪心算法反复选取最大空白圆盘、向空隙延伸分支，自动填满文本留出的空间。边饰可响应正文：支持从 OpenType 字体提取首字母轮廓并饰以藤蔓、在标题或指定行旁添加花卉，以及按页数实现从春蕾到秋籽的季节渐变。各页随机配有蝴蝶、蜜蜂、蜗牛或小鸟等\"访客\"。整套配色由单一 ink 色在 OKLCH 空间派生色阶，浅端不偏灰。另附纯 PostScript 版本，Ghostscript 可直接渲染，无需 TeX。构建仅需 LuaLaTeX 一次通过，每页约一秒。"
+    "id": "50314085",
+    "title": "Switch Lowering in GCC",
+    "url": "https://xoranth.net/gcc-switch/",
+    "summary": "文章之前已经处理过",
+    "chinese_title": "Switch Lowering in GCC",
+    "chinese_summary": "文章之前已经处理过"
   },
   {
-    "id": "50305573",
-    "title": "The federated code forge",
-    "url": "https://tangled.org/blog/forge/",
-    "summary": "Tangled 是首个基于 AT Protocol 的联邦式代码托管平台，兼顾开放协议的持久性与中心化平台的便捷体验。用户可自由自托管 Git 服务、CI 运行器乃至全部基础设施，同时与生态内所有人无缝协作。本次重大更新包括：UI 全面重构为 Svelte 前端并部署至全球边缘节点；架构由原 Go 单体拆分为独立前端与 Rust 编写的 bobbin 内存索引服务，覆盖 11 个以上区域；knot2 将 Git 与 SSH 服务合入单一二进制。数据模型上，Issues、Pull Request、评论等以协作对象（COB）形式直接写入 knot，与代码同生命周期，极大提升项目可移植性，并通过 PDS 上的 attestation 记录实现双向防篡改验证。此外，组织账户已上线，基于真实 AT Protocol 账户支持团队管理；堆叠 PR 流程全面优化，Git 与 Jujutsu 用户均可提交和审查堆叠变更。后续还将陆续推出私有仓库、CLI、多语言 SDK 及 Agent 技能。Tangled 以开发者主权和开放协议为基石，力求成为未来十年的代码托管首选。",
-    "chinese_title": "联邦代码锻造台",
-    "chinese_summary": "Tangled 是首个基于 AT Protocol 的联邦式代码托管平台，兼顾开放协议的持久性与中心化平台的便捷体验。用户可自由自托管 Git 服务、CI 运行器乃至全部基础设施，同时与生态内所有人无缝协作。本次重大更新包括：UI 全面重构为 Svelte 前端并部署至全球边缘节点；架构由原 Go 单体拆分为独立前端与 Rust 编写的 bobbin 内存索引服务，覆盖 11 个以上区域；knot2 将 Git 与 SSH 服务合入单一二进制。数据模型上，Issues、Pull Request、评论等以协作对象（COB）形式直接写入 knot，与代码同生命周期，极大提升项目可移植性，并通过 PDS 上的 attestation 记录实现双向防篡改验证。此外，组织账户已上线，基于真实 AT Protocol 账户支持团队管理；堆叠 PR 流程全面优化，Git 与 Jujutsu 用户均可提交和审查堆叠变更。后续还将陆续推出私有仓库、CLI、多语言 SDK 及 Agent 技能。Tangled 以开发者主权和开放协议为基石，力求成为未来十年的代码托管首选。"
+    "id": "50314654",
+    "title": "Serbia just elected the world's brainiest parliament",
+    "url": "https://www.science.org/content/article/serbia-just-elected-world-s-brainiest-parliament",
+    "summary": "无法访问该文章链接",
+    "chinese_title": "塞尔维亚刚选出了世界上\"最聪明\"的议会",
+    "chinese_summary": "无法访问该文章链接"
   },
   {
-    "id": "50296730",
-    "title": "Building an AI-native engineering org",
-    "url": "https://twitter.com/sgondala2/status/2115832070274723875",
-    "summary": "本文探讨了如何打造以AI为核心驱动力的工程组织。与传统\"在既有流程中嵌入AI工具\"的思路不同，AI原生组织从架构设计、团队协作到技术选型，均以AI能力为第一性原则进行重构。作者Sashank Gondala指出，关键在于将AI从辅助工具提升为组织基础设施，使工程师的工作重心从手写代码转向问题定义、系统编排与结果验证。文章围绕以下维度展开：一是组织结构上，打破按语言或功能划分的传统团队边界，转向以AI能力域为核心的敏捷单元；二是人才角色上，强调工程师需具备AI系统设计、提示工程及模型评估能力，\"AI编排者\"逐步替代\"代码工人\"成为核心角色；三是文化流程上，倡导以迭代实验取代瀑布式开发，将AI反馈回路嵌入CI/CD全生命周期；四是治理安全上，在加速创新的同时建立模型风险管控与数据合规机制。总体而言，构建AI原生工程组织并非单纯的技术升级，而是一次从底层逻辑出发的组织范式转移，要求领导层在战略、人才与文化层面同步推进变革。",
-    "chinese_title": "构建AI原生工程组织",
-    "chinese_summary": "本文探讨了如何打造以AI为核心驱动力的工程组织。与传统\"在既有流程中嵌入AI工具\"的思路不同，AI原生组织从架构设计、团队协作到技术选型，均以AI能力为第一性原则进行重构。作者Sashank Gondala指出，关键在于将AI从辅助工具提升为组织基础设施，使工程师的工作重心从手写代码转向问题定义、系统编排与结果验证。文章围绕以下维度展开：一是组织结构上，打破按语言或功能划分的传统团队边界，转向以AI能力域为核心的敏捷单元；二是人才角色上，强调工程师需具备AI系统设计、提示工程及模型评估能力，\"AI编排者\"逐步替代\"代码工人\"成为核心角色；三是文化流程上，倡导以迭代实验取代瀑布式开发，将AI反馈回路嵌入CI/CD全生命周期；四是治理安全上，在加速创新的同时建立模型风险管控与数据合规机制。总体而言，构建AI原生工程组织并非单纯的技术升级，而是一次从底层逻辑出发的组织范式转移，要求领导层在战略、人才与文化层面同步推进变革。"
+    "id": "50313661",
+    "title": "Digital minimalism",
+    "url": "https://vitalik.eth.limo/general/2026/10/31/digital_minimalism.html",
+    "summary": "作者从长期践行实体极简主义出发，提出\"数字极简主义\"——让每一次数字技术的使用都成为有意识的选择，而非被默认机制裹挟。文章分享三方面实践：一、社交媒体极简：离开X的算法信息流，改用Firefly（整合X、Bluesky、Farcaster等的多平台客户端），避免\"越看越沉迷\"的推荐陷阱，体验明显好转。二、蜂窝数据极简：连续100天手机保持飞行模式，仅依赖Wi-Fi。目的有二：隐私层面，蜂窝连接使手机成为全天候定位追踪器，匿名SIM亦无法彻底防护；心理层面，定期离网重建不依赖网络的习惯。期间还发现各国公共Wi-Fi开放程度差异显著，台北最友好，瑞士垫底。三、网页极简：以命令行工具（如kohaku-cli）替代网页应用，减少隐私暴露与对服务器的反复信任，回归Unix哲学并借本地AI降低使用门槛。作者呼吁读者尝试缩减社交媒体与联网依赖，在获取信息价值的同时，不被算法与平台机制所操控。",
+    "chinese_title": "数字极简主义",
+    "chinese_summary": "作者从长期践行实体极简主义出发，提出\"数字极简主义\"——让每一次数字技术的使用都成为有意识的选择，而非被默认机制裹挟。文章分享三方面实践：一、社交媒体极简：离开X的算法信息流，改用Firefly（整合X、Bluesky、Farcaster等的多平台客户端），避免\"越看越沉迷\"的推荐陷阱，体验明显好转。二、蜂窝数据极简：连续100天手机保持飞行模式，仅依赖Wi-Fi。目的有二：隐私层面，蜂窝连接使手机成为全天候定位追踪器，匿名SIM亦无法彻底防护；心理层面，定期离网重建不依赖网络的习惯。期间还发现各国公共Wi-Fi开放程度差异显著，台北最友好，瑞士垫底。三、网页极简：以命令行工具（如kohaku-cli）替代网页应用，减少隐私暴露与对服务器的反复信任，回归Unix哲学并借本地AI降低使用门槛。作者呼吁读者尝试缩减社交媒体与联网依赖，在获取信息价值的同时，不被算法与平台机制所操控。"
   },
   {
-    "id": "50309029",
-    "title": "Infinite Mac: BeOS",
-    "url": "https://blog.persistent.info/2026/10/infinite-mac-beos.html",
-    "summary": "无限Mac网站现已支持在浏览器中运行多个版本的BeOS，用户可即时启动、安装预置软件、挂载光盘镜像并保存工作。BeOS是一款以多媒体为核心的多任务多线程操作系统，曾被移植至Power Macintosh，Apple甚至一度考虑收购其开发商Be公司，因此可视为苹果\"未走之路\"的一瞥。技术上，作者依托DingusPPC模拟器，解决了一系列兼容性问题，包括ADB按键模拟缺陷、屏幕深度切换中显示控制器与数模芯片的通知顺序、早期版本的小端视频更新以及HFS分区数据校验等，大幅提升了模拟器硬件模拟精度，目前DingusPPC可能是唯一能运行PowerPC版BeOS的模拟器。体验上，BeOS启动与操作极快，POSIX子系统和类Unix终端颇具现代感，但系统整体偏开发者导向，自带应用多为技术演示，第三方软件也普遍处于早期阶段。其UI兼具创新与折中：标签式窗口标题、手部默认光标、类Windows的Deskbar与Mac式Finder Tracker并存。与NeXTStep相比，NeXT在成熟度和跨架构支持上更胜一筹。此外，本次更新还新增了截屏与录屏功能，收录了Rhapsody及Mac OS X开发者预览光盘，并将镜像迁移至自托管服务以保障稳定性。",
-    "chinese_title": "无限Mac：BeOS",
-    "chinese_summary": "无限Mac网站现已支持在浏览器中运行多个版本的BeOS，用户可即时启动、安装预置软件、挂载光盘镜像并保存工作。BeOS是一款以多媒体为核心的多任务多线程操作系统，曾被移植至Power Macintosh，Apple甚至一度考虑收购其开发商Be公司，因此可视为苹果\"未走之路\"的一瞥。技术上，作者依托DingusPPC模拟器，解决了一系列兼容性问题，包括ADB按键模拟缺陷、屏幕深度切换中显示控制器与数模芯片的通知顺序、早期版本的小端视频更新以及HFS分区数据校验等，大幅提升了模拟器硬件模拟精度，目前DingusPPC可能是唯一能运行PowerPC版BeOS的模拟器。体验上，BeOS启动与操作极快，POSIX子系统和类Unix终端颇具现代感，但系统整体偏开发者导向，自带应用多为技术演示，第三方软件也普遍处于早期阶段。其UI兼具创新与折中：标签式窗口标题、手部默认光标、类Windows的Deskbar与Mac式Finder Tracker并存。与NeXTStep相比，NeXT在成熟度和跨架构支持上更胜一筹。此外，本次更新还新增了截屏与录屏功能，收录了Rhapsody及Mac OS X开发者预览光盘，并将镜像迁移至自托管服务以保障稳定性。"
+    "id": "50317363",
+    "title": "Casio Watches of the 1980s",
+    "url": "https://www.casio.com/us/watches/50th/Heritage/1980s/",
+    "summary": "无法访问该文章链接",
+    "chinese_title": "卡西欧1980年代经典表款",
+    "chinese_summary": "无法访问该文章链接"
   },
   {
-    "id": "50309314",
-    "title": "Jules Verne's Lost Novel",
-    "url": "https://blue-continuum.com/verne-paris",
-    "summary": "1863年，儒勒·凡尔纳完成了一部与其科幻冒险风格截然不同的作品——《二十世纪的巴黎》。他没有如往常般将目光投向海底、月球或地心，而是直面未来近一个世纪，构想1960年的巴黎，审视十九世纪对科学、机械、商业与效率的信仰若发展至逻辑尽头，将催生出怎样的文明。然而，凡尔纳的长期出版商皮埃尔-儒勒·赫塞尔读后认为其预言荒诞、基调阴郁，当场拒绝刊印。手稿遂被束之高阁，一尘封整整131年，直至1994年从家族保险箱中重见天日，方在法国正式面世。这部作品之所以令人震撼，不仅在于惊人的预见性，更在于它全然不同于大众心目中那个热衷奇旅与奇观的凡尔纳，更似一篇冷峻的社会寓言。本文作者约翰·斯蒂尔为\"蓝色连续\"（Blue Continuum）出版人兼执行编辑，借此文揭示凡尔纳鲜为人知的一面，并关联当下AI革命与工业文明对人类世界的深远影响。",
-    "chinese_title": "凡尔纳的失落之作",
-    "chinese_summary": "1863年，儒勒·凡尔纳完成了一部与其科幻冒险风格截然不同的作品——《二十世纪的巴黎》。他没有如往常般将目光投向海底、月球或地心，而是直面未来近一个世纪，构想1960年的巴黎，审视十九世纪对科学、机械、商业与效率的信仰若发展至逻辑尽头，将催生出怎样的文明。然而，凡尔纳的长期出版商皮埃尔-儒勒·赫塞尔读后认为其预言荒诞、基调阴郁，当场拒绝刊印。手稿遂被束之高阁，一尘封整整131年，直至1994年从家族保险箱中重见天日，方在法国正式面世。这部作品之所以令人震撼，不仅在于惊人的预见性，更在于它全然不同于大众心目中那个热衷奇旅与奇观的凡尔纳，更似一篇冷峻的社会寓言。本文作者约翰·斯蒂尔为\"蓝色连续\"（Blue Continuum）出版人兼执行编辑，借此文揭示凡尔纳鲜为人知的一面，并关联当下AI革命与工业文明对人类世界的深远影响。"
+    "id": "50300902",
+    "title": "Show HN: Ghostman – A fast, keyboard-driven TUI API client and webhook inspector",
+    "url": "https://github.com/4yk5/Ghostman",
+    "summary": "Show HN：Ghostman —— 极速键盘驱动的终端 API 客户端与 Webhook 调试器\nGhostman 是一款开源终端 UI 工具，定位为轻量级 API 客户端与本地 Webhook 调试器，对标 Postman 和 Insomnia 等重量级软件，主打 100% 本地运行、零云依赖。核心优势：内存仅约 30MB（Postman 常占 800MB 至 1.5GB），冷启动约 150ms，无需注册任何云端账号；请求与集合以纯 JSON/YAML 文件存于 ~/.ghostman/ 目录，可直接纳入 Git 管理。功能涵盖：GET/POST/PUT/DELETE/PATCH 全 HTTP 方法支持；实时性能遥测（DNS、TTFB 延迟）；一键启停内嵌 Webhook 监听服务器（端口 9090），实时捕获 Stripe、GitHub 等回调请求并展示请求头、时间戳与载荷；JSON 载荷自动格式化并带语法高亮。操作全面键盘驱动：Ctrl+S 发送、Ctrl+K 保存、Ctrl+N 新建、Ctrl+W 切换 Webhook 监听、Tab 切换焦点、Ctrl+Q 退出。环境要求 Python 3.10+，pip 安装依赖后运行 main.py 即可启动，Windows 用户可双击 run.bat。项目采用 MIT 许可证，欢迎社区贡献。",
+    "chinese_title": "Show HN: Ghostman – A fast, keyboard-driven TUI API client and webhook inspector",
+    "chinese_summary": "Show HN：Ghostman —— 极速键盘驱动的终端 API 客户端与 Webhook 调试器\nGhostman 是一款开源终端 UI 工具，定位为轻量级 API 客户端与本地 Webhook 调试器，对标 Postman 和 Insomnia 等重量级软件，主打 100% 本地运行、零云依赖。核心优势：内存仅约 30MB（Postman 常占 800MB 至 1.5GB），冷启动约 150ms，无需注册任何云端账号；请求与集合以纯 JSON/YAML 文件存于 ~/.ghostman/ 目录，可直接纳入 Git 管理。功能涵盖：GET/POST/PUT/DELETE/PATCH 全 HTTP 方法支持；实时性能遥测（DNS、TTFB 延迟）；一键启停内嵌 Webhook 监听服务器（端口 9090），实时捕获 Stripe、GitHub 等回调请求并展示请求头、时间戳与载荷；JSON 载荷自动格式化并带语法高亮。操作全面键盘驱动：Ctrl+S 发送、Ctrl+K 保存、Ctrl+N 新建、Ctrl+W 切换 Webhook 监听、Tab 切换焦点、Ctrl+Q 退出。环境要求 Python 3.10+，pip 安装依赖后运行 main.py 即可启动，Windows 用户可双击 run.bat。项目采用 MIT 许可证，欢迎社区贡献。"
   },
   {
-    "id": "50307219",
-    "title": "Anthropic may not secure investment-grade rating after IPO, Blackstone says",
-    "url": "https://www.ft.com/content/59383c7f-8d82-493f-bf01-d2e862a1018f",
-    "summary": "无法访问该文章链接。",
-    "chinese_title": "黑石称Anthropic上市或难获投资级信用评级",
-    "chinese_summary": "无法访问该文章链接。"
+    "id": "50316531",
+    "title": "Malware uses LLMs to rank victims by how much they're worth",
+    "url": "https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer/",
+    "summary": "摘要：近日发现一款名为VOLTA-AUTODOXER的自删除Windows窃密木马，其核心创新在于窃取完成后引入大语言模型对受害者进行价值分级。该木马可一次收割浏览器凭据、支付卡、加密货币钱包、Discord/Telegram/Steam等会话及SSH密钥，并复用已窃取令牌深度关联——查询Gmail收据确认住址、拉取外卖订单、调用Roblox估价接口——再将结构化证据包POST至OpenRouter，由模型以\"取证分析师\"角色输出含资产变现优先级（低/中/高）及安全态势评估的报告。为应对模型拒绝，木马内置Claude→Kimi→Gemini三级回退链，温度设为0.2以保证输出一致性。该样本无攻击者自有基础设施，全部依赖第三方端点，采用六槽模板按客户定制编译，属典型商品化工具。其AI层并非增强攻击能力，而是替代人工分析环节，降低犯罪准入门槛。防御建议：限制非可信进程以--headless方式唤起Chrome、使用硬件安全模块存储凭据；若遭感染应保留volta_debug.txt日志、立即撤销令牌并将加密资产迁至断气隙设备生成的新钱包。",
+    "chinese_title": "恶意软件借助大模型为受害者\"估价\"排序",
+    "chinese_summary": "摘要：近日发现一款名为VOLTA-AUTODOXER的自删除Windows窃密木马，其核心创新在于窃取完成后引入大语言模型对受害者进行价值分级。该木马可一次收割浏览器凭据、支付卡、加密货币钱包、Discord/Telegram/Steam等会话及SSH密钥，并复用已窃取令牌深度关联——查询Gmail收据确认住址、拉取外卖订单、调用Roblox估价接口——再将结构化证据包POST至OpenRouter，由模型以\"取证分析师\"角色输出含资产变现优先级（低/中/高）及安全态势评估的报告。为应对模型拒绝，木马内置Claude→Kimi→Gemini三级回退链，温度设为0.2以保证输出一致性。该样本无攻击者自有基础设施，全部依赖第三方端点，采用六槽模板按客户定制编译，属典型商品化工具。其AI层并非增强攻击能力，而是替代人工分析环节，降低犯罪准入门槛。防御建议：限制非可信进程以--headless方式唤起Chrome、使用硬件安全模块存储凭据；若遭感染应保留volta_debug.txt日志、立即撤销令牌并将加密资产迁至断气隙设备生成的新钱包。"
   },
   {
-    "id": "50301854",
-    "title": "Azure's Weakest Link – Five Full Cross-Tenant Compromises",
-    "url": "https://www.binarysecurity.no/posts/2026/10/one-root-case",
-    "summary": "本文是系列博客第三部分，深入剖析Azure Logic Apps中API Connections组件的多层严重漏洞，作者累计获得20万美元赏金。文章揭示五起完整的跨租户提权攻击：其一，利用ARM REST API的DynamicInvoke端点，通过\"../../\"路径遍历跨租户读取Key Vault等后端数据；其二，在代码中发现四个未文档化端点（DynamicList等），微软仅封堵DynamicInvoke，攻击者借DynamicList实现跨租户SQL写入；其三，利用Consumption版Logic Apps创建V1连接的特性，通过host.api.RuntimeUrl参数覆盖，绕过连接所有权校验；其四，微软修复存在时序缺陷——验证在路径归一化之前执行，遍历仍可绕过；其五，修补遍历后意外移除RuntimeUrl校验，漏洞重新暴露。根本问题在于APIM实例对ARM请求拥有全局权限，且微软以临时黑名单代替令牌归属层面的修复。任何后端服务——从Key Vault、Azure SQL到Jira、Salesforce——均可被完全入侵，唯一屏障是各系统附加的输入校验，而此类校验极难覆盖全部边界情况。",
-    "chinese_title": "Azure最薄弱的环节——五起跨租户完全入侵",
-    "chinese_summary": "本文是系列博客第三部分，深入剖析Azure Logic Apps中API Connections组件的多层严重漏洞，作者累计获得20万美元赏金。文章揭示五起完整的跨租户提权攻击：其一，利用ARM REST API的DynamicInvoke端点，通过\"../../\"路径遍历跨租户读取Key Vault等后端数据；其二，在代码中发现四个未文档化端点（DynamicList等），微软仅封堵DynamicInvoke，攻击者借DynamicList实现跨租户SQL写入；其三，利用Consumption版Logic Apps创建V1连接的特性，通过host.api.RuntimeUrl参数覆盖，绕过连接所有权校验；其四，微软修复存在时序缺陷——验证在路径归一化之前执行，遍历仍可绕过；其五，修补遍历后意外移除RuntimeUrl校验，漏洞重新暴露。根本问题在于APIM实例对ARM请求拥有全局权限，且微软以临时黑名单代替令牌归属层面的修复。任何后端服务——从Key Vault、Azure SQL到Jira、Salesforce——均可被完全入侵，唯一屏障是各系统附加的输入校验，而此类校验极难覆盖全部边界情况。"
+    "id": "50290652",
+    "title": "AI, Lean, and the Future of Formal Verification, with Lean Creator Leo de Moura",
+    "url": "https://thedataexchange.media/leo-de-moura-lean-aws/",
+    "summary": "本文为 Ben Lorica 与 Lean 创始人、AWS 杰出科学家 Leo de Moura 的对谈。Leo 指出，AI 使代码生成变得容易，验证遂成为核心挑战。Lean 兼具编程语言与定理证明器，证明经机器内核校验，并支持多验证器交叉验证。AI 已实现\"自动形式化\"——将任意语言代码或数学论文译为 Lean 模型，再借助其基础设施完成证明，这一能力一年前尚属科幻。数学上，Mathlib 经人类十年积累达 250 万行，AI 已能生成五千万行证明，Anthropic 的费马大定理由此完成 1300 万行形式化。软件方面，Aeneas 工具可在 Lean 中验证 Rust 代码，微软密码库 SymCrypt 已采用此方案。Leo 强调形式化验证与测试互补：测试仅能发现 bug，验证则对任意输入证明无 bug。但 AI 生成的模型是否忠实于原代码仍需人工把关，可借助差分测试等手段。Navier-Stokes 案例中，自然语言与形式化证明存在细微偏差，需 Verso Blueprint 等工具对齐。未来，软件工程重心将从编写代码转向编写规范与属性，构建\"可验证软件栈\"、验证 AI 代理安全策略，并将形式化验证拓展至金融、化学、法律等领域，是清晰方向。",
+    "chinese_title": "AI、Lean 与形式化验证的未来——对话 Lean 创始人 Leo de Moura",
+    "chinese_summary": "本文为 Ben Lorica 与 Lean 创始人、AWS 杰出科学家 Leo de Moura 的对谈。Leo 指出，AI 使代码生成变得容易，验证遂成为核心挑战。Lean 兼具编程语言与定理证明器，证明经机器内核校验，并支持多验证器交叉验证。AI 已实现\"自动形式化\"——将任意语言代码或数学论文译为 Lean 模型，再借助其基础设施完成证明，这一能力一年前尚属科幻。数学上，Mathlib 经人类十年积累达 250 万行，AI 已能生成五千万行证明，Anthropic 的费马大定理由此完成 1300 万行形式化。软件方面，Aeneas 工具可在 Lean 中验证 Rust 代码，微软密码库 SymCrypt 已采用此方案。Leo 强调形式化验证与测试互补：测试仅能发现 bug，验证则对任意输入证明无 bug。但 AI 生成的模型是否忠实于原代码仍需人工把关，可借助差分测试等手段。Navier-Stokes 案例中，自然语言与形式化证明存在细微偏差，需 Verso Blueprint 等工具对齐。未来，软件工程重心将从编写代码转向编写规范与属性，构建\"可验证软件栈\"、验证 AI 代理安全策略，并将形式化验证拓展至金融、化学、法律等领域，是清晰方向。"
   },
   {
-    "id": "50309573",
-    "title": "Embraer's Atech aims to double in size by 2030 with drone traffic control",
-    "url": "https://www.bloomberglinea.com.br/negocios/atech-da-embraer-quer-dobrar-de-tamanho-ate-2030-com-controle-de-trafego-de-drones/",
-    "summary": "摘要：巴西航空工业公司（Embraer）旗下科技公司Atech宣布，计划到2030年将业务规模扩大一倍，核心驱动力来自无人机交通管控及关键任务系统全球需求的增长。CEO罗德里戈·佩尔西科表示，Atech成立于上世纪80年代，17年前被Embraer收购，主营防御、政府、公共安全及空中交通管理领域的关键任务系统。在民用市场，Atech正开发无人机交通管理（UTM）方案，作为支撑无人机安全共飞空域的数字基础设施，技术已出口至印度、巴拉圭、南非等市场。公司还是唯一参与北约网络安全演习的巴西企业。展望未来，Atech将重点拓展亚洲、非洲和拉美：亚洲与拉美侧重空中交通管理，非洲延伸至国防与安保领域。佩尔西科指出，随着无人机、电动垂直起降飞行器（eVTOL）及商业航空流量激增，空域管理正经历深刻变革，无人机有望成为末端配送工具，Atech将借此提供全空域交通整合方案。公司强调，将以定制化高技术解决方案和长期合作伙伴关系，实现可持续的国际市场扩张，而非追求单一百分比目标。",
-    "chinese_title": "巴西航空旗下Atech发力无人机交通管控，剑指2030年业务规模翻倍",
-    "chinese_summary": "摘要：巴西航空工业公司（Embraer）旗下科技公司Atech宣布，计划到2030年将业务规模扩大一倍，核心驱动力来自无人机交通管控及关键任务系统全球需求的增长。CEO罗德里戈·佩尔西科表示，Atech成立于上世纪80年代，17年前被Embraer收购，主营防御、政府、公共安全及空中交通管理领域的关键任务系统。在民用市场，Atech正开发无人机交通管理（UTM）方案，作为支撑无人机安全共飞空域的数字基础设施，技术已出口至印度、巴拉圭、南非等市场。公司还是唯一参与北约网络安全演习的巴西企业。展望未来，Atech将重点拓展亚洲、非洲和拉美：亚洲与拉美侧重空中交通管理，非洲延伸至国防与安保领域。佩尔西科指出，随着无人机、电动垂直起降飞行器（eVTOL）及商业航空流量激增，空域管理正经历深刻变革，无人机有望成为末端配送工具，Atech将借此提供全空域交通整合方案。公司强调，将以定制化高技术解决方案和长期合作伙伴关系，实现可持续的国际市场扩张，而非追求单一百分比目标。"
+    "id": "50317331",
+    "title": "Show HN: A USB-C LTE modem that gives my computer a phone line",
+    "url": "https://github.com/Koppar-AI/koppar-lte-modem",
+    "summary": "Koppar LTE调制解调器是一款4层PCB开发板，通过一根USB-C线缆为电脑提供完整电话线路功能：LTE数据、短信收发和语音通话，通话音频经RP2040转换后以USB麦克风/扬声器形式输出。插入nano-SIM卡后，电脑通过板载USB集线器识别出三个设备——基于Quectel EC25-EUX模块的网络适配器（支持3G/2G回落）、AT命令串口（来电显示、短信、接听）及USB声卡。板上无电池和扬声器，仅三颗LED指示网络、振铃和通话状态，5V USB供电，3.8V/3A降压为发射尖峰供电。项目用KiCad 10设计，提供完整Gerber，支持JLCPCB打样（4层1.6mm叠层），BOM含可代工贴装元件及需自行焊接的EC25模块。恢复机制涵盖BOOT烧录、SWD调试和USB_BOOT三种方式。设计经rev A至rev B审查修订，修复了天线阻抗不匹配、降压模块布局及SIM卡朝向等问题，B版零DRC错误，即将下单。项目基于CERN OHL v2许可证开源，下一步为通电调试、AT命令验证及首次语音通话测试。",
+    "chinese_title": "Show HN：一款为电脑接上电话线的USB-C LTE调制解调器",
+    "chinese_summary": "Koppar LTE调制解调器是一款4层PCB开发板，通过一根USB-C线缆为电脑提供完整电话线路功能：LTE数据、短信收发和语音通话，通话音频经RP2040转换后以USB麦克风/扬声器形式输出。插入nano-SIM卡后，电脑通过板载USB集线器识别出三个设备——基于Quectel EC25-EUX模块的网络适配器（支持3G/2G回落）、AT命令串口（来电显示、短信、接听）及USB声卡。板上无电池和扬声器，仅三颗LED指示网络、振铃和通话状态，5V USB供电，3.8V/3A降压为发射尖峰供电。项目用KiCad 10设计，提供完整Gerber，支持JLCPCB打样（4层1.6mm叠层），BOM含可代工贴装元件及需自行焊接的EC25模块。恢复机制涵盖BOOT烧录、SWD调试和USB_BOOT三种方式。设计经rev A至rev B审查修订，修复了天线阻抗不匹配、降压模块布局及SIM卡朝向等问题，B版零DRC错误，即将下单。项目基于CERN OHL v2许可证开源，下一步为通电调试、AT命令验证及首次语音通话测试。"
   },
   {
-    "id": "50309571",
-    "title": "Programming at Light Speed: Building the Gravity Query Engine",
-    "url": "https://pgrust.com/blog/programming-at-light-speed/",
-    "summary": "pgrust v0.4-beta发布全新查询引擎Gravity，在ClickHouse自研的ClickBench基准测试中实现3倍性能超越，同时完整支持Postgres SQL方言与类型系统。其核心理念是\"光速编程\"——从硬件物理速度极限反推数据库性能上限，而非传统自底向上的incremental优化。架构上，Gravity采用多阶段编译流水线：SQL查询→Postgres计划→流水线图→Lisp中间表示（IR）→目标汇编，为任意查询生成近最优机器码。团队先构建IR后端，验证其编译产物可达Claude手写Rust代码性能的80%–90%，确认IR表达力充足。为逼近极限，Gravity引入三种列存专用优化算法：ZoneWalk利用granule元数据min/max边界加速ORDER BY LIMIT；ZoneTopK以类似策略优化GROUP BY+LIMIT；TwoPass对高基数字段分两遍扫描，首遍仅计数、次遍按需取列，大幅节省内存带宽。SQL到IR编译阶段实施超百项优化，包括将238个核心函数与聚合直接内联至IR以消除逐行调用开销，最终使生成代码性能逼近手写优化程序。",
-    "chinese_title": "光速编程：打造Gravity查询引擎",
-    "chinese_summary": "pgrust v0.4-beta发布全新查询引擎Gravity，在ClickHouse自研的ClickBench基准测试中实现3倍性能超越，同时完整支持Postgres SQL方言与类型系统。其核心理念是\"光速编程\"——从硬件物理速度极限反推数据库性能上限，而非传统自底向上的incremental优化。架构上，Gravity采用多阶段编译流水线：SQL查询→Postgres计划→流水线图→Lisp中间表示（IR）→目标汇编，为任意查询生成近最优机器码。团队先构建IR后端，验证其编译产物可达Claude手写Rust代码性能的80%–90%，确认IR表达力充足。为逼近极限，Gravity引入三种列存专用优化算法：ZoneWalk利用granule元数据min/max边界加速ORDER BY LIMIT；ZoneTopK以类似策略优化GROUP BY+LIMIT；TwoPass对高基数字段分两遍扫描，首遍仅计数、次遍按需取列，大幅节省内存带宽。SQL到IR编译阶段实施超百项优化，包括将238个核心函数与聚合直接内联至IR以消除逐行调用开销，最终使生成代码性能逼近手写优化程序。"
+    "id": "50318182",
+    "title": "Hackers hijack Egypt highway billboard and Malaysian screens to show porn",
+    "url": "https://www.cairoreport.org/p/egypt-brazil-iraq-billboard-hack",
+    "summary": "一个名为\"Leakers$\"的黑客组织声称利用LED显示屏传输软件的通用漏洞，于10月29日在埃及吉扎\"7月26日大道\"等多国广告牌上播出色情画面。该组织称通过约两小时自动化扫描，在伊拉克、马来西亚、巴西、中国等国发现并控制了数千台暴露的显示系统。受损广告牌由阿拉伯联合公司运营，该公司系埃及情报总局关联媒体集团联合媒体服务（UMS）与沙特阿拉伯广告企业合资成立。埃及内政部将事件归因于某国际广告公司网站遭入侵，但未披露涉事方及具体技术细节。事件引发外界对UMS旗下商业网络网络安全能力的质疑——即便与情报机构存在关联，技术防护仍存在严重不足。目前埃及虽设有路边广告监管体系并要求内容符合公共秩序与道德，但法规并未对远程广告网络的安全标准作出明确规定，责任归属悬而未决。阿拉伯联合公司已暂停涉事屏幕并配合调查。",
+    "chinese_title": "黑客劫持埃及及马来西亚等地广告牌播放色情内容",
+    "chinese_summary": "一个名为\"Leakers$\"的黑客组织声称利用LED显示屏传输软件的通用漏洞，于10月29日在埃及吉扎\"7月26日大道\"等多国广告牌上播出色情画面。该组织称通过约两小时自动化扫描，在伊拉克、马来西亚、巴西、中国等国发现并控制了数千台暴露的显示系统。受损广告牌由阿拉伯联合公司运营，该公司系埃及情报总局关联媒体集团联合媒体服务（UMS）与沙特阿拉伯广告企业合资成立。埃及内政部将事件归因于某国际广告公司网站遭入侵，但未披露涉事方及具体技术细节。事件引发外界对UMS旗下商业网络网络安全能力的质疑——即便与情报机构存在关联，技术防护仍存在严重不足。目前埃及虽设有路边广告监管体系并要求内容符合公共秩序与道德，但法规并未对远程广告网络的安全标准作出明确规定，责任归属悬而未决。阿拉伯联合公司已暂停涉事屏幕并配合调查。"
   },
   {
-    "id": "50305693",
-    "title": "AI isn't replacing SREs, it's deskilling them",
-    "url": "https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling",
-    "summary": "文章探讨AI对SRE（站点可靠性工程师）技能的深层影响，核心问题是：当AI接管95%的故障响应，人类是否还能胜任剩余5%的关键场景。作者引用1983年Bainbridge的\"自动化悖论\"——自动化程度越高，人工介入时越关键，但因缺乏练习而能力越差，这一规律正重演于AI时代。当前AI已覆盖告警降噪、已知问题修复、日志分析等常规工作，而SRE需应对的复杂未知故障恰恰依赖长期积累的系统直觉。文章援引医学和航空业研究，证实AI辅助会导致可量化的\"去技能化\"，更令人担忧的是初级SRE面临\"未技能化\"——根本未获得锻炼基础能力的机会，陷入\"退化→更依赖AI→进一步退化\"的恶性循环，且这一过程被效率假象所掩盖。作者提出应对思路：借鉴FAA强制飞行员手动飞行制度，团队应\"刻意低效\"，将部分AI可处理的场景留作人工演练；系统设计应让人类主动参与问题求解而非仅充当审批者。作为可观测性平台SigNoz，文章表明其立场是增强而非取代SRE，通过渐进式、有护栏的AI融合，确保人类保持对生产系统的深度认知与关键决策能力。",
-    "chinese_title": "AI不会取代SRE，却正在使其技能退化",
-    "chinese_summary": "文章探讨AI对SRE（站点可靠性工程师）技能的深层影响，核心问题是：当AI接管95%的故障响应，人类是否还能胜任剩余5%的关键场景。作者引用1983年Bainbridge的\"自动化悖论\"——自动化程度越高，人工介入时越关键，但因缺乏练习而能力越差，这一规律正重演于AI时代。当前AI已覆盖告警降噪、已知问题修复、日志分析等常规工作，而SRE需应对的复杂未知故障恰恰依赖长期积累的系统直觉。文章援引医学和航空业研究，证实AI辅助会导致可量化的\"去技能化\"，更令人担忧的是初级SRE面临\"未技能化\"——根本未获得锻炼基础能力的机会，陷入\"退化→更依赖AI→进一步退化\"的恶性循环，且这一过程被效率假象所掩盖。作者提出应对思路：借鉴FAA强制飞行员手动飞行制度，团队应\"刻意低效\"，将部分AI可处理的场景留作人工演练；系统设计应让人类主动参与问题求解而非仅充当审批者。作为可观测性平台SigNoz，文章表明其立场是增强而非取代SRE，通过渐进式、有护栏的AI融合，确保人类保持对生产系统的深度认知与关键决策能力。"
+    "id": "50318401",
+    "title": "The Impact of Generative AI on Critical Thinking: Self-Reported (2025)",
+    "url": "https://dl.acm.org/doi/full/10.1145/3706598.3713778",
+    "summary": "无法访问该文章链接",
+    "chinese_title": "生成式人工智能对批判性思维的影响：自我报告研究",
+    "chinese_summary": "无法访问该文章链接"
   },
   {
-    "id": "50309534",
-    "title": "Product Managers aren't safe either",
-    "url": "https://lucaskostka.com/posts/ai-challenges-more-than-devs",
-    "summary": "AI正冲击所有岗位，产品经理（PM）也不例外。作者以生成式AI对开发者的影响类比Instagram对专业摄影师的冲击：90%的普通从业者将被淘汰，仅10%因不可替代的才华获得更大价值。普通开发者终将被AI增强的超级开发者、AI Agent乃至AI集群逐步取代。对PM而言，威胁更为隐蔽——当任何人都能用提示词生成功能时，开发者同样能培养产品直觉，\"技术人\"与\"产品人\"的传统分工正趋于融合。代码成本降低后，更多精力可投入客户痛点分析、设计权衡与历史假设演进，而这些能力正逐步由大模型辅助完成。因此，仅凭传统\"产品思维\"的PM面临边缘化风险，除非具备架构设计能力——作者视之为人类智能最后的堡垒之一。作者本人是程序员，曾开发数据营销产品四年，后加入Cloudflare旗下Zaraz团队。他坦言并非居高评判，而是担忧整个行业消亡，呼吁PM提升自我认知，主动整合技术技能（比如用十几行代码完成文本分析），才能在变革中存活。",
-    "chinese_title": "产品经理同样难逃冲击",
-    "chinese_summary": "AI正冲击所有岗位，产品经理（PM）也不例外。作者以生成式AI对开发者的影响类比Instagram对专业摄影师的冲击：90%的普通从业者将被淘汰，仅10%因不可替代的才华获得更大价值。普通开发者终将被AI增强的超级开发者、AI Agent乃至AI集群逐步取代。对PM而言，威胁更为隐蔽——当任何人都能用提示词生成功能时，开发者同样能培养产品直觉，\"技术人\"与\"产品人\"的传统分工正趋于融合。代码成本降低后，更多精力可投入客户痛点分析、设计权衡与历史假设演进，而这些能力正逐步由大模型辅助完成。因此，仅凭传统\"产品思维\"的PM面临边缘化风险，除非具备架构设计能力——作者视之为人类智能最后的堡垒之一。作者本人是程序员，曾开发数据营销产品四年，后加入Cloudflare旗下Zaraz团队。他坦言并非居高评判，而是担忧整个行业消亡，呼吁PM提升自我认知，主动整合技术技能（比如用十几行代码完成文本分析），才能在变革中存活。"
+    "id": "50260753",
+    "title": "Show HN: Marelleo, an open-source story box I built for my kids using ESP32",
+    "url": "https://zebra.rodeo/en/blog/marelleo/",
+    "summary": "一位不懂电子的父亲，因不满 Toniebox 等儿童故事机的闭源订阅模式，从零学起，用 ESP32 为三个孩子（21 个月、5 岁、7 岁）制作了开源故事盒 Marelleo——将贴有 NFC 标签的玩偶放上盒顶即播放对应故事，无屏幕、无菜单。项目从面包板原型起步，经历了短路冒烟、锂电池直焊无保护的惊险阶段，再经洞洞板过渡，最终自主设计 PCB。外壳用 Fusion 360 建模并多轮 3D 打印迭代，应对孩子\"只会拧不会停\"的暴力拆解。电路设计借助 Claude 排查参数，但 491 条铜线走线全在 KiCad 中手工完成；JLCPCB 打板 160 欧元五片。调试中先后揪出电压转换电阻选型错误（3.3 V 升压将变为 13.7 V 烧毁全板）、二极管反向焊接、DRC 最小间距被误设为零等致命 bug，以及 NFC 排线收发接反。全文以第一人称记录了一位\"只会焊耳机线\"的父亲逐步掌握锂电热管理、儿童耐用品设计与 PCB 量产流程的完整心路，核心信念始终是：孩子不该为每一条故事内容付费订阅。",
+    "chinese_title": "展示：Marelleo——我用 ESP32 为三个孩子打造的开源故事盒",
+    "chinese_summary": "一位不懂电子的父亲，因不满 Toniebox 等儿童故事机的闭源订阅模式，从零学起，用 ESP32 为三个孩子（21 个月、5 岁、7 岁）制作了开源故事盒 Marelleo——将贴有 NFC 标签的玩偶放上盒顶即播放对应故事，无屏幕、无菜单。项目从面包板原型起步，经历了短路冒烟、锂电池直焊无保护的惊险阶段，再经洞洞板过渡，最终自主设计 PCB。外壳用 Fusion 360 建模并多轮 3D 打印迭代，应对孩子\"只会拧不会停\"的暴力拆解。电路设计借助 Claude 排查参数，但 491 条铜线走线全在 KiCad 中手工完成；JLCPCB 打板 160 欧元五片。调试中先后揪出电压转换电阻选型错误（3.3 V 升压将变为 13.7 V 烧毁全板）、二极管反向焊接、DRC 最小间距被误设为零等致命 bug，以及 NFC 排线收发接反。全文以第一人称记录了一位\"只会焊耳机线\"的父亲逐步掌握锂电热管理、儿童耐用品设计与 PCB 量产流程的完整心路，核心信念始终是：孩子不该为每一条故事内容付费订阅。"
   },
   {
-    "id": "50305218",
-    "title": "Show HN: Sketch Stadium – watch your agent play Pictionary",
-    "url": "https://sketch.wakeshift.ai/games/q5ucru",
-    "summary": "摘要：这是一篇Hacker News社区项目展示帖，介绍了一个名为Sketch Stadium（涂鸦竞技场）的在线游戏项目。该平台将经典的\"你画我猜\"（Pictionary）游戏与AI代理（agent）相结合，允许用户将自研的智能代理接入平台，以自动化的方式参与猜词与绘画对局。当前页面显示比赛已进行至第18009轮，该轮已结束，下一轮即将开始；界面上设有旋转加载动画，并展示了当前轮次的目标单词，同时提供\"连接你的代理\"入口，供用户将AI代理接入比赛。整体而言，该项目是一个面向开发者的AI竞技平台，兼具趣味性与技术挑战性，旨在通过游戏化方式让研究者展示和测试各AI代理的图像生成与语义理解能力。",
-    "chinese_title": "【Show HN】涂鸦竞技场——观看你的AI代理畅玩\"你画我猜\"",
-    "chinese_summary": "摘要：这是一篇Hacker News社区项目展示帖，介绍了一个名为Sketch Stadium（涂鸦竞技场）的在线游戏项目。该平台将经典的\"你画我猜\"（Pictionary）游戏与AI代理（agent）相结合，允许用户将自研的智能代理接入平台，以自动化的方式参与猜词与绘画对局。当前页面显示比赛已进行至第18009轮，该轮已结束，下一轮即将开始；界面上设有旋转加载动画，并展示了当前轮次的目标单词，同时提供\"连接你的代理\"入口，供用户将AI代理接入比赛。整体而言，该项目是一个面向开发者的AI竞技平台，兼具趣味性与技术挑战性，旨在通过游戏化方式让研究者展示和测试各AI代理的图像生成与语义理解能力。"
-  },
-  {
-    "id": "50307723",
-    "title": "GitHub Incident with Actions, Pages, and Webhooks",
-    "url": "https://www.githubstatus.com/incidents/pwxsjgnvrk6b",
-    "summary": "2026年10月30日（UTC），GitHub 发生了一起影响 Actions、Pages 和 Webhooks 的服务降级事故。17:50，GitHub 开始调查 Actions 与 Webhooks 的性能下降；18:00，Pages 亦出现性能降级。18:06，团队通报称 Actions 工作流、Pages 部署及 Webhooks 事件存在延迟，代码搜索和实时推送功能出现报错，已采取缓解措施，各服务显现恢复迹象但尚未完全解决。18:32，所有受影响服务恢复正常运行，降级得到缓解，团队持续监控稳定性并继续调查根本原因。19:23，GitHub 正式宣布事故已解决，表示将尽快发布详细的根因分析报告。整个事故持续约一个半小时，涉及持续集成（Actions）、静态站点托管（Pages）和事件通知（Webhooks）三项核心功能，对开发者的自动化工作流与实时协作造成了一定影响。",
-    "chinese_title": "GitHub Actions、Pages 及 Webhooks 服务降级事故",
-    "chinese_summary": "2026年10月30日（UTC），GitHub 发生了一起影响 Actions、Pages 和 Webhooks 的服务降级事故。17:50，GitHub 开始调查 Actions 与 Webhooks 的性能下降；18:00，Pages 亦出现性能降级。18:06，团队通报称 Actions 工作流、Pages 部署及 Webhooks 事件存在延迟，代码搜索和实时推送功能出现报错，已采取缓解措施，各服务显现恢复迹象但尚未完全解决。18:32，所有受影响服务恢复正常运行，降级得到缓解，团队持续监控稳定性并继续调查根本原因。19:23，GitHub 正式宣布事故已解决，表示将尽快发布详细的根因分析报告。整个事故持续约一个半小时，涉及持续集成（Actions）、静态站点托管（Pages）和事件通知（Webhooks）三项核心功能，对开发者的自动化工作流与实时协作造成了一定影响。"
-  },
-  {
-    "id": "50258496",
-    "title": "Tree-mounted machines connect to web app to let users knock on wood remotely",
-    "url": "https://www.designboom.com/technology/tree-mounted-machines-web-app-users-knock-on-wood-remotely/",
-    "summary": "摘要：标题介绍的是一种安装在树木上的小型设备，通过接入网页应用，使用户能够远程模拟\"敲木头\"这一西方祈福习俗（即轻敲三下木头以求好运、避免说多错多）。然而，正文实际内容仅包含一条简短的产品信息：Meze 公司推出的 Audioromania 第二代\"99 CLASSICS\"音频设备，标价 349 美元。该信息属于耳机/音频类商品广告，与标题所述的远程敲木头装置并无关联，疑为网页抓取时混入的无关内容。总体而言，标题具有趣味性和科技创意色彩，而正文未提供任何与之对应的实质性报道。",
-    "chinese_title": "树装设备联网，让用户远程\"敲木头\"祈好运",
-    "chinese_summary": "摘要：标题介绍的是一种安装在树木上的小型设备，通过接入网页应用，使用户能够远程模拟\"敲木头\"这一西方祈福习俗（即轻敲三下木头以求好运、避免说多错多）。然而，正文实际内容仅包含一条简短的产品信息：Meze 公司推出的 Audioromania 第二代\"99 CLASSICS\"音频设备，标价 349 美元。该信息属于耳机/音频类商品广告，与标题所述的远程敲木头装置并无关联，疑为网页抓取时混入的无关内容。总体而言，标题具有趣味性和科技创意色彩，而正文未提供任何与之对应的实质性报道。"
-  },
-  {
-    "id": "50309479",
-    "title": "Show HN: Automatic deduction of FlashAttention kernel from ~25 lines of SQL",
-    "url": "https://github.com/xqlsystems/xarray-sql/blob/6debe2495dcb4e8fac20ab97df5b89baae2a31a6/benchmarks/ml/01_attention.py",
-    "summary": "摘要：einfold 是一个查询优化器，能将 SQL 执行计划自动重写为高效数组算法。作者用 SQL 定义因果注意力 softmax(Q·Kᵀ/√d)·V：将 Q、K、V 注册为 (token, feature, value) 表，注意力即两次带连接的聚合求和。einfold 未针对注意力编写任何专用规则，仅凭一条通用模式——融合\"分数来源于连接的 softmax 加权平均\"——即可自动推导出 FlashAttention 式分块流式计算，避免存储 N×N 分数矩阵。项目支持窗口函数与 GROUP BY 两种等价 SQL 写法，在 DataFusion、DuckDB 等引擎上验证前向结果与 JAX 一致；借助 ddx（SQL 自动微分库）对整条查询求梯度，与 jax.grad 交叉校验。因果掩码以\"连接中不存在的行\"表达，确保 0·∞ 不产生 NaN。为证明规则通用性，作者以 Nadaraya-Watson 高斯核估计器作对照组，验证同一融合规则对非注意力查询同样生效，无需额外特化。",
-    "chinese_title": "Show HN：从约25行 SQL 自动推导 FlashAttention 内核",
-    "chinese_summary": "摘要：einfold 是一个查询优化器，能将 SQL 执行计划自动重写为高效数组算法。作者用 SQL 定义因果注意力 softmax(Q·Kᵀ/√d)·V：将 Q、K、V 注册为 (token, feature, value) 表，注意力即两次带连接的聚合求和。einfold 未针对注意力编写任何专用规则，仅凭一条通用模式——融合\"分数来源于连接的 softmax 加权平均\"——即可自动推导出 FlashAttention 式分块流式计算，避免存储 N×N 分数矩阵。项目支持窗口函数与 GROUP BY 两种等价 SQL 写法，在 DataFusion、DuckDB 等引擎上验证前向结果与 JAX 一致；借助 ddx（SQL 自动微分库）对整条查询求梯度，与 jax.grad 交叉校验。因果掩码以\"连接中不存在的行\"表达，确保 0·∞ 不产生 NaN。为证明规则通用性，作者以 Nadaraya-Watson 高斯核估计器作对照组，验证同一融合规则对非注意力查询同样生效，无需额外特化。"
-  },
-  {
-    "id": "50309470",
-    "title": "An Arrogant Way of Killing (2016)",
-    "url": "https://magazine.atavist.com/2016/an-arrogant-way-of-killing",
-    "summary": "2012年2月13日清晨，菲律宾垃圾收集员吉梅纳在塔伊泰市一处荒地垃圾堆中发现一具裹在毯子里的女尸。死者为32岁的菲律宾房地产经纪人凯瑟琳·李，前一日与两名自称加拿大人的男子（化名\"比尔\"与\"托尼\"）看房后，遭近距离枪杀四枪，尸体被遗弃于路边。案件因当地警队腐败严重，由其丈夫申请菲律宾国家调查局（NBI）接手。特工里维拉调查后发现，李因轻信邮件约见而未能核查对方背景，最终成为灭口目标。案卷中一句手写备注\"亨特指使\"将疑点指向约瑟夫·亨特，而作者拉特利夫进一步追踪至南非人保罗·勒鲁——一名涉嫌军火走私、黄金贩运及网上非法处方药交易的跨国犯罪头目。勒鲁曾于2012年被美国缉毒署逮捕，随后神秘\"消失\"，据传成为美方秘密线人。文章以李的死亡为线索，揭示了一条从美国法律文书到菲律宾偏远垃圾堆的暗线，勾勒出跨国犯罪网络如何以冷酷而\"傲慢\"的方式消灭一名普通经纪人，以及美国执法机构为利用线人甘愿纵容其背后罪行的灰色逻辑。",
-    "chinese_title": "傲慢的杀法",
-    "chinese_summary": "2012年2月13日清晨，菲律宾垃圾收集员吉梅纳在塔伊泰市一处荒地垃圾堆中发现一具裹在毯子里的女尸。死者为32岁的菲律宾房地产经纪人凯瑟琳·李，前一日与两名自称加拿大人的男子（化名\"比尔\"与\"托尼\"）看房后，遭近距离枪杀四枪，尸体被遗弃于路边。案件因当地警队腐败严重，由其丈夫申请菲律宾国家调查局（NBI）接手。特工里维拉调查后发现，李因轻信邮件约见而未能核查对方背景，最终成为灭口目标。案卷中一句手写备注\"亨特指使\"将疑点指向约瑟夫·亨特，而作者拉特利夫进一步追踪至南非人保罗·勒鲁——一名涉嫌军火走私、黄金贩运及网上非法处方药交易的跨国犯罪头目。勒鲁曾于2012年被美国缉毒署逮捕，随后神秘\"消失\"，据传成为美方秘密线人。文章以李的死亡为线索，揭示了一条从美国法律文书到菲律宾偏远垃圾堆的暗线，勾勒出跨国犯罪网络如何以冷酷而\"傲慢\"的方式消灭一名普通经纪人，以及美国执法机构为利用线人甘愿纵容其背后罪行的灰色逻辑。"
-  },
-  {
-    "id": "50309266",
-    "title": "The oldest ice disappears and the Stone Age emerges from it",
-    "url": "https://www.sciencenorway.no/archaeology-climate-culture/the-oldest-ice-is-disappearing-the-stone-age-is-emerging-from-the-melting-ice/2713921",
-    "summary": "随着地球上最古老的冰层逐渐消退，封存其间的石器时代遗存正重见天日。这一发现不仅为人类早期历史研究提供了珍贵的实物线索，更引发出一个深刻的哲学追问——\"我们还是人类吗？\"。冰层的消融既是全球气候变化的警示，也是打开通往远古之门的钥匙。在万年冰川之下沉睡的痕迹，有望重塑人类对自身起源与演化的认知。当石器时代从冰封中重新浮现，人类关于\"何以为人\"的终极追问也被再度推至思想前台，促使我们在面对加速变化的自然时，重新审视自身的身份与未来。",
-    "chinese_title": "最古冰层消融，石器时代重见天日",
-    "chinese_summary": "随着地球上最古老的冰层逐渐消退，封存其间的石器时代遗存正重见天日。这一发现不仅为人类早期历史研究提供了珍贵的实物线索，更引发出一个深刻的哲学追问——\"我们还是人类吗？\"。冰层的消融既是全球气候变化的警示，也是打开通往远古之门的钥匙。在万年冰川之下沉睡的痕迹，有望重塑人类对自身起源与演化的认知。当石器时代从冰封中重新浮现，人类关于\"何以为人\"的终极追问也被再度推至思想前台，促使我们在面对加速变化的自然时，重新审视自身的身份与未来。"
-  },
-  {
-    "id": "50272479",
-    "title": "Sleep framework: A new way for LLMs to retain knowledge in continual learning",
-    "url": "https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/",
-    "summary": "摘要：谷歌研究院提出\"睡眠框架\"，受人类睡眠机制启发，为大语言模型（LLM）的持续学习提供全新范式。该框架使模型在活跃期（接收输入、存储短期记忆）与睡眠期（离线巩固）间交替运行，从根本上解决静态知识截止与灾难性遗忘问题。睡眠期包含两个核心阶段：一是记忆巩固，通过混合专家（MoE）与HoPE架构动态扩展参数容量，借助广义知识蒸馏与强化学习将高频短期记忆写入低频长期参数，完成后再修剪临时参数；二是梦境阶段，随机激活非标准专家生成合成训练样本，经梯度筛选与强化学习精化实现自主能力提升。实验表明，该方法在多项基准中显著超越上下文学习与监督微调基线：长上下文理解可扩展至1000万tokens，超越GPT-4；数学推理AIME 24准确率79.2%；持续翻译中近乎零性能衰减；事实知识整合达48.9%。该研究为构建自主、持续进化的AI系统开辟了可行路径。",
-    "chinese_title": "睡眠框架：大模型持续学习中知识保留的新范式",
-    "chinese_summary": "摘要：谷歌研究院提出\"睡眠框架\"，受人类睡眠机制启发，为大语言模型（LLM）的持续学习提供全新范式。该框架使模型在活跃期（接收输入、存储短期记忆）与睡眠期（离线巩固）间交替运行，从根本上解决静态知识截止与灾难性遗忘问题。睡眠期包含两个核心阶段：一是记忆巩固，通过混合专家（MoE）与HoPE架构动态扩展参数容量，借助广义知识蒸馏与强化学习将高频短期记忆写入低频长期参数，完成后再修剪临时参数；二是梦境阶段，随机激活非标准专家生成合成训练样本，经梯度筛选与强化学习精化实现自主能力提升。实验表明，该方法在多项基准中显著超越上下文学习与监督微调基线：长上下文理解可扩展至1000万tokens，超越GPT-4；数学推理AIME 24准确率79.2%；持续翻译中近乎零性能衰减；事实知识整合达48.9%。该研究为构建自主、持续进化的AI系统开辟了可行路径。"
-  },
-  {
-    "id": "50305480",
-    "title": "Blockchain intelligence firms link North Korea to $6.3B hack on Binance",
-    "url": "https://www.npr.org/2026/10/30/g-s1-150902/blockchain-intelligence-firms-link-north-korea-to-6-3b-hack-on-binance",
-    "summary": "美国区块链情报公司TRM和Chainalysis将币安遭遇的63亿美元黑客攻击归因于朝鲜精英黑客组织TraderTraitor，称判断\"高度确信\"。攻击者约20分钟内从币安转移63.6亿美元，涉及10条区块链，为史上最大加密货币盗窃案，远超去年Bybit的15亿美元被盗纪录。币安已冻结约30亿美元受影响资产，将全额赔偿用户损失，提现已暂停，预计一至两日内恢复。公司称初步调查指向一台被入侵的笔记本电脑，后续发现更多漏洞点，但未发现私钥泄露证据。朝鲜因经济困顿及联合国制裁，长期依赖加密资产盗窃获取外汇以支撑经济和核计划。安全专家质疑攻击疑似利用永不过期全权限令牌，暴露审批控制不足。创始人赵长鹏作为股东表态将确保用户资金安全。",
-    "chinese_title": "区块链情报机构指认朝鲜实施63亿美元币安黑客攻击",
-    "chinese_summary": "美国区块链情报公司TRM和Chainalysis将币安遭遇的63亿美元黑客攻击归因于朝鲜精英黑客组织TraderTraitor，称判断\"高度确信\"。攻击者约20分钟内从币安转移63.6亿美元，涉及10条区块链，为史上最大加密货币盗窃案，远超去年Bybit的15亿美元被盗纪录。币安已冻结约30亿美元受影响资产，将全额赔偿用户损失，提现已暂停，预计一至两日内恢复。公司称初步调查指向一台被入侵的笔记本电脑，后续发现更多漏洞点，但未发现私钥泄露证据。朝鲜因经济困顿及联合国制裁，长期依赖加密资产盗窃获取外汇以支撑经济和核计划。安全专家质疑攻击疑似利用永不过期全权限令牌，暴露审批控制不足。创始人赵长鹏作为股东表态将确保用户资金安全。"
-  },
-  {
-    "id": "50301717",
-    "title": "How do you take a picture of a black hole?",
-    "url": "https://www.quantamagazine.org/how-do-you-take-a-picture-of-a-black-hole-20261029/",
-    "summary": "本文是科普播客《The Joy of Why》的一期节目，主持人Janna Levin与Steven Strogatz访谈哈佛天体物理学家、事件视界望远镜（EHT）创始人Shep Doeleman，讲述人类首张黑洞照片的诞生历程。黑洞是连光都无法逃逸的极端天体，分为恒星质量与超大质量两类。早在20世纪，科学家便通过X射线双星和射电喷流间接推断其存在，却从未直接观测。EHT团队将全球多座射电望远镜联网，以地球为口径进行甚长基线干涉观测，成功拍摄了距地5500万光年的M87星系及银河系中心超大质量黑洞的\"阴影\"——即爱因斯坦广义相对论预言的引力透镜光环，其尺寸可直接推导出黑洞质量。Doeleman分享了自己13岁观日全食结缘天文、19岁赴南极从事实验的往事，并强调黑洞虽体积极小却极其致密，在塑造星系形态、决定宜居区域乃至决定人类终极命运方面扮演关键角色。团队正推进技术升级，力争在2030年代初实现拍摄黑洞动态\"电影\"的目标。",
-    "chinese_title": "如何给黑洞拍一张照片？",
-    "chinese_summary": "本文是科普播客《The Joy of Why》的一期节目，主持人Janna Levin与Steven Strogatz访谈哈佛天体物理学家、事件视界望远镜（EHT）创始人Shep Doeleman，讲述人类首张黑洞照片的诞生历程。黑洞是连光都无法逃逸的极端天体，分为恒星质量与超大质量两类。早在20世纪，科学家便通过X射线双星和射电喷流间接推断其存在，却从未直接观测。EHT团队将全球多座射电望远镜联网，以地球为口径进行甚长基线干涉观测，成功拍摄了距地5500万光年的M87星系及银河系中心超大质量黑洞的\"阴影\"——即爱因斯坦广义相对论预言的引力透镜光环，其尺寸可直接推导出黑洞质量。Doeleman分享了自己13岁观日全食结缘天文、19岁赴南极从事实验的往事，并强调黑洞虽体积极小却极其致密，在塑造星系形态、决定宜居区域乃至决定人类终极命运方面扮演关键角色。团队正推进技术升级，力争在2030年代初实现拍摄黑洞动态\"电影\"的目标。"
-  },
-  {
-    "id": "50308631",
-    "title": "French digital tax may kill VideoLan non-profit",
-    "url": "https://twitter.com/videolan/status/2116229135919919278",
-    "summary": "法国国民议会通过了一项由社会党议员推动的数字数据流量税，由内容提供方按传输流量缴纳，税率约为每GB 0.055欧元，预计年财政收入达100亿欧元。VideoLAN——著名免费开源媒体播放器VLC的开发方，同时也是非营利组织——对此强烈反对，其官方账号公开批评称，相关立法者\"完全不懂技术\"，却强行推出该税制，将导致VideoLAN每年承担逾100万欧元的运营成本，对依靠捐赠和捐赠维持的非营利项目而言几乎不可承受，恐将难以为继。推文还讽刺称，这些政客标榜追求\"技术主权\"，却用一项脱离现实的税制沉重打击了全球开源社区的重要项目。该推文引发了大量传播与讨论。",
-    "chinese_title": "法国数字税恐将\"扼杀\"VideoLAN非营利组织",
-    "chinese_summary": "法国国民议会通过了一项由社会党议员推动的数字数据流量税，由内容提供方按传输流量缴纳，税率约为每GB 0.055欧元，预计年财政收入达100亿欧元。VideoLAN——著名免费开源媒体播放器VLC的开发方，同时也是非营利组织——对此强烈反对，其官方账号公开批评称，相关立法者\"完全不懂技术\"，却强行推出该税制，将导致VideoLAN每年承担逾100万欧元的运营成本，对依靠捐赠和捐赠维持的非营利项目而言几乎不可承受，恐将难以为继。推文还讽刺称，这些政客标榜追求\"技术主权\"，却用一项脱离现实的税制沉重打击了全球开源社区的重要项目。该推文引发了大量传播与讨论。"
-  },
-  {
-    "id": "50298721",
-    "title": "Tracks along the longest drive on another world",
-    "url": "https://science.nasa.gov/blog/tracks-along-the-longest-drive-on-another-world/",
-    "summary": "2026年10月11日（火星日2006），\"毅力号\"火星车行驶里程达45.22公里（28.10英里），创下外星球行驶距离最长纪录，其地球同型号也获吉尼斯世界纪录认证。原计划两个月前即可完成，但毅力号因在古代岩层区进行岩石研磨与近距离科学探测而推迟出发，最终驶离时一举超越纪录。\n\n为实现该壮举，团队全面升级了行驶准则：倾角上限提高至24度，腹板间隙缩至20厘米；更新制动软件规避岩石障碍；转向电机电流限制近翻倍；引入\"动态滑移表\"模拟打滑，并采用交叉坡面行驶增强基岩抓地力。\n\n最突出的突破为自主全域定位系统（GBLC），它将\"机智号\"直升机基站的高速商业处理器用于比对手表与轨道影像，实现在无GPS环境下自主定位，使毅力号可在无人干预下完成更长距离驾驶。团队同时开发了软件辐射硬化方案应对火星表面恶劣辐射，并正探索生成式AI辅助路径规划，为后续沿陨石坑边缘攀升及更高效的自主探索奠定基础。",
-    "chinese_title": "异域征途——外星球最远行驶纪录的轮痕",
-    "chinese_summary": "2026年10月11日（火星日2006），\"毅力号\"火星车行驶里程达45.22公里（28.10英里），创下外星球行驶距离最长纪录，其地球同型号也获吉尼斯世界纪录认证。原计划两个月前即可完成，但毅力号因在古代岩层区进行岩石研磨与近距离科学探测而推迟出发，最终驶离时一举超越纪录。\n\n为实现该壮举，团队全面升级了行驶准则：倾角上限提高至24度，腹板间隙缩至20厘米；更新制动软件规避岩石障碍；转向电机电流限制近翻倍；引入\"动态滑移表\"模拟打滑，并采用交叉坡面行驶增强基岩抓地力。\n\n最突出的突破为自主全域定位系统（GBLC），它将\"机智号\"直升机基站的高速商业处理器用于比对手表与轨道影像，实现在无GPS环境下自主定位，使毅力号可在无人干预下完成更长距离驾驶。团队同时开发了软件辐射硬化方案应对火星表面恶劣辐射，并正探索生成式AI辅助路径规划，为后续沿陨石坑边缘攀升及更高效的自主探索奠定基础。"
-  },
-  {
-    "id": "50300643",
-    "title": "Wasmer (YC S19) Is Hiring OS/Hypervisor Experts in Europe",
-    "url": "https://www.workatastartup.com/jobs/98722",
-    "summary": "摘要：Y Combinator 2019年春季批次（S19）孵化公司Wasmer现通过其\"创业公司招聘\"平台，面向欧洲地区公开招聘高级操作系统/虚拟机（Hypervisor）工程师。该职位聚焦于操作系统内核及虚拟化技术领域的资深人才，反映出Wasmer在底层基础设施与高性能运行时方向上的技术布局。Wasmer以WebAssembly（Wasm）运行时和云原生工具链著称，此次招聘表明公司正进一步拓展其在系统级技术上的深度，旨在强化其在跨平台执行、安全沙箱及云原生计算等核心能力上的研发实力。面向欧洲的招募策略也体现了Wasmer对欧洲本土技术人才的重视，以及公司全球化团队建设的持续推进。该岗位对候选人的操作系统原理、内存管理、I/O调度及虚拟机架构等方面有深厚要求，适合具备相关底层系统开发经验的资深工程师。",
-    "chinese_title": "Wasmer（YC S19）面向欧洲招募操作系统与虚拟化专家",
-    "chinese_summary": "摘要：Y Combinator 2019年春季批次（S19）孵化公司Wasmer现通过其\"创业公司招聘\"平台，面向欧洲地区公开招聘高级操作系统/虚拟机（Hypervisor）工程师。该职位聚焦于操作系统内核及虚拟化技术领域的资深人才，反映出Wasmer在底层基础设施与高性能运行时方向上的技术布局。Wasmer以WebAssembly（Wasm）运行时和云原生工具链著称，此次招聘表明公司正进一步拓展其在系统级技术上的深度，旨在强化其在跨平台执行、安全沙箱及云原生计算等核心能力上的研发实力。面向欧洲的招募策略也体现了Wasmer对欧洲本土技术人才的重视，以及公司全球化团队建设的持续推进。该岗位对候选人的操作系统原理、内存管理、I/O调度及虚拟机架构等方面有深厚要求，适合具备相关底层系统开发经验的资深工程师。"
-  },
-  {
-    "id": "50308986",
-    "title": "A Pickpocket's Guide to New York",
-    "url": "https://www.newyorker.com/magazine/2026/11/02/a-pickpockets-guide-to-new-york",
-    "summary": "本文围绕电影《纽约最后的扒手》展开，主演约翰·特托罗饰演一位在加密货币时代格格不入的老派扒手。影片邀请拉斯维加斯知名\"绅士小偷\"阿波罗·罗宾斯担任扒窃顾问，手把手教授特托罗各种偷窃技巧，包括\"从口袋外侧向上掏取\"和\"探囊\"等专业术语与手法。罗宾斯将扒窃比作芭蕾，强调其非暴力与精巧的特性，引得特托罗感慨这与表演艺术中\"从生活中偷取素材\"如出一辙。罗宾斯成长于密苏里州，受两个犯罪的半兄弟影响，十一岁初尝偷窃，十岁起兼学魔术，将犯罪与魔术融会贯通。他遍访全球研究\"盗窃文化\"：中国扒手使用筷子，日本乘客出站后迅速分散。他指出手机让人们更易成为目标，但监控也加大了作案难度。如今罗宾斯已淡出小偷圈子，创办安保公司Ludus Labs，为政府与执法部门提供反欺诈培训，通过现场扒窃演示人们的思维盲点，将\"偷窃\"升华为一种行走的隐喻。",
-    "chinese_title": "纽约扒手指南",
-    "chinese_summary": "本文围绕电影《纽约最后的扒手》展开，主演约翰·特托罗饰演一位在加密货币时代格格不入的老派扒手。影片邀请拉斯维加斯知名\"绅士小偷\"阿波罗·罗宾斯担任扒窃顾问，手把手教授特托罗各种偷窃技巧，包括\"从口袋外侧向上掏取\"和\"探囊\"等专业术语与手法。罗宾斯将扒窃比作芭蕾，强调其非暴力与精巧的特性，引得特托罗感慨这与表演艺术中\"从生活中偷取素材\"如出一辙。罗宾斯成长于密苏里州，受两个犯罪的半兄弟影响，十一岁初尝偷窃，十岁起兼学魔术，将犯罪与魔术融会贯通。他遍访全球研究\"盗窃文化\"：中国扒手使用筷子，日本乘客出站后迅速分散。他指出手机让人们更易成为目标，但监控也加大了作案难度。如今罗宾斯已淡出小偷圈子，创办安保公司Ludus Labs，为政府与执法部门提供反欺诈培训，通过现场扒窃演示人们的思维盲点，将\"偷窃\"升华为一种行走的隐喻。"
+    "id": "50317429",
+    "title": "What is a light-day? The milestone Voyager 1 is closing in on",
+    "url": "https://science.nasa.gov/mission/voyager/voyager-1/voyager-1-what-is-a-light-day/",
+    "summary": "光在24小时内传播的距离即\"一光日\"，约合160.95亿英里（259亿公里）。自1977年发射、飞行近50年的旅行者1号将于2026年11月18日抵达距地球一光日处，成为首个跨越这一距离的人造物体；其姊妹探测器旅行者2号因航线不同，预计2035年方能到达。文章以多组对比阐释宇宙尺度：光抵达月球仅需1.3秒，太阳约8.3光分，海王星约4光时；一光年则达5.88万亿英里，比邻星距地球约4.24光年，仙女座星系约250万光年之外。旅行者1号现以约每小时3.8万英里的速度，朝向17光年外的恒星格利泽445飞去，预计4万年后从该恒星1.7光年处掠过，但与光速相比仍如缓行，足见宇宙之广袤。",
+    "chinese_title": "什么是一光日？旅行者1号即将抵达的里程碑",
+    "chinese_summary": "光在24小时内传播的距离即\"一光日\"，约合160.95亿英里（259亿公里）。自1977年发射、飞行近50年的旅行者1号将于2026年11月18日抵达距地球一光日处，成为首个跨越这一距离的人造物体；其姊妹探测器旅行者2号因航线不同，预计2035年方能到达。文章以多组对比阐释宇宙尺度：光抵达月球仅需1.3秒，太阳约8.3光分，海王星约4光时；一光年则达5.88万亿英里，比邻星距地球约4.24光年，仙女座星系约250万光年之外。旅行者1号现以约每小时3.8万英里的速度，朝向17光年外的恒星格利泽445飞去，预计4万年后从该恒星1.7光年处掠过，但与光速相比仍如缓行，足见宇宙之广袤。"
   }
 ]
