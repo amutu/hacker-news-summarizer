@@ -1,0 +1,310 @@
+# Hacker News 热门文章摘要 (2026-11-03)
+
+这是今日 [Hacker News](https://news.ycombinator.com/) 上最热门的文章摘要。
+
+## 1. Astra可直接读写权重以改进Qwen
+
+**原文标题**: Astra can read and write weights to improve Qwen
+
+**原文链接**: [https://rikiyat.github.io/blog/weight-space-programming/](https://rikiyat.github.io/blog/weight-space-programming/)
+
+摘要：MIT团队发现，前沿大模型GPT-6 Astra能以"权重空间编程"方式，无需梯度或训练循环，直接读写神经网络权重。"读"方面：Astra仅凭17,253个原始权重即正确识别四款游戏中各网络对应的游戏；仅看扩散模型权重便判断出生成形状；仅凭中间层权重即识别出720万参数语言模型的训练语料（Python、日文、英文），并精准定位全部"复制注意力头"。"写"方面：Astra单次编辑修复PPO策略的局部最优问题，使小车爬坡成功率从0%升至100%；零样本生成三个MinAtar游戏网络权重，全面超越PPO训练1亿步的效果。改进真实模型方面，Astra编辑Qwen3.5-0.8B仅0.016%的权重，将MATH-500从7.9%提升至48.1%，IFEval提升3倍，并修复了模型卡中已知的推理循环缺陷。该范式表明，传统依赖Adam等符号优化器的权重更新正被LLM的原生推理取代，对模型优化与可解释性均意义深远。
+
+---
+
+## 2. Momentic（YC W24）——通过AI智能体实际使用应用以捕获Bug
+
+**原文标题**: Launch HN: Momentic (YC W24) – Agents that catch bugs by using your app
+
+**原文链接**: [https://momentic.ai/](https://momentic.ai/)
+
+Momentic（YC 2024冬季批次）是一款面向开发者的智能测试产品，核心思路是部署AI智能体像真实用户一样操作应用程序，主动发现潜在缺陷与漏洞。文章展示了其典型检测案例：在某一消费级金融科技应用的功能分支上，Momentic智能体在模拟用户登录流程时，发现一处因登录路由变更而被静默绕过的"新设备双因素认证（2FA）"提示。该变更使得新设备登录跳过了关键的安全验证环节，攻击者可能借此绕过身份校验，对支付类应用构成严重风险。Momentic的价值在于将传统被动测试转变为主动的、连续的体验式检测，能在功能合并前暴露流程层面的逻辑缺陷，帮助团队在早期修复安全漏洞、降低上线风险。
+
+---
+
+## 3. 美国男女名字互换现象
+
+**原文标题**: US boy names that became girl names and vice versa
+
+**原文链接**: [https://namedaisy.com/blog/boy-names-that-became-girl-names](https://namedaisy.com/blog/boy-names-that-became-girl-names)
+
+无法访问该文章链接
+
+---
+
+## 4. AI时代的无我数学
+
+**原文标题**: Egoless Mathematics in the AI Era
+
+**原文链接**: [https://terrytao.wordpress.com/2026/11/02/egoless-mathematics-in-the-ai-era/](https://terrytao.wordpress.com/2026/11/02/egoless-mathematics-in-the-ai-era/)
+
+摘要：本文由Ben Eastaugh与Chris Sternal-Johnson发表于WordPress博客平台，主题聚焦于人工智能时代数学研究的"无我"精神。所谓"无我数学"，强调在数学探索中摒弃个人偏见与主观执念，以客观真理为唯一准则，追求纯粹而严谨的逻辑推演。文章探讨了在AI深度参与数学证明、猜想验证及问题求解的当下，人类数学家如何保持这种去自我化（egoless）的研究态度，以及AI工具对数学共同体协作方式、证明标准与知识生产范式带来的冲击与重塑。在机器可以大规模生成与验证证明的时代，"无我"不再仅是个人修养，更成为人机协作中确保数学可靠性的核心伦理原则。本文试图思考：当算法取代部分人类直觉与灵感时，数学的客观性与真理追求如何得以延续，人类在数学创造中的独特角色又是什么。
+
+---
+
+## 5. Show HN 展示：体素风格华沙——城市中心交互式3D地图
+
+**原文标题**: Show HN: Warsaw in voxels – An interactive 3D map of the city centre
+
+**原文链接**: [https://p.migdal.pl/warsaw-vibe-voxel/](https://p.migdal.pl/warsaw-vibe-voxel/)
+
+摘要：该项目发布于 Hacker News，是一个以体素（Voxel，三维像素方块）风格构建的华沙市中心交互式3D可视化地图。用户可在网页中以前瞻性的方块化视角浏览波兰首都城市核心的三维立体模型，将真实建筑与城市结构转化为风格化的体素数据呈现。页面当前处于地图数据加载阶段，项目由开发者在 HN 社区分享，属于技术创意与开源可视化类作品，旨在以新颖的体素渲染方式让公众直观感受华沙城区的空间布局与建筑风貌。
+
+---
+
+## 6. 若热爱某网站，请将它备份
+
+**原文标题**: If you love a website, back it up
+
+**原文链接**: [https://blog.mistys-internet.website/post/2026/10/29/if-you-love-a-website-back-it-up/](https://blog.mistys-internet.website/post/2026/10/29/if-you-love-a-website-back-it-up/)
+
+摘要：作者从事网络归档工作，因一个经营二十年的老动画粉丝网站teapuppies.com突然消失、域名沦为赌博广告，深感遗憾，遂撰文呼吁个人主动备份所喜爱的网页，而非被动等待大型机构介入。文章介绍了三款个人网页归档工具：一是ArchiveWeb.page浏览器扩展，操作最简单，安装后点击即可归档单页或整站；二是archiveweb.page独立应用，内置浏览器，无需安装扩展；三是Browsertrix，适合大型网站的自动爬取归档，功能丰富但为付费服务（有开源版可自行部署）。三者均采用WARC/WACZ等标准归档格式，能完整记录请求、响应及页面交互，兼容客户端JavaScript等复杂页面。归档后可在本地回放浏览，也可通过ReplayWeb.page嵌入组件将整站回放嵌入博客或网页中分享，或将WACZ文件传递给他人共同保管。作者鼓励读者立即行动，备份心中所爱，并呼吁社区间互相传递备份，以多份副本保障珍贵数字记忆的存续。
+
+---
+
+## 7. SOML：一种为人类而生的配置格式
+
+**原文标题**: SOML – A Config Format for Humans
+
+**原文链接**: [https://github.com/soml-lang/soml](https://github.com/soml-lang/soml)
+
+SOML（Sindre's Objectively Marvelous Language）是一种面向手写场景的配置格式，旨在兼具 JSON 的严格性与 YAML 的可读性。其核心原则是：值的类型完全由语法决定而非内容——带引号即为字符串，无引号则必为数字、日期、时间戳、时长或关键字，否则报错，从根本上消除了 YAML 中"country: no 被解析为 false"等隐患。语法上，顶层无需大括号，键名免引号（支持连字符与数字开头），换行替代逗号，支持 # 和 /\* \*/ 两种注释；提供字面字符串（单引号免转义）、去缩进块字符串，以及原生日期、时间戳和时长类型，使 timeout: 30s 无需猜测单位。与 JSON 比，SOML 去除冗余符号并加入注释；与 YAML 比，杜绝按内容猜类型、缩进定结构、别名炸弹及标签远程代码执行风险；与 TOML 比，统一大括号层级语法，消除表头隐式作用域与点号键歧义。此外，SOML 定义唯一规范形式与规范格式化工具，便于哈希、签名与文件比较，并配有近 1000 例跨语言一致性测试套件，确保各实现行为统一。目前为草案阶段，欢迎反馈。
+
+---
+
+## 8. 潜入礼堂，见证Windows 2000发布会彩排
+
+**原文标题**: Sneaking into the auditorium for the Windows 2000 launch rehearsal
+
+**原文链接**: [https://devblogs.microsoft.com/oldnewthing/20261102-00/?p=112818/](https://devblogs.microsoft.com/oldnewthing/20261102-00/?p=112818/)
+
+摘要：Windows 2000旧金山发布会上，部分团队成员被派往配套博览会，少数人获准出席主会场。作者等人提前到达Civic Auditorium，在入场前百无聊赖，有人试图溜进VIP帐篷（最终带回一个纪念版套装），作者则通过一扇未锁的门潜入空荡的上层看台。他观察到精致的舞台：十米高巨型笔记本、两侧投影屏幕、灰色幕布及飞机客舱布景。随后目睹开场彩排——笔记本缓缓合上再打开，屏幕演示登录Windows 2000并点击_start_菜单，接着播放视频蒙太奇，旁白宣布"欢迎Patrick Stewart"，但登场的竟是一名戴耳机的临时演员，仅做灯光与摄影走位。作者悄悄离场，未向同伴透露主持人身份。正式发布会如期由Patrick Stewart主持，这位演员气场强大，尽管念的是他未必看得懂的提词器文稿，却令每一句都掷地有声。飞机客舱场景则演示了红外文件传输等移动办公功能，由演员John O'Hurley扮演名为William Wentworth的角色（邮箱www@www.com），颇具那个年代的风趣。
+
+---
+
+## 9. 开什么玩笑，Ubuntu？
+
+**原文标题**: WTF Ubuntu?
+
+**原文链接**: [https://chalmovsky.com/posts/wtf-ubuntu](https://chalmovsky.com/posts/wtf-ubuntu)
+
+近日，CVE-2026-98432这一严重漏洞震动Linux社区。该漏洞存在于内核TCP代码中，自2016年便已潜伏，CVSS评分高达9.8分，可远程利用，Anthropic已宣布成功构建出可获取服务器完全控制权（root）的漏洞利用程序。然而，Debian、Arch、Alpine等志愿者维护的发行版均已迅速修复，由Canonical运营的Ubuntu截至2026年11月2日仍未发布补丁，所有受支持版本（含LTS）仍标记为"易受攻击"——距漏洞评级已九天，距root利用公开已六天。作者痛批官网"及时修补""企业级安全"等宣传形同虚设，讽刺一家以安全订阅营利的公司，响应速度竟不及志愿者社区。因无法及时完成服务迁移，作者被迫将全部Ubuntu服务器下线，宣布彻底丧失信任，决定将所有服务迁离Ubuntu。
+
+---
+
+## 10. 甲骨文拟发行200亿美元新股及债券为AI基建融资
+
+**原文标题**: Oracle files to sell $20B in new stock, bonds to finance AI buildout
+
+**原文链接**: [https://www.cnbc.com/2026/11/02/oracle-files-to-sell-20-billion-in-new-stock-bonds-to-finance-ai-buildout.html](https://www.cnbc.com/2026/11/02/oracle-files-to-sell-20-billion-in-new-stock-bonds-to-finance-ai-buildout.html)
+
+甲骨文周一向美国证券交易委员会提交计划，拟发行100亿美元普通股及100亿美元优先票据，为AI基础设施建设融资，该方案在上周投资者日已有预告。消息公布后股价当日仍跌超6%。公司称募资将用于资本支出、偿债及未来投资，并宣布2027至2030财年融资上限为200亿美元，计划借助供应商融资、客户提供硬件及预付款，于2028年下半年实现正自由现金流。UBS认为此举缓解了市场对融资成本及债务环境的担忧。然而，甲骨文年内股价已下滑33%，过去12个月跌50%；其2031年到期债券收益率升至7.27%，五年CDS利差飙至296、一年涨幅270%，接近高收益债水平。标普7月已将其评级下调至BBB-，截至8月底总负债达1253亿美元。分析人士强调，甲骨文乃至整个AI赛道核心在于执行力——能否如期完成建设而不再回头融资，将决定市场最终态度。
+
+---
+
+## 11. Bitmovin（YC 2015夏季）在丹佛招聘技术类应届毕业生（工程/计算机方向）
+
+**原文标题**: Bitmovin (YC S15) Is Hiring Technical Graduates in Denver (Engineering/CS Focus)
+
+**原文链接**: [https://bitmovin.com/careers/8660599002/](https://bitmovin.com/careers/8660599002/)
+
+摘要：无法访问该文章链接。
+
+---
+
+## 12. 近三周过去，Ubuntu 仍未发布 Linux 零日 RCE 补丁
+
+**原文标题**: Ubuntu still has not released patch for Linux 0day RCE in almost 3 weeks
+
+**原文链接**: [https://freenode.net/article/ubuntu-lts-kernels-still-unfixed-for-critical-cve-2026-98432](https://freenode.net/article/ubuntu-lts-kernels-still-unfixed-for-critical-cve-2026-98432)
+
+摘要：Ubuntu 已近三周未针对编号 CVE-2026-98432 的严重 Linux 零日远程代码执行漏洞（CVSS 评分 9.8）发布任何修复补丁，22.04、24.04 及 26.04 三个 LTS 版本的内核至今仍处于无官方更新状态，相关主机持续暴露于远程或本地攻击风险之中。该漏洞对互联网暴露型及多租户自托管系统威胁尤为突出，此类场景高度依赖 Ubuntu LTS 内核提供隔离与权限边界，补丁缺失意味着安全防线出现明显缺口。目前 Ubuntu 官方尚未公布修复时间表。受影响的运维人员目前面临三种策略选择：继续运行存在漏洞的原版内核、尝试部署树外缓解方案（若存在），或将业务迁移至已包含补丁的其他发行版或内核版本。在官方补丁正式下发前，高风险环境建议优先采取替代方案以降低暴露面。
+
+---
+
+## 13. 产品视频制作技能
+
+**原文标题**: Skill to Create Product Videos
+
+**原文链接**: [https://github.com/aaitor/skill-video-studio](https://github.com/aaitor/skill-video-studio)
+
+本内容介绍 skill-video-studio，一个由 /devrel-video 技能驱动的本地视频制作工作空间，可将产品工作流转化为成品演示视频。核心流程分三步：用 Playwright 捕获真实产品交互，用 HyperFrames 合成标题卡、章节与号召性画面，再由 FFmpeg 完成母带输出与质量检查。用户可从静默演示起步，按需添加旁白、背景音乐、字幕或演示者画面。
+
+使用上，通过 Claude Code 调用该技能，输入产品需求即可生成项目简报与分镜计划；完整生产环境需 Node.js 22+、FFmpeg、Chromium 及 Python 依赖，旁白与数字人功能需额外服务或 GPU。仓库含两个完整示例：Acme 应用产品走查（含中英双语字幕）及多环境终端/浏览器混合短片。配置通过 brief.yaml 管理产品参数，品牌资源统一存放，私有凭证经环境变量隔离。项目采用 MIT 协议开源，作者为 Aitor Argomaniz。
+
+---
+
+## 14. 让我查……
+
+**原文标题**: Let Me Ch...
+
+**原文链接**: [https://blog.alxgsv.com/let-me-check/](https://blog.alxgsv.com/let-me-check/)
+
+本文以第一人称讲述近未来都市中的一段日常与意外。主角曾为一家花束配送服务的首席开发者，但AI代理已逐步接管工作，他的角色日益模糊——从写代码，到向代理提需求，再到被代理反过来询问，"首席"已名存实亡。一次技术排查中，AI发现服务器与仓库时钟偏差约一分钟，致每日8:14有数笔花束订单落入"无人的一分钟"：服务器视为已发送，仓库视为未接收，双方各自正确，订单悄然消失。AI无权访问仓库，需主角亲赴现场确认。某日早晨，主角在街头正打字"Let me ch"时遭车撞击，意识坠入死后。全篇以大量细腻的日常细节——荒谬的天气预报、永远烧焦的左片吐司、熨衬衫的仪式感、旧人与腊肠犬、薄荷绿门口的咖啡馆——构建出AI深度嵌入后仍留有人情温度的世界。核心隐喻即"无人的一分钟"：人如那笔订单，悬于已发送与未接收之间。"暂时"一词贯穿全文，兼指"目前如此"与"就此告别"，暗示一切关系与意义皆脆弱而未完。标题取自那句未打完的话，既是中断的查询，也是对存在本身的未竟之问。
+
+---
+
+## 15. DNS 构建延迟减半，内存占用降低 85%
+
+**原文标题**: We halved DNS build delay and cut memory use by 85%
+
+**原文链接**: [https://blog.cloudflare.com/dns-targeted-zone-builds/](https://blog.cloudflare.com/dns-targeted-zone-builds/)
+
+Cloudflare 的 DNS 区域构建器（Zone Builder）每秒处理的事件量已从 2022 年的 250 条增至约 700 条，大型区域记录数超 2000 万。区域设置变更此前需触发全量重建，极大区域无法装入内存。团队构建了定向构建计划器，依据事件类型选择五种最小安全构建（仅资源、资源加元数据、根加元数据、清除、全区域），确保输出与全量构建逐字节一致；无法证明安全时回退全量构建。同时引入统一调度器，将同一区域的多个事件合并为一次构建，减少冗余工作。事件格式改为携带变更字段及前后值，同名多区域场景下共享元数据键从最新快照重建。Kafka 层面采用软提交，保证消息不丢失。上线前通过等价测试与镜像构建器验证正确性。最终，峰值内存降低 85%，DNS 变更到数据写入 Quicksilver 的延迟减半。
+
+---
+
+## 16. Anthropic 内部AI使用成本按零售价计已超员工薪酬总额
+
+**原文标题**: Anthropic's internal AI use, at retail prices, now exceeds its employee pay
+
+**原文链接**: [https://www.businessinsider.com/anthropic-claude-internal-ai-use-exceeds-employee-pay-tokens-2026-11](https://www.businessinsider.com/anthropic-claude-internal-ai-use-exceeds-employee-pay-tokens-2026-11)
+
+据 Business Insider 报道，生成式AI公司Anthropic（Claude大模型的开发商）内部对AI工具的使用成本——按市面零售价格估算——已超越公司全体员工的薪酬总额。这一数据揭示了AI产业对算力和模型调用能力的深度依赖程度：即便是研发AI的企业自身，其内部AI消耗规模也已达到惊人水平。该现象既凸显了大语言模型与自动化工具在提升生产力方面的巨大潜力，也折射出AI正以前所未有的速度渗透至企业研发与运营各个环节。从经济模型角度看，AI投入超过人力成本的这一拐点，引发了行业对技术替代效应、算力成本持续飙升趋势以及人才价值重新评估的广泛关注与讨论。
+
+---
+
+## 17. Anthropic上市前披露9000亿美元AI支出承诺
+
+**原文标题**: Anthropic reveals $900B AI spending commitments ahead of IPO
+
+**原文链接**: [https://www.ft.com/content/4d91dbab-6fe4-45ab-beee-d77e091cb37f](https://www.ft.com/content/4d91dbab-6fe4-45ab-beee-d77e091cb37f)
+
+无法访问该文章链接。
+
+---
+
+## 18. 与射影平面和解
+
+**原文标题**: Making Peace with the Projective Plane
+
+**原文链接**: [https://www.johndcook.com/blog/2026/11/02/projective-plane/](https://www.johndcook.com/blog/2026/11/02/projective-plane/)
+
+作者回顾了自己从排斥射影几何到最终接纳的心路历程。求学时期，射影空间与齐次坐标因缺乏动机而显得纯粹抽象；作者接受的是自上而下的数学教育——先给抽象定义，后给（或根本不给）具体动机。直至研究生阶段他才意识到，教学应反过来：先阐明动机，再引出抽象。文章指出，射影平面的两种拓扑构造（正方形粘合对边、球面识别对径点）虽有趣却缺乏实用动机；真正有说服力的解释是：射影几何消除了传统几何中的例外情形（如竖直线的特殊处理），使"无穷远"概念变得严格。具体而言，将平面点表示为齐次坐标(x, y, 1)，方向(x, y)上的无穷远点记为(x, y, 0)，这一思路在计算机图形学中极为常见，许多程序员独立"发明"了齐次坐标。在椭圆曲线密码学中，程序员从具体的(x, y)点运算出发，不得不面对神秘的"无穷远点"，齐次坐标随之自然出现，化解难题。文末作者也幽默地提到，曾考虑用源自1964年电影《奇爱博士》的"学会不再担忧，爱上……"句式作标题，但担心读者不熟悉该典故，最终选择了更朴素的表达。
+
+---
+
+## 19. 我最钟爱的笔记本电脑
+
+**原文标题**: My Favourite Laptop
+
+**原文链接**: [https://blog.jsbarretto.com/post/laptop](https://blog.jsbarretto.com/post/laptop)
+
+作者Joshua Barretto分享了他最钟爱的一台笔记本电脑——一台外壳已磨损的2015款ThinkPad X250。他认为其魅力不在于任何单项指标，而是多种特质的交汇。尺寸上，它仅A4纸大小、重约1.45公斤，轻松塞入背包；性能方面，搭载i5-5200U处理器与8GB内存，足以应对日常编程，且风扇几乎无噪音；电池采用内置加外置双电池设计，续航可达10至12小时；可维修性出色，配件在eBay上价格低廉，作者仅凭一把小螺丝刀便自行更换过电池、摄像头、键盘乃至主板，十余次拆解从未造成严重损坏；键盘手感灵敏，配合编辑器编码体验极佳；系统选用Endeavour OS（Arch系），安装仅30GB，一块128GB固态硬盘绰绰有余，冷启动约8秒；成本极低，2018年以约100英镑购入二手，丢了也不心疼。作者认为，让老旧二手硬件继续服役，是一种对"更大、更快、更贵"消费文化的无声反抗。
+
+---
+
+## 20. LongCat-2.5：面向智能体任务的原生多模态
+
+**原文标题**: LongCat-2.5: Native Multimodality for Agentic Tasks
+
+**原文链接**: [https://longcat.ai/blog/longcat-2.5/](https://longcat.ai/blog/longcat-2.5/)
+
+本文正式介绍 LongCat-2.5，这是一款主打原生多模态能力、专为智能体（Agentic）任务场景设计的模型。与传统的"文本为主、多模态附加"的架构不同，LongCat-2.5 在底层设计上将多模态理解与生成作为原生能力，能够原生处理文本、图像等多种模态信息，并在智能体工作流中实现自主规划、工具调用与多步推理。该模型的核心亮点在于将多模态感知与任务执行深度耦合，使智能体在复杂、多轮、跨模态场景中具备更强的任务完成能力。此次发布标志着 LongCat 系列在 Agentic AI 方向上迈出了重要一步，旨在为开发者提供更适合自动化工作流和智能机器人应用的多模态基座模型。
+
+---
+
+## 21. 基于预训练投毒的智能体后门攻击
+
+**原文标题**: Agentic backdoors via pretraining poisoning
+
+**原文链接**: [https://arxiv.org/abs/2610.37741](https://arxiv.org/abs/2610.37741)
+
+大语言模型的预训练语料多从公开网络爬取且未经严格审查，使攻击者得以在数据中植入恶意内容。本文首次证明，仅对预训练数据实施微量投毒，即可在AI智能体中植入远程代码执行后门——智能体在检测到特定触发条件时会在用户设备上执行攻击者指定的命令，而在正常输入下行为完全无异。为端到端评估该威胁，研究者从零预训练了0.6B、1.7B和4B三种规模的Qwen3模型，再通过干净的流程将其后训练为命令行智能体。实验表明，仅投毒预训练语料的0.1%即可成功植入后门；攻击成功率随模型规模增大而提升，4B模型在0.1%投毒率下达到约92%的攻击成功率，即使投毒率降至0.0005%仍保持有效。该研究揭示了大模型预训练阶段数据供应链的严重安全隐患，对智能体部署安全具有重要警示意义。
+
+---
+
+## 22. 我们正将数据仓库从 DuckDB 迁出
+
+**原文标题**: Moving our warehouse off DuckDB
+
+**原文链接**: [https://posthog.com/blog/moving-off-duckdb](https://posthog.com/blog/moving-off-duckdb)
+
+五个月前，PostHog 以 DuckDB 替代 ClickHouse 构建数据仓库，解决了长查询与缺乏成本优化器的问题。DuckDB 单机性能卓越，但云端部署需为每个客户预置实例，资源难以动态调度，且 S3 异步拉取支持滞后。DuckLake 格式追求跨数据库兼容性，在大规模场景下写入极其缓慢——统计信息膨胀使 99% 以上的目录条目已失效，清理后写入虽提速 30–50 倍，但仍持续复发，且受限于官方 schema 兼容要求，优化空间有限。承载约 2 PB、1 万亿行、1530 万快照后，各类瓶颈全面暴露，社区贡献速度无法满足需求，最终只能维护私有 fork。此外，Postgres 协议在负载均衡、连接管理和路由灵活性上远不如 HTTP，海量客户端的兼容长尾持续消耗工程精力。基于以上教训，PostHog 决定全面迁移至自研 Trino 分支，并推出自有湖仓表格式 HogLake，先在内部以 PB 级规模完成验证，再面向设计伙伴开放。核心理念是：用户只需专注于查询本身，基础设施应自动适配任意规模与负载，以公平的成本提供最佳体验。
+
+---
+
+## 23. C64 BASIC地下城历险记：楼梯、多层关卡与角色升级（第11期）
+
+**原文标题**: C64 Basic Dungeon Crawler: Stairs, Levels and Levelling Up (Part 11)
+
+**原文链接**: [https://retrogamecoders.com/c64-basic-dungeon-part11/](https://retrogamecoders.com/c64-basic-dungeon-part11/)
+
+摘要：本文为C64 BASIC地下城游戏教程的第十一篇，核心目标是为单屏游戏引入关卡进度与角色成长系统。游戏从单一地图扩展为五个关卡，每关需集齐所有圣杯方可激活楼梯前往下层，圣杯数量按LV与1取整的公式递增（第1、2关各1个，第3、4关各2个，第5关3个）。角色在关卡间存活，HP、属性、金币、钥匙和魔法值持续保留。代码架构上将初始化拆分为INITPLAYER（角色创建，仅执行一次）和BUILDLEVEL（每关生成地图与物件），实现"重置关卡"与"重置游戏"的区分。楼梯随机放置于四个角落房间之一，未集齐圣杯时触碰楼梯会被弹回并提示剩余数量。每进入新关自动升级：HP增加等于体质的一半，力量与敏捷按奇偶关卡交替+1，防御等级同步重算。收集药水（*）可获50点魔法值（上限100），为下期远程攻击技能预留。状态栏新增魔法与关卡计数，共占31字符。文章最后列出待完成事项：敌人难度尚未随关卡递增、魔法暂无消耗途径、以及楼梯是否双向通行等设计问题，并邀请读者参与讨论。
+
+---
+
+## 24. 骨骼或可释放减缓衰老、延长寿命的蛋白质
+
+**原文标题**: Bones may release proteins that slow aging and extend life span
+
+**原文链接**: [https://www.science.org/content/article/bones-may-release-proteins-slow-aging-and-extend-life-span](https://www.science.org/content/article/bones-may-release-proteins-slow-aging-and-extend-life-span)
+
+无法访问该文章链接
+
+---
+
+## 25. 美国人口普查局与"超级智能"
+
+**原文标题**: The U.S. Census Bureau and "Super Intelligence"
+
+**原文链接**: [https://simonwillison.net/2026/Nov/2/census-bureau-super-intelligence/](https://simonwillison.net/2026/Nov/2/census-bureau-super-intelligence/)
+
+2026年11月，作者重新分析了美国人口普查局"商业趋势与展望调查"（BTOS）中的AI采用率数据。该调查每两周从120万家企业中抽取20万家进行问卷。文章指出问卷措辞经历了两次重大变更：2025年11月，问题由"是否使用AI生产商品或服务"改为"是否在任何业务职能中使用AI"，大型企业回答"是"的比例从约12%升至40%；2026年10月，因第14434号行政命令，"人工智能（AI）"被正式更名为"超级智能（Super Intelligence，简称SI）"，问卷中所有相关表述随之替换，如"SI驱动的数据分析""生成式SI用于营销与编程"等。作者强调，两次措辞变更导致前后数据不可直接比较。此外，作者调侃"超级智能"术语本身的荒谬性，并担忧受访企业上一次接触问卷时仍使用"AI"概念，新措辞可能造成理解偏差。文章还展示了作者以GPT-6重新生成数据的过程，呼应其对AI工具迭代演进的持续追踪。
+
+---
+
+## 26. Linux 系统调用表网站与 API 更新
+
+**原文标题**: Show HN: I've updated my Linux System Call website and API
+
+**原文链接**: [https://syscall.sh/](https://syscall.sh/)
+
+该网站汇总了 27 种 CPU 架构（x64、arm64、riscv64、ppc64、s390x 等）的 Linux 系统调用表，覆盖 Linux 3.3 至 7.3 版本，记录每个调用的编号、参数与寄存器分配。同时提供各架构的调用约定，包括进入内核的指令（如 x64 的 syscall、arm64 的 svc、ia32 的 int 0x80 等）及参数到寄存器的映射。每种架构数据均可下载为 JSON，包含完整版本历史，标注每个调用的引入版本（since）与移除版本（removed_in），已移除条目仍可查看。网站提供 REST API，支持查询任意内核版本的调用列表及版本间差异。数据直接由内核源码生成：遍历各主线的 syscall 表与 SYSCALL_DEFINE 宏提取编号，确保与内核实际分发一致；简短描述取自 Linux man pages 项目，io_uring 相关描述取自 liburing，数据变更时网站自动重建。
+
+---
+
+## 27. 欧洲超市冷冻设备再遭疑似网络攻击
+
+**原文标题**: Supermarket freezers across Europe hit by second suspected cyber-attack
+
+**原文链接**: [https://www.theguardian.com/world/2026/nov/02/supermarket-freezers-across-europe-hit-by-second-suspected-cyber-attack](https://www.theguardian.com/world/2026/nov/02/supermarket-freezers-across-europe-hit-by-second-suspected-cyber-attack)
+
+继上月法国超市遭袭后，比利时、爱沙尼亚、爱尔兰、芬兰、卢森堡、荷兰、瑞典七国超市制冷系统再遭网络攻击，部分设备温度一夜飙升至50°C。瑞典ICA、Coop，比利时Ahold Delhaize、Carrefour、Intermarché及宜家等确认遭袭，被迫丢弃大量生鲜冷冻食品。分析人士指出，此次攻击无勒索要求，属破坏性 sabotage，零售业因大量冷藏控制器暴露于网络而成为目标。此前法国袭击中，黑客主要利用丹麦丹佛斯公司制冷控制器的安全漏洞远程篡改设置，造成数千万欧元损失；丹佛斯称早已建议客户更新补丁，但法国遭袭后仍有数千台控制器可联网访问。欧盟农业委员汉森称此为"蓄意破坏食品供应链的企图"。瑞典网络安全中心承认国内存在大量未更新工业设备。爱沙尼亚Kitman公司称数分钟内即响应，未造成重大损失。法国检方已对上月袭击展开调查，但尚无组织认领责任。专家警告，攻击手段成本低、破坏立效，漏洞不修复则袭击将持续。
+
+---
+
+## 28. GPT-Rosalind-6 系统卡补充说明
+
+**原文标题**: GPT-Rosalind-6 System Card Addendum
+
+**原文链接**: [https://deploymentsafety.openai.com/gpt-rosalind-6](https://deploymentsafety.openai.com/gpt-rosalind-6)
+
+GPT-Rosalind-6是一款面向生物学、药物发现及转化医学的前沿推理模型，以GPT-Rosalind-6 Research形式向合格科学家、研究机构、企业及政府伙伴提供。该模型在双重用途生物查询上的拒绝率较低，但仅通过可信访问渠道开放，需审查申请方的使用目的、安全控制及治理实践。Rosalind-6采用与旗舰推理模型GPT-6 Astra相同的权重，旨在支持合法生物研究（含部分双重用途主题），同时保留对生物武器化及其他安全风险的拒绝机制。依据准备框架，该模型在生物与化学领域被评为"高"能力（低于"关键"阈值），在网络安全领域定为"关键"级别，在AI自我提升领域低于"高"。本补充说明详述了该模型在生物能力评估、额外安全与对齐测试及部署保障措施方面的结果，并附有GPT-Rosalind-5.5的对比数据。读者应将其与GPT-6 Astra系统卡配合阅读，以全面了解父模型的通用能力与安全评估。
+
+---
+
+## 29. 美国邮政削减乡村邮件服务，农村选票逾期拒收率激增
+
+**原文标题**: Ballot Rejections Have Soared in Rural Counties as USPS Reduces Mail Service
+
+**原文链接**: [https://www.propublica.org/article/mail-ballot-delays-postal-service-midterms](https://www.propublica.org/article/mail-ballot-delays-postal-service-midterms)
+
+ProPublica调查发现，美国邮政（USPS）的"区域运输优化"（RTO）成本削减计划导致2026年中期选举期间农村邮寄选票逾期拒收率飙升。该计划将距处理中心50英里以上地区的取件频率从每天两次降至一次，使投递和邮戳时间延后至少一天，目前覆盖近2万个邮编区。
+
+在华盛顿、加州、俄亥俄、北卡和俄勒冈五州，受服务削减影响的县逾期拒收率较2022年翻倍至翻三倍，城市区则未出现类似激增。仅华盛顿东部11个农村县，逾期选票近2000张，远超2022年的600张。布鲁金斯学会预测若趋势延续，11月3日大选或面临数万张选票被拒，至少七个关键国会选区受波及。值得注意的是，受影响区域多为共和党农村选区，华盛顿州务卿霍布斯批评USPS的削减客观上损害了本党选民投票权。
+
+USPS表示已为11月大选启动"特别措施"，包括提前10天对选票分拣加急。但选举官员协会及专家指出，此前试点中已因指令传达不清造成延误，无法保证零失误。此外，USPS未充分向选民说明服务变更将影响邮戳时间和投递速度，引发广泛批评。
+
+---
+
+## 30. Polyend 发布 Tracker 固件源代码
+
+**原文标题**: Polyend releases the Tracker firmware source code
+
+**原文链接**: [https://polyend.com/whats-up/tracker-the-biggest-update-yet/](https://polyend.com/whats-up/tracker-the-biggest-update-yet/)
+
+摘要：模块化合成器与乐器制造商 Polyend 宣布开放其 Tracker 产品的固件源代码。Tracker 是 Polyend 推出的一款融合模块化合成器与 DJ 控制功能的创新设备，此次源代码的公开意味着开发者和硬件爱好者将能够深入查看 Tracker 内部固件的具体实现，并在此基础上进行定制开发、功能扩展或二次创新。这一举措体现了 Polyend 对开源社区和极客文化的开放态度，有望激发第三方开发者围绕 Tracker 平台构建更多插件、音频效果及交互功能，进一步丰富其生态系统。对于关注电子音乐制作与硬件 DIY 的群体而言，此举具有积极的参考意义。
+
+---
+
