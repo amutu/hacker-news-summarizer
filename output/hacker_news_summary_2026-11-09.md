@@ -1,0 +1,304 @@
+# Hacker News 热门文章摘要 (2026-11-09)
+
+这是今日 [Hacker News](https://news.ycombinator.com/) 上最热门的文章摘要。
+
+## 1. 高盛限制交易员和银行家使用Claude Code
+
+**原文标题**: Goldman Sachs Is Pulling Claude Code from Its Bankers and Traders
+
+**原文链接**: [https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers](https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers)
+
+摘要：高盛十月份更新内部指引，将Anthropic的Claude Code和微软GitHub Copilot的使用权限限定为约1.2万名工程师，交易员、策略师和银行家被排除在外。此前这些非技术人员曾用AI工具监控客户交易流向、构建市场模型并生成报告，此次限制引发部分交易员不满。值得注意的是，高盛首席信息官Argenti在七月还曾公开赞扬非技术员工的"氛围编程"实践，仅三个月后即收回权限。今年四月，高盛已因合同条款限制香港银行家使用Claude。限制原因涉及三方面：一是交易员编写的脚本未经代码审查和测试便投入日常使用，存在操作风险；二是银行须维护不同业务部门间的信息隔离，AI生成代码难以纳入合规管控；三是按token计费的代理工具推高了成本。与此同时，高盛与摩根士丹利是Anthropic IPO的主承销商，交易员正面临"推销自己已无权使用的产品"的尴尬。巴克利则走向另一方向——既向工程师开放Claude Code，又借此削减5000个岗位。文章评论认为，限制未审查代码进入交易台是正确之举，但仅以指引更新一刀切收回权限而不提供替代方案，忽视了交易员积累的有效使用场景，管理层应在发放AI代理工具前明确代码归属与责任机制。
+
+---
+
+## 2. 我如何应对AI脑力透支
+
+**原文标题**: How I Fight AI Brain Fry
+
+**原文链接**: [https://sergeykuhne.com/blog/fighting-ai-brain-fry](https://sergeykuhne.com/blog/fighting-ai-brain-fry)
+
+本文分享了一位开发者使用AI编程工具（如Claude Code）时，应对多任务并行导致"大脑过载"的实践经验。当AI回复需要追问或拆分任务时，终端会迅速产生数十个线程，上下文在脑中无法承载，注意力随之崩溃。作者将工作组织为优先级队列，核心解决"排序"与"上下文"两大难题。队列以git为载体，每个任务是一个markdown文件，状态以提交快照保存，信息不依赖聊天窗口或个人记忆。AI代理在循环中自动完成研究、构建、测试与部署验证；涉及敏感代码时在分支上操作并请求人工批准，生产部署始终由人决定。需人工判断的事项汇总至"所有者收件箱"，由脚本生成优先级清单。阅读界面基于Claude Artifact从git实时重建，一个链接即可查看变更全貌，裁决回写git。最关键的机制是"关闭"：处理完一项即归还队列，上下文随之释放，才能专注下一项。作者坦言仍会疲惫，但不再分心迷失。当前挑战在于上下文加载效率和避免任务因等待裁决陷入死循环，系统仍在持续演进。
+
+---
+
+## 3. Dux：免费开源的 Wayland 桌面 Shell，集成文件管理器与主题定制
+
+**原文标题**: Dux: Free, open-source Wayland desktop shell with file manager and theming
+
+**原文链接**: [https://duxlabs.dev/](https://duxlabs.dev/)
+
+Dux 是一款免费开源的 Wayland 桌面 Shell，兼容 niri、Hyprland、Sway、Miracle 等主流 Wayland 窗口管理器。最新版本 DMS 2.1 Stormborn 带来全新系统监控、视频壁纸、媒体播放器改版及界面密度优化。Dux 提供完整桌面生态：Dux Modular Shell 支持动态主题与流畅动画；Dux Files 为键盘优先的文件管理器，支持标签页、分屏、搜索与网络共享；Dux GOP 实现 CPU、内存、GPU 及网络监控；Dux Greeter 提供美观登录界面；Dux Search 支持高速文件检索；Dux Calendar 兼容 Google、iCloud、CalDAV 等日历服务。核心亮点在于"一主题通百应用"——自动为 GTK3、GTK4、Qt 应用及终端、编辑器生成统一配色，并基于自研 dank16 算法构建完整 16 色终端调色板，兼顾明暗模式与对比度。此外，Dux 提供 Zirconium（Fedora + niri）及 Fedora Miracle Spin 等预配置方案，开箱即用。项目完全免费，由 115 余名 Ko-fi 支持者及代码贡献者共同维持运营。
+
+---
+
+## 4. Outlook.com 悄然拒收未配置 DMARC 域名的邮件
+
+**原文标题**: Outlook.com Is Quietly Rejecting Email from Domains Without DMARC
+
+**原文链接**: [https://mailroute.net/blog/outlook-rejecting-email-without-dmarc](https://mailroute.net/blog/outlook-rejecting-email-without-dmarc)
+
+自2026年11月5日起，微软旗下Outlook.com、Hotmail、Live及MSN邮箱开始静默拒收未发布DMARC记录域名的部分邮件（退信码550 5.7.1）。与先前仅针对日发超5000封的大发件人不同，此次波及所有低量发送者，且微软未作任何公告。该问题极具隐蔽性：邮件并非全部退回，而是随机拒收，发送方易误判为偶发故障而忽略，收件人则完全不知情，对依赖邮件沟通的企业而言，账单、确认函等关键信息可能悄然丢失。修复仅需在DNS中添加一条TXT记录（_dmarc，值：v=DMARC1; p=none）。p=none为安全起步策略，仅声明域名启用DMARC并请求报告，不改变其他收件方的处理逻辑，但前提是SPF或DKIM至少一项通过域名对齐验证。经MailRoute中继发送的邮件已自动满足SPF与DKIM条件，添加DMARC记录即可完全解决。当前各主流邮箱正将DMARC从"最佳实践"推为交付底线，p=none也是迈向p=reject、有效防范域名仿冒与钓鱼攻击的第一步。
+
+---
+
+## 5. Declarative Dragging
+
+**原文标题**: Declarative Dragging
+
+**原文链接**: [https://declarative-dragging.github.io/](https://declarative-dragging.github.io/)
+
+文章之前已经处理过
+
+---
+
+## 6. Llama-modchip：64GB内存运行284B DeepSeek，无需GPU
+
+**原文标题**: Llama-modchip: 284B DeepSeek on 64GB RAM, no GPU
+
+**原文链接**: [https://github.com/synchopate/llama-modchip](https://github.com/synchopate/llama-modchip)
+
+llama-modchip（v2.4.0）是一套面向纯CPU推理的ggml/llama.cpp补丁与量化工具集，可在16–64GB内存上运行284B及30B混合专家（MoE）大模型，完全无需GPU。核心突破：通过Fractal-64量化将DeepSeek-V4-Flash（284.33B总参/13.17B激活）从76.87 GiB压缩至56.56 GiB（1.71 bpw），配合256K上下文KV缓存（57.61 GiB VmRSS）锁定64GB内存，实现零交换运行。16核Zen 5上prefill达44.36 tok/s（+77%），decode 9–14.7 tok/s，输出质量与原版完全一致（余弦相似度1.00000）。30B Nemotron在16–32GB内存上达25–60 tok/s，Threadripper 8通道平台达111 tok/s。关键技术包括AVX-512四级缓存多列tiling、非临时MoE流式加载防L3驱逐、Stockfish-PVS推测解码（13ms KV恢复）、O(1)回滚修复。支持AMD Zen 5/4、Apple M4 Max、AWS Graviton、Windows混合GPU等架构，提供Linux/macOS/Windows跨平台一键部署，兼容Qwen3、Nemotron-H-8B等多款模型。
+
+---
+
+## 7. RAM Altman：Linux脚本每日向Sam Altman发送你电脑闲置内存量邮件
+
+**原文标题**: RAM Altman: Linux Script Emails Sam Altman Daily How Much Unused RAM in Your PC
+
+**原文链接**: [https://respawnfirst.com/linux-script-emails-sam-altman-unused-ram-ram-altman/](https://respawnfirst.com/linux-script-emails-sam-altman-unused-ram-ram-altman/)
+
+摘要：因Sam Altman此前声称OpenAI的内存需求优先于消费电子产品，引发全网嘲讽。开源开发者Iain Kay顺势创建了一款名为"Ram Altman"的Linux BASH脚本，用于监控用户电脑闲置内存。当可用内存超过总量10%时，脚本会从预设的讽刺模板中选取一条"邮件"发往Sam Altman，例如："别紧张，我桌上有8.6GiB内存没在数据中心，它今天没有计划，负责任地囤着。"为防仓库被滥用作邮件伪造或DDoS工具，作者默认未配置邮件服务器。项目同时提供--dry-run标志和本地测试套件，允许用户预览生成消息而无需实际发送。FAQ页面也充满幽默，如"这能缓解DRAM短缺吗？""不能。""低于10%说明你的机器已经够惨了。"该脚本迅速走红，最终促使Altman在X上发文澄清，承认言论被断章取义，并表示希望所有人都能获得充足资源。
+
+---
+
+## 8. 英伟达董事会就黄仁勋遭外国情报针对一事启动独立调查
+
+**原文标题**: Nvidia Board of Directors Is Investigating Jensen Huang
+
+**原文链接**: [https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors](https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors)
+
+2026年11月8日，英伟达（NVIDIA）董事会发表正式声明，宣布启动一项独立调查。调查起因是近期有报道称，公司创始人兼首席执行官黄仁勋（Jensen Huang）已成为外国情报活动的目标。此次调查由独立董事委员会牵头，并聘请外部独立律师协助监督。董事会强调，美国国家安全与经济安全是英伟达及全体股东利益的首要考量。目前，董事会尚无证据表明国家安全或公司商业机密遭到泄露，但仍将全面审查所有可得信息，确保万无一失。黄仁勋本人表示完全支持此次审查，并承诺全力配合调查工作。董事会同时表明，对黄仁勋及其领导团队保持充分信心，并将在适当时机向公众发布后续进展。
+
+---
+
+## 9. 写作作为思维工具
+
+**原文标题**: Writing as a thinking tool
+
+**原文链接**: [http://muratbuffalo.blogspot.com/2026/11/writing-as-thinking-tool.html](http://muratbuffalo.blogspot.com/2026/11/writing-as-thinking-tool.html)
+
+文章从作者中学时代用思维导图记笔记的经历切入，提出核心观点：写作不是记录，而是思考本身。作者以图灵机与有限自动机的经典比喻说明写作的力量——失去纸笔，人便退化为有限自动机；拥有写作，便获得图灵机般的计算能力。写作如同"外部内存"，让人能处理更大的问题，审稿、自由写作中常因此涌现新联系。在LLM时代，AI虽博览群书，却不知你脑中尚未成形的直觉，依赖AI生成文本等于放弃思考，而坚持自行写作反成日益扩大的比较优势。最后给出五条写作建议：一是无约束大量产出初稿，不自我批判；二是以陌生读者视角严格删改，大刀阔斧；三是追求简洁明了，复杂往往是思维不清的掩护；四是为自我而写，不以外部反馈驱动；五是固定时间写作，以习惯替代灵感。
+
+---
+
+## 10. Windows 版 A Little Snitch
+
+**原文标题**: A Little Snitch for Windows
+
+**原文链接**: [https://packethound.app/](https://packethound.app/)
+
+Windows 版 A Little Snitch 是一款轻量级网络监控工具，核心理念为"问一次，记一辈子"。当某款应用程序首次尝试建立网络连接时，该工具会弹出提示窗口，清晰展示应用的开发者信息、目标连接地址及所用端口号。用户可据此选择"允许"或"阻止"，并支持多种粒度：既可对整个应用统一设定策略，也可针对特定 IP 地址、主机名或域名分别操作。规则的生效范围同样灵活——可选择永久生效，也可仅在当前应用运行期间有效，应用退出后自动恢复。这种一次授权、长期记忆的机制，既避免了反复弹窗的打扰，又能帮助用户精准掌控各软件的网络行为，是 Windows 平台上管理应用网络权限的便捷利器。
+
+---
+
+## 11. 被撕毁文件的重建
+
+**原文标题**: The Reconstruction of Torn Documents
+
+**原文链接**: [https://www.bundesarchiv.de/en/stasi-records-archive/the-reconstruction-of-torn-documents/](https://www.bundesarchiv.de/en/stasi-records-archive/the-reconstruction-of-torn-documents/)
+
+1989至1990年东德和平革命期间，斯塔西（国家安全部）自行销毁大量文件，约16,000袋手撕碎片（共4至6亿片，折合4000万至5500万页）得以保留。2007年德国启动计算机辅助虚拟重建试点，由弗劳恩霍夫IPK研究所开发e-Puzzler软件，但始终未能达到80%自动化重建目标，项目于2014年停止扫描、2016年终止组装，累计耗资约650万欧元。2021年斯塔西档案局解散，职能移交联邦档案馆，旧合同被终止，目前正编制新需求清单并开展市场调研以寻找技术供应商。手工重建 meanwhile 持续推进，已对7,700袋完成详细检查，主要处理撕为两半或四份的页面；虚拟重建则按单位重要性、档案补缺及地区历史等标准选取材料。已重建文件涉及对反对派领袖福斯、哈维曼及作家海姆的监控迫害、东德体育兴奋剂事件、1961年边境管控、RAF恐怖分子迈尔-维特藏匿案，以及1980年代秘密告密者"施äfer"在异议群体中活动等重要档案，为受害者平反和追究历史责任提供了关键证据。
+
+---
+
+## 12. 我不认可 Deno 的安全模型（2024）
+
+**原文标题**: I'm not a fan of Deno's security model (2024)
+
+**原文链接**: [https://goldstein.lol/posts/deno-security/](https://goldstein.lol/posts/deno-security/)
+
+本文作者批评 Deno 运行时的权限安全模型，认为其给人虚假的安全感。Deno 通过过滤标准库调用来限制代码对系统资源的访问，但这本质上是在应用层模拟操作系统应做的沙箱隔离，一旦需要执行外部进程便形同虚设。作者指出两大核心问题：一是权限提示直接打印在终端 stdout 上，而恶意代码可操纵终端颜色、欺骗用户输入，等于在攻击者控制的界面上询问敏感信息；二是"--allow-run=uname"看似限制执行特定命令，实则可通过篡改 PATH 环境变量指向同名恶意程序，或更致命地通过设置 LD_PRELOAD 让动态链接器加载恶意共享库，实现完全沙箱逃逸。即便修补了 PATH 问题，类似 VIMINIT 等环境变量仍可导致任意代码执行。作者认为，逐个修补具体漏洞不可持续，根本方案是对所有被执行的代码进行真正的进程级沙箱隔离，例如使用 bubblewrap。他总结道，Deno 进程并非真正沙箱化，只是"假装"沙箱化了，这比毫无保护更危险，因为它会诱导用户在不具备真正隔离的条件下运行不可信代码。文章最后呼吁读者不要因此骚扰 Deno 开发团队，技术分歧应以理性沟通解决。
+
+---
+
+## 13. 面向工程师的蔬菜种植指南
+
+**原文标题**: Show HN: Vegetable Gardening for Engineers
+
+**原文链接**: [https://jrcpl.us/contrib/2020/gardening-for-engineers/](https://jrcpl.us/contrib/2020/gardening-for-engineers/)
+
+摘要：本文由John Chang撰写，作者因不满市面种植书籍细节不足、社交媒体内容浮夸，遂整合农业院校推广资料、商业种植指南及室内栽培技术，为工程师群体编写了这份数据驱动的蔬菜种植文档。内容聚焦城市公寓中的室内与阳台种植，涵盖水培和容器栽培，暂不涉及菜畦、堆肥、水产养殖等。全文分四部分：第一部分讲解核心科学概念，包括光、温度、营养、生长介质、水分及病虫害等环境参数的耦合关系，阐明光合作用、呼吸作用与蒸腾作用原理，重点介绍DLI（日射光积分）、PPFD、EC（电导率）、pH等关键量化指标及测量方法；第二部分提供多种蔬菜的种植参数数据表，辅助选种与规划；第三部分汇编主流种植系统与技术资源链接；第四部分分析市场种植的经济性。文章强调以工程思维管理种植，通过精确调控光照、温湿度、营养浓度等变量实现高效生产，并推荐了平价测量设备与替代方案，适合技术爱好者入门参考。
+
+---
+
+## 14. 爱德华·霍珀经典画作《夜游者》背后的故事
+
+**原文标题**: Edward Hopper's Iconic Painting, "Nighthawks
+
+**原文链接**: [https://lithub.com/the-story-behind-edward-hoppers-iconic-painting-nighthawks/](https://lithub.com/the-story-behind-edward-hoppers-iconic-painting-nighthawks/)
+
+1941年底，爱德华·霍珀着手创作《夜游者》。他多次前往曼哈顿格林尼治大道写生，灵感可能源自已消失的"克劳福德午餐店"，并融合多个餐厅特征，如借鉴平铁楼玻璃幕墙的弧形窗。霍珀以自己和妻子乔为模特，金发调酒师则为虚构形象。画作于1942年1月完成，正值珍珠港事件后美国卷入二战、纽约面临空袭与宵禁的紧张时刻。霍珀在战时焦虑中近乎偏执地专注创作，以画中荧光 diner 对抗城市黑暗，象征民族坚韧精神。该画以极简手法呈现深夜餐馆中三位孤立人物，通过光与暗的强烈对比营造出"鱼缸"般的封闭视觉。评论界常将画与孤独、现代疏离联系，霍珀本人承认潜意识中"在画大城市的孤独"，却反对将其作为唯一标签。文章还追溯了画作与梵高、德加及超现实主义画派的渊源，指出《夜游者》将爱默生式个人主义植入当代都市空间，以冷静内敛的方式呈现美国文化中英雄式的孤独与自我依靠，成为美国艺术的标志性图像。
+
+---
+
+## 15. 验证码类型与破解方法实用手册
+
+**原文标题**: A field guide to CAPTCHA types and how they break
+
+**原文链接**: [https://github.com/vsmutok/FuckCaptcha](https://github.com/vsmutok/FuckCaptcha)
+
+摘要：FuckCaptcha 是一个开源的验证码（CAPTCHA）参考项目，旨在为研究人员、开发者及爱好者提供一份结构清晰、易于查阅的验证码知识手册，适用于教育与授权研究场景。项目以交互式指南形式，将当前主流验证码系统按类别整理：文本类（如 reCAPTCHA v2/v3、hCaptcha、Cloudflare、Arkose Labs 等三十余种）、音频类（如 Altcha、ATB、Prosopo 等）及滑块类（如 BotDetect、TikTok、Binance 等），涵盖各类型的概述、关联工具、参考来源与局限性对比。项目还设有 1 至 5 级的难度参考标尺，帮助用户快速判断各验证码的应对复杂度。结构上，代码库包含独立参考页面、工具与服务索引、研究资源及图示资产，便于扩展维护。项目特别强调合法合规，要求使用者仅在获得授权的环境中测试，遵守相关法规与平台条款，并鼓励社区贡献。总体而言，该指南在快速演变的验证码生态中，提供了一个持续更新、可引用、注重透明来源的实用资源。
+
+---
+
+## 16. 告别Claude，拥抱Pi
+
+**原文标题**: Goodbye Claude, hello Pi
+
+**原文链接**: [https://caleb.software/posts/claude-to-pi.html](https://caleb.software/posts/claude-to-pi.html)
+
+作者作为Claude Code的长期用户，因日积月累的不满最终将主力开发工具迁移至开源编码工具Pi。他列举了多项痛点：CLAUDE.md与业界AGENTS.md格式不互通，用户被迫手动复制或建软链；VSCode集成仅允许单会话连接，多标签页无法同时获取选区上下文，该问题自2025年底上报后竟以"重复"关闭；官方GUI扩展自身缺陷众多，半数斜杠命令失效、子代理输出混杂难读。与此同时，Anthropic以极快速度堆叠动态工作流、代理团队等新功能，年内244次更新超四分之三改动了系统提示或工具描述，却鲜少顾及稳定性与用户体验。Bash工具描述近3000 tokens充斥冗余的git和PR指令，作者估算仅精简此部分每年即可节省数百万美元推理成本。他认为Claude Code缺乏清晰的产品愿景，高层缺少敢于说"不"的人，导致功能不断膨胀而品质持续下滑。相比之下，Pi以极简、稳定、高度可定制取胜，作者仅用20分钟便为其写好了多标签页支持扩展，迁移数日后体验顺畅。他鼓励受同样困扰的用户尝试开源替代方案。
+
+---
+
+## 17. 为视障母亲的按键手机移植Android 16
+
+**原文标题**: Porting Android 16 to my blind mother's keypad phone
+
+**原文链接**: [https://z1x.us/blog/four-hundred-bucks-of-e-waste](https://z1x.us/blog/four-hundred-bucks-of-e-waste)
+
+作者为视障母亲从报废的诺基亚1280换购二手Kapsys SmartVision3按键手机（Android 11，联发科Helio P60，4GB内存，内核4.14），但该设备性能极弱、系统臃肿，厂商承诺的更新远未兑现。作者决定刷入LineageOS 23.2（Android 16 GSI），却陷入反复重启至recovery的死循环。排查中发现Kapsys通过修改libinput.so将按键映射为TalkBack指令，无法简单迁移；同时遭遇mtkclient无法进入BROM模式、vbmeta签名校验失败、内核丢弃关键日志等难题。作者通宵尝试刷机、备份、分析expdb崩溃日志，最终凌晨一点通过Kapsys官方更新服务器恢复出厂固件，放弃移植。文中还揭示了DSU（动态系统更新）这一更安全的替代方案——可将测试系统以文件形式安装，崩溃后一键回退至原系统。全文以第一人称记录了一位非专业开发者在老旧设备上的挣扎，兼具硬核技术细节与对母亲深沉而笨拙的关爱。
+
+---
+
+## 18. 用图表证明方程（一）
+
+**原文标题**: How to prove equations using diagrams, part 1
+
+**原文链接**: [https://www.epatters.org/post/e-graphs-1/](https://www.epatters.org/post/e-graphs-1/)
+
+本文探讨用图表证明方程，为等式图（e-graph）计算建立范畴论语义。等式图维护表达式树上的相容关系，近年因等式饱和算法备受关注。作者以有限生成范畴为目标，引入"初始函子"作为核心概念来刻画合法图表操作。初始函子等价于满足以下条件的函子：保持任意范畴中的极限；或使每个目标对象的相对切片非空且连通。其关键性质是保持方程解集不变。文中将图表操作归结为操作引入、相容约简、方程引入三类基本推理规则，并以两个实例展示机械化推理：一是证明共享边的两个交换方阵可粘贴为交换矩形；二是在满足 f³=id=f⁵ 的幺半群中，通过迭代相容约简推出 f=id，即该幺半群退化为平凡幺半群。本文为系列首篇，仅处理无额外结构的范畴（对应仅含一元函数符号），后续将推广至有限积范畴以恢复等式图的标准设置。
+
+---
+
+## 19. 在 Linux 上通过 CP/M 模拟器运行 Zork 1（2021）
+
+**原文标题**: Playing Zork 1 on a CP/M emulator on Linux (2021)
+
+**原文链接**: [https://kevinboone.me/cpmzork.html](https://kevinboone.me/cpmzork.html)
+
+摘要：本文介绍如何在 Linux 上利用 z80pack Z80 模拟器运行 CP/M 操作系统，并进一步在其中运行经典文字冒险游戏 Zork 1。作者假设读者熟悉 Linux 命令行操作。步骤包括：从源码编译 z80pack 核心与辅助工具，以及安装用于管理 CP/M 磁盘镜像的 cpmtools 套件。磁盘配置方面，z80pack 通过镜像文件模拟物理磁盘，默认在 ./disks 目录下查找驱动设备；需将 CP/M 3 系统盘设为 A:、B: 区，并可用 mkfs.cpm 创建 4MB 的 I: 区硬盘镜像。Zork 1 由 ZORK1.COM（程序）和 ZORK1.DAT（z-machine 数据）两个文件组成，通过 cpmcp 命令复制至 CP/M 磁盘镜像的用户区。运行时需将终端回退键设置为 Ctrl-H（ASCII 8）以适配 CP/M，并执行 stty erase ^H 使该设置在 Linux 终端全局生效，随后启动 cpmsim，切换至 I: 区输入 zork1 即可开始游戏。文章末尾还讨论了 CP/M 上其他经典软件（如 WordStar、Turbo Pascal）的运行挑战，指出这些屏幕类应用涉及终端模拟的复杂问题，建议配置为 VT100 或 VT52 终端以获得较佳效果。
+
+---
+
+## 20. What I run on my $10 USD OpenStick homelab
+
+**原文标题**: What I run on my $10 USD OpenStick homelab
+
+**原文链接**: [https://blog.bosscher.ch/posts/openstick/](https://blog.bosscher.ch/posts/openstick/)
+
+文章之前已经处理过
+
+---
+
+## 21. 硅谷承诺AI将治愈疾病，制药企业CEO并不买账
+
+**原文标题**: Silicon Valley Promises AI Will Cure Disease. Drugmaker CEOs Aren't Buying It
+
+**原文链接**: [https://www.wsj.com/tech/ai/silicon-valley-promises-ai-will-cure-disease-drugmaker-ceos-arent-buying-it-5218511c](https://www.wsj.com/tech/ai/silicon-valley-promises-ai-will-cure-disease-drugmaker-ceos-arent-buying-it-5218511c)
+
+无法访问该文章链接
+
+---
+
+## 22. 面向微控制器的JIT位图文字渲染
+
+**原文标题**: JIT bitmap text rendering for microcontrollers
+
+**原文链接**: [https://linebender.org/blog/jit-bitmap-text/](https://linebender.org/blog/jit-bitmap-text/)
+
+摘要：本文介绍在RP2350微控制器上通过即时编译技术实现极速位图文字渲染的方案，出自作者Raph Levien的vic-2350项目（基于RP2350的80年代家用电脑复刻）。核心思路是在每帧扫描前将字符串即时编译为高度优化的ARM Thumb汇编。字体以紧凑位图存储，一行像素一次32位加载即可读取；字形元数据（位置、宽度、左间距、步进）打包进单个32位整数。JIT代码通过指令重排消除流水线延迟，将单字形成本降至3周期，整个渲染循环仅23周期/字形。渲染采用扫描线逐行填充模式，配合双缓冲显示列表，文字先写入1位/像素中间缓冲，再以1.75周期/像素扩展为565格式RGB。字距调整采用"点积字距"方案：每字形附带左右两侧位向量，按位与后做popcount即得字距偏移，每字形仅需2字节。性能上，整段文字的JIT编译加执行仅占RP2350单核吞吐量的2.6%，编译本身耗时不足100µs。项目使用作者自创的symbolasm语言编写，兼顾了极致性能与可维护性。
+
+---
+
+## 23. Claude Code"不再询问"功能致 1,122 个公开 GitHub 文件泄露密码
+
+**原文标题**: Claude Code's "Don't Ask Again" exposes passwords in 1,122 public GitHub files
+
+**原文链接**: [https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again](https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again)
+
+无法访问该文章链接
+
+---
+
+## 24. 智能体记忆需要它的 OpenTelemetry 时刻
+
+**原文标题**: Agent memory needs its OpenTelemetry moment
+
+**原文链接**: [https://www.lorekit.io/blog/open-agent-memory-format](https://www.lorekit.io/blog/open-agent-memory-format)
+
+当前，智能体记忆格式严重碎片化：AGENTS.md、Anthropic记忆工具、Copilot记忆、MCP知识图谱等互不兼容。作者指出，问题不在缺少工具，而在缺少共识。文章以OpenTelemetry为镜鉴：2019年前可观测性领域同样各厂商格式不通，最终通过统一数据模型、语义约定、协议与参考实现完成整合。智能体记忆正处于类似阶段，且时机恰好——格式尚年轻可改，相关标准已归入Linux基金会。作者梳理了十种记忆形态，提出共享规范需回答四个核心问题：记忆在哪有效、身份如何确定、内容是什么、何时失效，并须同时解决跨厂商导出与多工具实时共享两大难题。规范应涵盖约定层（地址层级、命名空间）、契约层（统一MCP操作）与一致性测试，而存储、排序、UI等留给工具竞争。作者回应了提示注入安全、规范中立性等质疑，列出地址层级、遗忘策略等开放问题，呼吁各工具开发者公开协作，共同推动标准落地。
+
+---
+
+## 25. Clj.rs：基于 Rust 实现的 Clojure 方言
+
+**原文标题**: Clj.rs – a Clojure dialect implemented in Rust
+
+**原文链接**: [https://clj.rs/](https://clj.rs/)
+
+Clj.rs 是一个面向 Rust 生态系统的实验性 Clojure 方言，旨在构建一个功能完备的 Lisp 运行时。其核心特性包括持久化数据结构、宿主宏系统及原生互操作能力，支持编译与解释两种执行模式，定位为 AI 代理编程（agentic coding）的运行时环境。项目已在 crates.io 发布，可通过 Rust 包管理器直接获取；同时提供浏览器在线 REPL 供用户即时体验，源码托管于 GitHub（csm/clojurust），文档与语言参考发布在 docs.clj.rs，并设有开发日志记录项目进展。目前项目尚处早期阶段，功能有待完善，使用者需预期遇到不稳定之处。
+
+---
+
+## 26. 热门应用广告成警方监控用户的强力工具
+
+**原文标题**: Ads in Popular Apps Give Police a Powerful Tool to Spy on Users
+
+**原文链接**: [https://www.bloomberg.com/features/2026-police-phone-tracking-advertising-tech/](https://www.bloomberg.com/features/2026-police-phone-tracking-advertising-tech/)
+
+无法访问该文章链接。
+
+---
+
+## 27. 彼得化
+
+**原文标题**: Petered
+
+**原文链接**: [https://aworkinglibrary.com/writing/petered](https://aworkinglibrary.com/writing/petered)
+
+本文从彼得原理切入，指出被晋升至能力天花板者并非如常想般稳定留任，而是深陷职业压力。援引Gläßel与Scharpf在《独裁体制中的仕途》中的论断，作者论证这些"被彼得化者"为保住地位，往往承接高风险或不道德任务，甚至通过告密、排挤上级强行上位，反成他人之威胁。作者将此与Graeber"狗屁工作"理论勾连，揭示诸多管理岗实为替上层做脏活的"封建扈从"，被彼得化者由此沦为真正的冒名顶替者，以模糊与忙碌掩饰无能。文章进而批判"冒名顶替综合征"：其前身"冒名顶替现象"本为可观察的社会事实，被医学化为需个体治疗的"综合征"后，责任从施害的制度悄然转嫁至受害者；而这一概念的流行，或许恰恰遮蔽了现实中真正的冒名顶替者，将人们的目光从外部结构性问题引向内心的自我怀疑。
+
+---
+
+## 28. The Gordon Gekko effect: The role of culture in the financial industry (2016) [pdf]
+
+**原文标题**: The Gordon Gekko effect: The role of culture in the financial industry (2016) [pdf]
+
+**原文链接**: [https://www.newyorkfed.org/medialibrary/media/research/epr/2016/epr_2016_gordon-gekko-effect_lo.pdf](https://www.newyorkfed.org/medialibrary/media/research/epr/2016/epr_2016_gordon-gekko-effect_lo.pdf)
+
+文章之前已经处理过
+
+---
+
+## 29. 《疑犯追踪》
+
+**原文标题**: Person of Interest
+
+**原文链接**: [https://krthr.co/person-of-interest/](https://krthr.co/person-of-interest/)
+
+作者近日重看2011年首播的美剧《疑犯追踪》，欲罢不能。这部播出已逾十五年的剧集非但没有过时，反而在当下显得尤为应时。追剧过程唤起了作者对2010年代初初次踏入科技圈的珍贵回忆——彼时活跃的在线论坛与社区、SOPA与PIPA立法风波、Megaupload关停事件，以及那个年代互联网独有的氛围。更令作者感慨的是，剧中以"机器"为核心的超级监控系统在当年纯属科幻想象，如今却已近在咫尺，既令人惊叹也略带感伤。总体而言，这次重温充满浓烈的怀旧情绪，而剧集本身也经受住了时间的考验，历久弥新。
+
+---
+
+## 30. SpaceX星舰第15次试飞定于11月13日，计划同时回收助推器与飞船
+
+**原文标题**: Starship Flight 15 on 11/13 plans to catch both booster and ship
+
+**原文链接**: [https://www.spacex.com/launches/starship-flight-15](https://www.spacex.com/launches/starship-flight-15)
+
+摘要：SpaceX宣布星舰（Starship）第15次试飞定于11月13日进行，本次任务的核心目标是同时使用发射塔机械臂捕获超重型（Super Heavy）助推器与星舰飞船，实现两者的同步回收。同时回收两个飞行级段是星舰迈向完全可重复使用火箭的关键里程碑，此前试飞中SpaceX已分别成功验证了助推器与飞船的独立回收能力。若第15次试飞顺利完成双回收，将标志着星舰系统向商业化运营和深空探索任务迈出决定性一步。
+
+---
+
