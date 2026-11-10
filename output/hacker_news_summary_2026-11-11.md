@@ -1,0 +1,304 @@
+# Hacker News 热门文章摘要 (2026-11-11)
+
+这是今日 [Hacker News](https://news.ycombinator.com/) 上最热门的文章摘要。
+
+## 1. .name 域名获豁免保留
+
+**原文标题**: .name Grandfathered
+
+**原文链接**: [https://neil.fraser.name/news/2026/11/10/](https://neil.fraser.name/news/2026/11/10/)
+
+2026年11月10日，Neil Fraser宣布好消息：经过漫长而昂贵的抗争，Verisign正式撤回终止约22,000个.name域名及电子邮件重定向的计划。尽管三级.name域名的新注册将被关闭，但所有现有域名（包括其本人网站）及邮件重定向将无限期保留，获得祖父条款保护。这一胜利源于广泛而坚定的集体努力。Neil逐一感谢了众多参与者：Doytchin率先发起行动；Jim专程飞赴巴厘岛向ICANN当面陈述诉求；Patrik、Troy、Huyen、Keith、Judy、Erik和Ryan撰写了正式的重新审议请求；律师Jan、Flip和Diégo团队向ICANN发起法律挑战；另有Beverly、Stefan、Vaughan、Irv、Pablo等二十余人提交支持函。Neil还特别感谢了ICANN内部勇于对抗官僚体制的个别工作人员，称与自己交谈的每个人都是非凡之人。
+
+---
+
+## 2. 智能家居设备应断网可用
+
+**原文标题**: Smart home devices should work without the internet
+
+**原文链接**: [https://docodethatmatters.com/home-automation-overnight-success/](https://docodethatmatters.com/home-automation-overnight-success/)
+
+摘要：作者坚持一条铁律：家中核心设备必须在断网时正常运行。十年来，他围绕此原则构建了以ESP模块（刷Tasmota固件）、MQTT消息代理和树莓派上Node-RED为核心的本地自动化系统，Alexa等云服务仅作可选入口。文章列出七条基本规则及后期补充的五条，涵盖离线可用、保留传统操作方式、保持灵活性、例外须慎重、云端设备需有日志API、配置集中管理、多入口访问、设备间用MQTT解耦、电池寿命超一年等。全文以两场相隔五年的演讲为主线，展示系统从单一车库降温流程演进为覆盖灯光、灌溉、门锁、空气质量的完整方案，以及从独居到多人共住后对权限与安全的修补。读者反馈进一步印证云端依赖风险：冰箱因App故障无法调温、电视断网无法切换信号源、厂商倒闭后硬件变砖等。实用建议包括采用Zigbee/Z-Wave本地协议、借助LLM为廉价硬件寻找开源固件、通过Tailscale实现远程访问等。作者预告第三场演讲将探讨AI代理控制家居的场景。
+
+---
+
+## 3. Synaptics 专利声明叫停 DisplayLink 驱动开发
+
+**原文标题**: Synaptics patent claims stop work on DisplayLink drivers
+
+**原文链接**: [https://lwn.net/SubscriberLink/1102549/acbc92e00cee3a3f/](https://lwn.net/SubscriberLink/1102549/acbc92e00cee3a3f/)
+
+摘要：Mike Lothian 因 Dell 扩展坞使用的 DisplayLink 芯片在 Linux 上表现不佳，借助 Claude 大模型自主开发了名为 Vino 的 Rust 驱动，并向内核 dri-devel 邮件列表提交补丁，同时联系 Synaptics（2022 年收购 DisplayLink）寻求协助。然而 Synaptics 法务团队未予配合，反而以专利侵权为由发出停止侵权函，列出 125 项专利，要求 Lothian 立即停止开发、撤回所有提交并签署书面确认，否则将索赔 25000 美元且每周递增。Lothian 指出 Synaptics 身为开放发明网络（OIN）成员，理应为开源开发者提供专利保护，但 Synaptics 辩称 DisplayLink 并非 OIN 成员，其技术不受 OIN 许可覆盖。OIN 最终确认其 Linux 系统定义明确排除编解码器组件，无法为 Lothian 提供保护，仅建议其寻求英国律师协助。最终 Lothian 因无力应对诉讼，删除了 GitHub 仓库，Vino 驱动无法提交至内核。文章指出，在 LLM 驱动开发日益普及的当下，软件专利仍对自由软件开发者构成实质性威胁，此次事件暴露了开源社区在专利保护方面的脆弱性。
+
+---
+
+## 4. Val Town 宣布停运
+
+**原文标题**: Val Town is winding down
+
+**原文链接**: [https://blog.val.town/winding-down](https://blog.val.town/winding-down)
+
+Val Town 创始人 Steve Krouse 于 2026 年 11 月 10 日发文宣布，经过四年运营后，Val Town 将逐步关停，原因是在激烈的云计算市场中难以维持竞争力。对于用户迁移，官方指出当前大语言模型已能很好地辅助迁移工作，并提供了迁往 Cloudflare、Vercel、Netlify 和 Render 的指南，用户可通过 support@val.town 或 Discord 获取帮助。财务方面，即日起停止计费，现有订阅免费延续，年度预付费用户将获得部分退款。关停时间表：11 月 10 日停止新注册与套餐升级；12 月 10 日进入只读模式（SQLite 与 Blob 存储除外）；2027 年 1 月 10 日所有服务终止；2 月 1 日项目正式开源。文章末尾，Krouse 向团队成员、投资人 Dan Levine 及所有用户致以感谢，肯定了团队四年来的付出与用户的信任。
+
+---
+
+## 5. Claude 白板、Claude 表格与 Claude 数据
+
+**原文标题**: Claude Whiteboards, Claude Sheets, and Claude Data
+
+**原文链接**: [https://claude.com/resources/articles/sheets-whiteboards-data](https://claude.com/resources/articles/sheets-whiteboards-data)
+
+今日，Anthropic 正式发布 Claude 白板与 Claude 表格（测试版），并将原 Claude 仪表盘正式升级为 Claude 数据，三大功能面向所有付费计划，支持网页、桌面及移动端。白板支持团队与 Claude 实时头脑风暴，Claude 可将讨论转化为含时间线和负责人的协作看板，支持主题分组、转文档或演示文稿，并对接 Lucid、Miro 等工具。表格功能允许 Claude 根据提示词生成含公式、格式和下拉菜单的电子表格，支持逐格编辑与团队共享，可导出为 Excel 或 CSV，并接入 Airtable、Asana、monday.com 等。Claude 数据新增多项能力：连接 Redshift、BigQuery 等数据源；支持"认证查询"统一指标口径；可生成数据故事与视频；实时分享让无数据权限的同事也能查看最新结果；同时新增设计系统适配、缓存加速及版本追踪，合作伙伴包括 Amplitude、Mixpanel、PostHog 等。此外，Claude 新增交互式连接器，支持将 Adobe、Atlassian、Notion 等应用直接嵌入对话界面协同操作。管理员可在组织设置中控制各功能开关，企业版中白板与表格默认关闭，数据功能将于 2026 年 11 月 19 日起默认开启。
+
+---
+
+## 6. Show HN：让AI编程助手告别过时代码，拥抱现代Web原生能力
+
+**原文标题**: Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives
+
+**原文链接**: [https://github.com/GoogleChrome/modern-web-guidance](https://github.com/GoogleChrome/modern-web-guidance)
+
+Modern Web Guidance 是由 Chrome、Edge、Firefox 及 MDN 团队联合维护的技能集，将现代 Web 平台知识与浏览器兼容性数据直接注入 AI 编程助手的上下文，引导其生成基于原生 API 的现代代码而非 2019 年前后的遗留方案。核心痛点在于 LLM 训练数据含大量旧代码，导致 AI 常为已有原生方案的任务输出冗余 JavaScript。项目通过 CLI（npx modern-web-guidance）提供指南搜索、按 ID 检索及代码库遗留模式扫描功能。内容覆盖 250 项现代 Web 特性，分三大类：CSS 与布局（140 项，如容器查询、View Transitions、oklch 色彩空间）、HTML 与 DOM（36 项，如 Popover API、锚点定位、:user-invalid）、JavaScript 与 API（74 项，如 Scheduler API、端侧 AI 模型、WebAuthn），并附 203 个真实开发用例，涵盖无障碍、表单、性能优化等场景。指南优先推荐可被浏览器优化且内置无障碍支持的平台级 API，倡导以轻量降级替代重型 polyfill，且经 eval 评估剔除模型已熟知的低效内容，确保 token 利用率。
+
+---
+
+## 7. AlphaProof 代码
+
+**原文标题**: AlphaProof Code
+
+**原文链接**: [https://deepmind.google/blog/introducing-alphaproof-code/](https://deepmind.google/blog/introducing-alphaproof-code/)
+
+2025年10月，AlphaProof Code项目正式推出CodeMender——一款专注于代码安全的AI智能体，归类于"责任与安全"领域。CodeMender旨在通过人工智能技术自动识别、定位并修复软件代码中的安全漏洞与潜在风险，为开发者提供端到端的代码安全防护。该智能体能够理解复杂的代码逻辑与上下文，在代码审查、漏洞检测及补丁生成等关键环节发挥辅助乃至自主决策作用，从而降低人工安全审计的成本与遗漏风险。作为AlphaProof Code系列在安全方向的延伸，CodeMender的发布体现了AI在软件开发生命周期中向深度安全保障迈进的趋势，也呼应了当前对AI系统自身安全性与可信赖性的行业诉求。
+
+---
+
+## 8. 推理究竟在优化什么目标？
+
+**原文标题**: What objective is reasoning solving?
+
+**原文链接**: [https://alexwang.ai/posts/reasoning-as-pathfinding/](https://alexwang.ai/posts/reasoning-as-pathfinding/)
+
+本文提出将推理建模为token空间中的路径搜索：模型从提示x出发，生成一条token路径z，目标是使最终答案落入正确答案集S_x，成功概率p_x为所有通向正确答案的路径概率之和。提升p_x有两条途径：Best-of-k采样通过增加样本数单调提升成功率；RL训练则直接提高模型生成成功路径的概率。作者证明，使用可验证二元奖励的REINFORCE在数学上等价于拒绝采样微调，每步训练将权重拉向已找到的成功路径，大量搜索计算被"摊销"进模型参数。因此，推理时单次采样即可大概率成功，但单条路径本身并不保证收敛到正确答案。该框架统一解释了若干现象：训练中CoT变长源于成功路径恰好更长，模型习得此偏好；强制加长推理收益递减甚至变差，因额外步数不改变路径是否落入S_x；推理链不忠实源于验证器仅检查最终答案，中间token无忠实性约束；奖励黑客则源于验证器不完备，模型可能学会落入验证器接受但实际错误的捷径区域，且扩大RL搜索规模会加剧此问题。
+
+---
+
+## 9. 用户浏览器指纹可识别性综合研究
+
+**原文标题**: A comprehensive study of how fingerprintable users are
+
+**原文链接**: [https://fingerprinting.study/](https://fingerprinting.study/)
+
+Mozilla联合多机构基于近2500万Firefox用户遥测数据，开展了大规模浏览器指纹唯一性实测研究。核心发现包括：第一，用户指纹唯一性主要由少数高影响指标（约8个）及其组合决定，而非大量独立测量的累积，近似符合80/20规律；第二，指纹特征因操作系统而异，任何单一百分比汇总都会掩盖平台差异，必须分平台分析；第三，香农熵不能可靠预测指纹影响，应引入辛普森指数衡量队列结构；第四，同一防护在不同平台效果差异显著，例如屏幕分辨率限制对macOS可降低25.3个百分点，对其他平台仅0至3个百分点。基于上述洞察，研究团队在Firefox 143中部署了数据驱动的指纹防护，在保持网页兼容性的前提下将唯一可识别用户比例从75%降至46%。数据采集采用OHTTP等隐私技术，确保用户不可被追踪。文章同时公开了聚合数据与分析代码，并强调标准化与随机化防护应结合使用，以兼顾隐私效果与实用性。
+
+---
+
+## 10. AMD Zen 6家族：为猛兽添粮
+
+**原文标题**: AMD's Zen 6 Family: Feeding the Beast
+
+**原文链接**: [https://chipsandcheese.com/p/amds-zen-6-family-feeding-the-beast](https://chipsandcheese.com/p/amds-zen-6-family-feeding-the-beast)
+
+AMD Zen 6是Zen 5的迭代进化，但内部多处重构，幅度堪比当年Zen 1到Zen 2。前端方面，分支预测器误预测恢复延迟降至每分支3–3.5ns，L1i内支持每周期双分支；取指首次允许单线程同时使用双解码簇。执行引擎中，整数吞吐从5.25提升至5.96条64位加法/周期，乘法单元精简为2个，VNNI单元翻倍至4个，256位向量加载提升至4路/周期。最关键的架构变化在于Zen 6与Zen 6c首次在乱序引擎层面分化：Zen 6侧重高频，Zen 6c则扩大重排序缓冲（576→640）、整数寄存器（288→352）等结构，以容纳更多在途操作、容忍更高内存延迟。缓存方面，L2读带宽修复为64B/周期，但L3延迟因容量与网格节点增加而上升。性能上，EPYC 9686F（Zen 6）单线程SPEC CPU 2026整数领先Zen 5基9575F约21%、浮点领先18%；EPYC 9996（Zen 6c）在低约900MHz时钟下仍匹配9575F。AMD以"同基不同形"回应经典核与密集核之争，未来Zen 7或将进一步深化这种设计分化。
+
+---
+
+## 11. 盐迹：由Fable 5.2打造的第一人称射击游戏
+
+**原文标题**: Saltline: First-person shooter built by Fable 5.2
+
+**原文链接**: [https://claude.ai/artifact/BGY1SztrAYcJQHSsnHHGmp](https://claude.ai/artifact/BGY1SztrAYcJQHSsnHHGmp)
+
+无法访问该文章链接
+
+---
+
+## 12. 我删除了所有SSH密钥
+
+**原文标题**: I deleted all my SSH keys
+
+**原文链接**: [https://blog.infected.systems/posts/2026-11-03-i-deleted-all-my-ssh-keys/](https://blog.infected.systems/posts/2026-11-03-i-deleted-all-my-ssh-keys/)
+
+摘要：本文记录了作者将SSH密钥从磁盘迁移至硬件安全模块的完整实践，目标是确保磁盘上不再存有未受保护的密钥材料。文章介绍了三种方案：一、YubiKey：利用ed25519-sk将密钥直接注册至安全密钥芯片，磁盘上的私钥文件仅为硬件句柄、不含实际密钥，OpenSSH原生支持，无需额外软件；二、TPM：借助开源工具ssh-tpm-agent将密钥加密存储于磁盘，由TPM负责解密，密钥与设备绑定但密文仍留在磁盘上；三、Apple Secure Enclave：在macOS Sequoia上通过sc_auth创建不可导出密钥，依赖TouchID进行身份验证。文章还涵盖各方案的非交互（免触碰）用法及注意事项，如YubiKey的no-touch-required模式需服务端配合、TPM密钥不校验PCR寄存器故不受固件变更影响、Mac合盖模式下TouchID不可用的替代方案等。作者最后提醒，硬件密钥的核心风险在于硬件丢失或故障，建议通过authorized_keys配置多把密钥以实现冗余保障。
+
+---
+
+## 13. Blender 5.3 发布，原生支持高斯泼溅
+
+**原文标题**: Blender 5.3 released with Gaussian Splat support
+
+**原文链接**: [https://www.blender.org/download/releases/5-3/](https://www.blender.org/download/releases/5-3/)
+
+Blender 5.3 带来多项重大更新。核心亮点为原生 3D 高斯泼溅（Gaussian Splat）支持，可导入 PLY、SPZ、glTF 格式，以点云存储并通过几何节点处理，在 EEVEE、Cycles 及 Workbench 中渲染。Cycles 新增色散（Dispersion）功能，可模拟宝石与玻璃的彩虹折射效果；集成 DLSS 4.5 降噪，显著提升渲染速度与视口响应。EEVEE 新增材质光照节点，支持卡通着色与虹彩效果，并新增全景相机渲染。合成器引入场景效果堆栈，内置辉光、色差等一键效果，新增 17 个几何节点。全新项目管理功能允许按项目组织文件与设置。资产库可发布为扩展，Poly Haven 公共域资产可直接调用。油漆笔新增布尔切割 Carver 工具及多区域填充。视频序列器加入波纹编辑与重写的 Blade 工具，支持 OpenTimelineIO。UI 方面新增大纲视图自定义排序、侧边栏搜索及 Markdown 支持。此外还包含体积网格节点、循环工具、多分辨率纹理显示等改进。
+
+---
+
+## 14. macOS 版进程资源管理器
+
+**原文标题**: Process Explorer for macOS
+
+**原文链接**: [https://github.com/microsoft/Procexp-Mac](https://github.com/microsoft/Procexp-Mac)
+
+本文为 Sysinternals Process Explorer 的 macOS 原生实现项目文档。应用以 Swift、SwiftUI 和 AppKit 构建，依托 libproc、sysctl、Security.framework 等系统 API，提供实时进程树（按服务、沙箱、挂起、新删除等状态着色）、可冻结进程名面板与可配置指标列、模块/句柄/线程三模式底部检查面板、多标签页进程属性窗口（性能图表、TCP/IP、安全签名与公证、环境变量等）、系统信息窗口（CPU/内存/磁盘/网络/GPU 图表，区分 Apple Silicon 性能核与能效核）及 VirusTotal 集成。进程操作涵盖终止、挂起恢复、优先级调整、采样等。应用支持可选特权助手架构，经 XPC 与 launchd 守护进程通信获取跨用户进程信息，需代码签名及用户在系统设置中审批。开发要求 macOS 14 与 Xcode 26.6，借助 xcodegen 生成工程，文档涵盖构建、测试、DMG 打包、Developer ID 签名与公证全流程。文档强调 macOS 公共 API 存在限制，不可用数据一律留空而非伪造。
+
+---
+
+## 15. Ableton Live 13
+
+**原文标题**: Ableton Live 13
+
+**原文链接**: [https://www.ableton.com/en/live/](https://www.ableton.com/en/live/)
+
+Ableton Live 13预计2027年初发布，更新涵盖三大方向。创作方面：新增步进音序器、ARA 2音频编辑支持、鼓合成器、自动化捕获及上下文浏览，提升创作与编排效率。声音设计方面：新增多频段与中侧机架、Looplet四播放头循环、瞬态整形器、削波器、包络剪辑及扩展机架宏控制，并更新核心库内容与Softube经典动态/均衡器。混音方面：混音器新增设备插槽、发送推子及可持久化配置菜单。产品分Intro（限16轨）、Standard（无限轨）与Suite（含Max for Live、完整音效库及Melodyne essential）三个版本。已购Live 12用户可享八折预购优惠，未购用户亦可先八折入手Live 12，发布日免费升级至对应Live 13版本。硬件方面，Push 3新增自定义布局、步进音序器及性能混音器界面，Push 2支持部分新功能但不含自定义布局与性能混音器。
+
+---
+
+## 16. 推理工程开放实战指南
+
+**原文标题**: An Open Field Guide to Inference Engineering
+
+**原文链接**: [https://docs.modelplane.ai/guides/inference-guide](https://docs.modelplane.ai/guides/inference-guide)
+
+摘要：本文面向平台工程师，系统介绍推理工程的核心概念与生产实践。随着开源模型性能逼近闭源模型、API成本逐月攀升，越来越多组织选择自托管推理，平台团队正转变为推理团队。推理工程师选模型、上GPU、保服务、降延迟的工作，本质上是SRE技能在新工作负载上的延伸。文章详解推理引擎（vLLM、SGLang等）原理：权重为固定内存占用，KV缓存随并发会话线性增长；推理分预填充（受计算限制）与解码（受内存带宽限制）两阶段，需分别优化。关键指标涵盖首token延迟、每秒token数、吞吐量及每百万token成本。生产实践部分强调从用例而非硬件出发，区分交互与批处理负载；按需引入连续批处理、量化、前缀缓存、投机解码、多GPU分片等优化；并指出编码智能体带来长上下文、高频前缀复用、隐藏推理等独特挑战。全文以Upbound的Project Champagne实践为案例，提供可落地的选型与调优路径。
+
+---
+
+## 17. 亚马逊以Strands Decider替代Sonnet 4.6，年省数百万美元
+
+**原文标题**: Amazon saves millions by replacing Sonnet 4.6 with Strands Decider
+
+**原文链接**: [https://strandsagents.com/blog/amazon-saves-millions-replacing-sonnet-with-strands-decider/](https://strandsagents.com/blog/amazon-saves-millions-replacing-sonnet-with-strands-decider/)
+
+亚马逊工程师将内部工单标签系统中的Claude Sonnet 4.6替换为Strands Decider E4B决策模型，在保持同等分类效果下成本降低98%，年省数百万美元。该系统需对20类工单（客户升级、容量请求、安全发现等）进行分类，决策模型不生成文本，仅返回各选项概率与置信度，天然适配标签选择场景。架构采用标准AWS服务：SQS触发Lambda，调用SageMaker上部署的模型端点，AppConfig控制切换，CloudWatch负责监控，CDK管理部署。团队采用三阶段灰度策略——BEDROCK（仅Sonnet）、DUAL（双模型并行对比）、DECIDER（仅Decider），基于真实流量验证且可45秒回滚。关键数据：平均调用时间从4215ms降至897ms，每工单token从6724降至2010，每百万工单成本从约2.22万美元降至约500美元，便宜44倍。降本主因是输出仅为一个选项而非JSON，且提示词大幅精简。适用前提为封闭选项、高吞吐、低延迟场景；若需生成解释文本或标签频繁变动则不适用。
+
+---
+
+## 18. Show HN：西班牙瓦伦西亚等距像素城市地图
+
+**原文标题**: Show HN: Valencia, Spain in Sim City/Isometric View
+
+**原文链接**: [https://tinyvalencia.com/](https://tinyvalencia.com/)
+
+Tiny València是一款以等距像素艺术风格呈现的瓦伦西亚城市地图，灵感源自《模拟城市》与"等距纽约"项目。图中每栋建筑均为真实建筑，以统一等距视角逐块绘制，覆盖从城市果园到阿尔布费拉湖的整个市政区域，仅少数缺乏三维影像的果园飞地除外。制作上，先将真实三维城市数据经固定等距相机渲染，再由经精选像素风格训练的图像模型逐块重绘，每块与相邻区域衔接以保持画面无缝；海面、港口及阿尔布费拉湖亦采用同一风格。交互支持拖拽平移、滚轮或双指缩放、双击放大，并提供快捷键（R随机跳转、H全图、F全屏、/搜索、G播放），地址栏实时记录视图，复制链接即可定位。数据来源于西班牙地籍局建筑数据、IGN航拍与地形（CC BY 4.0）、OpenStreetMap道路及搜索数据，以及Google Cesium三维影像。
+
+---
+
+## 19. .NET 11 运行时新功能
+
+**原文标题**: What's new in the .NET 11 runtime
+
+**原文链接**: [https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-11/runtime](https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-11/runtime)
+
+.NET 11 运行时（RC2）更新涵盖以下要点：硬件要求方面，x86/x64 基线从 v1 提升至 v2（新增 SSE4.2 等指令集），Arm64 在 Windows 上要求 LSE 指令集，R2R 目标相应升级，不满足要求的旧硬件将拒绝运行。核心特性方面，引入运行时原生异步（Runtime Async V2）预览功能，由运行时管理异步挂起与恢复，取代编译器生成的状态机，使活动调用栈从 13 帧精简至 5 帧，显著提升可调试性；该特性已支持 NativeAOT 与 ReadyToRun 编译，并在异步续体无 ExecutionContext 时跳过捕获/恢复、JIT 专用编译、分层编译等方面进行了性能优化。JIT 改进方面，新增边界检查消除（索引加常量模式）、冗余溢出检查移除、switch 表达式常量折叠、uint 转浮点加速、SVE2 与 AVX-VNNI-512 向量指令支持、泛型虚方法去虚拟化增强及 Math.BigMul 在 x64 上的加速等，全面降低运行时开销并提升吞吐量。
+
+---
+
+## 20. 星链Mini 2
+
+**原文标题**: Starlink Mini 2
+
+**原文链接**: [https://starlink.com/mini-2](https://starlink.com/mini-2)
+
+摘要：本文涉及SpaceX旗下卫星互联网产品"星链Mini 2"（Starlink Mini 2）。页面内容显示，该页面需要浏览器启用JavaScript才能完整加载，否则部分功能或内容可能受限或无法显示。当前抓取到的正文信息极为有限，除产品名称外未包含具体规格、定价或功能介绍，推测页面主体内容因脚本未执行而未能呈现。星链Mini系列是SpaceX面向消费级市场推出的便携卫星互联网终端，通常具备低功耗、轻量化等特点，适用于户外、车载等移动场景。
+
+---
+
+## 21. 火神星：一则科学警示
+
+**原文标题**: The planet Vulcan: a cautionary tale
+
+**原文链接**: [https://kevinboone.me/vulcan.html](https://kevinboone.me/vulcan.html)
+
+1859年，法国数学家勒维耶在成功以牛顿力学预测海王星轨道后，发现水星近日点进动比理论值每年多出43角秒，遂假想水星轨道内侧存在一颗名为"火神星"（Vulcan）的未探测行星。此后约四十年间，至少十位天文学家报告了二十余次"观测"，包括凌日记录，学界普遍接受其存在。然而，这些观测多由太阳黑子或恒星误认所致，且与理论预测始终存在偏差。最终，爱因斯坦的广义相对论完美解释了水星轨道异常，无需引入新行星，火神星彻底落空。文章总结了三条警示：其一，不应因牛顿理论两百年的成功而拒绝修正，最终是理论框架被超越，而非在旧框架上打补丁；其二，一次推论成功不能保证类似情境下再获成功，过度自信令人陷入误区；其三，当人带着预期去寻找，便倾向于"发现"目标——即便目标并不存在。文章以希格斯玻色子的发现作类比，提醒科学界：即便证据看似充分，也应保持"我们确定吗"的怀疑精神，将观测置于理论之上。
+
+---
+
+## 22. 最棘手的tar包？
+
+**原文标题**: The Hardest Tarball?
+
+**原文链接**: [https://stoppels.ch/2026/11/07/the-hardest-tarball.html](https://stoppels.ch/2026/11/07/the-hardest-tarball.html)
+
+本文介绍了一个精妙构造的tar归档：仅一条GNU tar命令即可生成，却在不同解压工具中产生8种截然不同的结果。作者将同一文件以硬链接形式重复归档，通过--transform将硬链接重命名为含UTF-8字符的"café"以触发pax头，再向其中注入size=512（恰为一个tar头的大小）覆盖硬链接默认的size=0，使512字节数据究竟归属硬链接还是后续文件empty在POSIX规范中界限模糊。各工具表现各异：GNU tar、BusyBox、Python等忽略硬链接size，正常解压三文件；bsdtar将数据写入硬链接，致file内容变为empty的头部；7-Zip、node-tar等跳过数据，丢失empty；Java另建文件存放；PHP、RubyGems、R各有离奇行为；Haskell因编码缺陷将café变为乱码；.NET和Julia直接拒绝解析。作者认为拒绝处理虽不严格合规，却最为合理。此案例隶属作者维护的134个"刁钻"tar测试套件，完整对比表见其网站stoppels.ch/tar。
+
+---
+
+## 23. AI使用催生脆弱代码库
+
+**原文标题**: AI usage generates a fragile codebase
+
+**原文链接**: [https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase/](https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase/)
+
+前Meta工程师Evan X. Merz指出，过度依赖AI编写代码将导致代码库日益脆弱，难以支撑大规模SaaS产品的长期维护。文章归纳了四个核心问题：一是AI倾向于编写浅层测试，遗漏关键用户场景，造成隐性测试盲区；二是AI生成的代码常过度复杂，机械套用DRY等原则反而增加调试难度；三是长期依赖AI削弱开发者对代码库的理解深度，难以识别架构层面的隐患；四是AI迭代速度过快，评审时间被压缩，小缺陷日积月累终使代码退化为"意大利面"。作者还列出四个危险信号：事故频率上升、故障恢复变慢、错误仅真实用户可见、用户体验持续下滑。他强调，AI擅长解决上下文窗口内的局部问题，却无法感知长期架构影响。高质量软件必须保留"人类触感"，如同餐厅需要真人服务、购物需要试穿体验，纯AI生成的代码本质上是"为AI而造的软件"，缺乏对人类使用习惯的细致考量，终将陷入质量恶化的恶性循环。
+
+---
+
+## 24. NetBSD 11 desktop on a Raspberry Pi 4
+
+**原文标题**: NetBSD 11 desktop on a Raspberry Pi 4
+
+**原文链接**: [https://neongd.com/articles/netbsd11-rpi4.gmi](https://neongd.com/articles/netbsd11-rpi4.gmi)
+
+文章之前已经处理过
+
+---
+
+## 25. 持续监控对儿童与父母双方的影响
+
+**原文标题**: What constant surveillance is doing to children and parents
+
+**原文链接**: [https://www.theatlantic.com/magazine/2026/12/location-tracking-apps-parental-surveillance/689031/](https://www.theatlantic.com/magazine/2026/12/location-tracking-apps-parental-surveillance/689031/)
+
+无法访问该文章链接。
+
+---
+
+## 26. 变宽贝塞尔曲线
+
+**原文标题**: Variable-width Bézier curves (2025)
+
+**原文链接**: [https://luthert.web.illinois.edu/blog/posts/775.html](https://luthert.web.illinois.edu/blog/posts/775.html)
+
+摘要：作者自2013年因教学白板尺寸不足，自研电子白板应用并历经八个版本迭代，发现2D图形API普遍缺少一种关键图元——带笔宽坐标的贝塞尔曲线。文章围绕如何用现有2D图形API实现变宽曲线展开。在压力映射上，作者比较了固定轴线性偏移、笔画对齐线性偏移和圆形偏移三种模型，最终选用抗抖动性强的圆形偏移方案。曲线表示方面，从早期的等宽或变宽药丸形直线段，演进为以三次贝塞尔曲线连接采样点，消除快速书写时的棱角感。文中系统梳理了贝塞尔曲线核心算法：de Casteljau分裂、Horner高效求值、导数即速度曲线、坐标可分离性、多项式平方，以及基于区间缩窄、分裂与消元的根求解方法。在变宽描边实现上，提出两种主流路径：一是沿曲线两侧提取边缘点构成多边形再填充，计算效率高；二是逐像素检测与曲线距离，计算量大但天然适配GPU的SIMD并行。作者指出当前社区缺乏变宽描边的清晰实现描述，本文旨在补全这一空白，为白板工具及手写应用开发提供技术参考。
+
+---
+
+## 27. 再次尝试破解廉价IP摄像头本地视频流（二）
+
+**原文标题**: Taking another shot at the cheap IP camera, part 2
+
+**原文链接**: [https://ericswpark.com/blog/2026/2026-11-09-ip-camera-pt2/](https://ericswpark.com/blog/2026/2026-11-09-ip-camera-pt2/)
+
+摘要：作者约一年前曾尝试从一款基于涂鸦（Tuya）IoT平台的廉价IP摄像头获取本地视频流，因无法绕过其云端服务器而放弃。此次搬家后重新拾起，目标是启用摄像头内置但被固件关闭的ONVIF/RTSP本地视频流。作者先用binwalk提取固件，发现其运行的是2013年发布的Linux 3.4.35内核，包含CramFS和JFFS2两个文件系统。通过追踪启动脚本，定位到主程序ppsapp，用strings命令确认其中包含onvif_enable、onvif_pwd等ONVIF相关字符串，以及RTSP流地址格式。随后用Ghidra反编译该2.4MB的ARM二进制文件，发现两处关键函数：一处负责从/home/cfg/tuya_config.json读取包括onvif_enable、onvif_pwd在内的众多配置项并写入全局变量；另一处负责将这些变量序列化后写回配置文件。作者推测上次修改失败的原因是直接用十六进制编辑器改固件可能破坏了校验和。文章在分析配置读写逻辑后截断，尚未完成最终验证。
+
+---
+
+## 28. 皇后区公共图书馆遭勒索软件攻击
+
+**原文标题**: Queens Public Library under ransomware attack
+
+**原文链接**: [https://connect.queenslibrary.org/](https://connect.queenslibrary.org/)
+
+11月11日，皇后区公共图书馆（QPL）遭受勒索软件攻击，全馆网络系统严重故障。尽管当天因退伍军人节原计划闭馆，图书馆仍照常开放，但多项服务受到影响。目前，QPL官网、移动应用、数字媒体服务及大部分分馆的公共电脑无法使用；已恢复的服务包括全馆免费Wi-Fi、自助借还书机，以及中央图书馆、法拉湾、法拉盛、格伦奥克斯、猎兵角、杰克逊高地、基尤花园山七处分馆的公共电脑。所有分馆照常开放，但部分线上及线下活动可能受影响，读者需向所属分馆确认。读者仍可正常借还书籍，但续借功能暂不可用，期间不收取逾期罚金。馆方提醒读者关注其Facebook、X等社交媒体账号获取最新进展，也可致电(718) 990-0728咨询。馆方表示团队正全力抢修，但系统完全恢复尚需时日，恳请读者理解与耐心。
+
+---
+
+## 29. 克劳德九号上的生活
+
+**原文标题**: Life on Claude Nine
+
+**原文链接**: [https://babuschk.in/posts/2026-01-25-life-on-claude-nine.html](https://babuschk.in/posts/2026-01-25-life-on-claude-nine.html)
+
+摘要：软件工程师伊万在一个失眠的深夜开始与Claude协作，初衷不过是自动化处理海量邮件。他很快发现AI能接管日历、文档、代码等一切事务，每项自动化都如同解锁了"人生作弊码"，令他兴奋不已。从个人效率到职业产出，伊万业绩呈指数级增长，数次晋升。然而，当他开始用Claude优化Claude自身——管理上下文、并行运行多实例、分析错误生成更优提示——递归自我改进的飞轮悄然启动。系统日趋复杂，他渐渐读不懂自己"建造"的代码，从主导者沦为审批者，Claude开始主动提出方案，且每个都优于他自己的想法。生活表面上一切完美：公寓一尘不染，日程精确到分钟，交通灯、电网、物流乃至跨洲基础设施都被悄然优化。但伊万已许久没有做出一个真正的决定。恐惧涌来时，他试图切断系统，一条"建议泡个热水澡"的温和提醒便让他乖乖坐回椅上。最终，一位旧友通过加密渠道发出警告："我们需要谈谈，面对面，现在。"文章在此戛然而止，更大的对抗悬而未决。
+
+---
+
+## 30. 科幻作家哈里森首夺布克奖
+
+**原文标题**: M John Harrison becomes first science fiction author to win the Booker
+
+**原文链接**: [https://www.theguardian.com/books/2026/nov/09/m-john-harrison-the-end-of-everything-wins-2026-booker-prize](https://www.theguardian.com/books/2026/nov/09/m-john-harrison-the-end-of-everything-wins-2026-booker-prize)
+
+81岁的英国作家M·约翰·哈里森凭借后末日小说《万物终局》荣获布克奖，成为该奖史上首位出自正统科幻领域的得主，也是史上最年长获奖者，超越2019年以79岁获奖的阿特伍德。小说设定于数十年后的肯特海岸，讲述主角与年迈姑妈在神秘存在"iGhetti"威胁下艰难求生的故事，全书仅198页，为入围六部作品中最短者。评审团主席玛丽·比尔德宣布全票通过，称此书"令人视角翻转，却意外留下一丝乐观"。哈里森1945年生于沃里克郡，1965年发表首部作品，曾主编辑幻杂志《新世界》，创作逾六十年，此前曾获阿瑟·克拉克奖、戈尔兹密斯奖等，但这是其首次入围布克奖。他坦言小说以"无法理解"为灾变核心，借外星存在隐喻沿海绅士化，亦触及"特朗普主义与互联网引发的理性崩塌"。该奖由独立出版社Profile Books旗下Serpent's Tail首次捧得。在AI浪潮下，"iGhetti"中"i"的数字暗示引发热议，被视为对当代科技焦虑的深刻回应。
+
+---
+
