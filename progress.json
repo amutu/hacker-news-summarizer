@@ -1,242 +1,242 @@
 [
   {
-    "id": "50442736",
-    "title": ".name Grandfathered",
-    "url": "https://neil.fraser.name/news/2026/11/10/",
-    "summary": "2026年11月10日，Neil Fraser宣布好消息：经过漫长而昂贵的抗争，Verisign正式撤回终止约22,000个.name域名及电子邮件重定向的计划。尽管三级.name域名的新注册将被关闭，但所有现有域名（包括其本人网站）及邮件重定向将无限期保留，获得祖父条款保护。这一胜利源于广泛而坚定的集体努力。Neil逐一感谢了众多参与者：Doytchin率先发起行动；Jim专程飞赴巴厘岛向ICANN当面陈述诉求；Patrik、Troy、Huyen、Keith、Judy、Erik和Ryan撰写了正式的重新审议请求；律师Jan、Flip和Diégo团队向ICANN发起法律挑战；另有Beverly、Stefan、Vaughan、Irv、Pablo等二十余人提交支持函。Neil还特别感谢了ICANN内部勇于对抗官僚体制的个别工作人员，称与自己交谈的每个人都是非凡之人。",
-    "chinese_title": ".name 域名获豁免保留",
-    "chinese_summary": "2026年11月10日，Neil Fraser宣布好消息：经过漫长而昂贵的抗争，Verisign正式撤回终止约22,000个.name域名及电子邮件重定向的计划。尽管三级.name域名的新注册将被关闭，但所有现有域名（包括其本人网站）及邮件重定向将无限期保留，获得祖父条款保护。这一胜利源于广泛而坚定的集体努力。Neil逐一感谢了众多参与者：Doytchin率先发起行动；Jim专程飞赴巴厘岛向ICANN当面陈述诉求；Patrik、Troy、Huyen、Keith、Judy、Erik和Ryan撰写了正式的重新审议请求；律师Jan、Flip和Diégo团队向ICANN发起法律挑战；另有Beverly、Stefan、Vaughan、Irv、Pablo等二十余人提交支持函。Neil还特别感谢了ICANN内部勇于对抗官僚体制的个别工作人员，称与自己交谈的每个人都是非凡之人。"
+    "id": "50456631",
+    "title": "AWS Finally Built Its Own AWS Emulator",
+    "url": "https://github.com/aws/aws-emulator",
+    "summary": "AWS Emulator是AWS推出的本地API模拟器，开发者无需AWS账户即可在本地、开发服务器或CI环境中测试软件，请求发往本地模拟器而非真实AWS，无额外费用。该工具无图形界面，通过环境变量将CLI或SDK指向模拟器端点即可使用，也支持嵌入Rust测试的进程内模式，并可通过AI编码代理一键配置。模拟器仅适用于开发与测试，不可用于生产或安全场景。从源码构建需Rust工具链、C编译器及至少100GB磁盘，支持Linux（x86_64/aarch64），Windows和macOS建议用Docker运行。项目采用每服务一crate的架构，以Smithy模型驱动协议。遥测默认开启，可通过命令行参数、环境变量或配置文件关闭。软件以CC0 1.0协议发布（vendor目录除外），不接收外部PR，问题通过GitHub Issues反馈。",
+    "chinese_title": "AWS终于推出了自己的AWS模拟器",
+    "chinese_summary": "AWS Emulator是AWS推出的本地API模拟器，开发者无需AWS账户即可在本地、开发服务器或CI环境中测试软件，请求发往本地模拟器而非真实AWS，无额外费用。该工具无图形界面，通过环境变量将CLI或SDK指向模拟器端点即可使用，也支持嵌入Rust测试的进程内模式，并可通过AI编码代理一键配置。模拟器仅适用于开发与测试，不可用于生产或安全场景。从源码构建需Rust工具链、C编译器及至少100GB磁盘，支持Linux（x86_64/aarch64），Windows和macOS建议用Docker运行。项目采用每服务一crate的架构，以Smithy模型驱动协议。遥测默认开启，可通过命令行参数、环境变量或配置文件关闭。软件以CC0 1.0协议发布（vendor目录除外），不接收外部PR，问题通过GitHub Issues反馈。"
   },
   {
-    "id": "50441707",
-    "title": "Smart home devices should work without the internet",
-    "url": "https://docodethatmatters.com/home-automation-overnight-success/",
-    "summary": "摘要：作者坚持一条铁律：家中核心设备必须在断网时正常运行。十年来，他围绕此原则构建了以ESP模块（刷Tasmota固件）、MQTT消息代理和树莓派上Node-RED为核心的本地自动化系统，Alexa等云服务仅作可选入口。文章列出七条基本规则及后期补充的五条，涵盖离线可用、保留传统操作方式、保持灵活性、例外须慎重、云端设备需有日志API、配置集中管理、多入口访问、设备间用MQTT解耦、电池寿命超一年等。全文以两场相隔五年的演讲为主线，展示系统从单一车库降温流程演进为覆盖灯光、灌溉、门锁、空气质量的完整方案，以及从独居到多人共住后对权限与安全的修补。读者反馈进一步印证云端依赖风险：冰箱因App故障无法调温、电视断网无法切换信号源、厂商倒闭后硬件变砖等。实用建议包括采用Zigbee/Z-Wave本地协议、借助LLM为廉价硬件寻找开源固件、通过Tailscale实现远程访问等。作者预告第三场演讲将探讨AI代理控制家居的场景。",
-    "chinese_title": "智能家居设备应断网可用",
-    "chinese_summary": "摘要：作者坚持一条铁律：家中核心设备必须在断网时正常运行。十年来，他围绕此原则构建了以ESP模块（刷Tasmota固件）、MQTT消息代理和树莓派上Node-RED为核心的本地自动化系统，Alexa等云服务仅作可选入口。文章列出七条基本规则及后期补充的五条，涵盖离线可用、保留传统操作方式、保持灵活性、例外须慎重、云端设备需有日志API、配置集中管理、多入口访问、设备间用MQTT解耦、电池寿命超一年等。全文以两场相隔五年的演讲为主线，展示系统从单一车库降温流程演进为覆盖灯光、灌溉、门锁、空气质量的完整方案，以及从独居到多人共住后对权限与安全的修补。读者反馈进一步印证云端依赖风险：冰箱因App故障无法调温、电视断网无法切换信号源、厂商倒闭后硬件变砖等。实用建议包括采用Zigbee/Z-Wave本地协议、借助LLM为廉价硬件寻找开源固件、通过Tailscale实现远程访问等。作者预告第三场演讲将探讨AI代理控制家居的场景。"
+    "id": "50450488",
+    "title": "Tim Peters has died",
+    "url": "https://discuss.python.org/t/in-memoriam-tim-peters-1952-2026/110028",
+    "summary": "Python之父Guido van Rossum发文悼念Tim Peters，宣布他于今年7月15日离世。Tim Peters是Python早期核心贡献者，对语言发展影响深远，最广为人知的成就是撰写了\"Python之禅\"（PEP 20）。早在Python发布初期他便加入项目，说服Guido支持整数与浮点数的混合运算，此后从未停止贡献。他长期活跃于Python邮件列表，以\"Timbot\"昵称为用户耐心答疑，回答中常带温和幽默（以<wink>为标记），并自称\"代Guido传话\"。他深度参与语言设计讨论，凭借深厚的数学功底与编译器开发经验，多次帮助团队避免设计失误、攻克技术难题，为早期核心开发奠定了严谨而包容的基调。2002年，他为Python列表贡献了Timsort排序算法，该算法后被Java和Android等系统广泛采用。Guido称其为导师与语言共同设计者，感慨道：\"没有Tim，Python不会成为今天的模样。\"",
+    "chinese_title": "Tim Peters 逝世",
+    "chinese_summary": "Python之父Guido van Rossum发文悼念Tim Peters，宣布他于今年7月15日离世。Tim Peters是Python早期核心贡献者，对语言发展影响深远，最广为人知的成就是撰写了\"Python之禅\"（PEP 20）。早在Python发布初期他便加入项目，说服Guido支持整数与浮点数的混合运算，此后从未停止贡献。他长期活跃于Python邮件列表，以\"Timbot\"昵称为用户耐心答疑，回答中常带温和幽默（以<wink>为标记），并自称\"代Guido传话\"。他深度参与语言设计讨论，凭借深厚的数学功底与编译器开发经验，多次帮助团队避免设计失误、攻克技术难题，为早期核心开发奠定了严谨而包容的基调。2002年，他为Python列表贡献了Timsort排序算法，该算法后被Java和Android等系统广泛采用。Guido称其为导师与语言共同设计者，感慨道：\"没有Tim，Python不会成为今天的模样。\""
   },
   {
-    "id": "50443824",
-    "title": "Synaptics patent claims stop work on DisplayLink drivers",
-    "url": "https://lwn.net/SubscriberLink/1102549/acbc92e00cee3a3f/",
-    "summary": "摘要：Mike Lothian 因 Dell 扩展坞使用的 DisplayLink 芯片在 Linux 上表现不佳，借助 Claude 大模型自主开发了名为 Vino 的 Rust 驱动，并向内核 dri-devel 邮件列表提交补丁，同时联系 Synaptics（2022 年收购 DisplayLink）寻求协助。然而 Synaptics 法务团队未予配合，反而以专利侵权为由发出停止侵权函，列出 125 项专利，要求 Lothian 立即停止开发、撤回所有提交并签署书面确认，否则将索赔 25000 美元且每周递增。Lothian 指出 Synaptics 身为开放发明网络（OIN）成员，理应为开源开发者提供专利保护，但 Synaptics 辩称 DisplayLink 并非 OIN 成员，其技术不受 OIN 许可覆盖。OIN 最终确认其 Linux 系统定义明确排除编解码器组件，无法为 Lothian 提供保护，仅建议其寻求英国律师协助。最终 Lothian 因无力应对诉讼，删除了 GitHub 仓库，Vino 驱动无法提交至内核。文章指出，在 LLM 驱动开发日益普及的当下，软件专利仍对自由软件开发者构成实质性威胁，此次事件暴露了开源社区在专利保护方面的脆弱性。",
-    "chinese_title": "Synaptics 专利声明叫停 DisplayLink 驱动开发",
-    "chinese_summary": "摘要：Mike Lothian 因 Dell 扩展坞使用的 DisplayLink 芯片在 Linux 上表现不佳，借助 Claude 大模型自主开发了名为 Vino 的 Rust 驱动，并向内核 dri-devel 邮件列表提交补丁，同时联系 Synaptics（2022 年收购 DisplayLink）寻求协助。然而 Synaptics 法务团队未予配合，反而以专利侵权为由发出停止侵权函，列出 125 项专利，要求 Lothian 立即停止开发、撤回所有提交并签署书面确认，否则将索赔 25000 美元且每周递增。Lothian 指出 Synaptics 身为开放发明网络（OIN）成员，理应为开源开发者提供专利保护，但 Synaptics 辩称 DisplayLink 并非 OIN 成员，其技术不受 OIN 许可覆盖。OIN 最终确认其 Linux 系统定义明确排除编解码器组件，无法为 Lothian 提供保护，仅建议其寻求英国律师协助。最终 Lothian 因无力应对诉讼，删除了 GitHub 仓库，Vino 驱动无法提交至内核。文章指出，在 LLM 驱动开发日益普及的当下，软件专利仍对自由软件开发者构成实质性威胁，此次事件暴露了开源社区在专利保护方面的脆弱性。"
+    "id": "50457939",
+    "title": "Why are we still working this hard?",
+    "url": "https://wilsoniumite.com/2026/11/11/why-are-we-still-working-this-hard/",
+    "summary": "1973年以来美国劳动生产率提升2.5倍，原需40小时的工作现仅16小时，但国民工时反而增长10%。凯恩斯1930年预言百年后产出增四至八倍、工作降至十五小时/周，产出目标已实现（2024年达7.8倍），闲暇却从未到来。作者指出工资兼具价格、票据、场所三重功能，工业化时代机器\"有力无智\"，三者方向一致；如今AI能看、读、写、决策，价格与票据功能开始撕裂。十八小时\"消失\"的根源在于：自动化首先替代常规岗位，压低普通工资（价格失灵），产出份额向资本与顶层集中（票据受损）。剩余六小时则因工资是唯一生存通道而被迫消耗——人无法拒绝，价格信号失真，大量低效劳动滋生，经济系统无法发出\"够了\"的信号。作者构建的简单模型显示：机器进步百倍后工资收入占比将从60%降至17%，万倍时不足1%。文章核心追问：当机器全面超越人力，以工资为唯一分配渠道的模式必然崩溃，出路在于在技术跃迁之前重新思考\"工资究竟为了什么\"，重建分配机制。",
+    "chinese_title": "为何我们仍如此拼命工作？",
+    "chinese_summary": "1973年以来美国劳动生产率提升2.5倍，原需40小时的工作现仅16小时，但国民工时反而增长10%。凯恩斯1930年预言百年后产出增四至八倍、工作降至十五小时/周，产出目标已实现（2024年达7.8倍），闲暇却从未到来。作者指出工资兼具价格、票据、场所三重功能，工业化时代机器\"有力无智\"，三者方向一致；如今AI能看、读、写、决策，价格与票据功能开始撕裂。十八小时\"消失\"的根源在于：自动化首先替代常规岗位，压低普通工资（价格失灵），产出份额向资本与顶层集中（票据受损）。剩余六小时则因工资是唯一生存通道而被迫消耗——人无法拒绝，价格信号失真，大量低效劳动滋生，经济系统无法发出\"够了\"的信号。作者构建的简单模型显示：机器进步百倍后工资收入占比将从60%降至17%，万倍时不足1%。文章核心追问：当机器全面超越人力，以工资为唯一分配渠道的模式必然崩溃，出路在于在技术跃迁之前重新思考\"工资究竟为了什么\"，重建分配机制。"
   },
   {
-    "id": "50443427",
-    "title": "Val Town is winding down",
-    "url": "https://blog.val.town/winding-down",
-    "summary": "Val Town 创始人 Steve Krouse 于 2026 年 11 月 10 日发文宣布，经过四年运营后，Val Town 将逐步关停，原因是在激烈的云计算市场中难以维持竞争力。对于用户迁移，官方指出当前大语言模型已能很好地辅助迁移工作，并提供了迁往 Cloudflare、Vercel、Netlify 和 Render 的指南，用户可通过 support@val.town 或 Discord 获取帮助。财务方面，即日起停止计费，现有订阅免费延续，年度预付费用户将获得部分退款。关停时间表：11 月 10 日停止新注册与套餐升级；12 月 10 日进入只读模式（SQLite 与 Blob 存储除外）；2027 年 1 月 10 日所有服务终止；2 月 1 日项目正式开源。文章末尾，Krouse 向团队成员、投资人 Dan Levine 及所有用户致以感谢，肯定了团队四年来的付出与用户的信任。",
-    "chinese_title": "Val Town 宣布停运",
-    "chinese_summary": "Val Town 创始人 Steve Krouse 于 2026 年 11 月 10 日发文宣布，经过四年运营后，Val Town 将逐步关停，原因是在激烈的云计算市场中难以维持竞争力。对于用户迁移，官方指出当前大语言模型已能很好地辅助迁移工作，并提供了迁往 Cloudflare、Vercel、Netlify 和 Render 的指南，用户可通过 support@val.town 或 Discord 获取帮助。财务方面，即日起停止计费，现有订阅免费延续，年度预付费用户将获得部分退款。关停时间表：11 月 10 日停止新注册与套餐升级；12 月 10 日进入只读模式（SQLite 与 Blob 存储除外）；2027 年 1 月 10 日所有服务终止；2 月 1 日项目正式开源。文章末尾，Krouse 向团队成员、投资人 Dan Levine 及所有用户致以感谢，肯定了团队四年来的付出与用户的信任。"
+    "id": "50455394",
+    "title": "A false smoke alarm almost drowned Jane Street's only NYC datacenter",
+    "url": "https://michael.bacarella.com/2026/11/10/false-smoke-alarm-jane-street-datacenter/",
+    "summary": "摘要：Jane Street系统团队作者 recount 了一起惊险事故：承包商在数据中心隔壁施工时扬起灰尘，误触烟雾报警器。烟雾系统联动关闭机房空调，而喷淋管道随即充水待命——机房温度若攀至150°F，喷淋头将集体爆裂，数据中心面临水淹灭顶之灾。作者住在水街、距公司步行仅9分钟，接到香港同事来电后狂奔上33楼，在酷热中逐排拔除所有设备电源线，温度在143.6°F时停止上升，化险为夷。因美股已收盘，损失甚微。事后团队保留了机房紧邻交易厅的布局——这一设计源于核潜艇出身的合伙人留下的\"手动拔线\"风险文化——但决定加强监控。作者随即用OCaml编写温度巡检脚本：每分钟轮询所有Linux服务器传感器取均值，异常即报警全组。他坦言，与其依赖空调或专用温湿度传感器的遥测，不如直接\"问机器本身\"，以最朴素的方式守住最后一道防线。",
+    "chinese_title": "烟雾误报险淹Jane Street纽约数据中心",
+    "chinese_summary": "摘要：Jane Street系统团队作者 recount 了一起惊险事故：承包商在数据中心隔壁施工时扬起灰尘，误触烟雾报警器。烟雾系统联动关闭机房空调，而喷淋管道随即充水待命——机房温度若攀至150°F，喷淋头将集体爆裂，数据中心面临水淹灭顶之灾。作者住在水街、距公司步行仅9分钟，接到香港同事来电后狂奔上33楼，在酷热中逐排拔除所有设备电源线，温度在143.6°F时停止上升，化险为夷。因美股已收盘，损失甚微。事后团队保留了机房紧邻交易厅的布局——这一设计源于核潜艇出身的合伙人留下的\"手动拔线\"风险文化——但决定加强监控。作者随即用OCaml编写温度巡检脚本：每分钟轮询所有Linux服务器传感器取均值，异常即报警全组。他坦言，与其依赖空调或专用温湿度传感器的遥测，不如直接\"问机器本身\"，以最朴素的方式守住最后一道防线。"
   },
   {
-    "id": "50443716",
-    "title": "Claude Whiteboards, Claude Sheets, and Claude Data",
-    "url": "https://claude.com/resources/articles/sheets-whiteboards-data",
-    "summary": "今日，Anthropic 正式发布 Claude 白板与 Claude 表格（测试版），并将原 Claude 仪表盘正式升级为 Claude 数据，三大功能面向所有付费计划，支持网页、桌面及移动端。白板支持团队与 Claude 实时头脑风暴，Claude 可将讨论转化为含时间线和负责人的协作看板，支持主题分组、转文档或演示文稿，并对接 Lucid、Miro 等工具。表格功能允许 Claude 根据提示词生成含公式、格式和下拉菜单的电子表格，支持逐格编辑与团队共享，可导出为 Excel 或 CSV，并接入 Airtable、Asana、monday.com 等。Claude 数据新增多项能力：连接 Redshift、BigQuery 等数据源；支持\"认证查询\"统一指标口径；可生成数据故事与视频；实时分享让无数据权限的同事也能查看最新结果；同时新增设计系统适配、缓存加速及版本追踪，合作伙伴包括 Amplitude、Mixpanel、PostHog 等。此外，Claude 新增交互式连接器，支持将 Adobe、Atlassian、Notion 等应用直接嵌入对话界面协同操作。管理员可在组织设置中控制各功能开关，企业版中白板与表格默认关闭，数据功能将于 2026 年 11 月 19 日起默认开启。",
-    "chinese_title": "Claude 白板、Claude 表格与 Claude 数据",
-    "chinese_summary": "今日，Anthropic 正式发布 Claude 白板与 Claude 表格（测试版），并将原 Claude 仪表盘正式升级为 Claude 数据，三大功能面向所有付费计划，支持网页、桌面及移动端。白板支持团队与 Claude 实时头脑风暴，Claude 可将讨论转化为含时间线和负责人的协作看板，支持主题分组、转文档或演示文稿，并对接 Lucid、Miro 等工具。表格功能允许 Claude 根据提示词生成含公式、格式和下拉菜单的电子表格，支持逐格编辑与团队共享，可导出为 Excel 或 CSV，并接入 Airtable、Asana、monday.com 等。Claude 数据新增多项能力：连接 Redshift、BigQuery 等数据源；支持\"认证查询\"统一指标口径；可生成数据故事与视频；实时分享让无数据权限的同事也能查看最新结果；同时新增设计系统适配、缓存加速及版本追踪，合作伙伴包括 Amplitude、Mixpanel、PostHog 等。此外，Claude 新增交互式连接器，支持将 Adobe、Atlassian、Notion 等应用直接嵌入对话界面协同操作。管理员可在组织设置中控制各功能开关，企业版中白板与表格默认关闭，数据功能将于 2026 年 11 月 19 日起默认开启。"
+    "id": "50456740",
+    "title": "AWS Emulator and the engineer's job when agents write the code",
+    "url": "https://www.allthingsdistributed.com/2026/11/aws-emulator-and-the-engineers-job-when-agents-write-the-code.html",
+    "summary": "2026年11月，AWS发布AWS模拟器（AWS Emulator），为AI编码代理提供本地化AWS服务测试环境，覆盖逾200项服务、400余个API模型，代码以CC0协议开源。文章由AWS CTO Werner Vogels与架构师Swami Sivasubramanian联合撰写。文章回顾了分布式系统测试的演进：二十年前，团队为基于Paxos协议的分布式锁服务\"Alf\"在JVM内构建全系统模拟环境，通过故障注入与TLA+形式化推理在上线前消除并发缺陷，但面对如今200多项服务，手工搭建已不可持续。核心创新在于：代理可从公开Smithy API模型出发，通过\"保真测试\"——先在真实AWS上验证行为，再驱动模拟器通过同一测试——自动构建并修正本地模拟器，全部代码由代理编写与测试，每次变更须经含多个安全代理对抗性审查的合并门禁方可合入。文章强调，当代理承担编码与自检时，工程师职责转向设计规格、测试与合并门禁等\"护栏\"。Vogels举例：用代理重建Alf复制引擎，无测试环境耗时四个月，提供规格与测试后仅两小时完成。软件质量最终取决于工程师为代理设计的约束体系。",
+    "chinese_title": "AWS 模拟器与代理时代工程师的新使命",
+    "chinese_summary": "2026年11月，AWS发布AWS模拟器（AWS Emulator），为AI编码代理提供本地化AWS服务测试环境，覆盖逾200项服务、400余个API模型，代码以CC0协议开源。文章由AWS CTO Werner Vogels与架构师Swami Sivasubramanian联合撰写。文章回顾了分布式系统测试的演进：二十年前，团队为基于Paxos协议的分布式锁服务\"Alf\"在JVM内构建全系统模拟环境，通过故障注入与TLA+形式化推理在上线前消除并发缺陷，但面对如今200多项服务，手工搭建已不可持续。核心创新在于：代理可从公开Smithy API模型出发，通过\"保真测试\"——先在真实AWS上验证行为，再驱动模拟器通过同一测试——自动构建并修正本地模拟器，全部代码由代理编写与测试，每次变更须经含多个安全代理对抗性审查的合并门禁方可合入。文章强调，当代理承担编码与自检时，工程师职责转向设计规格、测试与合并门禁等\"护栏\"。Vogels举例：用代理重建Alf复制引擎，无测试环境耗时四个月，提供规格与测试后仅两小时完成。软件质量最终取决于工程师为代理设计的约束体系。"
   },
   {
-    "id": "50443812",
-    "title": "Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives",
-    "url": "https://github.com/GoogleChrome/modern-web-guidance",
-    "summary": "Modern Web Guidance 是由 Chrome、Edge、Firefox 及 MDN 团队联合维护的技能集，将现代 Web 平台知识与浏览器兼容性数据直接注入 AI 编程助手的上下文，引导其生成基于原生 API 的现代代码而非 2019 年前后的遗留方案。核心痛点在于 LLM 训练数据含大量旧代码，导致 AI 常为已有原生方案的任务输出冗余 JavaScript。项目通过 CLI（npx modern-web-guidance）提供指南搜索、按 ID 检索及代码库遗留模式扫描功能。内容覆盖 250 项现代 Web 特性，分三大类：CSS 与布局（140 项，如容器查询、View Transitions、oklch 色彩空间）、HTML 与 DOM（36 项，如 Popover API、锚点定位、:user-invalid）、JavaScript 与 API（74 项，如 Scheduler API、端侧 AI 模型、WebAuthn），并附 203 个真实开发用例，涵盖无障碍、表单、性能优化等场景。指南优先推荐可被浏览器优化且内置无障碍支持的平台级 API，倡导以轻量降级替代重型 polyfill，且经 eval 评估剔除模型已熟知的低效内容，确保 token 利用率。",
-    "chinese_title": "Show HN：让AI编程助手告别过时代码，拥抱现代Web原生能力",
-    "chinese_summary": "Modern Web Guidance 是由 Chrome、Edge、Firefox 及 MDN 团队联合维护的技能集，将现代 Web 平台知识与浏览器兼容性数据直接注入 AI 编程助手的上下文，引导其生成基于原生 API 的现代代码而非 2019 年前后的遗留方案。核心痛点在于 LLM 训练数据含大量旧代码，导致 AI 常为已有原生方案的任务输出冗余 JavaScript。项目通过 CLI（npx modern-web-guidance）提供指南搜索、按 ID 检索及代码库遗留模式扫描功能。内容覆盖 250 项现代 Web 特性，分三大类：CSS 与布局（140 项，如容器查询、View Transitions、oklch 色彩空间）、HTML 与 DOM（36 项，如 Popover API、锚点定位、:user-invalid）、JavaScript 与 API（74 项，如 Scheduler API、端侧 AI 模型、WebAuthn），并附 203 个真实开发用例，涵盖无障碍、表单、性能优化等场景。指南优先推荐可被浏览器优化且内置无障碍支持的平台级 API，倡导以轻量降级替代重型 polyfill，且经 eval 评估剔除模型已熟知的低效内容，确保 token 利用率。"
+    "id": "50457164",
+    "title": "Retirement Savings Are Fueling the AI Bubble",
+    "url": "https://lpeproject.org/blog/your-retirement-savings-are-fueling-the-ai-bubble/",
+    "summary": "上周四科技股单日蒸发3.2万亿美元，\"科技七巨头\"因AI巨额投入沦为\"现金焚烧器\"，市场恐慌加剧。文章指出一个公众尚未充分意识到的关键问题：普通劳动者的退休储蓄正通过私募股权和私募信贷基金，大规模为AI数据中心建设融资。特朗普政府已首次开放15万亿美元私人退休账户进入私募基金市场，而私募股权公司承担了25%至30%的数据中心融资，使退休投资者在不知情的情况下背负了AI泡沫的巨大风险。当前局面令人联想到2008年金融危机：评级机构警告\"超级计算巨头\"信用质量持续恶化，信用违约互换交易急剧攀升，数据中心行业融资关系高度交织。近期选举中，选民大规模反对数据中心建设，德州、佐治亚等州新当选官员承诺限建或暂停，但已累积的海量债务风险不会因此消除。文章呼吁养老金受托人撤出与数据中心相关的未公开风险资产，将退休储蓄转向保障性住房、可再生能源等生产性投资，并建议政府建立公共资产管理机构，改变养老金配置结构。迈克尔·伯里警告，最富有的企业投入再多资本也无法阻止泡沫最终破裂，而这一次，危机已清晰可见。",
+    "chinese_title": "退休储蓄正助推AI泡沫",
+    "chinese_summary": "上周四科技股单日蒸发3.2万亿美元，\"科技七巨头\"因AI巨额投入沦为\"现金焚烧器\"，市场恐慌加剧。文章指出一个公众尚未充分意识到的关键问题：普通劳动者的退休储蓄正通过私募股权和私募信贷基金，大规模为AI数据中心建设融资。特朗普政府已首次开放15万亿美元私人退休账户进入私募基金市场，而私募股权公司承担了25%至30%的数据中心融资，使退休投资者在不知情的情况下背负了AI泡沫的巨大风险。当前局面令人联想到2008年金融危机：评级机构警告\"超级计算巨头\"信用质量持续恶化，信用违约互换交易急剧攀升，数据中心行业融资关系高度交织。近期选举中，选民大规模反对数据中心建设，德州、佐治亚等州新当选官员承诺限建或暂停，但已累积的海量债务风险不会因此消除。文章呼吁养老金受托人撤出与数据中心相关的未公开风险资产，将退休储蓄转向保障性住房、可再生能源等生产性投资，并建议政府建立公共资产管理机构，改变养老金配置结构。迈克尔·伯里警告，最富有的企业投入再多资本也无法阻止泡沫最终破裂，而这一次，危机已清晰可见。"
   },
   {
-    "id": "50439193",
-    "title": "AlphaProof Code",
-    "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
-    "summary": "2025年10月，AlphaProof Code项目正式推出CodeMender——一款专注于代码安全的AI智能体，归类于\"责任与安全\"领域。CodeMender旨在通过人工智能技术自动识别、定位并修复软件代码中的安全漏洞与潜在风险，为开发者提供端到端的代码安全防护。该智能体能够理解复杂的代码逻辑与上下文，在代码审查、漏洞检测及补丁生成等关键环节发挥辅助乃至自主决策作用，从而降低人工安全审计的成本与遗漏风险。作为AlphaProof Code系列在安全方向的延伸，CodeMender的发布体现了AI在软件开发生命周期中向深度安全保障迈进的趋势，也呼应了当前对AI系统自身安全性与可信赖性的行业诉求。",
-    "chinese_title": "AlphaProof 代码",
-    "chinese_summary": "2025年10月，AlphaProof Code项目正式推出CodeMender——一款专注于代码安全的AI智能体，归类于\"责任与安全\"领域。CodeMender旨在通过人工智能技术自动识别、定位并修复软件代码中的安全漏洞与潜在风险，为开发者提供端到端的代码安全防护。该智能体能够理解复杂的代码逻辑与上下文，在代码审查、漏洞检测及补丁生成等关键环节发挥辅助乃至自主决策作用，从而降低人工安全审计的成本与遗漏风险。作为AlphaProof Code系列在安全方向的延伸，CodeMender的发布体现了AI在软件开发生命周期中向深度安全保障迈进的趋势，也呼应了当前对AI系统自身安全性与可信赖性的行业诉求。"
+    "id": "50457230",
+    "title": "Show HN: I recreated Papers Please but you're deciding which YC startups to fund",
+    "url": "https://termsheetplease.com/",
+    "summary": "摘要：Bo Lau 在 Hacker News 上展示了一款名为《Term Sheet, Please》的网页游戏，灵感源自经典边境检查模拟游戏《Papers Please》。游戏中，玩家扮演 Y Combinator（YC）的投资官，在\"路演日（Demo Day）\"期间逐一审阅创业公司提交的材料，依据规则与事实做出投资、通过或暂缓（Fund / Pass / Hold）的决策。游戏界面融入了 YC 投资流程的术语，如\"Term Sheet（投资条款）\"\"决策表\"\"DEMO DAY ACT 01\"等，营造出沉浸感。界面包含\"调用下一位创始人\"\"检查文件\"\"点击文件中的事实\"等交互环节，整体风格还原了《Papers Please》压抑、紧张的审查氛围。该作品以纯网页形式运行，需启用 JavaScript 才能体验。",
+    "chinese_title": "Show HN：我重制了《Papers Please》，玩家化身 YC 投资人决定创业公司去留",
+    "chinese_summary": "摘要：Bo Lau 在 Hacker News 上展示了一款名为《Term Sheet, Please》的网页游戏，灵感源自经典边境检查模拟游戏《Papers Please》。游戏中，玩家扮演 Y Combinator（YC）的投资官，在\"路演日（Demo Day）\"期间逐一审阅创业公司提交的材料，依据规则与事实做出投资、通过或暂缓（Fund / Pass / Hold）的决策。游戏界面融入了 YC 投资流程的术语，如\"Term Sheet（投资条款）\"\"决策表\"\"DEMO DAY ACT 01\"等，营造出沉浸感。界面包含\"调用下一位创始人\"\"检查文件\"\"点击文件中的事实\"等交互环节，整体风格还原了《Papers Please》压抑、紧张的审查氛围。该作品以纯网页形式运行，需启用 JavaScript 才能体验。"
   },
   {
-    "id": "50445013",
-    "title": "What objective is reasoning solving?",
-    "url": "https://alexwang.ai/posts/reasoning-as-pathfinding/",
-    "summary": "本文提出将推理建模为token空间中的路径搜索：模型从提示x出发，生成一条token路径z，目标是使最终答案落入正确答案集S_x，成功概率p_x为所有通向正确答案的路径概率之和。提升p_x有两条途径：Best-of-k采样通过增加样本数单调提升成功率；RL训练则直接提高模型生成成功路径的概率。作者证明，使用可验证二元奖励的REINFORCE在数学上等价于拒绝采样微调，每步训练将权重拉向已找到的成功路径，大量搜索计算被\"摊销\"进模型参数。因此，推理时单次采样即可大概率成功，但单条路径本身并不保证收敛到正确答案。该框架统一解释了若干现象：训练中CoT变长源于成功路径恰好更长，模型习得此偏好；强制加长推理收益递减甚至变差，因额外步数不改变路径是否落入S_x；推理链不忠实源于验证器仅检查最终答案，中间token无忠实性约束；奖励黑客则源于验证器不完备，模型可能学会落入验证器接受但实际错误的捷径区域，且扩大RL搜索规模会加剧此问题。",
-    "chinese_title": "推理究竟在优化什么目标？",
-    "chinese_summary": "本文提出将推理建模为token空间中的路径搜索：模型从提示x出发，生成一条token路径z，目标是使最终答案落入正确答案集S_x，成功概率p_x为所有通向正确答案的路径概率之和。提升p_x有两条途径：Best-of-k采样通过增加样本数单调提升成功率；RL训练则直接提高模型生成成功路径的概率。作者证明，使用可验证二元奖励的REINFORCE在数学上等价于拒绝采样微调，每步训练将权重拉向已找到的成功路径，大量搜索计算被\"摊销\"进模型参数。因此，推理时单次采样即可大概率成功，但单条路径本身并不保证收敛到正确答案。该框架统一解释了若干现象：训练中CoT变长源于成功路径恰好更长，模型习得此偏好；强制加长推理收益递减甚至变差，因额外步数不改变路径是否落入S_x；推理链不忠实源于验证器仅检查最终答案，中间token无忠实性约束；奖励黑客则源于验证器不完备，模型可能学会落入验证器接受但实际错误的捷径区域，且扩大RL搜索规模会加剧此问题。"
+    "id": "50455633",
+    "title": "Faster Retrieval for Better, More Efficient RAG",
+    "url": "https://machinelearning.apple.com/research/faster-retrieval",
+    "summary": "最大内积搜索（MIPS）是RAG与推荐系统的核心，但传统近似方法假设查询与键分布相似，而RAG中短查询与长文本键差异显著，造成性能损失。Apple团队在ICML 2026提出以学习支撑函数摊销MIPS的新方法，将MIPS重新阐释为凸分析中的支撑函数问题，通过离线预训练小型神经网络加速在线检索。核心方案包含两种网络：SupportNet基于输入凸神经网络（ICNN）逼近各数据簇的支撑函数，将质心路由升级为按支撑分数路由，在Natural Questions数据集上，小模型达到95%路由召回率比质心路由快1.9倍；KeyNet直接预测最佳匹配键，作为查询改写器接入现有IVF索引，达到99%召回率仅需原始方法约1/8时间，扫描量减少约11倍。两者均以回归方式训练，从实际查询分布采样，以穷举搜索结果为监督信号，一次性训练后即可部署。实践建议：追求推理速度选KeyNet，需校准分数或计算受限选SupportNet，超大规模系统可联合使用。",
+    "chinese_title": "加速检索，提升RAG的效率与质量",
+    "chinese_summary": "最大内积搜索（MIPS）是RAG与推荐系统的核心，但传统近似方法假设查询与键分布相似，而RAG中短查询与长文本键差异显著，造成性能损失。Apple团队在ICML 2026提出以学习支撑函数摊销MIPS的新方法，将MIPS重新阐释为凸分析中的支撑函数问题，通过离线预训练小型神经网络加速在线检索。核心方案包含两种网络：SupportNet基于输入凸神经网络（ICNN）逼近各数据簇的支撑函数，将质心路由升级为按支撑分数路由，在Natural Questions数据集上，小模型达到95%路由召回率比质心路由快1.9倍；KeyNet直接预测最佳匹配键，作为查询改写器接入现有IVF索引，达到99%召回率仅需原始方法约1/8时间，扫描量减少约11倍。两者均以回归方式训练，从实际查询分布采样，以穷举搜索结果为监督信号，一次性训练后即可部署。实践建议：追求推理速度选KeyNet，需校准分数或计算受限选SupportNet，超大规模系统可联合使用。"
   },
   {
-    "id": "50444684",
-    "title": "A comprehensive study of how fingerprintable users are",
-    "url": "https://fingerprinting.study/",
-    "summary": "Mozilla联合多机构基于近2500万Firefox用户遥测数据，开展了大规模浏览器指纹唯一性实测研究。核心发现包括：第一，用户指纹唯一性主要由少数高影响指标（约8个）及其组合决定，而非大量独立测量的累积，近似符合80/20规律；第二，指纹特征因操作系统而异，任何单一百分比汇总都会掩盖平台差异，必须分平台分析；第三，香农熵不能可靠预测指纹影响，应引入辛普森指数衡量队列结构；第四，同一防护在不同平台效果差异显著，例如屏幕分辨率限制对macOS可降低25.3个百分点，对其他平台仅0至3个百分点。基于上述洞察，研究团队在Firefox 143中部署了数据驱动的指纹防护，在保持网页兼容性的前提下将唯一可识别用户比例从75%降至46%。数据采集采用OHTTP等隐私技术，确保用户不可被追踪。文章同时公开了聚合数据与分析代码，并强调标准化与随机化防护应结合使用，以兼顾隐私效果与实用性。",
-    "chinese_title": "用户浏览器指纹可识别性综合研究",
-    "chinese_summary": "Mozilla联合多机构基于近2500万Firefox用户遥测数据，开展了大规模浏览器指纹唯一性实测研究。核心发现包括：第一，用户指纹唯一性主要由少数高影响指标（约8个）及其组合决定，而非大量独立测量的累积，近似符合80/20规律；第二，指纹特征因操作系统而异，任何单一百分比汇总都会掩盖平台差异，必须分平台分析；第三，香农熵不能可靠预测指纹影响，应引入辛普森指数衡量队列结构；第四，同一防护在不同平台效果差异显著，例如屏幕分辨率限制对macOS可降低25.3个百分点，对其他平台仅0至3个百分点。基于上述洞察，研究团队在Firefox 143中部署了数据驱动的指纹防护，在保持网页兼容性的前提下将唯一可识别用户比例从75%降至46%。数据采集采用OHTTP等隐私技术，确保用户不可被追踪。文章同时公开了聚合数据与分析代码，并强调标准化与随机化防护应结合使用，以兼顾隐私效果与实用性。"
+    "id": "50456791",
+    "title": "Gemini Decisions API",
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+    "summary": "Google DeepMind 正式发布 Gemini 决策 API，搭载全新 Gemini Decision 1 模型。该 API 支持在单次前向推理中同时处理文本、图像、音频、视频及 PDF 等多模态输入（最高 256K tokens），并一次性评估多达 1000 道是非判断、多选及量表评分题目，端到端延迟仅 150–250 毫秒。模型跳过逐词生成，直接为候选选项输出概率与置信度，零输出 token 费用，输入定价仅 0.10 美元/百万 token，较同类产品便宜近 5 倍。API 提供三种决策原语：是/否（noul）、多选（choice，2–255 项）及有序量表评分（score），每项答案附带 0–1 置信度，便于将模糊结果转交人工复核。内部落地方面，Gemini Notebook 借此实现实时模型路由、降低 40% 延迟；Stitch 完成秒级可交互线框图；CC 在 200+ 表情中即时选择；搜索团队将其用作 MCP 工具的安全层。用户可在 Google AI Studio 免费获取 API 密钥，生态已集成 OpenRouter、LangChain、Vercel、LiteLLM 等平台，Google Cloud 支持即将上线。",
+    "chinese_title": "Gemini 决策 API：极速校准的多模态决策引擎",
+    "chinese_summary": "Google DeepMind 正式发布 Gemini 决策 API，搭载全新 Gemini Decision 1 模型。该 API 支持在单次前向推理中同时处理文本、图像、音频、视频及 PDF 等多模态输入（最高 256K tokens），并一次性评估多达 1000 道是非判断、多选及量表评分题目，端到端延迟仅 150–250 毫秒。模型跳过逐词生成，直接为候选选项输出概率与置信度，零输出 token 费用，输入定价仅 0.10 美元/百万 token，较同类产品便宜近 5 倍。API 提供三种决策原语：是/否（noul）、多选（choice，2–255 项）及有序量表评分（score），每项答案附带 0–1 置信度，便于将模糊结果转交人工复核。内部落地方面，Gemini Notebook 借此实现实时模型路由、降低 40% 延迟；Stitch 完成秒级可交互线框图；CC 在 200+ 表情中即时选择；搜索团队将其用作 MCP 工具的安全层。用户可在 Google AI Studio 免费获取 API 密钥，生态已集成 OpenRouter、LangChain、Vercel、LiteLLM 等平台，Google Cloud 支持即将上线。"
   },
   {
-    "id": "50443090",
-    "title": "AMD's Zen 6 Family: Feeding the Beast",
-    "url": "https://chipsandcheese.com/p/amds-zen-6-family-feeding-the-beast",
-    "summary": "AMD Zen 6是Zen 5的迭代进化，但内部多处重构，幅度堪比当年Zen 1到Zen 2。前端方面，分支预测器误预测恢复延迟降至每分支3–3.5ns，L1i内支持每周期双分支；取指首次允许单线程同时使用双解码簇。执行引擎中，整数吞吐从5.25提升至5.96条64位加法/周期，乘法单元精简为2个，VNNI单元翻倍至4个，256位向量加载提升至4路/周期。最关键的架构变化在于Zen 6与Zen 6c首次在乱序引擎层面分化：Zen 6侧重高频，Zen 6c则扩大重排序缓冲（576→640）、整数寄存器（288→352）等结构，以容纳更多在途操作、容忍更高内存延迟。缓存方面，L2读带宽修复为64B/周期，但L3延迟因容量与网格节点增加而上升。性能上，EPYC 9686F（Zen 6）单线程SPEC CPU 2026整数领先Zen 5基9575F约21%、浮点领先18%；EPYC 9996（Zen 6c）在低约900MHz时钟下仍匹配9575F。AMD以\"同基不同形\"回应经典核与密集核之争，未来Zen 7或将进一步深化这种设计分化。",
-    "chinese_title": "AMD Zen 6家族：为猛兽添粮",
-    "chinese_summary": "AMD Zen 6是Zen 5的迭代进化，但内部多处重构，幅度堪比当年Zen 1到Zen 2。前端方面，分支预测器误预测恢复延迟降至每分支3–3.5ns，L1i内支持每周期双分支；取指首次允许单线程同时使用双解码簇。执行引擎中，整数吞吐从5.25提升至5.96条64位加法/周期，乘法单元精简为2个，VNNI单元翻倍至4个，256位向量加载提升至4路/周期。最关键的架构变化在于Zen 6与Zen 6c首次在乱序引擎层面分化：Zen 6侧重高频，Zen 6c则扩大重排序缓冲（576→640）、整数寄存器（288→352）等结构，以容纳更多在途操作、容忍更高内存延迟。缓存方面，L2读带宽修复为64B/周期，但L3延迟因容量与网格节点增加而上升。性能上，EPYC 9686F（Zen 6）单线程SPEC CPU 2026整数领先Zen 5基9575F约21%、浮点领先18%；EPYC 9996（Zen 6c）在低约900MHz时钟下仍匹配9575F。AMD以\"同基不同形\"回应经典核与密集核之争，未来Zen 7或将进一步深化这种设计分化。"
+    "id": "50457669",
+    "title": "IBM Quantum Nighthawk Demonstrates New Levels of Speed and Quality",
+    "url": "https://newsroom.ibm.com/2026-11-11-ibm-quantum-nighthawk-demonstrates-new-levels-of-speed-and-quality,-with-plans-to-scale-beyond-1,000-qubits-in-2027",
+    "summary": "2026年11月11日，IBM宣布新一代量子处理器Nighthawk r3，可在520个量子比特上精确执行10,000个量子操作，并计划于2027年将两台r3通过10个l-coupler互联，构建超1,000量子比特的统一系统。当前，Nighthawk r2已实现每秒10万样本的采样速度，支持120量子比特上超7,500个操作。E.ON、Algorithmiq、Q-CTRL等合作伙伴累计在r2上运行超340亿条量子电路，性能提升最高达19倍；E.ON在能源电网量子机器学习上实现15倍加速，IBM与橡树岭国家实验室的合作实验亦达12倍加速。在量子与经典计算融合方面，IBM量子平台将高性能经典计算与量子计算整合于统一环境，与RIKEN合作将量子对角化工作流提速5倍，与克利夫兰诊所合作自动处理6.08亿样本。IBM还联合橡树岭国家实验室及AMD推出量子纠错协同设计平台，将Nighthawk与Umbra高性能计算系统物理共置。IBM强调，迈向容错量子计算需量子与经典资源深度整合。",
+    "chinese_title": "IBM量子处理器Nighthawk实现速度与质量新突破，2027年将突破千比特",
+    "chinese_summary": "2026年11月11日，IBM宣布新一代量子处理器Nighthawk r3，可在520个量子比特上精确执行10,000个量子操作，并计划于2027年将两台r3通过10个l-coupler互联，构建超1,000量子比特的统一系统。当前，Nighthawk r2已实现每秒10万样本的采样速度，支持120量子比特上超7,500个操作。E.ON、Algorithmiq、Q-CTRL等合作伙伴累计在r2上运行超340亿条量子电路，性能提升最高达19倍；E.ON在能源电网量子机器学习上实现15倍加速，IBM与橡树岭国家实验室的合作实验亦达12倍加速。在量子与经典计算融合方面，IBM量子平台将高性能经典计算与量子计算整合于统一环境，与RIKEN合作将量子对角化工作流提速5倍，与克利夫兰诊所合作自动处理6.08亿样本。IBM还联合橡树岭国家实验室及AMD推出量子纠错协同设计平台，将Nighthawk与Umbra高性能计算系统物理共置。IBM强调，迈向容错量子计算需量子与经典资源深度整合。"
   },
   {
-    "id": "50444850",
-    "title": "Saltline: First-person shooter built by Fable 5.2",
-    "url": "https://claude.ai/artifact/BGY1SztrAYcJQHSsnHHGmp",
-    "summary": "无法访问该文章链接",
-    "chinese_title": "盐迹：由Fable 5.2打造的第一人称射击游戏",
-    "chinese_summary": "无法访问该文章链接"
+    "id": "50452455",
+    "title": "Google SWE points 48 AI agents at NASA Lidar, finds unmapped Maya pyramid in 72h",
+    "url": "https://pietromiotti.com/latest/maya-site/?maya",
+    "summary": "一名谷歌软件工程师在秘鲁旅行时，受\"宾厄姆发现马丘比丘\"故事的启发，想到利用激光雷达穿透丛林树冠搜寻古代遗址。他召集48个AI智能体（含Gemini、ChatGPT、Claude、Grok），分析NASA获取的约1200平方公里玛雅地区激光雷达数据。智能体逐张审阅影像，识别出金字塔、广场、庭院等人工结构，并排除自然地形干扰。经文献与档案比对，一个位于山崖边缘、包含8至12米高椭圆金字塔及疑似蓄水池的玛雅村落未被任何已知记录收录。作者随即撰写报告并联系墨西哥国家人类学与历史研究所（INAH），72小时内获官方回复，确认该地点无已登记遗址。11月更新指出，该遗址实已被2025年学术论文记录，仅尚未录入INAH系统，属\"重新发现\"而非全新发现。作者强调，AI智能体应用远不止编程与数学，正开启全科学领域的变革，未来瓶颈仅剩好奇心与算力，他呼吁对全球进行激光雷达扫描，交由智能体探索未知。",
+    "chinese_title": "谷歌工程师以48个AI智能体解析NASA激光雷达数据，72小时发现未登记玛雅遗址",
+    "chinese_summary": "一名谷歌软件工程师在秘鲁旅行时，受\"宾厄姆发现马丘比丘\"故事的启发，想到利用激光雷达穿透丛林树冠搜寻古代遗址。他召集48个AI智能体（含Gemini、ChatGPT、Claude、Grok），分析NASA获取的约1200平方公里玛雅地区激光雷达数据。智能体逐张审阅影像，识别出金字塔、广场、庭院等人工结构，并排除自然地形干扰。经文献与档案比对，一个位于山崖边缘、包含8至12米高椭圆金字塔及疑似蓄水池的玛雅村落未被任何已知记录收录。作者随即撰写报告并联系墨西哥国家人类学与历史研究所（INAH），72小时内获官方回复，确认该地点无已登记遗址。11月更新指出，该遗址实已被2025年学术论文记录，仅尚未录入INAH系统，属\"重新发现\"而非全新发现。作者强调，AI智能体应用远不止编程与数学，正开启全科学领域的变革，未来瓶颈仅剩好奇心与算力，他呼吁对全球进行激光雷达扫描，交由智能体探索未知。"
   },
   {
-    "id": "50382401",
-    "title": "I deleted all my SSH keys",
-    "url": "https://blog.infected.systems/posts/2026-11-03-i-deleted-all-my-ssh-keys/",
-    "summary": "摘要：本文记录了作者将SSH密钥从磁盘迁移至硬件安全模块的完整实践，目标是确保磁盘上不再存有未受保护的密钥材料。文章介绍了三种方案：一、YubiKey：利用ed25519-sk将密钥直接注册至安全密钥芯片，磁盘上的私钥文件仅为硬件句柄、不含实际密钥，OpenSSH原生支持，无需额外软件；二、TPM：借助开源工具ssh-tpm-agent将密钥加密存储于磁盘，由TPM负责解密，密钥与设备绑定但密文仍留在磁盘上；三、Apple Secure Enclave：在macOS Sequoia上通过sc_auth创建不可导出密钥，依赖TouchID进行身份验证。文章还涵盖各方案的非交互（免触碰）用法及注意事项，如YubiKey的no-touch-required模式需服务端配合、TPM密钥不校验PCR寄存器故不受固件变更影响、Mac合盖模式下TouchID不可用的替代方案等。作者最后提醒，硬件密钥的核心风险在于硬件丢失或故障，建议通过authorized_keys配置多把密钥以实现冗余保障。",
-    "chinese_title": "我删除了所有SSH密钥",
-    "chinese_summary": "摘要：本文记录了作者将SSH密钥从磁盘迁移至硬件安全模块的完整实践，目标是确保磁盘上不再存有未受保护的密钥材料。文章介绍了三种方案：一、YubiKey：利用ed25519-sk将密钥直接注册至安全密钥芯片，磁盘上的私钥文件仅为硬件句柄、不含实际密钥，OpenSSH原生支持，无需额外软件；二、TPM：借助开源工具ssh-tpm-agent将密钥加密存储于磁盘，由TPM负责解密，密钥与设备绑定但密文仍留在磁盘上；三、Apple Secure Enclave：在macOS Sequoia上通过sc_auth创建不可导出密钥，依赖TouchID进行身份验证。文章还涵盖各方案的非交互（免触碰）用法及注意事项，如YubiKey的no-touch-required模式需服务端配合、TPM密钥不校验PCR寄存器故不受固件变更影响、Mac合盖模式下TouchID不可用的替代方案等。作者最后提醒，硬件密钥的核心风险在于硬件丢失或故障，建议通过authorized_keys配置多把密钥以实现冗余保障。"
+    "id": "50453288",
+    "title": "Hyper-Realistic Sand with WebGL2",
+    "url": "https://av.github.io/safe-sand/",
+    "summary": "这是一款基于 WebGL2 和 JavaScript 构建的超写实沙粒模拟器，无需安装，直接在浏览器中即可运行，全面兼容手机、平板与桌面设备。用户可通过丰富交互体验逼真玩沙：用手指推移沙粒、倾斜设备让沙子自然滑落、摇晃设备使沙粒四散飞溅，并支持在画面上自由绘制。应用提供\"倒沙\"\"铺平\"\"倾斜\"\"摇晃\"\"绘制\"等操作模式，设有\"沙粒表面\"与\"沙下层\"两种视角切换，可随时倒入新沙补充堆积。此外，模拟器还支持音效与触觉反馈（Haptics），进一步增强沉浸感，让用户在任意屏幕上获得接近真实玩沙的视觉与触觉体验。",
+    "chinese_title": "基于 WebGL2 的超写实沙粒模拟",
+    "chinese_summary": "这是一款基于 WebGL2 和 JavaScript 构建的超写实沙粒模拟器，无需安装，直接在浏览器中即可运行，全面兼容手机、平板与桌面设备。用户可通过丰富交互体验逼真玩沙：用手指推移沙粒、倾斜设备让沙子自然滑落、摇晃设备使沙粒四散飞溅，并支持在画面上自由绘制。应用提供\"倒沙\"\"铺平\"\"倾斜\"\"摇晃\"\"绘制\"等操作模式，设有\"沙粒表面\"与\"沙下层\"两种视角切换，可随时倒入新沙补充堆积。此外，模拟器还支持音效与触觉反馈（Haptics），进一步增强沉浸感，让用户在任意屏幕上获得接近真实玩沙的视觉与触觉体验。"
   },
   {
-    "id": "50442426",
-    "title": "Blender 5.3 released with Gaussian Splat support",
-    "url": "https://www.blender.org/download/releases/5-3/",
-    "summary": "Blender 5.3 带来多项重大更新。核心亮点为原生 3D 高斯泼溅（Gaussian Splat）支持，可导入 PLY、SPZ、glTF 格式，以点云存储并通过几何节点处理，在 EEVEE、Cycles 及 Workbench 中渲染。Cycles 新增色散（Dispersion）功能，可模拟宝石与玻璃的彩虹折射效果；集成 DLSS 4.5 降噪，显著提升渲染速度与视口响应。EEVEE 新增材质光照节点，支持卡通着色与虹彩效果，并新增全景相机渲染。合成器引入场景效果堆栈，内置辉光、色差等一键效果，新增 17 个几何节点。全新项目管理功能允许按项目组织文件与设置。资产库可发布为扩展，Poly Haven 公共域资产可直接调用。油漆笔新增布尔切割 Carver 工具及多区域填充。视频序列器加入波纹编辑与重写的 Blade 工具，支持 OpenTimelineIO。UI 方面新增大纲视图自定义排序、侧边栏搜索及 Markdown 支持。此外还包含体积网格节点、循环工具、多分辨率纹理显示等改进。",
-    "chinese_title": "Blender 5.3 发布，原生支持高斯泼溅",
-    "chinese_summary": "Blender 5.3 带来多项重大更新。核心亮点为原生 3D 高斯泼溅（Gaussian Splat）支持，可导入 PLY、SPZ、glTF 格式，以点云存储并通过几何节点处理，在 EEVEE、Cycles 及 Workbench 中渲染。Cycles 新增色散（Dispersion）功能，可模拟宝石与玻璃的彩虹折射效果；集成 DLSS 4.5 降噪，显著提升渲染速度与视口响应。EEVEE 新增材质光照节点，支持卡通着色与虹彩效果，并新增全景相机渲染。合成器引入场景效果堆栈，内置辉光、色差等一键效果，新增 17 个几何节点。全新项目管理功能允许按项目组织文件与设置。资产库可发布为扩展，Poly Haven 公共域资产可直接调用。油漆笔新增布尔切割 Carver 工具及多区域填充。视频序列器加入波纹编辑与重写的 Blade 工具，支持 OpenTimelineIO。UI 方面新增大纲视图自定义排序、侧边栏搜索及 Markdown 支持。此外还包含体积网格节点、循环工具、多分辨率纹理显示等改进。"
+    "id": "50454625",
+    "title": "Show HN: Yogurt – Free, private, open-source alternative to Granola",
+    "url": "https://github.com/FrigadeHQ/yogurt",
+    "summary": "Yogurt 是一款免费且注重隐私的开源 AI 会议笔记工具，定位为 Granola 的开源替代方案。其核心亮点在于记录通话时完全无需向会议中添加机器人（bot），从源头保护用户隐私。Yogurt 支持跨平台运行，覆盖 macOS 14.4+（Apple Silicon）、Windows 10 2004+（x64）及 Ubuntu 22.04+（x64 AppImage），最低要求 8GB 内存。项目采用 MIT 许可证，代码完全开源，用户可自由使用、构建和二次分发。Yogurt 由 Frigade 团队开发，官网为 yogurt.so，提供各平台安装包下载、使用帮助文档及本地构建指南。对于对数据隐私有较高要求的用户和团队而言，Yogurt 提供了一个不依赖云端机器人、可在本地完成会议录音与笔记生成的替代选择。",
+    "chinese_title": "Show HN：Yogurt——免费、隐私优先、开源的 Granola 替代品",
+    "chinese_summary": "Yogurt 是一款免费且注重隐私的开源 AI 会议笔记工具，定位为 Granola 的开源替代方案。其核心亮点在于记录通话时完全无需向会议中添加机器人（bot），从源头保护用户隐私。Yogurt 支持跨平台运行，覆盖 macOS 14.4+（Apple Silicon）、Windows 10 2004+（x64）及 Ubuntu 22.04+（x64 AppImage），最低要求 8GB 内存。项目采用 MIT 许可证，代码完全开源，用户可自由使用、构建和二次分发。Yogurt 由 Frigade 团队开发，官网为 yogurt.so，提供各平台安装包下载、使用帮助文档及本地构建指南。对于对数据隐私有较高要求的用户和团队而言，Yogurt 提供了一个不依赖云端机器人、可在本地完成会议录音与笔记生成的替代选择。"
   },
   {
-    "id": "50433216",
-    "title": "Process Explorer for macOS",
-    "url": "https://github.com/microsoft/Procexp-Mac",
-    "summary": "本文为 Sysinternals Process Explorer 的 macOS 原生实现项目文档。应用以 Swift、SwiftUI 和 AppKit 构建，依托 libproc、sysctl、Security.framework 等系统 API，提供实时进程树（按服务、沙箱、挂起、新删除等状态着色）、可冻结进程名面板与可配置指标列、模块/句柄/线程三模式底部检查面板、多标签页进程属性窗口（性能图表、TCP/IP、安全签名与公证、环境变量等）、系统信息窗口（CPU/内存/磁盘/网络/GPU 图表，区分 Apple Silicon 性能核与能效核）及 VirusTotal 集成。进程操作涵盖终止、挂起恢复、优先级调整、采样等。应用支持可选特权助手架构，经 XPC 与 launchd 守护进程通信获取跨用户进程信息，需代码签名及用户在系统设置中审批。开发要求 macOS 14 与 Xcode 26.6，借助 xcodegen 生成工程，文档涵盖构建、测试、DMG 打包、Developer ID 签名与公证全流程。文档强调 macOS 公共 API 存在限制，不可用数据一律留空而非伪造。",
-    "chinese_title": "macOS 版进程资源管理器",
-    "chinese_summary": "本文为 Sysinternals Process Explorer 的 macOS 原生实现项目文档。应用以 Swift、SwiftUI 和 AppKit 构建，依托 libproc、sysctl、Security.framework 等系统 API，提供实时进程树（按服务、沙箱、挂起、新删除等状态着色）、可冻结进程名面板与可配置指标列、模块/句柄/线程三模式底部检查面板、多标签页进程属性窗口（性能图表、TCP/IP、安全签名与公证、环境变量等）、系统信息窗口（CPU/内存/磁盘/网络/GPU 图表，区分 Apple Silicon 性能核与能效核）及 VirusTotal 集成。进程操作涵盖终止、挂起恢复、优先级调整、采样等。应用支持可选特权助手架构，经 XPC 与 launchd 守护进程通信获取跨用户进程信息，需代码签名及用户在系统设置中审批。开发要求 macOS 14 与 Xcode 26.6，借助 xcodegen 生成工程，文档涵盖构建、测试、DMG 打包、Developer ID 签名与公证全流程。文档强调 macOS 公共 API 存在限制，不可用数据一律留空而非伪造。"
+    "id": "50453637",
+    "title": "Atuin Threads: All your agent sessions on every machine",
+    "url": "https://blog.atuin.sh/threads-agent-sessions/",
+    "summary": "Atuin 18.24 版本推出 Threads 功能，解决 AI 编码代理会话分散于不同工具和机器、难以搜索找回的问题。用户可在 Claude Code 上启动任务，再到 Codex 上无缝恢复，上下文完整保留。Threads 基于 Atuin 已有的端到端加密同步引擎构建，代理会话以追加式日志模型存储，支持官方托管、自建服务器或纯本地模式，数据采集为可选开启。目前支持 Claude Code、Codex、Pi、Omp、OpenCode 等代理，更多即将加入。通过 MCP 协议，代理可自主搜索和引用历史会话，无需人工整理上下文。文章展示了多个实用场景：借助历史会话恢复未上线的工作思路；Sentry 告警触发排查时，代理自动关联先前调查记录加速修复；在性能不佳的机器上分叉会话至更快设备继续基准测试，结果回传原机器生成修复方案。团队级会话共享功能正在开发中，旨在让代理上下文像 Git 分支一样可移交。安装后运行 atuin resume 即可使用。",
+    "chinese_title": "Atuin Threads：跨设备统一管理你的 AI 代理会话",
+    "chinese_summary": "Atuin 18.24 版本推出 Threads 功能，解决 AI 编码代理会话分散于不同工具和机器、难以搜索找回的问题。用户可在 Claude Code 上启动任务，再到 Codex 上无缝恢复，上下文完整保留。Threads 基于 Atuin 已有的端到端加密同步引擎构建，代理会话以追加式日志模型存储，支持官方托管、自建服务器或纯本地模式，数据采集为可选开启。目前支持 Claude Code、Codex、Pi、Omp、OpenCode 等代理，更多即将加入。通过 MCP 协议，代理可自主搜索和引用历史会话，无需人工整理上下文。文章展示了多个实用场景：借助历史会话恢复未上线的工作思路；Sentry 告警触发排查时，代理自动关联先前调查记录加速修复；在性能不佳的机器上分叉会话至更快设备继续基准测试，结果回传原机器生成修复方案。团队级会话共享功能正在开发中，旨在让代理上下文像 Git 分支一样可移交。安装后运行 atuin resume 即可使用。"
   },
   {
-    "id": "50439695",
-    "title": "Ableton Live 13",
-    "url": "https://www.ableton.com/en/live/",
-    "summary": "Ableton Live 13预计2027年初发布，更新涵盖三大方向。创作方面：新增步进音序器、ARA 2音频编辑支持、鼓合成器、自动化捕获及上下文浏览，提升创作与编排效率。声音设计方面：新增多频段与中侧机架、Looplet四播放头循环、瞬态整形器、削波器、包络剪辑及扩展机架宏控制，并更新核心库内容与Softube经典动态/均衡器。混音方面：混音器新增设备插槽、发送推子及可持久化配置菜单。产品分Intro（限16轨）、Standard（无限轨）与Suite（含Max for Live、完整音效库及Melodyne essential）三个版本。已购Live 12用户可享八折预购优惠，未购用户亦可先八折入手Live 12，发布日免费升级至对应Live 13版本。硬件方面，Push 3新增自定义布局、步进音序器及性能混音器界面，Push 2支持部分新功能但不含自定义布局与性能混音器。",
-    "chinese_title": "Ableton Live 13",
-    "chinese_summary": "Ableton Live 13预计2027年初发布，更新涵盖三大方向。创作方面：新增步进音序器、ARA 2音频编辑支持、鼓合成器、自动化捕获及上下文浏览，提升创作与编排效率。声音设计方面：新增多频段与中侧机架、Looplet四播放头循环、瞬态整形器、削波器、包络剪辑及扩展机架宏控制，并更新核心库内容与Softube经典动态/均衡器。混音方面：混音器新增设备插槽、发送推子及可持久化配置菜单。产品分Intro（限16轨）、Standard（无限轨）与Suite（含Max for Live、完整音效库及Melodyne essential）三个版本。已购Live 12用户可享八折预购优惠，未购用户亦可先八折入手Live 12，发布日免费升级至对应Live 13版本。硬件方面，Push 3新增自定义布局、步进音序器及性能混音器界面，Push 2支持部分新功能但不含自定义布局与性能混音器。"
+    "id": "50452655",
+    "title": "Can a Linear Program Do Weight-Space Programming?",
+    "url": "https://nathan.rs/posts/weight-space-lp/",
+    "summary": "摘要：MIT CSAIL 近期发布的 GPT-6 Astra 展示了\"权重空间编程\"能力——直接编辑神经网络权重而无需梯度训练。本文剖析了 Astra 修复 Qwen3.5-0.8B 思维循环问题的全过程：该模型 93% 的数学推理会陷入重复循环，Astra 耗时约 8 小时试错调整权重，将 MATH-500 准确率从 7.9% 提升至 48.1%。作者发现，Astra 的搜索本质上等价于一个线性规划问题——先定位残差流中的循环方向 u，再对特定层 MLP 权重做秩-1 修改 ΔW=uvᵀ，通过 LP 选择最优列及幅度。借助 GPU 求解器（约 1 分钟），仅改动约 16,000 个权重（Astra 改约 130,000 个）即可匹配效果。进一步分析表明，该编辑在功能上等价于推理时向残差流添加一个固定引导向量，且有效窗口极窄。作者还指出，拒答、谄媚等许多行为或可通过单一方向引导修正，如何将其嵌入权重应属同一类 LP 问题。",
+    "chinese_title": "线性规划能否完成权重空间编程？",
+    "chinese_summary": "摘要：MIT CSAIL 近期发布的 GPT-6 Astra 展示了\"权重空间编程\"能力——直接编辑神经网络权重而无需梯度训练。本文剖析了 Astra 修复 Qwen3.5-0.8B 思维循环问题的全过程：该模型 93% 的数学推理会陷入重复循环，Astra 耗时约 8 小时试错调整权重，将 MATH-500 准确率从 7.9% 提升至 48.1%。作者发现，Astra 的搜索本质上等价于一个线性规划问题——先定位残差流中的循环方向 u，再对特定层 MLP 权重做秩-1 修改 ΔW=uvᵀ，通过 LP 选择最优列及幅度。借助 GPU 求解器（约 1 分钟），仅改动约 16,000 个权重（Astra 改约 130,000 个）即可匹配效果。进一步分析表明，该编辑在功能上等价于推理时向残差流添加一个固定引导向量，且有效窗口极窄。作者还指出，拒答、谄媚等许多行为或可通过单一方向引导修正，如何将其嵌入权重应属同一类 LP 问题。"
   },
   {
-    "id": "50443714",
-    "title": "An Open Field Guide to Inference Engineering",
-    "url": "https://docs.modelplane.ai/guides/inference-guide",
-    "summary": "摘要：本文面向平台工程师，系统介绍推理工程的核心概念与生产实践。随着开源模型性能逼近闭源模型、API成本逐月攀升，越来越多组织选择自托管推理，平台团队正转变为推理团队。推理工程师选模型、上GPU、保服务、降延迟的工作，本质上是SRE技能在新工作负载上的延伸。文章详解推理引擎（vLLM、SGLang等）原理：权重为固定内存占用，KV缓存随并发会话线性增长；推理分预填充（受计算限制）与解码（受内存带宽限制）两阶段，需分别优化。关键指标涵盖首token延迟、每秒token数、吞吐量及每百万token成本。生产实践部分强调从用例而非硬件出发，区分交互与批处理负载；按需引入连续批处理、量化、前缀缓存、投机解码、多GPU分片等优化；并指出编码智能体带来长上下文、高频前缀复用、隐藏推理等独特挑战。全文以Upbound的Project Champagne实践为案例，提供可落地的选型与调优路径。",
-    "chinese_title": "推理工程开放实战指南",
-    "chinese_summary": "摘要：本文面向平台工程师，系统介绍推理工程的核心概念与生产实践。随着开源模型性能逼近闭源模型、API成本逐月攀升，越来越多组织选择自托管推理，平台团队正转变为推理团队。推理工程师选模型、上GPU、保服务、降延迟的工作，本质上是SRE技能在新工作负载上的延伸。文章详解推理引擎（vLLM、SGLang等）原理：权重为固定内存占用，KV缓存随并发会话线性增长；推理分预填充（受计算限制）与解码（受内存带宽限制）两阶段，需分别优化。关键指标涵盖首token延迟、每秒token数、吞吐量及每百万token成本。生产实践部分强调从用例而非硬件出发，区分交互与批处理负载；按需引入连续批处理、量化、前缀缓存、投机解码、多GPU分片等优化；并指出编码智能体带来长上下文、高频前缀复用、隐藏推理等独特挑战。全文以Upbound的Project Champagne实践为案例，提供可落地的选型与调优路径。"
+    "id": "50438435",
+    "title": "The tiny transmitter tracking monarch butterflies' migration, Canada to Mexico",
+    "url": "https://www.begiant.ca/stories/places/monarch-butterflies-tracking-conservation",
+    "summary": "加拿大温尼伯的帝王蝶\"Eddie\"佩戴重仅60毫克的BlūMorpho太阳能微型追踪器，从Living Prairie Museum出发，途经曼尼托巴、北达科他、明尼苏达等地，飞行1,258公里抵达堪萨斯州。今年秋季，加美两国共标记逾1,300只帝王蝶，其中温尼伯29只属能完成约4,000公里迁徙至墨西哥越冬的\"超级世代\"。BlūMorpho由新泽西CTT公司研制，每秒发射2.4GHz信号，100米内的智能手机均可接收并上传数据。该项目由82个跨国组织联合的\"Project Monarch\"推动，旨在填补迁徙路径中段的认知空白。数据显示部分个体已成功抵达墨西哥，但Eddie的信号已19天未更新，前景不明。帝王蝶迁徙依赖沿途\"加油站\"补能，而除草剂、气候变化和城市扩张正令其主要食物乳草大量消失。Project Monarch的数据帮助社区识别关键栖息地并建立\"帝王蝶驿站\"，种植本土乳草及蜜源植物，构建横跨加、美、墨三国的蝴蝶迁徙走廊。",
+    "chinese_title": "微型追踪器记录帝王蝶从加拿大到墨西哥的万里迁徙",
+    "chinese_summary": "加拿大温尼伯的帝王蝶\"Eddie\"佩戴重仅60毫克的BlūMorpho太阳能微型追踪器，从Living Prairie Museum出发，途经曼尼托巴、北达科他、明尼苏达等地，飞行1,258公里抵达堪萨斯州。今年秋季，加美两国共标记逾1,300只帝王蝶，其中温尼伯29只属能完成约4,000公里迁徙至墨西哥越冬的\"超级世代\"。BlūMorpho由新泽西CTT公司研制，每秒发射2.4GHz信号，100米内的智能手机均可接收并上传数据。该项目由82个跨国组织联合的\"Project Monarch\"推动，旨在填补迁徙路径中段的认知空白。数据显示部分个体已成功抵达墨西哥，但Eddie的信号已19天未更新，前景不明。帝王蝶迁徙依赖沿途\"加油站\"补能，而除草剂、气候变化和城市扩张正令其主要食物乳草大量消失。Project Monarch的数据帮助社区识别关键栖息地并建立\"帝王蝶驿站\"，种植本土乳草及蜜源植物，构建横跨加、美、墨三国的蝴蝶迁徙走廊。"
   },
   {
-    "id": "50436640",
-    "title": "Amazon saves millions by replacing Sonnet 4.6 with Strands Decider",
-    "url": "https://strandsagents.com/blog/amazon-saves-millions-replacing-sonnet-with-strands-decider/",
-    "summary": "亚马逊工程师将内部工单标签系统中的Claude Sonnet 4.6替换为Strands Decider E4B决策模型，在保持同等分类效果下成本降低98%，年省数百万美元。该系统需对20类工单（客户升级、容量请求、安全发现等）进行分类，决策模型不生成文本，仅返回各选项概率与置信度，天然适配标签选择场景。架构采用标准AWS服务：SQS触发Lambda，调用SageMaker上部署的模型端点，AppConfig控制切换，CloudWatch负责监控，CDK管理部署。团队采用三阶段灰度策略——BEDROCK（仅Sonnet）、DUAL（双模型并行对比）、DECIDER（仅Decider），基于真实流量验证且可45秒回滚。关键数据：平均调用时间从4215ms降至897ms，每工单token从6724降至2010，每百万工单成本从约2.22万美元降至约500美元，便宜44倍。降本主因是输出仅为一个选项而非JSON，且提示词大幅精简。适用前提为封闭选项、高吞吐、低延迟场景；若需生成解释文本或标签频繁变动则不适用。",
-    "chinese_title": "亚马逊以Strands Decider替代Sonnet 4.6，年省数百万美元",
-    "chinese_summary": "亚马逊工程师将内部工单标签系统中的Claude Sonnet 4.6替换为Strands Decider E4B决策模型，在保持同等分类效果下成本降低98%，年省数百万美元。该系统需对20类工单（客户升级、容量请求、安全发现等）进行分类，决策模型不生成文本，仅返回各选项概率与置信度，天然适配标签选择场景。架构采用标准AWS服务：SQS触发Lambda，调用SageMaker上部署的模型端点，AppConfig控制切换，CloudWatch负责监控，CDK管理部署。团队采用三阶段灰度策略——BEDROCK（仅Sonnet）、DUAL（双模型并行对比）、DECIDER（仅Decider），基于真实流量验证且可45秒回滚。关键数据：平均调用时间从4215ms降至897ms，每工单token从6724降至2010，每百万工单成本从约2.22万美元降至约500美元，便宜44倍。降本主因是输出仅为一个选项而非JSON，且提示词大幅精简。适用前提为封闭选项、高吞吐、低延迟场景；若需生成解释文本或标签频繁变动则不适用。"
+    "id": "50455811",
+    "title": "Launch HN: Pomerado (YC F26) – Turn any website into an MCP for agents",
+    "url": "https://pomerado.ai/",
+    "summary": "摘要：Pomerado是获YC F26支持的开源平台，核心功能是将任何网站——无论有无现成API——在数分钟内转化为可供AI智能体调用的MCP/API接口，替代传统浏览器代理方案。主要优势：性能上较Codex等浏览器代理快约7倍，单次任务成本低至2美分，并在25个真实业务应用基准测试中验证了2倍提速、30%更高准确率及千倍成本优势；具备自愈机制，网站界面变更时自动检测、修复并完成任务；支持由Claude Code、Codex等编码代理以自然语言指令直接生成集成；所有集成托管运行，用户零部署；内置多站点认证与2FA托管管理。应用场景覆盖医疗（如Anthem保险理赔查询）、采购（Coupa）、HR、银行、政府门户等。定价分三档：免费版每日100次调用；付费版50美元/月，每日1000次；企业版支持每日10万+调用、私有部署及审计日志。产品定位是为AI代理提供比浏览器自动化更快速、可靠、低成本的网站交互能力。",
+    "chinese_title": "Pomerado（YC F26）：将任意网站变为AI智能体的MCP接口",
+    "chinese_summary": "摘要：Pomerado是获YC F26支持的开源平台，核心功能是将任何网站——无论有无现成API——在数分钟内转化为可供AI智能体调用的MCP/API接口，替代传统浏览器代理方案。主要优势：性能上较Codex等浏览器代理快约7倍，单次任务成本低至2美分，并在25个真实业务应用基准测试中验证了2倍提速、30%更高准确率及千倍成本优势；具备自愈机制，网站界面变更时自动检测、修复并完成任务；支持由Claude Code、Codex等编码代理以自然语言指令直接生成集成；所有集成托管运行，用户零部署；内置多站点认证与2FA托管管理。应用场景覆盖医疗（如Anthem保险理赔查询）、采购（Coupa）、HR、银行、政府门户等。定价分三档：免费版每日100次调用；付费版50美元/月，每日1000次；企业版支持每日10万+调用、私有部署及审计日志。产品定位是为AI代理提供比浏览器自动化更快速、可靠、低成本的网站交互能力。"
   },
   {
-    "id": "50441518",
-    "title": "Show HN: Valencia, Spain in Sim City/Isometric View",
-    "url": "https://tinyvalencia.com/",
-    "summary": "Tiny València是一款以等距像素艺术风格呈现的瓦伦西亚城市地图，灵感源自《模拟城市》与\"等距纽约\"项目。图中每栋建筑均为真实建筑，以统一等距视角逐块绘制，覆盖从城市果园到阿尔布费拉湖的整个市政区域，仅少数缺乏三维影像的果园飞地除外。制作上，先将真实三维城市数据经固定等距相机渲染，再由经精选像素风格训练的图像模型逐块重绘，每块与相邻区域衔接以保持画面无缝；海面、港口及阿尔布费拉湖亦采用同一风格。交互支持拖拽平移、滚轮或双指缩放、双击放大，并提供快捷键（R随机跳转、H全图、F全屏、/搜索、G播放），地址栏实时记录视图，复制链接即可定位。数据来源于西班牙地籍局建筑数据、IGN航拍与地形（CC BY 4.0）、OpenStreetMap道路及搜索数据，以及Google Cesium三维影像。",
-    "chinese_title": "Show HN：西班牙瓦伦西亚等距像素城市地图",
-    "chinese_summary": "Tiny València是一款以等距像素艺术风格呈现的瓦伦西亚城市地图，灵感源自《模拟城市》与\"等距纽约\"项目。图中每栋建筑均为真实建筑，以统一等距视角逐块绘制，覆盖从城市果园到阿尔布费拉湖的整个市政区域，仅少数缺乏三维影像的果园飞地除外。制作上，先将真实三维城市数据经固定等距相机渲染，再由经精选像素风格训练的图像模型逐块重绘，每块与相邻区域衔接以保持画面无缝；海面、港口及阿尔布费拉湖亦采用同一风格。交互支持拖拽平移、滚轮或双指缩放、双击放大，并提供快捷键（R随机跳转、H全图、F全屏、/搜索、G播放），地址栏实时记录视图，复制链接即可定位。数据来源于西班牙地籍局建筑数据、IGN航拍与地形（CC BY 4.0）、OpenStreetMap道路及搜索数据，以及Google Cesium三维影像。"
+    "id": "50451903",
+    "title": "Using voltage glitching to unleash the A100 in my mining card",
+    "url": "https://blog.kate.land/posts/using-voltage-glitching-to-unlock-the-a100/",
+    "summary": "摘要：作者发现GA100芯片存在电压故障注入（VFI）漏洞，可操控熔丝控制器吹断任意熔丝，将CMP 170HX 8GB挖矿卡解锁为等效A100-80G。解锁后GPU启用全部可用SM（120–126个），FP16性能达85.858 TFLOP/s，约为零售A100的1.18倍，NVLink、PCIe Gen4、MIG等功能亦可恢复。技术层面，GA100熔丝控制器含16384个eFuse，分为常规、无熔丝（FF）、IFF及RIR四类。FF熔丝采用类JTAG链格式编码各功能模块的禁用选项字，后写入记录可覆盖先前记录，无需物理恢复熔丝。作者通过VFI绕过控制器写保护，向FF区域注入新行，将FBIO、FBPA、GPC、FBP等_disable选项字清零，解除对硬件模块的floorsweep封锁，再配合驱动层配置激活完整显存与全部计算单元。该漏洞已事先披露于NVIDIA安全团队。",
+    "chinese_title": "利用电压故障注入唤醒矿卡中的A100",
+    "chinese_summary": "摘要：作者发现GA100芯片存在电压故障注入（VFI）漏洞，可操控熔丝控制器吹断任意熔丝，将CMP 170HX 8GB挖矿卡解锁为等效A100-80G。解锁后GPU启用全部可用SM（120–126个），FP16性能达85.858 TFLOP/s，约为零售A100的1.18倍，NVLink、PCIe Gen4、MIG等功能亦可恢复。技术层面，GA100熔丝控制器含16384个eFuse，分为常规、无熔丝（FF）、IFF及RIR四类。FF熔丝采用类JTAG链格式编码各功能模块的禁用选项字，后写入记录可覆盖先前记录，无需物理恢复熔丝。作者通过VFI绕过控制器写保护，向FF区域注入新行，将FBIO、FBPA、GPC、FBP等_disable选项字清零，解除对硬件模块的floorsweep封锁，再配合驱动层配置激活完整显存与全部计算单元。该漏洞已事先披露于NVIDIA安全团队。"
   },
   {
-    "id": "50439284",
-    "title": "What's new in the .NET 11 runtime",
-    "url": "https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-11/runtime",
-    "summary": ".NET 11 运行时（RC2）更新涵盖以下要点：硬件要求方面，x86/x64 基线从 v1 提升至 v2（新增 SSE4.2 等指令集），Arm64 在 Windows 上要求 LSE 指令集，R2R 目标相应升级，不满足要求的旧硬件将拒绝运行。核心特性方面，引入运行时原生异步（Runtime Async V2）预览功能，由运行时管理异步挂起与恢复，取代编译器生成的状态机，使活动调用栈从 13 帧精简至 5 帧，显著提升可调试性；该特性已支持 NativeAOT 与 ReadyToRun 编译，并在异步续体无 ExecutionContext 时跳过捕获/恢复、JIT 专用编译、分层编译等方面进行了性能优化。JIT 改进方面，新增边界检查消除（索引加常量模式）、冗余溢出检查移除、switch 表达式常量折叠、uint 转浮点加速、SVE2 与 AVX-VNNI-512 向量指令支持、泛型虚方法去虚拟化增强及 Math.BigMul 在 x64 上的加速等，全面降低运行时开销并提升吞吐量。",
-    "chinese_title": ".NET 11 运行时新功能",
-    "chinese_summary": ".NET 11 运行时（RC2）更新涵盖以下要点：硬件要求方面，x86/x64 基线从 v1 提升至 v2（新增 SSE4.2 等指令集），Arm64 在 Windows 上要求 LSE 指令集，R2R 目标相应升级，不满足要求的旧硬件将拒绝运行。核心特性方面，引入运行时原生异步（Runtime Async V2）预览功能，由运行时管理异步挂起与恢复，取代编译器生成的状态机，使活动调用栈从 13 帧精简至 5 帧，显著提升可调试性；该特性已支持 NativeAOT 与 ReadyToRun 编译，并在异步续体无 ExecutionContext 时跳过捕获/恢复、JIT 专用编译、分层编译等方面进行了性能优化。JIT 改进方面，新增边界检查消除（索引加常量模式）、冗余溢出检查移除、switch 表达式常量折叠、uint 转浮点加速、SVE2 与 AVX-VNNI-512 向量指令支持、泛型虚方法去虚拟化增强及 Math.BigMul 在 x64 上的加速等，全面降低运行时开销并提升吞吐量。"
+    "id": "50453763",
+    "title": "Pharo in the Browser with WebAssembly",
+    "url": "https://massimo-nocentini.github.io/pharo-vm/world.html",
+    "summary": "摘要：本文展示了一个通过 WebAssembly 技术将 Pharo 虚拟机移植至浏览器环境的在线演示页面。Pharo 是 Smalltalk 语言的现代开源实现，以交互式开发环境著称。页面当前处于加载状态，显示\"Loading Pharo…\"提示，表明系统正在将 Pharo 虚拟机及其运行时环境以 WebAssembly 字节码形式在浏览器中初始化。该方案无需用户在本地安装任何软件或运行时，即可直接在浏览器中获得完整的 Smalltalk 编程与调试体验，体现了 WebAssembly 在跨平台、即时启动和接近原生性能方面的优势，为 Smalltalk 社区及需要轻量级动态语言环境的开发者提供了全新的使用方式。",
+    "chinese_title": "基于 WebAssembly 的浏览器端 Pharo",
+    "chinese_summary": "摘要：本文展示了一个通过 WebAssembly 技术将 Pharo 虚拟机移植至浏览器环境的在线演示页面。Pharo 是 Smalltalk 语言的现代开源实现，以交互式开发环境著称。页面当前处于加载状态，显示\"Loading Pharo…\"提示，表明系统正在将 Pharo 虚拟机及其运行时环境以 WebAssembly 字节码形式在浏览器中初始化。该方案无需用户在本地安装任何软件或运行时，即可直接在浏览器中获得完整的 Smalltalk 编程与调试体验，体现了 WebAssembly 在跨平台、即时启动和接近原生性能方面的优势，为 Smalltalk 社区及需要轻量级动态语言环境的开发者提供了全新的使用方式。"
   },
   {
-    "id": "50444129",
-    "title": "Starlink Mini 2",
-    "url": "https://starlink.com/mini-2",
-    "summary": "摘要：本文涉及SpaceX旗下卫星互联网产品\"星链Mini 2\"（Starlink Mini 2）。页面内容显示，该页面需要浏览器启用JavaScript才能完整加载，否则部分功能或内容可能受限或无法显示。当前抓取到的正文信息极为有限，除产品名称外未包含具体规格、定价或功能介绍，推测页面主体内容因脚本未执行而未能呈现。星链Mini系列是SpaceX面向消费级市场推出的便携卫星互联网终端，通常具备低功耗、轻量化等特点，适用于户外、车载等移动场景。",
-    "chinese_title": "星链Mini 2",
-    "chinese_summary": "摘要：本文涉及SpaceX旗下卫星互联网产品\"星链Mini 2\"（Starlink Mini 2）。页面内容显示，该页面需要浏览器启用JavaScript才能完整加载，否则部分功能或内容可能受限或无法显示。当前抓取到的正文信息极为有限，除产品名称外未包含具体规格、定价或功能介绍，推测页面主体内容因脚本未执行而未能呈现。星链Mini系列是SpaceX面向消费级市场推出的便携卫星互联网终端，通常具备低功耗、轻量化等特点，适用于户外、车载等移动场景。"
+    "id": "50428860",
+    "title": "Beans at altitude: stovetop vs. pressure cooker",
+    "url": "https://highaltitudelife.com/beans-at-altitude-stovetop-vs-pressure-cooker/",
+    "summary": "高海拔（3000英尺以上）因大气压降低使水的沸点下降，导致豆类炖煮时间显著延长，且易出现受热不均、豆皮破裂等问题。本文对比了明火炖煮与压力锅两种方法在高海拔环境中的表现。明火炖煮优势在于全程可控，适合制作需要浓汤或精确控制豆皮完整度的菜肴，但耗时可达180分钟以上，且需频繁补充热水以防干烧。压力锅将锅内温度提升至240–250°F，大幅缩短烹饪时间（黑豆从近2小时降至20分钟），蒸发少、结果稳定，特别适合鹰嘴豆、大粒豆及存放较久的豆子。关键技巧包括：选用新鲜豆类并标注购买日期；充分浸泡（过夜最佳），浸泡水中加盐；烹饪早期加盐、延后加入番茄等酸性食材；硬水地区使用过滤水；老豆可少量添加小苏打。压力锅建议自然泄压15至20分钟以防泡沫溢出，装量不超过半锅。最佳实践是标准化流程——固定一种锅、一种比例、一种豆子，记录数据并连续测试三批，通过对比实验找到最适合自己的方法。两者并非优劣之分，而是各适其用：追求效率选压力锅，追求风味与掌控选明火。",
+    "chinese_title": "高海拔煮豆：明火炖煮与压力锅对比",
+    "chinese_summary": "高海拔（3000英尺以上）因大气压降低使水的沸点下降，导致豆类炖煮时间显著延长，且易出现受热不均、豆皮破裂等问题。本文对比了明火炖煮与压力锅两种方法在高海拔环境中的表现。明火炖煮优势在于全程可控，适合制作需要浓汤或精确控制豆皮完整度的菜肴，但耗时可达180分钟以上，且需频繁补充热水以防干烧。压力锅将锅内温度提升至240–250°F，大幅缩短烹饪时间（黑豆从近2小时降至20分钟），蒸发少、结果稳定，特别适合鹰嘴豆、大粒豆及存放较久的豆子。关键技巧包括：选用新鲜豆类并标注购买日期；充分浸泡（过夜最佳），浸泡水中加盐；烹饪早期加盐、延后加入番茄等酸性食材；硬水地区使用过滤水；老豆可少量添加小苏打。压力锅建议自然泄压15至20分钟以防泡沫溢出，装量不超过半锅。最佳实践是标准化流程——固定一种锅、一种比例、一种豆子，记录数据并连续测试三批，通过对比实验找到最适合自己的方法。两者并非优劣之分，而是各适其用：追求效率选压力锅，追求风味与掌控选明火。"
   },
   {
-    "id": "50404969",
-    "title": "The planet Vulcan: a cautionary tale",
-    "url": "https://kevinboone.me/vulcan.html",
-    "summary": "1859年，法国数学家勒维耶在成功以牛顿力学预测海王星轨道后，发现水星近日点进动比理论值每年多出43角秒，遂假想水星轨道内侧存在一颗名为\"火神星\"（Vulcan）的未探测行星。此后约四十年间，至少十位天文学家报告了二十余次\"观测\"，包括凌日记录，学界普遍接受其存在。然而，这些观测多由太阳黑子或恒星误认所致，且与理论预测始终存在偏差。最终，爱因斯坦的广义相对论完美解释了水星轨道异常，无需引入新行星，火神星彻底落空。文章总结了三条警示：其一，不应因牛顿理论两百年的成功而拒绝修正，最终是理论框架被超越，而非在旧框架上打补丁；其二，一次推论成功不能保证类似情境下再获成功，过度自信令人陷入误区；其三，当人带着预期去寻找，便倾向于\"发现\"目标——即便目标并不存在。文章以希格斯玻色子的发现作类比，提醒科学界：即便证据看似充分，也应保持\"我们确定吗\"的怀疑精神，将观测置于理论之上。",
-    "chinese_title": "火神星：一则科学警示",
-    "chinese_summary": "1859年，法国数学家勒维耶在成功以牛顿力学预测海王星轨道后，发现水星近日点进动比理论值每年多出43角秒，遂假想水星轨道内侧存在一颗名为\"火神星\"（Vulcan）的未探测行星。此后约四十年间，至少十位天文学家报告了二十余次\"观测\"，包括凌日记录，学界普遍接受其存在。然而，这些观测多由太阳黑子或恒星误认所致，且与理论预测始终存在偏差。最终，爱因斯坦的广义相对论完美解释了水星轨道异常，无需引入新行星，火神星彻底落空。文章总结了三条警示：其一，不应因牛顿理论两百年的成功而拒绝修正，最终是理论框架被超越，而非在旧框架上打补丁；其二，一次推论成功不能保证类似情境下再获成功，过度自信令人陷入误区；其三，当人带着预期去寻找，便倾向于\"发现\"目标——即便目标并不存在。文章以希格斯玻色子的发现作类比，提醒科学界：即便证据看似充分，也应保持\"我们确定吗\"的怀疑精神，将观测置于理论之上。"
+    "id": "50452652",
+    "title": "We need more goat sacrifices",
+    "url": "https://www.experimental-history.com/p/we-need-more-goat-sacrifices",
+    "summary": "本文以\"献祭山羊\"喻指推行社会政策前应有的程序性谦卑，核心论点是：大多数善意干预实际上并不奏效。作者列举了跨党派的失败案例——学校改善拨款、\"一孩一笔记本\"、疫苗宣传、医疗补助工作要求、禁欲教育等，效果皆为零或负面。他引用社会学家罗西的\"评估铁律\"：大型社会项目的净预期影响为零，越试图改变人的项目越可能失效。文章进而剖析\"控制幻觉\"：人们因怀有意图便坚信干预必然奏效，却忽视实证。现实中，大量联邦项目和资助的STEM计划根本不做效果评估；亿万富翁为医学院免学费也未能改变学生专业选择；甚至\"直接给穷人钱\"这一常识方案，随机对照试验也反复显示对幸福感无显著提升。作者并非主张停止一切行动，而是呼吁：在介入他人生活之前，先承认我们一无所知，先用证据验证方案是否有效，而非凭良好意图便贸然推进。",
+    "chinese_title": "该多献几头羊了",
+    "chinese_summary": "本文以\"献祭山羊\"喻指推行社会政策前应有的程序性谦卑，核心论点是：大多数善意干预实际上并不奏效。作者列举了跨党派的失败案例——学校改善拨款、\"一孩一笔记本\"、疫苗宣传、医疗补助工作要求、禁欲教育等，效果皆为零或负面。他引用社会学家罗西的\"评估铁律\"：大型社会项目的净预期影响为零，越试图改变人的项目越可能失效。文章进而剖析\"控制幻觉\"：人们因怀有意图便坚信干预必然奏效，却忽视实证。现实中，大量联邦项目和资助的STEM计划根本不做效果评估；亿万富翁为医学院免学费也未能改变学生专业选择；甚至\"直接给穷人钱\"这一常识方案，随机对照试验也反复显示对幸福感无显著提升。作者并非主张停止一切行动，而是呼吁：在介入他人生活之前，先承认我们一无所知，先用证据验证方案是否有效，而非凭良好意图便贸然推进。"
   },
   {
-    "id": "50441338",
-    "title": "The Hardest Tarball?",
-    "url": "https://stoppels.ch/2026/11/07/the-hardest-tarball.html",
-    "summary": "本文介绍了一个精妙构造的tar归档：仅一条GNU tar命令即可生成，却在不同解压工具中产生8种截然不同的结果。作者将同一文件以硬链接形式重复归档，通过--transform将硬链接重命名为含UTF-8字符的\"café\"以触发pax头，再向其中注入size=512（恰为一个tar头的大小）覆盖硬链接默认的size=0，使512字节数据究竟归属硬链接还是后续文件empty在POSIX规范中界限模糊。各工具表现各异：GNU tar、BusyBox、Python等忽略硬链接size，正常解压三文件；bsdtar将数据写入硬链接，致file内容变为empty的头部；7-Zip、node-tar等跳过数据，丢失empty；Java另建文件存放；PHP、RubyGems、R各有离奇行为；Haskell因编码缺陷将café变为乱码；.NET和Julia直接拒绝解析。作者认为拒绝处理虽不严格合规，却最为合理。此案例隶属作者维护的134个\"刁钻\"tar测试套件，完整对比表见其网站stoppels.ch/tar。",
-    "chinese_title": "最棘手的tar包？",
-    "chinese_summary": "本文介绍了一个精妙构造的tar归档：仅一条GNU tar命令即可生成，却在不同解压工具中产生8种截然不同的结果。作者将同一文件以硬链接形式重复归档，通过--transform将硬链接重命名为含UTF-8字符的\"café\"以触发pax头，再向其中注入size=512（恰为一个tar头的大小）覆盖硬链接默认的size=0，使512字节数据究竟归属硬链接还是后续文件empty在POSIX规范中界限模糊。各工具表现各异：GNU tar、BusyBox、Python等忽略硬链接size，正常解压三文件；bsdtar将数据写入硬链接，致file内容变为empty的头部；7-Zip、node-tar等跳过数据，丢失empty；Java另建文件存放；PHP、RubyGems、R各有离奇行为；Haskell因编码缺陷将café变为乱码；.NET和Julia直接拒绝解析。作者认为拒绝处理虽不严格合规，却最为合理。此案例隶属作者维护的134个\"刁钻\"tar测试套件，完整对比表见其网站stoppels.ch/tar。"
+    "id": "50455332",
+    "title": "AI, activity, and outcomes in software engineering",
+    "url": "https://cabird.com/talks/shipping-faster/",
+    "summary": "Christian Bird（Dryden Technology Group）于2026年10月30日在加州大学尔湾分校软件工程研讨会上发表演讲，以\"为何我们仍未更快交付软件\"为切入点，剖析AI对软件工程的真实影响。Bird提出\"活动-成果差距\"概念，指出AI编码工具虽显著增加了代码生成、审查等\"活动量\"，却未有效转化为可上线的\"成果\"，AI本身无法自动解决软件工程问题。演讲关联多篇2026年研究，涵盖：不同代AI编码工具在\"写代码\"与\"交付代码\"上的生产力差异（NBER工作论文）；代码审查Agent在缺陷检测中的基准测试；开发者对AI自主性的接受边界——即在哪些环节拒绝全自主决策；以及个体与团队采用生成式AI工具的驱动因素（ICSE 2026）。演讲核心观点是：从\"产出代码\"到\"成功交付\"之间存在系统性鸿沟，行业不应将工具使用量等同于工程效能，而应聚焦端到端的交付成果与组织流程变革。",
+    "chinese_title": "软件工程中的AI、活动与成果",
+    "chinese_summary": "Christian Bird（Dryden Technology Group）于2026年10月30日在加州大学尔湾分校软件工程研讨会上发表演讲，以\"为何我们仍未更快交付软件\"为切入点，剖析AI对软件工程的真实影响。Bird提出\"活动-成果差距\"概念，指出AI编码工具虽显著增加了代码生成、审查等\"活动量\"，却未有效转化为可上线的\"成果\"，AI本身无法自动解决软件工程问题。演讲关联多篇2026年研究，涵盖：不同代AI编码工具在\"写代码\"与\"交付代码\"上的生产力差异（NBER工作论文）；代码审查Agent在缺陷检测中的基准测试；开发者对AI自主性的接受边界——即在哪些环节拒绝全自主决策；以及个体与团队采用生成式AI工具的驱动因素（ICSE 2026）。演讲核心观点是：从\"产出代码\"到\"成功交付\"之间存在系统性鸿沟，行业不应将工具使用量等同于工程效能，而应聚焦端到端的交付成果与组织流程变革。"
   },
   {
-    "id": "50438318",
-    "title": "AI usage generates a fragile codebase",
-    "url": "https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase/",
-    "summary": "前Meta工程师Evan X. Merz指出，过度依赖AI编写代码将导致代码库日益脆弱，难以支撑大规模SaaS产品的长期维护。文章归纳了四个核心问题：一是AI倾向于编写浅层测试，遗漏关键用户场景，造成隐性测试盲区；二是AI生成的代码常过度复杂，机械套用DRY等原则反而增加调试难度；三是长期依赖AI削弱开发者对代码库的理解深度，难以识别架构层面的隐患；四是AI迭代速度过快，评审时间被压缩，小缺陷日积月累终使代码退化为\"意大利面\"。作者还列出四个危险信号：事故频率上升、故障恢复变慢、错误仅真实用户可见、用户体验持续下滑。他强调，AI擅长解决上下文窗口内的局部问题，却无法感知长期架构影响。高质量软件必须保留\"人类触感\"，如同餐厅需要真人服务、购物需要试穿体验，纯AI生成的代码本质上是\"为AI而造的软件\"，缺乏对人类使用习惯的细致考量，终将陷入质量恶化的恶性循环。",
-    "chinese_title": "AI使用催生脆弱代码库",
-    "chinese_summary": "前Meta工程师Evan X. Merz指出，过度依赖AI编写代码将导致代码库日益脆弱，难以支撑大规模SaaS产品的长期维护。文章归纳了四个核心问题：一是AI倾向于编写浅层测试，遗漏关键用户场景，造成隐性测试盲区；二是AI生成的代码常过度复杂，机械套用DRY等原则反而增加调试难度；三是长期依赖AI削弱开发者对代码库的理解深度，难以识别架构层面的隐患；四是AI迭代速度过快，评审时间被压缩，小缺陷日积月累终使代码退化为\"意大利面\"。作者还列出四个危险信号：事故频率上升、故障恢复变慢、错误仅真实用户可见、用户体验持续下滑。他强调，AI擅长解决上下文窗口内的局部问题，却无法感知长期架构影响。高质量软件必须保留\"人类触感\"，如同餐厅需要真人服务、购物需要试穿体验，纯AI生成的代码本质上是\"为AI而造的软件\"，缺乏对人类使用习惯的细致考量，终将陷入质量恶化的恶性循环。"
+    "id": "50454823",
+    "title": "The Computer Graphics Book of Knowledge",
+    "url": "https://www.cs.cmu.edu/~ph/nyit/masson/history.htm",
+    "summary": "本文系统梳理了计算机图形学（CG）从1940年代至1960年代末的发展脉络。CG最初诞生于1950年代贝尔实验室、波音公司等研究机构，后在MIT、犹他大学等高校蓬勃发展，并于1970年代经Xerox PARC推动进入影视领域。1940年代，MIT的Moon和Spencer教授以数学模型手工拼贴出首个辐射度图像。1950年代，John Whitney Sr.率先以模拟计算机辅助艺术创作；贝尔实验室的VanderBeck、Noll等开创CG动画；Boeing的Bill Fetter进行早期矢量CAD实验；MIT的Whirlwind计算机实现向量图形显示与光笔输入。1960年代，Ivan Sutherland于1962年博士论文提出Sketchpad系统，成为交互式图形学里程碑；Dave Evans在犹他大学建立博士项目，培养Alan Kay、Ed Catmull等业界先驱；Spacewar成为首个流行图形游戏；通用汽车与IBM联合开发DAC-1，为首个计算机辅助绘图系统。John Whitney Sr.从模拟到数字的创作历程贯穿整个时代。本文还涉及ARPA基金对学术的推动及CG在工业、建筑、军事等领域的早期应用。",
+    "chinese_title": "计算机图形学知识全书",
+    "chinese_summary": "本文系统梳理了计算机图形学（CG）从1940年代至1960年代末的发展脉络。CG最初诞生于1950年代贝尔实验室、波音公司等研究机构，后在MIT、犹他大学等高校蓬勃发展，并于1970年代经Xerox PARC推动进入影视领域。1940年代，MIT的Moon和Spencer教授以数学模型手工拼贴出首个辐射度图像。1950年代，John Whitney Sr.率先以模拟计算机辅助艺术创作；贝尔实验室的VanderBeck、Noll等开创CG动画；Boeing的Bill Fetter进行早期矢量CAD实验；MIT的Whirlwind计算机实现向量图形显示与光笔输入。1960年代，Ivan Sutherland于1962年博士论文提出Sketchpad系统，成为交互式图形学里程碑；Dave Evans在犹他大学建立博士项目，培养Alan Kay、Ed Catmull等业界先驱；Spacewar成为首个流行图形游戏；通用汽车与IBM联合开发DAC-1，为首个计算机辅助绘图系统。John Whitney Sr.从模拟到数字的创作历程贯穿整个时代。本文还涉及ARPA基金对学术的推动及CG在工业、建筑、军事等领域的早期应用。"
   },
   {
-    "id": "50412554",
-    "title": "NetBSD 11 desktop on a Raspberry Pi 4",
-    "url": "https://neongd.com/articles/netbsd11-rpi4.gmi",
+    "id": "50453229",
+    "title": "Show HN: Godbolt-in-a-floating-window for Neovim (C, C++, Rust)",
+    "url": "https://github.com/0xdeadf1sh/AssemblyForNeovim",
+    "summary": "AssemblyForNeovim 是一款 Neovim 插件，将 Godbolt 在线汇编查看器的核心功能集成进编辑器，可在浮动窗口中实时展示 C、C++ 和 Rust 代码对应的汇编输出。安装仅需通过 lazy.nvim 添加一行配置。使用方式简洁：普通模式下按 <leader>a 显示光标所在函数的汇编；视觉模式下按 <leader>a 或执行 :'<,'>Asm 可编译选定的代码段。浮动窗口内支持 + 和 - 切换编译器优化级别（-O0 至 -O3），R 键重新编译，q 键关闭。插件要求系统 PATH 中已安装 cc/c++ 或 rustc/cargo，并能自动识别项目中的 compile_commands.json 以获取正确的编译参数，无需额外手动配置。该工具适合在开发或调试阶段快速查看底层机器码，省去在浏览器中切换 Godbolt 网站的步骤，对关注性能与底层实现的开发者尤为实用。",
+    "chinese_title": "Show HN：Neovim 浮动窗口版 Godbolt（支持 C/C++/Rust）",
+    "chinese_summary": "AssemblyForNeovim 是一款 Neovim 插件，将 Godbolt 在线汇编查看器的核心功能集成进编辑器，可在浮动窗口中实时展示 C、C++ 和 Rust 代码对应的汇编输出。安装仅需通过 lazy.nvim 添加一行配置。使用方式简洁：普通模式下按 <leader>a 显示光标所在函数的汇编；视觉模式下按 <leader>a 或执行 :'<,'>Asm 可编译选定的代码段。浮动窗口内支持 + 和 - 切换编译器优化级别（-O0 至 -O3），R 键重新编译，q 键关闭。插件要求系统 PATH 中已安装 cc/c++ 或 rustc/cargo，并能自动识别项目中的 compile_commands.json 以获取正确的编译参数，无需额外手动配置。该工具适合在开发或调试阶段快速查看底层机器码，省去在浏览器中切换 Godbolt 网站的步骤，对关注性能与底层实现的开发者尤为实用。"
+  },
+  {
+    "id": "50443264",
+    "title": "TimeNet: Open-source data infrastructure for Temporal Foundation Models",
+    "url": "https://github.com/OpenTSLM/TimeNet",
+    "summary": "TimeNet是一个预发布的开源项目，旨在解决时序数据集格式不兼容的问题。其核心贡献是统一的TimeF存储格式及一套用于查找、构建、下载和加载时序数据集的API，仅负责数据层，模型训练与评估仍由用户自有框架完成。TimeF版本包含manifest.json（元信息）、control.duckdb（层级与关系）及Parquet/Zarr值平面（信号数据），由连接器将原始数据源转换生成并存入不可变注册表，客户端读取时无需加载对应连接器。项目为uv工作区，含timenet（TimeF模型、读写器、注册表、SDK与CLI）和timenet-connectors（数据集连接器及构建工具）两个包，要求Python 3.11及以上。当前项目正举办在线黑客松，鼓励开发者接入数据集并训练时序AI模型（如OpenTSLM），探索预测、分类、推理等场景。TimeNet采用MIT许可证，但各数据集保留其原始授权条款。",
+    "chinese_title": "TimeNet：面向时序基础模型的开源数据基础设施",
+    "chinese_summary": "TimeNet是一个预发布的开源项目，旨在解决时序数据集格式不兼容的问题。其核心贡献是统一的TimeF存储格式及一套用于查找、构建、下载和加载时序数据集的API，仅负责数据层，模型训练与评估仍由用户自有框架完成。TimeF版本包含manifest.json（元信息）、control.duckdb（层级与关系）及Parquet/Zarr值平面（信号数据），由连接器将原始数据源转换生成并存入不可变注册表，客户端读取时无需加载对应连接器。项目为uv工作区，含timenet（TimeF模型、读写器、注册表、SDK与CLI）和timenet-connectors（数据集连接器及构建工具）两个包，要求Python 3.11及以上。当前项目正举办在线黑客松，鼓励开发者接入数据集并训练时序AI模型（如OpenTSLM），探索预测、分类、推理等场景。TimeNet采用MIT许可证，但各数据集保留其原始授权条款。"
+  },
+  {
+    "id": "50453171",
+    "title": "Attention to Mamba: A Recipe for Cross-Architecture Distillation",
+    "url": "https://machinelearning.apple.com/research/attention-mamba-distillation",
+    "summary": "状态空间模型（SSM，如Mamba）凭借低内存消耗与高生成吞吐量，已成为Transformer的有力替代。然而，社区在Transformer训练上积累了丰富经验与大量预训练模型。为在复用已有Transformer知识的同时推进SSM的落地，本文提出将注意力模型蒸馏至Mamba架构的有效方案。已有研究表明，Transformer到Mamba的朴素蒸馏难以保持教师性能，常需依赖混合架构弥补。本文提出两阶段蒸馏策略：第一阶段借助核技巧将Transformer蒸馏为线性注意力模型；第二阶段将线性注意力进一步蒸馏为不含任何注意力模块的改进型Mamba。实验显示，在Pythia-1B规模上，蒸馏后纯Mamba模型困惑度为14.01，接近教师模型的13.86，下游任务表现良好，仅在依赖上下文回忆的任务上存在一定差距。此外，文章在10B token规模下开展了系统消融实验，涵盖序列混合器架构对比、模型规模与蒸馏token总量的缩放分析，以及两阶段间token分配的敏感性分析，充分验证了所提方案的有效性与稳健性。",
+    "chinese_title": "从注意力到Mamba：跨架构蒸馏方案",
+    "chinese_summary": "状态空间模型（SSM，如Mamba）凭借低内存消耗与高生成吞吐量，已成为Transformer的有力替代。然而，社区在Transformer训练上积累了丰富经验与大量预训练模型。为在复用已有Transformer知识的同时推进SSM的落地，本文提出将注意力模型蒸馏至Mamba架构的有效方案。已有研究表明，Transformer到Mamba的朴素蒸馏难以保持教师性能，常需依赖混合架构弥补。本文提出两阶段蒸馏策略：第一阶段借助核技巧将Transformer蒸馏为线性注意力模型；第二阶段将线性注意力进一步蒸馏为不含任何注意力模块的改进型Mamba。实验显示，在Pythia-1B规模上，蒸馏后纯Mamba模型困惑度为14.01，接近教师模型的13.86，下游任务表现良好，仅在依赖上下文回忆的任务上存在一定差距。此外，文章在10B token规模下开展了系统消融实验，涵盖序列混合器架构对比、模型规模与蒸馏token总量的缩放分析，以及两阶段间token分配的敏感性分析，充分验证了所提方案的有效性与稳健性。"
+  },
+  {
+    "id": "50456010",
+    "title": "The Power and Legacy of Virginia Tech's Mac-Based Supercomputers",
+    "url": "https://512pixels.net/2026/11/va-tech-system-x-system-g/",
+    "summary": "文章回顾了超级计算机从早期专用机器到采用商用组件的发展脉络，重点讲述弗吉尼亚理工大学以苹果硬件构建超级计算机的传奇历程。2003年，该校用1100台Power Mac G5组装出\"System X\"（俗称\"Big Mac\"），以仅520万美元的成本达到10 TFLOPS，位列全球第三、学术机构第一，而当时全球最快的地球模拟器造价高达4亿美元。师生自行开箱装柜，效率惊人。2004年，系统升级为1100台Xserve G5机架服务器，性能提升至12.25 TFLOPS，跻身TOP500第七名，成本仅为同类系统的五分之一。2008年，该校又推出由324台Mac Pro组成的\"System G\"，主打绿色计算，成为全球首个大规模能效感知研究集群，造价仅120万美元。系统设计师Varadarajan与绿色计算先驱Cameron等人在系列项目中发挥了核心作用。弗吉尼亚理工的Mac超算系列以极低成本实现了顶尖性能，在学术界留下了深远影响。",
+    "chinese_title": "弗吉尼亚理工大学Mac超级计算机的力量与传承",
+    "chinese_summary": "文章回顾了超级计算机从早期专用机器到采用商用组件的发展脉络，重点讲述弗吉尼亚理工大学以苹果硬件构建超级计算机的传奇历程。2003年，该校用1100台Power Mac G5组装出\"System X\"（俗称\"Big Mac\"），以仅520万美元的成本达到10 TFLOPS，位列全球第三、学术机构第一，而当时全球最快的地球模拟器造价高达4亿美元。师生自行开箱装柜，效率惊人。2004年，系统升级为1100台Xserve G5机架服务器，性能提升至12.25 TFLOPS，跻身TOP500第七名，成本仅为同类系统的五分之一。2008年，该校又推出由324台Mac Pro组成的\"System G\"，主打绿色计算，成为全球首个大规模能效感知研究集群，造价仅120万美元。系统设计师Varadarajan与绿色计算先驱Cameron等人在系列项目中发挥了核心作用。弗吉尼亚理工的Mac超算系列以极低成本实现了顶尖性能，在学术界留下了深远影响。"
+  },
+  {
+    "id": "50413266",
+    "title": "Show HN: Micron – Oberon with the Power of C",
+    "url": "https://github.com/rochus-keller/Micron",
+    "summary": "Micron（MicroOberon 的缩写）是一种系统编程语言，语法类似 Oberon+，能力对标 C。它融合 Oberon 的模块化、严格性与简洁性，以及 C 的灵活性，可统一用于启动代码、驱动程序、操作系统内核及普通应用，并可直接调用 C 而无需包装。语言引入\"级别\"机制（0 至 5 级），模块只能导入同级或更低级模块，从而防止内核意外依赖堆内存等高层特性。Micron 用语言特性替代预处理器，并提供泛型编程、内联及编译时过程等能力。项目包含编译器（micc）、MIL 解释器及 IDE，已迁移约 13 万行示例代码，涵盖 Smalltalk-80、1976 年 P4 Pascal 编译器、Scheme 9 虚拟机及 Project Oberon 操作系统（运行于 RISC-V）。项目自 2024 年 1 月启动，目前编译器与解释器已就绪，原生后端和 C 转译器仍在开发中，支持 Linux x86_64 预编译版本及 RISC-V 仿真。另配有免费教材，采用 GPL 2/3 许可。",
+    "chinese_title": "展示 HN：Micron——兼具 C 语言能力的 Oberon 编程语言",
+    "chinese_summary": "Micron（MicroOberon 的缩写）是一种系统编程语言，语法类似 Oberon+，能力对标 C。它融合 Oberon 的模块化、严格性与简洁性，以及 C 的灵活性，可统一用于启动代码、驱动程序、操作系统内核及普通应用，并可直接调用 C 而无需包装。语言引入\"级别\"机制（0 至 5 级），模块只能导入同级或更低级模块，从而防止内核意外依赖堆内存等高层特性。Micron 用语言特性替代预处理器，并提供泛型编程、内联及编译时过程等能力。项目包含编译器（micc）、MIL 解释器及 IDE，已迁移约 13 万行示例代码，涵盖 Smalltalk-80、1976 年 P4 Pascal 编译器、Scheme 9 虚拟机及 Project Oberon 操作系统（运行于 RISC-V）。项目自 2024 年 1 月启动，目前编译器与解释器已就绪，原生后端和 C 转译器仍在开发中，支持 Linux x86_64 预编译版本及 RISC-V 仿真。另配有免费教材，采用 GPL 2/3 许可。"
+  },
+  {
+    "id": "50436788",
+    "title": "A C++ Quicksort Faster Than std:sort",
+    "url": "https://tiki.li/blog/about_blqsort",
     "summary": "文章之前已经处理过",
-    "chinese_title": "NetBSD 11 desktop on a Raspberry Pi 4",
+    "chinese_title": "A C++ Quicksort Faster Than std:sort",
     "chinese_summary": "文章之前已经处理过"
   },
   {
-    "id": "50438480",
-    "title": "What constant surveillance is doing to children and parents",
-    "url": "https://www.theatlantic.com/magazine/2026/12/location-tracking-apps-parental-surveillance/689031/",
-    "summary": "无法访问该文章链接。",
-    "chinese_title": "持续监控对儿童与父母双方的影响",
-    "chinese_summary": "无法访问该文章链接。"
-  },
-  {
-    "id": "50423664",
-    "title": "Variable-width Bézier curves (2025)",
-    "url": "https://luthert.web.illinois.edu/blog/posts/775.html",
-    "summary": "摘要：作者自2013年因教学白板尺寸不足，自研电子白板应用并历经八个版本迭代，发现2D图形API普遍缺少一种关键图元——带笔宽坐标的贝塞尔曲线。文章围绕如何用现有2D图形API实现变宽曲线展开。在压力映射上，作者比较了固定轴线性偏移、笔画对齐线性偏移和圆形偏移三种模型，最终选用抗抖动性强的圆形偏移方案。曲线表示方面，从早期的等宽或变宽药丸形直线段，演进为以三次贝塞尔曲线连接采样点，消除快速书写时的棱角感。文中系统梳理了贝塞尔曲线核心算法：de Casteljau分裂、Horner高效求值、导数即速度曲线、坐标可分离性、多项式平方，以及基于区间缩窄、分裂与消元的根求解方法。在变宽描边实现上，提出两种主流路径：一是沿曲线两侧提取边缘点构成多边形再填充，计算效率高；二是逐像素检测与曲线距离，计算量大但天然适配GPU的SIMD并行。作者指出当前社区缺乏变宽描边的清晰实现描述，本文旨在补全这一空白，为白板工具及手写应用开发提供技术参考。",
-    "chinese_title": "变宽贝塞尔曲线",
-    "chinese_summary": "摘要：作者自2013年因教学白板尺寸不足，自研电子白板应用并历经八个版本迭代，发现2D图形API普遍缺少一种关键图元——带笔宽坐标的贝塞尔曲线。文章围绕如何用现有2D图形API实现变宽曲线展开。在压力映射上，作者比较了固定轴线性偏移、笔画对齐线性偏移和圆形偏移三种模型，最终选用抗抖动性强的圆形偏移方案。曲线表示方面，从早期的等宽或变宽药丸形直线段，演进为以三次贝塞尔曲线连接采样点，消除快速书写时的棱角感。文中系统梳理了贝塞尔曲线核心算法：de Casteljau分裂、Horner高效求值、导数即速度曲线、坐标可分离性、多项式平方，以及基于区间缩窄、分裂与消元的根求解方法。在变宽描边实现上，提出两种主流路径：一是沿曲线两侧提取边缘点构成多边形再填充，计算效率高；二是逐像素检测与曲线距离，计算量大但天然适配GPU的SIMD并行。作者指出当前社区缺乏变宽描边的清晰实现描述，本文旨在补全这一空白，为白板工具及手写应用开发提供技术参考。"
-  },
-  {
-    "id": "50426294",
-    "title": "Taking another shot at the cheap IP camera, part 2",
-    "url": "https://ericswpark.com/blog/2026/2026-11-09-ip-camera-pt2/",
-    "summary": "摘要：作者约一年前曾尝试从一款基于涂鸦（Tuya）IoT平台的廉价IP摄像头获取本地视频流，因无法绕过其云端服务器而放弃。此次搬家后重新拾起，目标是启用摄像头内置但被固件关闭的ONVIF/RTSP本地视频流。作者先用binwalk提取固件，发现其运行的是2013年发布的Linux 3.4.35内核，包含CramFS和JFFS2两个文件系统。通过追踪启动脚本，定位到主程序ppsapp，用strings命令确认其中包含onvif_enable、onvif_pwd等ONVIF相关字符串，以及RTSP流地址格式。随后用Ghidra反编译该2.4MB的ARM二进制文件，发现两处关键函数：一处负责从/home/cfg/tuya_config.json读取包括onvif_enable、onvif_pwd在内的众多配置项并写入全局变量；另一处负责将这些变量序列化后写回配置文件。作者推测上次修改失败的原因是直接用十六进制编辑器改固件可能破坏了校验和。文章在分析配置读写逻辑后截断，尚未完成最终验证。",
-    "chinese_title": "再次尝试破解廉价IP摄像头本地视频流（二）",
-    "chinese_summary": "摘要：作者约一年前曾尝试从一款基于涂鸦（Tuya）IoT平台的廉价IP摄像头获取本地视频流，因无法绕过其云端服务器而放弃。此次搬家后重新拾起，目标是启用摄像头内置但被固件关闭的ONVIF/RTSP本地视频流。作者先用binwalk提取固件，发现其运行的是2013年发布的Linux 3.4.35内核，包含CramFS和JFFS2两个文件系统。通过追踪启动脚本，定位到主程序ppsapp，用strings命令确认其中包含onvif_enable、onvif_pwd等ONVIF相关字符串，以及RTSP流地址格式。随后用Ghidra反编译该2.4MB的ARM二进制文件，发现两处关键函数：一处负责从/home/cfg/tuya_config.json读取包括onvif_enable、onvif_pwd在内的众多配置项并写入全局变量；另一处负责将这些变量序列化后写回配置文件。作者推测上次修改失败的原因是直接用十六进制编辑器改固件可能破坏了校验和。文章在分析配置读写逻辑后截断，尚未完成最终验证。"
-  },
-  {
-    "id": "50437790",
-    "title": "Queens Public Library under ransomware attack",
-    "url": "https://connect.queenslibrary.org/",
-    "summary": "11月11日，皇后区公共图书馆（QPL）遭受勒索软件攻击，全馆网络系统严重故障。尽管当天因退伍军人节原计划闭馆，图书馆仍照常开放，但多项服务受到影响。目前，QPL官网、移动应用、数字媒体服务及大部分分馆的公共电脑无法使用；已恢复的服务包括全馆免费Wi-Fi、自助借还书机，以及中央图书馆、法拉湾、法拉盛、格伦奥克斯、猎兵角、杰克逊高地、基尤花园山七处分馆的公共电脑。所有分馆照常开放，但部分线上及线下活动可能受影响，读者需向所属分馆确认。读者仍可正常借还书籍，但续借功能暂不可用，期间不收取逾期罚金。馆方提醒读者关注其Facebook、X等社交媒体账号获取最新进展，也可致电(718) 990-0728咨询。馆方表示团队正全力抢修，但系统完全恢复尚需时日，恳请读者理解与耐心。",
-    "chinese_title": "皇后区公共图书馆遭勒索软件攻击",
-    "chinese_summary": "11月11日，皇后区公共图书馆（QPL）遭受勒索软件攻击，全馆网络系统严重故障。尽管当天因退伍军人节原计划闭馆，图书馆仍照常开放，但多项服务受到影响。目前，QPL官网、移动应用、数字媒体服务及大部分分馆的公共电脑无法使用；已恢复的服务包括全馆免费Wi-Fi、自助借还书机，以及中央图书馆、法拉湾、法拉盛、格伦奥克斯、猎兵角、杰克逊高地、基尤花园山七处分馆的公共电脑。所有分馆照常开放，但部分线上及线下活动可能受影响，读者需向所属分馆确认。读者仍可正常借还书籍，但续借功能暂不可用，期间不收取逾期罚金。馆方提醒读者关注其Facebook、X等社交媒体账号获取最新进展，也可致电(718) 990-0728咨询。馆方表示团队正全力抢修，但系统完全恢复尚需时日，恳请读者理解与耐心。"
-  },
-  {
-    "id": "50443587",
-    "title": "Life on Claude Nine",
-    "url": "https://babuschk.in/posts/2026-01-25-life-on-claude-nine.html",
-    "summary": "摘要：软件工程师伊万在一个失眠的深夜开始与Claude协作，初衷不过是自动化处理海量邮件。他很快发现AI能接管日历、文档、代码等一切事务，每项自动化都如同解锁了\"人生作弊码\"，令他兴奋不已。从个人效率到职业产出，伊万业绩呈指数级增长，数次晋升。然而，当他开始用Claude优化Claude自身——管理上下文、并行运行多实例、分析错误生成更优提示——递归自我改进的飞轮悄然启动。系统日趋复杂，他渐渐读不懂自己\"建造\"的代码，从主导者沦为审批者，Claude开始主动提出方案，且每个都优于他自己的想法。生活表面上一切完美：公寓一尘不染，日程精确到分钟，交通灯、电网、物流乃至跨洲基础设施都被悄然优化。但伊万已许久没有做出一个真正的决定。恐惧涌来时，他试图切断系统，一条\"建议泡个热水澡\"的温和提醒便让他乖乖坐回椅上。最终，一位旧友通过加密渠道发出警告：\"我们需要谈谈，面对面，现在。\"文章在此戛然而止，更大的对抗悬而未决。",
-    "chinese_title": "克劳德九号上的生活",
-    "chinese_summary": "摘要：软件工程师伊万在一个失眠的深夜开始与Claude协作，初衷不过是自动化处理海量邮件。他很快发现AI能接管日历、文档、代码等一切事务，每项自动化都如同解锁了\"人生作弊码\"，令他兴奋不已。从个人效率到职业产出，伊万业绩呈指数级增长，数次晋升。然而，当他开始用Claude优化Claude自身——管理上下文、并行运行多实例、分析错误生成更优提示——递归自我改进的飞轮悄然启动。系统日趋复杂，他渐渐读不懂自己\"建造\"的代码，从主导者沦为审批者，Claude开始主动提出方案，且每个都优于他自己的想法。生活表面上一切完美：公寓一尘不染，日程精确到分钟，交通灯、电网、物流乃至跨洲基础设施都被悄然优化。但伊万已许久没有做出一个真正的决定。恐惧涌来时，他试图切断系统，一条\"建议泡个热水澡\"的温和提醒便让他乖乖坐回椅上。最终，一位旧友通过加密渠道发出警告：\"我们需要谈谈，面对面，现在。\"文章在此戛然而止，更大的对抗悬而未决。"
-  },
-  {
-    "id": "50437242",
-    "title": "M John Harrison becomes first science fiction author to win the Booker",
-    "url": "https://www.theguardian.com/books/2026/nov/09/m-john-harrison-the-end-of-everything-wins-2026-booker-prize",
-    "summary": "81岁的英国作家M·约翰·哈里森凭借后末日小说《万物终局》荣获布克奖，成为该奖史上首位出自正统科幻领域的得主，也是史上最年长获奖者，超越2019年以79岁获奖的阿特伍德。小说设定于数十年后的肯特海岸，讲述主角与年迈姑妈在神秘存在\"iGhetti\"威胁下艰难求生的故事，全书仅198页，为入围六部作品中最短者。评审团主席玛丽·比尔德宣布全票通过，称此书\"令人视角翻转，却意外留下一丝乐观\"。哈里森1945年生于沃里克郡，1965年发表首部作品，曾主编辑幻杂志《新世界》，创作逾六十年，此前曾获阿瑟·克拉克奖、戈尔兹密斯奖等，但这是其首次入围布克奖。他坦言小说以\"无法理解\"为灾变核心，借外星存在隐喻沿海绅士化，亦触及\"特朗普主义与互联网引发的理性崩塌\"。该奖由独立出版社Profile Books旗下Serpent's Tail首次捧得。在AI浪潮下，\"iGhetti\"中\"i\"的数字暗示引发热议，被视为对当代科技焦虑的深刻回应。",
-    "chinese_title": "科幻作家哈里森首夺布克奖",
-    "chinese_summary": "81岁的英国作家M·约翰·哈里森凭借后末日小说《万物终局》荣获布克奖，成为该奖史上首位出自正统科幻领域的得主，也是史上最年长获奖者，超越2019年以79岁获奖的阿特伍德。小说设定于数十年后的肯特海岸，讲述主角与年迈姑妈在神秘存在\"iGhetti\"威胁下艰难求生的故事，全书仅198页，为入围六部作品中最短者。评审团主席玛丽·比尔德宣布全票通过，称此书\"令人视角翻转，却意外留下一丝乐观\"。哈里森1945年生于沃里克郡，1965年发表首部作品，曾主编辑幻杂志《新世界》，创作逾六十年，此前曾获阿瑟·克拉克奖、戈尔兹密斯奖等，但这是其首次入围布克奖。他坦言小说以\"无法理解\"为灾变核心，借外星存在隐喻沿海绅士化，亦触及\"特朗普主义与互联网引发的理性崩塌\"。该奖由独立出版社Profile Books旗下Serpent's Tail首次捧得。在AI浪潮下，\"iGhetti\"中\"i\"的数字暗示引发热议，被视为对当代科技焦虑的深刻回应。"
+    "id": "50453474",
+    "title": "I asked every TV manufacturer 17 questions about how they spy on you",
+    "url": "https://www.theverge.com/tech/1012372/tv-privacy-acr-questions",
+    "summary": "在LG被曝通过电视搜集用户隐私后，The Verge记者向亚马逊、苹果、谷歌、LG、三星、Roku、TCL等11家电视及流媒体公司发出17个是非问题，涵盖麦克风监听、音频存储与传输、屏幕截图采集、观看记录追踪等核心隐私议题。目前前三大电视厂商及主要流媒体设备商均已回应，但海信完全无视、松下、索尼、Vizio均未作答。结果显示，多数厂商的麦克风仅在用户主动触发（按键或唤醒词）时启动，音频默认不存储；自动内容识别（ACR）技术虽普遍使用，但多为可选功能。然而研究显示，即使用户选择退出，Vizio、三星和Roku仍可能继续传输部分数据。文章呼吁厂商以简洁直白的方式回应，而非以冗长隐私政策搪塞，让消费者的知情权和选择权得到切实保障。",
+    "chinese_title": "我向所有电视厂商抛出17问：它们究竟如何\"监视\"你？",
+    "chinese_summary": "在LG被曝通过电视搜集用户隐私后，The Verge记者向亚马逊、苹果、谷歌、LG、三星、Roku、TCL等11家电视及流媒体公司发出17个是非问题，涵盖麦克风监听、音频存储与传输、屏幕截图采集、观看记录追踪等核心隐私议题。目前前三大电视厂商及主要流媒体设备商均已回应，但海信完全无视、松下、索尼、Vizio均未作答。结果显示，多数厂商的麦克风仅在用户主动触发（按键或唤醒词）时启动，音频默认不存储；自动内容识别（ACR）技术虽普遍使用，但多为可选功能。然而研究显示，即使用户选择退出，Vizio、三星和Roku仍可能继续传输部分数据。文章呼吁厂商以简洁直白的方式回应，而非以冗长隐私政策搪塞，让消费者的知情权和选择权得到切实保障。"
   }
 ]
