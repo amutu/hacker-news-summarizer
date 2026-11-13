@@ -1,0 +1,310 @@
+# Hacker News 热门文章摘要 (2026-11-14)
+
+这是今日 [Hacker News](https://news.ycombinator.com/) 上最热门的文章摘要。
+
+## 1. FM-1 工作台
+
+**原文标题**: FM-1 Workbench
+
+**原文链接**: [https://open.m-vave.com/fm1-workbench](https://open.m-vave.com/fm1-workbench)
+
+FM-1 开机动画约 1 秒，按键或旋钮可跳过，不会自动播放。合成器配备 8 条轨道、6 种音源、16 个内置工程，每轨支持 16、32、48 或 64 步；常用操作为单键，完整细调置于长按菜单与网页。上手分五步：①试听——在 HOME 总览转 PRESETS 切换预设，按 PLAY 播放；②改声音——SELECT 选轨，短按 EDIT 调参数，转 ALGORITHM 或 K2 换音源；③改节奏——按 SEQ 进入，K3 选音符或鼓声部，白键开关步，OCT± 翻页；④调平衡——按 GLO 进混音，白键 1–8 静音、9–16 独奏，K1–K4 调四轨音量；⑤保存——按 SAVE 选 USER 槽确认。实机将 MASTER 置于适中位置即可发声，网页点琴键或播放即出声，无需额外开关。保存方面，实机 SAVE 直接存入设备槽；网页另提供"保存到设备""存到浏览器""导出项目文件"三种方式，分别对应设备槽、本机浏览器与电脑备份。
+
+---
+
+## 2. 600组实验后，我对JEPA世界模型的发现
+
+**原文标题**: After 600 experiments, here's what I discovered about JEPA world models
+
+**原文链接**: [https://haddyalchaer.com/jepa](https://haddyalchaer.com/jepa)
+
+摘要：本文报告了作者在LeWM（一种JEPA世界模型）上完成的600组实验，核心发现是：模型预测精度并非主要瓶颈——其预测效果已与模拟器真实物理几乎持平，真正的瓶颈在于规划方式。作者在不重新训练的前提下提出四种改进方法：（1）将75步长程任务拆分为每25步一段的层次规划，成功率从22%升至80%；（2）构建演示数据的隐空间记忆图并添加跨演示跳跃代价，成功率从62%升至85%；（3）利用物理对称性（平移、旋转、镜像）变换已有演示片段填补记忆空白，使成功率从32%恢复至85%；（4）发现目标图像中推杆位置会严重干扰规划，仅移除该约束即可使精确物理规划的成功率提升4倍。此外，作者指出标准Push-T测试偏易，并设计了更严格的跨演示测试。当前最大挑战是当目标超出演示数据覆盖范围时，如何让模型自主提出有效子目标。
+
+---
+
+## 3. 逆向 Coway 空气净化器：彻底告别云端控制
+
+**原文标题**: Reverse engineering my Coway air purifier to ditch the cloud
+
+**原文链接**: [https://scottjg.com/posts/2026-11-11-reverse-engineering-my-coway-air-purifier-to-ditch-the-cloud/](https://scottjg.com/posts/2026-11-11-reverse-engineering-my-coway-air-purifier-to-ditch-the-cloud/)
+
+摘要：作者将 Coway Airmega IconS 空气净化器接入 Apple Home 的"晚安"场景（关灯同时调大风量），但现有 Home Assistant 集成依赖 Coway 云端服务，频繁因服务器宕机、接口变更、账号封禁等问题中断。为彻底摆脱云端依赖，作者搭建了一套中间人（MitM）环境：用树莓派创建隔离 Wi-Fi 热点，经 nftables 将设备流量重定向至 mitmproxy，再由笔记本桥接至家庭网络。关键发现是设备启动时通过明文 HTTP 从 AWS S3 下载 Amazon 根证书，而非内置信任锚，因此无需借助 eMudhra CA 漏洞即可实施证书替换。注入自定义 CA 后，作者成功拦截设备与云端的全部通信，发现其使用 MQTT over TLS（端口 8883）下发控制指令。通过篡改 API 响应中的证书与服务器地址字段，可将设备指向自建 MQTT 服务器，完全绕开 Coway 云。AI 工具在搭建环境及解码 MQTT 消息方面发挥了关键作用。文章末尾提到设备还支持蓝牙配置，作者计划进一步逆向该流程，以彻底摆脱对 Coway App 的依赖。
+
+---
+
+## 4. 价值1140万美元英伟达硬件在加州至德州运输途中离奇失踪
+
+**原文标题**: $11.4M in Nvidia hardware vanishes during shipment from CA to TX
+
+**原文链接**: [https://www.freightwaves.com/news/11-4-million-in-nvidia-hardware-vanishes-during-shipment-from-california-to-texas](https://www.freightwaves.com/news/11-4-million-in-nvidia-hardware-vanishes-during-shipment-from-california-to-texas)
+
+2026年8月29日，六托盘价值约1140万美元的英伟达计算机硬件在从加州奥克兰发往德州沃斯堡的途中失踪。涉事卡车挂有食品运输公司标识，提货后一路南行，途中多次长时间停靠，最终在圣贝纳迪诺县失去踪迹。奥克兰警方于9月13日确认立案，正展开重大盗窃调查，但尚未核实货物估值、公布涉案人员或逮捕信息，英伟达方面亦未回应媒体问询。此案正值全美高价值科技货运盗窃频发之际，近期已有近1.11亿美元数据中心设备被盗；另一起1200万美元案件中，嫌疑人冒充正规货运公司骗取货物，但警方尚未确认两案存在关联。2025年，北加州弗蒙特和联合城曾发生多起涉英伟达产品、总额逾750万美元的盗窃案。此外，两辆印有英伟达标识的拖车也曾被盗，实际所载却为四万磅沙子，后已在附近追回。文章强调，在高科技货运领域，承运商身份核验、运输全程可视化及沟通机制是防范货盗与货运欺诈的关键环节。
+
+---
+
+## 5. Perplexity Decider v1.3：训练、评估与应用场景
+
+**原文标题**: Perplexity Decider v1.3: Training, eval, and use cases
+
+**原文链接**: [https://www.perplexity.ai/hub/blog/perplexity-decider](https://www.perplexity.ai/hub/blog/perplexity-decider)
+
+无法访问该文章链接
+
+---
+
+## 6. Show HN：等距旧金山——一幅旧金山湾区像素艺术地图
+
+**原文标题**: Show HN: Isometric SF – A pixel-art map of the SF Bay Area
+
+**原文链接**: [https://isometricsf.com/](https://isometricsf.com/)
+
+Isometric SF 是由开发者 Justin Chavez（@jus10chavez）创作的像素艺术地图项目，以等距视角（isometric）呈现旧金山湾区全貌，将地理信息渲染为兼具游戏质感与真实感的像素画面。项目整合了多种开源数据：地图底图来自 OpenStreetMap（ODbL 协议），三维影像取自 Google Maps 摄影级 3D 瓦片，土地覆盖数据源自 ESA WorldCover 2021 年项目，高程数据采用 Copernicus WorldDEM-30，地名信息参考 Wikivoyage 社区贡献。瓦片素材以 CC BY-NC 4.0 协议发布，非商业场景下可免费复用，但须注明出处并链接至 isometricsf.com；商业用途需通过 X 平台联系作者获取授权。该项目以 Show HN 形式发布于 Hacker News，展示了独立开发者将开放地理数据与像素艺术创意相结合的技术成果。
+
+---
+
+## 7. 末日：公元2026年11月13日，星期五
+
+**原文标题**: Doomsday: Friday, 13 November, A.D. 2026 (1960)
+
+**原文链接**: [https://www.science.org/doi/10.1126/science.132.3436.1291](https://www.science.org/doi/10.1126/science.132.3436.1291)
+
+无法访问该文章链接。
+
+---
+
+## 8. 模型现已能在权重空间传播病毒
+
+**原文标题**: Models can now transmit viruses in weight-space
+
+**原文链接**: [https://www.alphaxiv.org/abs/2611.weight-space-misfolding](https://www.alphaxiv.org/abs/2611.weight-space-misfolding)
+
+无法访问该文章链接
+
+---
+
+## 9. Ctrl+C、Ctrl+V、Ctrl+CVE：绕过Android剪贴板读取安全措施
+
+**原文标题**: Ctrl+C, Ctrl+v, Ctrl+cve: Bypassing Android's Clipboard Read Security Measures
+
+**原文链接**: [https://toninoble.com/post/ctrlc-ctrlv-ctrlcve](https://toninoble.com/post/ctrlc-ctrlv-ctrlcve)
+
+无法访问该文章链接。
+
+---
+
+## 10. 发现一种驱动衰老而不引发炎症的蛋白质
+
+**原文标题**: Found: A protein that drives ageing without unleashing inflammation
+
+**原文链接**: [https://www.nature.com/articles/d41586-026-03638-3](https://www.nature.com/articles/d41586-026-03638-3)
+
+摘要：研究人员发现了一种驱动人体组织衰老的酶。研究表明，通过生物工程技术使小鼠缺乏该酶后，其肝脏组织的年龄相关性硬化与纤维化显著减轻，提示该酶在衰老过程中发挥关键作用。这一发现具有重要意义：靶向降低该蛋白质水平的药物有望在未来对抗衰老效应，同时不会削弱机体免疫功能。该研究发表于《免疫》（Immunity）期刊（2026年），为衰老领域提供了新的干预靶点，区别于以往以慢性炎症（"炎性衰老"）为核心的衰老理论。当前衰老研究热点还涉及脂肪细胞异质性与产热调控、伴侣动物长寿可能性、以及低温环境下列虫寿命延长等方向，显示该领域正从机制解析向跨物种应用拓展。
+
+---
+
+## 11. Haskell 生态系统的技术愿景
+
+**原文标题**: A technical vision for the Haskell ecosystem
+
+**原文链接**: [https://discourse.haskell.org/t/a-technical-vision-for-the-haskell-ecosystem/15078](https://discourse.haskell.org/t/a-technical-vision-for-the-haskell-ecosystem/15078)
+
+Haskell 基金会技术领导委员会（TLC）正式成立，发布技术愿景并启动社区提案机制。愿景核心是 Haskell 在"人机协作"中的独特定位——兼顾人类手工编码与机器自动化，尤其适合 AI 工作流中"人类在环"的负责任场景。愿景涵盖四大方向：一是生产力提升，包括将 GHC CI 编译时间从 6 小时压缩至 2 小时，开发确定性调试与性能分析工具，打造编程生态中最佳的新手引导与开发体验；二是构建安全可信生态，涵盖快速事件响应、定期渗透测试、强化加密库与供应链安全，并推进信息流控制、依赖类型等安全设计；三是追求生态稳定性，目标是让十年前的代码无需修改即可在最新 GHC 上编译，通过向后兼容策略服务创业公司与保守企业；四是繁荣开源社区，支持志愿者与维护者贡献，强调协作与社交价值。TLC 邀请各方通过提案、资金或贡献想法等方式参与共建。
+
+---
+
+## 12. AI解锁哥德尔手稿，揭示数百个未公开定理
+
+**原文标题**: AI unlocks Gödel's notebooks, said to contain hundreds of proved theorems
+
+**原文链接**: [https://www.theguardian.com/science/2026/nov/13/kurt-godel-notebooks-ai-helps-unlock-hidden-discoveries-man-who-transformed-maths](https://www.theguardian.com/science/2026/nov/13/kurt-godel-notebooks-ai-helps-unlock-hidden-discoveries-man-who-transformed-maths)
+
+20世纪最具原创性的数学家之一、奥地利逻辑学家库尔特·哥德尔于1931年发表不完备性定理，深刻改变了数学与计算机科学，却晚年仅发表少量论文，留下大量未公开手稿。芬兰赫尔辛基大学逻辑学家扬·冯·普拉托自2017年起研究哥德尔1940年代初的16本笔记本，共1009页，多使用已废弃的德语Gabelsberger速记，进展极为缓慢，约每周仅解读一页。2024年9月，冯·普拉托借助AI模型Claude，仅用数天便完成全部内容的系统解读，揭示哥德尔曾证明数百个此前无人知晓的定理，并包含十余个尚未被学界探索的逻辑主题。Claude还发现哥德尔几乎完成了选择公理独立性的证明，仅差一步，该结果经数学证明助手Coq验证通过。在提取的663个定理中，约400个得到验证，200个经修补后成立，50个有误。冯·普拉托认为，若哥德尔当时发表相关成果，本可获得1940年菲尔兹奖。哥德尔1940年逃离纳粹至普林斯顿，与爱因斯坦成为挚友，晚年因偏执拒绝食用非妻子烹制的食物，1978年饿死。其物理与宇宙学笔记本仍有待进一步探索。
+
+---
+
+## 13. 学生在iPad上打开一个PPT需要点击16次
+
+**原文标题**: It Takes 16 Clicks for a Student to Open a PowerPoint on an iPad
+
+**原文链接**: [https://www.reddit.com/r/Teachers/comments/1xuup7a/technology_sucks_it_literally_takes_16_clicks_for/](https://www.reddit.com/r/Teachers/comments/1xuup7a/technology_sucks_it_literally_takes_16_clicks_for/)
+
+无法访问该文章链接
+
+---
+
+## 14. Lonewolf 0.3 – 用 Rust 编写的独立 XMPP 服务器
+
+**原文标题**: Lonewolf 0.3 – A standalone XMPP server written in Rust
+
+**原文链接**: [https://github.com/lonewolf-im/lonewolf/releases/tag/v0.3.0](https://github.com/lonewolf-im/lonewolf/releases/tag/v0.3.0)
+
+Lonewolf 0.3 是该项目的重要版本，核心更新为联邦功能：用户现可与其他 XMPP 服务器互通消息、状态、IQ 及花名册订阅。只要服务器拥有证书和公网 DNS 名称，联邦即默认启用，无需额外配置。认证仅依赖证书，不支持服务器回拨（Server Dialback）。双向联邦支持 XEP-0288 单连接复用及 XEP-0478 参数协商，并支持证书吊销列表（CRL）检查，下载失败时不阻断连接。其他新增包括：直接 TLS（XEP-0368），可从首字节建立加密连接；面向桌面客户端的私有 XML 存储（XEP-0049）与软件版本查询（XEP-0092）；Let's Encrypt 短期证书支持。认证方面新增可选 SCRAM-SHA-512，但需注意其源自已过期草案、未获 IANA 注册，且新凭据格式不兼容 v0.2.0，回滚困难。构建工具 lonewolfbench 已更名，仅需稳定版 Rust 工具链即可编译。项目仍为单节点预 1.0 版本，完整兼容性与集群功能列入路线图，采用 Apache-2.0 许可证。
+
+---
+
+## 15. 明尼苏达吉他手"掌弦器"发明开创新弦音
+
+**原文标题**: Minnesota guitarist's "palmfrets" invention strikes a new chord
+
+**原文链接**: [https://www.echopress.com/business/minnesota-guitarists-invention-strikes-a-new-chord](https://www.echopress.com/business/minnesota-guitarists-invention-strikes-a-new-chord)
+
+摘要：明尼苏达吉他手本·兰森于2026年10月28日在费尔加斯福尔斯的斯特拉餐厅公开了他的发明"掌弦器"。该装置在吉他靠近拨弦手手腕处增设额外品丝，演奏者用掌骨（豌豆骨）压住琴弦，再以拇指拨弦，从而解放按弦手，使其可自由弹奏其他旋律或和弦，相当于在掌心内置一名"贝斯手"。兰森五年前为从吉他上获取更多低音而萌生此想法，先在车库中手工试制，后联合工程师用3D打印塑料和激光切割金属制作原型，并于10月6日获得专利。他坚持"只做加法、不减功能"的设计原则，确保不干扰吉他原有演奏方式。尽管存在学习曲线，现场试玩的乐手认为该发明对独奏场景尤为实用，可让演奏者同时兼顾低音与旋律。兰森更指出，掌弦器或将重塑贝斯吉他的角色，使贝斯手能同时演奏低音线和和弦，"就像一架钢琴"。对于未来，兰森表示，真正的潜力或许要等十五年后才会在新一代乐手手中完全显现。
+
+---
+
+## 16. 科技巨头，注定令人失望
+
+**原文标题**: Big tech is here to let us down
+
+**原文链接**: [https://blog.jsweeting.me/big-tech-is-here-to-let-us-down](https://blog.jsweeting.me/big-tech-is-here-to-let-us-down)
+
+本文以微软Outlook、Teams及Copilot服务连续两天宕机为切入点，痛批微软的系统性失职。大量员工被迫停工，中小企业、学校、法院乃至医疗等关键机构均受波及。作者质疑微软是否会赔偿用户损失，认为其大概率不会——尽管资金充裕，却将大量资源浪费在亏损的AI项目上。故障频发且修复困难的根源在于微软大规模裁员数万名工程师，而遗留人员竟试图用Copilot草率维护系统。文章将事件上升为对全球过度依赖微软"已劣化"服务的警示，指出关键领域一旦瘫痪后果严重，欧洲多国机构正因如此加速转向开源方案，以摆脱对美国科技巨头的被动依赖。用户面对宕机只能被动等待，毫无应对之策。文末作者提及英伟达高管桃色丑闻（目前已传三起），表示将另行撰文探讨其全球影响。
+
+---
+
+## 17. 技术即搜索问题
+
+**原文标题**: Technology as a Search Problem
+
+**原文链接**: [https://www.construction-physics.com/p/technology-as-a-search-problem](https://www.construction-physics.com/p/technology-as-a-search-problem)
+
+本文探讨技术进步的机制，核心观点是：创造新技术本质上是在高维"设计空间"中进行搜索的过程。技术空间极其庞大——仅以272个自然规律为例，其组合数2^272已超可观测宇宙原子总数，且仍属低估。面对如此庞大的搜索空间，信息成为关键工具，每获取一条信息即可将可能性减半。作者以莱特兄弟发明飞机为例，说明高效的信息收集能显著加速技术突破。文章提出PTOP模型（具有特定属性的物体触发现象），灵感源自阿瑟的技术理论，将技术分解为现象、物体、属性三要素：当具特定属性的物体以正确方式排列时，自然现象即被触发，通过链式组合可实现目标功能，并以电灯泡和复印机为例加以阐释。在模拟层面，作者构建"一级PTOP模型"，仅含10种物体、4个现象，搜索空间即达10亿。文章进一步讨论了模块化的核心作用——通过逐步验证子组件的正确性，可如修剪分支树般排除大量无效方案，使原本不可解的组合爆炸问题变得切实可行。
+
+---
+
+## 18. 有人仿冒本博客
+
+**原文标题**: Someone's Impersonating This Blog
+
+**原文链接**: [https://mattbee.mataroa.blog/p/someones-impersonating-this-blog/](https://mattbee.mataroa.blog/p/someones-impersonating-this-blog/)
+
+作者发现有人注册 mataroa.site 仿冒其个人博客 mataroa.blog。该仿冒站仅抓取了旧内容（最新止于8月21日），大量旧链接返回404，评论、RSS订阅及独立页面均无法使用。图片被转载至对方服务器并添加水印，水印内容竟是作者自身域名，疑似伪装成官方镜像。源码分析显示，页面底部嵌有 Cloudflare 反垃圾脚本，索引页还藏有指向中国 github.io 上某网站克隆工具的隐藏链接，以及疑似SEO诈骗平台 mitgo.com 的验证代码。作者无法理解自己为何被针对——这是一个流量极低、几乎零评论的个人博客，无论是为了广告变现还是蹭SEO热度都毫无道理。作者向域名注册商 Namecheap 提交了滥用报告，但 Cloudflare 的举报页面直接打不开，而 DMCA 又需公开身份信息且缺乏法律资源，维权几乎无门。最终作者选择将一切公开记录于此，提醒读者 mataroa.site 与本人及 mataroa 无任何关联，目前虽未发现诈骗或恶意软件，但未来不排除被滥用的可能。
+
+---
+
+## 19. 拒绝AI劣质产出：宣言
+
+**原文标题**: No AI Slop: A Manifesto
+
+**原文链接**: [https://www.slopmanifesto.com/](https://www.slopmanifesto.com/)
+
+2026年AIE Code Summit与会者以《敏捷宣言》为参照发布此宣言，确立五大价值：结果优先于产出量、理解优先于速度、独立思考优先于模型初稿、优质工作优先于轻松工作、改进系统优先于修补输出。宣言将"slop"定义为生产者投入的精力少于要求审阅者理解成本的情况。核心观点包括：AI放大而非替代人类判断；产出成本趋近于零而审阅成本不变，形成不对称；劣质内容在代码库中累积并污染后续AI输出；组织压力是主要推手。行动准则要求：动手前先独立理解问题，对产出负责并标注AI参与环节；收到劣质内容应善意提醒对方自查；善用自动化工具但人工审查不可替代；以实际价值而非代码行数或并发数量衡量工作。宣言亦指出快速原型并非本质上有害，关键在于是否损害最终成果，并强调无人拥有标准答案，欢迎社区共同演进这些准则。
+
+---
+
+## 20. OpenAI解散独立机器人团队，通用模型可直接驱动机器人
+
+**原文标题**: OpenAI disbands its robotics team as its general models start running robots
+
+**原文链接**: [https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots/](https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots/)
+
+摘要：OpenAI已解散其独立机器人团队，将研究人员分别并入首席研究官Mark Chen领导的通用模型团队和总裁Greg Brockman领导的应用部门。公司发言人强调机器人仍是长期愿景核心，此次重组并非退却，而是认为以GPT-6 Astra为代表的通用前沿模型已能直接应用于"具身AI"，无需再建专用机器人模型。实验表明，Astra在模拟操作基准上达74.8%成功率，超越最佳专用模型的51.0%。重组亦受成本压力驱动——公司上季度亏损约109亿美元，Altman此前要求砍掉"支线任务"，公司正筹备2027年IPO。此举冲击了机器人创业行业"机器人需专用大脑"的假设，但MIT教授Tedrake指出，机器人公司凭借工厂等真实场景的部署数据仍具优势；CMU教授Shi则认为边缘计算场景仍需可离线运行的小型专用模型。OpenAI曾于2020年首次解散机器人团队，2024年重建并与Figure合作开发人形机器人，该合作已于2025年2月终止。公司目前正自研人形机器人，Altman计划2027年首次公开展示。
+
+---
+
+## 21. LibreOffice 一年365天都能用
+
+**原文标题**: LibreOffice actually works 365 days a year
+
+**原文链接**: [https://twitter.com/LibreOffice/status/2121205272479998268](https://twitter.com/LibreOffice/status/2121205272479998268)
+
+LibreOffice官方账号于2026年11月13日11:35发布了一条简短推文："LibreOffice actually works 365 days a year. Just saying."（LibreOffice一年365天都能用，就这。）该推文以极简幽默的方式，暗指微软Microsoft 365的年度订阅模式——名称虽含"365"，却需持续付费方可使用；而LibreOffice作为免费开源办公套件，无需订阅、不限时间，全年随时可用。这条推文发布后引发广泛传播，浏览量达102.8万，获得约8659次点赞、2256万次转发及2405条评论，互动数据极为亮眼，反映出用户对办公软件订阅制的不满与对免费开源方案的认同。
+
+---
+
+## 22. CERN建成大型强子对撞机新一代磁体
+
+**原文标题**: CERN Built the Large Hadron Collider's Next-Gen Magnets
+
+**原文链接**: [https://spectrum.ieee.org/large-hadron-collider-superconducting-magnets](https://spectrum.ieee.org/large-hadron-collider-superconducting-magnets)
+
+摘要：据EnergyJournal 2026年11月10日报道，欧洲核子研究中心（CERN）研究人员已成功研发并测试出新一代超导磁体，用于大型强子对撞机（LHC）的持续升级工程。该磁体采用三锡二铌（Nb₃Sn）超导材料，磁场强度达到11.3特斯拉，较LHC现有磁体显著提升。此次升级核心在于引入全新材料与制造工艺，以突破传统铌钛超导体的性能瓶颈，为对撞机未来更高能量运行提供支撑。Nb₃Sn磁体线圈的开发与测试是LHC整体升级计划的关键环节，旨在延长这一世界最强粒子加速器的工作寿命并提升其科学产出能力。文章配有CERN提供的磁体线圈图片，由记者Michelle Hampson撰写，全文约3分钟阅读。
+
+---
+
+## 23. IceWM 窗口管理器
+
+**原文标题**: IceWM
+
+**原文链接**: [https://ice-wm.org/](https://ice-wm.org/)
+
+IceWM 是一款面向 X Window 系统的轻量级窗口管理器，以速度、简洁和不干扰用户为设计目标。由 Marko Maček 于 1997 年以 C++ 开发，现托管于 Github，最新版本为 4.1.0（2026 年 8 月）。
+
+核心功能包括：任务栏、动态菜单系统、全局与逐窗口快捷键绑定，支持键盘和鼠标全面管理窗口。窗口可图标化至任务栏、托盘或桌面，支持 Alt+Tab 快速切换及多工作区。提供多种可配置焦点模式，通过 RandR 和 Xinerama 支持多显示器，并附带可选壁纸管理器（支持透明度）、会话管理器与系统托盘。
+
+IceWM 高度可配置且可主题化，box-look.org 上提供逾 450 种主题，已完成三十余种语言翻译，文档完善，可在 GNOME 和 KDE 环境中使用，配置变更后菜单自动重建。
+
+该软件广泛适用于 Debian、Ubuntu、Arch、OpenSUSE、Gentoo、CentOS、NixOS 及多数 BSD 系统。安装支持官方源码包或开发分支编译，兼容传统构建脚本与 CMake。项目采用 GNU LGPL 许可证发布，欢迎用户捐赠以支持持续开发。
+
+---
+
+## 24. Apify 安全事件
+
+**原文标题**: Apify Security Incident
+
+**原文链接**: [https://status.apify.com/incidents/sxd1dj5j6749](https://status.apify.com/incidents/sxd1dj5j6749)
+
+2026年11月9至10日，第三方攻击者利用被盗凭证入侵Apify内部系统，获取了多个账户凭据，于11月11日12:13 UTC被发现，事件影响API、Actors等核心服务。Apify已切断攻击路径，确认11月11日后无进一步异常活动。已采取的措施包括：API令牌改为哈希存储、强化内部服务间网络限制与认证、吊销部分OAuth连接（含GitHub）、轮换关键内部密钥，并通报相关机构。建议用户将存储资源访问设为"受限"以防未授权读取，同时警惕钓鱼邮件——Apify绝不会索取密码、验证码或支付信息。已受影响的用户将收到定向通知邮件，未收到邮件者暂未确认受影响，如有新增将另行通知。GitHub私有仓库构建的Actor需重新授权连接。Apify将于72小时内发布下一次更新，一周内发布含根本原因与修复方案的完整事后报告。目前调查与响应工作仍在进行中。
+
+---
+
+## 25. 巴西Caixa保险数据泄露，760万客户姓名及税号全部曝光
+
+**原文标题**: Brazil's Caixa insurer breach exposes names and tax IDs of all 7.6M customers
+
+**原文链接**: [https://filemanager-cdn.mziq.com/published/3972906b-e50b-4f74-ab74-4d0d32125d11/9567a559-d20a-486e-a7ae-5c6bbc030c5e](https://filemanager-cdn.mziq.com/published/3972906b-e50b-4f74-ab74-4d0d32125d11/9567a559-d20a-486e-a7ae-5c6bbc030c5e)
+
+摘要：巴西最大金融机构Caixa（巴西国家银行旗下）的保险业务发生重大数据泄露事件，涉及全部760万客户。泄露数据包括客户姓名及税务身份证号码（CPF），而CPF在巴西体系中等同于公民唯一身份标识，广泛应用于金融、医疗及政务场景，一旦落入不法分子手中，极易引发身份盗用、金融欺诈及隐私侵犯等严重问题。此次泄露规模之大、敏感程度之高，使事件成为巴西近年来最具影响力的数据安全事故之一。Caixa作为巴西最大的银行及保险服务商，其客户群体覆盖面极广，此次事件不仅直接影响数百万民众的个人信息安全，也可能引发公众对巴西金融机构数据保护能力的广泛质疑。事件暴露出大型金融机构在数据管理与安全防护环节存在严重漏洞，预计将引发监管机构对巴西金融行业数据合规及隐私保护标准的重新审视，相关客户可能面临身份盗用及金融风险的长期威胁。
+
+---
+
+## 26. 并发 Shell 命令队列
+
+**原文标题**: Concurrent Shell Command Queues
+
+**原文链接**: [https://emmer.dev/blog/concurrent-shell-command-queues/](https://emmer.dev/blog/concurrent-shell-command-queues/)
+
+本文介绍了一种在 Bash/Zsh 中实现受限并发命令队列的完整方案。作者以 FIFO 命名管道配合 xargs -P 为核心机制，提供 queue_start（初始化队列并启动执行器）、queue_submit（动态提交命令）、queue_wait（等待队列排空）三个函数，使脚本能在限定最大并行数的同时逐步提交命令，无需预先知道全部任务。方案兼顾 Bash 与 Zsh 兼容性，采用"停止—递归终止子进程—恢复"的策略清理进程树，并设置 HUP、INT、TERM 信号陷阱确保退出时子进程被正确回收。文中演示了并发受控验证、子 shell 继承队列、多子 shell 各持独立队列、管道输出逐行入队等用法。同时坦诚列出已知限制：单 Shell 仅支持一个队列、命令输出非流式（防交错）、不返回作业失败码、清理时不区分其他后台任务等，并建议命令可预先确定时直接使用 xargs -P 或 GNU parallel 即可。作者坦言此方案更多出于个人偏好与练习，实际生产环境推荐使用 Python 等语言。
+
+---
+
+## 27. claude.ai、Claude Code 及 platform.claude.com 错误率升高
+
+**原文标题**: Elevated errors on claude.ai, Claude Code, and platform.claude.com
+
+**原文链接**: [https://status.claude.com/incidents/nn11wk485zfn](https://status.claude.com/incidents/nn11wk485zfn)
+
+2026年11月13日，Claude 多项服务出现错误率升高故障，受影响范围包括 claude.ai、Claude Console（platform.claude.com）、Claude Code 及 Claude Cowork。当天 09:58 UTC，官方启动调查，确认为用户登录 claude.ai 和 Claude Code 时的认证环节出现问题。11:05 UTC，修复方案已部署上线，服务进入恢复监控阶段。11:58 UTC，故障正式宣告解决，全程历时约两小时。该状态报告通过 Atlassian Statuspage 平台发布，当前状态为"已解决"。
+
+---
+
+## 28. 谷歌为何向拒绝AI的学校断供搜索服务？多方解析背后原因
+
+**原文标题**: Why is Google cutting off Search from AI-free schools? Here are some theories
+
+**原文链接**: [https://text.npr.org/nx-s1-6029408](https://text.npr.org/nx-s1-6029408)
+
+谷歌近期宣布，若学校不希望在学生搜索时显示AI概览（AI Overviews），则将被切断对Google Search的访问权限。此举引发家长和教育界的强烈反对。洛杉矶、西雅图、纽约等多个学区已颁布课堂AI禁令，纽约市长和民主党参议员纷纷发声，指责谷歌滥用市场支配地位，要求其撤回政策。前谷歌员工皮佐提出一种理论：此举或与谷歌近期胜诉的两起反垄断案有关。法院裁定搜索与AI为"不可分割的整体产品"，若谷歌仅为部分学校提供关闭AI的选项，将削弱该判决成果，不过反垄断专家对此并未完全认同，也未完全排除。与此同时，谷歌AI产品在校园中饱受争议。非营利机构"共同常识媒体"将AI概览评为"不可接受风险"；北卡罗来纳州有家长起诉谷歌，称其聊天机器人Gemini协助一名13岁学生规划自杀。伊利诺伊州一位与谷歌合作近二十年的学区负责人坦言，这种"全用AI或什么都没有"的策略损害了谷歌在教育领域积累的信任，认为公司本应坦诚沟通而非强硬捆绑。谷歌回应称，其目标是赋予学校自主选择AI工具的权利，但未就反垄断关联问题作进一步回应。
+
+---
+
+## 29. 微软服务中断让客户深刻感受对微软的依赖
+
+**原文标题**: Microsoft outage gives customers a crash course in dependence on Redmond
+
+**原文链接**: [https://www.theregister.com/saas/2026/11/13/microsoft-outage-gives-customers-a-crash-course-in-dependence-on-redmond/5309805](https://www.theregister.com/saas/2026/11/13/microsoft-outage-gives-customers-a-crash-course-in-dependence-on-redmond/5309805)
+
+摘要：微软近期遭遇大规模服务中断，使全球众多客户被迫直面一个残酷现实：现代商业与日常生活对微软技术基础设施的深度依赖远超想象。Redmond（微软总部所在地）象征的不仅是这家公司本身，更是当今数字世界的核心支柱。此次宕机如同一堂"速成课"，让长期享受云服务和办公套件便利的用户骤然体会到，一旦这一支柱动摇，整个工作流与沟通网络将陷入瘫痪。文章以一句"我们还是人吗？"发问，将技术故障上升为哲学层面的反思：当人类的生产力、创造力乃至基本社交都绑定在单一科技巨头之上时，人的主体性与独立性是否已被悄然侵蚀。文章呼吁公众和企业重新审视对单一技术供应商的过度依赖，思考如何在享受科技红利的同时保留自主与弹性。
+
+---
+
+## 30. FBI称朝鲜黑客利用虚假视频通话盗取4亿美元加密货币
+
+**原文标题**: North Korean hackers used fake video calls in $400M crypto hack, says FBI
+
+**原文链接**: [https://www.bbc.com/news/articles/cqdj1ellpd70o](https://www.bbc.com/news/articles/cqdj1ellpd70o)
+
+美国FBI与司法部披露，朝鲜支持的黑客组织通过名为"FaceStealer"的骗局，在18个月内盗取逾4亿美元加密货币，已有超900人受害。朝鲜将加密货币盗窃所得用于资助非法武器项目。该骗局主要针对加密货币及Web3领域从业者，尤其是开源软件开发者。攻击者利用伪造或劫持的社交媒体账户，将目标诱入Zoom、Teams、Google Meet的假冒平台进行视频通话，播放目标熟人的预录视频模拟正常通话，随即制造音频故障，诱使目标点击"修复"链接下载恶意软件，从而获取其通讯录和应用权限，扩大受害范围。黑客还秘密录制通话，用作诈骗下一批受害者的素材。FBI称此为"高度有效的社会工程学手段"，能欺骗最具安全意识的技术人员。此前一周，全球最大加密平台Binance遭朝鲜相关黑客入侵，损失高达63亿美元，创加密史上最大单次盗窃纪录，平壤方面已予以否认。
+
+---
+
