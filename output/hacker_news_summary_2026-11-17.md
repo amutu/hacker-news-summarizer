@@ -1,0 +1,310 @@
+# Hacker News 热门文章摘要 (2026-11-17)
+
+这是今日 [Hacker News](https://news.ycombinator.com/) 上最热门的文章摘要。
+
+## 1. 美国银行、大通银行、合众银行、富国银行及Zelle支付服务遭报故障
+
+**原文标题**: Outages reported at Bank of America, Chase, U.S. Bank, Wells Fargo and Zelle
+
+**原文链接**: [https://apnews.com/article/bank-outage-chase-wells-fargo-truist-50fee2693c22f597fa6ca51a97ef2cda](https://apnews.com/article/bank-outage-chase-wells-fargo-truist-50fee2693c22f597fa6ca51a97ef2cda)
+
+无法访问该文章链接
+
+---
+
+## 2. 太阳能板间放牧绵羊的生态与经济价值
+
+**原文标题**: Grazing sheep in fields with solar arrays
+
+**原文链接**: [https://news.cornell.edu/stories/2026/10/sheep-grazing-solar-fields-offers-farmers-economic-ecological-gains](https://news.cornell.edu/stories/2026/10/sheep-grazing-solar-fields-offers-farmers-economic-ecological-gains)
+
+摘要：康奈尔大学两项新研究揭示了太阳能板间放牧绵羊的生态效益与经济前景。一项发表于《环境研究快报》的研究基于康奈尔卡斯卡迪拉社区太阳能农场为期三年的试验，发现每公顷放牧两只绵羊可使蜜蜂、瓢虫等有益昆虫数量较割草对照区增加38%，其中蜜蜂增幅达83%；四只/公顷时效果与割草相当，八只/公顷虽植被管理最佳但蜜蜂数量下降45%。另一项发表于《制造与服务运营管理》的研究由康奈尔商学院团队完成，开发了电子表格模型，帮助农民依据畜群规模、成本、收入及场地植被优化经营决策，同时协助开发商制定可持续合约，该工具已被美国联合光农复合公司采用。经济层面，美国约半数羊肉依赖进口，太阳能放牧为羊农提供稳定收入，有望推动本土羊产业扩张，带动加工、信贷及供应链发展，振兴乡村经济。研究由康奈尔农业与生命科学学院多团队合作完成，资金来自阿特金森可持续发展中心、国家食品与农业研究所及国家科学基金会。
+
+---
+
+## 3. Jiff 1.0：Rust 的日期时间库
+
+**原文标题**: Jiff 1.0: A datetime library for Rust
+
+**原文链接**: [https://burntsushi.net/jiff/](https://burntsushi.net/jiff/)
+
+Jiff 是 Rust 生态中广受采用的日期时间库，此次发布 1.0 正式版，承诺长期稳定维护，避免破坏性更新。其核心理念是"成功之坑"设计——将时区、夏令时等复杂逻辑内化于库内部，降低用户出错概率。文章以"洋葱模型"介绍了 Jiff 的类型层次：从 civil::Date、civil::Time 到 civil::DateTime，再到 Timestamp（Unix 时间戳）与 TimeZone，最终组合为 ZonedDateTime，覆盖从本地时间到绝对时刻的完整转换。时区处理是重点：Jiff 自动应对夏令时的"折叠"（时间重复）与"间隙"（时间跳过），默认采用"兼容"策略，亦支持 earlier、later、unambiguous 等策略。持续时间方面，Span 混合日历单位（年、月、日）与物理单位（时、分、秒），SignedDuration 仅表示物理时间。此外还涵盖解析与格式化（strptime/strftime）、多历法支持及基于 ICU4X 的国际化等功能。目标读者为需要健壮、易用日期时间处理的 Rust 开发者。
+
+---
+
+## 4. Frame – 31.5英寸全彩电子墨水屏
+
+**原文标题**: Frame – 31.5" color ePaper display
+
+**原文链接**: [https://trmnl.com/blog/introducing-frame](https://trmnl.com/blog/introducing-frame)
+
+TRMNL正式发布第三款产品Frame——一款31.5英寸全彩电子墨水屏，搭配手工木质外壳，首批限量约470台，预计2026年底开始发货，大部分于2027年初送达。Frame延续TRMNL生态全部功能，并新增多项特性：Clock Sync定时刷新减少闪烁并延长续航；microSD离线模式实现零数据上传；背面增设USB-C接口支持常电连接；自研Lazarus色彩引擎优化Spectra 6面板色彩表现；支持横竖双方向安装，可选配支架。平台还推出"本地艺术"插件，致敬创始人早期创业项目ArtSpot。创始人回忆，其2013年创办的艺术展示平台ArtSpot虽已关闭，但"让艺术融入日常"的愿景延续至今；TRMNL坚持"不做电视、不做时钟"的理念，在灰度产品验证成功后决定拥抱全彩。供应链方面，TRMNL强调透明化：塑料件在乔治亚州以3D打印日产，木壳由自家木工坊按需制作，电子件依赖海外但库存充足。首批仅发往美国、加拿大、墨西哥和澳大利亚，2027年初计划在柏林开设第二木工坊覆盖欧洲，所有产品均由团队自行组装，绝不外包。
+
+---
+
+## 5. 方圆形
+
+**原文标题**: Squircles
+
+**原文链接**: [https://linebender.org/wiki/curves/squircle/](https://linebender.org/wiki/curves/squircle/)
+
+方圆形是介于正方形与圆形之间的形状，无统一定义，存在多种曲线变体。最知名的是超椭圆（|x|^n+|y|^n=1），由Piet Hein推广，n=2为圆，n趋向无穷趋近正方形。文章以"gauge"（中点坐标0.5^(1/n)）作为统一度量。方圆形分两类：单解析曲线与平边混合方案，后者可适配任意宽高比而不扭曲角形。Apple在iOS 7将图标改为自研方圆形，早期分析误判为超椭圆指数5，实为平边方圆形，但存在多余直线段与不对称等小瑕疵。Figma发布清理后的近似方案，社区涌现大量开源实现，但曲率不连续，仅达G1连续；Clothoid方圆形具备G2连续但gauge范围更窄。方圆形已被纳入CSS corner-shape属性，Chromium采用两段贝塞尔曲线近似超椭圆，效果良好；以指数3超椭圆配平边长度可较好还原Apple形状。此外，多项式螺旋线、双曲线、Fernández-Guasti曲线等亦可充当方圆形。文章还指出方圆形的偏移曲线并非严格方圆形，但视觉差异有限。
+
+---
+
+## 6. ThinkPad电源键"复活密码"：让死机笔记本重获新生（2007）
+
+**原文标题**: The Secret ThinkPad Powerbutton Code to Bring Dead Laptops Back to Life (2007)
+
+**原文链接**: [https://masnick.com/posts/the-secret-thinkpad-powerbutton-code-to-bring-dead-laptops-back-to-life/](https://masnick.com/posts/the-secret-thinkpad-powerbutton-code-to-bring-dead-laptops-back-to-life/)
+
+2007年，博主Mike Masnick的新款ThinkPad z61t在会议前突然完全死机，无指示灯、无反应。他致电IBM客服，客服告知一个"电源键复活密码"：先拔掉电源适配器和电池，以每秒一次的速度连按电源键10次，再长按电源键30秒，最后装回电池并按一次开机，电脑即恢复正常。客服称原理是释放主板上的残留静电电荷。文章发布后引发大量评论，众多用户证实该技巧有效，涵盖T41、T42、T61、T43、X41、X200、T400、T500等多个型号，有人甚至在笔记本被牛奶浸湿、USB插反烧毁后仍成功复活，避免了数百美元维修费用。但也有少数用户反馈该技巧无效，最终通过重新插拔内存条或取出光驱解决问题。总体而言，这是一篇以亲身经历分享、经大量用户验证的ThinkPad应急自救指南，虽原理简单（本质为硬件级硬重置放电），却能解决绝大多数"完全无响应"的死机问题。
+
+---
+
+## 7. Aristotle新增Rust语言支持
+
+**原文标题**: Aristotle Expands into Rust
+
+**原文链接**: [https://www.harmonic.fun/news/aristotle-rust-verification/](https://www.harmonic.fun/news/aristotle-rust-verification/)
+
+Aristotle（形式化验证工具）宣布新增Rust语言支持，继C与Verilog后进一步拓展验证能力。该工具可证明Rust代码无未定义行为且符合规范，涵盖unsafe块，并能验证C迁移至Rust后的行为一致性。CEO Tudor Achim表示，Rust已成为关键领域新代码的主要语言，AI也正深度参与编码，Aristol适用于云计算、汽车、航空航天、金融等行业。在区块链领域，Rust是Solana智能合约的核心语言，链上交易不可撤销，单一漏洞即可能导致巨额资金损失。Aristol可替代缓慢且易过时的手动审计，对每行代码进行全输入形式化验证。实际案例中，开源订单簿Manifest经Aristol验证了28项结果并发现一处舍入缺陷；主经纪商Project 0则确保存取、借贷、清算等操作中账目始终一致。Aristol已与Solana基金会达成合作，助力新开发者验证合约。产品即日起上线，提供自助及定制部署服务。
+
+---
+
+## 8. 《Heat》版权之争：曼恩"与己交易"成胜负手
+
+**原文标题**: Michael Mann's 'Heat' Copyright Fight Turns on a Deal with Himself
+
+**原文链接**: [https://copyrightlately.com/michael-mann-heat-copyright-termination/](https://copyrightlately.com/michael-mann-heat-copyright-termination/)
+
+2026年11月，New Regency在洛杉矶联邦法院起诉导演迈克尔·曼恩，请求判令其三项版权终止通知无效。曼恩试图收回1981至1985年间《Heat》早期剧本版权，声称该时期他系自由创作者而非其控股公司（loan-out）的员工。New Regency则指出，1994年版权登记将作者明确列为"曼恩公司（雇佣作品）"，且近二十年协议均标注该剧本为雇佣作品。
+
+诉讼背景是《Heat 2》即将开拍：Warner Bros.因预算问题退出后，Amazon两度分别从双方购买续集权利以对冲诉讼风险。曼恩的终止通知指向1988年一项据称仅存于口头、无法举证的协议及1989年一项书面协议。
+
+法律核心在于：若剧本确为雇佣作品，版权自始归属公司，个人无权行使终止权。曼恩并未否认loan-out公司存在，仅主张争议作品创作于雇佣关系之外，但跨越近二十年的纸面证据均不利于他，且其1989年协议中曾担保相关权利未转让他人，与终止通知内容自相矛盾。
+
+文章认为New Regency证据优势明显，但曼恩的论点并非毫无法律空间。鉴于Amazon已同时持有双方协议，案件大概率以和解收场。
+
+---
+
+## 9. 软件正在经历系统性崩塌
+
+**原文标题**: Software is breaking down at a systemic level
+
+**原文链接**: [https://www.breck-mckye.com/blog/2026/11/software-is-breaking-down-at-a-systemic-level/](https://www.breck-mckye.com/blog/2026/11/software-is-breaking-down-at-a-systemic-level/)
+
+2026年，微软全球宕机、美国FAA全面停飞、PHP2Shell漏洞波及七成网站、eMudhra私钥泄露等多起事件集中爆发，暴露出软件行业正面临系统性崩溃。这些问题表面原因各异，却共享同一特征：由低质量零件构成的高复杂度系统，任何单点失效都可能引发连锁崩塌。文章指出，危机根源可追溯至十年前云计算与开源生态的兴起。NPM等包管理器让开发者无需理解底层细节即可调用他人代码，技术岗位从专业分工走向通才化，工程师逐渐丧失对系统的整体掌控力，也失去了预警风险的能力。近年来AI的介入进一步加剧了问题。作者提出"退相干"概念：AI生成的代码在局部看似合理，却在整体上彼此矛盾、逐渐失控。工程师已将设计、编排乃至整体架构交由AI代理，深度思考正在消亡，取而代之的是虚假自信与习得性无助。从需求文档到代码实现，整条工作链已被AI贯穿，缺乏真正的意图与人为把控。文章警告，软件已深度嵌入航空、金融、交通等社会基础设施，公众对技术系统的信任远超其承载能力。若复杂性继续以不可持续的速度积累，2026年的频繁故障将不再是例外，而将成为常态。
+
+---
+
+## 10. 巨型路边地标面临成本攀升与前途未卜
+
+**原文标题**: Giant Roadside Attractions Face Mounting Costs and an Uncertain Future
+
+**原文链接**: [https://www.nytimes.com/2026/11/08/world/canada/roadside-attractions-giant-dinosaur.html](https://www.nytimes.com/2026/11/08/world/canada/roadside-attractions-giant-dinosaur.html)
+
+加拿大阿尔伯塔省德鲁赫勒市拥有巨型霸王龙雕塑"泰拉"，高86英尺，约为真实霸王龙的四倍，是这座"世界恐龙之都"的标志性景观。然而，泰拉正面临自身"灭绝"危机：土地租约将于2029年到期，维护成本持续攀升，当地商会已决定届时关闭该景点。泰拉存在逾25年，曾吸引无数游客停车拍照，勇者更可攀登106级台阶从雕塑口中俯瞰加拿大荒原。泰拉并非孤例，北美和澳大利亚有数千个社区曾以巨型路边雕塑吸引目光、提升知名度，但数十年过去，这些地标普遍面临新鲜感消退、维护费用高企的双重困境，地方政府被迫在存续与拆除间抉择。这一趋势折射出"路边奇观"文化在当代经济压力下的衰落，也引发人们对地方文化遗产如何延续的广泛思考。
+
+---
+
+## 11. 亚马逊"黑五""网一"促销涉嫌虚标价格，近三成商品毫无优惠
+
+**原文标题**: Many of Amazon’s Black Friday and Cyber Monday “deals” offered no savings
+
+**原文链接**: [http://groundworkcollaborative.org/news/amazons-decoy-deals-groundwork-investigation-reveals-nearly-1-in-3-black-friday-and-cyber-monday-deals-advertised-by-amazon-offered-no-savings-to-shoppers-nearly-1-in-10-w/](http://groundworkcollaborative.org/news/amazons-decoy-deals-groundwork-investigation-reveals-nearly-1-in-3-black-friday-and-cyber-monday-deals-advertised-by-amazon-offered-no-savings-to-shoppers-nearly-1-in-10-w/)
+
+摘要：独立调查机构Groundwork于2026年11月16日发布调查报告，揭露亚马逊在"黑色星期五"和"网络星期一"期间大肆宣传的"优惠"存在严重问题。调查发现，亚马逊所标示的"折扣价"中，近三分之一的商品并未给消费者带来任何实际节省；更夸张的是，近十分之一的商品"促销价"反而高于日常售价，消费者不仅没占便宜，反而多花了钱。报告将此类行为定性为"诱饵式促销"（Decoy Deals），即商家先抬高历史标价，再在促销季打出"折扣"，制造降价假象以误导消费者。这一调查再次引发了公众对大型电商平台促销真实性的质疑，也提醒消费者在购物季应提前记录商品历史价格，理性甄别所谓"限时特惠"，避免被虚假折扣蒙蔽。
+
+---
+
+## 12. 拦截 HTTP/3 流量：QUIC 与 QPACK
+
+**原文标题**: How to Intercept HTTP/3 Traffic: QUIC and Qpack
+
+**原文链接**: [https://interceptsuite.com/blog/intercept-http3-traffic-quic-qpack-explained/](https://interceptsuite.com/blog/intercept-http3-traffic-quic-qpack-explained/)
+
+HTTP/3 基于 QUIC（运行于 UDP），普通 HTTP 代理无法拦截，需借助支持 QUIC 中间人的工具。本文以 InterceptSuite 为例演示完整流程。核心要点：①HTTP/3 请求经 QUIC 流传输，头部由 QPACK 压缩（静态表、Huffman 编码、动态表），不再是明文；②curl 的 QPACK 动态表容量为 0，头部易读易改；Edge 等浏览器开启 64KB 动态表，且受 ECH 加密客户端问候及 CA 信任限制，须用特殊启动参数绕过；③将 QUIC 流量引入代理有两条路径——客户端经 SOCKS5 UDP ASSOCIATE 自行中转，或从外部重定向（InterceptSuite 的 Redirect 功能）；④单个请求在代理中产生约 10 条记录，涵盖控制流、QPACK 编解码流及 HEADERS/DATA 帧；⑤用 Python 与 aioquic 搭建实验服务器可逐字节观察 QUIC 握手与 QPACK 编解码细节。文章还展示了在拦截队列中修改请求头与请求体后转发，服务端收到篡改内容而客户端无感知。
+
+---
+
+## 13. Jolt——能调用 C 的 Clojure
+
+**原文标题**: Jolt – Clojure that speaks C
+
+**原文链接**: [https://jolt-lang.net/](https://jolt-lang.net/)
+
+Jolt 是运行在 Chez Scheme 上的 Clojure 方言，核心优势为原生 C 互操作。主要特性：①通过 defcfn 绑定任意 C 共享库（如 SQLite、OpenSSL、zlib）；②jolt build 将运行时、标准库及应用编译为单一独立二进制，C 依赖静态链接，无需 JVM 或额外运行时；③自举编译器以 Clojure 编写，经中间表示生成 Scheme，可在 Chez 上原生执行或编译为 JavaScript；④基于 OS 线程共享堆的真实并发（future/agent/pmap）及 core.async 通道；⑤持久数据结构（32 路 trie 向量、HAMT 映射）与转态集合；⑥完整 Clojure 语义：延迟/无限序列、变换器、多方法、协议/记录、命名空间、运行时求值及完整读取器。安装零依赖，Homebrew 或一行脚本即可获得自包含二进制。支持 nREPL 远程开发，CIDER/Calva 等编辑器可直连。与标准 Clojure 的差异：无 JVM 故无 Java 互操作与反射（以 C FFI 及 java.* 子集替代）、不支持 BigDecimal、正则由 irregex 引擎编译而非 java.util.regex。
+
+---
+
+## 14. 如何制造（几乎）万物
+
+**原文标题**: How to make almost anything
+
+**原文链接**: [https://pub.cba.mit.edu/863.26/site/](https://pub.cba.mit.edu/863.26/site/)
+
+摘要：本文为麻省理工学院（MIT）2026年春季综合制造课程MAS.863/4.140/6.9020"如何制造（几乎）万物"的课程介绍，授课时间为每周三13:00–16:00（E14-633教室），并配有每周四至五点的辅导课。课程主题涵盖计算机辅助设计与制造（CAD/CAM）、版本控制与Web开发、项目管理、电脑控制切割与加工、嵌入式编程、3D扫描与打印、电子设计与生产、输入/输出设备、机械与机器设计、模具铸造、AI代理与边缘AI、网络通信及系统集成等领域。课程按周递进，从基础工具入门逐步过渡到硬件设计与系统集成，中段设两次复习，11月18日为自由主题周。最终考核以项目驱动为核心：12月4日提交最终作业，12月9日进行项目开发，12月15日完成项目展示与期末答辩。该课程强调动手实践与跨学科整合，旨在培养学生从概念设计到实体成品的全流程制造能力。
+
+---
+
+## 15. OpenAI：加强打击在线儿童性剥削
+
+**原文标题**: OpenAI: Strengthening the fight against online child sexual abuse
+
+**原文链接**: [https://openai.com/index/strengthening-online-child-safety/](https://openai.com/index/strengthening-online-child-safety/)
+
+摘要：无法访问该文章链接。
+
+---
+
+## 16. 微软将大规模邮件服务中断归因于七月更新引入的软件缺陷
+
+**原文标题**: Microsoft blames monster email outage on software defect introduced in July fix
+
+**原文链接**: [https://www.theregister.com/saas/2026/11/16/microsoft-blames-monster-email-outage-on-software-defect-introduced-in-july-fix/5310026](https://www.theregister.com/saas/2026/11/16/microsoft-blames-monster-email-outage-on-software-defect-introduced-in-july-fix/5310026)
+
+摘要：微软官方确认，近期引发全球用户广泛关注的大规模邮件服务中断事件，其根本原因在于一次软件缺陷。据微软说明，该缺陷并非原始系统问题，而是在今年七月进行的一次软件修复或更新中 inadvertently（无意间）引入的。此次故障影响范围广泛，导致大量用户无法正常收发邮件，对企业的日常通讯和运营造成严重干扰。事件暴露出微软在更新发布前的测试与验证流程中仍存在不足——旨在解决旧问题的修复补丁反而成了新故障的导火索。目前，微软已着手回滚或修复相关缺陷，并致力于防止类似问题再次发生。此次事件也再次提醒各软件服务商：任何更新上线前都需经过充分的回归测试与灰度发布，以避免"修旧引新"的风险。
+
+---
+
+## 17. 揭开胎盘的隐秘起源
+
+**原文标题**: The Origins of the Placenta
+
+**原文链接**: [https://www.caltech.edu/about/news/uncovering-the-hidden-origins-of-the-placenta](https://www.caltech.edu/about/news/uncovering-the-hidden-origins-of-the-placenta)
+
+加州理工学院Zernicka-Goetz团队在《Nature Cell Biology》发表研究，利用单细胞转录组学与活体成像技术，对小鼠胚胎植入过程进行了迄今最精细的细胞级解析。团队在植入期及植入后监测了超过22,000个细胞的基因活性，颠覆了传统认知：胎盘并非仅由胚胎极区外胚层细胞形成，还有2至4个来自胚胎对面"壁侧"的边界细胞参与其中——这些细胞最先接触子宫壁，随后迁移至外胎盘锥共同构建胎盘。去除这些细胞后，胎盘原基完全无法形成。研究还发现人类胚胎中存在类似边界细胞群，暗示其可能同样参与人类胎盘构建，这或可解释部分早期妊娠失败的原因。此外，研究揭示了植入期体细胞经历一个由Wt1基因短暂调控的过渡状态，且头尾轴分子信号的起始时间早于此前认知。该发现同时指出了当前干细胞胚胎模型的关键缺陷——缺乏正确形成的壁侧细胞，导致无法完成植入与胎盘构建。团队正致力于在胚胎模型中重建这些细胞，以推动对不孕症及早期妊娠失败机制的理解。
+
+---
+
+## 18. 黄仁勋风波之前，英伟达早已危机四伏
+
+**原文标题**: Nvidia was in trouble before the Jensen Huang mess
+
+**原文链接**: [https://www.wired.com/story/nvidia-was-already-in-trouble-before-the-jensen-huang-mess/](https://www.wired.com/story/nvidia-was-already-in-trouble-before-the-jensen-huang-mess/)
+
+黄仁勋因与涉嫌为中国情报机构效力的高管存在不当关系被英伟达解职，但分析指出公司面临的挑战远早于此。英伟达虽占据AI加速器市场约80%份额，竞争却在加剧：AMD份额从2022年的2%升至2026年的7%至10%；谷歌、亚马逊、微软等云巨头纷纷自研芯片；Cerebras等初创公司亦推出专用方案。AI推理需求增长令英伟达优势收窄，通用CPU需求上升亦是其薄弱之处。中国市场方面，受美国出口管制，英伟达在华收入占比从2024年的20%降至8%，华为等厂商加速自主芯片研发。财务主管科莱特·克雷斯接任后，面临芯片设计周期长达两至三年的难题，须提前布局。更值得警惕的是，长期被视为护城河的CUDA软件生态正被AI编程能力削弱——AI模型可快速将代码移植至竞争芯片平台，初创公司Wafer已实现数小时内将模型跑通AMD硬件。有分析师将英伟达比作2019年换帅后走向下滑的英特尔，警告公司恐重蹈"英特尔时刻"覆辙。
+
+---
+
+## 19. OOS——面向普源（Rigol）示波器的开源操作系统
+
+**原文标题**: OOS – an open operating system for the Rigol Scopes
+
+**原文链接**: [https://www.eevblog.com/forum/testgear/oos-an-open-operating-system-for-the-rigol-scopes/](https://www.eevblog.com/forum/testgear/oos-an-open-operating-system-for-the-rigol-scopes/)
+
+OOS（Open Operating System）是由EEVBlog论坛社区发起的一个开源固件项目，旨在为普源精电（Rigol）旗下基于ARM Cortex-M3平台的数字示波器（如DS105Z、DS1104Z等）替换其官方封闭固件，提供完全开源、可自由定制的操作系统。该项目最初以裸机C语言开发，后续版本演进为基于Linux（Freedesktop）的完整系统，支持触摸屏交互与图形化用户界面。OOS的核心亮点包括：开放REST API与Python脚本接口（集成Scintillab），允许用户通过代码远程控制示波器、采集与分析数据；支持自定义UI面板与插件扩展，社区可自由开发新功能模块；兼容原有硬件（ADC、时基、探头等），同时解锁了官方固件中受限的功能，如更高的采样率利用、多通道任意波形发生器（AWG）控制及网络远程访问等。项目采用GPL开源协议，代码托管于公共仓库，任何人均可参与贡献或二次开发。该项目的诞生源于Rigol官方固件功能单一、缺乏脚本化能力且生态封闭，而OOS为电子工程师和爱好者提供了一个灵活、透明且可持续演进的测试平台，在开源硬件与测试测量社区中获得了广泛关注。
+
+---
+
+## 20. 最小非鲁珀特多面体：七顶点Septopert
+
+**原文标题**: Smallest possible nopert polyhedra: the Septopert
+
+**原文链接**: [https://github.com/tom7/noperts/blob/main/septopert.md](https://github.com/tom7/noperts/blob/main/septopert.md)
+
+本文介绍了Septopert——一种7顶点凸多面体，为顶点数最少的非鲁珀特多面体（不能穿过与之全等的孔）。其整数坐标含(−7,7,7)、(7,−7,7)、(7,7,−7)、(3,−4,−4)、(−4,3,−4)、(−4,−4,3)、(7,7,7)共七点，具C3v对称性，组合上为旋扩三角锥，10个三角面。两个精确几何特征令证明困难：顶点6处三棱互相正交（立方体角），内三角形沿对称轴投影精确落于底面中点三角形上（精确 triforce），致一阶余量在特定视角消失，须借助二阶分析。证明以Lean形式化：核心定理经内核验证，约73.2万行证书数据由程序校验，涵盖镜像帽、弧帽、轴帽与P帽四类特殊证书。最小性定理排除高度小于7的全部整数族成员，将55651个规范化元组通过共面、凸包含及精确鲁珀特通道三种途径逐一否定。2026年11月7日完成全部验证，次日从零复现成功。
+
+---
+
+## 21. 如何理解"定理经Lean验证故正确"
+
+**原文标题**: Interpreting claims that a theorem is correct because it was checked in Lean
+
+**原文链接**: [https://xenaproject.wordpress.com/2026/11/12/and-the-proof-is-checked-in-lean/](https://xenaproject.wordpress.com/2026/11/12/and-the-proof-is-checked-in-lean/)
+
+本文以OpenAI近期发布的722篇数学论文（约45%附Lean代码）为背景，探讨如何正确解读"某定理因Lean验证而正确"这一声明。作者指出Lean验证并非自动保证正确性，需依次回答四个问题：一、Lean中的定理陈述是否与论文非形式化陈述一致——须警惕形式化错误，且部分AI代码仅证明了中间引理而非主定理；二、代码能否实际编译——大型AI生成代码库可能超出普通机器资源，且须沙箱运行以防恶意操作；三、代码是否真正证明了所陈述的定理——需用lake comparator工具确认证明未通过隐藏重定义或添加公理等方式取巧；四、是否利用了Lean内核漏洞——Lean已具备多个独立内核（含形式化验证内核），lake comparator --paranoid可跨内核验证以排除单一内核被攻击的可能。此外，即便Lean代码通过全部测试，对应PDF中的非形式化证明仍可能与形式化证明存在分歧。结论：Lean验证可提供重要信号，但"编译通过"远不足够，上述检验缺一不可，而目前多数AI生成成果尚未完成系统测试。
+
+---
+
+## 22. 咖啡馆与科学的兴起
+
+**原文标题**: Coffeehouses and the Rise of Science [pdf]
+
+**原文链接**: [https://www.monirbounadi.com/Bounadi_JMP.pdf](https://www.monirbounadi.com/Bounadi_JMP.pdf)
+
+本文探讨了17至18世纪咖啡馆在推动近代科学兴起中的关键作用。作者指出，以伦敦为代表的欧洲咖啡馆在启蒙运动时期充当了"一便士大学"的角色，为自然哲学家、实验科学家和商人提供了交流思想、传播新知的公共空间。咖啡馆毗邻皇家学会等学术机构，促进了科学论文、期刊和实验信息的快速流通，打破了知识传播的阶层壁垒。文章分析了咖啡馆的社交网络如何加速了科学共同体（republic of letters）的形成，并讨论了咖啡文化对理性讨论氛围的塑造。同时，作者也审视了咖啡馆作为公共舆论场对科学权威和知识合法性的影响，认为其非正式、开放的特质与学院体制形成互补，共同构成了近代科学制度化的社会基础。
+
+---
+
+## 23. 美国仅400个数据中心年用电量超密歇根州
+
+**原文标题**: Just 400 US Data Centers Use More Electricity Than Michigan
+
+**原文链接**: [https://www.wired.com/story/data-centers-use-more-electricity-than-michigan/](https://www.wired.com/story/data-centers-use-more-electricity-than-michigan/)
+
+哈佛大学一项发表于《自然·可持续性》的研究显示，美国403个超大规模数据中心年用电量超过密歇根州全年消耗。研究指出，这些中心的电力大部分来自化石燃料，碳排放量已达AI热潮前的三倍。然而，美联邦与州政府均未单独统计数据中心用电，相关数据多属商业机密。该研究通过行业调研与卫星数据建模估算能耗，发现弗吉尼亚、俄勒冈、俄亥俄和爱荷华四州贡献了超过50%的用电量。研究还指出，当前样本中设施平均规模仅40兆瓦，远小于正在规划的数百乃至数千兆瓦级项目；且未涵盖厂区内自备电厂（"表后发电"），而全美已有约189吉瓦相关发电计划，多依赖低效天然气轮机，若全部建成可能使美国整体排放增加10%。值得关注的是，美国能源信息署（EIA）今年已在10个州完成用电试点调查，正着手设计面向全行业的自愿性调查方案，未来或将为公众和学界提供更透明的数据。
+
+---
+
+## 24. 512 KiB 二进制信息：无共同语言教授国际象棋
+
+**原文标题**: A 512 KiB binary message teaching chess without a shared language
+
+**原文链接**: [https://artemlegotin.com/golden-board/](https://artemlegotin.com/golden-board/)
+
+Golden Board 是一个 512 KiB（2,048×2,048 比特方阵）的二进制消息，旨在无任何共同语言、文化或先验知识的条件下教会接收者国际象棋，灵感源自旅行者金唱片与 Lincos 等跨文明通信尝试。消息分两部分：前 64 行为自举区（bootstrap），含 32 帧图示，逐步教授计数、二进制、位权、图片尺寸与补码、行主序、字节分组、多字节高低序及 CRC-32C 校验等读取规则；其余为有效载荷，包含国际象棋教学、习题与 64 场精选对局。作者以 LLM 模拟未知接收者测试解码，指出模型已懂棋，正确作答不能证明消息本身"教会"了对方。选择国际象棋因极少规则可展开无穷变化，并能展现人类思维。项目已开源，提供格式规范与 Python 工具，可供拓展至其他学科。作者坦言消息几乎无人会收到，但哪怕一丝被发现的希望便足矣。
+
+---
+
+## 25. OpenAI 嵌入式评估第一阶段
+
+**原文标题**: First phase of embedded assessments at OpenAI
+
+**原文链接**: [https://openai.com/index/our-first-phase-of-embedded-assessments/](https://openai.com/index/our-first-phase-of-embedded-assessments/)
+
+无法访问该文章链接。
+
+---
+
+## 26. 仅凭一块智能手表，研究人员实现全身运动追踪
+
+**原文标题**: Researchers track whole body movement with just a smartwatch
+
+**原文链接**: [https://news.cornell.edu/stories/2026/11/researchers-track-whole-body-movement-just-smartwatch](https://news.cornell.edu/stories/2026/11/researchers-track-whole-body-movement-just-smartwatch)
+
+康奈尔大学SciFi实验室开发出名为EchoMotion的新技术，首次实现仅用一块商用智能手表通过超声波追踪人体全身运动。该系统利用手表内置扬声器发出超声波，再由麦克风接收从四肢反射的回波，结合轻量级AI模型将回波模式转化为全身12个关节的运动姿态。相比传统方案，EchoMotion无需摄像头，保护隐私；功耗仅约12毫瓦，30分钟使用仅消耗5%至6%电量，且兼容未改装的三星Galaxy Watch 6、7及谷歌Pixel Watch 3等市售设备。测试显示，新用户平均关节定位误差不足4英寸，经12分钟一次性校准后可降至约2.4英寸，且模型无需重新训练即可跨设备迁移。团队还在小房间、走廊及嘈杂路段完成真实场景验证，家具与噪声影响较小，仅走廊中他人回波会轻微干扰性能。该论文已发表于国际普适计算与可穿戴计算会议（UbiComp/IWSC）。目前团队正将技术拓展至健身追踪，未来可自动计数训练次数并纠正动作，还可与智能眼镜结合追踪用户操作。首席研究员郑成表示，这项技术让小型可穿戴AI模型在人体交互感知领域实现突破，为未来个人AI助手全面记录用户日常生活奠定基础。
+
+---
+
+## 27. Psychic：会学习你操作习惯的 fzf 替代品
+
+**原文标题**: Psychic: Like fzf but learns from your actions
+
+**原文链接**: [https://klauria.tech/psychic/](https://klauria.tech/psychic/)
+
+Psychic 是一款 Rust 编写的终端文件浏览器，融合 fzf 的交互体验与 zoxide 的路径记忆，并引入 LightGBM 轻量级模型，依据用户历史行为智能排序文件与目录。作者因厌倦反复记忆和输入相同路径而创建此工具。所有操作存入本地 SQLite 数据库，每次启动时在后台重新训练模型，并在用户离开屏幕（如打开编辑器）时切换新模型，避免界面跳变。排序特征涵盖最近点击时间、文件修改时间、模糊匹配度、当前查询的关联点击数等；新用户初期以简单规则为主，随数据积累逐步过渡至 ML 排序。性能上，工具严格控制在单次按键后 16 毫秒内完成渲染，每次提交均附带基准测试。作者自 2025 年 10 月起使用，累计打开 1450 次，平均仅需输入 1.6 个字符即命中目标，29% 的情况无需输入任何字符，中位导航时间仅 2 秒，80% 的选择来自首条结果。可通过 Homebrew 安装：brew install kshitijl/tap/psychic。
+
+---
+
+## 28. Active Directory 时代终于落幕
+
+**原文标题**: The Active Directory Era Is Finally Over
+
+**原文链接**: [https://infisical.com/blog/active-directory-machine-identity](https://infisical.com/blog/active-directory-machine-identity)
+
+文章指出，Active Directory（AD）凭借LDAP目录与Kerberos认证，曾统一回答"哪些身份存在、谁验证了它、在何处有效"三大问题，但已无法适应云原生与零信任架构。核心矛盾在于：AD为人工审批的长寿命物理设备而设计，如今Kubernetes Pod、CI/CD运行器等云资源频繁创建与销毁，靠管理员令牌自动注册目录已背离审批初衷，沦为安全剧场；加之每个API密钥都构成独立安全边界，零信任下机器间持续互认证令凭证数量激增，统一目录已失去意义。作者提出两条路径：一是身份联合，通过OIDC实现跨云平台工作负载互信认证；二是密钥代理模式，借助Infisical等密钥管理器在运行时向机器分发凭据，构建统一管控的"元边界"。二者可替代AD完成身份可见性、验证与边界划定。文末强调，AI代理时代机器身份管理愈发关键——若连测试数据库和API密钥都无法追踪，便不应让自主软件创建资源或外传敏感凭据。
+
+---
+
+## 29. 数十亿"安全"保险资金正押注AI债务
+
+**原文标题**: How Billions in Safe Insurance Money Is Being Bet on A.I. Debt
+
+**原文链接**: [https://www.nytimes.com/2026/11/16/business/insurance-ai-debt.html](https://www.nytimes.com/2026/11/16/business/insurance-ai-debt.html)
+
+摘要：为融资购买大量AI芯片，马斯克团队创设特殊金融实体，先借入数十亿美元购入芯片，再回租给自己的AI公司xAI，使xAI账面债务显得更轻。其中24亿美元由管理退休年金的人寿保险公司安泰（Athene）认购，该模式正成为为科技巨头提供AI融资的新路径。据穆迪数据，截至今年6月30日，美国人寿保险公司持有的AI债务达852亿美元，较半年前增长24%，占其总债务比重约2.1%。尽管比例尚小，穆迪预计明年底这一数字将飙升至1850亿美元。值得注意的是，保险公司管理的是养老金和年金等"安全"资金，历来以谨慎著称，如今却大规模涌入高风险的AI债务市场，引发投资者对资金安全与行业泡沫的担忧。
+
+---
+
+## 30. WinUdf——DOS 至 Windows 98/ME 的 DVD/蓝光 UDF 文件系统驱动
+
+**原文标题**: Winudf – DVD / BluRay driver for DOS, Windows 1.x – 3x / 95 / 98 / ME
+
+**原文链接**: [https://github.com/ages2001/WINUDF](https://github.com/ages2001/WINUDF)
+
+WinUdf 是一款 UDF 文件系统驱动，支持 UDF 1.02 至 2.60，可读写 DVD、蓝光光盘、包写入 CD 及 UDF 格式 USB 存储设备，属于 WINDRV 驱动套件四大组件之一。软件提供两个模块：WINUDF.EXE 面向 DOS 及 Windows 1.x–3.11，以驱动器号方式挂载 UDF 卷；WINUDF.VXD 面向 Windows 95/98/ME，作为 IFS 文件系统驱动并支持长文件名。适用系统涵盖 MS-DOS 3.10–8.0、FreeDOS 及上述各版 Windows。安装方面，DOS 与 Windows 3.x 下通过 INSTUDF 将驱动写入 AUTOEXEC.BAT，Windows 95/98/ME 下将 VXD 放入 SYSTEM 目录并在 SYSTEM.INI 中注册。当前版本为 1.2（2026 年 11 月），主要更新包括：修复 Windows 95/98/ME 下因缓冲区页交换导致的 0xC0000005 崩溃；修复文件 extent 长度溢出及 DOS 段地址越界；新增 DOS 长文件名 API 支持与 4GB 以上文件的 64 位定位；Windows 3.x 下新增 Program Manager 卸载项；完善卸载逻辑与中断共享兼容性。
+
+---
+
