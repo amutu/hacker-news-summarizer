@@ -1,0 +1,304 @@
+# Hacker News 热门文章摘要 (2026-11-21)
+
+这是今日 [Hacker News](https://news.ycombinator.com/) 上最热门的文章摘要。
+
+## 1. 紧急公告：Alessandro Masullo 的广义黎曼猜想证明
+
+**原文标题**: Hurried Announcement: Alessandro Masullo GRH
+
+**原文链接**: [https://math216.wordpress.com/2026/11/20/hurried-announcement-alessandro-masullo-grh/](https://math216.wordpress.com/2026/11/20/hurried-announcement-alessandro-masullo-grh/)
+
+2026年11月20日，一位数学家在美国数学会（AMS）执行委员会与董事会会议间隙，紧急发布博文宣布：Alessandro Masullo已完成广义黎曼猜想（GRH）的证明草案。知名数学家Brian Conrad已对该证明审查数月并给出详尽反馈，Masullo正据此修订，目前整体前景良好。该工作完全由人类独立完成，未借助任何AI工具。原计划是将Masullo邀至斯坦福大学驻留一年，完善行文后再正式公布，但鉴于形势紧迫，决定提前公开当前版本，文件题为《素数的音乐》（The Music of the Primes）。发布方呼吁全球数学界尽快审阅、形式化验证该证明并填补可能存在的细微漏洞。发布者强调对Conrad学术判断力的充分信任，同时坦言"真希望这个证明能成立"，并预告日后会补充完整背景。
+
+---
+
+## 2. Levent Alpöge声称证明广义黎曼猜想
+
+**原文标题**: Levent Alpöge claims proof of the Generalized Riemann Hypothesis [pdf]
+
+**原文链接**: [https://alpo.ge/remark.pdf](https://alpo.ge/remark.pdf)
+
+本文档为Levent Alpöge提交的一份PDF论文，声称对广义黎曼猜想（Generalized Riemann Hypothesis, GRH）给出证明。广义黎曼猜想是解析数论中最核心的未解决问题之一，由黎曼1859年提出的ζ函数零点猜想推广而来，断言所有戴达金L-函数的非平凡零点均位于临界线Re(s)=1/2上。该猜想与素数分布的精确性、类数问题及众多解析数论估计紧密相关，被誉为"数学界皇冠上的宝石"之一。本文作者试图对这一百年难题给出完整证明，但需指出，历史上针对GRH及黎曼猜想的"证明"尝试众多，绝大多数经同行审查后被发现有根本性缺陷，本文的具体证明路径、核心方法及是否经得起严格审验，尚需数学共同体进一步检验。该文档以PDF格式发布，属于预印本性质的学术声明。
+
+---
+
+## 3. 灵思 2 Mini 模型发布
+
+**原文标题**: Inkling 2 Mini
+
+**原文链接**: [https://thinkingmachines.ai/news/inkling-2-mini/](https://thinkingmachines.ai/news/inkling-2-mini/)
+
+灵思 2 Mini（Inkling 2 Mini）是一款可在消费级笔记本上本地运行的高效混合专家模型，总参数 26.4B、激活参数 3.4B，内存约 20GB。其核心创新为循环 Transformer 架构：将 24 层中的中间 12 层重复运行 3 次，使模型以更少 token 完成更深推理，在 Agentic 编码任务上优势显著。在 DeepSWE v1.1（48.2%）、SWE-bench Pro v2（77.9%）等基准上，它领先所有 100B 参数以下的开源模型；搜索与工具使用类任务（BrowseComp 79.0%、DeepSearchQA 85.3%）同样突出。斯坦福测试中其"智能/瓦特"比达 0.703，远超 Qwen3.6 与 Gemma-4，适合在单台 MacBook 上驱动多个持久化智能体。知识类能力与同规模模型持平，但通过搜索与工具调用有效弥补。局限方面，多轮对话和复杂约束任务落后于 Qwen3.8-27B，纯推理基准逊于更大模型。循环设计未增加知识容量，但链式思维仍保持可读，安全指标（误行为率 9.8%）优于竞品。模型以 NVFP4/MXFP8 量化部署，权重已全面开源。
+
+---
+
+## 4. 语言模型可自主改写自身权重
+
+**原文标题**: Language Models Can Rewrite Their Own Weights
+
+**原文链接**: [https://arxiv.org/abs/2611.21885](https://arxiv.org/abs/2611.21885)
+
+本文提出"自我重写"范式：语言模型通过自身推理直接改写权重，无需梯度计算或训练流程。作者展示了一个270亿参数的开源模型，在获得自身权重、带评分答案及运行自身能力后，能诊断推理失败并重写底层权重。实验表明：该模型在未见过的题目上准确率提升6.6个百分点；通过在练习题上验证并仅提交有效编辑，连续八次迭代中准确率单调递增；模型还能修复一份几乎无法解题的受损副本，在从未读取原始权重的条件下，仅凭前向传播将其恢复至原始准确率的80%以上。研究还发现显著规模效应：同一模型家族中，较小模型无法有效编辑甚至自我破坏，仅最大模型具备自我改进与修复能力。与测试时扩展不同，自我重写将性能增益永久写入权重，推理时无额外开销；与传统训练不同，全程仅执行前向传播。作者认为，打破训练与推理的界限是迈向递归自我改进的必要步骤，未来模型或可不再区分训练与推理，实现持续自主升级。
+
+---
+
+## 5. 无外力驱动下纳维-斯托克斯奇点与广义黎曼假设
+
+**原文标题**: Unforced Navier-Stokes Singularity and the Generalized Riemann Hypothesis
+
+**原文链接**: [https://terrytao.wordpress.com/2026/11/20/unforced-euler-singularity-unforced-navier-stokes-singularity-and-the-generalized-riemann-hypothesis/](https://terrytao.wordpress.com/2026/11/20/unforced-euler-singularity-unforced-navier-stokes-singularity-and-the-generalized-riemann-hypothesis/)
+
+摘要：本文发表于WordPress平台，由Ben Eastaugh与Chris Sternal-Johnson维护。从标题判断，文章探讨的核心问题涉及两个深刻数学难题的潜在关联：一是无外力驱动（非强迫）条件下纳维-斯托克斯方程是否会出现有限时间奇点（即解的爆破或奇异性），这是千禧年大奖难题之一，关乎三维不可压缩流体力学方程解的光滑性；二是广义黎曼假设，该猜想断言黎曼ζ函数所有非平凡零点的实部均为1/2，其推广形式涉及更广泛的狄利克雷L函数及自守形式。文章可能试图在流体力学的奇点形成机制与解析数论中的零点分布之间建立某种结构性或方法论上的联系。然而，所提供的正文内容仅包含平台归属信息，未呈现具体的数学推导或论证细节，因此无法进一步概述其技术要点与结论。
+
+---
+
+## 6. 我们悄悄把开发者"升职"成了架构师
+
+**原文标题**: We promoted developers into architects without informing them
+
+**原文链接**: [https://manidoraisamy.com/developer-to-architect.html](https://manidoraisamy.com/developer-to-architect.html)
+
+作者以调试Google Forms插件的经历为例，指出同事用AI生成的日志代码因多次嵌套API调用，导致欢迎界面加载耗时15秒。这一案例揭示核心问题：AI编程工具擅长实现功能需求，却缺乏架构判断力——它不会权衡性能与安全，不会主动"推回"不合理需求，只会忠实执行指令。正确做法应由架构师先完成数据模型设计，再约束AI在既定架构内编码，而非让AI自行决定架构。AI默认偏向安全而牺牲性能，且倾向保留多版本数据表，导致系统臃肿。行业困境在于：公司用AI替代了编码，却未告知开发者角色已转变为架构师——需负责评审需求、设计数据模型、设定架构边界并审查AI产出。这种"无声的升职"正是当下开发者对vibe coding产生困惑与抵触的根源。作者呼吁：编码工作正在消失，但开发者的价值不会消失，应主动学习架构思维，拥抱角色转变。
+
+---
+
+## 7. 氛围编程一枚推理芯片
+
+**原文标题**: Vibecoding an inference chip
+
+**原文链接**: [https://ankitg.me/blog/vibecoding-inference-chip/](https://ankitg.me/blog/vibecoding-inference-chip/)
+
+摘要：作者从未写过C++或Verilog，却借助AI编码代理在AWS F2实例上"氛围编程"，将FPGA改造为LLM推理芯片。他仅凭"再快两倍，你可以的"等模糊指令，驱动Claude与OpenAI在Conductor中自主迭代数天，采用DeepGrove三元权重架构适配16GB HBM，全程生成约300万行代码、解析3000万行日志，token费用仅约一万美元。性能从6.43 tokens/s逐步攀升至213 tokens/s，累计提升33倍，路径为渐进式复合优化——每步约1.5倍，涵盖主机开销削减、突发注意力、并行MoE路由、推测解码、内存端口复用等。值得玩味的是，DeepGrove创始人提供的详尽设计经验在思路层面帮助有限（代理本可自行推导），但在迭代策略上（如避免24小时级仿真、缩短反馈循环）立竿见影。核心结论：人类仍擅长定义迭代节奏与正确性标准，而AI代理已能高效管理大规模硬件探索，FPGA级底层编程正从高门槛专业领域变为可及的"氛围编程"对象。
+
+---
+
+## 8. Winedroid——无需安卓系统即可运行安卓应用（WASM 演示）
+
+**原文标题**: Winedroid – run Android apps without Android (WASM demo)
+
+**原文链接**: [https://winedroid.soham.sh/demo/](https://winedroid.soham.sh/demo/)
+
+Winedroid 是一个基于 WebAssembly（WASM）技术的演示项目，旨在让用户无需安装安卓系统即可在网页中运行安卓应用。界面提供计算器、冥想、文件管理、天气、货币转换等常用应用入口。然而，该演示在运行过程中遭遇意外错误，运行时崩溃并显示"Winedroid 已停止"提示，系统提供"复制崩溃信息"和"重新加载页面"两个恢复选项；同时弹出"无法打开 APK 文件"的错误对话框，用户仅能通过点击"确定"关闭提示。整体来看，该项目展示了在浏览器中模拟安卓环境的探索方向，但当前版本稳定性不足，APK 解析或加载环节存在明显缺陷，尚处于早期实验阶段。
+
+---
+
+## 9. Navier–Stokes方程的有限时间爆破
+
+**原文标题**: Finite-time blow-up for the Navier–Stokes equations
+
+**原文链接**: [https://github.com/tristanbuckmaster/navier-stokes/](https://github.com/tristanbuckmaster/navier-stokes/)
+
+本仓库收录L. Alpöge与T. Buckmaster关于Navier–Stokes方程有限时间爆破的论文（79页，2026年11月20日版）及其Lean 4形式化证明。Lean包基于v4.33.1与Mathlib，规模约2270个文件、60万行代码。顶层陈述文件给出定义并以sorry占位，Solution.lean从lean/Breakdown/库完成证明；comparator*.json将陈述文件与解耦并限定仅允许propext、Quot.sound与Classical.choice三个公理。形式化覆盖论文定理1.1、定理7.1、推论7.2及附录B。需注意：仓库不含论文给出的证书数据，也不含用于验证证书满足附录B条件的区间算术计算（128位精度，基于Arb/FLINT库），论文源文件亦未随仓库提供。当前Lean包为论文工作仓库加2026年11月20日补丁的版本，补丁涉及cell-layer陈述中权重由m²+¼改为(|m|+½)²、允许某常数取零、限制模型谐波范围；附录B已按此修正形式陈述，但补丁后未重新构建。
+
+---
+
+## 10. 若无法用简单语言解释，说明你并未真正理解
+
+**原文标题**: If you can't explain something in simple terms, you don't understand it (2017)
+
+**原文链接**: [https://kottke.org/17/06/if-you-cant-explain-something-in-simple-terms-you-dont-understand-it](https://kottke.org/17/06/if-you-cant-explain-something-in-simple-terms-you-dont-understand-it)
+
+2017年，Jason Kottke在博文中引用了物理学家理查德·费曼的一个著名轶事：当同事请他用大一学生的水平解释"自旋1/2粒子为何服从费米-狄拉克统计"时，费曼尝试数日后坦言失败——"我无法将其降至大一水平，这意味着我们并不真正理解它。"该故事出自古德斯坦所著《费曼遗失的讲座》。文章指出，这一"费曼标准"不仅适用于科学教育，也是苹果公司的工程文化：能用通俗语言阐明复杂技术，是彻底理解的最佳证明。费曼以化繁为简著称——他将火喻为"储存的阳光"，生动讲解橡皮筋、火车过弯与磁铁，却也坦诚承认局限：磁力无法用更熟悉的概念解释，因为"我本身就不理解它"；关于量子力学，他直言"没有人真正理解量子力学"。费曼晚年在黑板上留下的最后一句话是："我无法创造的东西，我就不理解。"全文以物理学家的谦逊与洞见，阐明"以简驭繁"既是真正理解的标志，也是智识诚实的体现。
+
+---
+
+## 11. Frostbite：AI自主发现、设计与验证的新型CPU架构
+
+**原文标题**: Frostbite: A new CPU architecture discovered, designed and verified by AI
+
+**原文链接**: [https://architectlabs.com/blog/frostbite](https://architectlabs.com/blog/frostbite)
+
+摘要：本文介绍了Frostbite——一种由AI系统全栈自主设计的新型通用CPU架构。该架构以交互网络为核心计算模型，利用其局部性、显式依赖和值单一所有者（线性）三大特性，从根本上消除共享可变状态，将并行性从程序结构中直接映射到硬件空间，从而在25个工作负载上实现较现代超标量CPU 4.59倍的每瓦性能提升。设计流程中，AI代理群自主迭代编译器、指令集、架构、微架构、RTL、验证及最终GDS，并引入形式化规范语言ASL与Lean定理证明作为唯一可信源，确保跨栈一致性。系统模型Arcmodel比RTL仿真快660倍，经功耗校准后误差控制在1–5%。架构中涌现出优雅的工作窃取机制：各计算瓦片优先处理本地任务，空闲时从邻居瓦片借取工作，无需中央调度器。程序使用类Rust语法的Vine语言编写，编译为交互网络中间表示Ivy，运行时动态派生空间并行。本文表明，在单核CPU性能长期停滞的背景下，AI驱动的架构探索可突破传统设计空间，未来数据中心CPU、AI加速器及网络芯片均将面临类似架构范式转变。
+
+---
+
+## 12. 随机鹦鹉"证明"了黎曼猜想
+
+**原文标题**: The stochastic parrots have apparently proved the Riemann Hypothesis
+
+**原文链接**: [https://scottaaronson.blog/?p=10344](https://scottaaronson.blog/?p=10344)
+
+2026年11月，数学家Levent Alpöge宣布Anthropic的AI模型"证明"了广义黎曼猜想，生成逾1740万行Lean形式化代码。博主Scott Aaronson对此既兴奋又忧虑：黎曼猜想断言素数分布偏差始终不超过√n量级，自1859年起便是数学核心难题；而AI近期已将非平凡零点与临界线的距离推至3/8，P=NP问题或将成为"数学终极Boss"。然而证明能否成立仍存疑问——Lean验证系统本身存在内核漏洞与类型论健全性隐患，理论上AI可能借此"证明"假命题；但迄今所有带Lean证书的结果均未被撤回。Aaronson认为，人类数学家最终需以自己的语言重新理解并重构这些思想，这一消化过程恐耗时数年。评论中，有人呼吁AI转向攻克疾病与聚变等实际问题；有人质疑1700万行代码的可读性，强调数学之美在于人类的审美与理解；也有人指出，即便如此，人类仍须在AI辅助下提出正确方向。全文弥漫着对AI能力指数级跃升的惊叹与对未来的深切不安。
+
+---
+
+## 13. Signal郑重守护您的隐私
+
+**原文标题**: Signal Is Serious About Protecting Your Privacy
+
+**原文链接**: [https://signal.org/blog/protecting-your-privacy/](https://signal.org/blog/protecting-your-privacy/)
+
+2026年11月，Signal应用发布公告，宣布限制iOS 27和Android系统中内置AI代理（如Siri AI、Gemini Intelligence）读取和存储用户消息数据的能力，继此前在Windows上屏蔽Microsoft Recall截图后，再次强化隐私防护。文章指出，三大操作系统厂商正将AI代理深度集成至系统底层，这些代理通过扫描屏幕获取应用数据，将Signal经加密保护的内容暴露给操作系统级数据库，使其十余年来建立的隐私保障面临"生存威胁"。Signal目前的应对方式是在检测到AI代理访问屏幕时自动启用屏幕安全功能、阻止截图，但用户仍可在设置中手动关闭该保护。同时，Signal呼吁Apple、Google和Microsoft提供简便且文档完善的开发者工具，允许应用一键退出AI数据访问（涵盖屏幕读取、文件系统、通知、API等），并公开AI代理的数据处理规范。此外，Signal还警示第三方AI代理（如Meta Muse）滥用辅助功能权限的问题。Signal表示正与相关厂商沟通以推动行业标准，但也坦言当前措施仍有局限，例如在macOS上尚无法有效实施截图拦截。
+
+---
+
+## 14. 在Switch 2上同时运行两个PSP模拟器并通过GameShare共享其中一个
+
+**原文标题**: Running two PSP emulators on one Switch 2 and sharing one via GameShare
+
+**原文链接**: [https://github.com/XITRIX/ppsspp-nx2/blob/master/SWITCH2-GAMESHARE.md](https://github.com/XITRIX/ppsspp-nx2/blob/master/SWITCH2-GAMESHARE.md)
+
+无法访问该文章链接
+
+---
+
+## 15. 展示：我打造了一个效率提升60倍的音频转MIDI模型
+
+**原文标题**: Show HN: I made an audio-to-MIDI model 60x more efficient
+
+**原文链接**: [https://kobi.music/research/dettato](https://kobi.music/research/dettato)
+
+11月16日，开发者推出Dettato——一个仅20M参数的音频转MIDI（AMT）模型，综合F1得分60.85，大幅超越最佳开源模型MuScriptor 1.3B（47.45），并略胜闭源Mirelo A2A v1.1 Pro（56.14），参数量却仅为后者的约1/65。该模型完全开源，输出可商用。训练数据未使用任何版权录音，仅依赖合成乐器录音、CC独奏乐器（URMP数据集）及约20个SoundFont文件（采用"SoundFont Babies"技术）。基准测试涵盖PHENICX、RWC古典/流行/爵士等数据集。作者坦言局限：乐器分离较弱，输出为节拍对齐的表演MIDI，若需可演奏乐谱，建议搭配Songscription或Klangio。技术层面，作者认为AMT瓶颈在架构而非数据量，将问题重构为"音核车道"局部检测任务，类比OMR领域的检测器思路。其核心理念是"帮助音乐人而非取代他们"，认为遵守版权法非但不构成限制，反而激发创新，最终产出更优模型。
+
+---
+
+## 16. 谷歌员工呼吁公司勿惩罚拒用AI的学校
+
+**原文标题**: Google Workers Tell Their Employer Not to Punish Schools That Don't Want AI
+
+**原文链接**: [https://www.motherjones.com/politics/2026/11/google-alphabet-union-school-ai-protest-gemini-workers-petition/](https://www.motherjones.com/politics/2026/11/google-alphabet-union-school-ai-protest-gemini-workers-petition/)
+
+谷歌母公司Alphabet旗下数百名员工近日发起请愿，要求高层撤回一项争议政策：自明年起，关闭Gemini AI工具的学校将被切断对谷歌搜索引擎的访问权限。该政策于选举日突然公布，声称旨在回应家长对课堂AI的担忧，却引发全美六城抗议浪潮。纽约、洛杉矶、芝加哥三大学区已着手讨论替代搜索引擎方案。Alphabet工会（代表逾1000名员工）在请愿书中指出，切断搜索服务不仅无法说服用户，反将促使学校全面抵制谷歌产品，强调"教育者应拥有自主决定AI实施方式的权力"。谷歌教育部门工程师透露，政策公布前多数员工并不知情，内部对AI落地方式存在分歧。有员工批评称，AI工具应"以学生利益为先，而非公司利润"；管理层将各方抵触视为"未理解AI愿景"的态度更引发内部不满。截至发稿，谷歌已确认收到员工信，但尚未回应具体诉求。
+
+---
+
+## 17. Show HN：OpenComputer——Devin 的开源替代方案
+
+**原文标题**: Show HN: OpenComputer – an open source alternative to Devin
+
+**原文链接**: [https://github.com/diggerhq/opencomputer](https://github.com/diggerhq/opencomputer)
+
+OpenComputer 是一款开源、可自托管的编码 Agent，定位为 Devin 的开源替代品。用户只需在 Slack 中 @Computer 下达任务，Agent 即在独立虚拟机上自主编码，团队可实时观看并随时介入指导，最终成果以 Pull Request 形式交付。技术上，整套系统运行于单台 VM，建议仅开放出站网络。核心网关 Calvin 监听 Slack 事件，按需启动 Claude Code、Codex 或 OpenCode 会话，每个会话通过 rootless Podman 隔离，状态先写入本地磁盘再持久化至 git 仓库；其余组件部署于 Cloudflare Workers 与 Durable Objects，Fly 等平台支持即将推出。性能方面，基准测试显示其完成全部 PR 且 CI 通过仅需 56 秒，比 Devin 的 185 秒快 3.3 倍；首次推送 24 秒，比四个主流云端 Agent 62 秒的平均快 2.6 倍。部署上，用户可选择两分钟上手的 OpenComputer 云服务（含 3 天免费试用、600 工作分钟），或将全栈部署至自有云账号。项目采用 Apache 2.0 许可证。
+
+---
+
+## 18. PostgreSQL 19 实战演练：可运行的浏览器示例
+
+**原文标题**: PostgreSQL 19: A hands-on tour with runnable browser examples
+
+**原文链接**: [https://certuvia.com/blog/postgres-19](https://certuvia.com/blog/postgres-19)
+
+摘要：本文介绍PostgreSQL 19（2026年11月19日发布）的核心新特性，并提供可在浏览器沙箱中直接运行的交互实验。内容涵盖六组实操：基础连接验证、原生REPACK并发重写表回收空间（对比旧版VACUUM FULL）、自动清理引入真实评分优先级与并行索引、pg_plan_advice按表约束查询规划器、逻辑复制支持排除指定表及序列自动同步（REFRESH SEQUENCES）、物理备用复制。所有实验在真实PostgreSQL 19实例上运行（student角色、blog_lab数据库），逻辑复制与物理备用分别占用5433、5434端口，受内存限制二者不同时运行。文章还涉及IGNORE NULLS、get-or-create插入、JSON导出与JSONPath转换等新SQL特性，并为每项特性提供与PostgreSQL 18的对比思路，强调对比目的在于理解表达或行为差异，而非真正回退版本。
+
+---
+
+## 19. 抵御对抗性蒸馏
+
+**原文标题**: Combatting Adversarial Distillation
+
+**原文链接**: [https://openai.com/index/combatting-adversarial-distillation/](https://openai.com/index/combatting-adversarial-distillation/)
+
+OpenAI发布安全报告，阐述如何防范对抗性蒸馏——即攻击者利用前沿模型输出训练新模型以绕过安全护栏的风险。在网络安全与生物技术等双用途领域，被蒸馏出的模型可能执行原模型拒绝的危险任务。OpenAI的防御体系涵盖请求级与活动级两层：请求级包括对抗性训练使模型识别并拒绝推理提取、输入输出分类器检测推理链泄露、API限制跨会话及跨模型复用加密推理；活动级则检测协调性攻击模式并封禁相关账号网络。其重点保护模型的"受保护推理"（即思维链中间步骤），因完整推理轨迹比摘要更能转移网络攻击能力。数据显示，GPT-6.2 Astra更新护栏后，自适应黑盒测试中推理提取成功率从54%降至0.2%。国家安全层面，OpenAI曾向国会通报DeepSeek及Moonshot AI（Kimi）的蒸馏活动，并支持相关出口管制与AI安全立法。报告建议行业采取四项措施：全链路保护私有推理、将攻击日志纳入回归测试、结合请求级与活动级防御、协调行业护栏标准，以共同提升前沿模型的安全底线。
+
+---
+
+## 20. 然而，它仍在转动
+
+**原文标题**: And Yet, It Moves
+
+**原文链接**: [https://signoregalilei.com/2026/11/20/and-yet-it-moves/](https://signoregalilei.com/2026/11/20/and-yet-it-moves/)
+
+摘要：文章以百老汇音乐剧《伽利略》的观剧体验切入，引出AI公司Anthropic疑似证明黎曼猜想的新闻。作者将这一事件与伽利略借望远镜窥见地球公转相类比——二者都是"打开新世界"的突破，黎曼猜想的证明如同数学领域的望远镜，将瞬间解锁大量条件性定理。然而，作者原以为人类攻克此难题将如发现Higgs玻色子般引发狂喜，现实却是证明出自"不可解的硅基心智"，而非人类自身，情绪转为苦涩与哀伤。文章借伽利略受审后低语"但它仍在转动"一语双关：一方面，真理不因人类是否参与而改变；另一方面，人类在知识探索中的"伽利略式使命"正走向终结。作者承认未来人类发现将仅因"无人将问题交给机器"而发生，坦言自己希望历史停驻，但历史不肯停驻。评论区中，作者进一步自嘲：数学家或许终将沦为AI的"公关团队"，而"人类成就"本身正是这项工作的核心卖点。全文以音乐剧、数学史与AI前景交织，表达了一位人文主义者面对智能时代知识生产范式转移时深沉的失落与无奈。
+
+---
+
+## 21. LZ-RDO 合入 ARM astc-encoder
+
+**原文标题**: LZ-RDO lands in ARM's astc-encoder
+
+**原文链接**: [https://www.jonolick.com/home/lz-rdo-lands-in-arms-astc-encoder](https://www.jonolick.com/home/lz-rdo-lands-in-arms-astc-encoder)
+
+Jon Olick 的 LZ-RDO（面向 LZ 压缩的率失真优化）技术已通过 PR #781 合入 ARM 开源 astc-encoder，由 Fabian Giesen 优化后落地。核心问题：ASTC 为固定码率格式，相邻块编码差异大，对 LZ 压缩器近乎不可压缩。LZ-RDO 在几乎不损失视觉质量的前提下，选择重复性更强的编码，使下游 Oodle、zstd、LZ4 等压缩后包体显著缩小。技术要点包括：常规编码外加一次受限编码；按图像高频活动度分配误差权重（平滑区严格、高频区宽松）；维护端点与权值的前移历史表；通过端点替换和权值拼接生成候选；以加权平方误差加简易 LZ 代价模型评分；多轮正反向并行处理。使用上，命令行加 -rdo-lambda 参数即可；漫反射贴图建议 lambda 20–40，法线贴图取 10 左右。局限：仅支持 LDR，增益仅在 LZ 压缩后体现，且增加编码时间。
+
+---
+
+## 22. G1垃圾收集器
+
+**原文标题**: The G1 Garbage Collector
+
+**原文链接**: [https://dev.java/learn/jvm/tool/garbage-collection/g1gc-overview/](https://dev.java/learn/jvm/tool/garbage-collection/g1gc-overview/)
+
+G1（Garbage-First）垃圾收集器自JDK 27起成为所有环境的默认GC，此前自JDK 9起为服务器环境默认。它于JDK 6u14以实验特性引入，旨在替代已移除的CMS收集器，核心设计目标是兼顾吞吐量与延迟的平衡。G1采用分代、增量、并行、并发和疏散式机制，将堆划分为统一大小的Region，细分为Eden、Survivor、Old及Humongous区域。GC周期分为Young-Only阶段和Space-Reclamation（混合回收）阶段；并发标记包含Concurrent Start、Remark、Cleanup三步，回收时优先处理垃圾含量最高的区域，这正是"Garbage-First"命名的由来。启用方式为-XX:+UseG1GC，JDK 27后无需手动指定。配置上，文章建议尽量减少自定义，核心参数包括-Xmx（最大堆，建议比活跃集大25%）、-Xms（初始堆）和-XX:MaxGCPauseMillis（暂停时间软目标）。任何调整都意味着吞吐量、延迟与内存占用三者间的权衡，不存在单纯的"更优"选项。
+
+---
+
+## 23. 为何iOS上仍无非WebKit浏览器
+
+**原文标题**: Why there are still no non-WebKit browsers on iOS
+
+**原文链接**: [https://blog.mozilla.org/en/mozilla/internet-policy/apple-ios-browser-engine-rules/](https://blog.mozilla.org/en/mozilla/internet-policy/apple-ios-browser-engine-rules/)
+
+Firefox在iOS上的使用量持续增长，尤其自2024年欧盟《数字市场法》（DMA）生效后，数百万欧洲用户将Firefox设为默认浏览器，日活量翻倍。然而，苹果仍强制iOS上所有浏览器必须基于其自有WebKit引擎开发，这一限制在全球主要操作系统中独一无二。受DMA及日本新规推动，苹果已在欧盟和日本iOS上允许引入替代引擎，如Mozilla的Gecko——目前唯一由非大科技公司开发的主流浏览器引擎。但欧盟条件出台近三年、日本实施近一年，尚无一家开发者成功推出非WebKit浏览器。Mozilla指出，苹果的合规条件极为苛刻：使用Gecko无法直接更新现有Firefox应用，必须另建全新应用，用户还需手动迁移书签、密码和历史记录，大量用户因此放弃；同时苹果要求不得披露项目非公开信息，进一步阻碍了改进与协作。Mozilla认为，纸面合规并非真正的开放，苹果的条件更像"陷阱"而非"机会"。用户既然选择了独立浏览器，就应获得完整功能体验，Mozilla将持续推动建立真正的公平竞争环境。
+
+---
+
+## 24. Floppy3.5：便携3.5英寸软盘WiFi NAS
+
+**原文标题**: Floppy3.5: A portable 3.5-inch floppy WiFi NAS
+
+**原文链接**: [https://github.com/bigcrimping/floppy3.5](https://github.com/bigcrimping/floppy3.5)
+
+Floppy3.5是一款3.5英寸软盘便携WiFi NAS设备，用于读取索尼Mavica等老式数码相机的FAT12 1.44MB软盘照片，通过WiFi在网页（floppy.local）上展示，并支持将照片复制到microSD卡扩展存储。硬件采用单PCB集成设计，核心为RP2354A控制器与ESP32-S3桥接器：前者通过Greaseweazle协议及PIO/DMA引擎解码软盘磁通信号，后者经自定义SPI链路接收数据并构建Web服务。系统还集成1.9英寸LCD屏、LiPo电池、RTC及充电管理，双处理器均支持OTA更新。操作上，首次启动创建WiFi热点完成网络配置；READ键读取软盘，SAVE键将文件按文件夹归档至SD卡（基于SHA-256去重），LCD以类段码屏风格显示读取进度与磁道状态。项目全部代码、PCB及外壳文件采用Unlicense（公共领域）许可，固件基于pico-sdk与ESP-IDF开发，GitHub提供预编译固件及源码构建指南。
+
+---
+
+## 25. 《Oxygène》的诞生
+
+**原文标题**: The Making of Oxygene
+
+**原文链接**: [https://jeanmicheljarre.com/aaa/the-making-of-oxygene](https://jeanmicheljarre.com/aaa/the-making-of-oxygene)
+
+1976年，28岁的法国音乐人让·米歇尔·雅尔在巴黎厨房的家庭录音室中完成了电子音乐里程碑之作《Oxygène》。专辑仅含六首纯器乐曲，全部由合成器录制，无任何声学乐器，在当时前所未有。雅尔仅凭VCS3、ARP 2600等少数合成器及一台八轨录音机，与好友米歇尔·盖斯通宵协作完成全碟，条件极为艰苦，甚至因仅有两盘磁带而不得不在曲目间拼接不同录音。封面源自画家米歇尔·格兰热的同名画作，呈现地球中暗藏骷髅的意象。发行初期，因无主唱、无吉他、无单曲，各大唱片公司均拒绝接盘，最终由小型厂牌Dreyfus Music在法国限量发行五万张，并创新性地推向音响商店。后经英国Polydor Records推广，专辑登顶多国榜单，全球销量近两千万张，亦成为BBC Radio 1罕见的整碟播放专辑。雅尔坦言，这张厨房中诞生的作品已成为他音乐生命的DNA。2026年，《Oxygène》将推出五十周年纪念版，含全新杜比全景声混音。
+
+---
+
+## 26. Teskooano：浏览器中的三维N体模拟器
+
+**原文标题**: Teskooano: A 3D N-body simulator in the browser
+
+**原文链接**: [https://teskooano.space/](https://teskooano.space/)
+
+摘要：Teskooano 是一款可在浏览器中直接运行的三维N体物理模拟器，无需下载任何插件或软件。N体模拟用于计算多个天体在万有引力作用下的运动轨迹，广泛应用于天体力学与轨道动力学研究。该项目以当前真实太阳系为示例场景，模拟包含512个天体的系统，涵盖行星、卫星及其他轨道天体，用户可通过编目目录浏览各天体信息，并一键在模拟器中打开进行交互式三维可视化。借助浏览器端的图形渲染与计算能力，Teskooano 让普通用户也能直观地观察天体间的引力相互作用与轨道演化，兼具科学教育与科普展示价值。
+
+---
+
+## 27. 英伟达会计问题遭SEC调查
+
+**原文标题**: Nvidia accounting under SEC investigation, sources say
+
+**原文链接**: [https://finance.yahoo.com/markets/article/nvidia-stock-extends-25-trillion-rout-as-sec-probe-reportedly-investigates-its-accounting-194945274.html](https://finance.yahoo.com/markets/article/nvidia-stock-extends-25-trillion-rout-as-sec-probe-reportedly-investigates-its-accounting-194945274.html)
+
+据路透社报道，美国证券交易委员会（SEC）正就英伟达的会计问题展开调查，《华尔街日报》亦称调查涉及公司信息披露是否误导投资者。受此影响，英伟达股价周五再跌约10%，连续第七日下挫，单日市值蒸发约4000亿美元，本周累计跌幅有望突破7500亿美元，刷新历史单周最大跌幅纪录。自10月6日高点以来，英伟达市值已蒸发逾2.5万亿美元，从全球市值榜首滑落至第四位，落后于苹果、微软和Alphabet。调查发现多项疑点：英伟达2025年经新加坡单位确认约1040亿美元收入，占总销售额近半；新加坡客户Megaspeed被美方怀疑将芯片转运至中国；最新季报延迟发布，并提及董事会独立委员会正展开内部调查；客户应收账款周期延长至64天，为2022年以来最长。财长贝森特要求10天内从董事会和外部律师处获得答复，此前CEO黄仁勋已离任。抛售情绪蔓延至芯片板块及大盘，分析师警告英伟达所有涉及循环融资的交易均将面临审查。
+
+---
+
+## 28. Lovable：并行探索创意，线上应用不受影响
+
+**原文标题**: Lovable: Now you can explore any idea in parallel without touching what's live
+
+**原文链接**: [https://lovable.dev/blog/introducing-drafts](https://lovable.dev/blog/introducing-drafts)
+
+Lovable 推出"草稿"功能，让团队可并行尝试多种创意，线上应用始终保持不变。每个草稿是从设计到数据库的完整副本，拥有独立的对话窗口与预览界面，用户可创建任意数量的草稿进行对比，满意后再接受并上线。核心场景包括：团队协作——让同事或客户在各自草稿中修改，审核后选择性采纳；多方案探索——每个草稿自带示例数据，无需面对空白页面，也可让 Lovable 自动生成多个版本供筛选；安全测试——在完整副本上验证新字段、权限页面、仪表盘等改动，测试数据在接受或删除时自动清除，绝不污染真实数据。OLX Global 等客户已利用该功能在多个国家市场并行测试不同特性与布局。操作简便：在编辑器顶部点击项目名，选择"新建草稿"即可；完成后点击"接受"合入项目，再"发布"上线；若需撤销，可在接受后、发布前通过历史记录一键回滚。
+
+---
+
+## 29. OpenSSL：EVP_EncodeBlock() 缓冲区溢出漏洞修复（CVE-2026-121481，CVSS 9.8）
+
+**原文标题**: OpenSSL: Buffer overflow in EVP_EncodeBlock() (CVE-2026-121481, CVSS 9.8)
+
+**原文链接**: [https://github.com/openssl/openssl/pull/33652](https://github.com/openssl/openssl/pull/33652)
+
+摘要：本PR修复OpenSSL中EVP_EncodeBlock()的缓冲区溢出漏洞（CVE-2026-121481），该漏洞可通过向openssl s_client传入超大-proxy_pass参数触发（GOST加密支持大密码）。修复方案包括：对NULL缓冲区、负长度及编码后超出int范围的输入进行拦截；为EVP_DecodeBlock()添加类似防护；修正http_client.c中base64encode()仅拒绝len>INT_MAX的错误检查；补充测试与文档。核心争议在于错误返回值的选择：作者初版返回-1，但多位审查者指出-1在C中易被误判为size_t成功值（参照CVE-2016-2105）；bob-beck认为0是合法成功值，反对以特殊值表示错误，建议用OPENSSL_assert或仅文档化；mattcaswell则反对assert，因其可导致DoS，主张返回0并辅以ERR_raise_data。最终作者采用OPENSSL_assert()处理原有未定义行为，以保持向后兼容，避免第三方调用方适配新错误码。此外，审查者要求检查PEM_SignFinal()和NETSCAPE_SPKI_b64_encode()等调用点是否处理了新的失败路径，作者拟以独立提交跟进。该漏洞模式与CVE-2021-23840相似，PR仍处讨论阶段，尚未合入。
+
+---
+
+## 30. 永不再购 Framework 硬件
+
+**原文标题**: I'll never buy Framework hardware again
+
+**原文链接**: [https://poolp.org/posts/2026-11-20/ill-never-buy-framework-hardware-again/](https://poolp.org/posts/2026-11-20/ill-never-buy-framework-hardware-again/)
+
+摘要：本文标题表达了作者对 Framework 品牌硬件彻底失望、决意不再购买的态度。文章曾意外登上 Hacker News 并获得远超预期的关注。作者特别声明，其目的并非恶意伤害 Framework，而是希望该公司切实改善售后服务，兑现消费者所支付价格对应的产品体验——一台真正能正常工作的笔记本电脑。文中"ENODRAMA"（即"NO DRAMA"的倒写）暗示相关争议已趋于平静，作者无意继续扩大事态。文章主体内容似乎已缺失或链接失效，仅保留标题、部分元信息及作者推广信息。作者通过 aljuna.tech 提供架构审查、技术尽职调查及邮件基础设施等短期咨询服务，同时呼吁读者在社交平台分享文章以提升可见度，或通过 GitHub Sponsors 和 Patreon 进行赞助支持，以资助其后续文章与项目创作。整体而言，这是一篇因产品售后或质量体验不佳而引发的消费者批评文章，基调在失望中仍留有建设性期待。
+
+---
+
