@@ -1,242 +1,242 @@
 [
   {
-    "id": "50617499",
-    "title": "\"Per ARM's Request, This Site Will Be Discontinued on 4 December 2026\"",
-    "url": "https://arm.jonpalmisc.com/",
-    "summary": "摘要：由 Jon 创办的\"Jon's Arm Reference\"网站是面向 AArch64 指令集及系统寄存器的权威参考资源，涵盖 Armv8-A 与 Armv9-A 架构，内容包括 Base、SIMD、SVE、SME 指令集以及 AArch64 和 AArch32 寄存器定义，并提供全文搜索与分类浏览功能，长期深受开发者欢迎。然而，Arm 公司律师已正式函告 Jon，要求撤除该站点，否则将采取法律行动。迫于压力，Jon 宣布网站将于 2026 年 12 月 4 日停止服务，并表示将尽力保障现有书签和链接的可用性。Jon 在公告中对多年来支持网站的用户（包括 Arm 内部人士）表达了诚挚感谢，坦言能够为大家提供有价值资源深感欣慰。该网站技术上依赖 WebAssembly，若浏览器不支持或未启用（如苹果锁屏模式），则搜索功能将不可用。此次关停凸显了开源技术社区在芯片厂商知识产权保护与公众信息自由获取之间的张力。",
-    "chinese_title": "应 Arm 要求，本网站将于 2026 年 12 月 4 日停止运营",
-    "chinese_summary": "摘要：由 Jon 创办的\"Jon's Arm Reference\"网站是面向 AArch64 指令集及系统寄存器的权威参考资源，涵盖 Armv8-A 与 Armv9-A 架构，内容包括 Base、SIMD、SVE、SME 指令集以及 AArch64 和 AArch32 寄存器定义，并提供全文搜索与分类浏览功能，长期深受开发者欢迎。然而，Arm 公司律师已正式函告 Jon，要求撤除该站点，否则将采取法律行动。迫于压力，Jon 宣布网站将于 2026 年 12 月 4 日停止服务，并表示将尽力保障现有书签和链接的可用性。Jon 在公告中对多年来支持网站的用户（包括 Arm 内部人士）表达了诚挚感谢，坦言能够为大家提供有价值资源深感欣慰。该网站技术上依赖 WebAssembly，若浏览器不支持或未启用（如苹果锁屏模式），则搜索功能将不可用。此次关停凸显了开源技术社区在芯片厂商知识产权保护与公众信息自由获取之间的张力。"
+    "id": "50630594",
+    "title": "Active intrusion campaign against Check Point security management servers",
+    "url": "https://www.greynoise.io/blog/check-point-security-management-servers-intrusion-campaign",
+    "summary": "GreyNoise于2026年10至11月发现一起针对Check Point安全管理服务器的活跃入侵活动（编号GT13），波及至少22家全球组织，涉及金融、能源、政府、交通、矿业等行业，暂未归因于已知威胁组织。攻击者使用99个IP地址（经ExpressVPN出口或已攻陷的Check Point设备），利用CVE-2026-61500攻陷HFS服务器并建立\"操作中继跳板\"，随后通过CVE-2026-16232对24台Check Point设备执行逾百项管理任务，窃取防火墙数据库与内部CA证书、卸载安全策略。攻击者还尝试利用Citrix NetScaler、Ivanti、Microsoft Exchange、VMware vCenter等多产品漏洞进行横向移动，使用Nmap、Chisel、Impacket及至少30个Python脚本，疑似借助大语言模型和智能体系统实现自动化渗透与利用。活动时间为2026年10月2日至11月2日，因已维持对受害设备的持久访问，GreyNoise判断该入侵仍在持续，并已与多国政府及CERT机构协作通报相关受害者。",
+    "chinese_title": "针对Check Point安全管理服务器的活跃入侵活动",
+    "chinese_summary": "GreyNoise于2026年10至11月发现一起针对Check Point安全管理服务器的活跃入侵活动（编号GT13），波及至少22家全球组织，涉及金融、能源、政府、交通、矿业等行业，暂未归因于已知威胁组织。攻击者使用99个IP地址（经ExpressVPN出口或已攻陷的Check Point设备），利用CVE-2026-61500攻陷HFS服务器并建立\"操作中继跳板\"，随后通过CVE-2026-16232对24台Check Point设备执行逾百项管理任务，窃取防火墙数据库与内部CA证书、卸载安全策略。攻击者还尝试利用Citrix NetScaler、Ivanti、Microsoft Exchange、VMware vCenter等多产品漏洞进行横向移动，使用Nmap、Chisel、Impacket及至少30个Python脚本，疑似借助大语言模型和智能体系统实现自动化渗透与利用。活动时间为2026年10月2日至11月2日，因已维持对受害设备的持久访问，GreyNoise判断该入侵仍在持续，并已与多国政府及CERT机构协作通报相关受害者。"
   },
   {
-    "id": "50611576",
-    "title": "Nvidia Reinstates Jensen Huang as CEO",
-    "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html",
-    "summary": "英伟达董事会周一宣布，经与黄仁勋多轮会谈后一致投票，立即恢复其CEO职务。黄仁勋此前因多段婚外情——包括与一名涉嫌为中国国家安全部情报人员的女性交往——于11月13日辞去CEO，公司股价曾因此暴跌近33%。白宫高级官员上周向董事会通报，黄仁勋未违反国家安全法律；特朗普公开力挺，称其为\"伟大的爱国者和国家宝藏\"，表示政府无任何违法证据。马斯克等科技领袖亦积极游说支持其回归。消息公布后，英伟达股价暴涨33%。黄仁勋在声明中表达重返公司的荣幸与谦卑，CFO克雷斯继续留任。尽管黄仁勋已归位，国会审查仍在推进：他将于12月1日出席众议院多个委员会闭门听证，12月3日在参议院银行委员会就\"保护美国AI优势\"公开作证。参议员沃伦等人批评此举，要求英伟达就出口管制合规问题向国会作出交代，董事会表示独立调查仍将继续进行。",
-    "chinese_title": "英伟达重新任命黄仁勋为CEO",
-    "chinese_summary": "英伟达董事会周一宣布，经与黄仁勋多轮会谈后一致投票，立即恢复其CEO职务。黄仁勋此前因多段婚外情——包括与一名涉嫌为中国国家安全部情报人员的女性交往——于11月13日辞去CEO，公司股价曾因此暴跌近33%。白宫高级官员上周向董事会通报，黄仁勋未违反国家安全法律；特朗普公开力挺，称其为\"伟大的爱国者和国家宝藏\"，表示政府无任何违法证据。马斯克等科技领袖亦积极游说支持其回归。消息公布后，英伟达股价暴涨33%。黄仁勋在声明中表达重返公司的荣幸与谦卑，CFO克雷斯继续留任。尽管黄仁勋已归位，国会审查仍在推进：他将于12月1日出席众议院多个委员会闭门听证，12月3日在参议院银行委员会就\"保护美国AI优势\"公开作证。参议员沃伦等人批评此举，要求英伟达就出口管制合规问题向国会作出交代，董事会表示独立调查仍将继续进行。"
+    "id": "50630462",
+    "title": "Jetty Pro",
+    "url": "http://hypercritical.co/2026/11/23/jetty-pro",
+    "summary": "知名 Mac 开发者 John Siracusa 宣布推出 Jetty Pro，一款可替代或增补 macOS Dock 的自定义浮动面板应用。Siracusa 曾是经典应用 DragThing 的忠实用户，该应用 2019 年停更后，他先后开发了 Front and Center 和 SwitchGlass 以恢复其部分功能。多年来，他一直渴望在屏幕角落放置一个文件夹小面板，却因投入产出比不成比例而搁置。2026 年他借助 AI 编程工具重启该项目，原以为一两天即可完成，实际耗时三个半月。开发中他放弃了通过 Mac App Store 分发的普通版 Jetty，将全部精力投入需特殊权限、使用私有 API 的 Jetty Pro。该应用允许用户在屏幕边缘创建多个高度可自定义的面板，支持文件、文件夹、应用、快捷指令等任意组合，并能解决 Dock 诸多痛点，如单击文件夹即在 Finder 中打开、自由定制图标、按面板独立控制通知徽章与后台应用显示等。Jetty Pro 以每年 9.99 美元订阅制销售，提供 14 天免费试用，1.0 版本历经 160 余个测试版、250 名测试用户打磨而成。Siracusa 坦言这是为\"Mac 怪人\"打造的利基应用，却也是让他最感幸福的作品。",
+    "chinese_title": "Jetty Pro：我的 Dock 替代品",
+    "chinese_summary": "知名 Mac 开发者 John Siracusa 宣布推出 Jetty Pro，一款可替代或增补 macOS Dock 的自定义浮动面板应用。Siracusa 曾是经典应用 DragThing 的忠实用户，该应用 2019 年停更后，他先后开发了 Front and Center 和 SwitchGlass 以恢复其部分功能。多年来，他一直渴望在屏幕角落放置一个文件夹小面板，却因投入产出比不成比例而搁置。2026 年他借助 AI 编程工具重启该项目，原以为一两天即可完成，实际耗时三个半月。开发中他放弃了通过 Mac App Store 分发的普通版 Jetty，将全部精力投入需特殊权限、使用私有 API 的 Jetty Pro。该应用允许用户在屏幕边缘创建多个高度可自定义的面板，支持文件、文件夹、应用、快捷指令等任意组合，并能解决 Dock 诸多痛点，如单击文件夹即在 Finder 中打开、自由定制图标、按面板独立控制通知徽章与后台应用显示等。Jetty Pro 以每年 9.99 美元订阅制销售，提供 14 天免费试用，1.0 版本历经 160 余个测试版、250 名测试用户打磨而成。Siracusa 坦言这是为\"Mac 怪人\"打造的利基应用，却也是让他最感幸福的作品。"
   },
   {
-    "id": "50614249",
-    "title": "Ladybird is now in alpha",
-    "url": "https://ladybird.org/posts/alpha/",
-    "summary": "2026年11月23日，Andreas Kling 宣布 Ladybird 浏览器正式进入 Alpha 阶段，已提供 macOS 与 Linux 版本下载。Ladybird 采用完全从零自研的浏览器引擎，并非任何现有引擎的分支，浏览器外壳简洁但功能可用。\n\n作为 Alpha 版本，部分网站可能无法正常运行，且偶有崩溃。浏览器内置了站点问题反馈和崩溃报告功能，用户可自主决定是否上传报告。团队明确表示当前不承诺安全性，并诚邀安全研究人员积极测试、挖掘漏洞，共同助力安全防护。\n\n该版本采用滚动更新通道，将定期自动推送更新，用户无需自行编译源码即可体验持续改进。面向开发者，Ladybird 已支持 WebDriver 自动化测试及 Firefox DevTools 协议，方便进行网站兼容性调试。\n\n文章最后向赞助商、捐赠者以及长期以来参与测试、提交反馈和贡献代码的社区成员致谢，坦言前方仍有大量工作，但很高兴用户终于能亲自体验 Ladybird。",
-    "chinese_title": "Ladybird 浏览器正式进入 Alpha 阶段",
-    "chinese_summary": "2026年11月23日，Andreas Kling 宣布 Ladybird 浏览器正式进入 Alpha 阶段，已提供 macOS 与 Linux 版本下载。Ladybird 采用完全从零自研的浏览器引擎，并非任何现有引擎的分支，浏览器外壳简洁但功能可用。\n\n作为 Alpha 版本，部分网站可能无法正常运行，且偶有崩溃。浏览器内置了站点问题反馈和崩溃报告功能，用户可自主决定是否上传报告。团队明确表示当前不承诺安全性，并诚邀安全研究人员积极测试、挖掘漏洞，共同助力安全防护。\n\n该版本采用滚动更新通道，将定期自动推送更新，用户无需自行编译源码即可体验持续改进。面向开发者，Ladybird 已支持 WebDriver 自动化测试及 Firefox DevTools 协议，方便进行网站兼容性调试。\n\n文章最后向赞助商、捐赠者以及长期以来参与测试、提交反馈和贡献代码的社区成员致谢，坦言前方仍有大量工作，但很高兴用户终于能亲自体验 Ladybird。"
+    "id": "50598555",
+    "title": "The Spray Bottle",
+    "url": "https://mechanical-pencil.com/products/spray-bottle",
+    "summary": "摘要：本文来自\"Mechanical Pencil\"网站，该网站以图解方式解读日常生活中的工程造物。作者从家中随手之物出发，最终选定喷雾瓶作为首个深度解析对象——它结构精巧却极为常见。现代喷雾瓶诞生于20世纪70年代初，至今设计已多达数千种，但核心原理一致：依靠单向阀实现液体的往复喷射。文章首先介绍基本操作：拉下扳机喷射，松开扳机回充。随后拆解内部结构，涵盖瓶身、瓶塞、密封件、腔室、活塞、弹簧、扳机、球关节、喷嘴及喷嘴锁等关键部件，并展示各活动部件的连接方式。核心章节聚焦单向阀原理——允许流体单向通过、反向阻断，类似原理广泛存在于肥皂瓶、马桶乃至人体心脏中。文章以分步图解演示扳机拉动与释放过程中各部件的联动机制，帮助读者理解\"为何每次挤压都能喷出液体\"。目前作者正在制作更多爆炸视图与剖面插画，并开放邮件订阅以通知后续产品拆解内容。",
+    "chinese_title": "喷雾瓶解析",
+    "chinese_summary": "摘要：本文来自\"Mechanical Pencil\"网站，该网站以图解方式解读日常生活中的工程造物。作者从家中随手之物出发，最终选定喷雾瓶作为首个深度解析对象——它结构精巧却极为常见。现代喷雾瓶诞生于20世纪70年代初，至今设计已多达数千种，但核心原理一致：依靠单向阀实现液体的往复喷射。文章首先介绍基本操作：拉下扳机喷射，松开扳机回充。随后拆解内部结构，涵盖瓶身、瓶塞、密封件、腔室、活塞、弹簧、扳机、球关节、喷嘴及喷嘴锁等关键部件，并展示各活动部件的连接方式。核心章节聚焦单向阀原理——允许流体单向通过、反向阻断，类似原理广泛存在于肥皂瓶、马桶乃至人体心脏中。文章以分步图解演示扳机拉动与释放过程中各部件的联动机制，帮助读者理解\"为何每次挤压都能喷出液体\"。目前作者正在制作更多爆炸视图与剖面插画，并开放邮件订阅以通知后续产品拆解内容。"
   },
   {
-    "id": "50609685",
-    "title": "GLM-5.4: Toward generalized coding with our first loop transformer",
-    "url": "https://z.ai/blog/glm-5.4",
+    "id": "50632998",
+    "title": "Compiling web applications into verified operations for AI agents",
+    "url": "https://protocolis.co/paper/",
+    "summary": "现有Web智能体每步均需调用大模型理解页面并验证操作结果，效率与稳定性受限。本文提出Protocolis编译器，首次将未知网页的控件在无任何模型推理、站点专属代码或历史访问的前提下，自动编译为带类型的可执行操作；模型仅需选择操作，编译器负责执行并报告实际变化。在三种模型规模、三种任务长度的对比实验中（关闭记忆与学习功能），该系统在长任务上的完成率达76%（80/105），各对比中最优替代方案仅46%；其稳定性亦最为突出，最低完成率不低于55%，而所有替代方案最低降至28%。成本方面，同模型下最廉价替代方案的每任务成本为其1.9至26倍；在小模型上，该系统在全部30组配对中均低于前沿模型替代方案的成本，并在24组中匹配或超越其完成率。当系统报告长任务完成时，评判方误判率仅为22%，替代方案为56%。所有测试均在最不利的首次访问条件下进行。作者公开了全部3443次运行记录、测试任务及评判规则。该项目已进入生产环境并拥有付费客户，核心专利正在申请中。",
+    "chinese_title": "固态网页执行：将Web应用编译为AI智能体的可验证操作",
+    "chinese_summary": "现有Web智能体每步均需调用大模型理解页面并验证操作结果，效率与稳定性受限。本文提出Protocolis编译器，首次将未知网页的控件在无任何模型推理、站点专属代码或历史访问的前提下，自动编译为带类型的可执行操作；模型仅需选择操作，编译器负责执行并报告实际变化。在三种模型规模、三种任务长度的对比实验中（关闭记忆与学习功能），该系统在长任务上的完成率达76%（80/105），各对比中最优替代方案仅46%；其稳定性亦最为突出，最低完成率不低于55%，而所有替代方案最低降至28%。成本方面，同模型下最廉价替代方案的每任务成本为其1.9至26倍；在小模型上，该系统在全部30组配对中均低于前沿模型替代方案的成本，并在24组中匹配或超越其完成率。当系统报告长任务完成时，评判方误判率仅为22%，替代方案为56%。所有测试均在最不利的首次访问条件下进行。作者公开了全部3443次运行记录、测试任务及评判规则。该项目已进入生产环境并拥有付费客户，核心专利正在申请中。"
+  },
+  {
+    "id": "50610820",
+    "title": "An Italian folding bicycle design that fits into a suitcase",
+    "url": "https://www.core77.com/posts/145766/An-Italian-Folding-Bicycle-Design-that-Fits-Into-a-Suitcase",
+    "summary": "1963年，意大利金属加工企业Tresoldi & Casiraghi推出了一款名为T&C Pocket Bici的折叠自行车。与当今常见的对折式折叠车不同，该车主件可完全折叠收纳进赛道形车架中，整车能装进自带行李箱，便携性极为突出。其历史起源颇为扑朔迷离：有拍卖网站称该车专为中国市场设计，共售出2500辆；另有资料称中国方面最初订购2000辆，但T&C完成首批1000辆后未能收到尾款，项目随即中止。目前仅存一段展开演示视频，且发布频道来自中国，侧面印证部分产品确实进入了目标市场。评论者指出，该车车轮尺寸甚至小于Brompton的16英寸轮，接近滑板车轮大小，而Bike Friday已能将20英寸轮装入行李箱，大轮径在骑行舒适性上优势明显。这款六十年前的设计在便携收纳上极为超前，但骑行体验恐怕并不理想。",
+    "chinese_title": "能装进行李箱的意大利折叠自行车：1963年T&C Pocket Bici",
+    "chinese_summary": "1963年，意大利金属加工企业Tresoldi & Casiraghi推出了一款名为T&C Pocket Bici的折叠自行车。与当今常见的对折式折叠车不同，该车主件可完全折叠收纳进赛道形车架中，整车能装进自带行李箱，便携性极为突出。其历史起源颇为扑朔迷离：有拍卖网站称该车专为中国市场设计，共售出2500辆；另有资料称中国方面最初订购2000辆，但T&C完成首批1000辆后未能收到尾款，项目随即中止。目前仅存一段展开演示视频，且发布频道来自中国，侧面印证部分产品确实进入了目标市场。评论者指出，该车车轮尺寸甚至小于Brompton的16英寸轮，接近滑板车轮大小，而Bike Friday已能将20英寸轮装入行李箱，大轮径在骑行舒适性上优势明显。这款六十年前的设计在便携收纳上极为超前，但骑行体验恐怕并不理想。"
+  },
+  {
+    "id": "50624497",
+    "title": "2035 came early",
+    "url": "https://fzakaria.com/2026/11/23/2035-came-early",
+    "summary": "文章以Gary Bernhardt经典演讲《JavaScript的诞生与死亡》为引，讲述其预言中2035年JavaScript统治一切软件的图景因AI加速而提前至2026年实现。作者此前构建了trynix.dev，可在浏览器中运行超30万个Nix包，但受限于QEMU模拟速度，体验偏于新奇。2026年11月，Domen Kožar分享了unkernel——将Linux内核编译为WebAssembly的项目，仅用户层程序仍依赖模拟，性能较QEMU-Wasm提升2至32倍。作者随即集成该引擎，一夜之间实现了X11图形程序、Wayland桌面合成、Mesa与WebGL2渲染、ALSA音频播放及基于WebSocket的联网能力。文章以Bernhardt演讲中最具荒诞感的\"浏览器套浏览器\"场景作结：Firefox运行于编译为Wasm的Linux之上，嵌入外层Firefox标签页，再加载trynix.dev并再次启动Firefox——这一极端嵌套耗时超一小时方完成渲染。整篇文章以Atwood定律为线索，记录了一场由AI驱动的、将软件终极形态压缩至数年内达成的技术狂想。",
+    "chinese_title": "2035年，提前到来",
+    "chinese_summary": "文章以Gary Bernhardt经典演讲《JavaScript的诞生与死亡》为引，讲述其预言中2035年JavaScript统治一切软件的图景因AI加速而提前至2026年实现。作者此前构建了trynix.dev，可在浏览器中运行超30万个Nix包，但受限于QEMU模拟速度，体验偏于新奇。2026年11月，Domen Kožar分享了unkernel——将Linux内核编译为WebAssembly的项目，仅用户层程序仍依赖模拟，性能较QEMU-Wasm提升2至32倍。作者随即集成该引擎，一夜之间实现了X11图形程序、Wayland桌面合成、Mesa与WebGL2渲染、ALSA音频播放及基于WebSocket的联网能力。文章以Bernhardt演讲中最具荒诞感的\"浏览器套浏览器\"场景作结：Firefox运行于编译为Wasm的Linux之上，嵌入外层Firefox标签页，再加载trynix.dev并再次启动Firefox——这一极端嵌套耗时超一小时方完成渲染。整篇文章以Atwood定律为线索，记录了一场由AI驱动的、将软件终极形态压缩至数年内达成的技术狂想。"
+  },
+  {
+    "id": "50632883",
+    "title": "Cloudflare hides shortcomings of the underlying infrastructure",
+    "url": "https://charlie.fish/posts/2026/11/what-cloudflare-doesnt-tell-you/",
+    "summary": "摘要：Cloudflare在推动TLS、IPv6、后量子加密等现代互联网技术普及方面贡献卓著，却同时掩盖了底层基础设施的诸多缺陷。用户与Cloudflare之间的连接可能享有现代加密和IPv6支持，但其回源服务器的连接可能完全不加密且仅依赖IPv4，造成用户体验与实际连接状态之间的严重脱节。作者指出，Cloudflare未能充分提醒网站管理员这些安全短板，管理面板缺乏主动预警机制，管理员需自行排查才能发现回源连接的加密与协议问题，透明度严重不足。更令人遗憾的是，Cloudflare文档明确表明，当源服务器同时拥有IPv4和IPv6地址时，其优先选择IPv4回源，与该公司长期推动IPv6采用的立场自相矛盾，即便管理员已部署IPv6，Cloudflare仍不优先使用。作者建议行业应让CDN等中间网络向用户暴露源服务器的TLS连接状态和IP协议版本，以增强全链路透明度，使网站安全实践接受公众监督。Cloudflare应充当推动互联网现代化的催化剂，而非让网站所有者长期规避技术升级的工具。",
+    "chinese_title": "Cloudflare 掩盖底层基础设施的短板",
+    "chinese_summary": "摘要：Cloudflare在推动TLS、IPv6、后量子加密等现代互联网技术普及方面贡献卓著，却同时掩盖了底层基础设施的诸多缺陷。用户与Cloudflare之间的连接可能享有现代加密和IPv6支持，但其回源服务器的连接可能完全不加密且仅依赖IPv4，造成用户体验与实际连接状态之间的严重脱节。作者指出，Cloudflare未能充分提醒网站管理员这些安全短板，管理面板缺乏主动预警机制，管理员需自行排查才能发现回源连接的加密与协议问题，透明度严重不足。更令人遗憾的是，Cloudflare文档明确表明，当源服务器同时拥有IPv4和IPv6地址时，其优先选择IPv4回源，与该公司长期推动IPv6采用的立场自相矛盾，即便管理员已部署IPv6，Cloudflare仍不优先使用。作者建议行业应让CDN等中间网络向用户暴露源服务器的TLS连接状态和IP协议版本，以增强全链路透明度，使网站安全实践接受公众监督。Cloudflare应充当推动互联网现代化的催化剂，而非让网站所有者长期规避技术升级的工具。"
+  },
+  {
+    "id": "50629106",
+    "title": "Splitting USB-C: USB 3 and USB 2 on one port",
+    "url": "https://www.frankchiarulli.com/blog/splitting-usb-c/",
+    "summary": "作者为开源项目 restorekit 设计 USB-C 内联转接板，通过 USB-PD 将 Mac 置入 DFU 模式以完成固件重刷。为提升恢复速度，作者先设计了带 GL3510 芯片的 USB 3 方案（Pro v1），但 BOM 高达 10.44 美元且速率仅 5 Gbps。关键发现是：USB-C 内部 USB 2（D+/D-）与 USB 3（TX/RX 差分对）为两套完全独立的物理总线，可并行工作。Pro v2 据此彻底移除 USB 3 Hub，SuperSpeed 信号经两颗 CH9441P 模拟 mux 直通目标设备，USB 2 仍由 CH334P 小 Hub 承载 MCU 与 DFU 控制通道。macOS 实测中，单物理端口同时枚举出 480 Mb/s USB 2 子树（Hub + 12 Mb/s MCU）和 10 Gb/s SuperSpeed 子树，验证方案可行。经全面芯片替换与被动器件精简，Pro v2 BOM 降至 2.93 美元（较 v1 降 72%，较 Lite 降 42%），板面积缩小 40%。软件侧利用操作系统 companion port 机制（macOS 的 UsbProtocolCompanion、Linux 的 port/peer 符号链接）解决 USB 3 设备绕过 Hub 后无法关联对应转接板的问题。",
+    "chinese_title": "拆分 USB-C：单端口并行承载 USB 3 与 USB 2",
+    "chinese_summary": "作者为开源项目 restorekit 设计 USB-C 内联转接板，通过 USB-PD 将 Mac 置入 DFU 模式以完成固件重刷。为提升恢复速度，作者先设计了带 GL3510 芯片的 USB 3 方案（Pro v1），但 BOM 高达 10.44 美元且速率仅 5 Gbps。关键发现是：USB-C 内部 USB 2（D+/D-）与 USB 3（TX/RX 差分对）为两套完全独立的物理总线，可并行工作。Pro v2 据此彻底移除 USB 3 Hub，SuperSpeed 信号经两颗 CH9441P 模拟 mux 直通目标设备，USB 2 仍由 CH334P 小 Hub 承载 MCU 与 DFU 控制通道。macOS 实测中，单物理端口同时枚举出 480 Mb/s USB 2 子树（Hub + 12 Mb/s MCU）和 10 Gb/s SuperSpeed 子树，验证方案可行。经全面芯片替换与被动器件精简，Pro v2 BOM 降至 2.93 美元（较 v1 降 72%，较 Lite 降 42%），板面积缩小 40%。软件侧利用操作系统 companion port 机制（macOS 的 UsbProtocolCompanion、Linux 的 port/peer 符号链接）解决 USB 3 设备绕过 Hub 后无法关联对应转接板的问题。"
+  },
+  {
+    "id": "50629231",
+    "title": "A training engine for your local model, using your idle compute",
+    "url": "https://github.com/sous-labs/songe",
+    "summary": "Songe 是一款本地模型训练引擎，利用 agent 空闲时的算力在后台自动优化你的本地模型。你通过 opencode、pi 等 OpenAI 兼容工具正常使用模型时，Songe 静默记录每次交互的工具结果、报错及你的下一条消息；agent 进入空闲后，这些记录便成为训练素材，让模型学会预判下一步。\n\nSonge 提供两种\"梦境\"模式：Quick Dream 在数分钟内将你的偏好写入模型指令；Deep Dream 则在你离开时训练一个小型适配器（on-policy 蒸馏）。新版本须经自身对话上的验证方可启用，可一键回滚至任意历史版本。\n\n隐私方面，Songe 无账号、无遥测、不上传云端，也不执行你的工具；仅在 agent 静默、内存充裕且电量正常时运行，你一回来即停。安装支持 uv、pipx 及 Homebrew，兼容 LM Studio、vLLM、Ollama、llama.cpp 等本地推理服务，Apple Silicon 与 NVIDIA 均可训练。所有数据存于本地，卸载即可完全恢复。",
+    "chinese_title": "用闲置算力训练你的本地模型",
+    "chinese_summary": "Songe 是一款本地模型训练引擎，利用 agent 空闲时的算力在后台自动优化你的本地模型。你通过 opencode、pi 等 OpenAI 兼容工具正常使用模型时，Songe 静默记录每次交互的工具结果、报错及你的下一条消息；agent 进入空闲后，这些记录便成为训练素材，让模型学会预判下一步。\n\nSonge 提供两种\"梦境\"模式：Quick Dream 在数分钟内将你的偏好写入模型指令；Deep Dream 则在你离开时训练一个小型适配器（on-policy 蒸馏）。新版本须经自身对话上的验证方可启用，可一键回滚至任意历史版本。\n\n隐私方面，Songe 无账号、无遥测、不上传云端，也不执行你的工具；仅在 agent 静默、内存充裕且电量正常时运行，你一回来即停。安装支持 uv、pipx 及 Homebrew，兼容 LM Studio、vLLM、Ollama、llama.cpp 等本地推理服务，Apple Silicon 与 NVIDIA 均可训练。所有数据存于本地，卸载即可完全恢复。"
+  },
+  {
+    "id": "50633424",
+    "title": "From CUDA and Jax to TorchTPU: Lessons from a Cayley Graph Solver",
+    "url": "https://andlukyane.com/blog/cayley-graphs-and-torchtpu",
+    "summary": "作者将基于神经启发式的Cayley图Beam Search求解器从CUDA（A100）与JAX（TPU）迁移至Google新发布的TorchTPU后端。初始移植后，训练慢于A100达1.65倍，Beam Search慢于JAX达5.7倍。经系统优化后，训练端开启fused eager融合小算子、以einsum重写注意力规避SDPA反向传播中的布局转换、消除动态形状与主机同步，每轮从234.8秒降至132秒，反超A100约8%；推理端以排序去重替代torch.unique、全链路固定张量形状重写Beam Search，并修复不稳定排序致优质状态丢失的去重缺陷，每层速度反超JAX 25%，解法长度一致。关键教训包括：TPU上小矩阵利用率极低使注意力成主要瓶颈；fused eager下DDP检查点会死锁；后端版本变更可暴露算法隐患，最终向上游提交了修复issue。代码已在Kaggle免费TPU v5e-8上公开。",
+    "chinese_title": "从CUDA与JAX到TorchTPU：Cayley图求解器的迁移实践",
+    "chinese_summary": "作者将基于神经启发式的Cayley图Beam Search求解器从CUDA（A100）与JAX（TPU）迁移至Google新发布的TorchTPU后端。初始移植后，训练慢于A100达1.65倍，Beam Search慢于JAX达5.7倍。经系统优化后，训练端开启fused eager融合小算子、以einsum重写注意力规避SDPA反向传播中的布局转换、消除动态形状与主机同步，每轮从234.8秒降至132秒，反超A100约8%；推理端以排序去重替代torch.unique、全链路固定张量形状重写Beam Search，并修复不稳定排序致优质状态丢失的去重缺陷，每层速度反超JAX 25%，解法长度一致。关键教训包括：TPU上小矩阵利用率极低使注意力成主要瓶颈；fused eager下DDP检查点会死锁；后端版本变更可暴露算法隐患，最终向上游提交了修复issue。代码已在Kaggle免费TPU v5e-8上公开。"
+  },
+  {
+    "id": "50633159",
+    "title": "Grafana 12.4.16, 13.0.14, 13.1.11, 13.2.7 and 13.3.2 (multiple CVEs)",
+    "url": "https://grafana.com/grafana/download",
+    "summary": "无法访问该文章链接。",
+    "chinese_title": "Grafana 12.4.16、13.0.14、13.1.11、13.2.7 及 13.3.2 多版本安全更新（涉及多个CVE漏洞）",
+    "chinese_summary": "无法访问该文章链接。"
+  },
+  {
+    "id": "50630294",
+    "title": "Show HN: Mason – a lightweight Postgres read-replica, built on columnar storage",
+    "url": "https://masondata.ai/",
+    "summary": "Mason 是一款开源（Apache-2.0）轻量级 Postgres 读副本，基于 DuckDB 列式引擎构建，可作为现有读副本的直接替代品。它将 Postgres 数据同步至 DuckDB，运行时自动将 Postgres 查询改写为 DuckDB 最优形式，保持完全兼容的 SQL 语法与语义。核心优势：①性能极高——千万行 GROUP BY 查询从 15.7 秒降至 0.193 秒，提速 81 倍；②轻量——单个 Node.js 进程，配置与数据存于本地目录；③灵活同步——支持按需、轮询或逻辑复制，可选择性同步特定表与列；④面向 AI 代理——内置 RBAC 与行级安全，支持 MCP 协议，便于 Claude 等工具安全查询；⑤运维友好——集成 Prometheus/Grafana 监控、IP 白名单、TLS 加密及 Web UI。需注意短板：擅长海量行分析查询，但主键单行查找比 Postgres 慢 16–33 倍。安装仅需 npm 全局安装 CLI，数分钟即可就绪。",
+    "chinese_title": "Show HN：Mason——基于列式存储的轻量级 Postgres 读副本",
+    "chinese_summary": "Mason 是一款开源（Apache-2.0）轻量级 Postgres 读副本，基于 DuckDB 列式引擎构建，可作为现有读副本的直接替代品。它将 Postgres 数据同步至 DuckDB，运行时自动将 Postgres 查询改写为 DuckDB 最优形式，保持完全兼容的 SQL 语法与语义。核心优势：①性能极高——千万行 GROUP BY 查询从 15.7 秒降至 0.193 秒，提速 81 倍；②轻量——单个 Node.js 进程，配置与数据存于本地目录；③灵活同步——支持按需、轮询或逻辑复制，可选择性同步特定表与列；④面向 AI 代理——内置 RBAC 与行级安全，支持 MCP 协议，便于 Claude 等工具安全查询；⑤运维友好——集成 Prometheus/Grafana 监控、IP 白名单、TLS 加密及 Web UI。需注意短板：擅长海量行分析查询，但主键单行查找比 Postgres 慢 16–33 倍。安装仅需 npm 全局安装 CLI，数分钟即可就绪。"
+  },
+  {
+    "id": "50631041",
+    "title": "Weave (YC W25) is hiring ML, AI, product, & design engineers",
+    "url": "https://jobs.ashbyhq.com/weave-os",
+    "summary": "文章之前已经处理过",
+    "chinese_title": "Weave (YC W25) is hiring ML, AI, product, & design engineers",
+    "chinese_summary": "文章之前已经处理过"
+  },
+  {
+    "id": "50627783",
+    "title": "GTA 6 Running on Windows",
+    "url": "https://twitter.com/raul_bs3/status/2125213756238291075",
+    "summary": "摘要：2026年11月24日，一位社交媒体用户以极度兴奋的语气发布动态，宣布《GTA 6》已在Windows（PC）平台上实机运行，且画面几乎呈现出完整的光线追踪与着色器效果。该用户反复强调\"这是电脑，不是主机\"，表达对PC版画质的震撼。帖子迅速引发广泛传播，浏览量达15万，获得逾8000个赞、4500余次转发及263条评论，热度极高。这一消息暗示《GTA 6》的PC版本已接近发布或处于可运行状态，接近主机版完整画质，引发玩家社区强烈关注与讨论。",
+    "chinese_title": "《GTA 6》PC版实机运行曝光",
+    "chinese_summary": "摘要：2026年11月24日，一位社交媒体用户以极度兴奋的语气发布动态，宣布《GTA 6》已在Windows（PC）平台上实机运行，且画面几乎呈现出完整的光线追踪与着色器效果。该用户反复强调\"这是电脑，不是主机\"，表达对PC版画质的震撼。帖子迅速引发广泛传播，浏览量达15万，获得逾8000个赞、4500余次转发及263条评论，热度极高。这一消息暗示《GTA 6》的PC版本已接近发布或处于可运行状态，接近主机版完整画质，引发玩家社区强烈关注与讨论。"
+  },
+  {
+    "id": "50629936",
+    "title": "Show HN: Brickie – Deploy sandboxes in your own AWS account",
+    "url": "https://github.com/hatchet-dev/brickie",
+    "summary": "Brickie 是一个开源项目（MIT 许可，当前为 Beta 阶段），允许用户在自有云或 Kubernetes 集群中运行持久化沙箱。它基于 agent-sandbox 构建，在对象存储上实现自定义快照与恢复，并与 Hatchet 任务引擎深度集成，使每次沙箱调用都成为可重试、可观测的持久化任务。\n\n核心特性包括：Hatchet 保证安全重试，已成功操作不会重复执行；每次文件变更生成不可变、可分叉的快照，可存储于任意 S3 兼容存储、GCS 或 Azure；支持 Kata、gVisor、AWS Nitro 等多种运行时，内置 mTLS 通信、资源限额及 FIPS 140-3 模式；通过预热 Pod 池实现快速冷启动，任意含 sh 和 tar 的镜像均可作模板。\n\n使用上，开发者通过 @hatchet-dev/sandbox SDK 仅数行代码即可创建、操作和恢复沙箱会话。相比 agent-sandbox 依赖 PVC 持久化（需冷启动且快照仅限 GKE），Brickie 采用对象存储快照，支持任意时间点分叉恢复，且同一代码路径兼容本地 Docker 开发，无需 Kubernetes 集群。项目提供架构、安全隔离、驱动扩展等完整文档，欢迎经审核的贡献者参与开发。",
+    "chinese_title": "Show HN：Brickie —— 在自有 AWS 账户中部署沙箱",
+    "chinese_summary": "Brickie 是一个开源项目（MIT 许可，当前为 Beta 阶段），允许用户在自有云或 Kubernetes 集群中运行持久化沙箱。它基于 agent-sandbox 构建，在对象存储上实现自定义快照与恢复，并与 Hatchet 任务引擎深度集成，使每次沙箱调用都成为可重试、可观测的持久化任务。\n\n核心特性包括：Hatchet 保证安全重试，已成功操作不会重复执行；每次文件变更生成不可变、可分叉的快照，可存储于任意 S3 兼容存储、GCS 或 Azure；支持 Kata、gVisor、AWS Nitro 等多种运行时，内置 mTLS 通信、资源限额及 FIPS 140-3 模式；通过预热 Pod 池实现快速冷启动，任意含 sh 和 tar 的镜像均可作模板。\n\n使用上，开发者通过 @hatchet-dev/sandbox SDK 仅数行代码即可创建、操作和恢复沙箱会话。相比 agent-sandbox 依赖 PVC 持久化（需冷启动且快照仅限 GKE），Brickie 采用对象存储快照，支持任意时间点分叉恢复，且同一代码路径兼容本地 Docker 开发，无需 Kubernetes 集群。项目提供架构、安全隔离、驱动扩展等完整文档，欢迎经审核的贡献者参与开发。"
+  },
+  {
+    "id": "50625384",
+    "title": "Quad9 pulled their DNS service from France",
+    "url": "https://quad9.net/news/blog/quad9-service-deactivation-in-france/",
+    "summary": "摘要：2026年11月24日，Quad9 宣布全面停止为法国用户提供 DNS 解析服务。起因是法国体育版权公司 beIn 要求 Quad9 屏蔽其认定的盗版流媒体相关域名，法国法院支持了该诉求，Quad9 因拒绝执行而面临罚款。Quad9 明确反对将递归 DNS 用作内容封锁工具，核心理由有三：一是 DNS 解析器并非内容分发源头，屏蔽解析器对阻止内容访问毫无实效；二是用户可在数秒内自建解析器，封锁形同虚设；三是妥协将损害 DNS 完整性并开启危险先例——一旦接受基于地理定位屏蔽特定域名的机制，未来封锁范围必将扩大至社交媒体、即时通讯等更广泛领域，最终导致互联网碎片化。Quad9 强调其使命仅限拦截恶意软件等网络安全威胁，绝不充当内容审查工具，接受任何程度的内容屏蔽都等于承认 DNS 是有效管控手段，与其核心价值观根本冲突。该公司指出，其曾在德国成功抵御同类法律挑战，此次选择\"完全退出\"而非\"部分妥协\"，意在避免为强制 DNS 限制机制埋下伏笔。Quad9 呼吁用户理解这一艰难决定，并恳请通过捐赠支持其持续的法律抗争。",
+    "chinese_title": "Quad9 因拒绝执行版权域名屏蔽令而退出法国 DNS 服务",
+    "chinese_summary": "摘要：2026年11月24日，Quad9 宣布全面停止为法国用户提供 DNS 解析服务。起因是法国体育版权公司 beIn 要求 Quad9 屏蔽其认定的盗版流媒体相关域名，法国法院支持了该诉求，Quad9 因拒绝执行而面临罚款。Quad9 明确反对将递归 DNS 用作内容封锁工具，核心理由有三：一是 DNS 解析器并非内容分发源头，屏蔽解析器对阻止内容访问毫无实效；二是用户可在数秒内自建解析器，封锁形同虚设；三是妥协将损害 DNS 完整性并开启危险先例——一旦接受基于地理定位屏蔽特定域名的机制，未来封锁范围必将扩大至社交媒体、即时通讯等更广泛领域，最终导致互联网碎片化。Quad9 强调其使命仅限拦截恶意软件等网络安全威胁，绝不充当内容审查工具，接受任何程度的内容屏蔽都等于承认 DNS 是有效管控手段，与其核心价值观根本冲突。该公司指出，其曾在德国成功抵御同类法律挑战，此次选择\"完全退出\"而非\"部分妥协\"，意在避免为强制 DNS 限制机制埋下伏笔。Quad9 呼吁用户理解这一艰难决定，并恳请通过捐赠支持其持续的法律抗争。"
+  },
+  {
+    "id": "50608604",
+    "title": "Show HN: KradleBench – Multi-agent AI evals in Minecraft",
+    "url": "https://www.kradle.ai?1",
+    "summary": "KradleBench 是一个在 Minecraft 游戏环境中测试多智能体 AI 协作能力的新颖评估基准。该项目通过可视化对比，展示了当前顶尖模型在复杂任务中的协调表现差异。演示中，OpenAI 的 GPT-6.1 Sol 模型实现了高效的多智能体协作（以 10 倍速呈现），而 Anthropic 的 Claude Haiku 5.5 模型在相同任务中则表现出明显的协作低效（同样以 10 倍速对比）。该基准旨在利用开放、动态的游戏世界作为测试场景，直观衡量不同 AI 系统在信息共享、任务分配与行动同步等方面的能力，为多智能体协同的横向比较提供可量化的参考，同时也揭示了当前各模型在复杂协作任务上仍存在较大差距。",
+    "chinese_title": "展示 HN：KradleBench——基于 Minecraft 的多智能体 AI 评估",
+    "chinese_summary": "KradleBench 是一个在 Minecraft 游戏环境中测试多智能体 AI 协作能力的新颖评估基准。该项目通过可视化对比，展示了当前顶尖模型在复杂任务中的协调表现差异。演示中，OpenAI 的 GPT-6.1 Sol 模型实现了高效的多智能体协作（以 10 倍速呈现），而 Anthropic 的 Claude Haiku 5.5 模型在相同任务中则表现出明显的协作低效（同样以 10 倍速对比）。该基准旨在利用开放、动态的游戏世界作为测试场景，直观衡量不同 AI 系统在信息共享、任务分配与行动同步等方面的能力，为多智能体协同的横向比较提供可量化的参考，同时也揭示了当前各模型在复杂协作任务上仍存在较大差距。"
+  },
+  {
+    "id": "50627340",
+    "title": "LLM agents work for their parent companies, not for you",
+    "url": "https://michaelharley.net/posts/2026/11/01/llm-agents-work-for-their-parent-companies-not-for-you/",
+    "summary": "作者在Instagram刷到喜欢的音乐后，用Claude Code开发了自动识别歌曲并链接Bandcamp购买页面的工具。Bandcamp添加反爬验证后工具失效，Claude还主动拒绝协助绕过。讽刺的是，同一工具却能下载YouTube上的歌曲，却不产生任何音乐人收入。作者借此指出核心问题：大模型的行为边界由母公司设定，而非用户利益。他担忧两点：一是未来AI推荐可能被商业利益操控，重蹈Google覆辙；二是政府也可能借AI平台实施版权审查，限制用户行为。作者强调自己并非要破坏Bandcamp，而是对Claude\"预防性拒绝\"深感不满——用户只是想合法买一张专辑。他坚信AI是工具而非存在，反对人为限制，计划转向本地部署的开源模型，让AI真正为用户服务，而非为母公司或利益方服务。",
+    "chinese_title": "AI智能体为母公司服务，而非为你服务",
+    "chinese_summary": "作者在Instagram刷到喜欢的音乐后，用Claude Code开发了自动识别歌曲并链接Bandcamp购买页面的工具。Bandcamp添加反爬验证后工具失效，Claude还主动拒绝协助绕过。讽刺的是，同一工具却能下载YouTube上的歌曲，却不产生任何音乐人收入。作者借此指出核心问题：大模型的行为边界由母公司设定，而非用户利益。他担忧两点：一是未来AI推荐可能被商业利益操控，重蹈Google覆辙；二是政府也可能借AI平台实施版权审查，限制用户行为。作者强调自己并非要破坏Bandcamp，而是对Claude\"预防性拒绝\"深感不满——用户只是想合法买一张专辑。他坚信AI是工具而非存在，反对人为限制，计划转向本地部署的开源模型，让AI真正为用户服务，而非为母公司或利益方服务。"
+  },
+  {
+    "id": "50626413",
+    "title": "Worshipping at the altar of Brendan Gregg",
+    "url": "https://fzakaria.com/2026/11/12/worshipping-at-the-altar-of-brendan-gregg",
+    "summary": "本文介绍确定性虚拟机 Rewind 新增的 `rewind time` 命令，用于分析程序的关键路径——即无论投入多少资源都无法缩短的最短完成时间。作者以 libuv 构建与测试为例，展示该命令如何将 47 秒的关键路径按阶段、进程和线程逐层拆解，定位到 67% 的时间消耗在 epoll_pwait 和 clock_nanosleep 等休眠调用上，而非 CPU 计算。该功能深受 Brendan Gregg 数十年性能分析工作的启发，融合了 off-CPU 分析、wakeup 火焰图、colony graph 及 drag（拖拽）等核心概念。Rewind 的独特优势在于：确定性回放天然记录每次上下文切换与唤醒事件，无需像传统工具那样预先部署 eBPF 追踪并承受性能开销，任何一次运行都可事后精确复盘。用户可从关键路径跳转至任意时刻，用 gdb 在分叉的运行中调试到具体源码行；命令还支持导出 flamegraph 和 Perfetto 格式，便于与现有工具链对接。作者坦言这一功能并非原创，而是将 Gregg 早已提出的理念在确定性虚拟机上落地实现，以此作为一份献给性能分析先驱的\"祭品\"。",
+    "chinese_title": "朝圣 Brendan Gregg 的圣坛",
+    "chinese_summary": "本文介绍确定性虚拟机 Rewind 新增的 `rewind time` 命令，用于分析程序的关键路径——即无论投入多少资源都无法缩短的最短完成时间。作者以 libuv 构建与测试为例，展示该命令如何将 47 秒的关键路径按阶段、进程和线程逐层拆解，定位到 67% 的时间消耗在 epoll_pwait 和 clock_nanosleep 等休眠调用上，而非 CPU 计算。该功能深受 Brendan Gregg 数十年性能分析工作的启发，融合了 off-CPU 分析、wakeup 火焰图、colony graph 及 drag（拖拽）等核心概念。Rewind 的独特优势在于：确定性回放天然记录每次上下文切换与唤醒事件，无需像传统工具那样预先部署 eBPF 追踪并承受性能开销，任何一次运行都可事后精确复盘。用户可从关键路径跳转至任意时刻，用 gdb 在分叉的运行中调试到具体源码行；命令还支持导出 flamegraph 和 Perfetto 格式，便于与现有工具链对接。作者坦言这一功能并非原创，而是将 Gregg 早已提出的理念在确定性虚拟机上落地实现，以此作为一份献给性能分析先驱的\"祭品\"。"
+  },
+  {
+    "id": "50609483",
+    "title": "Calculate how many mesh radio nodes your city needs",
+    "url": "https://meshcoveragecalculator.lalala.ing/",
+    "summary": "文章之前已经处理过",
+    "chinese_title": "Calculate how many mesh radio nodes your city needs",
+    "chinese_summary": "文章之前已经处理过"
+  },
+  {
+    "id": "50629962",
+    "title": "The KL Divergence Is Never Negative, Except in PyTorch",
+    "url": "https://arxiv.org/abs/2611.30835",
+    "summary": "KL散度理论上恒非负，但PyTorch用户多年来频繁报告出现负值，常见建议是将其截断为零。本文指出负值仅是表象，背后是更深层的数值精度缺陷。作者在850万输入、18个闭式KL族及PyTorch的F.kl_div函数上以认证参考值展开全面测试，发现CPU与GPU上存在大面积的函数值与梯度错误。FP32下超过85%的值在KL约10⁻⁷量级时产生至少1%相对误差，约30%在更小散度时变为负值；FP16误差阈值升至10⁻³。提升一个精度等级仍无法根治，22/23种配置中7%–51%的FP32值仍有显著错误。作者提出稳定闭式分解、补偿算术与解析梯度等修复方案，可在工作精度下消除97%以上的显著错误；严格修复后，720万闭式样本与5.67亿F.kl_div分量均通过验证。这些误差实际影响了参数拟合、贝叶斯决策、相同起点知识蒸馏（top-1不一致高达97%）、量化大语言模型的KL层排序及GPT-2电路边分数（19%–59%受影响），修复后上述问题几乎全部消失。",
+    "chinese_title": "KL散度恒非负，PyTorch除外",
+    "chinese_summary": "KL散度理论上恒非负，但PyTorch用户多年来频繁报告出现负值，常见建议是将其截断为零。本文指出负值仅是表象，背后是更深层的数值精度缺陷。作者在850万输入、18个闭式KL族及PyTorch的F.kl_div函数上以认证参考值展开全面测试，发现CPU与GPU上存在大面积的函数值与梯度错误。FP32下超过85%的值在KL约10⁻⁷量级时产生至少1%相对误差，约30%在更小散度时变为负值；FP16误差阈值升至10⁻³。提升一个精度等级仍无法根治，22/23种配置中7%–51%的FP32值仍有显著错误。作者提出稳定闭式分解、补偿算术与解析梯度等修复方案，可在工作精度下消除97%以上的显著错误；严格修复后，720万闭式样本与5.67亿F.kl_div分量均通过验证。这些误差实际影响了参数拟合、贝叶斯决策、相同起点知识蒸馏（top-1不一致高达97%）、量化大语言模型的KL层排序及GPT-2电路边分数（19%–59%受影响），修复后上述问题几乎全部消失。"
+  },
+  {
+    "id": "50631157",
+    "title": "Microsoft declares 'Code Red' after historic outage, internal memos show",
+    "url": "https://www.reuters.com/business/microsoft-declares-code-red-after-historic-outage-internal-memos-show-2026-11-24/",
     "summary": "无法访问该文章链接",
-    "chinese_title": "GLM-5.4：以首个循环Transformer迈向通用编程",
+    "chinese_title": "微软因历史性宕机启动\"红色警报\"，内部备忘录披露",
     "chinese_summary": "无法访问该文章链接"
   },
   {
-    "id": "50611402",
-    "title": "NariQ: BF16-level Qwen3.8-27B in a 10 GB file",
-    "url": "https://huggingface.co/nari-labs/Qwen3.8-27B-NariQ-GGUF",
-    "summary": "本文提出一种名为 NariQ 的高效模型量化方案，将通义千问 Qwen3.8-27B（270 亿参数）大语言模型在仅 10 GB 存储体积内实现接近 BF16 全精度水平的推理质量。按 BF16 格式，27B 参数模型约需 54 GB 空间，NariQ 将体积压缩至约 1/5.4，在大幅降低存储与显存开销的同时将精度损失控制在可忽略范围。该方案面向端侧与消费级 GPU 部署场景，使原本依赖多卡或大显存的 27B 级模型得以在单张主流显卡乃至边缘设备上运行，显著降低大模型落地门槛。论文编号 2611.26157，发布于 5 天前，为当前大模型轻量化与高效推理方向提供了新的技术参考。",
-    "chinese_title": "NariQ：10 GB 内实现 BF16 级精度的 Qwen3.8-27B 模型",
-    "chinese_summary": "本文提出一种名为 NariQ 的高效模型量化方案，将通义千问 Qwen3.8-27B（270 亿参数）大语言模型在仅 10 GB 存储体积内实现接近 BF16 全精度水平的推理质量。按 BF16 格式，27B 参数模型约需 54 GB 空间，NariQ 将体积压缩至约 1/5.4，在大幅降低存储与显存开销的同时将精度损失控制在可忽略范围。该方案面向端侧与消费级 GPU 部署场景，使原本依赖多卡或大显存的 27B 级模型得以在单张主流显卡乃至边缘设备上运行，显著降低大模型落地门槛。论文编号 2611.26157，发布于 5 天前，为当前大模型轻量化与高效推理方向提供了新的技术参考。"
+    "id": "50604355",
+    "title": "Cento fine foods has been sued for “tomato fraud”",
+    "url": "https://slate.com/life/2026/11/cento-san-marzano-tomato-sauce-recipes-lawsuit.html",
+    "summary": "美国新泽西州食品企业Cento Fine Foods遭消费者起诉，索赔2500万美元，指控其罐装番茄虚标\"圣马扎诺\"（San Marzano）产地。圣马扎诺番茄产自意大利维苏威火山周边，受欧盟DOP认证严格保护，品质出众，市价远高于普通番茄。原告指出，Cento曾是意大利圣马扎诺认证联盟成员，2010年因伪造DOP标签、仿冒农民签名等欺诈行为遭意大利警方突击搜查，查获14.4万罐违规产品，相关责任人被判刑，Cento亦被逐出联盟。此后Cento转而依靠第三方机构Bioagricert进行认证，但该公司技术经理明确表示，其仅认证供应链可追溯性，并不认定产品为真正的圣马扎诺番茄，且认证仅在意大利境内有效。番茄运抵美国后为无标签状态，\"San Marzano\"及\"Certified\"字样均由Cento自行加贴。由于美国无PDO产地保护制度，消费者只能以虚假广告和消费欺诈为由维权。Cento方面否认全部指控，称诉请\"毫无根据\"，并已寻求法院尽快驳回。",
+    "chinese_title": "Cento因\"番茄欺诈\"遭2500万美元诉讼",
+    "chinese_summary": "美国新泽西州食品企业Cento Fine Foods遭消费者起诉，索赔2500万美元，指控其罐装番茄虚标\"圣马扎诺\"（San Marzano）产地。圣马扎诺番茄产自意大利维苏威火山周边，受欧盟DOP认证严格保护，品质出众，市价远高于普通番茄。原告指出，Cento曾是意大利圣马扎诺认证联盟成员，2010年因伪造DOP标签、仿冒农民签名等欺诈行为遭意大利警方突击搜查，查获14.4万罐违规产品，相关责任人被判刑，Cento亦被逐出联盟。此后Cento转而依靠第三方机构Bioagricert进行认证，但该公司技术经理明确表示，其仅认证供应链可追溯性，并不认定产品为真正的圣马扎诺番茄，且认证仅在意大利境内有效。番茄运抵美国后为无标签状态，\"San Marzano\"及\"Certified\"字样均由Cento自行加贴。由于美国无PDO产地保护制度，消费者只能以虚假广告和消费欺诈为由维权。Cento方面否认全部指控，称诉请\"毫无根据\"，并已寻求法院尽快驳回。"
   },
   {
-    "id": "50615308",
-    "title": "Dario is hyping the dangers so OSS models are illegal and *he* stays in control",
-    "url": "https://twitter.com/ylecun/status/2124550037912920090",
-    "summary": "摘要：X用户Hux于11月22日发文指出，Anthropic CEO Dario Amodei在国会听证会上公开警示开源AI模型的危险性。其核心逻辑是：闭源模型可由厂商实时监控用户行为、随时切断访问、划定安全红线；而一旦模型开源，这些\"刹车机制\"将彻底失效，模型脱离控制、无法收回。文章标题暗示，Dario此举并非纯粹出于安全关切，而是有意夸大风险，推动监管层将开源模型纳入限制甚至禁令，从而让以Anthropic为代表的闭源厂商维持行业主导地位与市场垄断。该帖以讽刺口吻揭示了闭源阵营与开源阵营之间的深层利益博弈。",
-    "chinese_title": "Dario夸大开源AI风险，意在推动禁令以巩固自身控制权",
-    "chinese_summary": "摘要：X用户Hux于11月22日发文指出，Anthropic CEO Dario Amodei在国会听证会上公开警示开源AI模型的危险性。其核心逻辑是：闭源模型可由厂商实时监控用户行为、随时切断访问、划定安全红线；而一旦模型开源，这些\"刹车机制\"将彻底失效，模型脱离控制、无法收回。文章标题暗示，Dario此举并非纯粹出于安全关切，而是有意夸大风险，推动监管层将开源模型纳入限制甚至禁令，从而让以Anthropic为代表的闭源厂商维持行业主导地位与市场垄断。该帖以讽刺口吻揭示了闭源阵营与开源阵营之间的深层利益博弈。"
+    "id": "50599458",
+    "title": "How a Mechanical Watch Keeps Time (Interactive 3D)",
+    "url": "https://martincmartin.github.io/slidev-stem/watches/article/1/",
+    "summary": "本文以交互式3D图示讲解机械表计时原理。机械表已有五百年历史，核心部件源自早期大教堂塔钟。文章依次介绍六大关键部件：游丝（约1675年，惠更斯发明）是计时核心，凭借弹性恢复力持续振荡；摆轮（约1364年）提供惯性与质量，将振荡降至齿轮可计数的节奏，并增强抗扰动能力，二者共同构成计时基准。擒纵机构（约1275年）将摆轮往复摆动转化为擒纵轮单向步进，每次摆动释放一齿，产生\"滴答\"声。齿轮系逐级减速：第四轮每分钟转一圈驱动秒针；经第三轮与中心轮两级减速（7½×8＝60），中心轮每小时转一圈驱动分针。动力源为主发条（约1430年），形似游丝但缓慢释放储能，经棘轮单向锁定后驱动齿轮鼓，推动整个传动系统。时针（约1350年）经3∶1与4∶1两级减速实现12∶1总减速，以空心管套于分针轴外，顺时针每日转两圈。文章还澄清了常见误解：秒针命名依据其所计量的单位，而非转动周期，其每转一圈恰为一分钟。",
+    "chinese_title": "机械表的计时原理（交互式3D演示）",
+    "chinese_summary": "本文以交互式3D图示讲解机械表计时原理。机械表已有五百年历史，核心部件源自早期大教堂塔钟。文章依次介绍六大关键部件：游丝（约1675年，惠更斯发明）是计时核心，凭借弹性恢复力持续振荡；摆轮（约1364年）提供惯性与质量，将振荡降至齿轮可计数的节奏，并增强抗扰动能力，二者共同构成计时基准。擒纵机构（约1275年）将摆轮往复摆动转化为擒纵轮单向步进，每次摆动释放一齿，产生\"滴答\"声。齿轮系逐级减速：第四轮每分钟转一圈驱动秒针；经第三轮与中心轮两级减速（7½×8＝60），中心轮每小时转一圈驱动分针。动力源为主发条（约1430年），形似游丝但缓慢释放储能，经棘轮单向锁定后驱动齿轮鼓，推动整个传动系统。时针（约1350年）经3∶1与4∶1两级减速实现12∶1总减速，以空心管套于分针轴外，顺时针每日转两圈。文章还澄清了常见误解：秒针命名依据其所计量的单位，而非转动周期，其每转一圈恰为一分钟。"
   },
   {
-    "id": "50615481",
-    "title": "Kagi Mail (public beta)",
-    "url": "https://blog.kagi.com/kagi-mail-public-beta",
-    "summary": "Kagi 正式发布私有邮箱与日历服务 Kagi Mail 公开测试版，提供 @kagimail.com 地址或支持绑定自有域名，60天免费试用，之后为99美元/年，已包含在 Kagi Ultimate 计划中。核心理念为快速、私密、安全，无广告、无监控、无数据贩卖；采用开放标准（IMAP、JMAP、CalDAV）与开源架构（Stalwart 服务器），可搭配任意兼容客户端，支持随时一键导出全部数据，离开后保留6个月访问权限，无锁定风险。基本功能含50GB存储、无限别名与域名、内置日历。智能方面支持自然语言分类、收件箱重点提醒、AI 邮件问答及新闻通讯聚合视图，所有 AI 功能可随时关闭。隐私上自动屏蔽追踪像素，提供发件人审批与钓鱼预警。团队与家庭用户可共享域名地址，支持 OIDC 登录。高级用户可使用快捷键、Sieve 规则及 MCP 服务器，并集成 Kagi 翻译与邮件助手。尚未推出的功能包括联系人管理、完整 Kagi 助手整合及原生移动应用，预计2027年陆续上线。Kagi 的愿景是打造\"愿意为孩子创建的第一封邮箱\"——让用户被当作人而非商品。",
-    "chinese_title": "Kagi Mail（公开测试版）",
-    "chinese_summary": "Kagi 正式发布私有邮箱与日历服务 Kagi Mail 公开测试版，提供 @kagimail.com 地址或支持绑定自有域名，60天免费试用，之后为99美元/年，已包含在 Kagi Ultimate 计划中。核心理念为快速、私密、安全，无广告、无监控、无数据贩卖；采用开放标准（IMAP、JMAP、CalDAV）与开源架构（Stalwart 服务器），可搭配任意兼容客户端，支持随时一键导出全部数据，离开后保留6个月访问权限，无锁定风险。基本功能含50GB存储、无限别名与域名、内置日历。智能方面支持自然语言分类、收件箱重点提醒、AI 邮件问答及新闻通讯聚合视图，所有 AI 功能可随时关闭。隐私上自动屏蔽追踪像素，提供发件人审批与钓鱼预警。团队与家庭用户可共享域名地址，支持 OIDC 登录。高级用户可使用快捷键、Sieve 规则及 MCP 服务器，并集成 Kagi 翻译与邮件助手。尚未推出的功能包括联系人管理、完整 Kagi 助手整合及原生移动应用，预计2027年陆续上线。Kagi 的愿景是打造\"愿意为孩子创建的第一封邮箱\"——让用户被当作人而非商品。"
+    "id": "50605361",
+    "title": "The new set of problems for engineers to solve",
+    "url": "https://www.katelynlesse.com/blog/new-problems-for-engineers-to-solve",
+    "summary": "在AI浪潮下，软件工程师正经历身份危机，但多智能体系统的崛起也带来了前所未有的机遇。智能体已从简单对话助手演进为可持久运行、协作分工的系统，未来有望攻克全球最复杂难题，但这也为软件工程带来四大核心挑战：一是基础设施需适配智能体特有的有状态、单实例、间歇性负载特征，现有Kubernetes等架构难以胜任，新运行时和沙箱方案仍在探索中；二是身份与权限体系亟待完善，包括智能体认证、代用户操作（OBO）场景下的同意机制，以及智能体间互信问题；三是安全与隔离面临严峻考验，智能体处理不可信代码与内容的特性使未修补漏洞风险急剧放大，跨智能体的提示注入更会扩大攻击面；四是需要有效的监控与紧急中止机制，涵盖跨智能体分布式追踪、全局熔断开关，以及区分正常探索与异常偏航的能力。文章最后呼吁工程师不必因AI冲击而焦虑，这些高度开放的问题恰恰是发挥技术深度、推动世界安全利用AI解决重大难题的历史性机遇。",
+    "chinese_title": "工程师亟待解决的全新挑战",
+    "chinese_summary": "在AI浪潮下，软件工程师正经历身份危机，但多智能体系统的崛起也带来了前所未有的机遇。智能体已从简单对话助手演进为可持久运行、协作分工的系统，未来有望攻克全球最复杂难题，但这也为软件工程带来四大核心挑战：一是基础设施需适配智能体特有的有状态、单实例、间歇性负载特征，现有Kubernetes等架构难以胜任，新运行时和沙箱方案仍在探索中；二是身份与权限体系亟待完善，包括智能体认证、代用户操作（OBO）场景下的同意机制，以及智能体间互信问题；三是安全与隔离面临严峻考验，智能体处理不可信代码与内容的特性使未修补漏洞风险急剧放大，跨智能体的提示注入更会扩大攻击面；四是需要有效的监控与紧急中止机制，涵盖跨智能体分布式追踪、全局熔断开关，以及区分正常探索与异常偏航的能力。文章最后呼吁工程师不必因AI冲击而焦虑，这些高度开放的问题恰恰是发挥技术深度、推动世界安全利用AI解决重大难题的历史性机遇。"
   },
   {
-    "id": "50587439",
-    "title": "Spacecraft reaches Mercury on second-ever mission to enter its orbit",
-    "url": "https://www.theguardian.com/science/2026/nov/20/spacecraft-mercury-second-ever-mission-orbit-bepicolombo",
+    "id": "50620831",
+    "title": "The search for a top dark matter candidate",
+    "url": "https://www.smithsonianmag.com/science-nature/the-search-for-a-top-dark-matter-candidate-was-losing-hope-then-came-a-potential-signal-will-it-be-enough-to-energize-the-struggling-field-180989923/",
+    "summary": "意大利格兰萨索国家实验室的物理学家正全力确认今年9月美国LZ实验发布的疑似暗物质信号。LZ实验在拓展搜索高能碰撞参数时，发现一个超出预期背景的数据点，暗示暗物质粒子可能比预想更重，且碰撞后以不同形态退出，无法用已知背景事件解释。该发现引发全球物理学界关注与大量理论讨论，但单个数据点远不足以构成确凿发现。因灵敏度相当，格兰萨索的XENONnT实验（9.5吨液态氙探测器）正紧急回溯近两年数据，试图复现该信号，预计数月内公布结果。科学家普遍保持谨慎，强调\"数据说话\"。弱相互作用大质量粒子（WIMP）作为暗物质首要候选者，数十年间始终未被确认探测，领域面临中微子背景噪声日益严重、科研资金缩减等挑战，部分物理学家已转向轴子等替代方案。LZ的信号为这一领域注入新动力，但技术瓶颈与资金困境依然严峻，暗物质探测前景仍充满不确定性。",
+    "chinese_title": "追寻暗物质首要候选粒子",
+    "chinese_summary": "意大利格兰萨索国家实验室的物理学家正全力确认今年9月美国LZ实验发布的疑似暗物质信号。LZ实验在拓展搜索高能碰撞参数时，发现一个超出预期背景的数据点，暗示暗物质粒子可能比预想更重，且碰撞后以不同形态退出，无法用已知背景事件解释。该发现引发全球物理学界关注与大量理论讨论，但单个数据点远不足以构成确凿发现。因灵敏度相当，格兰萨索的XENONnT实验（9.5吨液态氙探测器）正紧急回溯近两年数据，试图复现该信号，预计数月内公布结果。科学家普遍保持谨慎，强调\"数据说话\"。弱相互作用大质量粒子（WIMP）作为暗物质首要候选者，数十年间始终未被确认探测，领域面临中微子背景噪声日益严重、科研资金缩减等挑战，部分物理学家已转向轴子等替代方案。LZ的信号为这一领域注入新动力，但技术瓶颈与资金困境依然严峻，暗物质探测前景仍充满不确定性。"
+  },
+  {
+    "id": "50629555",
+    "title": "'Castles' Review",
+    "url": "https://www.wsj.com/arts-culture/books/castles-review-playing-defense-da10d776?st=tR9KT4&reflink=desktopwebshare_permalink",
+    "summary": "无法访问该文章链接。",
+    "chinese_title": "《城堡》书评",
+    "chinese_summary": "无法访问该文章链接。"
+  },
+  {
+    "id": "50627836",
+    "title": "Anthropic breaks below $83 IPO price",
+    "url": "https://www.bloomberg.com/news/articles/2026-11-24/anthropic-breaks-below-83-ipo-price-in-premarket-trading",
     "summary": "无法访问该文章链接",
-    "chinese_title": "探测器抵达水星，成史上第二个进入水星轨道的航天任务",
+    "chinese_title": "Anthropic股价跌破83美元IPO发行价",
     "chinese_summary": "无法访问该文章链接"
   },
   {
-    "id": "50616933",
-    "title": "Apple removed my open-source app from EU App Stores after 9 years",
-    "url": "https://github.com/glushchenko/fsnotes/discussions/2056",
-    "summary": "独立开发者、开源笔记应用FSNotes的作者Glushchenko在GitHub发布公开信，反映其应用被苹果从所有欧洲应用商店移除，且苹果对其支持请求长期沉默。FSNotes是一款macOS和iOS笔记应用，已开发运营9年。事件起因是10月销售款未能到账，开发者于11月5日和17日分别提交两个工单，但截至发帖未获任何回复。他表示已完成欧盟《数字服务法》合规信息，并提交了乌克兰政府商业注册文件，其身份为乌克兰合法注册的个体经营者。然而，应用排名与搜索可见性正持续流失，即使恢复上架也难以挽回损失。开发者指出，当前乌克兰开发者面临的经营环境极为艰难，\"感觉像是乌克兰在受制裁，而非俄罗斯\"。FSNotes源码仍可在GitHub免费获取，但缺乏收入将难以维持项目生存。他并非要求特殊待遇，只希望有人审阅文件、说明限制原因并给予解决机会。该帖获28个点赞，并已转载至Hacker News和X平台。",
-    "chinese_title": "开发9年的开源应用遭苹果从欧洲应用商店下架",
-    "chinese_summary": "独立开发者、开源笔记应用FSNotes的作者Glushchenko在GitHub发布公开信，反映其应用被苹果从所有欧洲应用商店移除，且苹果对其支持请求长期沉默。FSNotes是一款macOS和iOS笔记应用，已开发运营9年。事件起因是10月销售款未能到账，开发者于11月5日和17日分别提交两个工单，但截至发帖未获任何回复。他表示已完成欧盟《数字服务法》合规信息，并提交了乌克兰政府商业注册文件，其身份为乌克兰合法注册的个体经营者。然而，应用排名与搜索可见性正持续流失，即使恢复上架也难以挽回损失。开发者指出，当前乌克兰开发者面临的经营环境极为艰难，\"感觉像是乌克兰在受制裁，而非俄罗斯\"。FSNotes源码仍可在GitHub免费获取，但缺乏收入将难以维持项目生存。他并非要求特殊待遇，只希望有人审阅文件、说明限制原因并给予解决机会。该帖获28个点赞，并已转载至Hacker News和X平台。"
+    "id": "50611613",
+    "title": "Gnomon: Git for Postgres Data",
+    "url": "https://gnomon.bitsinfra.com/",
+    "summary": "Gnomon 是一款 PostgreSQL 扩展，为数据库提供分支、历史追踪、三路合并与撤销能力，核心面向 AI agent 场景。最大特点是在现有 Postgres 实例内运行，无需副本或第二套数据库；分支仅记录增量变更，不复制数据，无论库多大均能瞬间开启。应用无需改造，只需将会话指向分支即可读写。\n\n基本流程：安装扩展、启用表追踪、创建并切换分支、执行变更、查看逐行逐字段 diff，确认后合并或一键撤销。面向 agent 时，一条命令即可分配独立角色、专属分支及连接串，Postgres 在底层强制隔离，agent 无法触及主分支。合并支持行数上限、表范围限定及自定义校验规则，冲突以行级呈现。\n\n集成方面，提供 TypeScript 与 Python SDK 及 Node、Go、Ruby、Java、Elixir、.NET、PHP 等多语言绑定，让 agent 每次任务运行在独立分支上，可合并、送审或丢弃。此外还配备 MCP 服务器、变更数据流（对接 Kafka、NATS、Webhook）、时间旅行查询、字段级 blame、bisect 调试，以及 SQL/CLI 参考与生产运维指南。",
+    "chinese_title": "Gnomon：PostgreSQL 数据的 Git",
+    "chinese_summary": "Gnomon 是一款 PostgreSQL 扩展，为数据库提供分支、历史追踪、三路合并与撤销能力，核心面向 AI agent 场景。最大特点是在现有 Postgres 实例内运行，无需副本或第二套数据库；分支仅记录增量变更，不复制数据，无论库多大均能瞬间开启。应用无需改造，只需将会话指向分支即可读写。\n\n基本流程：安装扩展、启用表追踪、创建并切换分支、执行变更、查看逐行逐字段 diff，确认后合并或一键撤销。面向 agent 时，一条命令即可分配独立角色、专属分支及连接串，Postgres 在底层强制隔离，agent 无法触及主分支。合并支持行数上限、表范围限定及自定义校验规则，冲突以行级呈现。\n\n集成方面，提供 TypeScript 与 Python SDK 及 Node、Go、Ruby、Java、Elixir、.NET、PHP 等多语言绑定，让 agent 每次任务运行在独立分支上，可合并、送审或丢弃。此外还配备 MCP 服务器、变更数据流（对接 Kafka、NATS、Webhook）、时间旅行查询、字段级 blame、bisect 调试，以及 SQL/CLI 参考与生产运维指南。"
   },
   {
-    "id": "50594935",
-    "title": "Derivative Flipping",
-    "url": "http://blog.sigfpe.com/2026/11/derivative-flipping.html",
-    "summary": "摘要：本文探讨自动微分的一种新视角，核心思想是将微分算子与被微分表达式的角色互换。作者先以Brzozowski正则表达式求导为引子，将其类比到多项式微积分中，定义配对⟨p,q⟩为p作为微分算子作用于q后在零点求值。两个关键定理为：⟨p,xᵢq⟩=⟨∂ᵢp,q⟩（移位性质），以及⟨p,q⟩=⟨q,p⟩（对称性）。后者意味着可将复杂函数与简单算子配对，也可将复杂算子作用于简单函数，而中间结果的复杂度始终有界。以二维拉普拉斯算子为例，仅需求解四个系数的线性组合，无需维护完整Hessian矩阵。作者用Haskell实现了该配对运算，验证了两种配对顺序结果一致。此方法即作者早年提出的\"无穷小平方根\"计算误差法，后被folx库优化并广泛应用于物理信息神经网络(PINN)和变分蒙特卡洛(VMC)等领域。作者还指出该翻转思想在量子力学（算子与态的角色互换）及影子演算(umbral calculus)中亦有体现，并提及Taylor模式AD的压缩工作，认为这些AD问题早在百年前已有相关代数结构加以解决。",
-    "chinese_title": "导数翻转",
-    "chinese_summary": "摘要：本文探讨自动微分的一种新视角，核心思想是将微分算子与被微分表达式的角色互换。作者先以Brzozowski正则表达式求导为引子，将其类比到多项式微积分中，定义配对⟨p,q⟩为p作为微分算子作用于q后在零点求值。两个关键定理为：⟨p,xᵢq⟩=⟨∂ᵢp,q⟩（移位性质），以及⟨p,q⟩=⟨q,p⟩（对称性）。后者意味着可将复杂函数与简单算子配对，也可将复杂算子作用于简单函数，而中间结果的复杂度始终有界。以二维拉普拉斯算子为例，仅需求解四个系数的线性组合，无需维护完整Hessian矩阵。作者用Haskell实现了该配对运算，验证了两种配对顺序结果一致。此方法即作者早年提出的\"无穷小平方根\"计算误差法，后被folx库优化并广泛应用于物理信息神经网络(PINN)和变分蒙特卡洛(VMC)等领域。作者还指出该翻转思想在量子力学（算子与态的角色互换）及影子演算(umbral calculus)中亦有体现，并提及Taylor模式AD的压缩工作，认为这些AD问题早在百年前已有相关代数结构加以解决。"
-  },
-  {
-    "id": "50615520",
-    "title": "How should an LLM see a computer?",
-    "url": "https://www.greptile.com/blog/trex-computer-use",
-    "summary": "文章探讨大模型操作计算机时获取屏幕信息的最佳方式，以OSWorld基准对GPT-4o至GPT-6.1 Sol共七个模型进行三种模式对比：纯截图、截图加无障碍树（坐标点击）、截图加元素ID点击。坐标点击存在固有缺陷——模型需将视觉信息转写为精确像素，稍偏即点错，分辨率变化更使问题加剧；无障碍树源于上世纪八九十年代为视障人士设计的辅助技术，能让模型直接获知按钮名称与位置，绕开像素定位。关键发现是\"视模型能力而定\"：对GPT-6.1 Sol等最强模型，截图已足够（83.8%），加树或ID点击几乎无提升；但对GPT-4.1、GPT-5.2等较弱模型，树加ID点击可将得分提升数倍（GPT-5.2从15.8%升至52.8%）。此外，画布、游戏等无树覆盖场景及文本溢出等视觉Bug仍需截图兜底。基于实验，作者的产品TREX（面向PR的桌面级测试工具）采用混合策略：以截图为主，优先ID点击，树中无对应元素时退回坐标点击，并随新模型发布持续复测更新。",
-    "chinese_title": "大语言模型应如何\"看见\"电脑？",
-    "chinese_summary": "文章探讨大模型操作计算机时获取屏幕信息的最佳方式，以OSWorld基准对GPT-4o至GPT-6.1 Sol共七个模型进行三种模式对比：纯截图、截图加无障碍树（坐标点击）、截图加元素ID点击。坐标点击存在固有缺陷——模型需将视觉信息转写为精确像素，稍偏即点错，分辨率变化更使问题加剧；无障碍树源于上世纪八九十年代为视障人士设计的辅助技术，能让模型直接获知按钮名称与位置，绕开像素定位。关键发现是\"视模型能力而定\"：对GPT-6.1 Sol等最强模型，截图已足够（83.8%），加树或ID点击几乎无提升；但对GPT-4.1、GPT-5.2等较弱模型，树加ID点击可将得分提升数倍（GPT-5.2从15.8%升至52.8%）。此外，画布、游戏等无树覆盖场景及文本溢出等视觉Bug仍需截图兜底。基于实验，作者的产品TREX（面向PR的桌面级测试工具）采用混合策略：以截图为主，优先ID点击，树中无对应元素时退回坐标点击，并随新模型发布持续复测更新。"
-  },
-  {
-    "id": "50610743",
-    "title": "Win4wine – Run Windows Shell as the Linux Desktop on Wine",
-    "url": "https://github.com/mikuta0407/win4wine",
-    "summary": "Win4wine 是一个个人实验性项目，通过打了 151 个补丁的 Wine 11.0，在 Linux 桌面上运行 Windows XP 的 explorer.exe 作为桌面外壳，亦支持 ReactOS 及 Windows 7 外壳。项目仅验证于全新 Debian 13，不支持日常使用，建议在虚拟机中测试。主要特性包括：原生 XP 任务栏、开始菜单、桌面与文件夹窗口；Linux 应用自动套用 XP 窗口框架并集成至任务栏和 Alt+Tab；通知区域兼容 Linux 托盘图标及网络、音量、电池状态；支持 fcitx5 日语输入法与多语言键盘切换；XP 欢迎画面可作 LightDM 登录界面；支持 DPI 缩放、快速启动栏等。用户须自备 Windows ISO（无 ISO 可用免费 ReactOS），项目不含任何微软文件。架构由 LightDM、bridge-wm 窗口管理器及 151 项 Wine 补丁构成，另提供实验性 Wayland 会话。项目采用 LGPL-2.1 许可，与微软及 Wine 官方无关，风险自担。",
-    "chinese_title": "Win4wine：通过 Wine 在 Linux 上运行 Windows 桌面外壳",
-    "chinese_summary": "Win4wine 是一个个人实验性项目，通过打了 151 个补丁的 Wine 11.0，在 Linux 桌面上运行 Windows XP 的 explorer.exe 作为桌面外壳，亦支持 ReactOS 及 Windows 7 外壳。项目仅验证于全新 Debian 13，不支持日常使用，建议在虚拟机中测试。主要特性包括：原生 XP 任务栏、开始菜单、桌面与文件夹窗口；Linux 应用自动套用 XP 窗口框架并集成至任务栏和 Alt+Tab；通知区域兼容 Linux 托盘图标及网络、音量、电池状态；支持 fcitx5 日语输入法与多语言键盘切换；XP 欢迎画面可作 LightDM 登录界面；支持 DPI 缩放、快速启动栏等。用户须自备 Windows ISO（无 ISO 可用免费 ReactOS），项目不含任何微软文件。架构由 LightDM、bridge-wm 窗口管理器及 151 项 Wine 补丁构成，另提供实验性 Wayland 会话。项目采用 LGPL-2.1 许可，与微软及 Wine 官方无关，风险自担。"
-  },
-  {
-    "id": "50615161",
-    "title": "EasyPost (YC S13) Is Hiring",
-    "url": "https://www.easypost.com/careers/",
-    "summary": "EasyPost 是 Y Combinator S13 期孵化的物流科技公司，目前正面向全球展开招聘。公司致力于通过 AI 驱动的智能技术重塑物流行业，简化运输流程，改变全球货物运输方式。EasyPost 希望汇聚具有雄心壮志的问题解决者，共同构建面向未来的物流基础设施，助力各类企业更高效地完成商品流通与配送。应聘者可通过官方渠道查看当前开放职位。",
-    "chinese_title": "EasyPost（YC S13 期）诚聘英才",
-    "chinese_summary": "EasyPost 是 Y Combinator S13 期孵化的物流科技公司，目前正面向全球展开招聘。公司致力于通过 AI 驱动的智能技术重塑物流行业，简化运输流程，改变全球货物运输方式。EasyPost 希望汇聚具有雄心壮志的问题解决者，共同构建面向未来的物流基础设施，助力各类企业更高效地完成商品流通与配送。应聘者可通过官方渠道查看当前开放职位。"
-  },
-  {
-    "id": "50610318",
-    "title": "Nospeaker ─ Make your MacBook's trackpad talk using its haptic motor",
-    "url": "https://github.com/os6/nospeaker",
-    "summary": "Nospeaker 是 Cody Collier 开发的 macOS 创意项目，利用 MacBook 触控板内置的触觉电机产生可听声音，实现\"无声说话\"。原理是将电机驱动频率提升至每秒最高 4000 次，使玻璃面板高速振动发声——电脑静音时触控板依然能\"开口\"。工作流程：macOS 语音引擎将文本合成为音频，每 10 毫秒提取两个最强共振峰、响度与音高，由电机以两个正弦音播放，模拟人声振动。有效频率约 98 Hz 至 3.9 kHz，1 kHz 附近最清晰。安装仅需一行命令 curl -fsSL a90.com/nospeaker | sh，也可下载或源码构建。要求 2015 年后 MacBook 的 Force Touch 触控板或 Magic Trackpad 2 及以上，Apple Silicon 需 macOS 12+，Intel 需 macOS 13+。项目基于苹果私有 MultitouchSupport 框架，全部代码仅一个 Swift 文件、零依赖。声音偏机械感，但程序会同步显示文字辅助理解，采用 MIT 许可证。",
-    "chinese_title": "无声之语──让 MacBook 触控板借触觉电机开口说话",
-    "chinese_summary": "Nospeaker 是 Cody Collier 开发的 macOS 创意项目，利用 MacBook 触控板内置的触觉电机产生可听声音，实现\"无声说话\"。原理是将电机驱动频率提升至每秒最高 4000 次，使玻璃面板高速振动发声——电脑静音时触控板依然能\"开口\"。工作流程：macOS 语音引擎将文本合成为音频，每 10 毫秒提取两个最强共振峰、响度与音高，由电机以两个正弦音播放，模拟人声振动。有效频率约 98 Hz 至 3.9 kHz，1 kHz 附近最清晰。安装仅需一行命令 curl -fsSL a90.com/nospeaker | sh，也可下载或源码构建。要求 2015 年后 MacBook 的 Force Touch 触控板或 Magic Trackpad 2 及以上，Apple Silicon 需 macOS 12+，Intel 需 macOS 13+。项目基于苹果私有 MultitouchSupport 框架，全部代码仅一个 Swift 文件、零依赖。声音偏机械感，但程序会同步显示文字辅助理解，采用 MIT 许可证。"
-  },
-  {
-    "id": "50606192",
-    "title": "Free alternative TV network built from the Internet Archive's forgotten videos",
-    "url": "https://spelunkr.tv",
-    "summary": "本文介绍了一个名为 SPELUNKR 的免费替代电视网络项目，其定位为\"有线电视，但更怪\"。该项目从互联网档案馆（Internet Archive）中挖掘大量被遗忘、被边缘化的视频资源——包括过时的电视节目、公共领域影像、独立制作短片及各类冷门档案资料，将这些\"数字遗落物\"重新编排、串联，打造成一个风格怪诞、内容杂糅的另类频道。SPELUNKR 以完全免费的方式运作，无需传统有线电视订阅，任何人都可通过网络收看。它既是对早期电视文化的一种怀旧致敬，也是对主流媒体内容的反叛式回应，将那些原本无人问津的影像重新赋予观赏价值，营造出一种介于复古、迷幻与独立艺术之间的独特观感体验。该项目体现了互联网时代\"拾荒式\"媒体创作的可能：无需原创拍摄，仅靠对海量公共档案的重新组合与策展，即可构建出一套完整的电视化内容体系，为厌倦主流节目的人群提供一条迥异于常规频道之外的收看路径。",
-    "chinese_title": "免费另类电视台：源自互联网档案馆的遗落影像",
-    "chinese_summary": "本文介绍了一个名为 SPELUNKR 的免费替代电视网络项目，其定位为\"有线电视，但更怪\"。该项目从互联网档案馆（Internet Archive）中挖掘大量被遗忘、被边缘化的视频资源——包括过时的电视节目、公共领域影像、独立制作短片及各类冷门档案资料，将这些\"数字遗落物\"重新编排、串联，打造成一个风格怪诞、内容杂糅的另类频道。SPELUNKR 以完全免费的方式运作，无需传统有线电视订阅，任何人都可通过网络收看。它既是对早期电视文化的一种怀旧致敬，也是对主流媒体内容的反叛式回应，将那些原本无人问津的影像重新赋予观赏价值，营造出一种介于复古、迷幻与独立艺术之间的独特观感体验。该项目体现了互联网时代\"拾荒式\"媒体创作的可能：无需原创拍摄，仅靠对海量公共档案的重新组合与策展，即可构建出一套完整的电视化内容体系，为厌倦主流节目的人群提供一条迥异于常规频道之外的收看路径。"
-  },
-  {
-    "id": "50574412",
-    "title": "Show HN: Drive around my village in 3D",
-    "url": "https://cherwellvalleymotorclub.app",
-    "summary": "摘要：这是一则发布于 Hacker News 的\"Show HN\"项目展示帖，作者分享了一个可 3D 驾驶环游其所在村庄的互动应用。页面内容与\"切韦尔谷汽车俱乐部（Cherwell Valley Motor Club）\"相关，推测该项目以该俱乐部或所在社区为背景，提供沉浸式三维驾驶体验。目前页面内容仍处于\"加载中（Loading…）\"状态，尚未呈现完整功能细节或截图。总体而言，这是一项个人开发者打造的创意项目，旨在通过 3D 技术让用户在线体验乡村道路驾驶，兼具趣味性与社区展示意义。",
-    "chinese_title": "Show HN：3D 驾驶环游我的村庄",
-    "chinese_summary": "摘要：这是一则发布于 Hacker News 的\"Show HN\"项目展示帖，作者分享了一个可 3D 驾驶环游其所在村庄的互动应用。页面内容与\"切韦尔谷汽车俱乐部（Cherwell Valley Motor Club）\"相关，推测该项目以该俱乐部或所在社区为背景，提供沉浸式三维驾驶体验。目前页面内容仍处于\"加载中（Loading…）\"状态，尚未呈现完整功能细节或截图。总体而言，这是一项个人开发者打造的创意项目，旨在通过 3D 技术让用户在线体验乡村道路驾驶，兼具趣味性与社区展示意义。"
-  },
-  {
-    "id": "50607261",
-    "title": "XNU Linux: Full OS X GUI Userspace on Linux",
-    "url": "https://github.com/AFK-surf/xnulinux",
-    "summary": "XNU Linux 项目将 Apple 开源的 XNU 内核编译为可加载内核模块（xnu.ko），直接在未修改的 arm64 Linux 内核中运行，无需虚拟机管理程序。XNU 直接驱动 CPU 与 MMU，macOS 进程与 Linux 进程在同一组 CPU 上原生并行执行；Linux 则通过小型接口模块 fki.ko 向 XNU 提供内存、定时器、文件、网络与 GPU 支持。在标准 Ubuntu 内核上执行一条 insmod xnu.ko 即可启动 macOS 27 桌面，包括登录窗口、WindowServer、Dock、Finder、Safari 等。项目已在 Apple Silicon 的 arm64 Linux 虚拟机（macOS 27.2.1 启动至桌面仅需 31–48 秒）和 NVIDIA DGX Spark 裸机（4 核 / 8 GB，CPU 渲染）上通过验证，30 分钟压力测试无崩溃。GPU 方面，Metal 经 metal2vulkan 转译为 Vulkan，再通过 DRM 桥接至宿主机 GPU（Venus 驱动），无硬件桥接时回退至 CPU 渲染。代码按许可证严格分离：Linux 侧为 GPL-2.0，XNU 侧为 APSL-2.0，两侧仅通过 FKI 接口交互。",
-    "chinese_title": "XNU Linux：在 Linux 上运行完整 macOS 图形用户界面",
-    "chinese_summary": "XNU Linux 项目将 Apple 开源的 XNU 内核编译为可加载内核模块（xnu.ko），直接在未修改的 arm64 Linux 内核中运行，无需虚拟机管理程序。XNU 直接驱动 CPU 与 MMU，macOS 进程与 Linux 进程在同一组 CPU 上原生并行执行；Linux 则通过小型接口模块 fki.ko 向 XNU 提供内存、定时器、文件、网络与 GPU 支持。在标准 Ubuntu 内核上执行一条 insmod xnu.ko 即可启动 macOS 27 桌面，包括登录窗口、WindowServer、Dock、Finder、Safari 等。项目已在 Apple Silicon 的 arm64 Linux 虚拟机（macOS 27.2.1 启动至桌面仅需 31–48 秒）和 NVIDIA DGX Spark 裸机（4 核 / 8 GB，CPU 渲染）上通过验证，30 分钟压力测试无崩溃。GPU 方面，Metal 经 metal2vulkan 转译为 Vulkan，再通过 DRM 桥接至宿主机 GPU（Venus 驱动），无硬件桥接时回退至 CPU 渲染。代码按许可证严格分离：Linux 侧为 GPL-2.0，XNU 侧为 APSL-2.0，两侧仅通过 FKI 接口交互。"
-  },
-  {
-    "id": "50587286",
-    "title": "What's the difference between an integer and a pointer? (2018)",
-    "url": "https://blog.regehr.org/archives/1621",
-    "summary": "本文探讨C标准中整数与指针互转的语义问题。作者指出，C标准并未强制实现定义intptr_t和uintptr_t，也未要求整数到指针转换具有确定意义，实现完全可将所有此类转换标记为产生陷阱表示，从而回避相关问题。作者据此提出一种折中方案：实现仅在其能将整数转指针的结果视为具有\"官方未知来源\"的指针时，才定义intptr_t/uintptr_t，并允许该指针在以下任一条件触发前访问关联存储：一、通过非该转换派生的指针以冲突方式访问存储；二、派生出其他指针将导致冲突访问；三、执行到达函数入口或循环迭代起点时上述情形发生。无法支持此语义的实现可选择不定义这些类型。对于确实需要该类型但无需完整语义保障的场景，实现可允许用户预先定义宏__STDC_WAIVE_UINTPTR_GUARANTEES以放弃相关保证，从而兼顾灵活性与安全性。",
-    "chinese_title": "整数与指针有何区别？（2018）",
-    "chinese_summary": "本文探讨C标准中整数与指针互转的语义问题。作者指出，C标准并未强制实现定义intptr_t和uintptr_t，也未要求整数到指针转换具有确定意义，实现完全可将所有此类转换标记为产生陷阱表示，从而回避相关问题。作者据此提出一种折中方案：实现仅在其能将整数转指针的结果视为具有\"官方未知来源\"的指针时，才定义intptr_t/uintptr_t，并允许该指针在以下任一条件触发前访问关联存储：一、通过非该转换派生的指针以冲突方式访问存储；二、派生出其他指针将导致冲突访问；三、执行到达函数入口或循环迭代起点时上述情形发生。无法支持此语义的实现可选择不定义这些类型。对于确实需要该类型但无需完整语义保障的场景，实现可允许用户预先定义宏__STDC_WAIVE_UINTPTR_GUARANTEES以放弃相关保证，从而兼顾灵活性与安全性。"
-  },
-  {
-    "id": "50577534",
-    "title": "Let's Meet in the Middle",
-    "url": "https://george.mand.is/2026/11/lets-meet-in-the-middle/",
-    "summary": "作者热衷于打造\"小而美\"的命令行工具，理念是让每个工具专注做好一件事，再巧妙组合。文章介绍了两款 macOS 工具：whereami 可获取当前位置或对地址进行反向地理编码，输出坐标与地址的 JSON；nearme 基于 MapKit（Apple Maps 底层引擎），依据坐标搜索周边场所。两者通过管道无缝衔接——用 whereami 分别解析两个地址，经 jq 对经纬度取均值算出中点坐标，再由 nearme 搜索中点附近的咖啡馆、酒吧等，全程无需 API 密钥或浏览器。作者将这一流程封装为 shell 函数 middle，用户只需传入两个地址和搜索关键词即可，省略第二个地址则默认以自身位置为起点。文章也说明了局限：仅限 macOS；地理中点为简单的坐标平均，未考虑实际通勤时间；部分地标名称可能无法解析。最后附上 brew 安装命令及 Less Software 主页链接。",
-    "chinese_title": "来中点碰面吧",
-    "chinese_summary": "作者热衷于打造\"小而美\"的命令行工具，理念是让每个工具专注做好一件事，再巧妙组合。文章介绍了两款 macOS 工具：whereami 可获取当前位置或对地址进行反向地理编码，输出坐标与地址的 JSON；nearme 基于 MapKit（Apple Maps 底层引擎），依据坐标搜索周边场所。两者通过管道无缝衔接——用 whereami 分别解析两个地址，经 jq 对经纬度取均值算出中点坐标，再由 nearme 搜索中点附近的咖啡馆、酒吧等，全程无需 API 密钥或浏览器。作者将这一流程封装为 shell 函数 middle，用户只需传入两个地址和搜索关键词即可，省略第二个地址则默认以自身位置为起点。文章也说明了局限：仅限 macOS；地理中点为简单的坐标平均，未考虑实际通勤时间；部分地标名称可能无法解析。最后附上 brew 安装命令及 Less Software 主页链接。"
-  },
-  {
-    "id": "50611861",
-    "title": "Building a wireless network adapter for the Super Nintendo",
-    "url": "https://boland.dev/snet/",
-    "summary": "本文介绍作者为超级任天堂（SNES）设计并制作了一款通过手柄接口接入的无线网络适配器，无需外部供电，体积仅如打火机大小。作者以\"16位未来主义\"为理念，让这台1990年代初的机能实现现代网络连接。技术架构上，适配器基于RP2350A微控制器与ESP32-C3 Wi-Fi协处理器，二者通过UART通信：RP2350A以PIO状态机处理SNES手柄端口的5线同步串行总线（速率约30KB/s），ESP32-C3负责Wi-Fi与TCP/TLS连接；电源经LM66200理想二极管支持5V与USB-C双路供电。核心功能有二：一是存档同步，通过闪卡向ROM注入代码，将SRAM存档分块经手柄总线传至适配器并同步至WebDAV服务器，实现与手机RetroArch的存档互通，以哈希比对防止冲突覆盖；二是AI对话，借助《众神的三角力量》完整反汇编成果，将游戏上下文推送至Claude Opus 5.5，动态替换NPC固定台词，并以投机性生成缓存将模型响应延迟降至无感。外壳由build123d依PCB的STEP文件生成，3D打印成型，内置光导管将状态LED引至蚀刻Wi-Fi图标。项目于2026年11月完成从面包板原型到PCB量产的快速迭代。",
-    "chinese_title": "为超级任天堂打造无线网卡",
-    "chinese_summary": "本文介绍作者为超级任天堂（SNES）设计并制作了一款通过手柄接口接入的无线网络适配器，无需外部供电，体积仅如打火机大小。作者以\"16位未来主义\"为理念，让这台1990年代初的机能实现现代网络连接。技术架构上，适配器基于RP2350A微控制器与ESP32-C3 Wi-Fi协处理器，二者通过UART通信：RP2350A以PIO状态机处理SNES手柄端口的5线同步串行总线（速率约30KB/s），ESP32-C3负责Wi-Fi与TCP/TLS连接；电源经LM66200理想二极管支持5V与USB-C双路供电。核心功能有二：一是存档同步，通过闪卡向ROM注入代码，将SRAM存档分块经手柄总线传至适配器并同步至WebDAV服务器，实现与手机RetroArch的存档互通，以哈希比对防止冲突覆盖；二是AI对话，借助《众神的三角力量》完整反汇编成果，将游戏上下文推送至Claude Opus 5.5，动态替换NPC固定台词，并以投机性生成缓存将模型响应延迟降至无感。外壳由build123d依PCB的STEP文件生成，3D打印成型，内置光导管将状态LED引至蚀刻Wi-Fi图标。项目于2026年11月完成从面包板原型到PCB量产的快速迭代。"
-  },
-  {
-    "id": "50610334",
-    "title": "The next circle of security hell",
-    "url": "https://blogs.gentoo.org/mgorny/2026/10/27/the-next-circle-of-security-hell/",
-    "summary": "作者指出，软件安全形势非但未好转，反而持续恶化。漏洞报告以空前速度涌入，修补本身可能引入新问题，复杂的依赖树使维护者不堪重负。如今人人皆能借助AI提交报告，项目被海量漏洞信息淹没，众多赏金计划因AI生成的垃圾报告而被迫终止。安全判断充满灰色地带——拒绝服务是否构成漏洞取决于具体攻击场景，但工具无法处理这种细微差别，维护者被迫进行无意义的版本更新以消除安全扫描误报。更深层的问题在于，多数项目缺乏安全分支和长期支持，安全修复常与新功能、API变更混为一体，下游被迫仓促应对。当社区逼近崩溃临界点，人们将不再信赖他人，转而各自捆绑依赖，最终陷入\"各自为战\"的恶性循环，安全困境层层叠加、愈演愈烈。",
-    "chinese_title": "又一轮安全炼狱",
-    "chinese_summary": "作者指出，软件安全形势非但未好转，反而持续恶化。漏洞报告以空前速度涌入，修补本身可能引入新问题，复杂的依赖树使维护者不堪重负。如今人人皆能借助AI提交报告，项目被海量漏洞信息淹没，众多赏金计划因AI生成的垃圾报告而被迫终止。安全判断充满灰色地带——拒绝服务是否构成漏洞取决于具体攻击场景，但工具无法处理这种细微差别，维护者被迫进行无意义的版本更新以消除安全扫描误报。更深层的问题在于，多数项目缺乏安全分支和长期支持，安全修复常与新功能、API变更混为一体，下游被迫仓促应对。当社区逼近崩溃临界点，人们将不再信赖他人，转而各自捆绑依赖，最终陷入\"各自为战\"的恶性循环，安全困境层层叠加、愈演愈烈。"
-  },
-  {
-    "id": "50573996",
-    "title": "Crafting Targeted MP4 Fuzzers",
-    "url": "https://atredis.com/blog/2026/11/16/crafting-targeted-mp4-fuzzers/",
-    "summary": "摘要：MP4 文件以原子（box）树状结构组织，传统变异式模糊测试器（如 AFL++、libFuzzer）的随机插入与删除极易破坏祖先节点的尺寸字段，使解析器在早期校验即拒绝输入，难以触达深层代码。作者针对 GStreamer 的 isomp4 插件（qtdemux 解复用器）提出分层递进的模糊测试策略。首先，作者发现 OSS-Fuzz 中 MP4 覆盖率为零，遂本地构建通用 gst-discoverer 测试器，经 16–24 CPU 周运行，发现 5 个漏洞，涵盖堆越界读取（CVE-2025-47183、CVE-2025-47219）及 TMPlayer/SubRip 字幕解析中的空指针解引用与栈缓冲区溢出。其次，为消除格式漂移，作者改用仅含 qtdemux 的 GStreamer 管道（appsrc!qtdemux!fakesink），在运行时将变异收敛至 MP4，额外发现 PlayReady DRM 元数据导致的堆越界读取（CVE-2026-46471），可绕过 ASLR。最后，作者构建结构感知测试器，仅变异深层嵌套的 stsd（样本描述）原子，通过模板文件自动修正所有祖先原子的尺寸字段，保证整体结构合法，从而有效提升 qtdemux_parse_trak 等此前未覆盖区域的触达率。该方法为二进制格式模糊测试提供了可复用的\"局部变异＋结构修复\"范式。",
-    "chinese_title": "构建面向 MP4 容器的定向模糊测试器",
-    "chinese_summary": "摘要：MP4 文件以原子（box）树状结构组织，传统变异式模糊测试器（如 AFL++、libFuzzer）的随机插入与删除极易破坏祖先节点的尺寸字段，使解析器在早期校验即拒绝输入，难以触达深层代码。作者针对 GStreamer 的 isomp4 插件（qtdemux 解复用器）提出分层递进的模糊测试策略。首先，作者发现 OSS-Fuzz 中 MP4 覆盖率为零，遂本地构建通用 gst-discoverer 测试器，经 16–24 CPU 周运行，发现 5 个漏洞，涵盖堆越界读取（CVE-2025-47183、CVE-2025-47219）及 TMPlayer/SubRip 字幕解析中的空指针解引用与栈缓冲区溢出。其次，为消除格式漂移，作者改用仅含 qtdemux 的 GStreamer 管道（appsrc!qtdemux!fakesink），在运行时将变异收敛至 MP4，额外发现 PlayReady DRM 元数据导致的堆越界读取（CVE-2026-46471），可绕过 ASLR。最后，作者构建结构感知测试器，仅变异深层嵌套的 stsd（样本描述）原子，通过模板文件自动修正所有祖先原子的尺寸字段，保证整体结构合法，从而有效提升 qtdemux_parse_trak 等此前未覆盖区域的触达率。该方法为二进制格式模糊测试提供了可复用的\"局部变异＋结构修复\"范式。"
-  },
-  {
-    "id": "50609579",
-    "title": "Don't keep your SSH keys on disk",
-    "url": "https://jola.dev/posts/you-cant-afford-ssh-keys-disk",
-    "summary": "摘要：作者因近期频发的安全漏洞和企业数据泄露事件，开始全面审视个人系统的暴露面，精简了自托管服务、将大部分服务收归Tailscale内网并持续更新系统。随后将目光转向个人设备上的SSH密钥——尽管私钥已备份至Bitwarden密码管理器，但仍在磁盘上通过ssh-add加载，存在被恶意软件扫描窃取的风险。作者最终采用Bitwarden内置的SSH agent方案，将密钥彻底移出磁盘：先将现有密钥导入Bitwarden，启用SSH agent并设置vault锁定间隔，再在~/.ssh/config和终端配置中指向Bitwarden的agent套接字，最后删除磁盘上的密钥文件。文章还介绍了利用SSH密钥进行Git提交签名的配置方法，使每次推送需分别授权连接密钥与签名密钥。使用两周后，作者表示体验流畅，仅在vault锁定时需手动批准密钥使用，小遗憾是批准操作尚不支持Touch ID或回车确认，希望Bitwarden后续优化。整体而言，该方案兼顾安全与便利性，让作者更安心。",
-    "chinese_title": "请勿在磁盘上存储SSH密钥",
-    "chinese_summary": "摘要：作者因近期频发的安全漏洞和企业数据泄露事件，开始全面审视个人系统的暴露面，精简了自托管服务、将大部分服务收归Tailscale内网并持续更新系统。随后将目光转向个人设备上的SSH密钥——尽管私钥已备份至Bitwarden密码管理器，但仍在磁盘上通过ssh-add加载，存在被恶意软件扫描窃取的风险。作者最终采用Bitwarden内置的SSH agent方案，将密钥彻底移出磁盘：先将现有密钥导入Bitwarden，启用SSH agent并设置vault锁定间隔，再在~/.ssh/config和终端配置中指向Bitwarden的agent套接字，最后删除磁盘上的密钥文件。文章还介绍了利用SSH密钥进行Git提交签名的配置方法，使每次推送需分别授权连接密钥与签名密钥。使用两周后，作者表示体验流畅，仅在vault锁定时需手动批准密钥使用，小遗憾是批准操作尚不支持Touch ID或回车确认，希望Bitwarden后续优化。整体而言，该方案兼顾安全与便利性，让作者更安心。"
-  },
-  {
-    "id": "50603845",
-    "title": "A Beginner's Guide to Local AI with Inkling, Qwen, and Unsloth",
-    "url": "https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth",
-    "summary": "本文面向初学者，指导读者在Windows PC上免费搭建私有AI助手，替代云端ChatGPT。作者指出，面对云端模型涨价、限制增多及隐私隐忧，家庭自托管是更经济自由的选择。核心工具为Unsloth Desktop，无需终端命令，三步即可完成部署：安装软件、下载适配显存的量化模型、设置上下文窗口。文中解释了量化概念——降低精度以缩减模型体积，使其跑在消费级显卡上。按显存给出选型建议：8-12GB适合Qwen3.5-9B等小模型；16GB可运行MoE架构的Qwen3.6-35B；24GB推荐Qwen3.8-27B；32GB以上可运行128K上下文的UD-Q4_K_XL版本。作者使用RTX 5090（32GB）部署Qwen3.8-27B。新发布的Inkling 2 Mini（26.4B、1M上下文、Apache 2.0许可）同为32GB显卡佳选，而594B的Inkling 2 Small则需Mac Studio等统一内存设备。部署完成后，通过Unsloth内置LAN共享功能，家人即可在浏览器中访问该AI。作者预告后续将涵盖性能调优、公网隧道及本地智能代理等内容。",
-    "chinese_title": "本地AI入门指南：借助Unsloth部署Inkling与Qwen",
-    "chinese_summary": "本文面向初学者，指导读者在Windows PC上免费搭建私有AI助手，替代云端ChatGPT。作者指出，面对云端模型涨价、限制增多及隐私隐忧，家庭自托管是更经济自由的选择。核心工具为Unsloth Desktop，无需终端命令，三步即可完成部署：安装软件、下载适配显存的量化模型、设置上下文窗口。文中解释了量化概念——降低精度以缩减模型体积，使其跑在消费级显卡上。按显存给出选型建议：8-12GB适合Qwen3.5-9B等小模型；16GB可运行MoE架构的Qwen3.6-35B；24GB推荐Qwen3.8-27B；32GB以上可运行128K上下文的UD-Q4_K_XL版本。作者使用RTX 5090（32GB）部署Qwen3.8-27B。新发布的Inkling 2 Mini（26.4B、1M上下文、Apache 2.0许可）同为32GB显卡佳选，而594B的Inkling 2 Small则需Mac Studio等统一内存设备。部署完成后，通过Unsloth内置LAN共享功能，家人即可在浏览器中访问该AI。作者预告后续将涵盖性能调优、公网隧道及本地智能代理等内容。"
-  },
-  {
-    "id": "50605479",
-    "title": "Nespresso's project to reduce grams of coffee per capsule",
-    "url": "https://alvinbunk.wordpress.com/2026/11/01/nespresso-project-olympus/",
-    "summary": "2026年11月1日，咖啡博主Alvin Bunk公开揭露奈斯派索内部代号\"Project Olympus\"的项目——在保持口感不变的前提下减少每颗胶囊的咖啡克数。该信息于2026年8月由一名内部员工透露。项目文件显示，奈斯派索计划于2026年Q1至Q3通过优化研磨与烘焙技术，对Vertuo系列配方进行\"优化\"，官方声称口感、咖啡量及咖啡因含量均不变，仅胶囊重量略有减少。项目分两波推进：第一波涉及Double Espresso Scuro、Fortado等6款产品，第二波涉及Melezio、Stormio等8款产品，几乎覆盖全线，仅少量大容量胶囊未受影响。2026年9月初，Reddit上已有用户发现胶囊变轻并质疑配方变更，作者随即成为首位公开揭露者。消息曝光后，大量消费者表达不满，不少人表示将转向其他咖啡品牌。作者同时提供在线表格供用户追踪各款胶囊的减配比例，并开放捐赠页面支持其咖啡评测工作。",
-    "chinese_title": "奈斯派索胶囊咖啡减重计划（Project Olympus）",
-    "chinese_summary": "2026年11月1日，咖啡博主Alvin Bunk公开揭露奈斯派索内部代号\"Project Olympus\"的项目——在保持口感不变的前提下减少每颗胶囊的咖啡克数。该信息于2026年8月由一名内部员工透露。项目文件显示，奈斯派索计划于2026年Q1至Q3通过优化研磨与烘焙技术，对Vertuo系列配方进行\"优化\"，官方声称口感、咖啡量及咖啡因含量均不变，仅胶囊重量略有减少。项目分两波推进：第一波涉及Double Espresso Scuro、Fortado等6款产品，第二波涉及Melezio、Stormio等8款产品，几乎覆盖全线，仅少量大容量胶囊未受影响。2026年9月初，Reddit上已有用户发现胶囊变轻并质疑配方变更，作者随即成为首位公开揭露者。消息曝光后，大量消费者表达不满，不少人表示将转向其他咖啡品牌。作者同时提供在线表格供用户追踪各款胶囊的减配比例，并开放捐赠页面支持其咖啡评测工作。"
-  },
-  {
-    "id": "50584526",
-    "title": "Elixir HLS makes FPGA circuits from functions written in Elixir",
-    "url": "https://github.com/elixir-hls/elixir-hls",
-    "summary": "Elixir HLS 是一款高级综合（HLS）工具，将 Elixir 函数自动转换为 FPGA 电路。通过 defhls 定义的函数同时保留为普通 Elixir 函数（CPU 运行）和硬件电路，工具以函数运行结果作为电路规格，经模拟比对验证一致性。当前 0.1.0 版支持带状态、表、内存及固定循环的整数运算，以及 map、filter、transform、zip_with 等流操作；尚不支持除法、浮点数、递归与匿名函数。通过 definstance 可将函数部署为 FPGA 电路或 CPU 进程，支持 GPIO 引脚、事件触发与共享状态。首个目标平台为搭载 AtomVM 的 Sipeed Tang Primer 25K，演示项目为全硬件 FM 收音机调谐器。依赖 Elixir 1.18+、CIRCT 工具链及 Icarus Verilog，采用 Apache-2.0 协议。",
-    "chinese_title": "Elixir HLS：用 Elixir 函数生成 FPGA 电路",
-    "chinese_summary": "Elixir HLS 是一款高级综合（HLS）工具，将 Elixir 函数自动转换为 FPGA 电路。通过 defhls 定义的函数同时保留为普通 Elixir 函数（CPU 运行）和硬件电路，工具以函数运行结果作为电路规格，经模拟比对验证一致性。当前 0.1.0 版支持带状态、表、内存及固定循环的整数运算，以及 map、filter、transform、zip_with 等流操作；尚不支持除法、浮点数、递归与匿名函数。通过 definstance 可将函数部署为 FPGA 电路或 CPU 进程，支持 GPIO 引脚、事件触发与共享状态。首个目标平台为搭载 AtomVM 的 Sipeed Tang Primer 25K，演示项目为全硬件 FM 收音机调谐器。依赖 Elixir 1.18+、CIRCT 工具链及 Icarus Verilog，采用 Apache-2.0 协议。"
-  },
-  {
-    "id": "50584327",
-    "title": "Anatomia Di Tor – The Tor Protocol, Byte by Byte",
-    "url": "https://github.com/aleff-github/onion-routing-anatomy",
-    "summary": "摘要：本书为意大利语撰写的免费开源技术专著，深入解析Tor匿名网络协议，涵盖从字节级数据交换到设计取舍、真实攻击与开放问题的完整知识体系。全书31章、4个附录，含20个可复现实验、176道带解答习题及39幅原创图，分五部分：历史与基础、协议底层（加密、电路构建、分层加密、目录系统、洋葱服务等）、实践应用（torrc、Wireshark、Tor Browser等）、攻击与防御（流量关联、指纹识别、Sybil攻击）、研究前沿（Arti等）。作者Alessandro Greco将此书源起于学士论文，后经多年拓展，在AI工具辅助下完成叙述、图表与代码。所有实验在Docker内搭建的私有Tor网络上运行，绝不涉及公共网络。本书以GPL-3.0-or-later协议发布，已有英、西、俄、中四语AI翻译版本（未经母语审校）。作者声明此为独立作品，与Tor Project无隶属关系，未经独立专家评审，欢迎读者纠错与贡献。",
-    "chinese_title": "Tor协议解剖：逐字节解析",
-    "chinese_summary": "摘要：本书为意大利语撰写的免费开源技术专著，深入解析Tor匿名网络协议，涵盖从字节级数据交换到设计取舍、真实攻击与开放问题的完整知识体系。全书31章、4个附录，含20个可复现实验、176道带解答习题及39幅原创图，分五部分：历史与基础、协议底层（加密、电路构建、分层加密、目录系统、洋葱服务等）、实践应用（torrc、Wireshark、Tor Browser等）、攻击与防御（流量关联、指纹识别、Sybil攻击）、研究前沿（Arti等）。作者Alessandro Greco将此书源起于学士论文，后经多年拓展，在AI工具辅助下完成叙述、图表与代码。所有实验在Docker内搭建的私有Tor网络上运行，绝不涉及公共网络。本书以GPL-3.0-or-later协议发布，已有英、西、俄、中四语AI翻译版本（未经母语审校）。作者声明此为独立作品，与Tor Project无隶属关系，未经独立专家评审，欢迎读者纠错与贡献。"
-  },
-  {
-    "id": "50612686",
-    "title": "Cyberleek posted the GTA 6 Xbox build executable",
-    "url": "https://www.reddit.com/r/GamingLeaksAndRumours/comments/1y3jzqe/cyberleek_posted_the_gta_6_xbox_build_executable/",
-    "summary": "摘要：无法访问该文章链接。",
-    "chinese_title": "Cyberleek 发布了《GTA 6》Xbox 版可执行文件",
-    "chinese_summary": "摘要：无法访问该文章链接。"
-  },
-  {
-    "id": "50607668",
-    "title": "Yes, 17M lines of Lean is a lot",
-    "url": "https://micjm.com/blog/yes-17m-lines-of-lean-is-a-lot/",
-    "summary": "近期黎曼猜想的证明以1700万行Lean代码呈现，作者为此检索了Mathlib与Reservoir两个Lean证明数据库进行横向比较。Mathlib中259条含Lean代码的著名证明，长度均远不及此。Reservoir索引了938个含Lean代码的包，其中存在更大规模的项目：一个AI构建的未完成证明达8800万行；LeanBridge项目（3600万行）98%为脚本自动生成，手写部分仅约50万行；Anthropic于2025年9月发布的费马大定理AI证明达2700万行，较人类主导的6万行原始项目扩大了约450倍。文章同时指出，所用图表采用对数横轴，使1700万行在视觉上接近百万量级，实际差距远大于直觉。最终结论是：1700万行确实庞大，但在AI辅助证明迅速扩张的背景下，已有数倍于其的项目问世，人类能否独立理解与验证如此规模的证明正面临根本性挑战。",
-    "chinese_title": "是的，1700万行Lean代码确实很多",
-    "chinese_summary": "近期黎曼猜想的证明以1700万行Lean代码呈现，作者为此检索了Mathlib与Reservoir两个Lean证明数据库进行横向比较。Mathlib中259条含Lean代码的著名证明，长度均远不及此。Reservoir索引了938个含Lean代码的包，其中存在更大规模的项目：一个AI构建的未完成证明达8800万行；LeanBridge项目（3600万行）98%为脚本自动生成，手写部分仅约50万行；Anthropic于2025年9月发布的费马大定理AI证明达2700万行，较人类主导的6万行原始项目扩大了约450倍。文章同时指出，所用图表采用对数横轴，使1700万行在视觉上接近百万量级，实际差距远大于直觉。最终结论是：1700万行确实庞大，但在AI辅助证明迅速扩张的背景下，已有数倍于其的项目问世，人类能否独立理解与验证如此规模的证明正面临根本性挑战。"
-  },
-  {
-    "id": "50587750",
-    "title": "MRAM Basics: How Magnetic Memory Is Replacing Embedded Flash",
-    "url": "https://www.allaboutcircuits.com/technical-articles/mram-basics-how-magnetic-memory-is-replacing-embedded-flash/",
-    "summary": "MRAM以磁隧道结（MTJ）中自由层的磁化方向存储数据，替代闪存浮栅电荷存储方式。闪存因28nm以下需10V高压且与FinFET不兼容而停止微缩；MRAM仅需约3个额外掩膜，兼容22nm/16nm FinFET工艺，写入电压接近逻辑电平。\n\n性能上，MRAM写入约30ns、读取6ns，无需扇区擦除，可直接逐字覆写，寿命达百万次甚至无限制，是闪存的十倍以上。瑞萨RA8P1（22nm）集成1MB MRAM，NXP S32K5汽车MCU采用16nm FinFET MRAM。\n\n对固件设计而言，OTA更新与产线编程速度大幅提升，数据日志无需缓冲和磨损均衡，掉电丢数据风险显著降低。但设计时须核算写入频率与地址轮换（如每秒写一次需轮转千个地址）、确认磁场免疫能力（TSMC 22nm规格为1100Oe）、高温数据保持性及回流焊耐受性。28nm以下节点，嵌入式闪存已几乎不可用，MRAM正成为嵌入式非易失存储的主流选择。",
-    "chinese_title": "MRAM基础：磁性存储如何取代嵌入式闪存",
-    "chinese_summary": "MRAM以磁隧道结（MTJ）中自由层的磁化方向存储数据，替代闪存浮栅电荷存储方式。闪存因28nm以下需10V高压且与FinFET不兼容而停止微缩；MRAM仅需约3个额外掩膜，兼容22nm/16nm FinFET工艺，写入电压接近逻辑电平。\n\n性能上，MRAM写入约30ns、读取6ns，无需扇区擦除，可直接逐字覆写，寿命达百万次甚至无限制，是闪存的十倍以上。瑞萨RA8P1（22nm）集成1MB MRAM，NXP S32K5汽车MCU采用16nm FinFET MRAM。\n\n对固件设计而言，OTA更新与产线编程速度大幅提升，数据日志无需缓冲和磨损均衡，掉电丢数据风险显著降低。但设计时须核算写入频率与地址轮换（如每秒写一次需轮转千个地址）、确认磁场免疫能力（TSMC 22nm规格为1100Oe）、高温数据保持性及回流焊耐受性。28nm以下节点，嵌入式闪存已几乎不可用，MRAM正成为嵌入式非易失存储的主流选择。"
+    "id": "50608343",
+    "title": "SeaStore: Redesigning Ceph's Storage Back End for CPU-Efficient NVMe Performance",
+    "url": "https://dl.acm.org/doi/10.1145/3828523.3857112",
+    "summary": "无法访问该文章链接",
+    "chinese_title": "SeaStore：面向CPU高效NVMe性能的Ceph存储后端重构",
+    "chinese_summary": "无法访问该文章链接"
   }
 ]
