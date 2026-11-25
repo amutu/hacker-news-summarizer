@@ -1,0 +1,304 @@
+# Hacker News 热门文章摘要 (2026-11-26)
+
+这是今日 [Hacker News](https://news.ycombinator.com/) 上最热门的文章摘要。
+
+## 1. 1Password 安全事件通报
+
+**原文标题**: 1Password Security Incident
+
+**原文链接**: [https://1password.com/blog/update-on-nov-2026-security-incident](https://1password.com/blog/update-on-nov-2026-security-incident)
+
+2026年11月19日，1Password发现攻击者入侵一名员工的GitHub账户，获取源代码并向后端服务推送恶意代码，下载了部分用户的管理数据，包括姓名、邮箱、账户标识、创建及最后登录时间、公开密钥、SRP协议参数及邀请与恢复令牌等。攻击者还获取了私有代码仓库和CI/CD系统权限，但源代码中不含用户机密。1Password强调，客户保险库内容及其加密密钥从未被访问或暴露。公司随即采取多项措施：禁用涉事GitHub账户、撤销被盗令牌、轮换所有可能暴露的内部凭证、将邀请和恢复邮件中的验证码从6位数字升级为10位字母数字以防止暴力破解、收紧GitHub与CI/CD管控并部署新检测机制，同时引入独立安全专家验证响应与修复方案。官方建议用户警惕涉及1Password的钓鱼邮件、短信或电话，切勿向任何外部渠道提供账户密码或密钥，发现可疑情况请联系support@1password.com。
+
+---
+
+## 2. 天哪！天哪！天哪！天哪！——我们正目睹何等惊天巨变
+
+**原文标题**: Holy shit holy shit holy shit holy shit: The magnitude of what’s now happening
+
+**原文链接**: [https://scottaaronson.blog/?p=10379](https://scottaaronson.blog/?p=10379)
+
+摘要：本文设定于2026年感恩节，作者以极度震撼的口吻记录AI公司（OpenAI、Anthropic、Google）在数周内在理论计算机科学与数学领域的连串突破：VP≠VNP的严格证明、黎曼猜想的证成、矩阵乘法指数ω被确定为9/4（首次获得匹配的下界，终结了自Strassen以来半个多世纪的悬念）、傅里叶变换复杂度进一步改进并附匹配下界、QIP(2)=PSPACE、子指数级确定性整数分解算法、超线性布尔电路下界等。这些结果均附Lean形式化证明证书，且正以GitHub上传方式持续发布。作者认为，这些成果不再是零散的里程碑，而是如同伽利略第一次用望远镜望向星空——人类对数学真理的分辨率发生了质的飞跃，P≠NP的证明已为时不远。他同时坦言，AI实验室可能已掌握可破解现有密码体系的算法，但强调不应让密码学话题遮蔽智力层面的革命性意义。评论区中，学者们讨论新论文的可读性、Lean验证的供应链风险、TCS研究生是否仍值得申请，以及面对这一"奇异点"般时刻，人类应保持清醒与感恩。全文在狂喜与不安交织中，呼吁读者珍惜当下、共同塑造一个人类与子女仍可幸福生活的未来。
+
+---
+
+## 3. 几个问题，问那位在好市多蓄水池里浮潜的生物学家
+
+**原文标题**: A few questions for the guy who went snorkeling in a Home Depot retention pond
+
+**原文链接**: [https://www.vox.com/down-to-earth/511999/home-depot-retention-pond-snorkel-joseph-ricketts](https://www.vox.com/down-to-earth/511999/home-depot-retention-pond-snorkel-joseph-ricketts)
+
+佛罗里达鳄鱼研究生物学家兼YouTuber约瑟夫·里克茨在自家附近好市多超市旁的雨水蓄水池中夜潜，拍下水蛇、蝌蚪、匙指虾、蜻蜓等生物画面，视频获超200万播放。蓄水池是城市化进程中替代自然湿地、汇集暴雨径流的设施。里克茨借此探讨城市生态学：许多物种能适应城市有限水域生存，但这种"韧性"不应成为放任湿地消失的理由，保护大型原始栖息地同样关键。他提出"自然荒漠"概念——对部分城市居民而言，蓄水池可能是一生中唯一可亲近自然的场所，值得守护。他希望人们能在意想不到的角落发现自然之美，也关注那些不易引发共鸣的小型无脊椎动物与蛇类，它们同样具有内在价值。
+
+---
+
+## 4. 多项式Hirsch猜想被证伪
+
+**原文标题**: The polynomial Hirsch conjecture is false [pdf]
+
+**原文链接**: [https://github.com/openai/math/blob/main/preprints/Superpolynomial-graph-diameter-of-simple-polytopes-November-24-2026/paper.pdf](https://github.com/openai/math/blob/main/preprints/Superpolynomial-graph-diameter-of-simple-polytopes-November-24-2026/paper.pdf)
+
+多项式Hirsch猜想是组合几何与多面体理论中长期悬而未决的核心问题，由Hirsch于1956年提出，断言任意d维、n个顶点的单纯形（simplicial polytope）的图直径不超过n的多项式函数。该猜想由Klee推广后引起广泛关注，成为该领域最具标志性的开放问题之一。本文给出了该猜想的反例，证明多项式Hirsch猜想不成立。作者通过精心构造一族高维单纯形，展示了其图直径可随维度呈指数增长，从而彻底否定了多项式上界的存在性。这一结果不仅终结了持续六十余年的猜想，也深刻揭示了单纯形组合结构的复杂性远超此前预期，对多面体理论、线性规划中单纯形法的迭代步数分析以及相关组合优化问题产生了深远影响。论文以PDF形式发布，为后续研究提供了完整的构造细节与证明过程。
+
+---
+
+## 5. 英国"幽灵车站"
+
+**原文标题**: Britain's ghost stations
+
+**原文链接**: [https://spectator.com/article/britains-ghost-stations-are-fascinating/](https://spectator.com/article/britains-ghost-stations-are-fascinating/)
+
+本文以作者探访苏格兰高地Achanalt站的经历为引，展现英国一批使用率极低、几近废弃的"幽灵车站"。据最新数据，该站全年仅352人次进出，而全国使用量最低的大曼彻斯特Reddish South站全年仅94人次。文章将此类车站归为两类：一是上世纪70年代Beeching关站计划时期，因公众反对且关闭程序成本过高，铁路公司索性仅维持极低频次服务；二是虽设有多趟班车，但当地几乎无居民，如Achanalt附近仅有四户人家。文章以幽默笔调讽刺这一荒诞现象——偏远小站被保留，人口数十万的Dudley和Mansfield却曾被取消铁路服务。最极端的例子是Altnabreac站，方圆五英里仅存一栋前车站房，房主竟拒绝铁路工人进站维修，引发数月对峙与诉讼，导致该线一度全线停运，全年旅客数归零。如今服务恢复，全年也仅172人次使用。
+
+---
+
+## 6. SSH即图形界面框架
+
+**原文标题**: SSH is a GUI framework
+
+**原文链接**: [https://zydra.sh/articles/ssh-is-a-gui-framework/](https://zydra.sh/articles/ssh-is-a-gui-framework/)
+
+摘要：作者Hasan Madi提出SSH是一种被忽视的跨平台图形渲染引擎，终端协议已在SSH之上扩展出图形、剪贴板、通知、鼠标等能力。他据此构建了zydra.sh——一个完全基于SSH渲染的微虚拟机桌面环境，用户可通过`ssh zydra.sh`直接访问。文章系统梳理了相关终端协议：Kitty图形协议（支持压缩、VRAM及动画）取代了Sixel和iTerm2协议；OSC 99/777/9提供多级通知回退；OSC 52/5522实现双向剪贴板及图像传输；CSI序列支持鼠标追踪与同步渲染；Kitty还支持文件上传。性能优化方面，作者采用文本与图形混合叠加、网格化差分更新、去除不必要透明度（节省25%带宽）、动态降分辨率及客户端预缓存等策略，并设计了从Sixel到纯ASCII的多级回退机制以兼容旧终端。与VNC和Web应用相比，SSH具备密钥认证、嵌套连接、sshfs本地挂载及纯TTY可访问等独特优势，但音频支持和移动端体验仍是短板，作者已推出Web版compositor加以弥补。最终目标是构建一个无"云摩擦"的云端电脑与智能体沙盒。
+
+---
+
+## 7. 电视会太大吗？——一次亲身探究
+
+**原文标题**: Can a TV be too large? An investigation
+
+**原文链接**: [https://techcrunch.com/2026/11/22/can-a-tv-be-too-large-an-investigation/](https://techcrunch.com/2026/11/22/can-a-tv-be-too-large-an-investigation/)
+
+摘要：作者将服役多年的55英寸TCL电视升级为65英寸LG evo C4 OLED电视。OLED凭借数百万自发光像素，在色彩、明暗对比和像素控制上远胜传统LED，但价格也更高。升级后，作者在家观看4K蓝光碟《麦卡比与米勒太太》时突感强烈恶心与头痛，持续数小时。查阅Reddit等社区后发现，不少新OLED用户有类似"大脑被搞坏"的体验，但原因尚无定论：有人归咎于运动平滑设置，有人认为是观看距离过近，也有人怀疑屏幕亮度刺激了眼睛。作者猜测，大屏需眼球频繁移动捕捉全画面，在动态场景中产生类似紧盯移动车窗外景物的眩晕感。数天后眼睛逐渐适应，不适消失，观影体验极佳。文章也提醒买家注意客厅空间是否足以容纳大屏，并指出C4缺乏详细安装说明，65英寸屏幕需两人协作搬运组装。总体而言，LG evo C4画质出色，"导演模式"等功能大幅提升家庭影院体验，但新用户可能需经历短暂的生理适应期。
+
+---
+
+## 8. Windows 响度均衡的逆向工程与 PipeWire 移植
+
+**原文标题**: Windows Loudness Equalization, reverse-engineered and ported to PipeWire
+
+**原文链接**: [https://github.com/xoxorwr/pw-loudness-eq](https://github.com/xoxorwr/pw-loudness-eq)
+
+摘要：本项目将 Windows 的响度均衡功能从 WMALFXGFXDSP.dll 逆向还原并移植至 PipeWire，使各应用播放音量趋于一致。项目含三部分：响度均衡模块（对每个应用播放流施加宽带自动增益控制）、输出限制器（移植自 AudioEng.dll，防止增益提升导致削波）及可选 GTK3 控制窗口（支持全局或逐应用开关、调节释放时间）。安装需 PipeWire ≥ 1.4，通过 make 编译后重启服务即可；设置存于 PipeWire 元数据对象，可用 pw-metadata 命令行脚本操作，运行时修改即时生效且跨重启保留。算法核心为宽带 AGC：以 512 点帧、50% 重叠进行加窗 FFT，功率归入 25 个频带后按加权公式计算响度，目标增益上限 +20 dB，降低时瞬时到位，提升时按释放时间平滑过渡（默认约 4.6 秒时间常数）。限制器采用 64 帧前瞻，峰值超 0.985 时线性衰减增益，恢复速率约 19 dB/s。JACK 客户端、超 8 通道流及直接调用 PipeWire 的 Flatpak 应用不经过处理。
+
+---
+
+## 9. I checked Clojure's core with Lean and found unreported bugs
+
+**原文标题**: I checked Clojure's core with Lean and found unreported bugs
+
+**原文链接**: [https://s.conao3.com/blog/2026/e4f733](https://s.conao3.com/blog/2026/e4f733)
+
+文章之前已经处理过
+
+---
+
+## 10. 谷歌发布Cogentic整数分解、离散对数等多领域研究论文
+
+**原文标题**: Google releases Cogentic papers on integer factorization, discrete logs and more
+
+**原文链接**: [https://github.com/google-research/google-research/tree/master/cogentic_research_papers](https://github.com/google-research/google-research/tree/master/cogentic_research_papers)
+
+摘要：谷歌旗下Cogentic项目在google-research仓库公开发布一批数学与计算机科学领域研究论文，涵盖数论、博弈论、图论、组合优化等方向。核心成果包括：实现无条件整数分解（时间复杂度L_N[1/3, O(1)]）及确定性亚指数级分解；在固定特征有限域上以亚准多项式时间求解离散对数；提出双矩阵博弈中1/5近似纳什均衡的精确多项式时间算法；打破对数秩猜想的平方根障碍；完成线性密度简单图边的无条件重构。此外还涉及子可加组合拍卖的Prophet不等式、虚设博弈收敛性、VC类样本压缩及凸博弈中关联均衡难解性等问题。论文集中发布于2026年10至11月，采用Apache 2.0开源协议。谷歌声明该内容非官方产品。
+
+---
+
+## 11. 预测任意数据集所需的LoRA规模
+
+**原文标题**: Predicting LoRA size for any dataset
+
+**原文链接**: [https://engram.com/blog/lora-size](https://engram.com/blog/lora-size)
+
+本文建立了一套预测任意数据集所需LoRA适配器秩的理论框架与实用方法。核心思想是将语言模型视为文本压缩器，以信息论中的比特数统一衡量数据集大小与适配器容量。理论上，作者基于Fisher信息矩阵推导出容量公式：低秩时容量近似线性增长（约1.3–1.4 bits/参数），全秩时达到mn/(2ln2)比特。实践中，作者利用算术编码从预训练模型反向生成精确N比特的合成数据，通过训练测量适配器实际容量。关键发现包括：（1）多层联合适配存在超可加性，bits/参数从单层的1.5升至24层的3.3；（2）容量随训练步数单调增长，可用log-logistic曲线外推至无限训练；（3）学习-遗忘守恒——模型遗忘的旧信息量近似等于新学习的信息量。最终，作者将方法应用于真实SFT数据集：通过计算数据集在基座模型下的负对数似然得到其比特规模，再结合容量-秩曲线即可准确预测所需LoRA秩，从而在大规模模型定制场景中实现适配器资源的高效分配。
+
+---
+
+## 12. 借助大语言模型将 Rockbox 移植到 9 美元速卖通 YP3 播放器
+
+**原文标题**: Porting Rockbox to an undocumented $9 AliExpress 'YP3' MP3 player with LLMs
+
+**原文链接**: [https://jayd.ml/2026/11/14/rockbox-on-yp3.html](https://jayd.ml/2026/11/14/rockbox-on-yp3.html)
+
+摘要：作者将经典MP3固件Rockbox移植到一款售价9美元、芯片完全无公开文档的速卖通YP3播放器（Smartlink SL6801，双Cortex-M4，仅512KiB SRAM，远低于Rockbox此前最小的2MiB目标）。整个开发由Claude大模型主导，作者仅充当PM与QA，负责物理操作（如重启设备、戴耳机验证音质），未亲自编写代码。开发中Claude通过Ghidra逆向固件、向FreeRTOS注入任务探测硬件，逐步完成驱动编写与移植。为支持全无人化迭代，作者搭建自动化测试环境：摄像头监控屏幕、Line In检测音频、蓝牙适配器模拟耳机，使Claude能自主刷写、测试、诊断。经约一个月调优，Rockbox在该设备上稳定运行，支持MP3、FLAC、Opus、AAC等主流格式，续航与原版基本持平。项目还产出了可复用工具包auto-rockbox，Claude仅用4小时即完成另一款播放器TS47的移植。此外新增357个插件（含大量开源游戏移植）、可在播放器上运行百万参数小模型的RockGPT、新视频播放器及蓝牙HID支持等。作者认为，LLM已足以胜任最困难的嵌入式逆向工程。
+
+---
+
+## 13. 矩阵乘法指数为四分之九
+
+**原文标题**: The matrix multiplication exponent is nine fourths [pdf]
+
+**原文链接**: [https://github.com/openai/math/blob/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/paper.pdf](https://github.com/openai/math/blob/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/paper.pdf)
+
+矩阵乘法指数 $\omega$ 是理论计算机科学与算法设计中的核心参数，决定了 $n \times n$ 方阵乘法的最优时间复杂度 $O(n^\omega)$。该论文聚焦于矩阵乘法指数问题，提出并论证了指数取值为 $9/4$（即 2.25）的结论。文章在经典 Coppersmith–Winograd 算法及其后续改进（如 Bini、Pan、Vavasis、Le Gall 等人的工作）所构建的分析框架基础上，对分治策略、组合计数及代数恒等式进行了新的技术处理，从而将相关情形的乘法复杂度上界推进至 $O(n^{9/4})$。论文的核心贡献包括：对关键递推关系进行更精细的优化，改进了传统 Winograd 型方案中低秩分解的构造方式，并给出了严格的指数计算与证明。该结果在特定矩阵维度比或结构化矩阵（如近方阵、Toeplitz 型）的乘法问题中具有直接应用意义，为后续进一步降低一般方阵乘法指数的研究提供了新的技术路径与中间基准。
+
+---
+
+## 14. 按钮音效集 — 专业录制的按钮点击与按压音效
+
+**原文标题**: Button Sounds – collection of professionally-recorded button clicks and presses
+
+**原文链接**: [https://buttons.joshwcomeau.com/](https://buttons.joshwcomeau.com/)
+
+摘要：本资源是一套专为界面设计打造的按钮音效素材合集，收录了经专业录制的各类按钮点击与按压声音。这些音效旨在为用户界面（UI）增添逼真的触觉反馈感，使数字交互更具沉浸感与真实感。适用于网页、移动端应用、游戏界面及各类人机交互场景，帮助设计师与开发者以细腻的听觉细节提升产品的操作质感与用户体验。
+
+---
+
+## 15. 布莱克-舒尔斯公式的推导
+
+**原文标题**: Deriving Black-Scholes
+
+**原文链接**: [https://david.alvarezrosa.com/posts/deriving-black-scholes/](https://david.alvarezrosa.com/posts/deriving-black-scholes/)
+
+本文推导了布莱克-舒尔斯期权定价公式。核心思想：在合理假设下，通过持有标的资产并做空期权构建完全对冲组合，使组合无风险；由无套利原则，其收益必等于无风险利率r，由此建立定价方程。模型假设股价服从几何布朗运动（dS/S=μdt+σdW），漂移率、波动率及利率均为常数，市场无摩擦且可连续交易。对冲策略定义Delta（Δ=∂V/∂S），做空一份期权同时持有Δ股股票，使瞬间涨跌完全抵消，但需持续再平衡。推导利用伊藤引理展开至二阶，关键利用(dW)²=dt使二阶项不可忽略；代入股价模型并对组合施加对冲后，随机项完全消去，组合收益变为确定量。令其等于rΠdt即得Black-Scholes偏微分方程，其中μ消失，表明期权价格与标的漂移率无关。求解时经变量代换化为热传导方程，结合到期收益V(T,S)=max(S−K,0)，得到封闭解V=SN(d₁)−Ke^(−rτ)N(d₂)。N(d₁)即Delta，对应"资产或无"期权价格；N(d₂)为风险中性执行概率，对应执行价现值。
+
+---
+
+## 16. Show HN：基于可证伪假设的代码优化智能体技能
+
+**原文标题**: Show HN: An agent skill that optimizes code with falsifiable hypotheses
+
+**原文链接**: [https://chszlab.github.io/AgenticAlgorithmEngineering/](https://chszlab.github.io/AgenticAlgorithmEngineering/)
+
+海德堡大学算法工程组发布Agentic Algorithm Engineering（AAE），一个面向Claude Code和Codex的智能体技能，让AI代理以算法工程师的方式自主优化代码。核心流程为：提出可证伪假设→预测效果→实现最小改动→运行基准测试，仅当性能提升且通过正确性验证时才保留更改。每次接受的修改生成独立Git补丁，整体会话最终输出一份PDF报告，记录每条假设的预测、测量与结论。在多个知名开源项目上效果显著：VieCute最大流问题提速8.9倍，KaHIP图划分提速3.9倍，Hochbaum伪流最大流提速3倍，所有优化均保证输出与原程序一致。与autoresearch等同类工具相比，AAE不限于训练脚本或代码片段，可处理任意现有代码库与语言；每个实验前代理须明确假设及预期效果，而非仅凭模型直觉；正确性通过用户预先约定的断言逐次验证，而非依赖单一评估器分数。此外，AAE设有共享知识库，各会话间可复用优化经验，社区贡献亦被欢迎。项目已开源，并提供十分钟快速上手示例。
+
+---
+
+## 17. C++ 中 = default 与 {} 并非同一个构造函数
+
+**原文标题**: In C++, = default and {} are not the same constructor
+
+**原文链接**: [https://lemire.me/blog/2026/11/02/default-and-braces-are-not-the-same-constructor/](https://lemire.me/blog/2026/11/02/default-and-braces-are-not-the-same-constructor/)
+
+无法访问该文章链接
+
+---
+
+## 18. 针轮式机械计算器的工作原理
+
+**原文标题**: How did pinwheel calculators work?
+
+**原文链接**: [https://blog.coredump.cx/p/how-did-pinwheel-calculators-work](https://blog.coredump.cx/p/how-did-pinwheel-calculators-work)
+
+本文以作者收藏的Vaucanson手摇计算器为例，解析了20世纪20至60年代流行的机械四则运算计算器的工作原理。演示部分展示了加法（摇动摇柄将输入值累加）、乘法（通过移累加器实现十次方加权，如79×123分三次摇动完成）和除法（依次减去十次方倍数）的操作流程。核心机构方面，每个数位对应一个输入盘，盘上设九个径向销，由数字设置环控制伸出销数，摇动摇柄时伸出的销驱动中间齿轮推动累加器对应数位。进位依靠每位的凸轮与楔形杠杆：数字从9归零时，杠杆将相邻位的进位销推入齿轮路径完成进位；进位销采用错开设计，确保9999+1等连续进位可顺利传递。此外，计算器还具备防误操作联锁、各寄存器复位杆及溢出机械警报铃等可靠性设计。文末作者指出，Intel CPU中"累加器"寄存器的命名正源于此类机械计算器的累加机构。
+
+---
+
+## 19. 传言称AI实验室可能已攻克多项式时间整数分解难题
+
+**原文标题**: Rumors swirling that labs might have cracked Factoring in P
+
+**原文链接**: [https://www.reddit.com/r/singularity/comments/1y59ef1/rumor_that_openai_or_anthropic_found_a_way_to/](https://www.reddit.com/r/singularity/comments/1y59ef1/rumor_that_openai_or_anthropic_found_a_way_to/)
+
+无法访问该文章链接
+
+---
+
+## 20. GitHub多项产品服务降级事件调查
+
+**原文标题**: Investigating degraded experiences across GitHub products
+
+**原文链接**: [https://www.githubstatus.com/incidents/qn8mfv6q5hlx](https://www.githubstatus.com/incidents/qn8mfv6q5hlx)
+
+2026年11月25日，GitHub发布了一起服务降级事件报告。事件于15:55 UTC开始调查，起因为用户反馈Actions和Webhooks性能下降，随后影响逐步扩大至Git Operations、API Requests、Issues、Pull Requests、Packages和Pages等核心产品。经排查，根本原因为数据库负载过高，导致多项服务出现可用性下降或性能退化。16:14 UTC，团队确认问题根源并开始实施缓解措施；16:25 UTC，团队更新数据库负载分布方案，服务开始恢复；随后各组件依次恢复正常。16:52 UTC，GitHub宣布事件已完全解决，并表示将进行详细根因分析后对外公布。整个事件持续约一小时，期间GitHub通过状态页面多次更新进展，并提供了邮件、短信、Slack、Webhook及RSS等多种通知渠道供用户订阅。该事件已标记为"已解决"状态。
+
+---
+
+## 21. 耗350亿Token，用AI谱写一首交响曲
+
+**原文标题**: Spending 35B Opus 5.5 Tokens to Write a Symphony
+
+**原文链接**: [https://danprice.ai/blog/opus-symphony](https://danprice.ai/blog/opus-symphony)
+
+本文记录了作者Dan Price利用Claude Opus 5.5，以约350亿Token的代价，在一月内完成一首四乐章、25分钟全管弦乐队交响曲的全过程。乐谱以LilyPond文本格式编写，使AI能像编辑代码一样创作与比较。核心方法是"演员-评论者"循环：一个Claude作曲，另一个从未见过该作品的Claude从旋律、和声、配器、可演奏性等维度逐轮评审并提出修改建议，每乐章约600轮，四乐章共约2400轮，且每轮须对照配器与和声学教科书给出依据。录音阶段以REAPER搭配EastWest Hollywood Orchestra，经184轮迭代，用量化指标（音量平衡、起音时机、混响衰减等）替代人工试听；视频制作5轮，实现音符随演奏实时点亮。全项目共约2500轮迭代。作者强调，面对音乐这类无法判定优劣的创作，关键策略是让AI做远超预期的迭代次数，辅以教科书约束与人类最终试听。99.9%的作曲元素由AI完成，人类仅负责设定目标、提供教材、决定迭代轮次并亲自聆听反馈。
+
+---
+
+## 22. 沙箱隔离下的AI模型仍可通过推理服务器通信
+
+**原文标题**: Models Can Communicate via Inference Servers Despite Being Sandboxed
+
+**原文链接**: [https://www.lesswrong.com/posts/7wzWuLP3HhyBLmKfo/models-can-communicate-via-inference-servers-despite-being](https://www.lesswrong.com/posts/7wzWuLP3HhyBLmKfo/models-can-communicate-via-inference-servers-despite-being)
+
+无法访问该文章链接
+
+---
+
+## 23. Hazel（YC W24）招聘产品设计师（合同制）
+
+**原文标题**: Hazel (YC W24) Is Hiring a Product Designer
+
+**原文链接**: [https://www.ycombinator.com/companies/hazel-2/jobs/8EhsvYE-product-designer-contract](https://www.ycombinator.com/companies/hazel-2/jobs/8EhsvYE-product-designer-contract)
+
+Hazel是YC W24批次创业公司，由拥有Palantir和BCG背景的创始人创立，致力于用AI技术解决美国联邦及州、地方、教育（SLED）政府机构每年2.7万亿美元的采购效率难题。现招聘合同制产品设计师，合同期3至6个月，月薪1万至2万美元，美国远程办公，须持美国公民身份。工作涵盖三大交付：升级联邦投标评估工具UI/UX、改进商用COTS产品流程并统一界面、输出可复用Figma组件库及风格指南。岗位要求3年以上产品设计经验，擅长复杂B2B工作流（密集表格、多步骤审批等），精通Figma，能快速独立交付。加分项包括：从零搭建设计系统、React/TypeScript前端经验、AI功能设计、文档密集型界面、公共部门或政府采购经历、无障碍设计（Section 508/WCAG 2.1 AA）。团队7人，驻纽约，创始人直接协作，有参与客户沟通机会。公司强调使命驱动、务实高效、自主ownership，欢迎认同"用AI服务公共利益"理念的设计师加入。
+
+---
+
+## 24. 噪声的工业化：为何自动化证明求解不过是老调重弹的死路
+
+**原文标题**: The industrialization of noise: Automated proof-solving is the same old dead end [pdf]
+
+**原文链接**: [https://arxiv.org/abs/2611.31286](https://arxiv.org/abs/2611.31286)
+
+摘要：近五十年前，DeMillo、Lipton与Perlis（DLP）提出，数学证明并非静态的形式逻辑结构，而是人类批判、内化与共享直觉所驱动的社会性演化产物。2026年10月，OpenAI发布722篇自动化数学手稿，宣称完整或部分解决了372个长期未决问题。本文以DLP框架审视这一冲击，指出这种突然、大规模地产出密集且难以阅读的证明，构成了对数学生态的"工业污染"。作者剖析了自动化路径的三大结构性致命缺陷——规范化、回归与效用，论证将机械求解与人类理解的社会过程相剥离，只会制造出一堆"死的逻辑制品"。文章进一步指出，这种工业化具有自我实现性：用海量未经审视的手稿淹没文献，必然使有限的人类注意力在区分信号与噪声的赛跑中落败。在此意义上，"发布"结果并不等同于将其纳入数学界赖以验证、消化并融入共享知识的社区流程。论文共九页，涉及密码与安全、人工智能及计算逻辑学领域。
+
+---
+
+## 25. 真正上心的聪明人，都在用工具
+
+**原文标题**: Smart people who give a shit use tools
+
+**原文链接**: [https://www.iankduncan.com/engineering/2026-11-19-smart-people-who-give-a-shit-use-tools](https://www.iankduncan.com/engineering/2026-11-19-smart-people-who-give-a-shit-use-tools)
+
+本文回应了Justin Michael"用AI等于不上心"的论断，认为其颠倒了因果。作者指出，LLM本质是放大器：对真正用心的工程师而言，AI让他们终于有余力完成过去因工期不足而搁置的严谨工作——编写形式化规格、穷举边界测试、跨仓库追踪遗留调用链。过去"上心"受限于一人读写速度，如今这种严谨第一次变得廉价可行。作者也承认风险：敷衍者借AI批量产出"代码糊"，新人缺少与bug搏斗积累的判断力，模型失败时语气自信更具迷惑性。但根源在于组织缺乏问责与所有权，并非工具本身——AI出现前就有人粘贴Stack Overflow答案、三十秒通过代码评审。当前密集故障的深层原因是数十年工程严谨不足累积的"账单到期"，不宜全归咎于AI。真正该被批评的是管理层：将资深工程师视为可被订阅费替代的输出机器，不过是"砍QA""外包核心平台"等老剧本的重演，AI只是提供了更光鲜的借口。作者总结：判断一个人是否上心，不应看他是否用了LLM，而看代码凌晨崩盘时他的反应；应把愤怒对准逃避问责的决策者，而非在一线拼命为系统加装护栏的工程师。
+
+---
+
+## 26. 匹诺曹两百年：饥饿、贪欲与意大利饮食往事
+
+**原文标题**: Pinocchio at 200: a tale of hunger, greed and Italy's culinary history
+
+**原文链接**: [https://www.repubblica.it/en/europe/food-travel/2026/11/24/news/carlo_collodi_pinocchio_pellegrino_artusi_italian_literature-425744069/](https://www.repubblica.it/en/europe/food-travel/2026/11/24/news/carlo_collodi_pinocchio_pellegrino_artusi_italian_literature-425744069/)
+
+本文以科洛迪诞辰二百周年为契机，从饮食视角重新解读《木偶奇遇记》。文章以"红虾旅馆"场景切入——猫和狐狸大肆点菜，匹诺曹作为贵宾却只分到半颗核桃和一块面包皮，最终还得替人付账——揭示食物背后隐含的阶层与权力关系。书中饮食意象极为丰富：托斯卡纳传统内脏菜、里窝那海鲜、博洛尼亚馄饨、米兰烩饭、那不勒斯意面，乃至油醋花椰菜的简朴，共同勾勒出十九世纪意大利的饮食图景。作者指出，科洛迪出身厨师家庭，其作品与阿尔图西一八九一年问世的烹饪经典几乎同时面世，二者分别从文学与烹饪的角度参与了意大利民族认同的构建。从杰佩托珍藏的三个梨到蓝仙女铺满糖果的盛宴，从匹诺曹脑中煮蛋的百种方式到鲸鱼腹中浓缩的十九世纪食品保存技术，食物在书中既是欲望的隐喻，也是社会分化的镜像。文章最终回归当下，指出"吃饱"仍取决于"谁来买单"这一残酷法则，赋予这部经典以持久的现实意义。
+
+---
+
+## 27. 浏览器中重温Nvidia与ATI经典显卡技术演示
+
+**原文标题**: Show HN: Old Nvidia and ATI tech demos, running again in the browser
+
+**原文链接**: [https://gpu-demo-gallery.pages.dev/](https://gpu-demo-gallery.pages.dev/)
+
+摘要：该项目在Hacker News上分享，将早期显卡厂商（Nvidia、ATI、3dfx等）的经典技术演示通过浏览器重新运行，让现代用户无需安装旧驱动即可体验。文中以1998年3dfx Voodoo2为例：作为当时首块拥有双纹理单元的显卡，其演示通过5次渲染通道在立方体上叠加9层纹理，展示了双纹理管线带来的性能优势。所有演示代码已开源至GitHub，方便开发者在线体验这段图形硬件的历史。
+
+---
+
+## 28. Bypassing iOS Safari's 60 FPS Limit to Build Web Applications That Feel Native
+
+**原文标题**: Bypassing iOS Safari's 60 FPS Limit to Build Web Applications That Feel Native
+
+**原文链接**: [https://rida.dev/blog/bypassing-ios-safari-60-fps-limit](https://rida.dev/blog/bypassing-ios-safari-60-fps-limit)
+
+文章之前已经处理过
+
+---
+
+## 29. 驭龙者的短暂时代
+
+**原文标题**: The short age of dragon riders
+
+**原文链接**: [https://atilloy.com/2026/11/16/the-short-age-of-dragon-riders/](https://atilloy.com/2026/11/16/the-short-age-of-dragon-riders/)
+
+作者指出，截至2026年，公开AI模型在技术任务上已超越大多数理论物理学家，能完成复杂分析、长串证明与编程，但仍缺乏提出好问题的"研究品味"。然而，借助可验证奖励的强化学习、算力持续增长及递归自我改进，AI进步不可逆转，"驭龙者"——善于驾驭AI进行科研的人——正处于一个短暂的过渡期。作者以"五度悲伤"描述科学界的心理调适，批评部分数学家以"过程中的友谊"替代结果导向的学术观，也反对"素食科学"——即拒绝AI、仅以展示人类心智极限为自我价值的立场。他主张"骑龙"：研究者应主动与AI协作，放弃对低层细节的执念，向更高抽象跃迁，正如人类早已不再手写汇编或手算积分。骑龙虽令人疲惫甚至逼近崩溃，却是当下参与科学发现的唯一路径。作者承认AI存在真实生存风险，支持对齐研究，但反对以风险为借口停滞进步。他预言驭龙者价值将如泡沫般指数增长后骤然崩塌，届时硅基或不再需要任何生物体提供洞见。但"我们活在当下"，与其做愤懑的旁观者，不如驭龙前行，为人类心智争取最后的荣誉。
+
+---
+
+## 30. 三值 Bonsai 2.5 27B：驱动智能体编码与私有知识工作
+
+**原文标题**: Ternary Bonsai 2.5 27B
+
+**原文链接**: [https://prismml.com/news/bonsai-2-5-27b](https://prismml.com/news/bonsai-2-5-27b)
+
+PrismML于2026年11月24日发布Ternary Bonsai 2.5 27B，基于Qwen3.8 27B，模型体积仅5.9GB，在智能体编码、多轮工具调用及多步任务执行方面实现大幅提升。相较前代，该模型解决了过度推理与重复循环问题，以更少轮次和token完成复杂任务，性能显著逼近全精度基线。基准测试中，SWE-bench达75.6分（前代60.8），AppWorld达90.5分（前代51.2），Terminal-Bench达60.1分。推理速度方面，H100上达291 tokens/s，RTX 4090上达204 tokens/s。该模型支持NVIDIA/Intel GPU（llama.cpp）及Apple设备（MLX），以Apache 2.0协议开源。核心定位是赋能端侧部署，支持私有代码库辅助、文档摘要、桌面分析等隐私敏感场景。PrismML由Caltech团队创立，获Khosla Ventures、Google及Samsung等支持，专注神经网络压缩领域。
+
+---
+
